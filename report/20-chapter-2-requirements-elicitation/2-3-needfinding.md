@@ -1,13 +1,16 @@
 ## 2.3.	Needfinding
 ### 2.3.1.	User Personas
 
-Segmento 1
 
-# 
+Segmento 1 Valeria Sanchez
+![User Persona 1](assets/images/user-persona-1.png)
 
-Segmento 2
+Segmento 2 Hilda Litiano
+![User Persona 2](assets/images/user-persona-2.png)
 
-Segmento 3
+Segmento 3 Pedro Garcia
+![User Persona 3](assets/images/user-persona-3.png)
+
 
 ### 
 
@@ -25,10 +28,23 @@ Segmento 3
 | **Gestionar reclamos por errores o devoluciones** | Media | Alta | Baja | Alta | Baja | Media |
 ### 2.3.3.	User Journey Mapping
 
-Segmento 1 Valeria Sanchez
 
-Segmento 2 Hilda Litiano
+Segmento 1
+![Journey Map 1](assets/images/journey-map-1.png)
 
-Segmento 3 Pedro Garcia
+Segmento 2
+![Journey Map 2](assets/images/journey-map-2.png)
+
+Segmento 3
+![Journey Map 3](assets/images/journey-map-3.png)
 
 ### 2.3.4.	Empathy Mapping
+
+Segmento 1
+![Journey Map 1](assets/images/empathy-map-1.png)
+
+Segmento 2
+![Journey Map 2](assets/images/empathy-map-2.png)
+
+Segmento 3
+![Journey Map 3](assets/images/empathy-map-3.png)
