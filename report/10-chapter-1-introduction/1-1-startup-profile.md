@@ -76,7 +76,7 @@ Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo c
     <th>Descripción</th>
   </tr>
   <tr>
-    <td><img src="../assets/images/image2.png" alt="Foto Diego" width="80"/>U202323040</td>
+    <td><img src="../assets/images/image2.png" alt="Foto Yucra Sandoval, Diego Sebastian" width="80"/>U202323040</td>
     <td>Yucra Sandoval, Diego Sebastian</td>
     <td>Team Leader</td>
     <td>
@@ -86,7 +86,7 @@ Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo c
     </td>
   </tr>
   <tr>
-    <td><img src="../assets/images/image3.png" alt="Foto Diego" width="80"/>U202411937</td>
+    <td><img src="../assets/images/image3.png" alt="Foto Marín Cueva, César Fernando" width="80"/>U202411937</td>
     <td>Marín Cueva, César Fernando</td>
     <td>Team Member</td>
     <td>
@@ -96,7 +96,7 @@ Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo c
     </td>
   </tr>
   <tr>
-    <td><img src="../assets/images/image4.png" alt="Foto Diego" width="80"/>U20241A054</td>
+    <td><img src="../assets/images/image4.png" alt="Foto integrante del equipo" width="80"/>U20241A054</td>
     <td>Verde Bueno, Joaquín Francisco</td>
     <td>Team Member</td>
     <td>
