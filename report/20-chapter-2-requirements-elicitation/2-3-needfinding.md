@@ -25,23 +25,22 @@ Segmento 3 Pedro Garcia
 | **Gestionar reclamos por errores o devoluciones** | Media | Alta | Baja | Alta | Baja | Media |
 ### 2.3.3.	User Journey Mapping
 
-
 Segmento 1
-![Journey Map 1](assets/images/journey-map-1.png)
+![Journey Map 1](../assets/images/journey-map-1.png)
 
 Segmento 2
-![Journey Map 2](assets/images/journey-map-2.png)
+![Journey Map 2](../assets/images/journey-map-2.png)
 
 Segmento 3
-![Journey Map 3](assets/images/journey-map-3.png)
+![Journey Map 3](../assets/images/journey-map-3.png)
 
 ### 2.3.4.	Empathy Mapping
 
 Segmento 1
-![Journey Map 1](assets/images/empathy-map-1.png)
+![Empathy Map 1](../assets/images/empathy-map-1.png)
 
 Segmento 2
-![Journey Map 2](assets/images/empathy-map-2.png)
+![Empathy Map 2](../assets/images/empathy-map-2.png)
 
 Segmento 3
-![Journey Map 3](assets/images/empathy-map-3.png)
+![Empathy Map 3](../assets/images/empathy-map-3.png)
