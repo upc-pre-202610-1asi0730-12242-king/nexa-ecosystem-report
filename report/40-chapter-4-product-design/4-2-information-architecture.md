@@ -1,146 +1,123 @@
 ## 4.2. Information Architecture
 
-<p align="justify">
-La arquitectura de información de Nexa se define a partir de la estructura realmente implementada en el repositorio público <strong>`nexa-website`</strong>. En este corte, el sitio no funciona como una aplicación transaccional completa, sino como una experiencia web pública orientada a <strong>explicar la propuesta de valor</strong>, <strong>segmentar a los usuarios por tipo de operación</strong> y <strong>dirigirlos hacia contacto, demostración y comprensión del producto</strong>. Por ello, las decisiones de organización, etiquetado, navegación y SEO responden a una lógica de descubrimiento comercial y reducción de carga cognitiva, no a una lógica de operación interna autenticada.
-</p>
-
 ### 4.2.1. Organization Systems
 
 <p align="justify">
-El sitio de Nexa presenta una arquitectura predominantemente jerárquica con apoyo matricial. El punto de entrada es la página principal, desde la cual el usuario puede desplazarse hacia cuatro áreas troncales: <strong>Platform</strong>, <strong>Solutions</strong>, <strong>Company</strong> y <strong>FAQ</strong>. Dentro de <strong>Solutions</strong> existe un segundo nivel de profundidad que segmenta el contenido por tipo de operador: <strong>Importers & Wholesalers</strong>, <strong>Distributors</strong> y <strong>Cold Storage Operators</strong>. Esta decisión permite que el usuario no tenga que interpretar una lista abstracta de funcionalidades, sino entrar por el nodo operativo que más se parece a su realidad.
+El sistema de organización de Nexa es jerárquico y temático. La información se agrupa según el perfil del usuario (distribuidor vs. cliente comercial) y la funcionalidad de la plataforma B2B. Desde una perspectiva de Domain-Driven Design (DDD), cada módulo de la aplicación corresponde a un Bounded Context independiente con su propio modelo de dominio, lenguaje ubicuo y responsabilidades delimitadas.
 </p>
 
-*Sitemap del sitio público Nexa*
+**Bounded Contexts de la plataforma Nexa:**
 
-```mermaid
-graph TD
-    Home["Home / index.html"] --> Platform["Platform / pages/platform.html"]
-    Home --> Solutions["Solutions Hub / pages/solutions/index.html"]
-    Home --> Company["Company / pages/company.html"]
-    Home --> FAQ["FAQ / pages/faq.html"]
+| Bounded Context | Responsabilidad | Recursos REST (plural) |
+|-----------------|-----------------|------------------------|
+| **Catalog** | Gestión del catálogo de productos (SKU, lotes, rangos térmicos) | `/products`, `/products/{id}` |
+| **Inventory** | Control de stock en tiempo real con política FEFO | `/inventory`, `/inventory/{skuId}` |
+| **Orders** | Ciclo de vida del pedido B2B (creación, confirmación, despacho) | `/orders`, `/orders/{id}` |
+| **Traceability** | Seguimiento térmico y logístico del pedido hasta entrega | `/shipments`, `/shipments/{id}/events` |
+| **Identity** | Autenticación y autorización de distribuidores y clientes | `/users`, `/users/{id}` |
 
-    Solutions --> Importers["Importers / pages/solutions/importers.html"]
-    Solutions --> Distributors["Distributors / pages/solutions/distributors.html"]
-    Solutions --> Storage["Cold Storage / pages/solutions/cold-storage.html"]
+**Organización del Sitio Web (Ecosistema B2B):**
 
-    Home --> Contact["Contact anchors in Company"]
-    Platform --> Contact
-    Company --> Contact
-    FAQ --> Contact
-```
+| Página | Contenido principal |
+|--------|---------------------|
+| `index.html` (Home) | Propuesta de valor central y visión general (Hero, ecosystem bento grid, trust rows) |
+| `platform.html` (Platform) | Arquitectura técnica del producto (Technical Catalog, Live Inventory, End-to-End Traceability) |
+| `solutions.html` (Solutions) | Casos de uso segmentados (Importers, Distributors/HORECA, Cold Storage Operators) |
+| `company.html` (Company) | Visión de la empresa, principios, roadmap futuro y contacto |
+| `faq.html` (FAQ) | Resolución de objeciones mediante un sistema de acordeón organizado por temas |
+
+**Organización de la Aplicación Web (Dashboard B2B):**
 
 <p align="justify">
-La profundidad máxima observable es de <strong>dos niveles</strong> desde la página principal. Por ejemplo, un usuario puede seguir la ruta <code>Home &gt; Solutions &gt; Distributors</code> sin pasar por capas intermedias innecesarias. Esta baja profundidad favorece rapidez de acceso, simplifica la orientación del usuario y reduce la necesidad de estructuras auxiliares complejas como navegación facetada o árboles extensos de categorías.
+El dashboard está organizado en torno a cinco módulos que reflejan directamente los Bounded Contexts del dominio:
 </p>
 
-*Estructura organizacional observable del sitio público*
+1. **Technical Catalog** — Catálogo especializado con SKU, lote y condiciones de temperatura.
+2. **Live Inventory** — Control de stock en tiempo real con rotación FEFO.
+3. **B2B Portal** — Portal de pedidos para clientes comerciales.
+4. **Mobile Telemetry** — Telemetría de temperatura en campo (fase posterior).
+5. **End-to-End Traceability** — Seguimiento completo del pedido desde la toma hasta el despacho.
 
-| Área del sitio | Páginas incluidas | Rol dentro de la arquitectura |
-|---|---|---|
-| Núcleo de entrada | `index.html` | Presenta propuesta de valor, pain points, CTA y rutas hacia el resto del ecosistema público |
-| Explicación del producto | `pages/platform.html` | Expone módulos, lógica funcional y visión global de la plataforma |
-| Segmentación por operador | `pages/solutions/index.html` y subpáginas `importers.html`, `distributors.html`, `cold-storage.html` | Organiza el contenido según tipo de operación y contexto logístico |
-| Confianza y contacto | `pages/company.html` | Presenta equipo, enfoque de acompañamiento y formulario de contacto |
-| Consulta transversal | `pages/faq.html` | Centraliza preguntas frecuentes y resuelve dudas antes de solicitar una demo |
-
-<p align="justify">
-Esta organización también tiene una dimensión matricial: aunque el sitemap es jerárquico, varias páginas incluyen CTA y atajos cruzados hacia <strong>Company</strong>, <strong>FAQ</strong> y el hub de <strong>Solutions</strong>. En consecuencia, la arquitectura no obliga a una navegación lineal rígida; más bien, combina una base jerárquica clara con accesos laterales que aceleran la conversión y la exploración.
-</p>
+---
 
 ### 4.2.2. Labeling Systems
 
 <p align="justify">
-El sistema de etiquetado de Nexa es consistente con un producto B2B orientado al dominio refrigerado. En la navegación principal se utilizan etiquetas directas y de alta familiaridad: <strong>Inicio</strong>, <strong>Plataforma</strong>, <strong>Soluciones</strong>, <strong>Empresa</strong> y <strong>FAQ</strong>. Estas etiquetas reducen ambigüedad, ya que no recurren a categorías creativas ni a metáforas innecesarias; cada rótulo anticipa con claridad el tipo de contenido al que conduce.
+El sistema de etiquetado de Nexa mantiene un enfoque corporativo, formal y específico a la logística B2B. La interfaz (UI) está íntegramente en inglés, utilizando terminología estándar de la industria logística.
 </p>
 
-<p align="justify">
-En el caso de la sección <strong>Solutions</strong>, el etiquetado baja a un nivel más específico y mantiene alineación con el lenguaje del dominio: <strong>Importadores y mayoristas</strong>, <strong>Distribuidores</strong> y <strong>Operadores de cámaras frías</strong>. Además, cada etiqueta está acompañada por un micro-copy que contextualiza el caso de uso, por ejemplo “Ingreso portuario para lotes de queso, charcutería y lácteos” o “Cumplimiento de última milla, reposición FEFO y pedidos B2B”. Esta combinación de título corto más descripción breve facilita la discriminación entre segmentos cercanos.
-</p>
+**Reglas de Etiquetado:**
 
-<p align="justify">
-Los llamados a la acción siguen el mismo criterio. Se repiten expresiones consistentes como <strong>Solicitar una demostración</strong>, <strong>Ver la plataforma</strong>, <strong>Agendar recorrido guiado</strong>, <strong>Leer las FAQ</strong> o <strong>Ingresar</strong>. En todos los casos, el verbo comunica una acción concreta y comprensible. Asimismo, el vocabulario de contenido preserva términos del dominio como <strong>inventario</strong>, <strong>pedidos</strong>, <strong>temperatura</strong>, <strong>despacho</strong>, <strong>FEFO</strong>, <strong>POD</strong> y <strong>trazabilidad</strong>, reforzando la coherencia entre hallazgos de dominio y presentación visual del producto.
-</p>
+- **Claridad operativa:** Se evitan términos genéricos de marketing. En lugar de "Dashboard" o "Features", se utilizan etiquetas precisas como "Technical Catalog", "Mobile Telemetry" o "End-to-End Traceability".
 
-| Tipo de etiqueta | Ejemplos observables | Función principal |
-|---|---|---|
-| Navegación global | Inicio, Plataforma, Soluciones, Empresa, FAQ | Orientar al usuario entre áreas troncales |
-| Segmentación | Importadores y mayoristas, Distribuidores, Operadores de cámaras frías | Guiar por tipo de operación |
-| CTA principales | Solicitar una demostración, Ver la plataforma, Ingresar | Favorecer conversión o siguiente paso |
-| Etiquetas del dominio | Inventario, pedidos, FEFO, POD, trazabilidad, monitoreo | Mantener consistencia semántica con el problema real |
+- **Estados del sistema (Status Tags):** Las etiquetas de estado no dependen solo de colores, sino de texto explícito en mayúsculas: `OPTIMAL`, `ALERT`, `CRITICAL`, `LIVE`, `VERIFIED`.
+
+- **Términos B2B estándar:** Conceptos como `FEFO` (First Expired, First Out), `POD` (Proof of Delivery), `SKU` y `SLA` se mantienen en inglés sin traducción, por su uso universal en el sector.
+
+- **Labels UI:** Las microetiquetas (eyebrows y cabeceras de tabla) usan la fuente Inter, 12px, negrita (700), todo en mayúsculas (uppercase) y con un espaciado de letras (*tracking*) de `0.06em`.
+
+---
 
 ### 4.2.3. SEO Tags and Meta Tags
 
 <p align="justify">
-La implementación SEO observable en `nexa-website` se apoya en un conjunto consistente de etiquetas `<title>`, `<meta name="description">`, `<meta name="author">` y propiedades Open Graph (`og:title`, `og:description`, `og:type`). Estas etiquetas están adaptadas al contexto de cada vista y permiten mejorar tanto la indexación del sitio como la forma en que el contenido se presenta al compartirse en plataformas externas.
+El posicionamiento de la plataforma está optimizado para captar pymes y grandes distribuidoras de alimentos refrigerados buscando soluciones SaaS. Las etiquetas SEO y Meta Tags siguen el sistema de etiquetado en inglés y las palabras clave de la marca.
 </p>
 
-<p align="justify">
-Es importante señalar dos límites técnicos con honestidad. Primero, el sitio <strong>no implementa</strong> la etiqueta `<meta name="keywords">`; por ello, no conviene afirmar que existe una estrategia basada en keywords explícitas. Segundo, la página `FAQ` tampoco define `<meta name="author">`, por lo que esa ausencia debe reconocerse tal cual. A pesar de ello, el sitio sí demuestra una estrategia SEO on-page moderna basada en títulos descriptivos, meta descriptions específicas y semántica clara por página.
-</p>
+**Title Tags (`<title>`):** Estructurados con la fórmula `[Nombre de Página] | Nexa - Cold-Chain Operations Platform`.
 
-| Página | URL pública esperada | Title | Description | Author | OG Title | OG Description | Keywords |
-|---|---|---|---|---|---|---|---|
-| Home | `/nexa-website/` | `Nexa — Tu operacion de charcuteria y lacteos, por fin visible` | `Nexa — Un solo lugar para operar tu negocio de charcuteria, quesos y lacteos...` | `Nexa` | `Nexa — Tu operacion de charcuteria y lacteos, por fin visible` | `Deja de perseguir actualizaciones por WhatsApp...` | No implementado |
-| Platform | `/nexa-website/pages/platform.html` | `Nexa — What the Platform Does` | `Nexa Platform — One system for charcuterie, cheese, and dairy catalog...` | `Nexa` | `Nexa — What the Platform Actually Does` | `Five operational areas. One system...` | No implementado |
-| Company | `/nexa-website/pages/company.html` | `Nexa — Who We Are` | `Nexa — A small team in Lima building the operational system...` | `Nexa` | `Nexa — Who We Are` | `A small team of engineers and operators...` | No implementado |
-| FAQ | `/nexa-website/pages/faq.html` | `Nexa FAQ — Everything You Need to Know Before You Decide` | `Nexa FAQ — Answers to the most common questions...` | No implementado | `Nexa FAQ — Everything You Need to Know Before You Decide` | `How long does activation take?...` | No implementado |
-| Solutions Hub | `/nexa-website/pages/solutions/` | `Nexa Solutions — Built for the Nodes That Matter Most` | `Nexa Solutions — Purpose-built for charcuterie, cheese, and dairy...` | `Nexa` | `Nexa Solutions — Built for the Nodes That Matter Most` | `Every refrigerated food segment has different demands...` | No implementado |
-| Importers | `/nexa-website/pages/solutions/importers.html` | `Nexa Solutions — Importers & Wholesalers` | `Nexa Solutions — Importers & Wholesalers of charcuterie...` | `Nexa` | `Nexa Solutions — Importers & Wholesalers` | `Track container condition...` | No implementado |
-| Distributors | `/nexa-website/pages/solutions/distributors.html` | `Nexa Solutions — Charcuterie & Dairy Distribution` | `Nexa Solutions — Distributors for charcuterie, cheese, and dairy...` | `Nexa` | `Nexa Solutions — Charcuterie & Dairy Distribution` | `Replace WhatsApp ordering with B2B ordering...` | No implementado |
-| Cold Storage | `/nexa-website/pages/solutions/cold-storage.html` | `Nexa Solutions — Cold Storage Operators` | `Nexa Solutions — Cold Storage Operators for cheese, charcuterie...` | `Nexa` | `Nexa Solutions — Cold Storage Operators` | `Monitor cheese rooms, dairy chambers...` | No implementado |
+> Ejemplo: `<title>Platform | Nexa - Cold-Chain Operations Platform</title>`
 
-<p align="justify">
-Además de estas metaetiquetas, todas las páginas incluyen la etiqueta viewport, un encabezado principal visible y una estructura semántica consistente basada en elementos como nav, header, section, aside, main y footer. Esto mejora la legibilidad del contenido tanto para buscadores como para usuarios.
-</p>
+**Meta Descriptions (`<meta name="description">`):** Enfocadas en el problema resuelto (reducción de fricción B2B, control de frío). No superan los 155 caracteres.
+
+> Ejemplo: *"Your cold chain, finally visible. Nexa is the unified B2B architecture for catalog, inventory, orders, and temperature tracking. Built for cold-chain nodes."*
+
+**Open Graph (OG Tags):** Utilizados para compartir la herramienta en entornos corporativos (LinkedIn, Slack).
+
+- `og:title` prioriza claims fuertes: *"Every module connects to a live data layer."*
+- `og:image` enlaza a una imagen del UI shell o dashboard mockup que transmita profesionalismo enterprise.
+
+---
 
 ### 4.2.4. Searching Systems
 
 <p align="justify">
-Nexa <strong>no incorpora un motor de búsqueda tradicional</strong>. En el sitio no existe una barra de búsqueda global, tampoco formularios de búsqueda, filtros dinámicos ni páginas de resultados. Por ello, en esta etapa no corresponde describir un search engine como parte del producto público.
+El sistema de búsqueda está diseñado para operar tanto a nivel de adquisición de información (sitio web) como a nivel transaccional (portal de clientes).
 </p>
 
-<p align="justify">
-La necesidad de descubrimiento se resuelve con navegación directa. El volumen de páginas es reducido, la profundidad del sitio es baja y el dropdown de <strong>Solutions</strong> ya permite llegar rápido al contenido segmentado. Además, varias vistas muestran el acceso “Buscar en el FAQ”; sin embargo, ese recurso funciona como enlace hacia la página de preguntas frecuentes, no como búsqueda interna real.
-</p>
+**En el portal de clientes (B2B Portal):**
 
-| Mecanismo de descubrimiento | Implementación observable | Alcance real |
-|---|---|---|
-| Dropdown de `Solutions` | Menú desplegable con segmentos y descripciones | Descubrimiento de rutas por tipo de operador |
-| CTA hacia FAQ | Enlaces como `Leer las FAQ` o `Buscar en el FAQ` | Redirección a respuestas estructuradas |
-| Sidebar del FAQ | Navegación por categorías internas | Localización rápida dentro de la página FAQ |
-| Atajos de soporte | `support-card` y `support-search` | Acceso rápido a ayuda y contacto |
+- **Búsqueda predictiva y técnica:** Los usuarios (ej. bodegueros) pueden buscar directamente por nombre del producto o identificadores técnicos (SKU o ID).
+- **Filtros lógicos:** Se permite filtrar el catálogo por categorías (ej. lácteos, cárnicos) y cruzar resultados por "Disponibilidad Comercial" (`In Stock` / `Out of Stock`).
 
-<p align="justify">
-En consecuencia, el searching system de Nexa en este corte debe entenderse como un mecanismo de descubrimiento apoyado en navegación y accesos directos, no como un buscador autónomo.
-</p>
+**En el sitio web informativo (FAQ):**
+
+- Se utiliza un patrón de **Jump Nav** (navegación por anclas) y un sidebar pegajoso (*sticky*) en desktop para saltar directamente entre categorías de preguntas frecuentes sin necesidad de una barra de búsqueda compleja.
+
+---
 
 ### 4.2.5. Navigation Systems
 
 <p align="justify">
-El sistema de navegación de Nexa combina navegación global, navegación contextual, navegación anclada y navegación adaptada a móvil. El elemento central es una <strong>navbar persistente</strong> presente en todas las páginas, compuesta por logo de retorno al inicio, enlaces troncales, dropdown de soluciones, selector de idioma, CTA principal y acceso a FAQ. Esta barra constituye la capa de navegación global del sistema.
+El sistema de navegación de Nexa adopta una estructura enterprise plana, sólida y accesible, priorizando la claridad sobre la decoración.
 </p>
 
-<p align="justify">
-En segundo lugar, existe navegación contextual en las subpáginas de soluciones mediante un componente tipo <strong>breadcrumb</strong>, por ejemplo `Soluciones / Distribuidores` o `Soluciones / Importadores y mayoristas`. Aunque el sitio no usa breadcrumbs en todas las páginas, sí los implementa en las vistas de segmento para reforzar orientación dentro de esa rama específica. Esto debe mencionarse con precisión, sin exagerar su alcance a todo el sitio.
-</p>
+**Navbar (Navegación Principal):**
 
-<p align="justify">
-En tercer lugar, la página `FAQ` incorpora navegación anclada interna mediante un sidebar con categorías como <strong>Primeros pasos</strong>, <strong>La plataforma</strong>, <strong>Implementación</strong>, <strong>Seguridad y datos</strong> y <strong>Precios y acceso</strong>. Este patrón permite desplazamiento rápido dentro de una única página extensa y funciona como un sistema de navegación local complementario. Asimismo, varias páginas utilizan anclas directas como `company.html#contact` o `faq.html#getting-started`, lo que reduce el número de pasos para alcanzar contenido puntual.
-</p>
+Altura fija de 64px, fondo blanco puro (#FFFFFF). Utiliza una transición que añade una ligera sombra (`shadow-sm`) solo al hacer scroll más de 8px hacia abajo (`.scrolled`). Los enlaces centrales son: Home, Platform, Solutions, Company y FAQ; el enlace activo se destaca mediante peso tipográfico (600) y un color más intenso.
 
-<p align="justify">
-Finalmente, el sitio cuenta con una adaptación móvil clara. El botón `mobile-menu-toggle` abre una navegación colapsada con overlay, manteniendo acceso a links principales, cambio de idioma y CTA. Además, el uso de `skip-to-content` en todas las vistas mejora accesibilidad y acelera la navegación por teclado.
-</p>
+**Dropdown "Solutions":**
 
-| Capa de navegación | Evidencia en código | Función |
-|---|---|---|
-| Navegación global | `nav.navbar` en todas las páginas | Acceso consistente a las áreas principales |
-| Navegación contextual | `page-hero-breadcrumb` en páginas de soluciones | Orientación dentro de la rama segmentada |
-| Navegación local | Sidebar del FAQ con anclas internas | Recorrido rápido en contenido largo |
-| Navegación móvil | `mobile-menu-toggle` + `navbar-overlay` | Adaptación a pantallas pequeñas |
-| Navegación secundaria | Footer con enlaces por categorías | Refuerzo de rutas frecuentes |
-| Navegación de soporte | `support-card` y `support-search` | Atajo a ayuda, contacto y FAQ |
+Funciona mediante *click-to-open* (no hover, para garantizar accesibilidad). Despliega un panel de 288px e incluye un recubrimiento (*overlay*) oscuro al 5% sobre el resto de la página para concentrar el foco. Puede cerrarse haciendo clic fuera de él, presionando Escape, o mediante el mismo botón.
 
-<p align="justify">
-En conjunto, la arquitectura de información de Nexa es coherente con el estado actual del producto. Se trata de un sitio público compacto, con rutas claras, etiquetado consistente, SEO on-page bien resuelto para una landing multipágina y navegación suficiente para orientar al usuario sin recurrir a buscadores complejos ni estructuras sobredimensionadas. Esa proporción entre alcance real e interfaz visible vuelve la sección defendible ante la rúbrica y evita declarar componentes que aún no existen en la implementación.
-</p>
+**Scroll Strip Horizontal:**
+
+Para mostrar la trazabilidad técnica (*protocol strip*), se utiliza un sistema de navegación horizontal (`ScrollBy +/-360px`) controlado mediante botones tipo `.btn-icon` circulares.
+
+**Footer:**
+
+Funciona como ancla final y directorio. Ubicado en una zona oscura (fondo `--c-footer-dark`, #0B1120), está estructurado en una grilla asimétrica (1.4fr + 3 columnas), con enlaces en texto blanco a un 50% de opacidad y hover al 90%.
+
+*(Imagen pendiente de agregar)*
+
+*Figura 6. Comportamiento del Navbar (estado base vs scrolled) y el Dropdown de Solutions.*
