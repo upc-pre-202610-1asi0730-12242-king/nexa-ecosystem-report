@@ -26,7 +26,7 @@ Para estandarizar el desarrollo y asegurar la compatibilidad entre las estacione
 
 **Desarrollo Integrado (IDE) y Arquitectura:**
 
-- **Visual Studio Code:** Editor de código estandarizado para la maquetación de la Landing Page (HTML/CSS/JS) y el desarrollo del Frontend (Vue.js).
+- **Visual Studio Code:** Editor de código estandarizado para la maquetación e implementación de la Landing Page. El sitio público se construye con HTML5 semántico, CSS personalizado y JavaScript vanilla, sin dependencia de frameworks externos, garantizando compatibilidad, rendimiento y autonomía de despliegue.
 
 - **Rider (JetBrains):** Entorno de desarrollo principal para la construcción del Backend y el API RESTful utilizando C# y ASP.NET Core.
 
@@ -77,7 +77,7 @@ Para garantizar la mantenibilidad y legibilidad del código fuente, el equipo ap
 
 **Convenciones Backend (C# / ASP.NET Core):** PascalCase para Clases, Interfaces y Métodos; camelCase para variables locales y parámetros.
 
-**Convenciones Frontend (Vue.js):** Nombres de componentes en PascalCase con múltiples palabras para evitar colisiones con elementos HTML nativos (ej. `OrderList.vue`, `ProductCard.vue`).
+**Convenciones Frontend (HTML/CSS/JS):** El sitio público sigue las guías de estilo de Google HTML/CSS y la convención W3C para JavaScript. Los archivos CSS se organizan por responsabilidad en módulos separados (`tokens.css`, `main.css`, `components.css`, `layout.css`, `typography.css`, `buttons.css`, `patterns.css`). Los archivos JavaScript se estructuran por función (`interactions.js`, `animations.js`, `i18n.js`). Los identificadores HTML siguen la convención `kebab-case` para clases e IDs. El soporte bilingüe EN/ES se implementa mediante un módulo de internacionalización propio (`i18n.js`) sin dependencia de frameworks externos.
 
 ### 5.1.4. Software Deployment Configuration
 
@@ -85,6 +85,6 @@ Para garantizar la mantenibilidad y legibilidad del código fuente, el equipo ap
 El despliegue de los artefactos de software se realiza en entornos separados para garantizar escalabilidad y trazabilidad por ambiente:
 </p>
 
-- **Landing Page:** Desplegada en GitHub Pages con CI/CD automatizado desde la rama `main` del repositorio `nexa-website`.
+- **Landing Page (`nexa-website`):** Desplegada en GitHub Pages con CI/CD automatizado desde la rama `main`. El sitio se organiza en una estructura multipágina con `index.html` como punto de entrada y subdirectorios `pages/` para secciones secundarias (`company.html`, `platform.html`, `faq.html`) y rutas de soluciones (`pages/solutions/distributors.html`, `pages/solutions/importers.html`, `pages/solutions/cold-storage.html`, `pages/solutions/index.html`). Los recursos estáticos (CSS, JS, imágenes) residen en `assets/`.
 
-- **Backend (API RESTful) y Base de Datos:** Alojados en plataformas cloud de grado empresarial, garantizando procesamiento seguro de transacciones B2B y persistencia relacional.
+- **Backend (API RESTful) y Base de Datos:** Alojados en plataformas cloud de grado empresarial, garantizando procesamiento seguro de transacciones B2B y persistencia relacional. Esta capa corresponde a una fase posterior del desarrollo; por el momento el despliegue activo es exclusivamente la Landing Page.
