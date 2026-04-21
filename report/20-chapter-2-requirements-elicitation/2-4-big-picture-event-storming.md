@@ -1,58 +1,10 @@
 ## 2.4. Big Picture Eventstorming
 
 <p align="justify">
-El Big Picture EventStorming de Nexa modela el flujo principal del pedido B2B de productos refrigerados, desde la intención de compra hasta el cierre de la entrega. Su propósito en esta etapa no es diseñar todavía la arquitectura técnica del sistema, sino hacer visible el recorrido del negocio, los actores que intervienen, los eventos más relevantes del dominio y los puntos de fricción que explican por qué el problema persiste.
+El Big Picture EventStorming de Nexa modela el flujo principal del pedido B2B de productos refrigerados, desde la intención de compra hasta el cierre de la entrega. Su propósito en esta etapa no es describir todas las integraciones futuras del dominio, sino identificar los eventos, comandos, políticas y actores que explican el comportamiento mínimo del MVP y sus principales restricciones operativas.
 </p>
 
-<p align="justify">
-El modelado mantiene la misma taxonomía canónica definida en el proyecto. En ese marco, <strong>S1</strong> se expresa principalmente en la captura asistida y validación comercial, <strong>S2</strong> en la consulta, envío y seguimiento del pedido por parte del cliente comercial, y <strong>S3</strong> en el despacho, la gestión de incidencias y el cierre de la entrega. Las restricciones operativas del dominio permanecen visibles a lo largo del flujo, pero no redefinen la segmentación del informe.
-</p>
-
-<p align="justify">
-El EventStorming se construyó como un ejercicio de síntesis del dominio a partir de la evidencia reunida en entrevistas, needfinding y análisis competitivo. En lugar de partir de pantallas o módulos, el equipo ordenó primero los hechos que modifican el estado del pedido y luego examinó qué actores, restricciones y tensiones aparecen en esas transiciones. Este enfoque resulta útil porque evita diseñar el sistema desde una lista de funcionalidades dispersas y obliga a pensar el producto como una secuencia coherente de eventos del negocio.
-</p>
-
-<p align="justify">
-Como respaldo del trabajo colaborativo, la evidencia visual del modelado se complementa con las capturas de la sesión preservadas en la sección 4.6.1 y con las evidencias de coordinación del sprint registradas en el anexo. En esta sección, el énfasis está en la lectura del flujo y no en repetir capturas ya documentadas en el bloque de arquitectura.
-</p>
-
-### 2.4.1. Proceso de construcción del modelado
-
-*Proceso de construcción del modelado*
-
-<table border="1" cellspacing="0" cellpadding="6" align="center">
-  <tr>
-    <th>Etapa</th>
-    <th>Propósito</th>
-    <th>Resultado obtenido</th>
-  </tr>
-  <tr>
-    <td><strong>1. Delimitación del flujo</strong></td>
-    <td>Definir qué tramo del negocio debía representarse en el MVP</td>
-    <td>Se acotó el modelado desde la intención de compra hasta el cierre de entrega</td>
-  </tr>
-  <tr>
-    <td><strong>2. Identificación de eventos</strong></td>
-    <td>Reconocer qué hechos cambian realmente el estado del pedido</td>
-    <td>Se consolidó la secuencia borrador → envío → validación → confirmación → preparación → despacho → entrega</td>
-  </tr>
-  <tr>
-    <td><strong>3. Asociación de actores e intervención</strong></td>
-    <td>Vincular cada cambio de estado con los responsables y momentos críticos del flujo</td>
-    <td>Se clarificó la participación de cliente comercial, coordinación comercial, operación y reparto</td>
-  </tr>
-  <tr>
-    <td><strong>4. Identificación de restricciones</strong></td>
-    <td>Hacer visibles las fricciones y condiciones operativas que impiden un flujo continuo</td>
-    <td>Se incorporaron validación comercial tardía, stock incierto, FEFO manual, visibilidad fragmentada y cierre débil de entrega</td>
-  </tr>
-</table>
-
-La tabla resume el proceso seguido para convertir evidencia cualitativa en un modelo de dominio entendible y útil para el MVP. Elaboración propia.
-
-### 2.4.2. Actores del dominio
-
-*Actores del dominio*
+### 2.4.1. Actores del dominio
 
 | Actor | Responsabilidad principal |
 |-------|----------------------------|
@@ -63,51 +15,47 @@ La tabla resume el proceso seguido para convertir evidencia cualitativa en un mo
 | Chofer de reparto | Ejecuta el despacho y registra el cierre de entrega |
 | Administrador autorizado | Gestiona cuentas internas y parámetros base del sistema |
 
-### 2.4.3. Eventos del dominio y puntos de tensión principales
+### 2.4.2. Comandos y eventos principales
 
-*Eventos del dominio y puntos de tensión principales*
-
-| Evento del dominio | Actores implicados | Tensión o implicancia observada |
+| Comando | Evento de dominio esperado | Resultado de negocio |
 |---------|----------------------------|----------------------|
-| Cliente consulta disponibilidad o solicita mercadería | Cliente comercial, coordinación comercial | El pedido suele nacer con información incompleta o por canales informales |
-| Pedido creado en borrador | Coordinación comercial, cliente comercial | La información todavía puede contener ambigüedades, omisiones o retrabajo |
-| Pedido enviado para revisión | Coordinación comercial, operación comercial | Empieza un tramo sensible donde crédito, stock y condiciones frenan la continuidad |
-| Pedido validado o bloqueado | Coordinación comercial, supervisión comercial / operación | El problema no es solo aprobar o rechazar, sino hacerlo antes de prometer algo inviable |
-| Pedido confirmado | Coordinación comercial, almacén / operación, cliente comercial | La confirmación debe sostener confianza y preparar el cumplimiento operativo real |
-| Pedido en preparación | Almacén / operación | Aparecen tensiones de disponibilidad, lote, vencimiento y prioridad FEFO |
-| Pedido despachado | Operación, chofer de reparto, cliente comercial | La visibilidad del estado empieza a ser crítica para evitar incertidumbre y reclamos |
-| Incidencia de ruta registrada | Chofer de reparto, coordinación comercial, cliente comercial | Si la incidencia no se comparte a tiempo, el problema vuelve a fragmentarse |
-| Entrega cerrada con evidencia | Chofer de reparto, cliente comercial, supervisión comercial / operación | El cierre débil deja reclamos abiertos y baja trazabilidad del servicio |
-| Pedido cancelado antes de despacho | Coordinación comercial, operación | La cancelación exige recuperar continuidad operativa y evitar compromisos inconsistentes |
+| Registrar o actualizar cliente | Cliente comercial registrado / actualizado | El cliente queda listo para operar con condiciones comerciales vigentes |
+| Publicar producto en catálogo | Producto publicado en catálogo | El producto puede mostrarse al cliente según sus condiciones |
+| Crear borrador de pedido | Pedido creado en borrador | El pedido existe antes del envío formal |
+| Identificar cliente por RUC o DNI | Cliente identificado y condiciones cargadas | El flujo asistido recupera crédito, lista de precios y estado comercial |
+| Enviar pedido | Pedido enviado | Inicia la validación comercial y operativa |
+| Validar crédito y morosidad | Pedido bloqueado por crédito o pedido apto para confirmación | Se evita prometer pedidos inviables |
+| Reservar stock | Stock comprometido | La disponibilidad visible se ajusta a la realidad operativa |
+| Confirmar pedido | Pedido confirmado | El cliente recibe confirmación y el equipo interno puede prepararlo |
+| Iniciar preparación | Pedido en preparación | La operación reconoce el inicio del armado |
+| Registrar despacho | Pedido despachado | El pedido sale a entrega con seguimiento activo |
+| Registrar incidencia de ruta | Incidencia registrada y ETA actualizado | El cliente y la coordinación reciben visibilidad de la demora |
+| Registrar prueba de entrega | POD registrado | El cierre queda respaldado con evidencia |
+| Cerrar entrega | Pedido entregado | El flujo comercial-operativo termina con trazabilidad suficiente |
+| Cancelar pedido antes de despacho | Pedido cancelado y stock liberado | Se evita dejar inventario comprometido de forma incorrecta |
 
-### 2.4.4. Pain points y restricciones operativas identificadas
+### 2.4.3. Políticas y reglas identificadas
 
-*Pain points y restricciones operativas identificadas*
-
-| Pain point o restricción | Dónde aparece | Efecto sobre el flujo |
+| Política | Disparador | Regla resultante |
 |----------|------------|------------------|
-| Validación comercial tardía | Entre envío y confirmación del pedido | Se prometen pedidos que luego deben corregirse o bloquearse |
-| Stock poco confiable o poco visible | Antes de la confirmación y durante preparación | La disponibilidad percibida no coincide con la realidad operativa |
-| Visibilidad fragmentada del estado | Entre confirmación, despacho e incidencia | Cada actor pierde contexto y aumenta la dependencia de llamadas o mensajes |
-| Control FEFO manual o disperso | Durante preparación y despacho | El manejo de vencimientos depende de memoria operativa y revisiones paralelas |
-| Cierre de entrega con evidencia insuficiente | Al final del flujo | Quedan reclamos, dudas sobre cumplimiento y poca trazabilidad del servicio |
-| Dependencia de coordinación humana para destrabar el proceso | En todo el ciclo del pedido | El flujo no escala bien y se vuelve sensible a interrupciones y retrabajo |
+| Validación comercial previa | Pedido enviado | El pedido no avanza si el cliente tiene saldo vencido o si el monto supera su crédito disponible |
+| Reserva de inventario | Pedido confirmado | El sistema descuenta stock disponible y aumenta stock comprometido |
+| Liberación de reserva | Pedido cancelado antes del despacho | El sistema devuelve las unidades al stock disponible |
+| Visibilidad compartida | Cambio de estado o incidencia | El sistema registra historial y actualiza el estado visible para los roles autorizados |
+| Control de rotación | Registro de lotes o vencimientos | Los productos con vencimiento próximo deben quedar visibles para priorización FEFO |
+| Cierre con evidencia | Confirmación de entrega | El pedido no debe cerrarse como entregado sin al menos una prueba de entrega válida |
 
-### 2.4.5. Flujo resumido del dominio
+### 2.4.4. Flujo resumido del dominio
 
 1. El cliente consulta el catálogo o la coordinación comercial captura el pedido de forma asistida.
-2. Se identifican las condiciones comerciales y la disponibilidad necesarias para revisar el pedido.
-3. El pedido pasa de borrador a enviado para validación.
-4. La coordinación comercial y la operación revisan crédito, morosidad y disponibilidad básica antes de confirmar.
-5. Si la validación es satisfactoria, el pedido se confirma y queda listo para preparación.
-6. La operación prepara la salida y coordina el despacho.
-7. Durante el despacho pueden registrarse incidencias y actualizarse la comunicación de entrega.
-8. La entrega se cierra con evidencia y el pedido queda concluido.
+2. El sistema identifica al cliente y recupera sus condiciones comerciales.
+3. El pedido pasa de borrador a enviado.
+4. El sistema valida crédito, morosidad y disponibilidad básica.
+5. Si la validación es satisfactoria, el pedido se confirma y reserva stock.
+6. La operación lo pasa a preparación y luego a despacho.
+7. Durante el despacho se pueden registrar incidencias y recalcular la ETA.
+8. La entrega se cierra con evidencia y el pedido queda entregado.
 
 <p align="justify">
-Este modelado refuerza dos ideas centrales del proyecto: el problema principal no está en un único “módulo” aislado, sino en la transición entre captura, validación, disponibilidad, despacho y cierre; y las restricciones operativas del dominio siguen siendo decisivas para definir reglas y criterios de funcionamiento a lo largo del flujo.
-</p>
-
-<p align="justify">
-La principal contribución del EventStorming al capítulo no es solo ordenar nombres de eventos, sino mostrar que el valor del sistema depende de sostener continuidad entre estados. Si el pedido cambia de mano entre actores, pero el sistema no conserva reglas, evidencia y visibilidad comunes, el problema persiste aunque existan interfaces nuevas. En ese sentido, el modelado confirma que la unidad real de diseño no es una pantalla aislada, sino el tránsito completo del pedido entre S1, S2, S3 y las restricciones definidas por la operación.
+Este modelado refuerza dos ideas centrales del proyecto: el problema principal no está en un único “módulo” aislado, sino en la transición entre captura, validación, disponibilidad, despacho y cierre; y la jefatura logística, aunque no sea una persona primaria del backlog, sigue siendo fundamental para definir políticas y restricciones del dominio.
 </p>
