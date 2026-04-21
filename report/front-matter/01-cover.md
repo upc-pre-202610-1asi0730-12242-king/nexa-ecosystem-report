@@ -10,14 +10,13 @@
 
 <br>
 
-## Ingeniería de Software
+### Ingeniería de Software
 
 <br>
 <br>
 
-**Período Académico:** 2026-10
+**Período:** 2026-01  
 **Curso:** Aplicaciones Web (NRC 12242)  
-**Sección:** 1ASI0730
 **Docente:** Velásquez Núñez, Ángel Augusto
 
 <br>
@@ -25,21 +24,14 @@
 
 ---
 
-# Informe de Trabajo Final
-
-## Informe de Avance 1 (AV1)
-
-**Startup:** Nexa  
-**Producto:** Nexa  
-**Equipo:** KING  
-**Mes y Año:** Abril 2026
+# INFORME DE TRABAJO FINAL
 
 ---
 
 <br>
 <br>
 
-## Relación de integrantes
+### Relación de integrantes
 
 <br>
 
