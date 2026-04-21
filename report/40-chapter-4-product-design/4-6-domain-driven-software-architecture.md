@@ -12,47 +12,47 @@ El Design-Level EventStorming profundiza en los bounded contexts identificados d
 
 **Ilustración 10**
 *Design-Level EventStorming — Paso 1: Exploración de eventos detallados*
-![DDD Paso 1](../assets/images/ddd/PASO%201.jpeg)
+![DDD Paso 1](../assets/images/ddd/PASO_1.jpeg)
 *Nota.* Identificación de eventos granulares dentro de los contextos de órdenes e inventario. Elaboración propia.
 
 **Ilustración 11**
 *Design-Level EventStorming — Paso 2: Definición de comandos y actores*
-![DDD Paso 2](../assets/images/ddd/PASO%202.jpeg)
+![DDD Paso 2](../assets/images/ddd/PASO_2.jpeg)
 *Nota.* Asociación de acciones específicas con los roles responsables identified en el negocio. Elaboración propia.
 
 **Ilustración 12**
 *Design-Level EventStorming — Paso 3: Identificación de agregados*
-![DDD Paso 3](../assets/images/ddd/PASO%203.jpeg)
+![DDD Paso 3](../assets/images/ddd/PASO_3.jpeg)
 *Nota.* Definición de los objetos de negocio que actúan como raíz de consistencia para el sistema. Elaboración propia.
 
 **Ilustración 13**
 *Design-Level EventStorming — Paso 4: Modelado de políticas y reglas*
-![DDD Paso 4](../assets/images/ddd/PASO%204.jpeg)
+![DDD Paso 4](../assets/images/ddd/PASO_4.jpeg)
 *Nota.* Definición de triggers automáticos entre contextos, como la validación de crédito post-pedido. Elaboración propia.
 
 **Ilustración 14**
 *Design-Level EventStorming — Paso 5: Refinamiento de Bounded Contexts*
-![DDD Paso 5](../assets/images/ddd/PASO%205.jpeg)
+![DDD Paso 5](../assets/images/ddd/PASO_5.jpeg)
 *Nota.* Ajuste de límites entre contextos comerciales y logísticos. Elaboración propia.
 
 **Ilustración 15**
 *Design-Level EventStorming — Paso 6: Definición de servicios externos*
-![DDD Paso 6](../assets/images/ddd/PASO%206.jpeg)
+![DDD Paso 6](../assets/images/ddd/PASO_6.jpeg)
 *Nota.* Identificación de puntos de contacto con sistemas de terceros. Elaboración propia.
 
 **Ilustración 16**
 *Design-Level EventStorming — Paso 7: Diseño de UI Flows preliminares*
-![DDD Paso 7](../assets/images/ddd/PASO%207.jpeg)
+![DDD Paso 7](../assets/images/ddd/PASO_7.jpeg)
 *Nota.* Conexión entre la lógica de dominio y la experiencia de usuario. Elaboración propia.
 
 **Ilustración 17**
 *Design-Level EventStorming — Paso 9: Validación de consistencia*
-![DDD Paso 9](../assets/images/ddd/PASO%209.jpeg)
+![DDD Paso 9](../assets/images/ddd/PASO_9.jpeg)
 *Nota.* Revisión final de flujos transversales previo al diseño técnico. Elaboración propia.
 
 **Ilustración 18**
 *Design-Level EventStorming — Paso 10: Salida hacia arquitectura técnica*
-![DDD Paso 10](../assets/images/ddd/PASO%2010.jpeg)
+![DDD Paso 10](../assets/images/ddd/PASO_10.jpeg)
 *Nota.* Consolidación del modelo de dominio para su traducción a infraestructura. Elaboración propia.
 
 <p align="justify">

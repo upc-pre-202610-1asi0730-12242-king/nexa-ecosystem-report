@@ -110,7 +110,7 @@ Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo c
     <td>Team Member</td>
     <td>
       <p align="justify">
-      Estudiante de cuarto ciclo de Ingeniería de Software, apasionado por la tecnología y el software. Responsable y perfeccionista, siempre busca la máxima calidad en sus proyectos. En su tiempo libre disfruta de videojuegos, música y compartir con amigos.
+      Soy Joaquín, estudiante de quinto ciclo de Ingeniería de Software, apasionado por la tecnología y el software. Responsable y perfeccionista, siempre busca la máxima calidad en sus proyectos. En su tiempo libre disfruta de videojuegos, música y compartir con amigos.
       </p>
     </td>
   </tr>
