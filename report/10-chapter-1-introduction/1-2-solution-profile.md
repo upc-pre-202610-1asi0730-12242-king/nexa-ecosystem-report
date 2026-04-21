@@ -80,13 +80,39 @@ Sobre esta base, es razonable inferir que una parte importante de la coordinaci�
 </p>
 
 <p align="justify">
-En términos operativos, el proceso actual de gestión de pedidos en muchas organizaciones puede describirse como un flujo manual y fragmentado: el cliente comercial comunica su pedido mediante texto libre, llamada o nota de voz; el personal administrativo interpreta y transcribe esa información a hojas de cálculo o sistemas aislados; y el área operativa prepara el pedido con base en información que no siempre refleja la disponibilidad actualizada ni los criterios óptimos de rotación.Investigaciones sobre almacenamiento y distribución de perecederos muestran que este tipo de gestión manual y no estandarizada aumenta la probabilidad de errores en preparación de pedidos, de quiebres de stock y de pérdidas de producto por deficiencias en la coordinación entre áreas (Muñoz et al., 2022; Buenaño et al., 2024).  
+En términos operativos, el proceso actual de gestión de pedidos en muchas organizaciones puede describirse como un flujo manual y fragmentado: el cliente comercial comunica su pedido mediante texto libre, llamada o nota de voz; el personal administrativo interpreta y transcribe esa información a hojas de cálculo o sistemas aislados; y el área operativa prepara el pedido con base en información que no siempre refleja la disponibilidad actualizada ni los criterios óptimos de rotación.
 </p>
 
 <p align="justify">
-Como consecuencia de esta desarticulación se observan al menos tres impactos principales. Primero, errores en la preparación y despacho de pedidos -cantidades inexactas, productos equivocados o retrasos por falta de stock-, coherentes con los hallazgos de estudios que vinculan procesos manuales y ausencia de sistemas integrados con incrementos en errores operativos en cadenas de alimentos perecederos (Muñoz et al., 2022; Buenaño et al., 2024). Segundo, mermas económicas por caducidad o mala rotación, ya que la dificultad de conectar información de pedidos, inventario y fechas de vencimiento limita la aplicación sistemática de estrategias de rotación como FIFO o FEFO en cadenas de frío (Tutiven et al., 2026; Arriaga et al., 2023). Tercero, un riesgo normativo y sanitario significativo, dado que la comercialización y transporte de productos refrigerados exigen trazabilidad, registros de temperatura y capacidad de respuesta ante auditorías o incidentes; la literatura sobre cadena de frío en contextos sanitarios y agroalimentarios muestra que las rupturas térmicas y la falta de trazabilidad se asocian con incumplimientos de normas y con riesgo para la seguridad del paciente o consumidor (Vértiz, 2011; Tutiven et al., 2026).
-A pesar de ello, diferentes trabajos y diagnósticos sectoriales indican que muchas empresas de tamaño mediano priorizan aún la inversión en activos físicos -vehículos, cámaras frigoríficas y equipos de refrigeración- por encima de la inversión en soluciones digitales para la gestión integral de la cadena de frío y la operación comercial (Rivas & Castillo, 2020; Torres & Tardillo 2020; Aguayo et al., 2025). Desde la perspectiva de la gestión de riesgos en la cadena de suministro, esta asimetría sugiere que el problema central no se limita a la capacidad física, sino a la vulnerabilidad operativa asociada a procesos de información que no escalan al mismo ritmo que el volumen de pedidos y clientes. En consecuencia, la falta de integración entre catálogo, pedido, inventario y seguimiento reduce la trazabilidad de extremo a extremo, incrementa los errores y restringe la posibilidad de crecimiento ordenado y sostenible del negocio de distribución de productos refrigerados (Buenaño et al., 2024; Rivas & Castillo, 2020; Aguayo et al., 2025).
-A partir de este contexto, el proyecto Nexa se plantea como respuesta a una problemática concreta identificada en la literatura y en la práctica: la ausencia -o limitada disponibilidad- de soluciones digitales especializadas que permitan a empresas importadoras y distribuidoras de productos refrigerados articular, en una única plataforma, la gestión del flujo principal de pedidos B2B (catálogo, condiciones comerciales y pedidos) con la información operativa relevante (stock, rotación, control de cadena de frío y seguimiento logístico), reduciendo así la dependencia de canales informales y registros fragmentados.
+Investigaciones sobre almacenamiento y distribución de perecederos muestran que este tipo de gestión manual y no estandarizada aumenta la probabilidad de errores en preparación de pedidos, de quiebres de stock y de pérdidas de producto por deficiencias en la coordinación entre áreas (Muñoz et al., 2022; Buenaño et al., 2024).
+</p>
+
+<p align="justify">
+Como consecuencia de esta desarticulación se observan al menos tres impactos principales:
+</p>
+
+<p align="justify">
+<b>Primero</b>, errores en la preparación y despacho de pedidos —como cantidades inexactas, productos erróneos o retrasos por falta de stock—, los cuales son coherentes con los hallazgos de estudios que vinculan procesos manuales y ausencia de sistemas integrados con incrementos en errores operativos en cadenas de alimentos perecederos (Muñoz et al., 2022; Buenaño et al., 2024).
+</p>
+
+<p align="justify">
+<b>Segundo</b>, mermas económicas por caducidad o mala rotación, ya que la dificultad de conectar información de pedidos, inventario y fechas de vencimiento limita la aplicación sistemática de estrategias de rotación como FIFO o FEFO en cadenas de frío (Tutiven et al., 2026; Arriaga et al., 2023).
+</p>
+
+<p align="justify">
+<b>Tercero</b>, un riesgo normativo y sanitario significativo, dado que la comercialización y transporte de productos refrigerados exigen trazabilidad, registros de temperatura y capacidad de respuesta ante auditorías o incidentes. La literatura sobre cadena de frío en contextos sanitarios y agroalimentarios muestra que las rupturas térmicas y la falta de trazabilidad se asocian con incumplimientos de normas y con riesgo para la seguridad del paciente o consumidor (Vértiz, 2011; Tutiven et al., 2026).
+</p>
+
+<p align="justify">
+A pesar de ello, diferentes trabajos y diagnósticos sectoriales indican que muchas empresas de tamaño mediano priorizan aún la inversión en activos físicos —incluyendo vehículos, cámaras frigoríficas y equipos de refrigeración especializados— por encima de la inversión en soluciones digitales para la gestión integral de la cadena de frío y la operación comercial (Rivas & Castillo, 2020; Torres & Tardillo, 2020; Aguayo et al., 2025).
+</p>
+
+<p align="justify">
+Desde la perspectiva de la gestión de riesgos en la cadena de suministro, esta asimetría sugiere que el problema central no se limita a la capacidad física, sino a la vulnerabilidad operativa asociada a procesos de información que no escalan al mismo ritmo que el volumen de pedidos y clientes. En consecuencia, la falta de integración entre catálogo, pedido, inventario y seguimiento reduce la trazabilidad de extremo a extremo, incrementa los errores y restringe la posibilidad de crecimiento ordenado y sostenible del negocio de distribución de productos refrigerados (Buenaño et al., 2024; Rivas & Castillo, 2020; Aguayo et al., 2025).
+</p>
+
+<p align="justify">
+A partir de este contexto, el proyecto Nexa se plantea como respuesta a una problemática concreta identificada en la literatura y en la práctica: la ausencia de soluciones digitales especializadas que permitan a empresas importadoras y distribuidoras de productos refrigerados articular, en una única plataforma, la gestión del flujo principal de pedidos B2B (catálogo, condiciones comerciales y pedidos) con la información operativa relevante (stock, rotación, control de cadena de frío y seguimiento logístico), reduciendo así la dependencia de canales informales y registros fragmentados.
 </p>
 
 

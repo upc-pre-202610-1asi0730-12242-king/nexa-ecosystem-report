@@ -449,21 +449,21 @@ entonces el sistema no promete disponibilidad 24/7 ni tiempos de respuesta espec
 
 <tr>
 <td>US18</td>
-<td>Enviar el formulario de contacto comercial</td>
-<td>Como visitante interesado, quiero enviar mis datos en el formulario de contacto, para solicitar una conversación comercial sobre Nexa sin tener que buscar canales alternativos.</td>
+<td>Enviar solicitud de demo y contacto comercial</td>
+<td>Como visitante bilingüe del sitio, quiero enviar mis datos a través del formulario principal, para abrir una línea de conversación oficial sobre la implementación de Nexa en mi negocio.</td>
 <td>
-<strong>Escenario 1 — Envío exitoso del formulario:</strong><br>
-Dado que el visitante completó correctamente los campos <code>name</code>, <code>work email</code>, <code>company</code> y <code>operation details</code>,<br>
-cuando envía el formulario,<br>
-entonces el sistema registra la solicitud de contacto y presenta una confirmación explícita.<br><br>
-<strong>Escenario 2 — Bloqueo por campo obligatorio faltante:</strong><br>
-Dado que falta uno o más de los campos requeridos,<br>
-cuando el visitante intenta enviar el formulario,<br>
-entonces el sistema bloquea la operación y señala visualmente los campos faltantes.<br><br>
-<strong>Escenario 3 — Prevención de envío duplicado:</strong><br>
-Dado que el visitante ya envió el formulario correctamente,<br>
-cuando intenta enviarlo una segunda vez desde la misma sesión,<br>
-entonces el sistema impide el envío duplicado y muestra el mensaje de confirmación original.
+<strong>Escenario 1 — Registro exitoso de prospecto:</strong><br>
+Dado que el visitante completó <code>work email</code> y <code>operation details</code>,<br>
+ cuando el sistema procesa el envío,<br>
+ entonces almacena la solicitud en el CRM de Nexa y muestra una confirmación de éxito inmediata.<br><br>
+<strong>Escenario 2 — Alerta de campos obligatorios:</strong><br>
+Dado que el formulario se intenta enviar sin la información mínima,<br>
+ cuando se valida la acción,<br>
+ entonces el sistema resalta los campos faltantes sin borrar el progreso actual del usuario.<br><br>
+<strong>Escenario 3 — Sincronización multi-idioma del formulario:</strong><br>
+Dado que el sitio está en inglés,<br>
+ cuando el visitante carga el formulario,<br>
+ entonces el sistema presenta etiquetas y validaciones en inglés, manteniendo la coherencia durante todo el flujo.
 </td>
 <td>3</td>
 <td>EP05</td>
@@ -471,21 +471,21 @@ entonces el sistema impide el envío duplicado y muestra el mensaje de confirmac
 
 <tr>
 <td>US19</td>
-<td>Recibir validación y confirmación del formulario</td>
-<td>Como visitante interesado, quiero recibir validación en tiempo real y una confirmación al enviar el formulario, para saber exactamente qué está incorrecto y si mi solicitud fue aceptada.</td>
+<td>Validación inteligente y feedback en tiempo real</td>
+<td>Como visitante del sitio, quiero recibir validaciones instantáneas mientras escribo, para corregir errores de formato (ej: email) antes de intentar enviar el formulario.</td>
 <td>
-<strong>Escenario 1 — Confirmación de recepción exitosa:</strong><br>
-Dado que el formulario fue enviado con datos válidos,<br>
-cuando finaliza el envío,<br>
-entonces el sistema muestra una confirmación explícita de recepción con mensaje legible.<br><br>
-<strong>Escenario 2 — Validación de formato de correo:</strong><br>
-Dado que el correo electrónico no cumple el formato esperado,<br>
-cuando el visitante intenta enviar o pasa al campo siguiente,<br>
-entonces el sistema señala el error específico sin borrar la información válida ya ingresada en otros campos.<br><br>
-<strong>Escenario 3 — Validación campo a campo antes del envío:</strong><br>
-Dado que el visitante completó parcialmente el formulario,<br>
-cuando hace clic en enviar,<br>
-entonces el sistema resalta todos los campos inválidos de forma simultánea en lugar de mostrar solo el primero encontrado.
+<strong>Escenario 1 — Validación de máscara de correo:</strong><br>
+Dado que el visitante ingresa un correo sin formato corporativo,<br>
+ cuando el foco sale del campo,<br>
+ entonces el sistema muestra una advertencia visual sobre la estructura necesaria.<br><br>
+<strong>Escenario 2 — Limpieza de datos no válidos:</strong><br>
+Dado que el sistema detecta caracteres prohibidos en campos de texto técnico,<br>
+ cuando se procesa la entrada,<br>
+ entonces filtra o alerta sobre el contenido inválido para asegurar la integridad del contacto.<br><br>
+<strong>Escenario 3 — Confirmación visual persistente:</strong><br>
+Dado que el envío fue exitoso,<br>
+ cuando el visitante navega por el resto del sitio en la misma sesión,<br>
+ entonces el sistema puede recordar que ya se realizó el contacto para evitar registros duplicados.
 </td>
 <td>3</td>
 <td>EP05</td>
@@ -765,21 +765,21 @@ entonces el sistema refleja las condiciones vigentes más recientes y no una ver
 
 <tr>
 <td>US31</td>
-<td>Registrar productos, cantidades y observaciones desde celular o tablet</td>
-<td>Como coordinadora comercial (Valeria), quiero registrar productos, cantidades y observaciones desde celular o tablet, para capturar pedidos en campo o en oficina sin depender de un escritorio.</td>
+<td>Registrar productos y capturar evidencia en campo</td>
+<td>Como coordinadora comercial (Valeria), quiero registrar productos y observaciones desde un dispositivo móvil, para digitalizar pedidos en tiempo real con soporte de imágenes adjuntas.</td>
 <td>
-<strong>Escenario 1 — Registro de líneas en dispositivo móvil:</strong><br>
-Dado que la coordinadora usa un dispositivo móvil o tablet autenticado,<br>
-cuando registra líneas del pedido,<br>
-entonces el sistema le permite agregar productos, cantidades y observaciones dentro del mismo flujo asistido con la misma validación que en escritorio.<br><br>
-<strong>Escenario 2 — Mismas validaciones en dispositivos distintos:</strong><br>
-Dado que la coordinadora cambia de dispositivo o tamaño de pantalla durante el registro,<br>
-cuando continúa el pedido en el nuevo dispositivo,<br>
-entonces el sistema mantiene las mismas reglas de negocio y la información ingresada previamente.<br><br>
-<strong>Escenario 3 — Guardado automático de progreso:</strong><br>
-Dado que la coordinadora está registrando líneas de pedido en campo y la sesión se interrumpe,<br>
-cuando vuelve a ingresar al sistema,<br>
-entonces el borrador conserva las líneas registradas antes de la interrupción sin pérdida de datos.
+<strong>Escenario 1 — Captura responsiva del pedido:</strong><br>
+Dado que la operadora usa una tablet,<br>
+ cuando registra líneas de productos,<br>
+ entonces el sistema adapta el catálogo táctil permitiendo una selección rápida y registro de notas.<br><br>
+<strong>Escenario 2 — Soporte multimedia (Imágenes):</strong><br>
+Dado que el pedido requiere evidencia fotográfica del estado físico inicial,<br>
+ cuando se adjunta una imagen al borrador,<br>
+ entonces el sistema la vincula al identificador del pedido preservando la calidad.<br><br>
+<strong>Escenario 3 — Guardado incremental:</strong><br>
+Dado que el registro se realiza en zonas de baja conectividad,<br>
+ cuando el sistema detecta pérdida de red,<br>
+ entonces el borrador se guarda localmente y se sincroniza automáticamente al recuperar la señal.
 </td>
 <td>3</td>
 <td>EP08</td>
@@ -1027,21 +1027,21 @@ entonces el sistema aplica solo una transición de forma atómica y notifica a l
 
 <tr>
 <td>US42</td>
-<td>Registrar despacho y prueba de entrega</td>
-<td>Como chofer de reparto o personal autorizado (Pedro), quiero registrar el despacho y la prueba de entrega, para dejar evidencia digital clara del cierre del pedido y evitar reclamos posteriores.</td>
+<td>Registrar despacho y objeto POD (Proof of Delivery)</td>
+<td>Como transportista autorizado (Pedro), quiero registrar el despacho y generar el objeto POD, para cerrar la trazabilidad del pedido con evidencia digital de recepción conforme.</td>
 <td>
-<strong>Escenario 1 — Registro de despacho exitoso:</strong><br>
-Dado que el pedido está en estado listo para salir y el usuario está autorizado,<br>
-cuando registra el evento de despacho,<br>
-entonces el sistema cambia el estado a <code>dispatched</code> y crea un evento de salida con marca de tiempo.<br><br>
-<strong>Escenario 2 — Entrega bloqueada sin evidencia:</strong><br>
-Dado que el pedido va a cerrarse como entregado,<br>
-cuando no existe al menos una evidencia de entrega o confirmación explícita registrada,<br>
-entonces el sistema impide moverlo a <code>delivered</code>.<br><br>
-<strong>Escenario 3 — POD con soporte de imagen adjunta:</strong><br>
-Dado que el personal de entrega desea registrar evidencia fotográfica del cierre,<br>
-cuando adjunta una imagen válida como prueba de entrega,<br>
-entonces el sistema acepta el archivo dentro de los límites configurados de tipo y tamaño y lo asocia al pedido.
+<strong>Escenario 1 — Generación automática de POD:</strong><br>
+Dado que el transportista marca el pedido como entregado,<br>
+ cuando el sistema procesa la acción,<br>
+ entonces genera una instancia de la clase <code>POD</code> con marca de tiempo y firma digital.<br><br>
+<strong>Escenario 2 — Validación térmica de cierre:</strong><br>
+Dado que el pedido es de cadena de frío,<br>
+ cuando se registra la entrega,<br>
+ entonces el sistema valida que la temperatura del <code>Vehicle</code> se mantuvo en el rango de la <code>ProductSpec</code> hasta el momento final.<br><br>
+<strong>Escenario 3 — Carga de evidencia fotográfica obligatoria:</strong><br>
+Dado que la política de entrega exige evidencia visual,<br>
+ cuando el sistema detecta que no hay imagen adjunta,<br>
+ entonces bloquea el cambio de estado a <code>Delivered</code> hasta que se cargue el archivo.
 </td>
 <td>5</td>
 <td>EP10</td>
