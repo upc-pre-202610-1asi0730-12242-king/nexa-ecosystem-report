@@ -6,64 +6,7 @@
 El backlog de Nexa se organiza en dos capas complementarias. La primera cubre el sitio público multipágina que comunica la propuesta de valor, enruta por segmentos comerciales y capta oportunidades mediante el landing page. La segunda cubre el producto transaccional: catálogo, captura asistida del pedido, portal B2B, condiciones comerciales, inventario y seguimiento hasta la entrega. Todas las historias se redactan con actores explícitos, estimación en puntos de historia (escala Fibonacci) y criterios de aceptación verificables en formato Gherkin, alineados con los arquetipos canónicos del proyecto: Valeria, Hilda y Pedro.
 </p>
 
-<p align="justify">
-La especificación no parte de una colección arbitraria de funcionalidades. Cada épica se deriva de la evidencia levantada en el Capítulo 2 y traduce dolores observados en comportamientos verificables. Por ello, el frente público se orienta a comunicar con claridad el problema, el alcance y la propuesta de valor; el núcleo transaccional se centra en pedido, catálogo, condiciones comerciales, inventario y seguimiento; y las historias técnicas del API se tratan como habilitadores de integración coherentes con el dominio, no como un bloque desconectado del valor de negocio.
-</p>
-
-**Tabla 14**
-
-*Trazabilidad de épicas con actores, evidencia y propósito funcional*
-
-<table>
-<thead>
-<tr>
-<th>Bloque</th>
-<th>Épicas</th>
-<th>Actor o arquetipo dominante</th>
-<th>Base empírica del Capítulo 2</th>
-<th>Propósito dentro del MVP</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Sitio público y conversión</td>
-<td>EP01-EP06</td>
-<td>Visitante comercial y prospectos cercanos a S1 y S2</td>
-<td>Análisis competitivo, problem statements y necesidad de comunicar foco, confianza y forma de adopción sin sobredimensionar el roadmap.</td>
-<td>Validar comprensión del producto, posicionamiento inicial y captación de oportunidades comerciales.</td>
-</tr>
-<tr>
-<td>Captura y compra del pedido</td>
-<td>EP07-EP09</td>
-<td>Valeria y Hilda</td>
-<td>Entrevistas sobre pedidos por WhatsApp, validaciones manuales, incertidumbre de stock y dependencia del canal informal.</td>
-<td>Digitalizar el flujo principal del pedido desde la captura asistida hasta el autoservicio B2B.</td>
-</tr>
-<tr>
-<td>Seguimiento, inventario y cierre</td>
-<td>EP10-EP11</td>
-<td>Hilda, Pedro y supervisión operativa</td>
-<td>Needfinding, journey maps y EventStorming sobre falta de ETA, visibilidad parcial del despacho y necesidad de evidencia de cierre.</td>
-<td>Dar predictibilidad al despacho, ordenar el stock y cerrar la trazabilidad del pedido.</td>
-</tr>
-<tr>
-<td>Datos comerciales y control de acceso</td>
-<td>EP12-EP13</td>
-<td>Valeria y roles internos autorizados</td>
-<td>Hallazgos sobre mora, crédito, configuración comercial por cliente y separación necesaria entre accesos internos y B2B.</td>
-<td>Sostener reglas mínimas para que el flujo principal sea operable y consistente.</td>
-</tr>
-<tr>
-<td>Servicios de integración</td>
-<td>EP14</td>
-<td>Aplicaciones cliente y capa de integración</td>
-<td>Arquitectura derivada del dominio y necesidad de compartir reglas entre captura asistida, portal B2B y seguimiento.</td>
-<td>Exponer contratos técnicos coherentes con el dominio para soportar el MVP sin duplicar lógica.</td>
-</tr>
-</tbody>
-</table>
-
-**Tabla 15**
+**Tabla 12**
 
 *User Stories — Épicas, historias, criterios de aceptación y estimación*
 
@@ -506,21 +449,21 @@ entonces el sistema no promete disponibilidad 24/7 ni tiempos de respuesta espec
 
 <tr>
 <td>US18</td>
-<td>Enviar solicitud de demo y contacto comercial</td>
-<td>Como visitante bilingüe del sitio, quiero enviar mis datos a través del formulario principal, para abrir una línea de conversación oficial sobre la implementación de Nexa en mi negocio.</td>
+<td>Enviar el formulario de contacto comercial</td>
+<td>Como visitante interesado, quiero enviar mis datos en el formulario de contacto, para solicitar una conversación comercial sobre Nexa sin tener que buscar canales alternativos.</td>
 <td>
-<strong>Escenario 1 — Registro exitoso de prospecto:</strong><br>
-Dado que el visitante completó <code>work email</code> y <code>operation details</code>,<br>
- cuando el sistema procesa el envío,<br>
- entonces almacena la solicitud en el CRM de Nexa y muestra una confirmación de éxito inmediata.<br><br>
-<strong>Escenario 2 — Alerta de campos obligatorios:</strong><br>
-Dado que el formulario se intenta enviar sin la información mínima,<br>
- cuando se valida la acción,<br>
- entonces el sistema resalta los campos faltantes sin borrar el progreso actual del usuario.<br><br>
-<strong>Escenario 3 — Sincronización multi-idioma del formulario:</strong><br>
-Dado que el sitio está en inglés,<br>
- cuando el visitante carga el formulario,<br>
- entonces el sistema presenta etiquetas y validaciones en inglés, manteniendo la coherencia durante todo el flujo.
+<strong>Escenario 1 — Envío exitoso del formulario:</strong><br>
+Dado que el visitante completó correctamente los campos <code>name</code>, <code>work email</code>, <code>company</code> y <code>operation details</code>,<br>
+cuando envía el formulario,<br>
+entonces el sistema registra la solicitud de contacto y presenta una confirmación explícita.<br><br>
+<strong>Escenario 2 — Bloqueo por campo obligatorio faltante:</strong><br>
+Dado que falta uno o más de los campos requeridos,<br>
+cuando el visitante intenta enviar el formulario,<br>
+entonces el sistema bloquea la operación y señala visualmente los campos faltantes.<br><br>
+<strong>Escenario 3 — Prevención de envío duplicado:</strong><br>
+Dado que el visitante ya envió el formulario correctamente,<br>
+cuando intenta enviarlo una segunda vez desde la misma sesión,<br>
+entonces el sistema impide el envío duplicado y muestra el mensaje de confirmación original.
 </td>
 <td>3</td>
 <td>EP05</td>
@@ -528,21 +471,21 @@ Dado que el sitio está en inglés,<br>
 
 <tr>
 <td>US19</td>
-<td>Validación inteligente y feedback en tiempo real</td>
-<td>Como visitante del sitio, quiero recibir validaciones instantáneas mientras escribo, para corregir errores de formato (ej: email) antes de intentar enviar el formulario.</td>
+<td>Recibir validación y confirmación del formulario</td>
+<td>Como visitante interesado, quiero recibir validación en tiempo real y una confirmación al enviar el formulario, para saber exactamente qué está incorrecto y si mi solicitud fue aceptada.</td>
 <td>
-<strong>Escenario 1 — Validación de máscara de correo:</strong><br>
-Dado que el visitante ingresa un correo sin formato corporativo,<br>
- cuando el foco sale del campo,<br>
- entonces el sistema muestra una advertencia visual sobre la estructura necesaria.<br><br>
-<strong>Escenario 2 — Limpieza de datos no válidos:</strong><br>
-Dado que el sistema detecta caracteres prohibidos en campos de texto técnico,<br>
- cuando se procesa la entrada,<br>
- entonces filtra o alerta sobre el contenido inválido para asegurar la integridad del contacto.<br><br>
-<strong>Escenario 3 — Confirmación visual persistente:</strong><br>
-Dado que el envío fue exitoso,<br>
- cuando el visitante navega por el resto del sitio en la misma sesión,<br>
- entonces el sistema puede recordar que ya se realizó el contacto para evitar registros duplicados.
+<strong>Escenario 1 — Confirmación de recepción exitosa:</strong><br>
+Dado que el formulario fue enviado con datos válidos,<br>
+cuando finaliza el envío,<br>
+entonces el sistema muestra una confirmación explícita de recepción con mensaje legible.<br><br>
+<strong>Escenario 2 — Validación de formato de correo:</strong><br>
+Dado que el correo electrónico no cumple el formato esperado,<br>
+cuando el visitante intenta enviar o pasa al campo siguiente,<br>
+entonces el sistema señala el error específico sin borrar la información válida ya ingresada en otros campos.<br><br>
+<strong>Escenario 3 — Validación campo a campo antes del envío:</strong><br>
+Dado que el visitante completó parcialmente el formulario,<br>
+cuando hace clic en enviar,<br>
+entonces el sistema resalta todos los campos inválidos de forma simultánea en lugar de mostrar solo el primero encontrado.
 </td>
 <td>3</td>
 <td>EP05</td>
@@ -551,8 +494,8 @@ Dado que el envío fue exitoso,<br>
 <!-- ═══════════════════════════════════════════════════════════ EP06 -->
 <tr>
 <td><strong>EP06</strong></td>
-<td><strong>FAQ, Support &amp; Public Portal Access</strong></td>
-<td>Agrupa las historias del FAQ categorizado, el panel flotante de soporte y la orientación pública del acceso al portal de clientes.</td>
+<td><strong>FAQ, Support &amp; Login Placeholder</strong></td>
+<td>Agrupa las historias del FAQ categorizado, el panel flotante de soporte y el acceso público al placeholder del portal de clientes.</td>
 <td>—</td>
 <td>—</td>
 <td>—</td>
@@ -822,21 +765,21 @@ entonces el sistema refleja las condiciones vigentes más recientes y no una ver
 
 <tr>
 <td>US31</td>
-<td>Registrar productos y capturar evidencia en campo</td>
-<td>Como coordinadora comercial (Valeria), quiero registrar productos y observaciones desde un dispositivo móvil, para digitalizar pedidos en tiempo real con soporte de imágenes adjuntas.</td>
+<td>Registrar productos, cantidades y observaciones desde celular o tablet</td>
+<td>Como coordinadora comercial (Valeria), quiero registrar productos, cantidades y observaciones desde celular o tablet, para capturar pedidos en campo o en oficina sin depender de un escritorio.</td>
 <td>
-<strong>Escenario 1 — Captura responsiva del pedido:</strong><br>
-Dado que la operadora usa una tablet,<br>
- cuando registra líneas de productos,<br>
- entonces el sistema adapta el catálogo táctil permitiendo una selección rápida y registro de notas.<br><br>
-<strong>Escenario 2 — Soporte multimedia (Imágenes):</strong><br>
-Dado que el pedido requiere evidencia fotográfica del estado físico inicial,<br>
- cuando se adjunta una imagen al borrador,<br>
- entonces el sistema la vincula al identificador del pedido preservando la calidad.<br><br>
-<strong>Escenario 3 — Guardado incremental:</strong><br>
-Dado que el registro se realiza en zonas de baja conectividad,<br>
- cuando el sistema detecta pérdida de red,<br>
- entonces el borrador se guarda localmente y se sincroniza automáticamente al recuperar la señal.
+<strong>Escenario 1 — Registro de líneas en dispositivo móvil:</strong><br>
+Dado que la coordinadora usa un dispositivo móvil o tablet autenticado,<br>
+cuando registra líneas del pedido,<br>
+entonces el sistema le permite agregar productos, cantidades y observaciones dentro del mismo flujo asistido con la misma validación que en escritorio.<br><br>
+<strong>Escenario 2 — Mismas validaciones en dispositivos distintos:</strong><br>
+Dado que la coordinadora cambia de dispositivo o tamaño de pantalla durante el registro,<br>
+cuando continúa el pedido en el nuevo dispositivo,<br>
+entonces el sistema mantiene las mismas reglas de negocio y la información ingresada previamente.<br><br>
+<strong>Escenario 3 — Guardado automático de progreso:</strong><br>
+Dado que la coordinadora está registrando líneas de pedido en campo y la sesión se interrumpe,<br>
+cuando vuelve a ingresar al sistema,<br>
+entonces el borrador conserva las líneas registradas antes de la interrupción sin pérdida de datos.
 </td>
 <td>3</td>
 <td>EP08</td>
@@ -1084,21 +1027,21 @@ entonces el sistema aplica solo una transición de forma atómica y notifica a l
 
 <tr>
 <td>US42</td>
-<td>Registrar despacho y objeto POD (Proof of Delivery)</td>
-<td>Como transportista autorizado (Pedro), quiero registrar el despacho y generar el objeto POD, para cerrar la trazabilidad del pedido con evidencia digital de recepción conforme.</td>
+<td>Registrar despacho y prueba de entrega</td>
+<td>Como chofer de reparto o personal autorizado (Pedro), quiero registrar el despacho y la prueba de entrega, para dejar evidencia digital clara del cierre del pedido y evitar reclamos posteriores.</td>
 <td>
-<strong>Escenario 1 — Generación automática de POD:</strong><br>
-Dado que el transportista marca el pedido como entregado,<br>
- cuando el sistema procesa la acción,<br>
- entonces genera una instancia de la clase <code>POD</code> con marca de tiempo y firma digital.<br><br>
-<strong>Escenario 2 — Validación térmica de cierre:</strong><br>
-Dado que el pedido es de cadena de frío,<br>
- cuando se registra la entrega,<br>
- entonces el sistema valida que la temperatura del <code>Vehicle</code> se mantuvo en el rango de la <code>ProductSpec</code> hasta el momento final.<br><br>
-<strong>Escenario 3 — Carga de evidencia fotográfica obligatoria:</strong><br>
-Dado que la política de entrega exige evidencia visual,<br>
- cuando el sistema detecta que no hay imagen adjunta,<br>
- entonces bloquea el cambio de estado a <code>Delivered</code> hasta que se cargue el archivo.
+<strong>Escenario 1 — Registro de despacho exitoso:</strong><br>
+Dado que el pedido está en estado listo para salir y el usuario está autorizado,<br>
+cuando registra el evento de despacho,<br>
+entonces el sistema cambia el estado a <code>dispatched</code> y crea un evento de salida con marca de tiempo.<br><br>
+<strong>Escenario 2 — Entrega bloqueada sin evidencia:</strong><br>
+Dado que el pedido va a cerrarse como entregado,<br>
+cuando no existe al menos una evidencia de entrega o confirmación explícita registrada,<br>
+entonces el sistema impide moverlo a <code>delivered</code>.<br><br>
+<strong>Escenario 3 — POD con soporte de imagen adjunta:</strong><br>
+Dado que el personal de entrega desea registrar evidencia fotográfica del cierre,<br>
+cuando adjunta una imagen válida como prueba de entrega,<br>
+entonces el sistema acepta el archivo dentro de los límites configurados de tipo y tamaño y lo asocia al pedido.
 </td>
 <td>5</td>
 <td>EP10</td>
@@ -1468,7 +1411,7 @@ entonces el sistema solicita confirmación explícita antes de aplicar el nuevo 
 <tr>
 <td><strong>EP14</strong></td>
 <td><strong>Technical Stories for REST API</strong></td>
-<td>Agrupa las historias técnicas del RESTful API. El actor se modela como capa de integración y los criterios de aceptación se formulan como contratos de request/response alineados con el dominio del producto.</td>
+<td>Agrupa las technical stories del RESTful API. El rol es Developer y los criterios de aceptación se formulan como contratos de request/response alineados al dominio del producto.</td>
 <td>—</td>
 <td>—</td>
 <td>—</td>
@@ -1477,7 +1420,7 @@ entonces el sistema solicita confirmación explícita antes de aplicar el nuevo 
 <tr>
 <td>US58</td>
 <td>Exponer endpoint de catálogo</td>
-<td>Como capa de integración, quiero exponer un endpoint de catálogo (<code>GET /products</code>), para que el portal B2B y la aplicación interna consulten productos habilitados según el contexto autenticado.</td>
+<td>Como Developer, quiero exponer un endpoint de catálogo (<code>GET /products</code>), para que el portal B2B y la aplicación interna consulten productos habilitados según el contexto autenticado.</td>
 <td>
 <strong>Escenario 1 — Respuesta exitosa con productos:</strong><br>
 Dado que el request contiene un token de autenticación válido,<br>
@@ -1499,7 +1442,7 @@ entonces el API responde con <code>429 Too Many Requests</code> e incluye el tie
 <tr>
 <td>US59</td>
 <td>Exponer endpoint de detalle y ficha técnica de producto</td>
-<td>Como capa de integración, quiero exponer un endpoint de detalle de producto (<code>GET /products/{id}</code>), para que el portal muestre información ampliada, disponibilidad y documentos técnicos asociados.</td>
+<td>Como Developer, quiero exponer un endpoint de detalle de producto (<code>GET /products/{id}</code>), para que el portal muestre información ampliada, disponibilidad y documentos técnicos asociados.</td>
 <td>
 <strong>Escenario 1 — Detalle de producto existente:</strong><br>
 Dado que el identificador del producto existe y es accesible para el contexto autenticado,<br>
@@ -1521,7 +1464,7 @@ entonces el API responde con <code>403 Forbidden</code> sin revelar la existenci
 <tr>
 <td>US60</td>
 <td>Exponer endpoint de cliente por RUC/DNI y condiciones comerciales</td>
-<td>Como capa de integración, quiero exponer un endpoint de búsqueda de cliente por documento (<code>GET /customers?document={ruc|dni}</code>), para soportar el flujo asistido de captura del pedido con carga automática de condiciones.</td>
+<td>Como Developer, quiero exponer un endpoint de búsqueda de cliente por documento (<code>GET /customers?document={ruc|dni}</code>), para soportar el flujo asistido de captura del pedido con carga automática de condiciones.</td>
 <td>
 <strong>Escenario 1 — Cliente encontrado con condiciones cargadas:</strong><br>
 Dado que la consulta proviene de un usuario interno autorizado y el documento existe,<br>
@@ -1543,7 +1486,7 @@ entonces el API responde con <code>400 Bad Request</code> indicando el formato e
 <tr>
 <td>US61</td>
 <td>Exponer endpoint de registro de pedido</td>
-<td>Como capa de integración, quiero exponer un endpoint de creación de pedido (<code>POST /orders</code>), para que el portal B2B y la captura asistida puedan enviar solicitudes estructuradas de forma unificada.</td>
+<td>Como Developer, quiero exponer un endpoint de creación de pedido (<code>POST /orders</code>), para que el portal B2B y la captura asistida puedan enviar solicitudes estructuradas de forma unificada.</td>
 <td>
 <strong>Escenario 1 — Pedido creado exitosamente:</strong><br>
 Dado que el request contiene cliente válido, líneas de producto y condiciones comerciales que cumplen las reglas del dominio,<br>
@@ -1565,7 +1508,7 @@ entonces responde con el pedido original ya creado sin generar un duplicado.
 <tr>
 <td>US62</td>
 <td>Exponer endpoint de tracking y ETA del pedido</td>
-<td>Como capa de integración, quiero exponer un endpoint de seguimiento (<code>GET /shipments/{id}</code> y <code>GET /shipments/{id}/events</code>), para que la aplicación muestre el estado actualizado, el historial de eventos y la ETA.</td>
+<td>Como Developer, quiero exponer un endpoint de seguimiento (<code>GET /shipments/{id}</code> y <code>GET /shipments/{id}/events</code>), para que la aplicación muestre el estado actualizado, el historial de eventos y la ETA.</td>
 <td>
 <strong>Escenario 1 — Estado, historial y ETA retornados:</strong><br>
 Dado que el pedido o envío existe y el contexto autenticado está autorizado,<br>
@@ -1587,7 +1530,7 @@ entonces el API responde con la página solicitada de eventos y metadatos de nav
 <tr>
 <td>US63</td>
 <td>Exponer endpoint de eventos de despacho y POD</td>
-<td>Como capa de integración, quiero exponer endpoints de despacho y prueba de entrega (<code>POST /shipments/{id}/events</code> y <code>POST /shipments/{id}/pod</code>), para registrar salida, incidencias y cierre de entrega con evidencia.</td>
+<td>Como Developer, quiero exponer endpoints de despacho y prueba de entrega (<code>POST /shipments/{id}/events</code> y <code>POST /shipments/{id}/pod</code>), para registrar salida, incidencias y cierre de entrega con evidencia.</td>
 <td>
 <strong>Escenario 1 — Evento de despacho registrado:</strong><br>
 Dado que el envío existe y el usuario está autorizado para registrar eventos,<br>
@@ -1609,7 +1552,7 @@ entonces responde con <code>400 Bad Request</code> indicando el tipo o tamaño p
 <tr>
 <td>US64</td>
 <td>Exponer endpoint de autenticación y recuperación de acceso</td>
-<td>Como capa de integración, quiero exponer endpoints de autenticación (<code>POST /auth/login</code>) y recuperación (<code>POST /auth/recover</code>), para que internos y clientes operen con sesiones válidas y recuperación controlada.</td>
+<td>Como Developer, quiero exponer endpoints de autenticación (<code>POST /auth/login</code>) y recuperación (<code>POST /auth/recover</code>), para que internos y clientes operen con sesiones válidas y recuperación controlada.</td>
 <td>
 <strong>Escenario 1 — Autenticación exitosa con token:</strong><br>
 Dado que las credenciales del request son válidas y la cuenta está activa,<br>
@@ -1631,8 +1574,6 @@ entonces el API emite un nuevo token de acceso sin requerir que el usuario ingre
 </tbody>
 </table>
 
-*Nota. Detalle de requerimientos funcionales estructurados bajo el estándar Gherkin para validación técnica. Elaboración propia.*
-
 ---
 
-*Nota.* La tabla integra el sitio público, el producto transaccional y las historias técnicas del API bajo una taxonomía coherente con la investigación de campo y el landing page. La estimación en puntos de historia (SP) sigue la escala Fibonacci (1, 2, 3, 5, 8, 13). Elaboración propia.
+*Nota.* La tabla integra el sitio público, el producto transaccional y las technical stories del API bajo una taxonomía coherente con la investigación de campo y el landing page. La estimación en puntos de historia (SP) sigue la escala Fibonacci (1, 2, 3, 5, 8, 13). Elaboración propia.
