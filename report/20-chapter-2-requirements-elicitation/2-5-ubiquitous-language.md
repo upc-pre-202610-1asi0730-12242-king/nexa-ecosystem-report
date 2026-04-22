@@ -5,8 +5,10 @@ El siguiente glosario establece el vocabulario compartido entre el equipo de des
 </p>
 
 <p align="justify">
-La selección de términos también mantiene continuidad con la segmentación del informe. Por ello, el glosario refuerza el lenguaje de los tres segmentos canónicos del MVP, evitando que entrevistas, needfinding, modelado del dominio y backlog utilicen nombres distintos para el mismo actor o para la misma transición del pedido.
+La selección de términos también mantiene continuidad con la segmentación del informe. Por ello, el glosario refuerza el lenguaje de los tres segmentos canónicos del MVP y del stakeholder secundario, evitando que entrevistas, needfinding, modelado del dominio y backlog utilicen nombres distintos para el mismo actor o para la misma transición del pedido.
 </p>
+
+**Tabla 13**
 
 *Glosario de Lenguaje Ubicuo — Dominio: Distribución B2B de productos refrigerados y congelados*
 
@@ -46,4 +48,4 @@ La selección de términos también mantiene continuidad con la segmentación de
 | **Hybrid Support** | Enfoque donde la plataforma resuelve parte del proceso y el equipo comercial mantiene contacto humano cuando es necesario. | Servicio |
 | **Rework** | Actividad duplicada o correctiva que surge por ambigüedad o error en la recepción manual de pedidos. | Gestión de Pedidos |
 
-Los términos del lenguaje ubicuo resultan de la investigación cualitativa, los artefactos de needfinding y el modelado del dominio. Su uso es obligatorio en todos los entregables del proyecto para evitar contradicciones entre investigación, diseño y backlog. Elaboración propia.
+*Nota.* Los términos del lenguaje ubicuo resultan de la investigación cualitativa, los artefactos de needfinding y el modelado del dominio. Su uso es obligatorio en todos los entregables del proyecto para evitar contradicciones entre investigación, diseño y backlog. *Elaboración propia.*
