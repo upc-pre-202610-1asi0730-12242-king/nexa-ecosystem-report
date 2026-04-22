@@ -8,7 +8,7 @@ El siguiente glosario establece el vocabulario compartido entre el equipo de des
 La selección de términos también mantiene continuidad con la segmentación del informe. Por ello, el glosario refuerza el lenguaje de los tres segmentos canónicos del MVP y del stakeholder secundario, evitando que entrevistas, needfinding, modelado del dominio y backlog utilicen nombres distintos para el mismo actor o para la misma transición del pedido.
 </p>
 
-**Tabla 22**
+**Tabla 14**
 
 *Glosario de Lenguaje Ubicuo — Dominio: Distribución B2B de productos refrigerados y congelados*
 

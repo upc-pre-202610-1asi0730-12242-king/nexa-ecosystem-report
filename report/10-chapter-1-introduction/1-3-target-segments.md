@@ -234,10 +234,6 @@ Mantener este actor como stakeholder secundario y no como persona principal resp
 El landing page utiliza una capa comercial adicional para orientar la propuesta de valor hacia tipos de empresa compradoras del producto. Esta segmentación no sustituye a S1, S2 y S3; simplemente organiza el discurso público del sitio para adquisición y posicionamiento comercial.
 </p>
 
-**Tabla 13**
-
-*Segmentos comerciales del sitio público*
-
 | **Segmento comercial del sitio** | **Rol comercial** | **Relación con los segmentos operativos** | **Nivel de prioridad** |
 |----------------------------------|-------------------|--------------------------------------------|------------------------|
 | **Distribuidores refrigerados** | Cliente pagador principal de la plataforma SaaS | Conecta directamente con Valeria, Hilda, Pedro y el stakeholder logístico | Principal |

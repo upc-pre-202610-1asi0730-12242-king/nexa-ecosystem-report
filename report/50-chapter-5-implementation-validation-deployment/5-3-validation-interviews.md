@@ -10,10 +10,6 @@ La validación en AV1 se enfoca en los artefactos que sí alcanzaron un estado d
 El diseño de entrevistas de validación para AV1 reutiliza el conocimiento del capítulo 2 y lo traduce en tareas concretas sobre los artefactos ya implementados. La lógica es simple: si el problema original del dominio era la fragmentación entre pedidos, stock, temperatura y entrega, entonces la landing y el prototipo debían poder comunicar con claridad ese valor antes de que existiera aún toda la capa transaccional.
 </p>
 
-**Tabla 39**
-
-*Diseño de entrevistas de validación para AV1*
-
 | Componente a validar | Tipo de participante | Tarea propuesta | Criterio de éxito |
 |---|---|---|---|
 | Home y propuesta de valor | Coordinación comercial (S1) y cliente B2B (S2) | Identificar en menos de un minuto qué problema resuelve Nexa y para quién | El participante reconoce pedido, inventario, temperatura y entrega como núcleo de valor |
@@ -36,10 +32,6 @@ El repositorio preserva evidencia de ocho entrevistas de dominio realizadas dura
 Adicionalmente, el archivo audiovisual fuente de esas ocho entrevistas ya se encuentra conservado externamente en OneDrive, mientras que el repositorio mantiene las capturas resumidas integradas en el capítulo 2. Esta combinación permite sostener AV1 con evidencia trazable sin confundir el material de descubrimiento del dominio con una ronda posterior de validación funcional del producto terminado.
 </p>
 
-**Tabla 40**
-
-*Registro base de validadores con evidencia en repositorio y OneDrive*
-
 | Participante con evidencia en repositorio | Perfil analizado | Evidencia preservada | Problema dominante que debe validar AV1 |
 |---|---|---|---|
 | Lorena Silva | Coordinación comercial (S1) | `Lorena.jpeg` + [video](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e1%20diego%20-%20lorena%20silva.mp4?web=1) | Dependencia de WhatsApp, lentitud del sistema actual y baja confiabilidad del stock |
@@ -55,20 +47,11 @@ Adicionalmente, el archivo audiovisual fuente de esas ocho entrevistas ya se enc
 Por ello, el registro de entrevistas utilizable en AV1 consiste en un <strong>registro base de validadores</strong> con evidencia real ya archivada tanto en el repositorio como en el repositorio externo de OneDrive. Lo que todavía no aparece como entregable formal es una <strong>segunda ronda</strong> etiquetada explícitamente como entrevista de validación del producto implementado, con hallazgos específicos sobre la landing o el prototipo ya probados frente al artefacto final visible.
 </p>
 
-<div style="padding: 14px 16px; border: 1px solid #f5d0fe; border-radius: 8px; background: #fffafc; margin: 16px 0;">
-  <strong>Evidencia aún faltante para cerrar mejor esta sección.</strong><br/><br/>
-  Para que la validación quede más sólida ante revisión docente, todavía conviene incorporar: <strong>(1)</strong> una segunda ronda breve de validación sobre la landing page o el prototipo ya visible, <strong>(2)</strong> hallazgos sintetizados por participante o perfil, y <strong>(3)</strong> una tabla final que separe con claridad qué fue validación del problema en descubrimiento y qué fue validación del artefacto en AV1.
-</div>
-
 ### 5.3.3. Evaluaciones según heurísticas.
 
 <p align="justify">
 Como complemento a las entrevistas, el artefacto público ya implementado puede ser evaluado con heurísticas de usabilidad y consistencia. Esta revisión es especialmente pertinente en AV1 porque el producto visible aún es una landing page informativa y no un portal transaccional completo; por tanto, la primera obligación del sistema es <strong>explicar bien</strong> antes de <strong>operar todo</strong>.
 </p>
-
-**Tabla 41**
-
-*Evaluación de usabilidad según heurísticas de Nielsen en la landing page*
 
 | Heurística | Evidencia observable en AV1 | Resultado |
 |---|---|---|
@@ -82,8 +65,4 @@ Como complemento a las entrevistas, el artefacto público ya implementado puede 
 
 <p align="justify">
 La conclusión heurística es clara: la landing page ya cumple bien como herramienta de <strong>explicación y captación</strong>, pero todavía no sustituye la validación funcional que deberá realizarse cuando entren en operación el portal B2B, la autenticación, el catálogo y el seguimiento transaccional. Esta frontera coincide con el backlog remanente visible en Jira y orienta la mejora continua del producto.
-</p>
-
-<p align="justify">
-En otras palabras, la validación documentada en AV1 es defendible si se presenta como <strong>validación de comprensión, narrativa y consistencia del incremento visible</strong>; no como prueba cerrada del sistema transaccional completo. La parte que sigue faltando para futuras entregas es la validación funcional del portal autenticado, los flujos de pedido, las reglas de stock y el cierre operativo con usuarios frente al software ya ejecutable.
 </p>

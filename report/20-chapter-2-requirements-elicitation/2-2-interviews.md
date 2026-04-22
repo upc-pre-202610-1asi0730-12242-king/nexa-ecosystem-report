@@ -1,4 +1,4 @@
-## 2.2. Entrevistas
+## 2.2.	Entrevistas
 
 <p align="justify">
 Para mantener continuidad con el Capítulo I y con los artefactos posteriores de needfinding, este capítulo distingue entre <strong>segmentos canónicos del producto</strong> y <strong>bloques de levantamiento de información</strong>. Los segmentos canónicos del informe siguen siendo <strong>S1: coordinación comercial y captura del pedido</strong>, <strong>S2: cliente comercial B2B y abastecimiento recurrente</strong> y <strong>S3: despacho, transporte y cierre de entrega</strong>. Sin embargo, el trabajo de campo no se organizó únicamente por esos tres arquetipos, sino también por un cuarto lente de análisis: la <strong>jefatura y responsables de logística, abastecimiento y operación</strong>, que funciona como stakeholder secundario para validar reglas del dominio, trazabilidad, riesgos sanitarios y restricciones operativas.
@@ -14,7 +14,7 @@ Para mantener continuidad con el Capítulo I y con los artefactos posteriores de
   </ul>
 </div>
 
-### 2.2.1. Diseño de entrevistas
+### 2.2.1.	Diseño de entrevistas
 
 <p align = "justify">
 
@@ -147,7 +147,7 @@ La meta es priorizar el valor real, no pedir features sueltas.
 
 **Segmento:** Bodegas, minimarkets, pequeños mayoristas y negocios HORECA que compran productos refrigerados o congelados a distribuidores.
 
-**Objetivo de investigación:** Entender cómo compra hoy el cliente comercial, qué fricciones vive al abastecerse y qué condiciones debería cumplir una plataforma para que realmente la adopte.
+**Objetivo de investigación: ** Entender cómo compra hoy el cliente comercial, qué fricciones vive al abastecerse y qué condiciones debería cumplir una plataforma para que realmente la adopte.
 
 **Duración sugerida:** 15 a 25 minutos.
 
@@ -199,7 +199,7 @@ No basta saber si usa apps; importa cómo decide confiar en una herramienta.
 
 </p>
 
-### 2.2.2. Registro de entrevistas
+### 2.2.2.	Registro de entrevistas
 
 <p align="justify">
 En esta subsección se preservan los nombres y cargos reales de las personas entrevistadas. En cambio, los nombres de las user personas del capítulo 2.3 son <strong>arquetipos sintéticos</strong> construidos a partir de patrones compartidos entre varias entrevistas; por ello, no deben leerse como equivalentes literales de una única persona entrevistada.
@@ -226,7 +226,7 @@ Además de las capturas integradas en el informe, el archivo audiovisual origina
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
-**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e1%20diego%20-%20lorena%20silva.mp4?web=1)
+*Respaldo audiovisual:* [Video de entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e1%20diego%20-%20lorena%20silva.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -253,7 +253,7 @@ A nivel técnico, reporta fricciones severas con el sistema actual (Fontana), el
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
-**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e2%20cesar%20-%20paola%20levano.mp4?web=1)
+*Respaldo audiovisual:* [Video de entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e2%20cesar%20-%20paola%20levano.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -280,7 +280,7 @@ Cinthia enfatiza la necesidad de simplicidad. Describe su flujo actual como una 
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
-**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e3%20diego%20-%20cecilia%20perez.mp4?web=1)
+*Respaldo audiovisual:* [Video de entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e3%20diego%20-%20cecilia%20perez.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -309,7 +309,7 @@ Su testimonio confirma que, para el personal en ruta, la estabilidad de la conex
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
-**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e1%20diego%20-%20hilda%20litano.mp4?web=1)
+*Respaldo audiovisual:* [Video de entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e1%20diego%20-%20hilda%20litano.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -332,7 +332,7 @@ Hilda Litano supervisa procesos de importación y cumplimiento sanitario. Su enf
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
-**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e2%20gino%20-%20edith%20taype.mp4?web=1)
+*Respaldo audiovisual:* [Video de entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e2%20gino%20-%20edith%20taype.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -355,7 +355,7 @@ Edith Taype opera en el punto de venta (supermercados), donde la manipulación y
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
-**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e3%20diego%20-%20jesica%20sandoval.mp4?web=1)
+*Respaldo audiovisual:* [Video de entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e3%20diego%20-%20jesica%20sandoval.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -380,7 +380,7 @@ Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcrip
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
-**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e1%20diego%20-%20pedro%20puente.mp4?web=1)
+*Respaldo audiovisual:* [Video de entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e1%20diego%20-%20pedro%20puente.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -403,7 +403,7 @@ Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre log�
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
-**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e2%20cesar%20-%20henry%20garcia.mp4?web=1)
+*Respaldo audiovisual:* [Video de entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e2%20cesar%20-%20henry%20garcia.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -411,17 +411,13 @@ Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre log�
 Henrry García enfatiza que la confianza es el motor de la relación B2B. Aunque utiliza tecnología con GPS para monitorear sus propios despachos, rechaza que el software reemplace la comunicación humana personalizada. Su visión es que una plataforma ideal debe ser una herramienta de soporte que automatice el inventario y el seguimiento, pero permitiendo siempre una interacción directa para resolver excepciones.
 </p>
 
-### 2.2.3. Análisis de entrevistas
+### 2.2.3.	Análisis de entrevistas
 
 **Análisis del segmento canónico S1: Mercaderistas / personal de coordinación comercial**
 
 <p align="justify">
 El segmento de mercaderistas y personal de coordinación comercial, representado en esta muestra por Lorena Silva, Cinthia Levano y Celia Pérez, constituye el punto de captura más sensible del flujo del pedido. En las tres entrevistas aparece la misma tensión operativa: responder con rapidez al cliente y, al mismo tiempo, validar crédito, stock y condiciones comerciales con información que no siempre está integrada. Sobre esa base se identifican los siguientes patrones compartidos.
 </p>
-
-**Tabla 15**
-
-*Análisis del segmento canónico S1: Mercaderistas / personal de coordinación comercial*
 
 <table border="1" cellspacing="0" cellpadding="6" align="center">
   <tr>
@@ -484,10 +480,6 @@ El segmento de mercaderistas y personal de coordinación comercial, representado
 Este bloque, integrado por Hilda Litano, Edith Taype y Jesica Sandoval, aporta una lectura transversal del dominio. Aquí el foco se desplaza desde la rapidez comercial hacia la trazabilidad, el control documental, la rotación y la responsabilidad operativa sobre productos perecederos. Más que describir un usuario del MVP, estas entrevistas exponen restricciones que el sistema no puede ignorar.
 </p>
 
-**Tabla 16**
-
-*Análisis del stakeholder secundario: Jefatura o responsables de logística y operación*
-
 <table border="1" cellspacing="0" cellpadding="6" align="center">
   <tr>
     <th>Variable observada en stakeholder operativo</th>
@@ -546,10 +538,6 @@ Este bloque, integrado por Hilda Litano, Edith Taype y Jesica Sandoval, aporta u
 <p align="justify">
 El análisis de Pedro Puente y Henrry García muestra un patrón consistente: el cliente comercial necesita previsibilidad logística, pero no está dispuesto a adoptarla a costa de complejidad adicional o pérdida de trato humano. Para ambos, el distribuidor no es solo un proveedor, sino un actor del que depende la continuidad operativa del negocio.
 </p>
-
-**Tabla 17**
-
-*Análisis del segmento canónico S2: Clientes comerciales B2B (minoristas y mayoristas)*
 
 <table border="1" cellspacing="0" cellpadding="6" align="center">
   <tr>

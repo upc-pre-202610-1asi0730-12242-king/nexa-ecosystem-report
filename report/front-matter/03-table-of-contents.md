@@ -53,8 +53,7 @@
   <tr><td><a href="../40-chapter-4-product-design/4-4-web-applications-ux-ui-design.md">4.4. Web Applications UX/UI Design</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-4-web-applications-ux-ui-design.md">4.4.1. Web Applications Wireframes</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-4-web-applications-ux-ui-design.md">4.4.2. Web Applications Wireflow Diagrams</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-4-web-applications-ux-ui-design.md">4.4.3. Web Applications Mock-ups</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-4-web-applications-ux-ui-design.md">4.4.4. Web Applications User Flow Diagrams</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-4-web-applications-ux-ui-design.md">4.4.3. Web Applications User Flow Diagrams</a></td></tr>
   <tr><td><a href="../40-chapter-4-product-design/4-5-web-applications-prototyping.md">4.5. Web Applications Prototyping</a></td></tr>
   <tr><td><a href="../40-chapter-4-product-design/4-6-domain-driven-software-architecture.md">4.6. Domain-Driven Software Architecture</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-6-domain-driven-software-architecture.md">4.6.1. Design-Level EventStorming</a></td></tr>

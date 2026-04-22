@@ -11,7 +11,7 @@ El diseño orientado a objetos de Nexa trasciende la mera representación de dat
   <p style="margin: 5px 0 0 0; color: #64748b; font-style: italic;">"Modelando el comportamiento inteligente de la distribución primaria."</p>
 </div>
 
-**Ilustración 61**
+**Ilustración 60**
 
 *Diagrama de Clases del Ecosistema Nexa (Enterprise Model)*
 
@@ -200,7 +200,7 @@ El diseño orientado a objetos ha sido validado contra el esquema de base de dat
 Para asegurar la integridad del sistema, se presenta la siguiente matriz que vincula las historias de usuario críticas con los componentes del diseño orientado a objetos que las materializan.
 </p>
 
-**Tabla 35**
+**Tabla 22**
 
 *Matriz de Coherencia Requerimiento-Objeto*
 

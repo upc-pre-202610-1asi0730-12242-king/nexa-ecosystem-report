@@ -8,7 +8,7 @@ El Product Backlog de Nexa organiza el universo de requerimientos en una secuenc
 La priorización no responde únicamente a facilidad de implementación. Se construye sobre cuatro criterios combinados: visibilidad temprana del producto para validación comercial, reducción inmediata de fricción en el flujo de pedido, habilitación progresiva de reglas de negocio críticas y preparación de contratos técnicos que sostengan la evolución del MVP. Así, el backlog mantiene continuidad con el Impact Mapping y evita que historias de soporte o conveniencia se ubiquen por encima del núcleo funcional identificado en el trabajo de campo.
 </p>
 
-**Tabla 26**
+**Tabla 18**
 
 *Criterios de priorización del Product Backlog*
 
@@ -21,7 +21,7 @@ La priorización no responde únicamente a facilidad de implementación. Se cons
 
 ### 3.3.1. Detalle del Product Backlog (Full Backlog)
 
-**Tabla 27**
+**Tabla 19**
 
 *Product Backlog — Ordenamiento, Valor y Estimación*
 
@@ -94,7 +94,7 @@ La priorización no responde únicamente a facilidad de implementación. Se cons
 
 ### 3.3.2. Resumen de Estimación y Release Map
 
-**Tabla 28**
+**Tabla 20**
 
 *Resumen de Estimación por Épica y Roadmap de Lanzamiento*
 
@@ -116,7 +116,7 @@ La secuencia del roadmap sigue una lógica deliberada. El <strong>Sprint 1</stro
 Aunque varias historias de inventario y control recaen sobre supervisión operativa, ese frente no se modela como un segmento protagónico independiente dentro del backlog. Se trata, más bien, de un soporte transversal que habilita a Valeria, Hilda y Pedro a operar con reglas confiables. Mantener esa distinción mejora la coherencia del capítulo y evita que la priorización se disperse en actores adicionales sin justificación narrativa o metodológica.
 </p>
 
-**Tabla 29**
+**Tabla 21**
 
 *Relación entre incrementos, actor dominante y riesgo mitigado*
 

@@ -6,7 +6,7 @@
 Previo a la fase de alta fidelidad, se estructuró la Landing Page mediante <em>wireframes</em> de baja fidelidad con el objetivo primordial de validar la arquitectura de información y la jerarquía de los elementos de conversión (CTA). Este proceso permitió iterar sobre la disposición de los bloques de contenido sin la distracción de elementos estéticos, asegurando que la narrativa comercial fuera coherente y directa.
 </p>
 
-**Ilustración 28**
+**Ilustración 27**
 
 *Estructura Ósea de la Home — Jerarquía de Secciones y Call to Action*
 
@@ -18,7 +18,7 @@ Previo a la fase de alta fidelidad, se estructuró la Landing Page mediante <em>
 La disposición de los wireframes para los segmentos específicos (Distribuidores, Importadores y Operadores de Frío) se centró en la creación de "Landing Pages de Segmento" que actúan como embudos de venta especializados. Cada estructura fue diseñada para responder a las preguntas críticas de cada actor: "¿Cómo mejora mi control?", "¿Es escalable?" y "¿Qué visibilidad gano?".
 </p>
 
-**Ilustración 29**
+**Ilustración 28**
 
 *Wireframes de Segmentos y Hub de Soluciones*
 
@@ -30,7 +30,7 @@ La disposición de los wireframes para los segmentos específicos (Distribuidore
 Finalmente, para las secciones de soporte (FAQ) y plataforma (Platform), los wireframes definieron una disposición modular que facilita la exploración de funcionalidades técnicas y la resolución autónoma de dudas. Se utilizó un esquema de cuadrículas (grids) consistente para mantener la sobriedad requerida en un producto de software empresarial.
 </p>
 
-**Ilustración 30**
+**Ilustración 29**
 
 *Wireframes de Módulos Técnicos y Centro de Soporte*
 
@@ -50,7 +50,7 @@ El diseño de alta fidelidad de Nexa adopta una estética <strong>B2B Premium</s
 La página de inicio actúa como el punto de entrada principal para tomadores de decisiones. Su estructura está diseñada para convertir visitantes en leads mediante una narrativa que escala desde el problema hasta la solución.
 </p>
 
-**Ilustración 31**
+**Ilustración 30**
 
 *Hero Section — Captura de Atención y Propuesta de Valor*
 
@@ -58,7 +58,7 @@ La página de inicio actúa como el punto de entrada principal para tomadores de
 
 *Nota. Elaboración propia. La primera impresión presenta un titular potente centrado en el control operativo, utilizando un CTA claro y contrastado para invitar al registro de demos.*
 
-**Ilustración 32**
+**Ilustración 31**
 
 *Diferenciales de Servicio — Pilares Tecnológicos de Nexa*
 
@@ -66,7 +66,7 @@ La página de inicio actúa como el punto de entrada principal para tomadores de
 
 *Nota. Elaboración propia. Sección que desglosa los tres pilares de Nexa: Visibilidad, Control y Trazabilidad, utilizando iconos minimalistas y tipografía Inter para facilitar la lectura.*
 
-**Ilustración 33**
+**Ilustración 32**
 
 *Validación de Industria — Generación de Confianza B2B*
 
@@ -74,7 +74,7 @@ La página de inicio actúa como el punto de entrada principal para tomadores de
 
 *Nota. Elaboración propia. Integración de prueba social y métricas de impacto que refuerzan la autoridad de Nexa en el sector de alimentos refrigerados.*
 
-**Ilustración 34**
+**Ilustración 33**
 
 *Cierre y Navegación Secundaria — Footer Institucional*
 
@@ -88,7 +88,7 @@ La página de inicio actúa como el punto de entrada principal para tomadores de
 Esta sección detalla las capacidades internas de la plataforma Nexa, permitiendo al usuario visualizar las herramientas que controlarán su operación.
 </p>
 
-**Ilustración 35**
+**Ilustración 34**
 
 *Vista General de la Plataforma — Módulos de Gestión Centralizada*
 
@@ -96,7 +96,7 @@ Esta sección detalla las capacidades internas de la plataforma Nexa, permitiend
 
 *Nota. Elaboración propia. Introducción a los módulos de gestión que explica cómo la plataforma centraliza la data de diversos puntos de la cadena.*
 
-**Ilustración 36**
+**Ilustración 35**
 
 *Dashboard de Inventarios — Control de Stock y Variables Térmicas*
 
@@ -104,7 +104,7 @@ Esta sección detalla las capacidades internas de la plataforma Nexa, permitiend
 
 *Nota. Elaboración propia. Interfaz de visualización de stock por lotes y temperaturas, resaltando la simplicidad y el minimalismo operativo.*
 
-**Ilustración 37**
+**Ilustración 36**
 
 *Módulo de Trazabilidad — Seguimiento en Tiempo Real*
 
@@ -112,7 +112,7 @@ Esta sección detalla las capacidades internas de la plataforma Nexa, permitiend
 
 *Nota. Elaboración propia. Detalle técnico sobre el seguimiento de los despachos y la integridad térmica de los productos mediante telemetría IoT.*
 
-**Ilustración 38**
+**Ilustración 37**
 
 *Analítica de Datos — Reportes Automáticos y KPIs Logísticos*
 
@@ -126,7 +126,7 @@ Esta sección detalla las capacidades internas de la plataforma Nexa, permitiend
 Nexa ofrece <em>landing pages</em> especializadas para cada actor de la cadena, abordando sus problemas específicos con un lenguaje técnico alineado a sus necesidades.
 </p>
 
-**Ilustración 39**
+**Ilustración 38**
 
 *Soluciones para Distribuidores — Eficiencia en Despachos Masivos*
 
@@ -134,7 +134,7 @@ Nexa ofrece <em>landing pages</em> especializadas para cada actor de la cadena, 
 
 *Nota. Elaboración propia. Enfoque en la eficiencia logística y la gestión de pedidos masivos mediante interfaces optimizadas para la velocidad.*
 
-**Ilustración 40**
+**Ilustración 39**
 
 *Soluciones para Importadores — Trazabilidad Origen-Destino Global*
 
@@ -142,7 +142,7 @@ Nexa ofrece <em>landing pages</em> especializadas para cada actor de la cadena, 
 
 *Nota. Elaboración propia. Foco en la integración de suministros internacionales y la narrativa visual que enfatiza la escala global de la operación.*
 
-**Ilustración 41**
+**Ilustración 40**
 
 *Operadores de Frío — Control Estricto de Temperatura y Almacenamiento*
 
@@ -156,7 +156,7 @@ Nexa ofrece <em>landing pages</em> especializadas para cada actor de la cadena, 
 Secciones orientadas a la transparencia corporativa y la resolución de dudas técnicas, fundamentales para establecer una relación comercial a largo plazo.
 </p>
 
-**Ilustración 42**
+**Ilustración 41**
 
 *Nuestra Identidad — Visión, Equipo y Cultura Nexa*
 
@@ -164,7 +164,7 @@ Secciones orientadas a la transparencia corporativa y la resolución de dudas t�
 
 *Nota. Elaboración propia. Sección diseñada para humanizar la marca y transmitir la cultura de innovación y el equipo detrás de la plataforma.*
 
-**Ilustración 43**
+**Ilustración 42**
 
 *Centro de Soporte — FAQ Categorizado por Módulos*
 
