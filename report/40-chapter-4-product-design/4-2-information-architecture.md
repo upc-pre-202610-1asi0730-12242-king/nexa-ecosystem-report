@@ -15,6 +15,10 @@ La arquitectura de información de Nexa trasciende la simple organización de p�
 
 #### Sitemap Jerárquico del Ecosistema
 
+**Ilustración 27**
+
+*Sitemap Jerárquico del Ecosistema Nexa*
+
 <p align="justify">
 A continuación, se presenta la estructura ramificada del proyecto, detallando la profundidad de navegación y la interconexión entre el núcleo público y las verticales de solución.
 </p>
@@ -48,6 +52,10 @@ graph TD
 <p align="justify">
 Nexa utiliza una estructura de URLs semántica para mejorar el SEO bilingüe y facilitar la memorización de rutas críticas por parte de los gerentes de logística.
 </p>
+
+**Tabla 30**
+
+*Taxonomía de URLs y Bounded Contexts*
 
 <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 13px;">
   <thead>
@@ -84,9 +92,9 @@ Nexa utiliza una estructura de URLs semántica para mejorar el SEO bilingüe y f
 La arquitectura no es estática; muta para adaptarse a los flujos mentales de nuestros arquetipos definidos en el Capítulo II. Cada nodo de navegación está diseñado para responder a una pregunta específica de cada actor.
 </p>
 
-1.  <span style="color: #2554df; font-weight: bold;">Valeria (Coordinadora Comercial):</span> Su ruta prioriza el **Dashboard de Pedidos Asistidos**. La IA le permite saltar de una vista de "Cliente" a "Catálogo" en menos de 2 clics para registrar pedidos telefónicos rápidamente.
-2.  <span style="color: #2554df; font-weight: bold;">Hilda (Cliente Externo):</span> Su IA es de **Autoservicio**. El sistema la guía directamente al motor de búsqueda de SKUs y a la visualización de su línea de crédito disponible.
-3.  <span style="color: #2554df; font-weight: bold;">Pedro (Despachador/Transportista):</span> IA enfocada en **Tareas de Campo**. Acceso directo a la hoja de ruta del día y confirmación de POD (Proof of Delivery) con telemetría mínima.
+1. <span style="color: #2554df; font-weight: bold;">Valeria (Coordinadora Comercial):</span> Su ruta prioriza el **Dashboard de Pedidos Asistidos**. La IA le permite saltar de una vista de "Cliente" a "Catálogo" en menos de 2 clics para registrar pedidos telefónicos rápidamente.
+2. <span style="color: #2554df; font-weight: bold;">Hilda (Cliente Externo):</span> Su IA es de **Autoservicio**. El sistema la guía directamente al motor de búsqueda de SKUs y a la visualización de su línea de crédito disponible.
+3. <span style="color: #2554df; font-weight: bold;">Pedro (Despachador/Transportista):</span> IA enfocada en **Tareas de Campo**. Acceso directo a la hoja de ruta del día y confirmación de POD (Proof of Delivery) con telemetría mínima.
 
 ---
 

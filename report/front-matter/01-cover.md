@@ -10,7 +10,7 @@
 
 <br>
 
-### Ingeniería de Software
+## Ingeniería de Software
 
 <br>
 <br>
@@ -31,7 +31,7 @@
 <br>
 <br>
 
-### Relación de integrantes
+## Relación de integrantes
 
 <br>
 
