@@ -9,40 +9,57 @@ La gestión de la configuración del software en Nexa se documenta a partir de l
 ### 5.1.1. Software Development Environment Configuration
 
 <p align="justify">
-Para estandarizar el trabajo colaborativo del equipo y asegurar trazabilidad entre investigación, diseño, implementación y documentación, se configuró el siguiente ecosistema base:
+Para estandarizar el trabajo colaborativo del equipo y asegurar trazabilidad entre investigación, diseño, implementación y documentación, se configuró un entorno de trabajo compuesto por herramientas efectivamente observables en los repositorios revisados y por plataformas de coordinación ya utilizadas durante el Sprint 1. La siguiente tabla resume el entorno base con el que se produjo el incremento AV1.
 </p>
 
-**Gestión ágil y documentación**
+**Tabla 35**
 
-- **Jira Software:** Herramienta central para la planificación Scrum, priorización del Product Backlog, definición de Sprint Backlogs y asignación de responsabilidades. La evidencia del tablero se encuentra publicada en [Nexa Product Backlog (Jira)](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog?epics=visible).
-- **GitHub:** Plataforma de control de versiones utilizada para separar artefactos por repositorio y mantener trazabilidad documental y técnica. En el corte AV1, la evidencia verificable se concentra en `nexa-report` y `nexa-website`.
-- **Markdown bajo enfoque Docs-as-Code:** Formato de redacción del informe técnico, organizado por capítulos numerados, activos relativos y ensamblado posterior a PDF.
+*Configuración observable del entorno de desarrollo utilizada en AV1*
 
-**Diseño, prototipado y modelado**
+| Componente del entorno | Herramienta o tecnología | Uso dentro del proyecto | Evidencia verificable en AV1 |
+|---|---|---|---|
+| Gestión ágil | **Jira Software** | Planificación Scrum, Product Backlog, Sprint Backlog y seguimiento de issues `NX-###` | Tablero y capturas Jira utilizadas en `5.2.1` |
+| Control de versiones | **GitHub** | Versionado del informe y del sitio público en repositorios separados | Repositorios `nexa-report` y `nexa-website` |
+| Redacción del informe | **Markdown bajo enfoque Docs-as-Code** | Estructura por capítulos, versionado fino y ensamblado posterior del informe | Archivos numerados dentro de `report/` |
+| Editor de implementación y documentación | **Visual Studio Code** | Edición del sitio estático y del informe técnico | Compatible con la estructura HTML/CSS/JS y Markdown observada |
+| Diseño y prototipado | **Figma** | Wireframes, mockups y prototipos de la landing page y la web application | Enlaces y capturas referenciados en el Capítulo IV |
+| Investigación UX | **UXPressia** | Consolidación de personas, empathy maps y journey maps | Artefactos citados en el Capítulo II |
+| Modelado y arquitectura | **Visual Paradigm** | Diagramas C4, diseño orientado a objetos y base de datos | Diagramas del Capítulo IV |
+| Stack del MVP público | **HTML5 + CSS3 + JavaScript vanilla** | Implementación visible de la landing page pública multipágina | Estructura de `index.html`, `pages/`, `assets/css/` y `assets/js/` en `nexa-website` |
+| Internacionalización | **Módulo propio `i18n.js`** | Soporte bilingüe EN/ES en textos y metadatos | Archivo `assets/js/i18n.js` en `nexa-website` |
+| Despliegue | **GitHub Pages** | Publicación del MVP público | URL activa del sitio web |
 
-- **Figma:** Utilizado para wireframes, mockups y prototipos de alta fidelidad del sitio público y de la web application.
-- **UXPressia:** Utilizada para consolidar personas, journey maps y artefactos de needfinding.
-- **Visual Paradigm:** Empleado para diagramas C4, modelado de dominio y diseño de base de datos.
-
-**Entorno de implementación observable en AV1**
-
-- **Visual Studio Code:** Editor utilizado para la maquetación del landing site y la edición del repositorio documental.
-- **HTML5 + CSS modular + JavaScript vanilla:** Stack efectivamente visible en `nexa-website`, incluyendo navegación multipágina, internacionalización EN/ES y componentes de interacción sin frameworks de frontend.
-- **Capacidad técnica planificada:** El backlog ya contempla scaffolding del backend en ASP.NET Core, documentación Swagger y componentes del portal transaccional; sin embargo, esa capacidad todavía no constituye evidencia de despliegue final en este workspace al cierre de AV1.
+<p align="justify">
+Adicionalmente, el corte AV1 deja preparada una capacidad técnica futura que todavía no debe confundirse con software implementado. El backlog y los capítulos de diseño ya prevén repositorios y componentes para <strong>web application</strong> y <strong>backend en ASP.NET Core</strong>; sin embargo, al cierre de esta revisión esa capa permanece como alcance modelado y priorizado, no como incremento desplegado.
+</p>
 
 ### 5.1.2. Source Code Management
 
 <p align="justify">
-El control de versiones se organiza bajo una convención GitFlow y una disciplina de integración incremental que prioriza trazabilidad por artefacto y por tipo de cambio. La configuración declarada del proyecto distingue las siguientes ramas:
+El control de versiones se organiza bajo una convención GitFlow adaptada al alcance real de AV1. La revisión de los repositorios activos permite distinguir una estructura mínima pero consistente de ramas y responsabilidades.
 </p>
 
-- **`main`:** rama estable para artefactos validados y listos para exposición o entrega.
-- **`develop`:** rama de integración prevista para consolidar avances del equipo.
-- **`feature/*`:** ramas efímeras para contenido o capacidades específicas.
-- **`release/*` y `hotfix/*`:** ramas reservadas para preparación de entregables y correcciones críticas.
+**Tabla 36**
+
+*Repositorios activos y configuración de versionado utilizada en AV1*
+
+| Repositorio | Propósito | Rama principal observable | Otras ramas observables | URL |
+|---|---|---|---|---|
+| `nexa-report` | Informe técnico, trazabilidad académica y narrativa del proyecto | `main` | `develop`, `release/v1.0.0`, ramas de respaldo locales | [nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) |
+| `nexa-website` | Implementación del MVP público desplegado | `main` | `develop`, `release/v1.0.0` | [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) |
+| `nexa-webapp` | Evolución futura de la web application autenticada | Pendiente de verificación detallada en esta revisión | Pendiente de verificación detallada en esta revisión | [nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) |
+| `nexa-platform` | Evolución futura del backend y servicios REST | Pendiente de verificación detallada en esta revisión | Pendiente de verificación detallada en esta revisión | [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) |
+
+**Convención de ramas declarada para el proyecto**
+
+- **`main`:** rama estable para artefactos validados y listos para entrega o exposición pública.
+- **`develop`:** rama de integración prevista para consolidar cambios antes de liberarlos.
+- **`feature/*`:** ramas de trabajo para cambios específicos de contenido, frontend o documentación.
+- **`release/*`:** ramas de preparación del entregable.
+- **`hotfix/*`:** ramas reservadas para correcciones críticas posteriores a una liberación.
 
 <p align="justify">
-En la práctica, el repositorio académico y el repositorio del sitio público funcionan como dos flujos sincronizados: el primero preserva la narrativa, trazabilidad y justificación ingenieril; el segundo concentra la implementación visible del MVP público. Esta separación reduce ruido entre documentación y código, y hace más clara la evidencia de contribución por commit, archivo y sprint.
+En la práctica, `nexa-report` y `nexa-website` funcionan como dos flujos sincronizados: el primero preserva la justificación ingenieril y el segundo concentra la ejecución visible del MVP. Esta separación reduce ruido entre documentación y código y facilita relacionar commits, capturas Jira, artefactos de diseño y despliegue público dentro de un mismo sprint.
 </p>
 
 ### 5.1.3. Source Code Style Guide & Conventions
@@ -88,11 +105,22 @@ Aunque el API no forma parte del despliegue activo de AV1, el capítulo 4 y el b
 ### 5.1.4. Software Deployment Configuration
 
 <p align="justify">
-La evidencia de despliegue de AV1 se concentra en el sitio público y en la publicación de artefactos de colaboración. Por ello, la configuración debe leerse en dos niveles: <strong>despliegue activo</strong> y <strong>despliegue proyectado</strong>.
+La configuración de despliegue de AV1 debe leerse en dos niveles: <strong>despliegue activo</strong> para el MVP público y <strong>despliegue proyectado</strong> para la capa transaccional aún no publicada. Esta distinción evita sobredeclarar capacidades no demostradas.
 </p>
 
-- **Landing Page (`nexa-website`):** Desplegada en GitHub Pages y verificada en la URL pública [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/). El sitio ofrece navegación multipágina, selector EN/ES, CTA de demostración, FAQ y secciones por segmento operativo.
-- **Backlog y planificación Scrum:** Publicados en Jira como evidencia de gestión colaborativa, priorización y evolución incremental.
-- **Informe técnico (`nexa-report`):** Conservado como repositorio Docs-as-Code, desde el cual se genera el entregable PDF.
+**Tabla 37**
 
-- **Backend, web application y base de datos:** Permanecen como alcance técnico modelado y backlog priorizado, pero no como despliegue verificable de AV1 dentro del workspace inspeccionado. Esta frontera es importante para la honestidad del informe: el hito actual demuestra sitio público, backlog, arquitectura y coordinación ágil; el flujo transaccional end-to-end aún pertenece a la siguiente fase de implementación.
+*Configuración de despliegue observable en el corte AV1*
+
+| Elemento | Configuración o mecanismo | Estado en AV1 | Evidencia |
+|---|---|---|---|
+| Sitio público `nexa-website` | Publicación en **GitHub Pages** desde el repositorio del proyecto | **Activo** | [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) |
+| Calidad mínima del repositorio web | Workflow de **GitHub Actions** para `markdownlint` y `commitlint` en `main` y `develop` | **Activo en repositorio** | Archivo `.github/workflows/lint.yml` en `nexa-website` |
+| Informe técnico `nexa-report` | Gestión Docs-as-Code y compilación posterior a PDF | **Activo como repositorio fuente** | Estructura `report/` y control de versiones en GitHub |
+| Gestión del sprint | Publicación de backlog y sprint en **Jira** | **Activa como evidencia de proceso** | Capturas y referencias del Sprint 1 |
+| Web application autenticada | Despliegue futuro | **No verificable en esta revisión** | Repositorio existente, sin URL pública demostrada en el informe |
+| Backend y servicios REST | Despliegue futuro | **No verificable en esta revisión** | Repositorio existente, sin Swagger ni endpoint público evidenciado |
+
+<p align="justify">
+En consecuencia, el procedimiento de despliegue defendible para AV1 se reduce a la capa que sí está operativa: versionar cambios en `nexa-website`, integrarlos en la rama estable, publicar el sitio en GitHub Pages y validar la navegación pública resultante. La capa transaccional del producto permanece correctamente identificada como siguiente fase de implementación.
+</p>
