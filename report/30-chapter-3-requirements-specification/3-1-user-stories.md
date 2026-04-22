@@ -10,10 +10,6 @@ El backlog de Nexa se organiza en dos capas complementarias. La primera cubre el
 La especificación no parte de una colección arbitraria de funcionalidades. Cada épica se deriva de la evidencia levantada en el Capítulo 2 y traduce dolores observados en comportamientos verificables. Por ello, el frente público se orienta a comunicar con claridad el problema, el alcance y la propuesta de valor; el núcleo transaccional se centra en pedido, catálogo, condiciones comerciales, inventario y seguimiento; y las historias técnicas del API se tratan como habilitadores de integración coherentes con el dominio, no como un bloque desconectado del valor de negocio.
 </p>
 
-<p align="justify">
-La lógica de actores se mantiene estable respecto del capítulo anterior. Los arquetipos canónicos continúan siendo Valeria, Hilda y Pedro; mientras que la supervisión operativa conserva un rol de <em>stakeholder secundario</em> que influye sobre reglas de negocio, control de stock, lotes y cierre, pero no reemplaza a los tres protagonistas funcionales del MVP. Esta precisión evita duplicidades de segmentación y refuerza la continuidad narrativa del informe.
-</p>
-
 **Tabla 14**
 
 *Trazabilidad de épicas con actores, evidencia y propósito funcional*
