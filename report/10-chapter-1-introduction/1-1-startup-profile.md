@@ -11,10 +11,10 @@ El modelo de negocio propuesto se basa en **Software as a Service (SaaS)**, ya q
 Bajo este enfoque, Nexa no pretende reemplazar de inmediato todas las herramientas del ecosistema logístico ni prometer una automatización total del negocio, sino posicionarse como la capa principal de organización comercial y operativa del proceso de pedidos, capaz de ordenar el flujo central de información mientras la empresa avanza en su madurez digital.  
 
 En términos estratégicos, la startup compite por especialización más que por amplitud funcional. Su diferenciación radica en abordar de manera concreta un dominio donde convergen exigencias comerciales, operativas y de control propias de productos refrigerados y congelados.  
-Por ello, la primera apuesta se concentra en un **MVP web** que permita estructurar el flujo principal del sistema —catálogo, pedido, disponibilidad y seguimiento— y que, sobre una base validada, pueda evolucionar en fases posteriores hacia componentes móviles, integraciones con soluciones logísticas complementarias y funcionalidades de trazabilidad térmica apoyadas en tecnologías IoT.  
+Por ello, la primera apuesta se concentra en un **MVP web**que permita estructurar el flujo principal del sistema —catálogo, pedido, disponibilidad y seguimiento— y que, sobre una base validada, pueda evolucionar en fases posteriores hacia componentes móviles, integraciones con soluciones logísticas complementarias y funcionalidades de trazabilidad térmica apoyadas en tecnologías IoT.  
 
 Síntesis de posicionamiento. Como se desprende de la problemática previamente desarrollada, Nexa no se presenta como una plataforma horizontal para cualquier tipo de abastecimiento, sino como una solución SaaS B2B especializada en ordenar el flujo de pedidos y la coordinación operativa en empresas que distribuyen productos refrigerados y congelados.
-<p>
+</p>
 
 ## 1.1.1. Descripción del startup
 
@@ -35,6 +35,7 @@ A partir de esa base, la startup proyecta una evolución futura coherente con la
 **Tabla 3**
 
 *Misión, Visión y valores del equipo*
+
 <table border="1" cellspacing="0" cellpadding="5" align="center">
   <tr>
     <th>Misión</th>
@@ -62,8 +63,6 @@ A partir de esa base, la startup proyecta una evolución futura coherente con la
 Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo con perfiles complementarios que posean habilidades en análisis de sistemas, modelado de datos, programación y gestión de proyectos. A continuación, se presenta un formato estándar para la descripción de los miembros del equipo, el cual debe ser completado por cada integrante:
 </p>
 
-
-
 **Tabla 4**
 
 *Perfiles de integrantes del equipo*
@@ -76,17 +75,7 @@ Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo c
     <th>Descripción</th>
   </tr>
   <tr>
-    <td><img src="../assets/images/image2.png" alt="Foto Diego" width="80"/>U202323040</td>
-    <td>Yucra Sandoval, Diego Sebastian</td>
-    <td>Team Leader</td>
-    <td>
-      <p align="justify">
-      Soy Diego, estudiante de Ingeniería de Software en quinto ciclo con pasión por la organización y liderazgo de proyectos. He desarrollado la capacidad de guiar iniciativas desde la planificación hasta la verificación final, asegurando calidad en cada detalle. Me enfoco en la responsabilidad y atención al detalle, buscando aplicar mis conocimientos y ganar experiencia práctica. Fuera de lo académico, disfruto del deporte, la música, las series y compartir con amigos.
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td><img src="../assets/images/image3.png" alt="Foto Diego" width="80"/>U202411937</td>
+    <td><img src="../assets/images/image3.png" alt="Foto Marín Cueva, César Fernando" width="80"/><br>U202411937</td>
     <td>Marín Cueva, César Fernando</td>
     <td>Team Member</td>
     <td>
@@ -96,17 +85,17 @@ Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo c
     </td>
   </tr>
   <tr>
-    <td><img src="../assets/images/image4.png" alt="Foto Diego" width="80"/>U20241A054</td>
-    <td>Verde Bueno, Joaquín Francisco</td>
+    <td><img src="../assets/images/member-gerard.png" alt="Foto Rojas Mancilla, Gerard Gianpier" width="80"/><br>U202413142</td>
+    <td>Rojas Mancilla, Gerard Gianpier</td>
     <td>Team Member</td>
     <td>
       <p align="justify">
-      Estudiante de cuarto ciclo de Ingeniería de Software, apasionado por la tecnología y el software. Responsable y perfeccionista, siempre busca la máxima calidad en sus proyectos. En su tiempo libre disfruta de videojuegos, música y compartir con amigos.
+      Hola, soy Gerard, estudiante de cuarto ciclo de Ingeniería de Software. Me considero responsable, puntual y con facilidad para el trabajo en equipo. Tengo buenas habilidades de comunicación, capacidades de liderazgo y una mentalidad orientada al negocio. Siempre estoy dispuesto a aprender y asumir nuevos desafíos.
       </p>
     </td>
   </tr>
   <tr>
-    <td>U202416289</td>
+    <td><img src="../assets/images/member-gino.png" alt="Foto Torrejón De Los Santos, Gino Rodrigo" width="80"/><br>U202416289</td>
     <td>Torrejón De Los Santos, Gino Rodrigo</td>
     <td>Team Member</td>
     <td>
@@ -116,12 +105,22 @@ Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo c
     </td>
   </tr>
   <tr>
-    <td>U202413142</td>
-    <td>Rojas Mancilla, Gerard Gianpier</td>
+    <td><img src="../assets/images/image4.png" alt="Foto Verde Bueno, Joaquín Francisco" width="80"/><br>U20241A054</td>
+    <td>Verde Bueno, Joaquín Francisco</td>
     <td>Team Member</td>
     <td>
       <p align="justify">
-      Hola, soy Gerard, estudiante de cuarto ciclo de Ingeniería de Software. Me considero responsable, puntual y con facilidad para el trabajo en equipo. Tengo buenas habilidades de comunicación, capacidades de liderazgo y una mentalidad orientada al negocio. Siempre estoy dispuesto a aprender y asumir nuevos desafíos.
+      Soy Joaquín, estudiante de quinto ciclo de Ingeniería de Software, apasionado por la tecnología y el software. Responsable y perfeccionista, siempre busca la máxima calidad en sus proyectos. En su tiempo libre disfruta de videojuegos, música y compartir con amigos.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="../assets/images/image2.png" alt="Foto Yucra Sandoval, Diego Sebastian" width="80"/><br>U202323040</td>
+    <td>Yucra Sandoval, Diego Sebastian</td>
+    <td>Team Leader</td>
+    <td>
+      <p align="justify">
+      Soy Diego, estudiante de Ingeniería de Software en quinto ciclo con pasión por la organización y liderazgo de proyectos. He desarrollado la capacidad de guiar iniciativas desde la planificación hasta la verificación final, asegurando calidad en cada detalle. Me enfoco en la responsabilidad y atención al detalle, buscando aplicar mis conocimientos y ganar experiencia práctica. Fuera de lo académico, disfruto del deporte, la música, las series y compartir con amigos.
       </p>
     </td>
   </tr>

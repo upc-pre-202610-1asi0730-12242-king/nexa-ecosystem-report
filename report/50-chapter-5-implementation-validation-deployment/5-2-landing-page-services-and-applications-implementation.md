@@ -1,12 +1,12 @@
 ## 5.2. Landing Page, Services & Applications Implementation
 
-### 5.2.1. Sprint 0
+### 5.2.1. Sprint 1
 
 <p align="justify">
-El Sprint 0 representó la fase preparatoria del proyecto, enfocada en la definición del alcance, la estructuración del entorno de trabajo y el modelado conceptual del negocio.
+El Sprint 1 representó la fase preparatoria del proyecto, enfocada en la definición del alcance, la estructuración del entorno de trabajo y el modelado conceptual del negocio.
 </p>
 
-**Sprint Planning 0.**
+**Sprint Planning 1.**
 
 - **Meta del Sprint (Sprint Goal):** Establecer el marco de trabajo, delimitar el Producto Mínimo Viable (MVP) para la cadena de frío, definir las bases del Lean UX y crear el inventario inicial de requerimientos funcionales (Épicas y User Stories).
 
@@ -28,23 +28,19 @@ El Sprint 0 representó la fase preparatoria del proyecto, enfocada en la defini
 Las tareas comprometidas y ejecutadas durante este Sprint fueron:
 </p>
 
-- **Configurar entorno de gestión y repositorios.**
+- Configurar entorno de gestión y repositorios.
+- Definir alcance del MVP y visión futura.
+- Desarrollar Lean UX y Análisis Competitivo.
+- Redactar Épicas y User Stories iniciales.
+- Preparar EventStorming del Dominio.
+- Definir Style Guidelines preliminares.
+- Tarea Integradora: Cierre del Sprint 0.
 
-- **Definir alcance del MVP y visión futura.**
+**(Evidencia de Planificación):**
 
-- **Desarrollar Lean UX y Análisis Competitivo.**
+**Ilustración 1**
 
-- **Redactar Épicas y User Stories iniciales.**
-
-- **Preparar EventStorming del Dominio.**
-
-- **Definir Style Guidelines preliminares.**
-
-- **Tarea Integradora: Cierre del Sprint 0.**
-
-**(Evidencia de Planificación):** 
-
-## Ilustración 1-Sprint 0 Implementado en JIRA
+*Sprint 0 Implementado en JIRA*
 
 *(Imagen pendiente de agregar)*
 
@@ -68,13 +64,13 @@ La ejecución de esta iteración se materializó en la documentación estratégi
 El equipo demostró una fuerte cohesión durante el Sprint 0. La principal dificultad radicó en acotar el alcance del proyecto para evitar desarrollar un ERP completo, lo cual se solucionó mediante sesiones de debate lideradas por el Scrum Master, logrando aislar las funciones exclusivas de la capa transaccional B2B.
 </p>
 
-### 5.2.2. Sprint 1
+### 5.2.2. Sprint 2
 
 <p align="justify">
-El Sprint 1 marca la transición oficial hacia el modelado arquitectónico técnico, la validación empírica con usuarios reales del sector y el diseño de alta fidelidad de la interfaz.
+El Sprint 2 marca la transición oficial hacia el modelado arquitectónico técnico, la validación empírica con usuarios reales del sector y el diseño de alta fidelidad de la interfaz.
 </p>
 
-**Sprint Planning 1.**
+**Sprint Planning 2.**
 
 - **Meta del Sprint (Sprint Goal):** Ejecutar la investigación de campo (Needfinding), definir la arquitectura de software (C4 y BD), y elaborar los prototipos de la Landing Page y la Web Application.
 
@@ -96,32 +92,25 @@ El Sprint 1 marca la transición oficial hacia el modelado arquitectónico técn
 Las tareas comprometidas para esta iteración fueron:
 </p>
 
-- **Ejecutar Entrevistas de Needfinding (Grabadas).**
+- Ejecutar Entrevistas de Needfinding (Grabadas).
+- Construir User Personas y Task Matrix.
+- Desarrollar Journey Maps (As-Is & To-Be).
+- Formalizar Product Backlog y Criterios Gherkin.
+- Elaborar Diagramas de Arquitectura C4.
+- Diseñar Diagramas de Clases y Base de Datos.
+- Diseñar Mockups del Frontend B2B.
+- Diseñar e Implementar Landing Page.
+- Tarea Integradora: Cierre del Sprint 1 (Entrega AV1).
 
-- **Construir User Personas y Task Matrix.**
+**(Evidencia de Planificación):**
 
-- **Desarrollar Journey Maps (As-Is & To-Be).**
+**Ilustración 2**
 
-- **Formalizar Product Backlog y Criterios Gherkin.**
-
-- **Elaborar Diagramas de Arquitectura C4.**
-
-- **Diseñar Diagramas de Clases y Base de Datos.**
-
-- **Diseñar Mockups del Frontend B2B.**
-
-- **Diseñar e Implementar Landing Page.**
-
-- **Tarea Integradora: Cierre del Sprint 1 (Entrega AV1).**
-
-**(Evidencia de Planificación):** 
-
-## Ilustración 2-Sprint 1 Implementado en JIRA
+*Sprint 1 Implementado en JIRA*
 
 *(Imagen pendiente de agregar)*
 
 *Nota.* Evidencia de Sprint 1. *Elaboración propia.*
-
 
 **Development Evidence for Sprint Review.**
 
@@ -138,7 +127,7 @@ Las evidencias de ejecución técnica incluyeron el diseño visual validado y lo
 **Services Documentation Evidence for Sprint Review.**
 
 <p align="justify">
-(La documentación OpenAPI/Swagger se consolidará cuando inicie el desarrollo de los controladores en el Backend).
+La documentación OpenAPI/Swagger se consolidará cuando inicie el desarrollo de los controladores en el Backend.
 </p>
 
 **Software Deployment Evidence for Sprint Review.**
@@ -146,6 +135,7 @@ Las evidencias de ejecución técnica incluyeron el diseño visual validado y lo
 <p align="justify">
 En esta primera iteración, la evidencia de despliegue se circunscribe a la publicación de la Landing Page estática para fines de validación comercial.
 </p>
+
 [Enlace o captura de pantalla del entorno de despliegue de la Landing Page]
 
 **Team Collaboration Insights during Sprint.**
