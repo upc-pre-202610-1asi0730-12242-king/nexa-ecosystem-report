@@ -72,7 +72,7 @@ En paralelo, análisis regionales de la CEPAL y asociaciones del sector señalan
 </p>
 
 <p align="justify">
-En cuanto a la digitalización del abastecimiento B2B en el canal tradicional peruano, la evidencia académica y de mercado apunta a una adopción heterogénea. Un estudio reciente sobre pagos digitales y competitividad de bodegas tradicionales en Huancavelica muestra que los pequeños comercios han comenzado a incorporar billeteras digitales y aplicaciones móviles, pero aún se encuentran en etapas iniciales de madurez digital (Taipe Quispe, 2025). De forma complementaria, el Índice de Madurez Digital del Canal Tradicional elaborado por Xplora/Grupo Lucky reporta que alrededor de un 28% de bodegas utiliza algún aplicativo para gestionar tareas del negocio, mientras que la mayoría sigue en un nivel "principiante" (Grupo Lucky, 2022). Estas cifras provienen de una fuente profesional de mercado, pero son coherentes con la caracterización académica de baja madurez digital en pequeños comercios.
+En cuanto a la digitalización del abastecimiento B2B en el canal tradicional peruano, la evidencia académica y de mercado apunta a una adopción heterogénea. Un estudio reciente sobre pagos digitales y competitividad de bodegas tradicionales en Huancavelica muestra que los pequeños comercios han comenzado a incorporar billeteras digitales y aplicaciones móviles, pero aún se encuentran en etapas iniciales de madurez digital (Taipe Quispe, 2025). De forma complementaria, el estudio de madurez digital del canal tradicional elaborado por Lucky-Xplora reporta que alrededor de un 28% de bodegas utiliza algún aplicativo para gestionar tareas del negocio, mientras que la mayoría sigue en un nivel "principiante" (Lucky-Xplora, 2022). Estas cifras provienen de una fuente profesional de mercado, pero son coherentes con la caracterización académica de baja madurez digital en pequeños comercios.
 </p>
 
 <p align="justify">
@@ -88,23 +88,44 @@ Investigaciones sobre almacenamiento y distribución de perecederos muestran que
 </p>
 
 <p align="justify">
-Como consecuencia de esta desarticulación se observan al menos tres impactos principales:
+Como consecuencia de esta desarticulación se observan tres impactos principales. Para hacerlos explícitos, la Tabla 7 resume qué ocurre en la operación, por qué ocurre y cuál es el sustento bibliográfico que respalda cada efecto.
 </p>
 
-<p align="justify">
-<b>Primero</b>, errores en la preparación y despacho de pedidos —como cantidades inexactas, productos erróneos o retrasos por falta de stock—, los cuales son coherentes con los hallazgos de estudios que vinculan procesos manuales y ausencia de sistemas integrados con incrementos en errores operativos en cadenas de alimentos perecederos (Muñoz et al., 2022; Buenaño et al., 2024).
-</p>
+**Tabla 7**
+
+*Impactos operativos y comerciales de la fragmentación del pedido*
+
+<table border="1" cellspacing="0" cellpadding="6" align="center">
+  <tr>
+    <th>Impacto</th>
+    <th>Manifestación concreta en la operación</th>
+    <th>Relación con el problema</th>
+    <th>Sustento</th>
+  </tr>
+  <tr>
+    <td><strong>Errores en preparación y despacho</strong></td>
+    <td>Cantidades inexactas, productos equivocados, retrasos por quiebre de stock y necesidad de aclaraciones de último momento entre ventas, almacén y reparto.</td>
+    <td>Cuando el pedido se captura manualmente y luego se reinterpreta en sistemas no integrados, aumenta la probabilidad de que la información llegue incompleta, tarde o con ambigüedades al área operativa.</td>
+    <td>Muñoz et al. (2022); Buenaño et al. (2024).</td>
+  </tr>
+  <tr>
+    <td><strong>Mermas económicas por mala rotación</strong></td>
+    <td>Pérdida de producto por caducidad, despacho de mercadería con rotación ineficiente y dificultad para aplicar criterios FIFO o FEFO de forma consistente.</td>
+    <td>Si pedidos, inventario y fechas de vencimiento no están conectados, la operación pierde capacidad para priorizar lotes y sostener una rotación compatible con productos perecederos.</td>
+    <td>Tutiven et al. (2026); Arriaga et al. (2023).</td>
+  </tr>
+  <tr>
+    <td><strong>Riesgo normativo y sanitario</strong></td>
+    <td>Falta de trazabilidad, debilidad documental frente a auditorías, respuesta lenta ante incidencias y mayor exposición a incumplimientos en cadena de frío.</td>
+    <td>La comercialización y transporte de productos refrigerados exigen trazabilidad, registros de temperatura y capacidad de respuesta. Cuando esas evidencias no se consolidan, el riesgo deja de ser solo operativo y pasa a comprometer cumplimiento normativo e inocuidad.</td>
+    <td>Vértiz (2011); Tutiven et al. (2026).</td>
+  </tr>
+</table>
+
+*Nota.* La tabla expone de forma comparativa cómo un mismo problema de fragmentación informativa deriva en efectos distintos sobre operación, costos y cumplimiento. Elaboración propia con base en la literatura citada.
 
 <p align="justify">
-<b>Segundo</b>, mermas económicas por caducidad o mala rotación, ya que la dificultad de conectar información de pedidos, inventario y fechas de vencimiento limita la aplicación sistemática de estrategias de rotación como FIFO o FEFO en cadenas de frío (Tutiven et al., 2026; Arriaga et al., 2023).
-</p>
-
-<p align="justify">
-<b>Tercero</b>, un riesgo normativo y sanitario significativo, dado que la comercialización y transporte de productos refrigerados exigen trazabilidad, registros de temperatura y capacidad de respuesta ante auditorías o incidentes. La literatura sobre cadena de frío en contextos sanitarios y agroalimentarios muestra que las rupturas térmicas y la falta de trazabilidad se asocian con incumplimientos de normas y con riesgo para la seguridad del paciente o consumidor (Vértiz, 2011; Tutiven et al., 2026).
-</p>
-
-<p align="justify">
-A pesar de ello, diferentes trabajos y diagnósticos sectoriales indican que muchas empresas de tamaño mediano priorizan aún la inversión en activos físicos —incluyendo vehículos, cámaras frigoríficas y equipos de refrigeración especializados— por encima de la inversión en soluciones digitales para la gestión integral de la cadena de frío y la operación comercial (Rivas & Castillo, 2020; Torres & Tardillo, 2020; Aguayo et al., 2025).
+A pesar de ello, diferentes trabajos y diagnósticos sectoriales indican que muchas empresas de tamaño mediano priorizan aún la inversión en activos físicos, incluyendo vehículos, cámaras frigoríficas y equipos de refrigeración especializados, por encima de la inversión en soluciones digitales para la gestión integral de la cadena de frío y la operación comercial (Rivas & Castillo, 2020; Torres & Tardillo, 2020; Aguayo et al., 2025).
 </p>
 
 <p align="justify">
@@ -120,7 +141,7 @@ La relevancia de este problema no radica únicamente en la pérdida de eficienci
 </p>
 
 <div style="padding: 14px 16px; border-left: 4px solid #2554df; background: #f8fbff; margin: 16px 0;">
-  <strong>Lectura de síntesis del problema.</strong> En el contexto de Nexa, el problema no es únicamente la falta de digitalización, sino la falta de integración operativa entre captura comercial, validación, inventario y seguimiento del pedido. Esa desconexión explica por qué errores aparentemente menores terminan convirtiéndose en sobrecostos, quiebres, reclamos y pérdida de trazabilidad.
+  <strong>Síntesis del problema.</strong> En el contexto de Nexa, el problema no es únicamente la falta de digitalización, sino la falta de integración operativa entre captura comercial, validación, inventario y seguimiento del pedido. Esa desconexión explica por qué errores aparentemente menores terminan convirtiéndose en sobrecostos, quiebres, reclamos y pérdida de trazabilidad.
 </div>
 
 #### Objetivos y restricciones del proyecto
@@ -129,7 +150,7 @@ La relevancia de este problema no radica únicamente en la pérdida de eficienci
 En coherencia con la problemática expuesta, el proyecto requiere explicitar tanto los objetivos que orientan la propuesta como las restricciones que delimitan el alcance académico y técnico del MVP. Esta delimitación resulta importante porque evita sobredimensionar la solución: Nexa no busca demostrar que puede reemplazar de inmediato a todo el ecosistema logístico del frío, sino que puede ordenar el núcleo del flujo comercial-operativo donde hoy se concentra la mayor fricción.
 </p>
 
-**Tabla 7**
+**Tabla 8**
 
 *Objetivos y restricciones del proyecto*
 
@@ -183,7 +204,7 @@ El problema identificado puede estructurarse mediante la técnica 5W2H, lo que p
 
 ---
 
-**Tabla 8**
+**Tabla 9**
 
 *5W2H*
 
@@ -201,7 +222,7 @@ El problema identificado puede estructurarse mediante la técnica 5W2H, lo que p
   <tr>
     <td>What (qué)</td>
     <td>
-      El problema central consiste en la gestión manual, fragmentada y poco trazable del flujo de pedidos B2B de productos refrigerados, donde la información transita por canales informales —llamadas, mensajes de texto o voz— y se replica manualmente en hojas de cálculo o sistemas no integrados. Esto impide conectar de manera consistente el catálogo, la toma de pedido, el control de inventario, las fechas de vencimiento y el seguimiento operativo del despacho.
+      El problema central consiste en la gestión manual, fragmentada y poco trazable del flujo de pedidos B2B de productos refrigerados, donde la información transita por canales informales, como llamadas, mensajes de texto o notas de voz, y se replica manualmente en hojas de cálculo o sistemas no integrados. Esto impide conectar de manera consistente el catálogo, la toma de pedido, el control de inventario, las fechas de vencimiento y el seguimiento operativo del despacho.
     </td>
   </tr>
   <tr>
@@ -239,23 +260,34 @@ El problema identificado puede estructurarse mediante la técnica 5W2H, lo que p
 *Nota.* La matriz resume el problema ya desarrollado en los antecedentes y la problemática, pero conserva los datos e indicadores más relevantes para evitar que la síntesis reduzca el valor analítico del apartado.
 
 ### 1.2.2. Lean UX Process
-<p align = "justify">
+<p align="justify">
 Nexa adopta Lean UX como marco de trabajo porque permite formular la solución desde el aprendizaje y no únicamente desde una lista de funcionalidades. En lugar de asumir que el valor del producto se demuestra por la cantidad de módulos implementados, este enfoque prioriza entender qué problema concreto se intenta resolver, para quién se resuelve, qué comportamiento se espera modificar y qué evidencia permitirá decidir si la propuesta avanza, se ajusta o se descarta.
 En este proyecto, el uso de Lean UX resulta pertinente porque el dominio combina restricciones comerciales, operativas y logísticas propias de la distribución B2B de productos refrigerados. El riesgo no consiste solo en desarrollar una aplicación web funcional, sino en construir una herramienta que reduzca fricción en la coordinación de pedidos, mejore la visibilidad operativa y aporte mayor orden al flujo entre la empresa distribuidora y el cliente comercial. Por ello, el bloque se organiza en cinco partes: visión del modelo de negocio, problem statements, assumptions, hypothesis statements y Lean UX Canvas.
-<p>
+</p>
 
 <p align="justify">
-Desde esta perspectiva, Lean UX cumple dos funciones en el proyecto. La primera es estratégica: obliga al equipo a formular con precisión qué problema se está abordando, para qué actores se está construyendo valor y qué parte del dominio quedará fuera del MVP inicial. La segunda es metodológica: convierte supuestos del equipo en hipótesis observables, reduciendo el riesgo de diseñar una solución sobredimensionada o incoherente con la realidad operativa del sector. En consecuencia, los artefactos que se presentan a continuación no deben leerse como meras formalidades del capítulo, sino como un marco de decisión que ordena el resto del informe y justifica la secuencia posterior de entrevistas, needfinding, backlog y diseño.
+Desde esta perspectiva, Lean UX cumple dos funciones en el proyecto. La primera es estratégica: obliga al equipo a formular con precisión qué problema se está abordando, para qué actores se está construyendo valor y qué parte del dominio quedará fuera del MVP inicial. La segunda es metodológica: convierte supuestos del equipo en hipótesis observables, reduciendo el riesgo de diseñar una solución sobredimensionada o incoherente con la realidad operativa del sector. Por ello, este bloque concentra las decisiones que conectan la problemática del capítulo con la investigación posterior, la priorización del backlog y el diseño del MVP.
 </p>
+
+<div style="padding: 14px 16px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 16px 0;">
+  <strong>Componentes del bloque Lean UX.</strong><br/><br/>
+  <ul>
+    <li><strong>Visión del modelo de negocio:</strong> define quién paga, quién usa y dónde se concentra el valor inicial del producto.</li>
+    <li><strong>Problem Statements:</strong> delimitan la brecha principal que afecta a cada segmento priorizado.</li>
+    <li><strong>Assumptions:</strong> explicitan los supuestos que todavía deben contrastarse.</li>
+    <li><strong>Hypothesis Statements:</strong> traducen esos supuestos en aprendizajes esperados.</li>
+    <li><strong>Lean UX Canvas:</strong> resume el vínculo entre problema, solución, usuarios y outcomes esperados.</li>
+  </ul>
+</div>
 
 #### 1.2.2.1. Visión del modelo de negocio soportado por el software
 
 <p align="justify">
 Nexa soporta un modelo de negocio SaaS B2B especializado en la gestión del flujo principal de pedidos para empresas importadoras y distribuidoras de productos refrigerados y congelados. La lógica del negocio no se basa en vender un marketplace horizontal ni en reemplazar de inmediato todo el ecosistema logístico, sino en ofrecer una plataforma web que ordene el tramo donde hoy se concentran mayores fricciones: catálogo, registro de pedido, disponibilidad, control básico de inventario y seguimiento operativo.
-En este modelo, la empresa distribuidora es el cliente pagador de la solución y el entorno donde se produce la primera validación de valor. Sin embargo, el producto solo resulta sostenible si también genera beneficios claros para los usuarios internos que coordinan la operación y para el cliente comercial B2B que compra y hace seguimiento. Por ello, el software debe demostrar valor tanto hacia dentro de la operación —reduciendo retrabajo, errores y descoordinación— como hacia fuera —ofreciendo más claridad, autonomía y predictibilidad al comprador comercial—.
+En este modelo, la empresa distribuidora es el cliente pagador de la solución y el entorno donde se produce la primera validación de valor. Sin embargo, el producto solo resulta sostenible si también genera beneficios claros para los usuarios internos que coordinan la operación y para el cliente comercial B2B que compra y hace seguimiento. Por ello, el software debe demostrar valor tanto hacia dentro de la operación, reduciendo retrabajo, errores y descoordinación, como hacia fuera, ofreciendo más claridad, autonomía y predictibilidad al comprador comercial.
 </p>
 
-**Tabla 9**
+**Tabla 10**
 
 *Tabla de visión*
 
@@ -315,10 +347,10 @@ Los problem statements expresan la brecha entre la situación actual del dominio
 </p>
 
 <p align="justify">
-Conviene precisar que los siguientes problem statements no describen módulos de software ni funcionalidades cerradas, sino situaciones problemáticas que el proyecto necesita transformar. Por ello, cada uno articula un dominio de fricción, un segmento afectado, una brecha observable y una dirección estratégica inicial. Esta distinción es importante porque evita confundir tempranamente el problema con su posible implementación técnica.
+Cada problem statement articula un dominio de fricción, un segmento afectado, una brecha observable y una dirección estratégica inicial. Esta estructura permite mantener separado el problema del segmento y la decisión de diseño que luego orientará el MVP.
 </p>
 
-**Problem Statement 1 — Captura comercial y validación del pedido**
+**Problem Statement 1: Captura comercial y validación del pedido**
 
 <div style="border: 1px solid #dbe7ff; border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; background: #fcfdff;">
   <p><strong>Domain:</strong> Recepción, interpretación, digitación y validación inicial de pedidos B2B dentro de la empresa distribuidora.</p>
@@ -330,7 +362,7 @@ Conviene precisar que los siguientes problem statements no describen módulos de
   <p><strong>Resultado esperado:</strong> Disminuyen el tiempo de aclaración, la doble digitación y los errores de interpretación.</p>
 </div>
 
-**Problem Statement 2 — Abastecimiento del cliente comercial B2B**
+**Problem Statement 2: Abastecimiento del cliente comercial B2B**
 
 <div style="border: 1px solid #dbe7ff; border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; background: #fcfdff;">
   <p><strong>Domain:</strong> Compra recurrente de productos refrigerados desde la perspectiva del cliente comercial.</p>
@@ -342,7 +374,7 @@ Conviene precisar que los siguientes problem statements no describen módulos de
   <p><strong>Resultado esperado:</strong> El cliente percibe más claridad, autonomía y predictibilidad en su abastecimiento.</p>
 </div>
 
-**Problem Statement 3 — Despacho, predictibilidad y cierre de entrega**
+**Problem Statement 3: Despacho, predictibilidad y cierre de entrega**
 
 <div style="border: 1px solid #dbe7ff; border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; background: #fcfdff;">
   <p><strong>Domain:</strong> Ejecución del despacho y cierre del pedido en el punto de entrega.</p>
@@ -354,7 +386,7 @@ Conviene precisar que los siguientes problem statements no describen módulos de
   <p><strong>Resultado esperado:</strong> Mejora la predictibilidad del despacho y disminuyen los reclamos por falta de trazabilidad en la entrega.</p>
 </div>
 
-**Stakeholder secundario — Logística, abastecimiento y operación**
+**Stakeholder secundario: Logística, abastecimiento y operación**
 
 <div style="border: 1px dashed #cbd5e1; border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; background: #fafafa;">
   <p><strong>Domain:</strong> Reglas, restricciones y control integral del proceso.</p>
@@ -412,7 +444,7 @@ Para que estas hipótesis sean útiles dentro del proceso Lean UX, el equipo asu
 El Lean UX Canvas sintetiza la lógica del producto en una sola vista: problema, usuarios, propuesta de valor, outcomes y aprendizaje prioritario. Se presenta como artefacto de cierre del bloque Lean UX y como base de conexión con entrevistas, needfinding y backlog inicial.
 </p>
 
-**Tabla 10**
+**Tabla 11**
 
 *Lean UX Canvas*
 
