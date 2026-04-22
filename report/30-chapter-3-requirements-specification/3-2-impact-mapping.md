@@ -33,7 +33,7 @@ La lectura central del diagrama es que Nexa no persigue una optimización genér
 En esta lectura, la supervisión operativa se mantiene como <em>stakeholder secundario</em>. Su presencia es decisiva para definir restricciones, validar estados, controlar lotes y sostener la trazabilidad; sin embargo, el mapa conserva como actores protagónicos a Valeria, Hilda y Pedro porque son ellos quienes concentran la interacción funcional más directa con el flujo del MVP. Esta distinción mantiene consistencia con la taxonomía ya consolidada en el Capítulo 2.
 </p>
 
-**Tabla 25**
+**Tabla 17**
 
 *Lectura analítica del Impact Mapping de Nexa*
 

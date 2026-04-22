@@ -14,7 +14,7 @@ La especificación no parte de una colección arbitraria de funcionalidades. Cad
 La lógica de actores se mantiene estable respecto del capítulo anterior. Los arquetipos canónicos continúan siendo Valeria, Hilda y Pedro; mientras que la supervisión operativa conserva un rol de <em>stakeholder secundario</em> que influye sobre reglas de negocio, control de stock, lotes y cierre, pero no reemplaza a los tres protagonistas funcionales del MVP. Esta precisión evita duplicidades de segmentación y refuerza la continuidad narrativa del informe.
 </p>
 
-**Tabla 23**
+**Tabla 15**
 
 *Trazabilidad de épicas con actores, evidencia y propósito funcional*
 
@@ -67,7 +67,7 @@ La lógica de actores se mantiene estable respecto del capítulo anterior. Los a
 </tbody>
 </table>
 
-**Tabla 24**
+**Tabla 16**
 
 *User Stories — Épicas, historias, criterios de aceptación y estimación*
 
@@ -516,7 +516,7 @@ entonces el sistema no promete disponibilidad 24/7 ni tiempos de respuesta espec
 <strong>Escenario 1 — Registro exitoso de prospecto:</strong><br>
 Dado que el visitante completó <code>work email</code> y <code>operation details</code>,<br>
  cuando el sistema procesa el envío,<br>
- entonces registra la solicitud en la bandeja comercial definida para leads y muestra una confirmación visible de recepción.<br><br>
+ entonces almacena la solicitud en el CRM de Nexa y muestra una confirmación de éxito inmediata.<br><br>
 <strong>Escenario 2 — Alerta de campos obligatorios:</strong><br>
 Dado que el formulario se intenta enviar sin la información mínima,<br>
  cuando se valida la acción,<br>
@@ -532,7 +532,7 @@ Dado que el sitio está en inglés,<br>
 
 <tr>
 <td>US19</td>
-<td>Validación inmediata y feedback del formulario</td>
+<td>Validación inteligente y feedback en tiempo real</td>
 <td>Como visitante del sitio, quiero recibir validaciones instantáneas mientras escribo, para corregir errores de formato (ej: email) antes de intentar enviar el formulario.</td>
 <td>
 <strong>Escenario 1 — Validación de máscara de correo:</strong><br>
@@ -546,7 +546,7 @@ Dado que el sistema detecta caracteres prohibidos en campos de texto técnico,<b
 <strong>Escenario 3 — Confirmación visual persistente:</strong><br>
 Dado que el envío fue exitoso,<br>
  cuando el visitante navega por el resto del sitio en la misma sesión,<br>
- entonces el sistema conserva una confirmación visible o bloquea un reenvío inmediato no intencional dentro de la misma sesión.
+ entonces el sistema puede recordar que ya se realizó el contacto para evitar registros duplicados.
 </td>
 <td>3</td>
 <td>EP05</td>
@@ -600,7 +600,7 @@ entonces el sistema mantiene visible la lista completa de preguntas disponibles 
 <strong>Escenario 3 — Múltiples preguntas independientes:</strong><br>
 Dado que el visitante expande una pregunta,<br>
 cuando expande otra pregunta diferente,<br>
-entonces el sistema conserva ambas respuestas visibles sin redirigir al usuario ni colapsar contenido de forma inesperada.
+entonces el sistema permite que ambas estén expandidas simultáneamente o colapsa la anterior, según el comportamiento configurado, sin que una interfiera con la otra.
 </td>
 <td>2</td>
 <td>EP06</td>
@@ -739,10 +739,10 @@ entonces el sistema muestra descripción, presentación, estado de disponibilida
 Dado que el producto está publicado pero la ficha técnica no fue registrada,<br>
 cuando el cliente revisa el detalle,<br>
 entonces el sistema indica la ausencia del documento sin inventar información ni ocultar el producto.<br><br>
-<strong>Escenario 3 — Disponibilidad vigente al momento de consulta:</strong><br>
+<strong>Escenario 3 — Disponibilidad en tiempo real:</strong><br>
 Dado que el stock del producto cambió desde que el cliente abrió el catálogo,<br>
 cuando el cliente consulta el detalle del producto,<br>
-entonces el sistema muestra el estado de disponibilidad vigente al momento de abrir el detalle del producto.
+entonces el sistema muestra el estado de disponibilidad más reciente y no una versión cacheada desactualizada.
 </td>
 <td>3</td>
 <td>EP07</td>
@@ -756,7 +756,7 @@ entonces el sistema muestra el estado de disponibilidad vigente al momento de ab
 <strong>Escenario 1 — Publicación exitosa del producto:</strong><br>
 Dado que el producto existe con información mínima requerida y la supervisora lo marca como publicado,<br>
 cuando guarda el cambio,<br>
-entonces el sistema lo deja disponible en el catálogo de las cuentas habilitadas en la siguiente consulta válida del catálogo.<br><br>
+entonces el sistema lo deja disponible en el catálogo de las cuentas habilitadas de forma inmediata.<br><br>
 <strong>Escenario 2 — Ocultamiento del producto:</strong><br>
 Dado que la supervisora marca un producto como oculto,<br>
 cuando el cambio se guarda,<br>
@@ -818,7 +818,7 @@ entonces el sistema impide el envío del pedido hasta que se seleccione o regist
 <strong>Escenario 3 — Condiciones actualizadas en la sesión actual:</strong><br>
 Dado que las condiciones comerciales del cliente fueron modificadas por la supervisora durante la misma sesión,<br>
 cuando la coordinadora recarga o consulta de nuevo el perfil del cliente,<br>
-entonces el sistema refleja las condiciones vigentes más recientes del cliente antes de continuar con el pedido.
+entonces el sistema refleja las condiciones vigentes más recientes y no una versión anterior en caché.
 </td>
 <td>5</td>
 <td>EP08</td>
@@ -827,7 +827,7 @@ entonces el sistema refleja las condiciones vigentes más recientes del cliente 
 <tr>
 <td>US31</td>
 <td>Registrar productos y capturar evidencia en campo</td>
-<td>Como coordinadora comercial (Valeria), quiero registrar productos y observaciones desde un dispositivo móvil, para digitalizar pedidos en campo con soporte de imágenes adjuntas.</td>
+<td>Como coordinadora comercial (Valeria), quiero registrar productos y observaciones desde un dispositivo móvil, para digitalizar pedidos en tiempo real con soporte de imágenes adjuntas.</td>
 <td>
 <strong>Escenario 1 — Captura responsiva del pedido:</strong><br>
 Dado que la operadora usa una tablet,<br>
@@ -840,7 +840,7 @@ Dado que el pedido requiere evidencia fotográfica del estado físico inicial,<b
 <strong>Escenario 3 — Guardado incremental:</strong><br>
 Dado que el registro se realiza en zonas de baja conectividad,<br>
  cuando el sistema detecta pérdida de red,<br>
- entonces conserva el progreso del borrador y permite retomarlo cuando la conectividad se restablece.
+ entonces el borrador se guarda localmente y se sincroniza automáticamente al recuperar la señal.
 </td>
 <td>3</td>
 <td>EP08</td>
@@ -1080,7 +1080,7 @@ entonces el sistema rechaza la transición por secuencia inválida y mantiene el
 <strong>Escenario 3 — Solo una transición activa simultánea:</strong><br>
 Dado que dos usuarias intentan actualizar el estado del mismo pedido simultáneamente,<br>
 cuando ambas operaciones se procesan,<br>
-entonces el sistema conserva una única transición válida y notifica a la segunda usuaria que el estado ya cambió antes de su intento.
+entonces el sistema aplica solo una transición de forma atómica y notifica a la segunda usuaria que el estado ya fue actualizado.
 </td>
 <td>5</td>
 <td>EP10</td>
@@ -1094,15 +1094,15 @@ entonces el sistema conserva una única transición válida y notifica a la segu
 <strong>Escenario 1 — Generación automática de POD:</strong><br>
 Dado que el transportista marca el pedido como entregado,<br>
  cuando el sistema procesa la acción,<br>
- entonces genera un registro de prueba de entrega con marca de tiempo y evidencia asociada al pedido.<br><br>
+ entonces genera una instancia de la clase <code>POD</code> con marca de tiempo y firma digital.<br><br>
 <strong>Escenario 2 — Validación térmica de cierre:</strong><br>
 Dado que el pedido es de cadena de frío,<br>
  cuando se registra la entrega,<br>
- entonces el sistema exige la validación de la condición térmica final conforme a la regla operativa definida para ese pedido.<br><br>
+ entonces el sistema valida que la temperatura del <code>Vehicle</code> se mantuvo en el rango de la <code>ProductSpec</code> hasta el momento final.<br><br>
 <strong>Escenario 3 — Carga de evidencia fotográfica obligatoria:</strong><br>
 Dado que la política de entrega exige evidencia visual,<br>
  cuando el sistema detecta que no hay imagen adjunta,<br>
- entonces bloquea el cambio de estado a <code>delivered</code> hasta que se cargue el archivo.
+ entonces bloquea el cambio de estado a <code>Delivered</code> hasta que se cargue el archivo.
 </td>
 <td>5</td>
 <td>EP10</td>
@@ -1148,7 +1148,7 @@ entonces el sistema rechaza la edición para preservar la integridad del registr
 <strong>Escenario 1 — Vista de stock con tres dimensiones:</strong><br>
 Dado que existen productos con inventario registrado,<br>
 cuando la supervisora abre la vista de stock,<br>
-entonces el sistema muestra por cada producto o SKU la cantidad total, comprometida y disponible con la última actualización registrada.<br><br>
+entonces el sistema muestra por cada producto o SKU la cantidad total, comprometida y disponible en tiempo real.<br><br>
 <strong>Escenario 2 — Producto oculto o bloqueado visible internamente:</strong><br>
 Dado que un producto se encuentra oculto o bloqueado para clientes,<br>
 cuando la supervisora lo consulta en gestión interna,<br>
@@ -1156,7 +1156,7 @@ entonces el sistema mantiene su registro y estado de inventario visible para con
 <strong>Escenario 3 — Actualización de stock tras cambio de estado de pedido:</strong><br>
 Dado que un pedido en estado <code>confirmed</code> fue cancelado,<br>
 cuando la operación registra la cancelación,<br>
-entonces el sistema refleja el incremento del stock disponible en la siguiente consulta válida de la vista de inventario.
+entonces el sistema refleja el incremento del stock disponible de forma inmediata en la vista de inventario.
 </td>
 <td>5</td>
 <td>EP11</td>
@@ -1209,12 +1209,12 @@ entonces el sistema aplica el nuevo valor en la próxima consulta de alertas FEF
 <tr>
 <td>US47</td>
 <td>Reservar y liberar stock según el estado del pedido</td>
-<td>Como supervisora operativa autorizada, quiero que el sistema reserve y libere stock según el estado del pedido, para mantener la disponibilidad comercial consistente con la operación real.</td>
+<td>Como sistema de inventario, quiero reservar y liberar stock de forma automática según el estado del pedido, para mantener la disponibilidad comercial siempre consistente con la operación real.</td>
 <td>
 <strong>Escenario 1 — Reserva automática al confirmar pedido:</strong><br>
 Dado que un pedido pasa al estado <code>confirmed</code>,<br>
 cuando el sistema procesa el cambio de estado,<br>
-entonces reserva las unidades comprometidas y descuenta el stock disponible sin permitir inconsistencias entre pedido e inventario.<br><br>
+entonces reserva las unidades comprometidas y descuenta el stock disponible de forma atómica.<br><br>
 <strong>Escenario 2 — Liberación automática al cancelar pedido:</strong><br>
 Dado que un pedido confirmado es cancelado antes del despacho,<br>
 cuando el sistema registra la cancelación,<br>
@@ -1312,7 +1312,7 @@ entonces refleja la configuración vigente más reciente asignada por la supervi
 <strong>Escenario 1 — Saldo y morosidad visibles en el perfil:</strong><br>
 Dado que la cuenta del cliente tiene información comercial registrada,<br>
 cuando la usuaria abre su perfil o lo identifica por RUC/DNI,<br>
-entonces el sistema muestra saldo vigente, saldo vencido y crédito disponible con la última actualización comercial registrada.<br><br>
+entonces el sistema muestra saldo vigente, saldo vencido y crédito disponible en tiempo real.<br><br>
 <strong>Escenario 2 — Visibilidad parcial para el propio cliente:</strong><br>
 Dado que el cliente consulta su propia cuenta desde el portal B2B,<br>
 cuando revisa sus datos comerciales,<br>
@@ -1329,7 +1329,7 @@ entonces el sistema muestra el monto total vencido con la antigüedad del vencim
 <tr>
 <td>US52</td>
 <td>Bloquear un pedido por regla de crédito o morosidad</td>
-<td>Como coordinadora comercial o supervisora autorizada, quiero que el sistema bloquee automáticamente pedidos que incumplen las reglas de crédito o morosidad, para evitar registrar operaciones inviables antes de comprometer recursos.</td>
+<td>Como sistema de condiciones comerciales, quiero bloquear automáticamente pedidos que incumplen las reglas de crédito o morosidad, para evitar registrar operaciones inviables antes de comprometer recursos.</td>
 <td>
 <strong>Escenario 1 — Bloqueo por saldo vencido:</strong><br>
 Dado que el cliente tiene saldo vencido mayor a cero,<br>
@@ -1454,7 +1454,7 @@ entonces envía el correo únicamente a la dirección registrada en la cuenta, s
 <strong>Escenario 1 — Gestión exitosa de cuentas internas:</strong><br>
 Dado que la administradora tiene permisos de administración de cuentas,<br>
 cuando crea, activa o desactiva una cuenta interna,<br>
-entonces el sistema aplica el cambio y deja el rol correspondiente asignado a la cuenta intervenida.<br><br>
+entonces el sistema aplica el cambio de forma inmediata con el rol correspondiente asignado.<br><br>
 <strong>Escenario 2 — Acceso denegado para rol no autorizado:</strong><br>
 Dado que un usuario sin permisos de administración intenta gestionar cuentas internas,<br>
 cuando ejecuta la operación,<br>

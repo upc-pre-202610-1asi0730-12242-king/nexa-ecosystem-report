@@ -27,10 +27,6 @@ La planificación del Sprint 1 se orientó a producir un incremento AV1 que pudi
 La ejecución del sprint evidencia una distribución funcional del liderazgo. En lugar de concentrar toda la iteración en un único perfil, el equipo repartió la responsabilidad entre dominio, diseño, arquitectura, documentación y construcción visible del sitio. Esta organización es consistente con el Student Outcome ABET 5 y explica por qué el incremento AV1 combina trabajo público demostrable con profundidad ingenieril.
 </p>
 
-**Tabla 36**
-
-*Distribución de liderazgos y roles funcionales en el Sprint 1*
-
 | Aspecto del sprint | Liderazgo principal | Colaboradores clave | Resultado visible en AV1 |
 |---|---|---|---|
 | Orquestación del sprint, backlog y coherencia del incremento | **Yucra Sandoval, Diego Sebastian (Sprint Lead)** | César Marín, Gerard Rojas, Gino Torrejón | Priorización en Jira, consistencia del backlog y articulación entre alcance visible y trabajo técnico futuro |
@@ -49,10 +45,6 @@ La forma más clara de leer el Sprint Backlog 1 no es como una lista plana de ti
 Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Backlog documentado en la sección 3.3</strong>. Las capturas Jira verifican que la priorización descrita en el informe sí fue llevada a la herramienta de gestión: primero se ordenaron historias públicas y de validación comercial, luego se preservaron historias de arquitectura, documentación y preparación técnica futura. Por ello, la evidencia visual siguiente cumple una doble función: <strong>demuestra selección de trabajo para el sprint</strong> y <strong>verifica consistencia entre backlog académico y backlog operativo en Jira</strong>.
 </p>
 
-**Tabla 37**
-
-*Agrupación de frentes de trabajo y issues en el Sprint 1*
-
 | Frente de trabajo | Issues visibles en las capturas Jira | Resultado esperado dentro del sprint |
 |---|---|---|
 | Fundamento de negocio e investigación | NX-59, NX-61, NX-62, NX-63, NX-67, NX-68, NX-69, NX-71, NX-169 | Consolidar startup profile, segmentos, entrevistas, personas, journeys, EventStorming y glosario para sostener el MVP con evidencia de dominio |
@@ -61,7 +53,7 @@ Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Bac
 | Arquitectura y base técnica futura | NX-94, NX-106, NX-113, NX-116, NX-122, NX-128, NX-133, NX-138 | Dejar preparada la evolución hacia dashboard B2B, DDD, autenticación, servicios y documentación técnica |
 | Trazabilidad académica y despliegue | NX-142, NX-148, NX-153, NX-158, NX-161, NX-164, NX-167 | Alinear user stories, priorización, Student Outcome, estadísticas, publicación del sitio y compilación del informe |
 
-**Ilustración 63**
+**Ilustración 61**
 
 *Vista general del Sprint 1 cargado en Jira*
 
@@ -69,7 +61,7 @@ Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Bac
 
 *Nota.* La vista general del tablero permite verificar el volumen de trabajo visible del incremento AV1 y su organización inicial antes de revisar los bloques específicos. Elaboración propia.
 
-**Ilustración 64**
+**Ilustración 62**
 
 *Sprint 1 — bloque A de trabajo planificado en Jira*
 
@@ -77,7 +69,7 @@ Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Bac
 
 *Nota.* El primer bloque del Sprint 1 muestra tareas de lineamientos visuales, arquitectura de información, wireframes, accesibilidad, scaffolding del sitio y componentes iniciales de frontend y backend. Elaboración propia.
 
-**Ilustración 65**
+**Ilustración 63**
 
 *Sprint 1 — bloque B de trabajo planificado en Jira*
 
@@ -85,7 +77,7 @@ Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Bac
 
 *Nota.* El segundo bloque evidencia continuidad entre especificación de user stories, priorización del MVP, despliegue del website y cierre documental de la entrega. Elaboración propia.
 
-**Ilustración 66**
+**Ilustración 64**
 
 *Sprint 1 — bloque C de historias públicas dentro del sprint*
 
@@ -93,7 +85,7 @@ Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Bac
 
 *Nota.* Este bloque agrupa historias del sitio público para Home, Platform, Solutions, Company y FAQ, todas asignadas al Sprint 1. Su presencia confirma que la experiencia pública forma parte directa del incremento AV1. Elaboración propia.
 
-**Ilustración 67**
+**Ilustración 65**
 
 *Verificación del Product Backlog en Jira — bloque A*
 
@@ -101,7 +93,7 @@ Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Bac
 
 *Nota.* Este primer bloque del backlog en Jira demuestra que las historias priorizadas para investigación, diseño y composición del MVP sí fueron registradas en la herramienta y no solo descritas en el informe. Elaboración propia.
 
-**Ilustración 68**
+**Ilustración 66**
 
 *Verificación del Product Backlog en Jira — bloque B*
 
@@ -109,7 +101,7 @@ Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Bac
 
 *Nota.* El segundo bloque confirma continuidad entre historias del sitio público, backlog técnico y evolución prevista hacia la web application autenticada. Elaboración propia.
 
-**Ilustración 69**
+**Ilustración 67**
 
 *Verificación del Product Backlog en Jira — bloque C*
 
@@ -152,10 +144,6 @@ Sin embargo, la revisión del workspace y de los repositorios remotos declara un
 <p align="justify">
 La evidencia de despliegue de AV1 sí existe, pero está concentrada en el frente público. La siguiente tabla separa lo que ya es demostrable de lo que todavía permanece en fase preparatoria.
 </p>
-
-**Tabla 38**
-
-*Estado de despliegue y evidencia verificable de artefactos en AV1*
 
 | Artefacto | Estado observable en AV1 | Evidencia |
 |---|---|---|
