@@ -11,6 +11,8 @@ El diseño orientado a objetos de Nexa trasciende la mera representación de dat
   <p style="margin: 5px 0 0 0; color: #64748b; font-style: italic;">"Modelando el comportamiento inteligente de la distribución primaria."</p>
 </div>
 
+**Ilustración 61**
+
 *Diagrama de Clases del Ecosistema Nexa (Enterprise Model)*
 
 ```mermaid
@@ -163,7 +165,7 @@ classDiagram
     Dispatch "1" *-- "0..1" POD : evidence
 ```
 
-El diagrama de clases integra las reglas de negocio transaccionales con el modelo relacional. A diferencia del ERD, aquí se destacan los métodos de control (ej: <code>verifyColdChain</code>, <code>isCreditApproved</code>) que aseguran la integridad del proceso de distribución. Elaboración propia.
+*Nota.* El diagrama de clases integra las reglas de negocio transaccionales con el modelo relacional. A diferencia del ERD, aquí se destacan los métodos de control (ej: <code>verifyColdChain</code>, <code>isCreditApproved</code>) que aseguran la integridad del proceso de distribución. Elaboración propia.
 
 ---
 
@@ -198,6 +200,8 @@ El diseño orientado a objetos ha sido validado contra el esquema de base de dat
 Para asegurar la integridad del sistema, se presenta la siguiente matriz que vincula las historias de usuario críticas con los componentes del diseño orientado a objetos que las materializan.
 </p>
 
+**Tabla 35**
+
 *Matriz de Coherencia Requerimiento-Objeto*
 
 | User Story ID | Req. Title | Entidad/Clase Principal | Método/Lógica Vinculada |
@@ -218,4 +222,4 @@ Para asegurar la integridad del sistema, se presenta la siguiente matriz que vin
 | **US46** | Alertas FEFO | `Batch` | `expiryDate`, `isExpired()` |
 | **US63** | API POD/Eventos | `POD` / `Incident` | `verifyIntegrity()`, `resolve()` |
 
-Se evidencia que cada funcionalidad crítica del negocio tiene un respaldo explícito en el diseño de clases, garantizando que el software sea una representación fiel de los requerimientos. Elaboración propia.
+*Nota.* Se evidencia que cada funcionalidad crítica del negocio tiene un respaldo explícito en el diseño de clases, garantizando que el software sea una representación fiel de los requerimientos. Elaboración propia.

@@ -42,7 +42,7 @@ Para una pyme distribuidora de productos refrigerados, esta fragmentación sugie
 
 El análisis competitivo estructurado a continuación emplea una matriz de variables del mercado (Landscape) y un análisis FODA cruzado (SWOT) para evaluar nuestro posicionamiento estratégico frente a las plataformas establecidas. Las dimensiones evaluadas no solo contemplan la arquitectura de software, sino también la fricción de adopción, el mercado objetivo y el modelo de monetización; factores críticos para la supervivencia de un SaaS en el canal comercial peruano. 
 
-</p>
+</p>**Tabla 14**
 
 *Análisis Competitivo*
 
@@ -144,7 +144,7 @@ El análisis competitivo estructurado a continuación emplea una matriz de varia
   </tbody>
 </table>
 
-Tabla de análisis competitivo. Elaboración propia.
+*Nota.* Tabla de análisis competitivo. Elaboración propia.
 
 ---
 

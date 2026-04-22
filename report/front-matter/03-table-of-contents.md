@@ -2,8 +2,10 @@
 
 <table>
   <tr><td><a href="02-version-history.md">Registro de Versiones del Informe</a></td></tr>
-  <tr><td><a href="04-project-report-collaboration-insights.md">Project Report Collaboration Insights</a></td></tr>
+  <tr><td><a href="03-project-report-collaboration-insights.md">Project Report Collaboration Insights</a></td></tr>
   <tr><td>Contenido</td></tr>
+  <tr><td><a href="04-list-of-tables-and-figures.md">Lista de Tablas</a></td></tr>
+  <tr><td><a href="04-list-of-tables-and-figures.md">Lista de Ilustraciones</a></td></tr>
   <tr><td><a href="05-student-outcome.md">Student Outcome</a></td></tr>
 
   <tr><td><b><a href="../10-chapter-1-introduction/1-1-startup-profile.md">Capítulo I: Introducción y Perfil de la Solución</a></b></td></tr>
@@ -27,8 +29,7 @@
   <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.1. User Personas</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.2. User Task Matrix</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.3. User Journey Mapping</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.4. As-Is Scenario Map</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.5. Empathy Mapping</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.4. Empathy Mapping</a></td></tr>
   <tr><td><a href="../20-chapter-2-requirements-elicitation/2-4-big-picture-event-storming.md">2.4. Big Picture Eventstorming</a></td></tr>
   <tr><td><a href="../20-chapter-2-requirements-elicitation/2-5-ubiquitous-language.md">2.5. Ubiquitous Language</a></td></tr>
 
@@ -65,13 +66,6 @@
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-7-software-object-oriented-design.md">4.7.1. Class Diagrams</a></td></tr>
   <tr><td><a href="../40-chapter-4-product-design/4-8-database-design.md">4.8. Database Design</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1. Database Diagrams</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.1. Identity</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.2. Catalog</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.3. Inventory</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.4. Customer Management</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.5. Commercial Conditions</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.6. Orders</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.7. Traceability</a></td></tr>
 
   <tr><td><b><a href="../50-chapter-5-implementation-validation-deployment/5-1-software-configuration-management.md">Capítulo V: Product Implementation, Validation &amp; Deployment</a></b></td></tr>
   <tr><td><a href="../50-chapter-5-implementation-validation-deployment/5-1-software-configuration-management.md">5.1. Software Configuration Management</a></td></tr>
@@ -87,12 +81,15 @@
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.1.4. Development Evidence for Sprint Review</a></td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.1.5. Execution Evidence for Sprint Review</a></td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.1.6. Services Documentation Evidence for Sprint Review</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.1.7. Software Deployment Evidence for Sprint Review</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.1.8. Team Collaboration Insights during Sprint</a></td></tr>
+	  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.1.7. Software Deployment Evidence for Sprint Review</a></td></tr>
+	  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.1.8. Team Collaboration Insights during Sprint</a></td></tr>
   <tr><td><a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3. Validation Interviews</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3.1. Diseño de Entrevistas</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3.2. Registro de Entrevistas</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3.3. Evaluaciones según heurísticas</a></td></tr>
   <tr><td><a href="../50-chapter-5-implementation-validation-deployment/5-4-video-about-the-product.md">5.4. Video About-the-Product</a></td></tr>
 
-  <tr><td><b><a href="../90-conclusions.md">Conclusiones</a></b></td></tr>
+	  <tr><td><b><a href="../90-conclusions.md">Conclusiones</a></b></td></tr>
   <tr><td><b><a href="../99-bibliography.md">Bibliografía</a></b></td></tr>
   <tr><td><b><a href="../annexes/annex-a-annexes.md">Anexos</a></b></td></tr>
 </table>
