@@ -29,7 +29,7 @@ La ejecución del sprint evidencia una distribución funcional del liderazgo. En
 
 | Aspecto del sprint | Liderazgo principal | Colaboradores clave | Resultado visible en AV1 |
 |---|---|---|---|
-| Orquestación del sprint, backlog y coherencia del incremento | **Yucra Sandoval, Diego Sebastian** | César Marín, Gerard Rojas | Priorización en Jira, consistencia del backlog y articulación entre alcance visible y trabajo técnico futuro |
+| Orquestación del sprint, backlog y coherencia del incremento | **Yucra Sandoval, Diego Sebastian (Sprint Lead)** | César Marín, Gerard Rojas, Gino Torrejón | Priorización en Jira, consistencia del backlog y articulación entre alcance visible y trabajo técnico futuro |
 | Consistencia editorial y narrativa del informe | **Marín Cueva, César Fernando** | Diego Yucra, Gino Torrejón | Capítulos alineados con la propuesta de valor, formato académico y trazabilidad documental |
 | Arquitectura, configuración y convenciones de ingeniería | **Rojas Mancilla, Gerard Gianpier** | Diego Yucra | Gestión Docs-as-Code, convenciones de commits, modelo C4 y delimitación de la base técnica |
 | Needfinding, síntesis del dominio e información estructural | **Torrejón De Los Santos, Gino Rodrigo** | Joaquín Verde, César Marín | Impact Mapping, EventStorming e Information Architecture conectados con dolores reales del dominio |
@@ -39,6 +39,10 @@ La ejecución del sprint evidencia una distribución funcional del liderazgo. En
 
 <p align="justify">
 La forma más clara de leer el Sprint Backlog 1 no es como una lista plana de tickets, sino como un conjunto de frentes coordinados que alimentan un mismo incremento. La agrupación siguiente resume la lógica real del sprint y explica por qué AV1 puede defenderse simultáneamente como entrega de producto, de diseño y de disciplina ingenieril.
+</p>
+
+<p align="justify">
+Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Backlog documentado en la sección 3.3</strong>. Las capturas Jira verifican que la priorización descrita en el informe sí fue llevada a la herramienta de gestión: primero se ordenaron historias públicas y de validación comercial, luego se preservaron historias de arquitectura, documentación y preparación técnica futura. Por ello, la evidencia visual siguiente cumple una doble función: <strong>demuestra selección de trabajo para el sprint</strong> y <strong>verifica consistencia entre backlog académico y backlog operativo en Jira</strong>.
 </p>
 
 | Frente de trabajo | Issues visibles en las capturas Jira | Resultado esperado dentro del sprint |
@@ -51,13 +55,21 @@ La forma más clara de leer el Sprint Backlog 1 no es como una lista plana de ti
 
 **Ilustración 42**
 
+*Vista general del Sprint 1 cargado en Jira*
+
+![Vista general del Sprint 1](../assets/images/jira/jira-sprint-0-overview.png)
+
+*Nota.* La vista general del tablero permite verificar el volumen de trabajo visible del incremento AV1 y su organización inicial antes de revisar los bloques específicos. Elaboración propia.
+
+**Ilustración 43**
+
 *Sprint 1 — bloque A de trabajo planificado en Jira*
 
 ![Sprint 1 bloque A](../assets/images/jira/jira-sprint-1-block-a.png)
 
 *Nota.* El primer bloque del Sprint 1 muestra tareas de lineamientos visuales, arquitectura de información, wireframes, accesibilidad, scaffolding del sitio y componentes iniciales de frontend y backend. Elaboración propia.
 
-**Ilustración 43**
+**Ilustración 44**
 
 *Sprint 1 — bloque B de trabajo planificado en Jira*
 
@@ -65,13 +77,37 @@ La forma más clara de leer el Sprint Backlog 1 no es como una lista plana de ti
 
 *Nota.* El segundo bloque evidencia continuidad entre especificación de user stories, priorización del MVP, despliegue del website y cierre documental de la entrega. Elaboración propia.
 
-**Ilustración 44**
+**Ilustración 45**
 
 *Sprint 1 — bloque C de historias públicas dentro del sprint*
 
 ![Sprint 1 bloque C](../assets/images/jira/jira-sprint-1-block-c.png)
 
 *Nota.* Este bloque agrupa historias del sitio público para Home, Platform, Solutions, Company y FAQ, todas asignadas al Sprint 1. Su presencia confirma que la experiencia pública forma parte directa del incremento AV1. Elaboración propia.
+
+**Ilustración 46**
+
+*Verificación del Product Backlog en Jira — bloque A*
+
+![Product Backlog bloque A](../assets/images/jira/jira-backlog-block-a.png)
+
+*Nota.* Este primer bloque del backlog en Jira demuestra que las historias priorizadas para investigación, diseño y composición del MVP sí fueron registradas en la herramienta y no solo descritas en el informe. Elaboración propia.
+
+**Ilustración 47**
+
+*Verificación del Product Backlog en Jira — bloque B*
+
+![Product Backlog bloque B](../assets/images/jira/jira-backlog-block-b.png)
+
+*Nota.* El segundo bloque confirma continuidad entre historias del sitio público, backlog técnico y evolución prevista hacia la web application autenticada. Elaboración propia.
+
+**Ilustración 48**
+
+*Verificación del Product Backlog en Jira — bloque C*
+
+![Product Backlog bloque C](../assets/images/jira/jira-backlog-block-c.png)
+
+*Nota.* El tercer bloque permite contrastar la lógica de priorización del capítulo 3 con la evidencia viva de Jira, incluyendo historias orientadas a despliegue, trazabilidad académica y preparación de servicios futuros. Elaboración propia.
 
 #### 5.2.1.4. Development Evidence for Sprint Review.
 
@@ -80,7 +116,7 @@ La evidencia de desarrollo del Sprint 1 se distribuye en cuatro capas verificabl
 </p>
 
 <p align="justify">
-En conjunto, esta evidencia muestra que AV1 sí produjo desarrollo real: no solo existe una página publicada, sino un ecosistema de artefactos coherentes que conectan investigación, diseño, documentación y construcción. Esa articulación es importante porque reduce el riesgo de que la landing page sea una pieza aislada sin continuidad hacia la web application y los servicios futuros.
+En conjunto, esta evidencia muestra que AV1 sí produjo desarrollo real: no solo existe una página publicada, sino un ecosistema de artefactos coherentes que conectan investigación, diseño, documentación y construcción. Esa articulación es importante porque reduce el riesgo de que la landing page sea una pieza aislada sin continuidad hacia la web application y los servicios futuros. En particular, el archivo Figma documentado en la sección 4.5 permite demostrar que el frente de <strong>Web Applications Design</strong> sí avanzó con mockups de dashboard, órdenes, inventario, despacho, FEFO, tracking y POD, aunque todavía no correspondan a software desplegado.
 </p>
 
 #### 5.2.1.5. Execution Evidence for Sprint Review.
@@ -129,4 +165,8 @@ El Sprint 1 revela un patrón de colaboración técnicamente sano: investigació
 
 <p align="justify">
 La principal conclusión colaborativa del sprint es que Nexa no se construyó como un esfuerzo fragmentado entre “los que escriben” y “los que programan”. El incremento visible solo fue posible porque Jira, el reporte, el diseño y la landing page evolucionaron de manera sincronizada. Aun cuando persista backlog remanente para portal B2B, autenticación, inventario transaccional y servicios, el equipo deja en AV1 una base metodológica sólida, trazable y escalable para la siguiente iteración.
+</p>
+
+<p align="justify">
+Esta subsección es, además, el lugar correcto para documentar <strong>llamadas grupales, revisiones internas del avance y coordinación síncrona del sprint</strong>. La narrativa breve debe quedar aquí, mientras que las capturas de Meet/Teams/Discord, conversaciones de coordinación, acuerdos de trabajo y evidencias cronológicas deben preservarse en el anexo del informe para no sobrecargar el cuerpo principal.
 </p>
