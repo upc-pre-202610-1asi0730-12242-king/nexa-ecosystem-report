@@ -3,7 +3,7 @@
 ## 3.1. User Stories
 
 <p align="justify">
-El backlog de Nexa se organiza en dos capas complementarias. La primera cubre el sitio público multipágina que comunica la propuesta de valor, enruta por segmentos comerciales y capta oportunidades mediante el landing page. La segunda cubre el producto transaccional: catálogo, captura asistida del pedido, portal B2B, condiciones comerciales, inventario y seguimiento hasta la entrega. Todas las historias se redactan con actores explícitos, estimación en puntos de historia (escala Fibonacci) y criterios de aceptación verificables en formato Gherkin, alineados con los tres segmentos canónicos del proyecto: S1, S2 y S3.
+El backlog de Nexa se organiza en dos capas complementarias. La primera cubre el sitio público multipágina que comunica la propuesta de valor, enruta por segmentos comerciales y capta oportunidades mediante el landing page. La segunda cubre el producto transaccional: catálogo, captura asistida del pedido, portal B2B, condiciones comerciales, inventario y seguimiento hasta la entrega. Todas las historias se redactan con actores explícitos, estimación en puntos de historia (escala Fibonacci) y criterios de aceptación verificables en formato Gherkin, alineados con los arquetipos canónicos del proyecto: Valeria, Hilda y Pedro.
 </p>
 
 <p align="justify">
@@ -11,8 +11,10 @@ La especificación no parte de una colección arbitraria de funcionalidades. Cad
 </p>
 
 <p align="justify">
-La lógica de actores se mantiene estable respecto del capítulo anterior. Los segmentos canónicos continúan siendo S1, S2 y S3, y todas las historias se sostienen sobre ese recorrido principal del MVP. Las reglas de inventario, stock, lotes, crédito y cierre se incorporan como parte del dominio, no como una segmentación adicional.
+La lógica de actores se mantiene estable respecto del capítulo anterior. Los arquetipos canónicos continúan siendo Valeria, Hilda y Pedro; mientras que la supervisión operativa conserva un rol de <em>stakeholder secundario</em> que influye sobre reglas de negocio, control de stock, lotes y cierre, pero no reemplaza a los tres protagonistas funcionales del MVP. Esta precisión evita duplicidades de segmentación y refuerza la continuidad narrativa del informe.
 </p>
+
+**Tabla 23**
 
 *Trazabilidad de épicas con actores, evidencia y propósito funcional*
 
@@ -21,7 +23,7 @@ La lógica de actores se mantiene estable respecto del capítulo anterior. Los s
 <tr>
 <th>Bloque</th>
 <th>Épicas</th>
-<th>Actor o segmento dominante</th>
+<th>Actor o arquetipo dominante</th>
 <th>Base empírica del Capítulo 2</th>
 <th>Propósito dentro del MVP</th>
 </tr>
@@ -37,21 +39,21 @@ La lógica de actores se mantiene estable respecto del capítulo anterior. Los s
 <tr>
 <td>Captura y compra del pedido</td>
 <td>EP07-EP09</td>
-<td>S1 y S2</td>
+<td>Valeria y Hilda</td>
 <td>Entrevistas sobre pedidos por WhatsApp, validaciones manuales, incertidumbre de stock y dependencia del canal informal.</td>
 <td>Digitalizar el flujo principal del pedido desde la captura asistida hasta el autoservicio B2B.</td>
 </tr>
 <tr>
 <td>Seguimiento, inventario y cierre</td>
 <td>EP10-EP11</td>
-<td>S2 y S3</td>
+<td>Hilda, Pedro y supervisión operativa</td>
 <td>Needfinding, journey maps y EventStorming sobre falta de ETA, visibilidad parcial del despacho y necesidad de evidencia de cierre.</td>
 <td>Dar predictibilidad al despacho, ordenar el stock y cerrar la trazabilidad del pedido.</td>
 </tr>
 <tr>
 <td>Datos comerciales y control de acceso</td>
 <td>EP12-EP13</td>
-<td>S1 y roles internos autorizados</td>
+<td>Valeria y roles internos autorizados</td>
 <td>Hallazgos sobre mora, crédito, configuración comercial por cliente y separación necesaria entre accesos internos y B2B.</td>
 <td>Sostener reglas mínimas para que el flujo principal sea operable y consistente.</td>
 </tr>
@@ -64,6 +66,8 @@ La lógica de actores se mantiene estable respecto del capítulo anterior. Los s
 </tr>
 </tbody>
 </table>
+
+**Tabla 24**
 
 *User Stories — Épicas, historias, criterios de aceptación y estimación*
 
@@ -1631,8 +1635,8 @@ entonces el API emite un nuevo token de acceso sin requerir que el usuario ingre
 </tbody>
 </table>
 
-Detalle de requerimientos funcionales estructurados bajo el estándar Gherkin para validación técnica. Elaboración propia.
+*Nota. Detalle de requerimientos funcionales estructurados bajo el estándar Gherkin para validación técnica. Elaboración propia.*
 
 ---
 
-La tabla integra el sitio público, el producto transaccional y las historias técnicas del API bajo una taxonomía coherente con la investigación de campo y el landing page. La estimación en puntos de historia (SP) sigue la escala Fibonacci (1, 2, 3, 5, 8, 13). Elaboración propia.
+*Nota.* La tabla integra el sitio público, el producto transaccional y las historias técnicas del API bajo una taxonomía coherente con la investigación de campo y el landing page. La estimación en puntos de historia (SP) sigue la escala Fibonacci (1, 2, 3, 5, 8, 13). Elaboración propia.
