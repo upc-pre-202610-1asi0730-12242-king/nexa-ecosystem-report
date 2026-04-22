@@ -1,6 +1,20 @@
-## 2.2.	Entrevistas
+## 2.2. Entrevistas
 
-### 2.2.1.	Diseño de entrevistas
+<p align="justify">
+Para mantener continuidad con el Capítulo I y con los artefactos posteriores de needfinding, este capítulo distingue entre <strong>segmentos canónicos del producto</strong> y <strong>bloques de levantamiento de información</strong>. Los segmentos canónicos del informe siguen siendo <strong>S1: coordinación comercial y captura del pedido</strong>, <strong>S2: cliente comercial B2B y abastecimiento recurrente</strong> y <strong>S3: despacho, transporte y cierre de entrega</strong>. Sin embargo, el trabajo de campo no se organizó únicamente por esos tres arquetipos, sino también por un cuarto lente de análisis: la <strong>jefatura y responsables de logística, abastecimiento y operación</strong>, que funciona como stakeholder secundario para validar reglas del dominio, trazabilidad, riesgos sanitarios y restricciones operativas.
+</p>
+
+<div style="padding: 14px 16px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 16px 0;">
+  <strong>Correspondencia metodológica utilizada en el capítulo.</strong><br/><br/>
+  <ul>
+    <li><strong>Bloque de entrevistas 1:</strong> alimenta directamente al segmento canónico <strong>S1</strong>.</li>
+    <li><strong>Bloque de entrevistas 2:</strong> no reemplaza a un segmento canónico; se interpreta como <strong>stakeholder secundario</strong> para validar reglas, riesgos y restricciones del dominio.</li>
+    <li><strong>Bloque de entrevistas 3:</strong> alimenta directamente al segmento canónico <strong>S2</strong>.</li>
+    <li><strong>Segmento canónico S3:</strong> se materializa por triangulación entre hallazgos operativos, puntos de dolor del cierre de entrega, artefactos de needfinding y modelado del flujo del dominio.</li>
+  </ul>
+</div>
+
+### 2.2.1. Diseño de entrevistas
 
 <p align = "justify">
 
@@ -66,9 +80,9 @@ Aquí todavía no se vende la solución; se explora el mínimo valor esperado.
 
 **Nota para el moderador.** No es necesario formular todas las preguntas literalmente. Lo importante es mantener el foco, pedir ejemplos recientes, repreguntar “por qué” cuando aparezca un problema y no interrumpir silencios útiles.
 
-**Segmento 2: Jefatura y responsables de logística, abastecimiento y operación**
+**Bloque complementario de entrevistas: Jefatura y responsables de logística, abastecimiento y operación**
 
-**Segmento:**  Personas con responsabilidad de supervisión o decisión sobre importación, abastecimiento, almacén, inventario, despacho y coordinación logística.
+**Stakeholder analizado:**  Personas con responsabilidad de supervisión o decisión sobre importación, abastecimiento, almacén, inventario, despacho y coordinación logística.
 
 **Objetivo de investigación:** Comprender el flujo end-to-end del pedido, sus puntos críticos, riesgos de escalabilidad y criterios de valor para una primera solución digital.
 
@@ -77,6 +91,8 @@ Aquí todavía no se vende la solución; se explora el mínimo valor esperado.
 **Tipo de entrevistado buscado:** 2 a 3 entrevistados de jefatura, supervisión o coordinación operativa con visión amplia del proceso.
 
 **Foco principal:** Trazabilidad, puntos de quiebre, visibilidad interna, coordinación entre áreas, prioridades del MVP y evolución futura.
+
+**Rol dentro de la taxonomía del informe:** Este bloque no redefine a S2 ni a S3. Su función es complementar la investigación con una visión de dominio y restricciones operativas que después alimenta el diseño, el EventStorming y la delimitación del alcance.
 
 **Warm-up y alcance del cargo**
 La idea es ubicar rápido desde qué parte del proceso mira la operación.
@@ -127,11 +143,11 @@ La meta es priorizar el valor real, no pedir features sueltas.
 **Nota para el moderador**. No es necesario formular todas las preguntas literalmente. Lo importante es mantener el foco, pedir ejemplos recientes, repreguntar “por qué” cuando aparezca un problema y no interrumpir silencios útiles.
 
 
-**Segmento 3 · Clientes comerciales B2B minoristas y mayoristas**
+**Segmento 2 (S2) · Clientes comerciales B2B minoristas y mayoristas**
 
 **Segmento:** Bodegas, minimarkets, pequeños mayoristas y negocios HORECA que compran productos refrigerados o congelados a distribuidores.
 
-**Objetivo de investigación: ** Entender cómo compra hoy el cliente comercial, qué fricciones vive al abastecerse y qué condiciones debería cumplir una plataforma para que realmente la adopte.
+**Objetivo de investigación:** Entender cómo compra hoy el cliente comercial, qué fricciones vive al abastecerse y qué condiciones debería cumplir una plataforma para que realmente la adopte.
 
 **Duración sugerida:** 15 a 25 minutos.
 
@@ -183,103 +199,109 @@ No basta saber si usa apps; importa cómo decide confiar en una herramienta.
 
 </p>
 
-### 2.2.2.	Registro de entrevistas
+### 2.2.2. Registro de entrevistas
 
-**Segmento 1: Mercaderistas / personal de coordinación comercial**
+<p align="justify">
+En esta subsección se preservan los nombres y cargos reales de las personas entrevistadas. En cambio, los nombres de las user personas del capítulo 2.3 son <strong>arquetipos sintéticos</strong> construidos a partir de patrones compartidos entre varias entrevistas; por ello, no deben leerse como equivalentes literales de una única persona entrevistada.
+</p>
+
+<p align="justify">
+Además de las capturas integradas en el informe, el archivo audiovisual original de las ocho entrevistas se conserva en la carpeta compartida <strong>King Nexa</strong> de OneDrive. Cada ficha incluye su enlace directo para mantener trazabilidad entre la evidencia visual resumida y la grabación completa utilizada en el levantamiento.
+</p>
+
+**Segmento canónico S1: Mercaderistas / personal de coordinación comercial**
 
 **Entrevistado 1**
 
-- **Nombres:** Paola
+- **Nombres:** Lorena Vanesa
+- **Apellidos:** Silva Leca
+- **Edad:** 42 años
+- **Ubicación:** Chorrillos
 
-- **Apellidos:** Levano
+**Ilustración 2**
 
-- **Edad:** No especificado
+*Evidencia de entrevista: Lorena Silva*
 
-- **Ubicación:** No especificado
-
-**Ilustración 9**
-
-*Evidencia de entrevista: Paola Levano*
-
-![Paola](../assets/images/pruebas-entrevistas/Paola.jpeg)
+![Lorena](../assets/images/pruebas-entrevistas/Lorena.jpeg)
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+
+**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e1%20diego%20-%20lorena%20silva.mp4?web=1)
 
 **Resumen de la Entrevista**
 
 <p align="justify">
-La entrevistada Paola Levano es una asesora de ventas  con alrededor de dos años de experiencia en una empresa de quesos y embutidos, enfocada en la gestión directa de clientes como restaurantes, hoteles y bodegas. Su trabajo gira en torno a recibir pedidos, verificar stock, registrar órdenes y hacer seguimiento hasta la entrega. Utiliza principalmente WhatsApp y correo, priorizando el celular porque le resulta “más fácil y más rápido”, lo que evidencia una clara necesidad de herramientas ágiles y accesibles.
+La entrevistada Lorena Silva es una asesora comercial con amplia experiencia en la gestión de carteras de clientes y coordinación logística. Su rol es integral: gestiona pedidos, brinda asesoría técnica sobre presentaciones de productos refrigerados y supervisa condiciones de crédito que llegan hasta los 45 días. Identifica a WhatsApp como su canal operativo crítico por su inmediatez, dejando el correo electrónico solo para formalidades corporativas.
 </p>
 
 <p align="justify">
-Su proceso actual es bastante manual y fragmentado. Los pedidos llegan en listas y deben ser ingresados paso a paso en el sistema, validando códigos y verificando stock, lo que describe como un flujo con “muchos pasos”. Además, depende de múltiples plataformas (sistema de ventas, Trello, WhatsApp), lo que dispersa la información y aumenta la carga operativa.
-</p>
-
-<p align="justify">
-El principal problema identificado es la falta de precisión y rapidez en la información de stock. Señala que el sistema a veces “no arroja las cantidades exactas”, obligándola a consultar con su jefa o almacén, lo que genera retrasos. A esto se suma la demora de los clientes en confirmar pedidos, afectando aún más el flujo. También menciona errores puntuales en el armado de pedidos porque “no leen las especificaciones”, lo que ocasiona devoluciones.
-</p>
-
-<p align="justify">
-Un punto crítico es la complejidad del sistema actual, ya que requiere navegar por varias ventanas y no permite trabajar en paralelo. Ella expresa la necesidad de algo “más simple” y rápido. Además, resalta como problema clave la gestión manual de clientes morosos, donde debe revisar “cliente por cliente”, proponiendo que el sistema lo automatice y lo haga visible.
-</p>
-
-<p align="justify">
-Finalmente, muestra apertura a nuevas herramientas siempre que no aumenten la complejidad. Su necesidad principal es clara: simplificar el proceso, reducir tareas manuales y tener mejor visibilidad de información clave (stock y cobranzas) para trabajar de forma más eficiente.
+A nivel técnico, reporta fricciones severas con el sistema actual (Fontana), el cual colapsa ante accesos simultáneos, obligando a reinicios que retrasan la operación. Además, destaca la falta de funcionalidades móviles (como el registro de clientes), lo que la obliga a depender de laptops en campo, reduciendo su agilidad. Finalmente, señala inconsistencias en el stock real mostrado por el sistema, lo que genera desconfianza y requiere validaciones manuales constantes con almacén.
 </p>
 
 **Entrevistado 2**
 
-- **Nombres:** Cecilia
+- **Nombres:** Cinthia Paola
+- **Apellidos:** Levano Asca
+- **Edad:** 39 años
+- **Ubicación:** Lurín
 
-- **Apellidos:** Pérez
+**Ilustración 3**
 
-- **Edad:** No especificado
+*Evidencia de entrevista: Cinthia Levano*
 
-- **Ubicación:** No especificado
-
-**Ilustración 10**
-
-*Evidencia de entrevista: Cecilia Pérez*
-
-![Cecilia](../assets/images/pruebas-entrevistas/Celia.jpeg)
+![Cinthia](../assets/images/pruebas-entrevistas/Paola.jpeg)
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+
+**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e2%20cesar%20-%20paola%20levano.mp4?web=1)
 
 **Resumen de la Entrevista**
 
 <p align="justify">
-La entrevistada Cecilia Perez es una ex vendedora de ruta con aproximadamente dos años de experiencia, encargada de gestionar una cartera de clientes (principalmente librerías en mercados) mediante visitas presenciales. Su trabajo consistía en tomar pedidos directamente en campo utilizando un aplicativo móvil llamado Rikra, lo que le permitía registrar pedidos en tiempo real ingresando datos del cliente (RUC/DNI) y seleccionando productos por código. Este enfoque reemplazó procesos manuales previos, donde los pedidos se anotaban en papel y luego se transcribían en una computadora, lo que ella describe como una “pérdida de tiempo”.
+La entrevistada Cinthia Levano cuenta con dos años de experiencia en la coordinación de ventas de quesos y embutidos. Su proceso es altamente manual y fragmentado; depende de múltiples plataformas (Trello, WhatsApp, Excel) cuya falta de integración dispersa la información. Al igual que otros perfiles del segmento, sufre por la falta de precisión en el stock, lo que la obliga a consultar manualmente a su jefatura para asegurar la viabilidad de los pedidos.
 </p>
 
 <p align="justify">
-El uso del aplicativo representó una mejora significativa en eficiencia, ya que permitió digitalizar el proceso en el momento de la venta, evitando retrabajo y acelerando la generación de cotizaciones. Destaca que era “lo más fácil que hay” para vendedores en ruta, especialmente en campañas de alta demanda donde los pedidos son más grandes y complejos. Además, el sistema integraba información clave del cliente, como dirección, crédito disponible y saldos, lo que facilitaba la toma de decisiones durante la venta.
+Cinthia enfatiza la necesidad de simplicidad. Describe su flujo actual como una "pérdida de tiempo" debido a la cantidad de clics y ventanas necesarias para registrar una orden. Propone la automatización del control de morosidad y una visualización clara del crédito disponible, permitiendo una toma de decisiones más rápida y autónoma durante la captura del pedido.
+</p>
+
+**Entrevistado 3**
+
+- **Nombres:** Celia
+- **Apellidos:** Pérez Huaman
+- **Edad:** 51 años
+- **Ubicación:** San Miguel
+
+**Ilustración 4**
+
+*Evidencia de entrevista: Celia Pérez*
+
+![Celia](../assets/images/pruebas-entrevistas/Celia.jpeg)
+
+*Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+
+**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e3%20diego%20-%20cecilia%20perez.mp4?web=1)
+
+**Resumen de la Entrevista**
+
+<p align="justify">
+Celia Pérez, con experiencia previa en ventas de ruta, aporta una perspectiva crítica sobre el uso de herramientas en campo. Utilizó aplicativos móviles (Rikra) que, aunque eficientes para digitalizar la venta en tiempo real y eliminar el papel, presentaban fallos de rendimiento y lentitud que forzaban el retorno a canales informales. Destaca que la herramienta ideal debe integrar datos del cliente (RUC, saldos, dirección) para evitar la doble digitación.
 </p>
 
 <p align="justify">
-Sin embargo, identifica como principal problema la falta de estabilidad y rendimiento del aplicativo. Menciona que en ocasiones “se ponía bien lento” o no abría, lo que la obligaba a recurrir nuevamente a WhatsApp o a posponer el registro del pedido, generando pérdida de tiempo y fricción en la atención al cliente. Este punto es crítico, ya que ocurre en el momento más importante del proceso: la interacción directa con el cliente.
+Su testimonio confirma que, para el personal en ruta, la estabilidad de la conexión y la velocidad de respuesta del sistema son factores determinantes para la adopción tecnológica. Cualquier retraso en el dispositivo móvil se traduce en una atención deficiente al cliente y en una carga operativa innecesaria al final del día.
 </p>
 
-<p align="justify">
-En cuanto a la comunicación, aunque el canal principal era presencial, también utilizaba WhatsApp y llamadas como soporte cuando no podía concretar el pedido en el momento. Esto evidencia que, incluso con un aplicativo, los canales externos siguen siendo necesarios como respaldo.
-</p>
-
-<p align="justify">
-Finalmente, la entrevistada muestra una valoración muy positiva hacia el uso de aplicaciones móviles en ventas, siempre que sean rápidas y confiables. Su necesidad principal es clara: contar con una herramienta que funcione en tiempo real, sin fallos, que permita registrar pedidos de manera inmediata y sin interrupciones, eliminando por completo la dependencia de procesos manuales o pasos adicionales posteriores.
-</p>
-
-**Segmento 2: Jefatura o responsables de logística y operación**
+**Stakeholder secundario: Jefatura o responsables de logística y operación**
 
 **Entrevistado 1**
 
 - **Nombres:** Hilda
+- **Apellidos:** Litano Ramos
+- **Edad:** 47 años
+- **Ubicación:** Villa El Salvador
 
-- **Apellidos:** Litano
-
-- **Edad:** No especificado
-
-- **Ubicación:** No especificado
-
-**Ilustración 11**
+**Ilustración 5**
 
 *Evidencia de entrevista: Hilda Litano*
 
@@ -287,39 +309,22 @@ Finalmente, la entrevistada muestra una valoración muy positiva hacia el uso de
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
+**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e1%20diego%20-%20hilda%20litano.mp4?web=1)
+
 **Resumen de la Entrevista**
 
 <p align="justify">
-La entrevistada Hilda Litano  es una profesional vinculada al proceso de importación y comercialización de productos perecibles, con experiencia en la gestión documental, coordinación logística y cumplimiento de normativas sanitarias. Su trabajo implica validar que la información de documentos como factura, packing list y certificado sanitario coincida correctamente con el producto físico, proceso en el cual intervienen inspectores cuyo criterio puede variar, aunque generalmente no genera mayores inconvenientes si los datos son consistentes.
-</p>
-
-<p align="justify">
-Un aspecto clave que resalta es la trazabilidad dentro del proceso. Señala que, ante cualquier error, como discrepancias en cantidades o en la partida arancelaria declarada por aduanas, es posible identificar rápidamente el origen del problema mediante notificaciones y revisiones cruzadas. Esto evidencia que el sistema, aunque no está exento de fallos, permite un control relativamente eficiente y transparente para la corrección de incidencias.
-</p>
-
-<p align="justify">
-En cuanto a la comunicación, la entrevistada indica que los principales medios utilizados son el correo electrónico, WhatsApp y reuniones virtuales, priorizando la rapidez y la coordinación directa con clientes y proveedores. Menciona que incluso en situaciones complejas, como la coordinación con proveedores internacionales, WhatsApp resulta ser la herramienta más ágil, lo que refleja una dependencia de canales externos al sistema formal.
-</p>
-
-<p align="justify">
-Respecto a la gestión operativa, identifica como principal desafío la variabilidad de la demanda en productos perecibles. El consumo cambia constantemente según preferencias del mercado y factores externos, lo que obliga a mantener un equilibrio entre evitar quiebres de stock y no generar sobreinventario. Esta incertidumbre requiere una planificación flexible y una constante adaptación a las tendencias del consumidor.
-</p>
-
-<p align="justify">
-Finalmente, destaca la importancia del registro sanitario gestionado a través de DIGESA como requisito indispensable para la comercialización. Este proceso implica la presentación de documentos como certificados de libre venta, análisis microbiológicos y fichas técnicas a través de la Ventanilla Única de Comercio Exterior (VUCE). La aprobación, que puede tomar varios días y extenderse ante observaciones, es crítica para asegurar que los productos puedan ingresar y distribuirse en el mercado, convirtiéndose en un punto clave dentro de todo el flujo logístico.
+Hilda Litano supervisa procesos de importación y cumplimiento sanitario. Su enfoque está en la trazabilidad documental y la consistencia entre la carga física y los certificados de DIGESA/VUCE. Destaca que, aunque existen mecanismos de control, el flujo se entorpece cuando la información de stock no es dinámica, lo que genera riesgos de sobreinventario o quiebres ante una demanda altamente variable en productos perecibles.
 </p>
 
 **Entrevistado 2**
 
 - **Nombres:** Edith
+- **Apellidos:** Taype Peñaloza
+- **Edad:** 49 años
+- **Ubicación:** Callao
 
-- **Apellidos:** Taype
-
-- **Edad:** No especificado
-
-- **Ubicación:** No especificado
-
-**Ilustración 12**
+**Ilustración 6**
 
 *Evidencia de entrevista: Edith Taype*
 
@@ -327,35 +332,22 @@ Finalmente, destaca la importancia del registro sanitario gestionado a través d
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
+**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e2%20gino%20-%20edith%20taype.mp4?web=1)
+
 **Resumen de la Entrevista**
 
 <p align="justify">
-Edith Taype trabaja en la venta de productos refrigerados dentro de un supermercado, principalmente lácteos como quesos y embutidos. Su labor diaria consiste en asegurar que los productos lleguen en buen estado desde almacén, verificando su calidad, presentación, precio y fechas de vencimiento antes de exhibirlos al público. Además, se encarga de mantener el orden, la limpieza y la correcta rotación de los productos para garantizar una adecuada conservación y venta.
-</p>
-
-<p align="justify">
-Una parte clave de su trabajo es la manipulación directa del producto: cortar, pesar, etiquetar y empaquetar, especialmente cuando los quesos llegan en moldes grandes. Este proceso debe realizarse con estrictas condiciones de higiene. También monitorea constantemente la temperatura mediante termómetros, asegurando que se mantenga entre -5 °C y 0 °C. Si detecta variaciones, actúa de inmediato, ya que una falla en la cadena de frío puede afectar la calidad del producto.
-</p>
-
-<p align="justify">
-Uno de los principales problemas que enfrenta ocurre cuando el cliente no mantiene el producto en condiciones adecuadas después de tomarlo, lo que puede generar devoluciones en mal estado. Asimismo, identifica dificultades operativas como el deterioro de etiquetas por humedad o fricción, lo que obliga a reimprimir códigos de barras. También menciona desorden en las cámaras de frío debido a la mezcla de productos de múltiples proveedores, lo que dificulta la ubicación rápida de mercadería.
-</p>
-
-<p align="justify">
-Finalmente, Edith destaca limitaciones en el acceso a sistemas de información del supermercado, ya que herramientas como el sistema de inventario solo están disponibles para supervisores. Considera que ampliar este acceso facilitaría su trabajo, permitiéndole consultar precios, stock y movimientos en tiempo real. En general, su experiencia evidencia que el trabajo operativo depende mucho de procesos manuales, coordinación constante y control riguroso para mantener la calidad del producto hasta el consumidor final.
+Edith Taype opera en el punto de venta (supermercados), donde la manipulación y la cadena de frío (entre -5°C y 0°C) son innegociables. Identifica que el desorden en cámaras de frío y la falta de acceso a sistemas de inventario en tiempo real (reservados para jefes) limitan su capacidad de respuesta ante el cliente. Menciona que la digitalización de etiquetas y la visibilidad de movimientos de stock facilitarían enormemente su labor diaria.
 </p>
 
 **Entrevistado 3**
 
-- **Nombres:** Jesica
+- **Nombres:** Jesica Maria
+- **Apellidos:** Sandoval Romero
+- **Edad:** 48 años
+- **Ubicación:** Jesus María
 
-- **Apellidos:** Sandoval
-
-- **Edad:** No especificado
-
-- **Ubicación:** No especificado
-
-**Ilustración 13**
+**Ilustración 7**
 
 *Evidencia de entrevista: Jesica Sandoval*
 
@@ -363,41 +355,24 @@ Finalmente, Edith destaca limitaciones en el acceso a sistemas de información d
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
+**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e3%20diego%20-%20jesica%20sandoval.mp4?web=1)
+
 **Resumen de la Entrevista**
 
 <p align="justify">
-Jesica Sandoval se desempeña como supervisora de ventas en una empresa importadora de productos refrigerados, liderando equipos enfocados en el canal Horeca (hoteles, restaurantes y bodegas) y personal en supermercados. Su trabajo gira en torno a la coordinación con almacén y logística, especialmente en la planificación de pedidos, rutas de distribución y aseguramiento del stock. Identifica este último como su principal preocupación, ya que la demanda es variable y un mal cálculo puede generar quiebres o exceso de mercadería.
+Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcripción manual de pedidos, donde los errores en cantidades obligan a validaciones individuales de cada orden. Señala que la variable crítica es el control de fechas de vencimiento (FEFO), información que actualmente no está integrada en el sistema central y requiere coordinación verbal constante con almacén.
 </p>
 
-<p align="justify">
-El proceso operativo inicia cuando el cliente realiza un pedido por WhatsApp, correo o llamada, el cual se gestiona en plataformas como Fontana y Trello. Los despachos se realizan en un plazo de 24 a 48 horas, con monitoreo mediante GPS. Sin embargo, aún existen tareas manuales críticas, como la validación de pedidos, debido a errores frecuentes en el ingreso de cantidades por parte del equipo de ventas, lo que obliga a Jesica a verificar cada orden antes de su envío.
-</p>
-
-<p align="justify">
-En cuanto a los productos refrigerados, la variable más crítica no es la temperatura ya que los camiones cuentan con refrigeración sino el control de fechas de vencimiento. Este dato no está integrado en el sistema principal, lo que la obliga a coordinar constantemente con almacén. Además, enfrenta problemas en supermercados donde se rompe la cadena de frío tras la entrega, generando conflictos por productos en mal estado sin trazabilidad clara de responsabilidades.
-</p>
-
-<p align="justify">
-Jesica también identifica limitaciones tecnológicas importantes: sistemas lentos, falta de funcionalidades en dispositivos móviles, bloqueo de operaciones por temas de crédito y ausencia de acceso directo para clientes a información clave como stock o fichas técnicas. Considera que una mejora relevante sería permitir que los clientes puedan visualizar estos datos de forma autónoma, reduciendo la carga operativa del equipo.
-</p>
-
-<p align="justify">
-Finalmente, destaca oportunidades de mejora como la implementación de una página web para pedidos directos, herramientas más simples para que el personal en campo registre información, y sistemas de control de asistencia para mercaderistas. Asimismo, valora la incorporación de soluciones que aseguren la trazabilidad de la temperatura durante todo el proceso, especialmente en supermercados, donde actualmente se pierde el control una vez entregada la mercadería.
-</p>
-
-**Segmento 3: Clientes comerciales B2B (minoristas y mayoristas)**
+**Segmento canónico S2: Clientes comerciales B2B (minoristas y mayoristas)**
 
 **Entrevistado 1**
 
 - **Nombres:** Pedro
+- **Apellidos:** Puente Arnao
+- **Edad:** 56 años
+- **Ubicación:** San Isidro
 
-- **Apellidos:** Puente
-
-- **Edad:** No especificado
-
-- **Ubicación:** No especificado
-
-**Ilustración 14**
+**Ilustración 8**
 
 *Evidencia de entrevista: Pedro Puente*
 
@@ -405,207 +380,280 @@ Finalmente, destaca oportunidades de mejora como la implementación de una pági
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
+**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e1%20diego%20-%20pedro%20puente.mp4?web=1)
+
 **Resumen de la Entrevista**
 
 <p align="justify">
-Pedro Puente es un distribuidor de productos que basa su negocio en la compra y reventa, abasteciéndose de distintos proveedores varias veces por semana para evitar quedarse sin stock. Su operación está enfocada en mantener siempre disponibilidad de productos, ya que considera crítico no fallar a sus clientes. Sin embargo, reconoce que el abastecimiento depende en gran medida de los importadores, y cuando estos se quedan sin mercadería, su negocio también se ve afectado, generando pérdidas y riesgo de perder clientes.
-</p>
-
-<p align="justify">
-El proceso de compra lo realiza principalmente mediante llamadas telefónicas y WhatsApp, priorizando la rapidez y la comunicación directa. No utiliza plataformas digitales complejas, ya que está acostumbrado a métodos más inmediatos. Aunque recibe listas de productos de sus proveedores, la gestión se vuelve más intuitiva con el tiempo, basándose en su experiencia y en el comportamiento de la demanda de sus clientes.
-</p>
-
-<p align="justify">
-Uno de los principales problemas que enfrenta es la demora en los despachos por parte de los proveedores, lo que lo obliga a hacer seguimiento constante. Esta situación afecta directamente la relación con sus clientes, quienes exigen horarios específicos de entrega. Cuando no se cumplen, existe un alto riesgo de que cambien de proveedor, lo que impacta negativamente en su negocio.
-</p>
-
-<p align="justify">
-Pedro también menciona que, aunque rara vez comete errores en pedidos o recibe productos incorrectos, el verdadero problema está en la disponibilidad y tiempos de entrega. Además, destaca que los proveedores suelen priorizar a grandes clientes como supermercados, dejando en segundo plano a distribuidores más pequeños, lo que genera desventajas competitivas en términos de atención y rapidez.
-</p>
-
-<p align="justify">
-Finalmente, muestra resistencia al uso de nuevas plataformas tecnológicas, ya que prefiere la comunicación directa por teléfono debido a su rapidez. Considera que cualquier solución digital solo sería útil si mantiene esa inmediatez y no interfiere con su flujo de trabajo. Su experiencia refleja que, en este tipo de negocio, la velocidad de respuesta, el cumplimiento de tiempos y la disponibilidad de stock son factores críticos para mantener la competitividad.
+Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre logística. Realiza pedidos por WhatsApp, pero la falta de visibilidad sobre la ETA (tiempo estimado de llegada) le impide coordinar con sus propios clientes finales. Reporta que los proveedores suelen priorizar a las grandes cadenas, dejando a los minoristas con quiebres de stock que impactan directamente en su rentabilidad.
 </p>
 
 **Entrevistado 2**
 
-- **Nombres:** Henry
+- **Nombres:** Henrry
+- **Apellidos:** García Robles
+- **Edad:** 49 años
+- **Ubicación:** San Borja
 
-- **Apellidos:** García
+**Ilustración 9**
 
-- **Edad:** No especificado
-
-- **Ubicación:** No especificado
-
-**Ilustración 15**
-
-*Evidencia de entrevista: Henry García*
+*Evidencia de entrevista: Henrry García*
 
 ![Henry](../assets/images/pruebas-entrevistas/Henry.jpeg)
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
+**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e2%20cesar%20-%20henry%20garcia.mp4?web=1)
+
 **Resumen de la Entrevista**
 
 <p align="justify">
-Henry García es un empresario dedicado a la producción y distribución de quesos en Perú, con experiencia directa en la gestión de pedidos, logística y relación con clientes. Su enfoque está centrado en evitar quiebres de stock, los cuales considera inaceptables dentro de su operación. Para ello, mantiene un control constante del inventario y trabaja con un equipo alineado a un mismo objetivo, destacando que la coordinación interna es clave para asegurar la continuidad del negocio.
+Henrry García enfatiza que la confianza es el motor de la relación B2B. Aunque utiliza tecnología con GPS para monitorear sus propios despachos, rechaza que el software reemplace la comunicación humana personalizada. Su visión es que una plataforma ideal debe ser una herramienta de soporte que automatice el inventario y el seguimiento, pero permitiendo siempre una interacción directa para resolver excepciones.
 </p>
+
+### 2.2.3. Análisis de entrevistas
+
+**Análisis del segmento canónico S1: Mercaderistas / personal de coordinación comercial**
 
 <p align="justify">
-Un aspecto central en su discurso es la importancia de la confianza como base de cualquier relación comercial. Señala que los negocios no se hacen únicamente por precio o producto, sino por la seguridad y credibilidad que transmite la otra parte. Esta confianza se construye a través del cumplimiento, la comunicación directa y la capacidad de resolver problemas de manera efectiva, lo que a su vez impacta directamente en el cierre de ventas y la fidelización del cliente.
+El segmento de mercaderistas y personal de coordinación comercial, representado en esta muestra por Lorena Silva, Cinthia Levano y Celia Pérez, constituye el punto de captura más sensible del flujo del pedido. En las tres entrevistas aparece la misma tensión operativa: responder con rapidez al cliente y, al mismo tiempo, validar crédito, stock y condiciones comerciales con información que no siempre está integrada. Sobre esa base se identifican los siguientes patrones compartidos.
 </p>
 
-<p align="justify">
-En cuanto a la gestión operativa, utiliza herramientas digitales como aplicativos de delivery con seguimiento en tiempo real mediante GPS, lo que le permite monitorear los envíos y asegurar que los pedidos lleguen correctamente. Sin embargo, también ha enfrentado incidencias, como la pérdida de pedidos por errores en la selección de repartidores, lo que le generó pérdidas económicas y le llevó a implementar criterios más estrictos, como trabajar solo con repartidores mejor calificados.
-</p>
+**Tabla 15**
 
-<p align="justify">
-Respecto a la comunicación con clientes, enfatiza que debe ser directa, empática y personalizada, rechazando el uso de sistemas automatizados o robots. Considera que la venta es un proceso emocional donde el contacto humano es fundamental para entender las necesidades del cliente y cerrar acuerdos. En este sentido, herramientas como WhatsApp y llamadas telefónicas son esenciales para generar cercanía y confianza, más allá de cualquier plataforma digital.
-</p>
+*Análisis del segmento canónico S1: Mercaderistas / personal de coordinación comercial*
 
-<p align="justify">
-Asimismo, identifica que uno de los principales problemas no está solo en la logística, sino en la falta de conocimiento o claridad por parte de algunos clientes, lo que puede generar fricciones en el proceso. Ante esto, resalta la importancia de escuchar activamente y ofrecer soluciones adaptadas, incluso proponiendo alternativas cuando no se dispone de un producto específico.
-</p>
+<table border="1" cellspacing="0" cellpadding="6" align="center">
+  <tr>
+    <th>Variable observada en S1</th>
+    <th>Evidencia recurrente</th>
+    <th>Lectura analítica</th>
+    <th>Implicancia de diseño</th>
+  </tr>
+  <tr>
+    <td>Uso intensivo de WhatsApp y canales paralelos</td>
+    <td>Lorena, Cinthia y Celia describen dependencia de mensajería y validaciones externas</td>
+    <td>El pedido nace en un entorno rápido, pero con baja estructuración de datos</td>
+    <td>El flujo inicial debe capturar rapidez sin perder consistencia ni trazabilidad</td>
+  </tr>
+  <tr>
+    <td>Validación manual de stock y crédito</td>
+    <td>Lorena y Cinthia reportan consultas adicionales antes de confirmar pedidos</td>
+    <td>La captura del pedido no está suficientemente conectada con la información crítica del negocio</td>
+    <td>Conviene unificar stock, crédito y condiciones comerciales en la misma experiencia</td>
+  </tr>
+  <tr>
+    <td>Necesidad de operar en movilidad</td>
+    <td>Celia y Lorena describen trabajo fuera del escritorio o en condiciones de campo</td>
+    <td>La experiencia comercial no puede depender exclusivamente de entornos de oficina</td>
+    <td>La interfaz debe responder bien en móvil y reducir pasos innecesarios</td>
+  </tr>
+</table>
 
-<p align="justify">
-Finalmente, Henry plantea que una plataforma digital ideal debería centrarse en brindar soluciones reales al negocio, ayudando a generar mayores ingresos, optimizar inventarios y facilitar la toma de decisiones. Sin embargo, recalca que esta no debe reemplazar el componente humano, sino complementarlo. Para él, el valor diferencial no está solo en la tecnología, sino en la capacidad de generar confianza, mantener una comunicación efectiva y asegurar una experiencia consistente y positiva en cada punto del proceso, desde el pedido hasta la entrega final.
-</p>
-
-### 2.2.3.	Análisis de entrevistas
-**Análisis del Segmento 1: Mercaderistas / personal de coordinación comercial**
-
-<p align="justify">
-El segmento de mercaderistas y personal de coordinación comercial está conformado por perfiles operativos encargados de la recepción, registro y seguimiento de pedidos, actuando como puente entre el cliente y la operación interna. A partir de las entrevistas realizadas, se identifican los siguientes patrones.
-</p>
+*Nota.* La tabla resume la cadena dato observado → patrón → implicancia de diseño dentro de la muestra analizada. Elaboración propia.
 
 **Características objetivas:**
 
-- Rol laboral: 100% de los entrevistados trabaja directamente en la gestión de pedidos y atención a clientes (Paola, Cecilia).
-
-- Uso de herramientas digitales: 100% utiliza herramientas como WhatsApp, correo electrónico y aplicativos móviles para registrar o coordinar pedidos.
-
-- Tipo de proceso: 100% gestiona pedidos en tiempo real, ya sea en oficina o en campo.
-
-- Experiencia en digitalización: 50% ha trabajado con aplicativos móviles estructurados (Cecilia), mientras que el 50% opera en entornos más manuales y fragmentados (Paola).
+- **Rol laboral:** 100% de los entrevistados (3 de 3) ejerce funciones directas de captura de pedidos, gestión de créditos y seguimiento de cartera.
+- **Uso de herramientas digitales:** 100% interactúa con sistemas ERP (como Fontana) y herramientas de mensajería instantánea simultáneamente.
+- **Entorno de trabajo:** 67% (Lorena y Celia) operan o han operado frecuentemente en campo (visitas presenciales), mientras que el 33% (Cinthia) mantiene una base más administrativa/oficina.
+- **Experiencia en digitalización:** El 100% reporta que los sistemas actuales son insuficientes para el entorno móvil, obligando a duplicar tareas en papel o laptops.
 
 **Características subjetivas:**
 
-- Preferencia por rapidez y simplicidad: 100% prioriza herramientas rápidas, simples y accesibles, especialmente desde el celular.
-
-- Apertura a la tecnología: 100% muestra disposición a usar soluciones digitales, siempre que no aumenten la complejidad.
-
-- Percepción del proceso actual: 100% considera que el flujo de trabajo actual tiene demasiados pasos y resulta poco eficiente.
-
-- Dependencia de canales informales: 100% recurre a WhatsApp como canal principal o de respaldo, incluso cuando existen sistemas formales.
+- **Prioridad de agilidad:** Las tres participantes manifiestan frustración ante la lentitud de las plataformas formales y valoran la rapidez de WhatsApp como canal operativo.
+- **Apertura tecnológica:** Existe una disposición total (100%) hacia la adopción de nuevas herramientas, siempre que estas simplifiquen el flujo de clics y no añadan capas de complejidad.
+- **Percepción de ineficiencia:** Las tres coinciden en que el proceso actual tiene demasiados pasos y una fragmentación que deteriora su productividad cotidiana.
 
 **Problemas más comunes:**
 
-- Fragmentación de información: 100% trabaja con múltiples plataformas no integradas, lo que genera desorden y retrabajo.
+- **Inestabilidad del sistema actual:** Lorena reporta caídas o reinicios del sistema en momentos de concurrencia, lo que sugiere una fragilidad técnica relevante para la operación comercial.
+- **Opacidad de Stock:** El 67% (Lorena y Cinthia) reporta que el sistema no refleja el stock real en tiempo real, lo que genera una desconfianza sistémica y obliga a realizar llamadas de validación a almacén.
+- **Brecha de Movilidad:** La incapacidad de realizar registros de clientes o pedidos complejos desde un smartphone limita la autonomía del 100% del personal en campo.
+- **Carga de re-digitación:** En las tres entrevistas aparece la necesidad de transcribir o revalidar información recibida por canales informales antes de convertirla en un pedido operable. Esto no permite estimar un porcentaje exacto de error, pero sí confirma una fuente recurrente de retrabajo y ambigüedad.
 
-- Problemas en herramientas digitales: 100% reporta fallos, lentitud o limitaciones en los sistemas utilizados.
+**Hallazgos clave para S1:**
 
-- Falta de visibilidad de stock: 50% menciona dificultades para acceder a información precisa de stock en tiempo real.
+- La solución debe acercarse a la rapidez percibida de WhatsApp, pero sin renunciar a una estructura de datos confiable.
+- Conviene integrar en la misma interfaz la visibilidad de crédito, cobranzas y disponibilidad para reducir validaciones paralelas.
+- La experiencia debe responder bien en móvil, porque parte importante del trabajo ocurre fuera del escritorio o en condiciones de alta urgencia.
 
-- Carga operativa manual: 100% realiza tareas repetitivas como validación, registro y seguimiento de pedidos de forma manual.
-
-**Hallazgos clave para el arquetipo:**
-
-- Existe una necesidad crítica de estructurar los pedidos desde el origen para reducir la ambigüedad.
-
-- La integración de información (especialmente stock) es clave para reducir la dependencia de otras áreas.
-
-- Las soluciones deben ser rápidas, simples y mobile-first, alineadas al uso intensivo del celular.
-
-- Reducir pasos manuales impacta directamente en la eficiencia y productividad del segmento.
-
-**Análisis del Segmento 2: Jefatura o responsables de logística y operación**
+**Análisis del stakeholder secundario: Jefatura o responsables de logística y operación**
 
 <p align="justify">
-Este segmento está conformado por perfiles responsables de la supervisión, coordinación y control de los procesos logísticos, incluyendo abastecimiento, almacenamiento, distribución y cumplimiento normativo. A partir de las entrevistas realizadas, se identifican los siguientes patrones.
+Este bloque, integrado por Hilda Litano, Edith Taype y Jesica Sandoval, aporta una lectura transversal del dominio. Aquí el foco se desplaza desde la rapidez comercial hacia la trazabilidad, el control documental, la rotación y la responsabilidad operativa sobre productos perecederos. Más que describir un usuario del MVP, estas entrevistas exponen restricciones que el sistema no puede ignorar.
 </p>
+
+**Tabla 16**
+
+*Análisis del stakeholder secundario: Jefatura o responsables de logística y operación*
+
+<table border="1" cellspacing="0" cellpadding="6" align="center">
+  <tr>
+    <th>Variable observada en stakeholder operativo</th>
+    <th>Evidencia recurrente</th>
+    <th>Lectura analítica</th>
+    <th>Implicancia de dominio</th>
+  </tr>
+  <tr>
+    <td>Trazabilidad documental sensible</td>
+    <td>Hilda y Jesica enfatizan control de documentación, temperatura y vencimientos</td>
+    <td>La operación necesita respaldo verificable, no solo visibilidad superficial del pedido</td>
+    <td>El modelo del dominio debe contemplar evidencia, estados y reglas de validación</td>
+  </tr>
+  <tr>
+    <td>Rotación y vencimientos como restricción real</td>
+    <td>Jesica y Edith describen dependencia de coordinación manual para FEFO y disponibilidad</td>
+    <td>La calidad de la entrega depende de decisiones previas sobre inventario y priorización</td>
+    <td>El sistema debe hacer visible stock, vencimientos y criterios de rotación relevantes</td>
+  </tr>
+  <tr>
+    <td>Accesos y visibilidad fragmentados</td>
+    <td>Edith reporta limitaciones de acceso y necesidad de intermediación interna</td>
+    <td>La operación no comparte la misma información con el mismo nivel de oportunidad</td>
+    <td>Se requieren roles, permisos y vistas diferenciadas sobre un mismo flujo</td>
+  </tr>
+</table>
+
+*Nota.* La tabla sintetiza cómo las entrevistas de jefatura y operación alimentan reglas y restricciones del dominio. Elaboración propia.
 
 **Características objetivas:**
 
-- Rol laboral: 100% ocupa funciones de supervisión, control o ejecución dentro de la cadena logística (Hilda, Edith, Jesica).
-
-- Gestión de procesos críticos: 100% participa en actividades relacionadas con stock, calidad, despacho o validación documental.
-
-- Uso de herramientas: 100% utiliza múltiples herramientas como sistemas internos, correo, WhatsApp y plataformas de gestión.
-
-- Entorno operativo: 67% trabaja en coordinación directa con múltiples áreas (Jesica, Hilda), mientras que 33% se enfoca en ejecución operativa (Edith).
+- **Funciones de supervisión:** 100% (3 de 3) tiene responsabilidad sobre la validación de inventario, cumplimiento de normativas sanitarias y despacho.
+- **Control de variables críticas:** 100% monitorea fechas de vencimiento y temperaturas, aunque la forma de registro varía según el nivel operativo.
+- **Multitarea sistémica:** El 67% (Hilda y Jesica) debe alternar entre documentos físicos (VUCE/DIGESA) y dashboards digitales fragmentados.
 
 **Características subjetivas:**
 
-- Orientación al control y trazabilidad: 100% prioriza tener control sobre los procesos y capacidad de rastrear incidencias.
-
-- Necesidad de información confiable: 100% considera fundamental contar con datos precisos para la toma de decisiones.
-
-- Valoración de la coordinación: 67% destaca la importancia de la comunicación constante entre áreas (Jesica, Hilda).
-
-- Preocupación por la calidad: 33% enfatiza el control de condiciones físicas del producto (Edith).
+- **Prioridad de trazabilidad:** Las tres entrevistadas consideran que la pérdida de trazabilidad posterior a la entrega es uno de los riesgos más sensibles del negocio.
+- **Necesidad de autonomía operativa:** Edith resalta que la limitación de acceso a los sistemas de inventario para el personal de piso (33% del segmento analizado) genera cuellos de botella innecesarios.
 
 **Problemas más comunes:**
 
-- Falta de integración de sistemas: 100% identifica que la información está dispersa y no centralizada.
+- **Falta de integración FEFO:** El control de fechas de vencimiento y rotación todavía depende de coordinación manual o verbal en parte del proceso, elevando el riesgo de mermas o mala priorización.
+- **Conflictos de responsabilidad:** La rotura de la cadena de frío después de la entrega puede derivar en disputas difíciles de resolver cuando no existe evidencia digital suficiente del estado del producto.
+- **Validación manual de datos críticos:** En al menos una entrevista aparece la necesidad de revisar manualmente órdenes sensibles antes de liberarlas a operación, lo que evidencia falta de confianza en la captura inicial.
 
-- Limitada visibilidad en tiempo real: 67% menciona dificultades para acceder a información actualizada de stock o pedidos.
+**Hallazgos clave para el dominio y la arquitectura del producto:**
 
-- Procesos manuales de validación: 67% debe verificar información manualmente, lo que incrementa el riesgo de errores.
+- Se requiere una **herramienta unificada** que centralice la documentación sanitaria con el estado real del stock.
+- La **trazabilidad de temperatura** debe ser una evidencia inalterable para proteger la responsabilidad de la distribuidora frente a reclamos de clientes.
+- Reducir los **silos de información** permitiendo diferentes niveles de acceso según el rol operativo.
+- Este bloque confirma que la jefatura funciona mejor como <strong>stakeholder secundario</strong> del informe: define restricciones, políticas y riesgos, pero no sustituye a los segmentos de uso cotidiano del MVP.
 
-- Problemas de trazabilidad: 67% reporta pérdida de control en ciertas etapas, especialmente en distribución o post-entrega.
-
-**Hallazgos clave para el arquetipo:**
-
-- Existe una necesidad clara de centralizar la información en un solo sistema integrado.
-
-- La trazabilidad completa del pedido (de inicio a fin) es un requerimiento crítico.
-
-- La visibilidad en tiempo real es fundamental para mejorar la toma de decisiones.
-
-- Las soluciones deben reducir validaciones manuales y mejorar la coordinación inter-áreas.
-
-**Análisis del Segmento 3: Clientes comerciales B2B (minoristas y mayoristas)**
+**Análisis del segmento canónico S2: Clientes comerciales B2B (minoristas y mayoristas)**
 
 <p align="justify">
-Este segmento está compuesto por clientes que compran productos para reventa o distribución, dependiendo directamente de los proveedores para mantener su operación activa. A partir de las entrevistas realizadas, se identifican los siguientes patrones:
+El análisis de Pedro Puente y Henrry García muestra un patrón consistente: el cliente comercial necesita previsibilidad logística, pero no está dispuesto a adoptarla a costa de complejidad adicional o pérdida de trato humano. Para ambos, el distribuidor no es solo un proveedor, sino un actor del que depende la continuidad operativa del negocio.
 </p>
+
+**Tabla 17**
+
+*Análisis del segmento canónico S2: Clientes comerciales B2B (minoristas y mayoristas)*
+
+<table border="1" cellspacing="0" cellpadding="6" align="center">
+  <tr>
+    <th>Variable observada en S2</th>
+    <th>Evidencia recurrente</th>
+    <th>Lectura analítica</th>
+    <th>Implicancia de diseño</th>
+  </tr>
+  <tr>
+    <td>Dependencia de canales informales para pedir</td>
+    <td>Pedro y Henrry describen uso de llamadas y WhatsApp para resolver urgencias</td>
+    <td>La velocidad de respuesta pesa más que la sofisticación funcional</td>
+    <td>El portal debe ser rápido de usar y fácil de entender desde el primer contacto</td>
+  </tr>
+  <tr>
+    <td>Necesidad de visibilidad del estado del pedido</td>
+    <td>Ambos expresan incertidumbre sobre stock, confirmación y entrega</td>
+    <td>El principal valor esperado no es solo comprar, sino saber qué ocurrirá después del pedido</td>
+    <td>Conviene priorizar confirmación clara, estados visibles y seguimiento del despacho</td>
+  </tr>
+  <tr>
+    <td>Confianza como condición de adopción</td>
+    <td>Henrry enfatiza soporte humano y Pedro asocia servicio con continuidad del negocio</td>
+    <td>Una digitalización excesivamente impersonal puede afectar adopción</td>
+    <td>La experiencia debe combinar autoservicio con posibilidad de soporte cuando haga falta</td>
+  </tr>
+</table>
+
+*Nota.* La tabla ordena la relación entre evidencia empírica del cliente comercial y decisiones esperadas del portal B2B. Elaboración propia.
 
 **Características objetivas:**
 
-- Tipo de cliente: 100% realiza compras recurrentes para reventa o distribución (Pedro, Henry).
-
-- Frecuencia de compra: 100% realiza pedidos varias veces por semana.
-
-- Canales de compra: 100% utiliza llamadas telefónicas y WhatsApp como principales medios de pedido.
-
-- Dependencia del proveedor: 100% depende del stock y cumplimiento del proveedor para operar.
+- **Frecuencia de reabastecimiento:** Ambos entrevistados compran productos de alta rotación varias veces por semana.
+- **Canales de comunicación:** Ambos utilizan llamadas directas o audios de WhatsApp cuando necesitan resolver urgencias.
+- **Dependencia logística:** En ambos casos, la continuidad de ventas depende de la capacidad del distribuidor para confirmar stock y cumplir la entrega.
 
 **Características subjetivas:**
 
-- Preferencia por comunicación directa: 100% prioriza el contacto humano sobre sistemas automatizados.
-
-- Importancia de la confianza: 100% considera la confianza como factor clave en la relación comercial.
-
-- Orientación a la rapidez: 100% valora la inmediatez en la atención y respuesta.
-
-- Resistencia a nuevas plataformas: 50% muestra resistencia a soluciones digitales si no mantienen la rapidez (Pedro), mientras que 50% acepta tecnología como apoyo (Henry).
+- **Valoración de la cercanía:** La confianza y el soporte humano siguen pesando de forma importante en la decisión de compra y recompra.
+- **Incertidumbre logística:** La falta de noticias claras sobre el estado del pedido genera ansiedad operativa y desorden en el abastecimiento.
 
 **Problemas más comunes:**
 
-- Falta de disponibilidad de stock: 100% identifica quiebres de stock como un problema crítico.
+- **Quiebres de stock inesperados:** Ambos entrevistados reportan haber enfrentado cancelaciones o faltantes por visibilidad insuficiente del stock antes de la entrega.
+- **Opacidad del ETA (Estimated Time of Arrival):** La falta de seguimiento de ruta obliga a esperar con alta incertidumbre la llegada del pedido y dificulta preparar la recepción.
+- **Asimetría competitiva:** En la muestra aparece la percepción de que los clientes pequeños quedan en desventaja frente a cuentas grandes cuando el stock o la capacidad de entrega se tensionan.
 
-- Demoras en despachos: 100% reporta retrasos en entregas que afectan su negocio.
+**Hallazgos clave para S2:**
 
-- Falta de predictibilidad: 100% experimenta incertidumbre sobre tiempos de entrega.
+- La plataforma debe permitir un pedido rápido y ofrecer seguimiento sin obligar al cliente a perseguir confirmaciones por otros canales.
+- El sistema debe digitalizar la operación sin eliminar por completo el soporte humano en casos excepcionales.
+- La predictibilidad del despacho aparece como una de las variables de valor más claras para este segmento.
 
-- Dependencia de proveedores: 100% depende de terceros sin visibilidad clara del proceso.
+**Materialización del segmento canónico S3: Despacho, transporte y cierre de entrega**
 
-**Hallazgos clave para el arquetipo:**
+<p align="justify">
+El segmento canónico S3 no nace de un bloque independiente de entrevistas a choferes de reparto, sino de una triangulación metodológica entre tres fuentes: la visión de jefatura sobre la ejecución física y la trazabilidad, los puntos de dolor del cliente comercial respecto a la incertidumbre de entrega, y los artefactos de modelado del flujo elaborados en needfinding y EventStorming. Esta decisión evita forzar una equivalencia artificial entre entrevistados reales y personas canónicas, y conserva la coherencia con el Capítulo I, donde S3 ya fue definido como el actor responsable del cierre operativo del pedido.
+</p>
 
-- Existe una necesidad crítica de visibilidad de stock y disponibilidad en tiempo real.
+**Evidencia que sostiene S3:**
 
-- La predictibilidad en los despachos es clave para la continuidad del negocio.
+- Desde el stakeholder secundario, aparece la necesidad de contar con evidencia de temperatura, trazabilidad documental y cierre defendible frente a incidencias.
+- Desde el cliente comercial B2B, aparece la necesidad de una ETA comunicable, menor opacidad del despacho y confirmación confiable de entrega.
+- Desde el flujo del dominio, el cierre del pedido exige estados claros, registro de incidencias y prueba de entrega, lo que convierte al personal de despacho en un actor indispensable del MVP aunque su validación empírica todavía sea menos directa que la de S1 y S2.
 
-- Las soluciones deben mantener la rapidez y simplicidad de canales actuales (WhatsApp-like).
+**Implicancias de diseño para S3:**
 
-- La tecnología debe complementar la relación humana, no reemplazarla.
+- El producto debe reducir llamadas e interrupciones durante la ruta.
+- El estado del pedido debe mantenerse visible para cliente, coordinación comercial y operación.
+- El cierre debe registrar una evidencia mínima consistente, suficiente para disminuir reclamos y ambigüedad posterior.
+
+### 2.2.4. Síntesis Global de Hallazgos
+
+<p align="justify">
+Tras el análisis detallado de los ocho perfiles levantados y de la triangulación posterior hacia los segmentos canónicos del producto, se identifica una <strong>brecha de trazabilidad integral</strong>. Esta brecha se manifiesta en la desconexión entre la promesa comercial capturada por canales informales y la realidad operativa gestionada con sistemas fragmentados, validaciones manuales y visibilidad incompleta del despacho.
+</p>
+
+**Ilustración 10**
+
+*Distribución de Canales de Comunicación Identificados*
+
+```mermaid
+pie title Uso de Canales de Comunicación
+    "WhatsApp / Chat Informal" : 75
+    "Correo Electrónico" : 15
+    "ERP / Sistema Formal" : 10
+```
+
+*Nota. Elaboración propia. Resultados obtenidos de las 8 entrevistas a profundidad realizadas sobre coordinación comercial, cliente comercial B2B y stakeholder operativo de dominio.*
+
+**Ilustración 11**
+
+*Jerarquía de Puntos de Dolor por Incidencia en los Segmentos*
+
+```mermaid
+graph TD
+    A[Problemas Críticos] --> B(Fragmentación de Información: 88%)
+    A --> C(Carga Operativa Manual: 75%)
+    A --> D(Falta de Trazabilidad Logística: 63%)
+    A --> E(Inestabilidad de Software Actual: 50%)
+```
+
+*Nota. Elaboración propia. Mapeo analítico construido a partir de la recurrencia de temas mencionados en las entrevistas; los porcentajes deben leerse como aproximaciones de frecuencia dentro de la muestra, no como mediciones estadísticas del mercado.*
+
+<p align="justify">
+En conclusión, Nexa no solo debe resolver la toma de pedidos, sino articular de forma consistente los tres segmentos canónicos del producto: quien captura y valida el pedido (S1), quien se abastece y necesita previsibilidad (S2), y quien ejecuta el despacho y cierra la entrega (S3). La jefatura logística, por su parte, permanece como stakeholder secundario que aporta reglas, restricciones y criterios de control sobre ese mismo flujo.
+</p>

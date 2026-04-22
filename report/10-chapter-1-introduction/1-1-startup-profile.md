@@ -3,7 +3,7 @@
 ## 1.1. Startup Profile
 <p align = "justify">
 Nexa es una startup de base tecnológica enfocada en el desarrollo de soluciones digitales para optimizar procesos comerciales y operativos en la distribución B2B de productos refrigerados y congelados en el Perú.  
-Su origen se vincula con la oportunidad identificada en el apartado anterior: la existencia de brechas persistentes de digitalización en empresas importadoras y distribuidoras del sector, donde la coordinación de ventas, disponibilidad, pedidos y despachos todavía presenta niveles importantes de informalidad y fragmentación.  
+Su origen se vincula con la oportunidad identificada en la sección previa: la existencia de brechas persistentes de digitalización en empresas importadoras y distribuidoras del sector, donde la coordinación de ventas, disponibilidad, pedidos y despachos todavía presenta niveles importantes de informalidad y fragmentación.  
 
 Frente a ese contexto, Nexa se concibe como una propuesta especializada orientada a cubrir un tramo crítico del negocio que suele quedar desatendido por soluciones generalistas: la articulación entre la intención de compra del cliente comercial y la ejecución operativa del pedido por parte de la empresa distribuidora.  En lugar de centrarse únicamente en transporte, monitoreo térmico o digitalización comercial aislada, la startup busca integrar en una sola plataforma web la consulta de catálogo, la gestión de pedidos B2B, el control básico de inventario y el seguimiento operativo del despacho, manteniendo como eje la necesidad de mayor orden, trazabilidad y consistencia en operaciones vinculadas con cadena de frío.  
 
@@ -11,7 +11,7 @@ El modelo de negocio propuesto se basa en **Software as a Service (SaaS)**, ya q
 Bajo este enfoque, Nexa no pretende reemplazar de inmediato todas las herramientas del ecosistema logístico ni prometer una automatización total del negocio, sino posicionarse como la capa principal de organización comercial y operativa del proceso de pedidos, capaz de ordenar el flujo central de información mientras la empresa avanza en su madurez digital.  
 
 En términos estratégicos, la startup compite por especialización más que por amplitud funcional. Su diferenciación radica en abordar de manera concreta un dominio donde convergen exigencias comerciales, operativas y de control propias de productos refrigerados y congelados.  
-Por ello, la primera apuesta se concentra en un **MVP web**que permita estructurar el flujo principal del sistema —catálogo, pedido, disponibilidad y seguimiento— y que, sobre una base validada, pueda evolucionar en fases posteriores hacia componentes móviles, integraciones con soluciones logísticas complementarias y funcionalidades de trazabilidad térmica apoyadas en tecnologías IoT.  
+Por ello, la primera apuesta se concentra en un **MVP web** que permita estructurar el flujo principal del sistema —catálogo, pedido, disponibilidad y seguimiento— y que, sobre una base validada, pueda evolucionar en fases posteriores hacia componentes móviles, integraciones con soluciones logísticas complementarias y funcionalidades de trazabilidad térmica apoyadas en tecnologías IoT.  
 
 Síntesis de posicionamiento. Como se desprende de la problemática previamente desarrollada, Nexa no se presenta como una plataforma horizontal para cualquier tipo de abastecimiento, sino como una solución SaaS B2B especializada en ordenar el flujo de pedidos y la coordinación operativa en empresas que distribuyen productos refrigerados y congelados.
 </p>
@@ -60,7 +60,7 @@ A partir de esa base, la startup proyecta una evolución futura coherente con la
 ## 1.1.2. Perfiles de integrantes del equipo
 
 <p align="justify">
-Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo con perfiles complementarios que posean habilidades en análisis de sistemas, modelado de datos, programación y gestión de proyectos. A continuación, se presenta un formato estándar para la descripción de los miembros del equipo, el cual debe ser completado por cada integrante:
+Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo con perfiles complementarios que posean habilidades en análisis de sistemas, modelado de datos, programación, documentación técnica, diseño de experiencia de usuario y gestión del trabajo colaborativo. En esta línea, cada integrante aporta fortalezas diferenciadas que permiten cubrir la investigación, la estructuración del informe, el diseño de la solución, la implementación técnica y la coordinación general del proyecto.
 </p>
 
 **Tabla 4**
@@ -80,7 +80,13 @@ Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo c
     <td>Team Member</td>
     <td>
       <p align="justify">
-      Hola, soy César, estudiante de cuarto ciclo de Ingeniería de Software. He aprendido mucho sobre trabajo en equipo y me preocupo por mis compañeros, pues si funcionamos como grupo, logramos mejores resultados. Me gusta ayudar en todo lo necesario y disfruto de actividades con familia y amigos. Amo escuchar música y ver películas.
+      César es estudiante de Ingeniería de Software con interés en el diseño de interfaces, la organización visual de contenido y la documentación estructurada de productos digitales. Dentro del equipo, aporta criterio para transformar información compleja en entregables claros, legibles y consistentes, lo que resulta especialmente útil en la redacción del informe y en la construcción de piezas de soporte orientadas a comunicar valor de negocio. Además, muestra disposición para colaborar transversalmente con otras áreas del proyecto, facilitando la integración entre narrativa, diseño y formalidad académica.
+      <br/><br/>
+      <strong>Fortalezas técnicas y de aporte al proyecto:</strong><br/>
+      • sensibilidad por el diseño visual y la presentación ordenada de información;<br/>
+      • apoyo en la redacción y depuración de contenido documental;<br/>
+      • capacidad para colaborar en tareas de estructuración de secciones y consistencia editorial;<br/>
+      • disposición al trabajo en equipo y a la revisión cruzada de entregables.
       </p>
     </td>
   </tr>
@@ -90,7 +96,13 @@ Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo c
     <td>Team Member</td>
     <td>
       <p align="justify">
-      Hola, soy Gerard, estudiante de cuarto ciclo de Ingeniería de Software. Me considero responsable, puntual y con facilidad para el trabajo en equipo. Tengo buenas habilidades de comunicación, capacidades de liderazgo y una mentalidad orientada al negocio. Siempre estoy dispuesto a aprender y asumir nuevos desafíos.
+      Gerard es estudiante de Ingeniería de Software con interés en el análisis técnico, la comunicación de ideas y la comprensión del negocio detrás de una solución digital. Su perfil combina responsabilidad operativa con una orientación clara hacia la arquitectura, la estructuración lógica de componentes y la articulación entre decisiones técnicas y objetivos del producto. Dentro del equipo, puede contribuir tanto en la definición de modelos y diagramas como en la sustentación argumentada de decisiones de diseño e implementación.
+      <br/><br/>
+      <strong>Fortalezas técnicas y de aporte al proyecto:</strong><br/>
+      • pensamiento analítico para modelar procesos y relaciones entre componentes;<br/>
+      • facilidad para comunicar decisiones técnicas con claridad;<br/>
+      • criterio para alinear la solución con el valor de negocio esperado;<br/>
+      • capacidad de coordinación y liderazgo en tareas de arquitectura y documentación.
       </p>
     </td>
   </tr>
@@ -100,7 +112,13 @@ Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo c
     <td>Team Member</td>
     <td>
       <p align="justify">
-      Soy Gino, estudiante de quinto ciclo de Ingeniería de Software en la UPC. Tengo conocimientos en programación orientada a objetos, estructuras de datos, análisis y diseño de sistemas, además de metodologías de gestión de proyectos. He trabajado en proyectos académicos y cuento con habilidades de trabajo en equipo, comunicación y resolución de problemas.
+      Gino es estudiante de quinto ciclo de Ingeniería de Software y tiene una inclinación marcada por la programación, el trabajo con entornos de desarrollo y la construcción técnica de soluciones. Se siente cómodo implementando en herramientas como Visual Studio Code, organizando lógica de código y aterrizando modelos conceptuales en estructuras más cercanas a la ejecución. Su perfil resulta valioso para conectar análisis, diseño e implementación, especialmente en tareas relacionadas con programación orientada a objetos, estructuras de datos y análisis de sistemas.
+      <br/><br/>
+      <strong>Fortalezas técnicas y de aporte al proyecto:</strong><br/>
+      • afinidad por la programación y el desarrollo en entornos como Visual Studio Code;<br/>
+      • conocimientos de programación orientada a objetos, estructuras de datos y análisis de sistemas;<br/>
+      • capacidad para traducir requerimientos en lógica técnica y componentes implementables;<br/>
+      • aporte en tareas de resolución de problemas y trabajo colaborativo durante la construcción del producto.
       </p>
     </td>
   </tr>
@@ -110,7 +128,13 @@ Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo c
     <td>Team Member</td>
     <td>
       <p align="justify">
-      Soy Joaquín, estudiante de quinto ciclo de Ingeniería de Software, apasionado por la tecnología y el software. Responsable y perfeccionista, siempre busca la máxima calidad en sus proyectos. En su tiempo libre disfruta de videojuegos, música y compartir con amigos.
+      Joaquín es estudiante de Ingeniería de Software con especial interés por la calidad del producto, el detalle en la ejecución y la mejora continua de entregables. Su perfil combina responsabilidad con una orientación fuerte a revisar, pulir y elevar el nivel de lo que el equipo produce, lo cual resulta útil tanto en artefactos de diseño como en validación de consistencia entre secciones del informe y decisiones de solución. Su manera de trabajar favorece la revisión cuidadosa y la búsqueda de precisión en los resultados.
+      <br/><br/>
+      <strong>Fortalezas técnicas y de aporte al proyecto:</strong><br/>
+      • atención al detalle en revisión de contenido y consistencia de entregables;<br/>
+      • enfoque en calidad y mejora progresiva del producto documental y técnico;<br/>
+      • disposición para apoyar tareas de validación, ajuste y refinamiento;<br/>
+      • compromiso con estándares altos de presentación y coherencia interna.
       </p>
     </td>
   </tr>
@@ -120,7 +144,13 @@ Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo c
     <td>Team Leader</td>
     <td>
       <p align="justify">
-      Soy Diego, estudiante de Ingeniería de Software en quinto ciclo con pasión por la organización y liderazgo de proyectos. He desarrollado la capacidad de guiar iniciativas desde la planificación hasta la verificación final, asegurando calidad en cada detalle. Me enfoco en la responsabilidad y atención al detalle, buscando aplicar mis conocimientos y ganar experiencia práctica. Fuera de lo académico, disfruto del deporte, la música, las series y compartir con amigos.
+      Diego es estudiante de Ingeniería de Software en quinto ciclo y asume un perfil integral orientado a la organización, la coordinación del trabajo y la supervisión transversal del proyecto. Le interesa mantener ordenados los procesos, distribuir responsabilidades con claridad y asegurar que el avance técnico, documental y de validación conserve coherencia entre sí. Su principal aporte al equipo es funcionar como un perfil todo terreno: puede intervenir en planificación, revisión, integración de artefactos y seguimiento del cumplimiento general, cuidando que el proyecto no pierda estructura ni trazabilidad.
+      <br/><br/>
+      <strong>Fortalezas técnicas y de aporte al proyecto:</strong><br/>
+      • organización y seguimiento global del proyecto desde una lógica de control y orden;<br/>
+      • capacidad para articular trabajo técnico, documental y de coordinación en una misma línea de avance;<br/>
+      • perfil versátil para apoyar distintas áreas cuando el equipo lo requiere;<br/>
+      • liderazgo operativo enfocado en cumplimiento, consistencia y cierre de entregables.
       </p>
     </td>
   </tr>

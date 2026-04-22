@@ -1,34 +1,22 @@
 ## 4.5. Web Applications Prototyping.
 
 <p align="justify">
-El prototipado de Nexa representa la culminación del diseño visual y funcional antes de la fase de construcción de software. Se desarrollaron prototipos de alta fidelidad que simulan la interactividad real del sistema, permitiendo validar con los stakeholders (Gerencia de Operaciones y Clientes B2B) la fluidez de las transiciones y la claridad de las alertas críticas. El uso de micro-interacciones en el prototipo ayuda a reducir la incertidumbre logística al proporcionar feedback inmediato sobre acciones como el guardado de borradores o la actualización de stock.
+El prototipado de la web application en Nexa debe interpretarse como la consolidación navegable de los artefactos ya desarrollados en la sección 4.4. Si los wireframes definieron estructura, los mock-ups resolvieron jerarquía visual y el user flow explicó la lógica de interacción, el prototipo integra esas capas en una experiencia continua que permite revisar coherencia entre módulos, transiciones y puntos de decisión.
 </p>
 
 <p align="justify">
-A continuación, se presentan las vistas principales del prototipo navegable, las cuales integran las guías de estilo (Capítulo 4.1) con los flujos de usuario (Capítulo 4.4).
+En AV1, el valor de esta subsección no consiste en demostrar software desplegado, sino en demostrar que el diseño de la capa autenticada ya alcanzó un nivel suficiente de articulación como para ser revisado, recorrido y defendido como preparación funcional del producto. Por ello, aquí corresponde documentar el <strong>archivo prototipo</strong> y su función dentro del proceso, mientras que las pantallas específicas, sus descripciones y sus exportaciones visuales pertenecen al bloque UX/UI anterior.
 </p>
 
-**Ilustración 40**
-
-*Prototipo de Alta Fidelidad — Vistas de la Aplicación Web*
-
-![Web App Prototype](../assets/images/mockups/landing-platform-2.png)
-
-*Nota. Elaboración propia. Representación del prototipo funcional para la gestión de inventarios y visualización de KPIs operativos en tiempo real.*
+| Evidencia de prototipado | Propósito |
+|---|---|
+| [Proyecto Figma del equipo](https://www.figma.com/files/team/1586383034175281439/project/587167294) | Preservar el espacio maestro donde se organiza el diseño del producto |
+| [Archivo Figma de la web application](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=0-1) | Verificar la versión navegable y los frames conectados de la aplicación autenticada |
 
 <p align="justify">
-El prototipo permite explorar de forma interactiva las siguientes capacidades:
+La utilidad metodológica del prototipo es doble. Primero, permite revisar continuidad entre módulos sin depender todavía de implementación productiva. Segundo, ofrece una base defendible para explicar cómo evolucionará Nexa desde su capa pública hacia su capa transaccional. En otras palabras, el prototipo no sustituye al desarrollo, pero sí reduce el riesgo de que la implementación futura contradiga lo ya investigado, priorizado y diseñado.
 </p>
-
-1.  **Navegación entre Módulos**: Transiciones fluidas entre el catálogo de productos y el historial de pedidos.
-2.  **Validación de Formularios**: Simulación de alertas de crédito insuficiente y quiebres de stock.
-3.  **Seguimiento de Despacho**: Visualización interactiva del estado del pedido y la trazabilidad térmica.
 
 <p align="justify">
-Para acceder al entorno interactivo completo y experimentar la navegación entre pantallas, se dispone del siguiente recurso externo de diseño:
+Bajo esta lectura, el prototipado debe presentarse con honestidad de alcance: constituye <strong>evidencia de diseño integrado y preparación funcional</strong>, no evidencia de despliegue autenticado ni de operación real en producción. Su valor en el informe es mostrar que la web application ya fue pensada como un sistema consistente y recorrible antes de entrar en fases posteriores de implementación.
 </p>
-
-> [!TIP]
-> **Acceso al Prototipo Interactivo (Figma)**: [Click aquí para navegar el prototipo de Nexa](https://www.figma.com/proto/nexa-b2b-platform-demo)
-
-*Nota. El enlace anterior dirige a la versión más reciente del prototipo de alta fidelidad utilizado para las pruebas de usabilidad con los perfiles de usuario definidos.*

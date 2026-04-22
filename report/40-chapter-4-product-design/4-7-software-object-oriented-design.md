@@ -11,7 +11,7 @@ El diseño orientado a objetos de Nexa trasciende la mera representación de dat
   <p style="margin: 5px 0 0 0; color: #64748b; font-style: italic;">"Modelando el comportamiento inteligente de la distribución primaria."</p>
 </div>
 
-**Ilustración 22**
+**Ilustración 61**
 
 *Diagrama de Clases del Ecosistema Nexa (Enterprise Model)*
 
@@ -75,6 +75,7 @@ classDiagram
         +float totalAmount
         +calculateTotals()
         +validateCommercialTerms() bool
+        +updateStatus(newStatus)
         +authorize()
     }
     class OrderItem {
@@ -86,6 +87,7 @@ classDiagram
         +int id
         +string status
         +datetime departureTime
+        +calculateETA() datetime
         +verifyColdChain() bool
         +registerIncident(type)
         +finalizeDelivery(pod)
@@ -101,6 +103,41 @@ classDiagram
         +resolve()
     }
 
+    class Permission {
+        +int id
+        +string code
+        +string description
+        +validateScope() bool
+    }
+    class Category {
+        +int id
+        +string name
+        +getProducts() List
+    }
+    class Warehouse {
+        +int id
+        +string name
+        +checkStorageCapacity() float
+    }
+    class WarehouseLocation {
+        +int id
+        +string code
+        +isOccupied() bool
+    }
+    class Driver {
+        +int id
+        +string name
+        +string licenseNumber
+        +isAvailable() bool
+    }
+    class POD {
+        +int id
+        +string signedBy
+        +datetime timestamp
+        +file evidenceFile
+        +verifyIntegrity() bool
+    }
+
     %% Relationships
     User "1" --> "1" Role : assigned_to
     Role "1" --o "*" Permission : contains
@@ -113,6 +150,8 @@ classDiagram
     Product "1" --o "*" Batch : lot_tracking
     
     Warehouse "1" --* "*" InventoryStock : stores
+    Warehouse "1" --* "*" WarehouseLocation : partitions
+    WarehouseLocation "1" --o "*" InventoryStock : hosts
     InventoryStock "1" --> "1" Product : item
     InventoryStock "1" --> "1" Batch : specific_batch
     
@@ -152,3 +191,35 @@ El diseño orientado a objetos ha sido validado contra el esquema de base de dat
     </ul>
   </div>
 </div>
+
+---
+
+### 4.7.3. Matriz de Trazabilidad: Requerimientos vs. Diseño OOD
+
+<p align="justify">
+Para asegurar la integridad del sistema, se presenta la siguiente matriz que vincula las historias de usuario críticas con los componentes del diseño orientado a objetos que las materializan.
+</p>
+
+**Tabla 35**
+
+*Matriz de Coherencia Requerimiento-Objeto*
+
+| User Story ID | Req. Title | Entidad/Clase Principal | Método/Lógica Vinculada |
+| :--- | :--- | :--- | :--- |
+| **US24** | Consultar catálogo | `Product` / `Category` | `validateStock()`, `getProducts()` |
+| **US32** | Alertas de crédito | `CommercialCondition` | `isCreditApproved(amount)` |
+| **US42** | Registro de POD | `POD` / `Dispatch` | `finalizeDelivery(pod)`, `verifyIntegrity()` |
+| **US45** | Registro de Lotes | `Batch` / `ProductSpec` | `isExpired()`, `isOptimalConditions()` |
+| **US47** | Reserva de Stock | `InventoryStock` | `reserve(qty)`, `release(qty)` |
+| **US39** | Tracking & ETA | `Dispatch` | `calculateETA()` |
+| **US41** | Estados de Pedido | `Order` | `updateStatus(newStatus)` |
+| **US51** | Saldo y Morosidad | `CommercialCondition` | `currentBalance` |
+| **US54** | Login Interno | `User` | `login()` |
+| **US57** | Roles | `Role` / `Permission` | `hasPermission()`, `validateScope()` |
+| **US48** | Bloqueo Producto | `Product` | `status`, `validateStock()` |
+| **US44** | Monitor Inventario | `InventoryStock` | `quantityOnHand`, `quantityReserved` |
+| **US61** | API Registro Pedido| `Order` / `OrderItem` | `calculateTotals()`, `authorize()` |
+| **US46** | Alertas FEFO | `Batch` | `expiryDate`, `isExpired()` |
+| **US63** | API POD/Eventos | `POD` / `Incident` | `verifyIntegrity()`, `resolve()` |
+
+*Nota.* Se evidencia que cada funcionalidad crítica del negocio tiene un respaldo explícito en el diseño de clases, garantizando que el software sea una representación fiel de los requerimientos. Elaboración propia.

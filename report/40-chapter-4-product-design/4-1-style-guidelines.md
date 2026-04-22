@@ -11,7 +11,7 @@ El Capítulo IV representa la transición técnica desde la fase de descubrimien
   <p style="margin: 5px 0 0 0; color: #475569; font-style: italic;">"Estableciendo el lenguaje visual para el control absoluto de la cadena de frío."</p>
 </div>
 
-### 4.1.1. General Style Guidelines (Design Ethos)
+## 4.1.1. General Style Guidelines (Design Ethos)
 
 <p align="justify">
 Nexa se rige por el principio de <strong>"Calm-Tech"</strong>: la interfaz debe actuar como un soporte invisible que facilite el control absoluto sobre la cadena de frío sin generar fatiga cognitiva. En un entorno de distribución primaria, la precisión es más valiosa que la estética decorativa.
@@ -25,7 +25,7 @@ Nexa se rige por el principio de <strong>"Calm-Tech"</strong>: la interfaz debe 
 
 ---
 
-### 4.1.2. Web Style Guidelines
+## 4.1.2. Web Style Guidelines
 
 #### 01. Colorimetry: El Sistema HSL Dinámico
 
@@ -33,7 +33,7 @@ Nexa se rige por el principio de <strong>"Calm-Tech"</strong>: la interfaz debe 
 La paleta se fundamenta en un sistema <strong>HSL (Hue, Saturation, Lightness)</strong> que permite una gestión dinámica del contraste y la adaptabilidad ante diversas condiciones lumínicas en centros logísticos.
 </p>
 
-**Ilustración 3**
+**Ilustración 22**
 
 *Sistema de Colorimetría Nexa*
 
@@ -74,7 +74,7 @@ La paleta se fundamenta en un sistema <strong>HSL (Hue, Saturation, Lightness)</
 Se ha estandarizado el uso de <strong>Inter</strong> como familia tipográfica universal. Esta decisión técnica (no solo estética) garantiza que la información se mantenga legible incluso en condiciones de baja resolución o alta fatiga ocular.
 </p>
 
-**Ilustración 4**
+**Ilustración 23**
 
 *Sistema Tipográfico Nexa*
 
@@ -98,7 +98,7 @@ Se ha estandarizado el uso de <strong>Inter</strong> como familia tipográfica u
 El sistema iconográfico utiliza trazos lineales consistentes para mantener la ligereza visual del portal, evitando que el peso de las imágenes compita con la lectura de los datos operativos.
 </p>
 
-**Ilustración 5**
+**Ilustración 24**
 
 *Iconografía Nexa*
 
@@ -112,7 +112,7 @@ El sistema iconográfico utiliza trazos lineales consistentes para mantener la l
 Nexa utiliza una rejilla de <strong>12 columnas</strong> con un ancho de contenedor maestro de <strong>1440px</strong>. El diseño responde a la necesidad de visualizar dashboards de control en monitores de almacén, mientras que los flujos de consumo rápido se adaptan a tablets y smartphones.
 </p>
 
-**Ilustración 6**
+**Ilustración 25**
 
 *Sistema de Rejilla y Breakpoints*
 
@@ -126,7 +126,7 @@ Nexa utiliza una rejilla de <strong>12 columnas</strong> con un ancho de contene
 El ritmo visual se basa en una escala de múltiplos de <strong>4px</strong>, un estándar de la industria que garantiza que cada elemento de la interfaz tenga una separación armónica y predecible.
 </p>
 
-**Ilustración 7**
+**Ilustración 26**
 
 *Escala de Espaciado Nexa*
 
@@ -136,7 +136,7 @@ El ritmo visual se basa en una escala de múltiplos de <strong>4px</strong>, un 
 
 ---
 
-### 4.1.3. Micro-Interactions & Motion Principles
+## 4.1.3. Micro-Interactions & Motion Principles
 
 <p align="justify">
 El movimiento en Nexa está diseñado para dar sensación de <strong>Relatividad Operativa</strong> y fluidez sistémica. No se trata de efectos visuales, sino de retroalimentación de estado.
@@ -147,7 +147,7 @@ El movimiento en Nexa está diseñado para dar sensación de <strong>Relatividad
 
 ---
 
-### 4.1.4. Accessibility & Compliance (WCAG 2.1)
+## 4.1.4. Accessibility & Compliance (WCAG 2.1)
 
 <p align="justify">
 La inclusividad es un requisito funcional. El sistema cumple con el estándar <strong>AA de las WCAG 2.1</strong>, asegurando que cualquier operario pueda utilizar la plataforma sin importar sus capacidades visuales o motrices.
@@ -182,7 +182,7 @@ La inclusividad es un requisito funcional. El sistema cumple con el estándar <s
 
 ---
 
-### 4.1.5. Design Tokens Architecture
+## 4.1.5. Design Tokens Architecture
 
 <p align="justify">
 La mantenibilidad del diseño se asegura mediante una arquitectura de <strong>Design Tokens</strong> implementada en CSS nativo a través de variables de entorno. Esto facilita la escalabilidad del proyecto, permitiendo cambios globales (como rebranding o ajustes de contraste para visión reducida) modificando una única línea de código en el archivo <code>tokens.css</code>.
@@ -191,7 +191,7 @@ La mantenibilidad del diseño se asegura mediante una arquitectura de <strong>De
 > [!NOTE]
 > **Ventaja de Ingeniería**: Esta arquitectura reduce la carga de archivos CSS redundantes, mejorando la velocidad de carga de la plataforma en redes móviles de almacenes y zonas rurales donde la conectividad puede ser limitada.
 
-### 4.1.6. Mobile-First & Cross-Platform Strategy
+## 4.1.6. Mobile-First & Cross-Platform Strategy
 
 <p align="justify">
 Aunque Nexa es una herramienta B2B orientada al escritorio para la gestión masiva de datos, su diseño contempla el <strong>consumo en movilidad</strong> para operarios de campo. Los componentes interactivos cumplen con una altura mínima de <strong>44px</strong> para garantizar una superficie de contacto apta para dedos, anticipando el uso de tabletas rugerizadas en condiciones de baja temperatura (donde el uso de guantes puede dificultar el toque preciso).

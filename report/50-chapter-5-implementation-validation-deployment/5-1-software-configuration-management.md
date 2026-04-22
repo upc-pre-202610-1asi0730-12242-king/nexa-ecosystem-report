@@ -3,79 +3,96 @@
 ## 5.1. Software Configuration Management
 
 <p align="justify">
-La gestión de la configuración del software establece las bases técnicas, herramientas y normativas que el equipo de Ingeniería de Software utilizará para garantizar la integridad, calidad y versionado de los artefactos de la plataforma Nexa durante todo su ciclo de vida.
+La gestión de la configuración del software en Nexa se documenta a partir de la evidencia verificable disponible en el corte AV1: el tablero de trabajo en Jira, los repositorios GitHub del informe y del sitio público, el despliegue de la landing page y los artefactos de diseño y arquitectura elaborados durante la iteración. Esta sección distingue entre <strong>configuración efectivamente observable</strong> y <strong>capacidad planificada</strong>, evitando atribuir como desplegado aquello que en este hito aún permanece en backlog o en diseño técnico.
 </p>
 
 ### 5.1.1. Software Development Environment Configuration
 
 <p align="justify">
-Para estandarizar el desarrollo y asegurar la compatibilidad entre las estaciones de trabajo de los miembros del equipo, se ha definido el siguiente ecosistema de herramientas:
+Para estandarizar el trabajo colaborativo del equipo y asegurar trazabilidad entre investigación, diseño, implementación y documentación, se configuró el siguiente ecosistema base:
 </p>
 
-**Gestión de Proyecto y Documentación:**
+**Gestión ágil y documentación**
 
-- **Jira Software:** Utilizado para la gestión estricta del Product Backlog, seguimiento de los Sprints y asignación de responsabilidades bajo el marco de trabajo ágil Scrum.
+- **Jira Software:** Herramienta central para la planificación Scrum, priorización del Product Backlog, definición de Sprint Backlogs y asignación de responsabilidades. La evidencia del tablero se encuentra publicada en [Nexa Product Backlog (Jira)](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog?epics=visible).
+- **GitHub:** Plataforma de control de versiones utilizada para separar artefactos por repositorio y mantener trazabilidad documental y técnica. En el corte AV1, la evidencia verificable se concentra en `nexa-report` y `nexa-website`.
+- **Markdown bajo enfoque Docs-as-Code:** Formato de redacción del informe técnico, organizado por capítulos numerados, activos relativos y ensamblado posterior a PDF.
 
-- **Markdown / Microsoft Word:** Empleados para la redacción de la documentación académica oficial y la estructuración del repositorio.
+**Diseño, prototipado y modelado**
 
-**Diseño y Experiencia de Usuario (UX/UI):**
+- **Figma:** Utilizado para wireframes, mockups y prototipos de alta fidelidad del sitio público y de la web application.
+- **UXPressia:** Utilizada para consolidar personas, journey maps y artefactos de needfinding.
+- **Visual Paradigm:** Empleado para diagramas C4, modelado de dominio y diseño de base de datos.
 
-- **Figma:** Herramienta principal para el prototipado de alta fidelidad, creación de Wireframes y gestión de la biblioteca de componentes visuales (Style Guidelines).
+**Entorno de implementación observable en AV1**
 
-- **UXPressia:** Plataforma utilizada para el modelado de User Personas y Customer Journey Maps.
-
-**Desarrollo Integrado (IDE) y Arquitectura:**
-
-- **Visual Studio 2022:** Entorno de desarrollo principal para la construcción del Backend y el API RESTful utilizando C# y ASP.NET Core.
-
-- **Visual Studio Code:** Editor de código ligero estandarizado para la maquetación de la Landing Page (HTML/CSS/JS) y el desarrollo del Frontend (Vue.js).
-
-- **Structurizr / Lucidchart / Miro:** Empleados para la diagramación de la arquitectura de software bajo el modelo C4, diagramas de base de datos y modelado de dominio (EventStorming).
+- **Visual Studio Code:** Editor utilizado para la maquetación del landing site y la edición del repositorio documental.
+- **HTML5 + CSS modular + JavaScript vanilla:** Stack efectivamente visible en `nexa-website`, incluyendo navegación multipágina, internacionalización EN/ES y componentes de interacción sin frameworks de frontend.
+- **Capacidad técnica planificada:** El backlog ya contempla scaffolding del backend en ASP.NET Core, documentación Swagger y componentes del portal transaccional; sin embargo, esa capacidad todavía no constituye evidencia de despliegue final en este workspace al cierre de AV1.
 
 ### 5.1.2. Source Code Management
 
 <p align="justify">
-Para garantizar la mantenibilidad y legibilidad del código fuente, el equipo obedece convenciones de codificación estandarizadas por la industria:
+El control de versiones se organiza bajo una convención GitFlow y una disciplina de integración incremental que prioriza trazabilidad por artefacto y por tipo de cambio. La configuración declarada del proyecto distingue las siguientes ramas:
 </p>
 
-- **Rama main (Principal):** Contiene el código en estado de producción. Cada confirmación de cambios (commit) en esta rama representa una versión estable y validada.
-
-- **Rama develop (Desarrollo):** Rama de integración principal donde se consolida el trabajo de todos los desarrolladores del equipo.
-
-- **Ramas feature/ (Características):** Ramas efímeras creadas a partir de develop para trabajar en Historias de Usuario específicas (ej. feature/US05-login-b2b).
-
-- **Ramas hotfix/ (Correcciones):** Ramas de contingencia utilizadas para solucionar errores críticos detectados en el entorno de producción.
+- **`main`:** rama estable para artefactos validados y listos para exposición o entrega.
+- **`develop`:** rama de integración prevista para consolidar avances del equipo.
+- **`feature/*`:** ramas efímeras para contenido o capacidades específicas.
+- **`release/*` y `hotfix/*`:** ramas reservadas para preparación de entregables y correcciones críticas.
 
 <p align="justify">
-Todas las integraciones hacia las ramas principales se realizan estrictamente mediante solicitudes de extracción (Pull Requests), requiriendo la revisión y aprobación (Code Review) de al menos un miembro distinto al autor del código.
+En la práctica, el repositorio académico y el repositorio del sitio público funcionan como dos flujos sincronizados: el primero preserva la narrativa, trazabilidad y justificación ingenieril; el segundo concentra la implementación visible del MVP público. Esta separación reduce ruido entre documentación y código, y hace más clara la evidencia de contribución por commit, archivo y sprint.
 </p>
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
 <p align="justify">
-Para garantizar la mantenibilidad y legibilidad del código fuente, el equipo obedece convenciones de codificación estandarizadas por la industria:
+Para garantizar mantenibilidad y lectura homogénea del proyecto, el equipo adopta convenciones explícitas tanto para el código fuente como para los artefactos documentales:
 </p>
 
-**Convención de Confirmaciones (Conventional Commits):** Todos los mensajes enviados al repositorio deben seguir un formato semántico que facilite la trazabilidad:
+**Convención de commits (Conventional Commits):** Los mensajes siguen el patrón `type(scope): description`, en minúsculas y sin punto final.
 
 - **feat:** para nuevas características o Historias de Usuario.
-
 - **fix:** para la corrección de errores funcionales.
+- **docs:** para actualizaciones exclusivas en documentación.
+- **refactor:** para cambios de estructura sin modificar comportamiento.
+- **ci:** para configuración de integración continua.
 
-- **docs:** para actualizaciones exclusivas en la documentación (ej. archivos de reporte Markdown).
+**Convenciones de repositorio y documentación**
 
-- **design:** para ajustes en estilos CSS o estructuración de interfaces.
+- Prefijos numéricos por capítulo para asegurar orden de ensamblado.
+- Rutas relativas para activos visuales dentro de `report/assets/images/`.
+- Uso de títulos, subtítulos y numeración académica alineados al template UPC.
+- Historias de usuario redactadas con criterios Gherkin y vinculadas a claves Jira del tipo `NX-###`.
 
-**Convenciones de Programación (C# / Backend):** Se aplica estrictamente PascalCase para el nombramiento de Clases, Interfaces y Métodos, y camelCase para variables locales y parámetros.
+**Convenciones de implementación visible**
 
-**Convenciones de Programación (Frontend):** Los nombres de los componentes y archivos deben ser descriptivos. Para los componentes de la interfaz gráfica en Vue.js, se utiliza nomenclatura de múltiples palabras (ej. OrderList.vue) para evitar colisiones con elementos nativos.
+- El sitio público mantiene una organización multipágina con archivos HTML por sección y assets desacoplados por responsabilidad.
+- Los nombres de clases e identificadores del frontend siguen `kebab-case`.
+- La lógica de internacionalización se centraliza en un módulo propio de JavaScript.
+
+**Convenciones REST API planificadas**
+
+Aunque el API no forma parte del despliegue activo de AV1, el capítulo 4 y el backlog ya fijan la convención REST basada en recursos en plural y sustantivos:
+
+- `GET /orders` — listado de pedidos
+- `GET /orders/{id}` — detalle de un pedido
+- `POST /orders` — creación de pedido
+- `GET /products` — catálogo de productos
+- `GET /products/{id}` — detalle de producto
+- `GET /inventory` — estado del inventario
+
+**Convenciones de backend previstas:** PascalCase para clases y métodos; camelCase para parámetros y variables locales en el contexto de C# / ASP.NET Core.
 
 ### 5.1.4. Software Deployment Configuration
 
 <p align="justify">
-El despliegue de los artefactos de software se dividirá en diferentes entornos en la nube (Cloud) para asegurar escalabilidad y separación de responsabilidades funcionales:
+La evidencia de despliegue de AV1 se concentra en el sitio público y en la publicación de artefactos de colaboración. Por ello, la configuración debe leerse en dos niveles: <strong>despliegue activo</strong> y <strong>despliegue proyectado</strong>.
 </p>
 
-**Landing Page y Documentación:** Se utilizará GitHub Pages (o alternativas de alojamiento estático como Vercel) para garantizar alta disponibilidad y bajo costo de mantenimiento.
+- **Landing Page (`nexa-website`):** Desplegada en GitHub Pages y verificada en la URL pública [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/). El sitio ofrece navegación multipágina, selector EN/ES, CTA de demostración, FAQ y secciones por segmento operativo.
+- **Backlog y planificación Scrum:** Publicados en Jira como evidencia de gestión colaborativa, priorización y evolución incremental.
+- **Informe técnico (`nexa-report`):** Conservado como repositorio Docs-as-Code, desde el cual se genera el entregable PDF.
 
-**Backend (API RESTful) y Base de Datos:** Serán alojados en plataformas de grado empresarial en la nube, garantizando el procesamiento seguro de las transacciones B2B y la persistencia relacional.
+- **Backend, web application y base de datos:** Permanecen como alcance técnico modelado y backlog priorizado, pero no como despliegue verificable de AV1 dentro del workspace inspeccionado. Esta frontera es importante para la honestidad del informe: el hito actual demuestra sitio público, backlog, arquitectura y coordinación ágil; el flujo transaccional end-to-end aún pertenece a la siguiente fase de implementación.

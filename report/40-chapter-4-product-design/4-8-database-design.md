@@ -12,7 +12,10 @@ El diseño de la base de datos de Nexa representa una arquitectura de datos de g
 El siguiente diagrama, desarrollado mediante la notación de ingeniería de software moderna, descompone el ecosistema de datos de Nexa en seis módulos funcionales interconectados. Este modelo contempla más de 35 entidades diseñadas para eliminar la redundancia y optimizar el rendimiento en consultas transaccionales de gran volumen.
 </p>
 
-```mermaid
+**Ilustración 62**
+
+*Diagrama Entidad-Relación (ERD) — Arquitectura de Datos Nexa*
+
 erDiagram
     ROLE {
         int id PK
