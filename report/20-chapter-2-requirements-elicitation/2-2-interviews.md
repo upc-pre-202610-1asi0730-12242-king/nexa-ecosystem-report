@@ -1,5 +1,19 @@
 ## 2.2.	Entrevistas
 
+<p align="justify">
+Para mantener continuidad con el Capítulo I y con los artefactos posteriores de needfinding, este capítulo distingue entre <strong>segmentos canónicos del producto</strong> y <strong>bloques de levantamiento de información</strong>. Los segmentos canónicos del informe siguen siendo <strong>S1: coordinación comercial y captura del pedido</strong>, <strong>S2: cliente comercial B2B y abastecimiento recurrente</strong> y <strong>S3: despacho, transporte y cierre de entrega</strong>. Sin embargo, el trabajo de campo no se organizó únicamente por esos tres arquetipos, sino también por un cuarto lente de análisis: la <strong>jefatura y responsables de logística, abastecimiento y operación</strong>, que funciona como stakeholder secundario para validar reglas del dominio, trazabilidad, riesgos sanitarios y restricciones operativas.
+</p>
+
+<div style="padding: 14px 16px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 16px 0;">
+  <strong>Correspondencia metodológica utilizada en el capítulo.</strong><br/><br/>
+  <ul>
+    <li><strong>Bloque de entrevistas 1:</strong> alimenta directamente al segmento canónico <strong>S1</strong>.</li>
+    <li><strong>Bloque de entrevistas 2:</strong> no reemplaza a un segmento canónico; se interpreta como <strong>stakeholder secundario</strong> para validar reglas, riesgos y restricciones del dominio.</li>
+    <li><strong>Bloque de entrevistas 3:</strong> alimenta directamente al segmento canónico <strong>S2</strong>.</li>
+    <li><strong>Segmento canónico S3:</strong> se materializa por triangulación entre hallazgos operativos, puntos de dolor del cierre de entrega, artefactos de needfinding y modelado del flujo del dominio.</li>
+  </ul>
+</div>
+
 ### 2.2.1.	Diseño de entrevistas
 
 <p align = "justify">
@@ -66,9 +80,9 @@ Aquí todavía no se vende la solución; se explora el mínimo valor esperado.
 
 **Nota para el moderador.** No es necesario formular todas las preguntas literalmente. Lo importante es mantener el foco, pedir ejemplos recientes, repreguntar “por qué” cuando aparezca un problema y no interrumpir silencios útiles.
 
-**Segmento 2: Jefatura y responsables de logística, abastecimiento y operación**
+**Bloque complementario de entrevistas: Jefatura y responsables de logística, abastecimiento y operación**
 
-**Segmento:**  Personas con responsabilidad de supervisión o decisión sobre importación, abastecimiento, almacén, inventario, despacho y coordinación logística.
+**Stakeholder analizado:**  Personas con responsabilidad de supervisión o decisión sobre importación, abastecimiento, almacén, inventario, despacho y coordinación logística.
 
 **Objetivo de investigación:** Comprender el flujo end-to-end del pedido, sus puntos críticos, riesgos de escalabilidad y criterios de valor para una primera solución digital.
 
@@ -77,6 +91,8 @@ Aquí todavía no se vende la solución; se explora el mínimo valor esperado.
 **Tipo de entrevistado buscado:** 2 a 3 entrevistados de jefatura, supervisión o coordinación operativa con visión amplia del proceso.
 
 **Foco principal:** Trazabilidad, puntos de quiebre, visibilidad interna, coordinación entre áreas, prioridades del MVP y evolución futura.
+
+**Rol dentro de la taxonomía del informe:** Este bloque no redefine a S2 ni a S3. Su función es complementar la investigación con una visión de dominio y restricciones operativas que después alimenta el diseño, el EventStorming y la delimitación del alcance.
 
 **Warm-up y alcance del cargo**
 La idea es ubicar rápido desde qué parte del proceso mira la operación.
@@ -127,7 +143,7 @@ La meta es priorizar el valor real, no pedir features sueltas.
 **Nota para el moderador**. No es necesario formular todas las preguntas literalmente. Lo importante es mantener el foco, pedir ejemplos recientes, repreguntar “por qué” cuando aparezca un problema y no interrumpir silencios útiles.
 
 
-**Segmento 3 · Clientes comerciales B2B minoristas y mayoristas**
+**Segmento 2 (S2) · Clientes comerciales B2B minoristas y mayoristas**
 
 **Segmento:** Bodegas, minimarkets, pequeños mayoristas y negocios HORECA que compran productos refrigerados o congelados a distribuidores.
 
@@ -185,7 +201,11 @@ No basta saber si usa apps; importa cómo decide confiar en una herramienta.
 
 ### 2.2.2.	Registro de entrevistas
 
-**Segmento 1: Mercaderistas / personal de coordinación comercial**
+<p align="justify">
+En esta subsección se preservan los nombres y cargos reales de las personas entrevistadas. En cambio, los nombres de las user personas del capítulo 2.3 son <strong>arquetipos sintéticos</strong> construidos a partir de patrones compartidos entre varias entrevistas; por ello, no deben leerse como equivalentes literales de una única persona entrevistada.
+</p>
+
+**Segmento canónico S1: Mercaderistas / personal de coordinación comercial**
 
 **Entrevistado 1**
 
@@ -262,7 +282,7 @@ Celia Pérez, con experiencia previa en ventas de ruta, aporta una perspectiva c
 Su testimonio confirma que, para el personal en ruta, la estabilidad de la conexión y la velocidad de respuesta del sistema son factores determinantes para la adopción tecnológica. Cualquier retraso en el dispositivo móvil se traduce en una atención deficiente al cliente y en una carga operativa innecesaria al final del día.
 </p>
 
-**Segmento 2: Jefatura o responsables de logística y operación**
+**Stakeholder secundario: Jefatura o responsables de logística y operación**
 
 **Entrevistado 1**
 
@@ -327,7 +347,7 @@ Edith Taype opera en el punto de venta (supermercados), donde la manipulación y
 Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcripción manual de pedidos, donde los errores en cantidades obligan a validaciones individuales de cada orden. Señala que la variable crítica es el control de fechas de vencimiento (FEFO), información que actualmente no está integrada en el sistema central y requiere coordinación verbal constante con almacén.
 </p>
 
-**Segmento 3: Clientes comerciales B2B (minoristas y mayoristas)**
+**Segmento canónico S2: Clientes comerciales B2B (minoristas y mayoristas)**
 
 **Entrevistado 1**
 
@@ -373,28 +393,124 @@ Henrry García enfatiza que la confianza es el motor de la relación B2B. Aunque
 
 ### 2.2.3.	Análisis de entrevistas
 
-**Análisis del Segmento 1: Coordinación Comercial**
+**Análisis del segmento canónico S1: Mercaderistas / personal de coordinación comercial**
 
-*   **Puntos de Dolor**: Dependencia extrema de WhatsApp, falta de integración de stock en tiempo real y nulidad de capacidades móviles en los ERP actuales.
-*   **Expectativas**: Herramientas que permitan la toma de pedidos en campo sin re-digitación posterior y con visibilidad inmediata del saldo del cliente.
+<p align="justify">
+El segmento de mercaderistas y personal de coordinación comercial, representado por Lorena Silva, Cinthia Levano y Celia Pérez, constituye el eslabón crítico de captura de datos en la cadena de distribución. Este perfil operativo actúa bajo una presión constante por la inmediatez, donde la velocidad de respuesta al cliente es el indicador de éxito primario. A partir de las entrevistas a profundidad, se han consolidado los siguientes patrones transversales que definen la problemática del sector.
+</p>
 
-**Análisis del Segmento 2: Jefatura y Logística**
+**Características objetivas:**
 
-*   **Puntos de Dolor**: Falta de trazabilidad térmica post-entrega y opacidad en el estado de los pedidos una vez que salen del almacén.
-*   **Expectativas**: Centralización de la trazabilidad FEFO e integración total de datos de venta con planificación de rutas.
+- **Rol laboral:** 100% de los entrevistados (3 de 3) ejerce funciones directas de captura de pedidos, gestión de créditos y seguimiento de cartera.
+- **Uso de herramientas digitales:** 100% interactúa con sistemas ERP (como Fontana) y herramientas de mensajería instantánea simultáneamente.
+- **Entorno de trabajo:** 67% (Lorena y Celia) operan o han operado frecuentemente en campo (visitas presenciales), mientras que el 33% (Cinthia) mantiene una base más administrativa/oficina.
+- **Experiencia en digitalización:** El 100% reporta que los sistemas actuales son insuficientes para el entorno móvil, obligando a duplicar tareas en papel o laptops.
 
-**Análisis del Segmento 3: Clientes B2B**
+**Características subjetivas:**
 
-*   **Puntos de Dolor**: Incertidumbre en los tiempos de entrega y quiebres de stock no comunicados preventivamente.
-*   **Expectativas**: Acceso autónomo a catálogos dinámicos y seguimiento del pedido en tiempo real (tipo delivery apps).
+- **Prioridad de agilidad:** 100% de las participantes manifiesta una frustración elevada ante la lentitud de las plataformas oficiales, priorizando la agilidad de WhatsApp sobre el rigor del sistema formal.
+- **Apertura tecnológica:** Existe una disposición total (100%) hacia la adopción de nuevas herramientas, siempre que estas simplifiquen el flujo de clics y no añadan capas de complejidad.
+- **Percepción de ineficiencia:** El 100% coincide en que el proceso actual tiene "demasiados pasos" (flujo fragmentado) que impactan en su productividad personal.
+
+**Problemas más comunes:**
+
+- **Inestabilidad Crítica (El "Efecto Fontana"):** Lorena destaca que el sistema colapsa ante accesos concurrentes, lo que representa el 100% de los bloqueos técnicos en momentos de alta demanda comercial.
+- **Opacidad de Stock:** El 67% (Lorena y Cinthia) reporta que el sistema no refleja el stock real en tiempo real, lo que genera una desconfianza sistémica y obliga a realizar llamadas de validación a almacén.
+- **Brecha de Movilidad:** La incapacidad de realizar registros de clientes o pedidos complejos desde un smartphone limita la autonomía del 100% del personal en campo.
+- **Carga de Re-digitación:** El 100% de los pedidos capturados por canales informales debe ser transcrito manualmente al ERP, lo que incrementa el riesgo de error humano en un 20-30% según estimaciones operativas.
+
+**Hallazgos clave para el arquetipo:**
+
+- La solución debe ofrecer la **estabilidad y rapidez de WhatsApp** pero con la estructura de datos de un sistema contable.
+- Es imperativo integrar la **visibilidad de créditos y cobranzas** en la misma interfaz de toma de pedidos para dotar de autonomía al asesor comercial.
+- El diseño debe ser **Mobile-First**, permitiendo que el 100% de las tareas comerciales se realicen sin necesidad de una computadora.
+
+**Análisis del stakeholder secundario: Jefatura o responsables de logística y operación**
+
+<p align="justify">
+Este segmento, integrado por Hilda Litano, Edith Taype y Jesica Sandoval, aporta la visión estratégica y de cumplimiento de la cadena de frío. Aquí, el enfoque se desplaza de la rapidez de venta hacia el rigor de la trazabilidad y la preservación del activo (el producto refrigerado). El análisis revela un quiebre importante entre la supervisión y la ejecución operativa.
+</p>
+
+**Características objetivas:**
+
+- **Funciones de supervisión:** 100% (3 de 3) tiene responsabilidad sobre la validación de inventario, cumplimiento de normativas sanitarias y despacho.
+- **Control de variables críticas:** 100% monitorea fechas de vencimiento y temperaturas, aunque la forma de registro varía según el nivel operativo.
+- **Multitarea sistémica:** El 67% (Hilda y Jesica) debe alternar entre documentos físicos (VUCE/DIGESA) y dashboards digitales fragmentados.
+
+**Características subjetivas:**
+
+- **Obsesión por la trazabilidad:** 100% de las entrevistadas considera que el mayor riesgo del negocio es la pérdida de trazabilidad post-entrega (en el anaquel del cliente).
+- **Necesidad de autonomía operativa:** Edith resalta que la limitación de acceso a los sistemas de inventario para el personal de piso (33% del segmento analizado) genera cuellos de botella innecesarios.
+
+**Problemas más comunes:**
+
+- **Falta de Integración FEFO:** El control de "First Expired, First Out" (FEFO) se gestiona de forma manual o verbal en el 67% de los casos (Jesica), aumentando el riesgo de mermas por vencimiento.
+- **Conflictos de Responsabilidad:** La rotura de la cadena de frío tras la entrega en supermercados genera disputas comerciales que el 100% del personal de jefatura atribuye a una falta de evidencia digital de temperatura.
+- **Validación Manual de Datos:** La desconfianza en la digitación del Segmento 1 obliga a Jesica a verificar manualmente el 100% de las órdenes críticas, lo que evidencia una falla en la estructura de captura de datos inicial.
+
+**Hallazgos clave para el dominio y la arquitectura del producto:**
+
+- Se requiere una **herramienta unificada** que centralice la documentación sanitaria con el estado real del stock.
+- La **trazabilidad de temperatura** debe ser una evidencia inalterable para proteger la responsabilidad de la distribuidora frente a reclamos de clientes.
+- Reducir los **silos de información** permitiendo diferentes niveles de acceso según el rol operativo.
+- Este bloque confirma que la jefatura funciona mejor como <strong>stakeholder secundario</strong> del informe: define restricciones, políticas y riesgos, pero no sustituye a los segmentos de uso cotidiano del MVP.
+
+**Análisis del segmento canónico S2: Clientes comerciales B2B (minoristas y mayoristas)**
+
+<p align="justify">
+El análisis de Pedro Puente y Henrry García revela la paradoja del cliente B2B: una necesidad urgente de predictibilidad logística mezclada con una alta resistencia a sistemas que consideren "robóticos" o que les quiten tiempo de atención a sus propios negocios. Para ellos, el distribuidor no es solo un proveedor, sino un socio de quien dependen para no quebrar stock.
+</p>
+
+**Características objetivas:**
+
+- **Frecuencia de reabastecimiento:** 100% (2 de 2) compra productos de alta rotación varias veces por semana.
+- **Canales de comunicación:** 100% utiliza la llamada directa o el audio de WhatsApp para transmitir urgencias.
+- **Dependencia logística:** El 100% reporta que su nivel de ventas está directamente limitado por la capacidad de despacho y stock del distribuidor.
+
+**Características subjetivas:**
+
+- **Valoración de la cercanía:** Henrry subraya que la confianza es el factor determinante del 100% de sus compras; prefiere al vendedor que "conoce su negocio" sobre una plataforma fría.
+- **Incertidumbre logística:** Pedro manifiesta que el mayor "punto de dolor" subjetivo es la falta de noticias sobre su pedido, lo que le genera ansiedad operativa.
+
+**Problemas más comunes:**
+
+- **Quiebres de Stock Inesperados:** El 100% de los clientes ha sufrido la cancelación de ítems críticos al momento de la entrega por falta de visibilidad previa de stock.
+- **Opacidad del ETA (Estimated Time of Arrival):** La falta de un seguimiento de ruta digital obliga al 100% de estos clientes a esperar "en ciego" la llegada del camión, perdiendo horas hombre en el proceso de recepción.
+- **Asimetría Competitiva:** Pedro identifica que los proveedores priorizan a los grandes supermercados, dejando al minorista (100% de este segmento) en una posición de vulnerabilidad logística.
+
+**Hallazgos clave para el arquetipo:**
+
+- La plataforma debe funcionar de forma **asíncrona y rápida**: permitir el pedido en 2 clics y luego ofrecer notificaciones de estado proactivas (Push notifications).
+- El sistema debe **humanizar la relación digital**, permitiendo al cliente sentir que tiene un canal directo de soporte ante excepciones.
+- La **predictibilidad del despacho** es el valor diferencial más potente para fidelizar a este segmento.
+
+**Materialización del segmento canónico S3: Despacho, transporte y cierre de entrega**
+
+<p align="justify">
+El segmento canónico S3 no nace de un bloque independiente de entrevistas a choferes de reparto, sino de una triangulación metodológica entre tres fuentes: la visión de jefatura sobre la ejecución física y la trazabilidad, los puntos de dolor del cliente comercial respecto a la incertidumbre de entrega, y los artefactos de modelado del flujo elaborados en needfinding y EventStorming. Esta decisión evita forzar una equivalencia artificial entre entrevistados reales y personas canónicas, y conserva la coherencia con el Capítulo I, donde S3 ya fue definido como el actor responsable del cierre operativo del pedido.
+</p>
+
+**Evidencia que sostiene S3:**
+
+- Desde el stakeholder secundario, aparece la necesidad de contar con evidencia de temperatura, trazabilidad documental y cierre defendible frente a incidencias.
+- Desde el cliente comercial B2B, aparece la necesidad de una ETA comunicable, menor opacidad del despacho y confirmación confiable de entrega.
+- Desde el flujo del dominio, el cierre del pedido exige estados claros, registro de incidencias y prueba de entrega, lo que convierte al personal de despacho en un actor indispensable del MVP aunque su validación empírica todavía sea menos directa que la de S1 y S2.
+
+**Implicancias de diseño para S3:**
+
+- El producto debe reducir llamadas e interrupciones durante la ruta.
+- El estado del pedido debe mantenerse visible para cliente, coordinación comercial y operación.
+- El cierre debe registrar una evidencia mínima consistente, suficiente para disminuir reclamos y ambigüedad posterior.
 
 ### 2.2.4. Síntesis Global de Hallazgos
 
 <p align="justify">
-La investigación cualitativa revela una fragmentación crítica entre la captura del pedido y su ejecución física. El 100% de los entrevistados reporta que, ante la falla o complejidad de los sistemas formales, recurren a canales informales (WhatsApp/Llamadas), lo que genera pérdida de datos y falta de trazabilidad.
+Tras el análisis detallado de los ocho perfiles levantados y de la triangulación posterior hacia los segmentos canónicos del producto, se concluye que existe una <strong>brecha de trazabilidad integral</strong>. Esta brecha se manifiesta en la desconexión sistémica entre la promesa comercial capturada por canales informales y la realidad operativa gestionada con sistemas fragmentados, validaciones manuales y visibilidad incompleta del despacho.
 </p>
 
-**Gráfico 1: Distribución de Canales de Comunicación Actuales**
+**Ilustración 17**
+
+*Distribución de Canales de Comunicación Identificados*
 
 ```mermaid
 pie title Uso de Canales de Comunicación
@@ -403,7 +519,11 @@ pie title Uso de Canales de Comunicación
     "ERP / Sistema Formal" : 10
 ```
 
-**Gráfico 2: Puntos de Dolor Críticos por Frecuencia de Mención**
+*Nota. Elaboración propia. Resultados obtenidos de las 8 entrevistas a profundidad realizadas sobre coordinación comercial, cliente comercial B2B y stakeholder operativo de dominio.*
+
+**Ilustración 18**
+
+*Jerarquía de Puntos de Dolor por Incidencia en los Segmentos*
 
 ```mermaid
 graph TD
@@ -413,6 +533,8 @@ graph TD
     A --> E(Inestabilidad de Software Actual: 50%)
 ```
 
+*Nota. Elaboración propia. Mapeo de frustraciones reportadas por los entrevistados en base a la repetición sistemática de menciones.*
+
 <p align="justify">
-En conclusión, el éxito de Nexa dependerá de su capacidad para ofrecer estabilidad similar a WhatsApp pero con la estructura de un ERP, permitiendo que la información fluya sin fricciones desde la mercaderista en campo hasta el cliente final en su bodega.
+En conclusión, Nexa no solo debe resolver la toma de pedidos, sino articular de forma consistente los tres segmentos canónicos del producto: quien captura y valida el pedido (S1), quien se abastece y necesita previsibilidad (S2), y quien ejecuta el despacho y cierra la entrega (S3). La jefatura logística, por su parte, permanece como stakeholder secundario que aporta reglas, restricciones y criterios de control sobre ese mismo flujo.
 </p>

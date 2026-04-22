@@ -1,4 +1,17 @@
 ## 2.3. Needfinding
+<p align="justify">
+Los artefactos de needfinding que se presentan a continuación siguen la taxonomía canónica del proyecto definida desde el Capítulo I: <strong>S1</strong> para coordinación comercial y captura del pedido, <strong>S2</strong> para cliente comercial B2B y abastecimiento recurrente, y <strong>S3</strong> para despacho, transporte y cierre de entrega. Esta decisión es deliberada: el needfinding no replica literalmente los bloques de entrevista, sino que reorganiza la evidencia en función de los tres actores que estructuran el MVP.
+</p>
+
+<div style="padding: 14px 16px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 16px 0;">
+  <strong>Criterio de construcción de arquetipos.</strong><br/><br/>
+  <ul>
+    <li><strong>Valeria (S1):</strong> sintetiza patrones compartidos por el personal de coordinación comercial entrevistado.</li>
+    <li><strong>Hilda (S2):</strong> sintetiza patrones del cliente comercial B2B y no corresponde a una única entrevistada individual.</li>
+    <li><strong>Pedro (S3):</strong> sintetiza el rol de despacho y cierre a partir de triangulación entre restricciones operativas, pain points del seguimiento y modelado del flujo.</li>
+  </ul>
+</div>
+
 ### 2.3.1. User Personas
 
 **Ilustración 1**
@@ -7,14 +20,14 @@
 *Nota.* Representación del arquetipo de coordinación comercial, enfocado en reducir la carga administrativa y el retrabajo. Elaboración propia.
 
 **Ilustración 2**
-*User Persona — Segmento 2: Hilda Litiano*
+*User Persona — Segmento 2: Hilda*
 ![User Persona 2](../assets/images/user-persona-2.png)
-*Nota.* Representación del arquetipo de cliente comercial B2B, enfocado en la autonomía de abastecimiento y predictibilidad logística. Elaboración propia.
+*Nota.* Representación sintética del arquetipo de cliente comercial B2B, construida a partir de entrevistas a compradores minoristas y mayoristas, más evidencia de adopción digital del canal tradicional. Elaboración propia.
 
 **Ilustración 3**
-*User Persona — Segmento 3: Pedro García*
+*User Persona — Segmento 3: Pedro*
 ![User Persona 3](../assets/images/user-persona-3.png)
-*Nota.* Representación del arquetipo de despacho y entrega, enfocado en la eficiencia de ruta y el cierre digital con evidencia. Elaboración propia.
+*Nota.* Representación sintética del arquetipo de despacho y entrega, enfocada en la eficiencia de ruta y el cierre digital con evidencia. Su construcción se apoya en triangulación entre stakeholder operativo, pain points del seguimiento y modelado del flujo de dominio. Elaboración propia.
 
 ### 2.3.2. User Task Matrix
 | Tareas Identificadas (Tasks) | S1: Valeria (Frecuencia) | S1: Valeria (Importancia) | S2: Hilda (Frecuencia) | S2: Hilda (Importancia) | S3: Pedro (Frecuencia) | S3: Pedro (Importancia) |
