@@ -4,6 +4,10 @@
 El Big Picture EventStorming de Nexa modela el flujo principal del pedido B2B de productos refrigerados, desde la intención de compra hasta el cierre de la entrega. Su propósito en esta etapa no es describir todas las integraciones futuras del dominio, sino identificar los eventos, comandos, políticas y actores que explican el comportamiento mínimo del MVP y sus principales restricciones operativas.
 </p>
 
+<p align="justify">
+El modelado mantiene la misma taxonomía canónica definida en el proyecto. En ese marco, <strong>S1</strong> se expresa principalmente en la captura asistida y validación comercial, <strong>S2</strong> en la consulta, envío y seguimiento del pedido por parte del cliente comercial, y <strong>S3</strong> en el despacho, la gestión de incidencias y el cierre de la entrega. La jefatura logística permanece como stakeholder secundario que define políticas y restricciones del dominio.
+</p>
+
 ### 2.4.1. Actores del dominio
 
 | Actor | Responsabilidad principal |

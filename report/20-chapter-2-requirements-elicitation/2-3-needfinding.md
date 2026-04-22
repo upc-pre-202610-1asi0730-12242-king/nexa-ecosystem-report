@@ -14,6 +14,10 @@ Los artefactos de needfinding que se presentan a continuación siguen la taxonom
 
 ### 2.3.1. User Personas
 
+<p align="justify">
+Las user personas no sustituyen a los entrevistados reales; funcionan como síntesis operativas de patrones repetidos en la investigación. Por ello, cada persona concentra conductas, necesidades y fricciones compartidas que luego se traducen en decisiones de diseño, tareas y journeys.
+</p>
+
 **Ilustración 1**
 *User Persona — Segmento 1: Valeria Sánchez*
 ![User Persona 1](../assets/images/user-persona-1.png)
@@ -30,6 +34,11 @@ Los artefactos de needfinding que se presentan a continuación siguen la taxonom
 *Nota.* Representación sintética del arquetipo de despacho y entrega, enfocada en la eficiencia de ruta y el cierre digital con evidencia. Su construcción se apoya en triangulación entre stakeholder operativo, pain points del seguimiento y modelado del flujo de dominio. Elaboración propia.
 
 ### 2.3.2. User Task Matrix
+
+<p align="justify">
+La matriz de tareas resume qué actividades concentran mayor frecuencia e importancia relativa para cada segmento canónico. Su función no es enumerar funcionalidades del sistema, sino identificar qué tareas del trabajo real deben ser mejor soportadas por el producto para reducir fricción y sostener adopción.
+</p>
+
 | Tareas Identificadas (Tasks) | S1: Valeria (Frecuencia) | S1: Valeria (Importancia) | S2: Hilda (Frecuencia) | S2: Hilda (Importancia) | S3: Pedro (Frecuencia) | S3: Pedro (Importancia) |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 | **Evaluar necesidades y solicitar mercadería**| N/A | N/A | Alta | Alta | N/A | N/A |
@@ -42,7 +51,15 @@ Los artefactos de needfinding que se presentan a continuación siguen la taxonom
 |**Validar guías/facturas y confirmar cierre de entrega**| Media | Alta | Alta | Alta | Alta | Alta |
 |**Gestionar reclamos por errores o devoluciones** | Media | Alta | Baja | Alta | Baja | Media |
 
+<p align="justify">
+La lectura de la matriz deja tres prioridades claras. En S1 dominan la captura, validación y seguimiento del pedido; en S2 destacan la consulta de disponibilidad, el abastecimiento y la confirmación de entrega; y en S3 pesan la ejecución de ruta, la coordinación del estado y el cierre con evidencia. Esta distribución refuerza que el MVP debe priorizar continuidad entre segmentos, más que resolver cada tarea como si perteneciera a módulos aislados.
+</p>
+
 ### 2.3.3. User Journey Mapping
+
+<p align="justify">
+Los journey maps modelan la situación <em>as-is</em> de cada segmento. Su valor analítico está en visibilizar dónde se concentran esperas, ambigüedades, dependencias manuales e interrupciones que después se transforman en oportunidades de diseño.
+</p>
 
 **Ilustración 4**
 *Journey Map — Segmento 1: Coordinación Comercial*
@@ -60,6 +77,10 @@ Los artefactos de needfinding que se presentan a continuación siguen la taxonom
 *Nota.* Mapeo de la ruta logística, enfatizando los cuellos de botella en la comunicación de incidencias. Elaboración propia.
 
 ### 2.3.4. Empathy Mapping
+
+<p align="justify">
+Los empathy maps complementan la lectura operativa con variables de percepción, confianza, frustración y expectativa. Este nivel resulta importante porque la adopción del producto no dependerá solo de eficiencia funcional, sino también de si cada segmento siente que el sistema le reduce carga, incertidumbre o exposición al error.
+</p>
 
 **Ilustración 7**
 *Empathy Map — Segmento 1: Coordinación Comercial*
