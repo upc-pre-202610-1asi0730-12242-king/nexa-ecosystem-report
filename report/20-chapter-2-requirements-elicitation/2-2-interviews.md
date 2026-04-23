@@ -206,9 +206,7 @@ Además de las capturas integradas en el informe, el archivo audiovisual origina
 
 Captura de sesión de entrevista. Elaboración propia.
 
-**Inicio de la entrevista:** 0:00:05  
-**Fin de la entrevista:** 0:26:05  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e1%20diego%20-%20lorena%20silva.mp4?web=1)
+**Respaldo audiovisual:** [Entrevista - 0:00:05](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e1%20diego%20-%20lorena%20silva.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -233,9 +231,7 @@ A nivel técnico, reporta fricciones severas con el sistema actual (Fontana), el
 
 Captura de sesión de entrevista. Elaboración propia.
 
-**Inicio de la entrevista:** 0:26:06  
-**Fin de la entrevista:** 0:47:05  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e2%20cesar%20-%20paola%20levano.mp4?web=1)
+**Respaldo audiovisual:** [Entrevista - 0:26:06](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e2%20cesar%20-%20paola%20levano.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -260,9 +256,7 @@ Cinthia enfatiza la necesidad de simplicidad. Describe su flujo actual como una 
 
 Captura de sesión de entrevista. Elaboración propia.
 
-**Inicio de la entrevista:** 0:47:06  
-**Fin de la entrevista:** 1:04:01  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e3%20diego%20-%20cecilia%20perez.mp4?web=1)
+**Respaldo audiovisual:** [Entrevista - 0:47:06](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e3%20diego%20-%20cecilia%20perez.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -289,9 +283,7 @@ Su testimonio confirma que, para el personal en ruta, la estabilidad de la conex
 
 Captura de sesión de entrevista. Elaboración propia.
 
-**Inicio de la entrevista:** 1:04:07  
-**Fin de la entrevista:** 1:19:39  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e1%20diego%20-%20hilda%20litano.mp4?web=1)
+**Respaldo audiovisual:** [Entrevista - 1:04:07](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e1%20diego%20-%20hilda%20litano.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -312,9 +304,7 @@ Hilda Litano supervisa procesos de importación y cumplimiento sanitario. Su enf
 
 Captura de sesión de entrevista. Elaboración propia.
 
-**Inicio de la entrevista:** 1:19:40  
-**Fin de la entrevista:** 1:51:08  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e2%20gino%20-%20edith%20taype.mp4?web=1)
+**Respaldo audiovisual:** [Entrevista - 1:19:40](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e2%20gino%20-%20edith%20taype.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -335,9 +325,7 @@ Edith Taype opera en el punto de venta (supermercados), donde la manipulación y
 
 Captura de sesión de entrevista. Elaboración propia.
 
-**Inicio de la entrevista:** 1:51:09  
-**Fin de la entrevista:** 2:12:02  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e3%20diego%20-%20jesica%20sandoval.mp4?web=1)
+**Respaldo audiovisual:** [Entrevista - 1:51:09](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e3%20diego%20-%20jesica%20sandoval.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -360,9 +348,7 @@ Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcrip
 
 Captura de sesión de entrevista. Elaboración propia.
 
-**Inicio de la entrevista:** 2:12:08  
-**Fin de la entrevista:** 2:24:34  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e1%20diego%20-%20pedro%20puente.mp4?web=1)
+**Respaldo audiovisual:** [Entrevista - 2:12:08](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e1%20diego%20-%20pedro%20puente.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -383,9 +369,7 @@ Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre log�
 
 Captura de sesión de entrevista. Elaboración propia.
 
-**Inicio de la entrevista:** 2:24:35  
-**Fin de la entrevista:** 2:40:00  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e2%20cesar%20-%20henry%20garcia.mp4?web=1)
+**Respaldo audiovisual:** [Entrevista - 2:24:35](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e2%20cesar%20-%20henry%20garcia.mp4?web=1)
 
 **Resumen de la Entrevista**
 

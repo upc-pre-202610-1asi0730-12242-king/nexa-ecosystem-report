@@ -68,43 +68,6 @@ Representación sintética del arquetipo de despacho y entrega, enfocada en la e
 En conjunto, las tres personas muestran una progresión coherente del mismo problema. Valeria evidencia cómo la información del pedido nace fragmentada; Hilda expresa la incertidumbre que ese desorden produce en el cliente comercial; y Pedro representa el punto donde la falta de coordinación se vuelve retraso, reclamo o cierre débil de la entrega. Esta continuidad resulta importante porque permite que los artefactos del capítulo no describan actores desconectados, sino tres posiciones sobre una misma historia operativa.
 </p>
 
-### Soporte de Variables Adicionales para User Personas
-
-<p align="justify">
-Para dar soporte empírico a la construcción de los User Personas y asegurar su viabilidad técnica, a continuación se detallan las variables adicionales obligatorias identificadas durante las entrevistas, que condicionan el comportamiento y adopción tecnológica de cada segmento:
-</p>
-
-<table border="1" cellspacing="0" cellpadding="6" align="center">
-  <tr>
-    <th>Segmento / Persona</th>
-    <th>Dispositivos / Browsers de uso frecuente</th>
-    <th>Marcas de uso cotidiano</th>
-    <th>Influencias y canales de adopción</th>
-  </tr>
-  <tr>
-    <td><strong>S1: Valeria</strong> (Coordinación)</td>
-    <td>Laptops corporativas (Windows), Smartphones Android (Samsung, Xiaomi). Browser: Google Chrome.</td>
-    <td>WhatsApp Business, Excel, Fontana (ERP heredado), Outlook.</td>
-    <td>Colegas de ventas, supervisores comerciales, urgencia del cliente. Buscan agilidad sobre estética.</td>
-  </tr>
-  <tr>
-    <td><strong>S2: Hilda</strong> (Cliente B2B)</td>
-    <td>Smartphones Android (Gama media). Poco uso de desktop. Browser: Chrome Mobile.</td>
-    <td>WhatsApp, Yape, Plin, Facebook, plataformas de bancos locales (BCP, BBVA).</td>
-    <td>Promotores de venta, recomendaciones de otros bodegueros, desconfianza hacia apps complejas.</td>
-  </tr>
-  <tr>
-    <td><strong>S3: Pedro</strong> (Despacho)</td>
-    <td>Smartphones robustos o personales con plan de datos limitado. Navegación mínima.</td>
-    <td>Google Maps, Waze, WhatsApp, sistemas simples de GPS vehicular.</td>
-    <td>Rutinas de tráfico, jefes de almacén. Adopción empujada solo si reduce llamadas e interrupciones.</td>
-  </tr>
-</table>
-
-<p align="justify">
-Estas variables confirman que la plataforma web (Nexa) debe estar fuertemente optimizada para <strong>Google Chrome</strong> y priorizar un diseño <strong>Mobile First</strong>, dado el alto uso de smartphones en S2 y S3 y la rotación en campo del S1.
-</p>
-
 ### 2.3.2. User Task Matrix
 
 <p align="justify">
