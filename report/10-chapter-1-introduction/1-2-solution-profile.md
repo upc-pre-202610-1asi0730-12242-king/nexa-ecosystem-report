@@ -263,7 +263,7 @@ Desde esta perspectiva, Lean UX cumple dos funciones en el proyecto. La primera 
 > - **Hypothesis Statements:** traducen esos supuestos en aprendizajes esperados.
 > - **Lean UX Canvas:** resume el vínculo entre problema, solución, usuarios y outcomes esperados.
 
-#### 1.2.2.1. Visión del modelo de negocio soportado por el software
+#### Visión del modelo de negocio soportado por el software
 
 <p align="justify">
 Nexa soporta un modelo de negocio SaaS B2B especializado en la gestión del flujo principal de pedidos para empresas importadoras y distribuidoras de productos refrigerados y congelados. La lógica del negocio no se basa en vender un marketplace horizontal ni en reemplazar de inmediato todo el ecosistema logístico, sino en ofrecer una plataforma web que ordene el tramo donde hoy se concentran mayores fricciones: catálogo, registro de pedido, disponibilidad, control básico de inventario y seguimiento operativo.
@@ -321,7 +321,7 @@ En este modelo, la empresa distribuidora es el cliente pagador de la solución y
 
 La visión del modelo de negocio muestra quién paga, quién usa, qué valor se entrega y sobre qué alcance inicial se justifica el producto.
 
-#### 1.2.2.2. Lean UX Problem Statements
+#### 1.2.2.1. Lean UX Problem Statements
 
 <p align="justify">
 Los problem statements expresan la brecha entre la situación actual del dominio y el resultado que el proyecto busca habilitar. En esta versión se alinean con la taxonomía definitiva del informe: tres segmentos operativos primarios que recorren la captura, la compra y el cierre del pedido.
@@ -413,7 +413,7 @@ Cada problem statement articula un dominio de fricción, un segmento afectado, u
 > - Mejora la predictibilidad del despacho.
 > - Disminuyen los reclamos por falta de trazabilidad en la entrega.
 
-#### 1.2.2.3 Lean UX Assumptions
+#### 1.2.2.2. Lean UX Assumptions
 
 <p align="justify">
 Las assumptions representan creencias críticas del proyecto que aún deben contrastarse. No se presentan como verdades cerradas, sino como riesgos del modelo de negocio, del comportamiento del usuario y de la solución propuesta que el equipo validará mediante entrevistas, prototipos y evidencia de uso.
@@ -442,7 +442,7 @@ En términos de ingeniería de producto, estas assumptions cumplen la función d
 - El MVP debe cubrir sitio público, catálogo, pedido, condiciones comerciales, inventario básico y seguimiento antes de profundizar en integraciones avanzadas.
 - La claridad del flujo y la confiabilidad de la información son más determinantes para la adopción que una lista extensa de funcionalidades.
 
-#### 1.2.2.4 Lean UX Hypothesis Statements
+#### 1.2.2.3. Lean UX Hypothesis Statements
 
 <p align="justify">
 A partir de las assumptions anteriores, el equipo formula hipótesis de aprendizaje orientadas a observar cambios concretos en el flujo del pedido. Estas hipótesis no sustituyen la validación posterior, pero sí definen qué valor inicial se espera demostrar y qué señales permitirán decidir si la propuesta debe mantenerse, ajustarse o profundizarse.
@@ -457,7 +457,7 @@ A partir de las assumptions anteriores, el equipo formula hipótesis de aprendiz
 Para que estas hipótesis sean útiles dentro del proceso Lean UX, el equipo asume como señales iniciales de validación la reducción del retrabajo reportado por coordinación comercial, la percepción de mayor claridad y confianza en el flujo de compra por parte del cliente B2B, y una mejora en la visibilidad del estado del pedido durante despacho y cierre. Aunque estas señales todavía no constituyen métricas finales del producto, sí permiten orientar el aprendizaje del MVP hacia evidencias observables y comparables en las etapas siguientes del proyecto.
 </p>
 
-#### 1.2.2.5. Lean UX Canvas
+#### 1.2.2.4. Lean UX Canvas
 
 <p align="justify">
 El Lean UX Canvas sintetiza la lógica del producto en una sola vista: problema, usuarios, propuesta de valor, outcomes y aprendizaje prioritario. Se presenta como artefacto de cierre del bloque Lean UX y como base de conexión con entrevistas, needfinding y backlog inicial.
