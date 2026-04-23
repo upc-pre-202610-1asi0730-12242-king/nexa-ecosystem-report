@@ -1,4 +1,4 @@
-## 2.2.	Entrevistas
+## 2.2. Entrevistas
 
 <p align="justify">
 Para mantener continuidad con el Capítulo I y con los artefactos posteriores de needfinding, este capítulo distingue entre <strong>segmentos canónicos del producto</strong> y <strong>bloques de levantamiento de información</strong>. Los segmentos canónicos del informe siguen siendo <strong>S1: coordinación comercial y captura del pedido</strong>, <strong>S2: cliente comercial B2B y abastecimiento recurrente</strong> y <strong>S3: despacho, transporte y cierre de entrega</strong>. Sin embargo, el trabajo de campo no se organizó únicamente por esos tres arquetipos, sino también por un cuarto lente de análisis: la <strong>jefatura y responsables de logística, abastecimiento y operación</strong>, que funciona como stakeholder secundario para validar reglas del dominio, trazabilidad, riesgos sanitarios y restricciones operativas.
@@ -14,7 +14,7 @@ Para mantener continuidad con el Capítulo I y con los artefactos posteriores de
   </ul>
 </div>
 
-### 2.2.1.	Diseño de entrevistas
+### 2.2.1. Diseño de entrevistas
 
 <p align = "justify">
 
@@ -77,7 +77,6 @@ Aquí todavía no se vende la solución; se explora el mínimo valor esperado.
 - Si pudieras cambiar una sola cosa del proceso actual, ¿qué cambiarías primero y por qué?  
 - ¿Hay algo importante sobre tu trabajo o sobre este proceso que no te haya preguntado y creas que debería entender?  
 
-
 **Nota para el moderador.** No es necesario formular todas las preguntas literalmente. Lo importante es mantener el foco, pedir ejemplos recientes, repreguntar “por qué” cuando aparezca un problema y no interrumpir silencios útiles.
 
 **Bloque complementario de entrevistas: Jefatura y responsables de logística, abastecimiento y operación**
@@ -104,7 +103,6 @@ La idea es ubicar rápido desde qué parte del proceso mira la operación.
 **Flujo operativo actual**
 
 Aquí debe salir el recorrido real del pedido de extremo a extremo.
-
 
 - Mirando el proceso completo desde que entra un pedido hasta que se entrega, ¿cómo funciona hoy en la práctica?  
 - ¿Qué áreas intervienen y dónde se rompe más seguido el flujo?  
@@ -139,22 +137,19 @@ La meta es priorizar el valor real, no pedir features sueltas.
 - Si pudieras cambiar una sola cosa del proceso actual, ¿qué cambiarías primero y por qué?  
 - ¿Hay algo importante sobre la operación que no te haya preguntado y que consideres clave mencionar?  
 
-
 **Nota para el moderador**. No es necesario formular todas las preguntas literalmente. Lo importante es mantener el foco, pedir ejemplos recientes, repreguntar “por qué” cuando aparezca un problema y no interrumpir silencios útiles.
-
 
 **Segmento 2 (S2) · Clientes comerciales B2B minoristas y mayoristas**
 
 **Segmento:** Bodegas, minimarkets, pequeños mayoristas y negocios HORECA que compran productos refrigerados o congelados a distribuidores.
 
-**Objetivo de investigación: ** Entender cómo compra hoy el cliente comercial, qué fricciones vive al abastecerse y qué condiciones debería cumplir una plataforma para que realmente la adopte.
+**Objetivo de investigación:** Entender cómo compra hoy el cliente comercial, qué fricciones vive al abastecerse y qué condiciones debería cumplir una plataforma para que realmente la adopte.
 
 **Duración sugerida:** 15 a 25 minutos.
 
 **Tipo de entrevistado buscado:** 3 a 5 entrevistados de clientes comerciales que compran a distribuidores de productos refrigerados o perecibles.
 
 **Foco principal:** Abastecimiento, visibilidad de catálogo y stock, seguimiento del pedido, pérdidas por mala coordinación y condiciones reales de adopción digital.
-
 
 **Warm-up y contexto del negocio**
 
@@ -174,7 +169,6 @@ Aquí interesa el flujo real de compra, no la versión ideal.
 
 **Frustraciones y efectos en el negocio**
 
-
 Hay que conectar la mala experiencia con consecuencias reales.
 - ¿Qué es lo que más te incomoda o te hace perder tiempo cuando haces pedidos a distribuidores?  
 - ¿Te ha pasado que pides algo y luego no llega como esperabas? ¿Qué ocurrió y cómo te afectó?  
@@ -193,16 +187,18 @@ No basta saber si usa apps; importa cómo decide confiar en una herramienta.
 - ¿Qué pasos deberían simplificarse primero?  
 - ¿Hay algo importante sobre tu forma de comprar o abastecerte que no te haya preguntado y consideres clave mencionar?  
 
-
 **Nota para el moderador**. No es necesario formular todas las preguntas literalmente. Lo importante es mantener el foco, pedir ejemplos recientes, repreguntar “por qué” cuando aparezca un problema y no interrumpir silencios útiles.
-
 
 </p>
 
-### 2.2.2.	Registro de entrevistas
+### 2.2.2. Registro de entrevistas
 
 <p align="justify">
 En esta subsección se preservan los nombres y cargos reales de las personas entrevistadas. En cambio, los nombres de las user personas del capítulo 2.3 son <strong>arquetipos sintéticos</strong> construidos a partir de patrones compartidos entre varias entrevistas; por ello, no deben leerse como equivalentes literales de una única persona entrevistada.
+</p>
+
+<p align="justify">
+Además de las capturas integradas en el informe, el archivo audiovisual original de las ocho entrevistas se conserva en la carpeta compartida <strong>King Nexa</strong> de OneDrive. Cada ficha incluye su enlace directo para mantener trazabilidad entre la evidencia visual resumida y la grabación completa utilizada en el levantamiento.
 </p>
 
 **Segmento canónico S1: Mercaderistas / personal de coordinación comercial**
@@ -214,13 +210,13 @@ En esta subsección se preservan los nombres y cargos reales de las personas ent
 - **Edad:** 42 años
 - **Ubicación:** Chorrillos
 
-**Ilustración 9**
-
 *Evidencia de entrevista: Lorena Silva*
 
 ![Lorena](../assets/images/pruebas-entrevistas/Lorena.jpeg)
 
-*Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+Captura de sesión de validación con el arquetipo. Elaboración propia.
+
+**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e1%20diego%20-%20lorena%20silva.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -239,13 +235,13 @@ A nivel técnico, reporta fricciones severas con el sistema actual (Fontana), el
 - **Edad:** 39 años
 - **Ubicación:** Lurín
 
-**Ilustración 10**
-
 *Evidencia de entrevista: Cinthia Levano*
 
 ![Cinthia](../assets/images/pruebas-entrevistas/Paola.jpeg)
 
-*Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+Captura de sesión de validación con el arquetipo. Elaboración propia.
+
+**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e2%20cesar%20-%20paola%20levano.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -264,13 +260,13 @@ Cinthia enfatiza la necesidad de simplicidad. Describe su flujo actual como una 
 - **Edad:** 51 años
 - **Ubicación:** San Miguel
 
-**Ilustración 11**
-
 *Evidencia de entrevista: Celia Pérez*
 
 ![Celia](../assets/images/pruebas-entrevistas/Celia.jpeg)
 
-*Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+Captura de sesión de validación con el arquetipo. Elaboración propia.
+
+**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e3%20diego%20-%20cecilia%20perez.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -291,13 +287,13 @@ Su testimonio confirma que, para el personal en ruta, la estabilidad de la conex
 - **Edad:** 47 años
 - **Ubicación:** Villa El Salvador
 
-**Ilustración 12**
-
 *Evidencia de entrevista: Hilda Litano*
 
 ![Hilda](../assets/images/pruebas-entrevistas/Hilda.jpeg)
 
-*Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+Captura de sesión de validación con el arquetipo. Elaboración propia.
+
+**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e1%20diego%20-%20hilda%20litano.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -312,13 +308,13 @@ Hilda Litano supervisa procesos de importación y cumplimiento sanitario. Su enf
 - **Edad:** 49 años
 - **Ubicación:** Callao
 
-**Ilustración 13**
-
 *Evidencia de entrevista: Edith Taype*
 
 ![Edith](../assets/images/pruebas-entrevistas/Edith.jpeg)
 
-*Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+Captura de sesión de validación con el arquetipo. Elaboración propia.
+
+**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e2%20gino%20-%20edith%20taype.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -333,13 +329,13 @@ Edith Taype opera en el punto de venta (supermercados), donde la manipulación y
 - **Edad:** 48 años
 - **Ubicación:** Jesus María
 
-**Ilustración 14**
-
 *Evidencia de entrevista: Jesica Sandoval*
 
 ![Jesica](../assets/images/pruebas-entrevistas/Jesica.jpeg)
 
-*Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+Captura de sesión de validación con el arquetipo. Elaboración propia.
+
+**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e3%20diego%20-%20jesica%20sandoval.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -356,13 +352,13 @@ Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcrip
 - **Edad:** 56 años
 - **Ubicación:** San Isidro
 
-**Ilustración 15**
-
 *Evidencia de entrevista: Pedro Puente*
 
 ![Pedro](../assets/images/pruebas-entrevistas/Pedro.jpeg)
 
-*Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+Captura de sesión de validación con el arquetipo. Elaboración propia.
+
+**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e1%20diego%20-%20pedro%20puente.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -377,13 +373,13 @@ Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre log�
 - **Edad:** 49 años
 - **Ubicación:** San Borja
 
-**Ilustración 16**
-
 *Evidencia de entrevista: Henrry García*
 
 ![Henry](../assets/images/pruebas-entrevistas/Henry.jpeg)
 
-*Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+Captura de sesión de validación con el arquetipo. Elaboración propia.
+
+**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e2%20cesar%20-%20henry%20garcia.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -391,13 +387,15 @@ Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre log�
 Henrry García enfatiza que la confianza es el motor de la relación B2B. Aunque utiliza tecnología con GPS para monitorear sus propios despachos, rechaza que el software reemplace la comunicación humana personalizada. Su visión es que una plataforma ideal debe ser una herramienta de soporte que automatice el inventario y el seguimiento, pero permitiendo siempre una interacción directa para resolver excepciones.
 </p>
 
-### 2.2.3.	Análisis de entrevistas
+### 2.2.3. Análisis de entrevistas
 
 **Análisis del segmento canónico S1: Mercaderistas / personal de coordinación comercial**
 
 <p align="justify">
 El segmento de mercaderistas y personal de coordinación comercial, representado en esta muestra por Lorena Silva, Cinthia Levano y Celia Pérez, constituye el punto de captura más sensible del flujo del pedido. En las tres entrevistas aparece la misma tensión operativa: responder con rapidez al cliente y, al mismo tiempo, validar crédito, stock y condiciones comerciales con información que no siempre está integrada. Sobre esa base se identifican los siguientes patrones compartidos.
 </p>
+
+*Análisis del segmento canónico S1: Mercaderistas / personal de coordinación comercial*
 
 <table border="1" cellspacing="0" cellpadding="6" align="center">
   <tr>
@@ -426,7 +424,7 @@ El segmento de mercaderistas y personal de coordinación comercial, representado
   </tr>
 </table>
 
-*Nota.* La tabla resume la cadena dato observado → patrón → implicancia de diseño dentro de la muestra analizada. Elaboración propia.
+La tabla resume la cadena dato observado → patrón → implicancia de diseño dentro de la muestra analizada. Elaboración propia.
 
 **Características objetivas:**
 
@@ -460,6 +458,8 @@ El segmento de mercaderistas y personal de coordinación comercial, representado
 Este bloque, integrado por Hilda Litano, Edith Taype y Jesica Sandoval, aporta una lectura transversal del dominio. Aquí el foco se desplaza desde la rapidez comercial hacia la trazabilidad, el control documental, la rotación y la responsabilidad operativa sobre productos perecederos. Más que describir un usuario del MVP, estas entrevistas exponen restricciones que el sistema no puede ignorar.
 </p>
 
+*Análisis del stakeholder secundario: Jefatura o responsables de logística y operación*
+
 <table border="1" cellspacing="0" cellpadding="6" align="center">
   <tr>
     <th>Variable observada en stakeholder operativo</th>
@@ -487,7 +487,7 @@ Este bloque, integrado por Hilda Litano, Edith Taype y Jesica Sandoval, aporta u
   </tr>
 </table>
 
-*Nota.* La tabla sintetiza cómo las entrevistas de jefatura y operación alimentan reglas y restricciones del dominio. Elaboración propia.
+La tabla sintetiza cómo las entrevistas de jefatura y operación alimentan reglas y restricciones del dominio. Elaboración propia.
 
 **Características objetivas:**
 
@@ -519,6 +519,8 @@ Este bloque, integrado por Hilda Litano, Edith Taype y Jesica Sandoval, aporta u
 El análisis de Pedro Puente y Henrry García muestra un patrón consistente: el cliente comercial necesita previsibilidad logística, pero no está dispuesto a adoptarla a costa de complejidad adicional o pérdida de trato humano. Para ambos, el distribuidor no es solo un proveedor, sino un actor del que depende la continuidad operativa del negocio.
 </p>
 
+*Análisis del segmento canónico S2: Clientes comerciales B2B (minoristas y mayoristas)*
+
 <table border="1" cellspacing="0" cellpadding="6" align="center">
   <tr>
     <th>Variable observada en S2</th>
@@ -546,7 +548,7 @@ El análisis de Pedro Puente y Henrry García muestra un patrón consistente: el
   </tr>
 </table>
 
-*Nota.* La tabla ordena la relación entre evidencia empírica del cliente comercial y decisiones esperadas del portal B2B. Elaboración propia.
+La tabla ordena la relación entre evidencia empírica del cliente comercial y decisiones esperadas del portal B2B. Elaboración propia.
 
 **Características objetivas:**
 
@@ -595,8 +597,6 @@ El segmento canónico S3 no nace de un bloque independiente de entrevistas a cho
 Tras el análisis detallado de los ocho perfiles levantados y de la triangulación posterior hacia los segmentos canónicos del producto, se identifica una <strong>brecha de trazabilidad integral</strong>. Esta brecha se manifiesta en la desconexión entre la promesa comercial capturada por canales informales y la realidad operativa gestionada con sistemas fragmentados, validaciones manuales y visibilidad incompleta del despacho.
 </p>
 
-**Ilustración 17**
-
 *Distribución de Canales de Comunicación Identificados*
 
 ```mermaid
@@ -606,9 +606,7 @@ pie title Uso de Canales de Comunicación
     "ERP / Sistema Formal" : 10
 ```
 
-*Nota. Elaboración propia. Resultados obtenidos de las 8 entrevistas a profundidad realizadas sobre coordinación comercial, cliente comercial B2B y stakeholder operativo de dominio.*
-
-**Ilustración 18**
+Elaboración propia. Resultados obtenidos de las 8 entrevistas a profundidad realizadas sobre coordinación comercial, cliente comercial B2B y stakeholder operativo de dominio.
 
 *Jerarquía de Puntos de Dolor por Incidencia en los Segmentos*
 
@@ -620,7 +618,7 @@ graph TD
     A --> E(Inestabilidad de Software Actual: 50%)
 ```
 
-*Nota. Elaboración propia. Mapeo analítico construido a partir de la recurrencia de temas mencionados en las entrevistas; los porcentajes deben leerse como aproximaciones de frecuencia dentro de la muestra, no como mediciones estadísticas del mercado.*
+Elaboración propia. Mapeo analítico construido a partir de la recurrencia de temas mencionados en las entrevistas; los porcentajes deben leerse como aproximaciones de frecuencia dentro de la muestra, no como mediciones estadísticas del mercado.
 
 <p align="justify">
 En conclusión, Nexa no solo debe resolver la toma de pedidos, sino articular de forma consistente los tres segmentos canónicos del producto: quien captura y valida el pedido (S1), quien se abastece y necesita previsibilidad (S2), y quien ejecuta el despacho y cierra la entrega (S3). La jefatura logística, por su parte, permanece como stakeholder secundario que aporta reglas, restricciones y criterios de control sobre ese mismo flujo.

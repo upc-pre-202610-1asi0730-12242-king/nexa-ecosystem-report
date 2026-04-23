@@ -12,8 +12,6 @@ Bajo esta lógica, los segmentos S1, S2 y S3 no representan tipos de empresa, si
 La construcción de estos segmentos no se basa en una única fuente de información. Por el contrario, responde a un criterio de triangulación entre literatura sectorial, datos de mercado e hipótesis operativas que luego serán contrastadas con el proceso de entrevistas y needfinding. Esta aclaración es metodológicamente importante: la caracterización estadística presentada en este capítulo cumple la función de justificar la relevancia del segmento dentro del dominio, mientras que el capítulo 2 se encargará de profundizar cómo esas características se manifiestan en comportamientos, pain points y expectativas concretas de uso.
 </p>
 
-**Tabla 10**
-
 *Resumen de segmentos operativos primarios*
 
 | **Segmento** | **Arquetipo canónico** | **Rol en el ecosistema** | **Necesidad dominante** | **Valor esperado de Nexa** |
@@ -22,7 +20,7 @@ La construcción de estos segmentos no se basa en una única fuente de informaci
 | **S2** | Hilda, cliente comercial B2B / administradora de minimarket | Compra, repone stock y necesita predictibilidad para atender su negocio | Abastecerse con autonomía, certeza de disponibilidad y seguimiento confiable | Catálogo claro, pedido autónomo y entregas más previsibles |
 | **S3** | Pedro, chofer de reparto / despacho | Ejecuta la entrega física y sufre interrupciones, demoras y problemas de cierre | Cumplir la ruta con menos interrupciones y evidencia clara de entrega | Seguimiento compartido, reducción de llamadas y cierre digital del despacho |
 
-*Nota.* Los segmentos operativos primarios son la referencia oficial para personas, journeys, empathy maps, user stories y backlog. Elaboración propia.
+Los segmentos operativos primarios son la referencia oficial para personas, journeys, empathy maps, user stories y backlog. Elaboración propia.
 
 <div style="padding: 14px 16px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 16px 0;">
   <strong>Organización del análisis.</strong><br/><br/>
@@ -83,8 +81,6 @@ El segmento de clientes comerciales B2B del canal tradicional peruano incluye bo
 En términos de comportamiento de compra, este segmento no evalúa la tecnología como un fin en sí mismo, sino como un medio para sostener la continuidad operativa del negocio. El cliente comercial B2B compra para no quedarse sin stock, para mantener margen y para evitar pérdida de ventas frente a sus propios clientes. En consecuencia, la herramienta digital solo será percibida como valiosa si reduce incertidumbre y tiempo de coordinación. Una interfaz extensa, lenta o impersonal puede resultar técnicamente completa y, aun así, fracasar en adopción si no se aproxima a la inmediatez y claridad operativa que hoy el usuario asocia con el canal informal.
 </p>
 
-**Ilustración 2**
-
 *Madurez Digital del Canal Tradicional en el Perú*
 
 ```mermaid
@@ -93,7 +89,7 @@ pie title Uso de Aplicativos en Bodegas (Canal Tradicional)
     "Canal Tradicional Analógico (72%)" : 72
 ```
 
-*Nota.* Fuente: Elaboración propia en base a datos de Lucky-Xplora (2022).
+Fuente: Elaboración propia en base a datos de Lucky-Xplora (2022).
 
 **Segmento 3 (S3): Despacho, transporte y cierre de entrega**
 
@@ -233,6 +229,8 @@ Mantener este actor como stakeholder secundario y no como persona principal resp
 <p align="justify">
 El landing page utiliza una capa comercial adicional para orientar la propuesta de valor hacia tipos de empresa compradoras del producto. Esta segmentación no sustituye a S1, S2 y S3; simplemente organiza el discurso público del sitio para adquisición y posicionamiento comercial.
 </p>
+
+*Segmentos comerciales del sitio público*
 
 | **Segmento comercial del sitio** | **Rol comercial** | **Relación con los segmentos operativos** | **Nivel de prioridad** |
 |----------------------------------|-------------------|--------------------------------------------|------------------------|

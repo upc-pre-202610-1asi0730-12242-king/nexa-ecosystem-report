@@ -32,8 +32,6 @@ A partir de esa base, la startup proyecta una evolución futura coherente con la
 
 ---
 
-**Tabla 3**
-
 *Misión, Visión y valores del equipo*
 
 <table border="1" cellspacing="0" cellpadding="5" align="center">
@@ -55,15 +53,13 @@ A partir de esa base, la startup proyecta una evolución futura coherente con la
   </tr>
 </table>
 
-*Nota.* La tabla resume los pilares estratégicos que orientan la identidad, el propósito y la cultura de trabajo de la startup Nexa. *Elaboración propia.*
+La tabla resume los pilares estratégicos que orientan la identidad, el propósito y la cultura de trabajo de la startup Nexa. Elaboración propia.
 
 ## 1.1.2. Perfiles de integrantes del equipo
 
 <p align="justify">
 Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo con perfiles complementarios que posean habilidades en análisis de sistemas, modelado de datos, programación, documentación técnica, diseño de experiencia de usuario y gestión del trabajo colaborativo. En esta línea, cada integrante aporta fortalezas diferenciadas que permiten cubrir la investigación, la estructuración del informe, el diseño de la solución, la implementación técnica y la coordinación general del proyecto.
 </p>
-
-**Tabla 4**
 
 *Perfiles de integrantes del equipo*
 
@@ -156,4 +152,4 @@ Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo c
   </tr>
 </table>
 
-*Nota.* Se presentan los perfiles de los miembros del equipo, destacando sus habilidades y el rol que desempeñan dentro del proyecto para contextualizar las contribuciones individuales. *Elaboración propia.*
+Se presentan los perfiles de los miembros del equipo, destacando sus habilidades y el rol que desempeñan dentro del proyecto para contextualizar las contribuciones individuales. Elaboración propia.

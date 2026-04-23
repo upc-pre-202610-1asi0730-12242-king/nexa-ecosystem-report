@@ -42,7 +42,7 @@ Para una pyme distribuidora de productos refrigerados, esta fragmentación sugie
 
 El análisis competitivo estructurado a continuación emplea una matriz de variables del mercado (Landscape) y un análisis FODA cruzado (SWOT) para evaluar nuestro posicionamiento estratégico frente a las plataformas establecidas. Las dimensiones evaluadas no solo contemplan la arquitectura de software, sino también la fricción de adopción, el mercado objetivo y el modelo de monetización; factores críticos para la supervivencia de un SaaS en el canal comercial peruano. 
 
-</p>**Tabla 11**
+</p>
 
 *Análisis Competitivo*
 
@@ -144,7 +144,7 @@ El análisis competitivo estructurado a continuación emplea una matriz de varia
   </tbody>
 </table>
 
-*Nota.* Tabla de análisis competitivo. Elaboración propia.
+Tabla de análisis competitivo. Elaboración propia.
 
 ---
 
@@ -179,7 +179,7 @@ En conjunto, el landscape sugiere que Nexa puede encontrar espacio si mantiene u
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 <p align = "justify">
-Al ingresar a un mercado donde interactúan sistemas empresariales heredados y plataformas consolidadas, el proyecto debe adoptar un criterio pragmático. La viabilidad de una primera versión no depende de replicar toda la profundidad funcional del mercado, sino de priorizar aquellas capacidades que conectan mejor con las fricciones identificadas en la investigación. A continuación, se detallan las estrategias operativas y su traducción a decisiones de producto y arquitectura.
+Al ingresar a un mercado donde interactúan sistemas empresariales heredados y plataformas consolidadas, el proyecto debe adoptar un criterio pragmático. La viabilidad de una primera versión no depende de replicar toda la profundidad funcional del mercado, sino de priorizar aquellas capacidades que conectan mejor con las fricciones identificadas en la investigación. A continuación, se sintetizan las estrategias preliminares de posicionamiento y adopción derivadas del análisis competitivo.
 
 **Estrategia de Especialización Vertical (Posicionamiento frente a Riqra)**
 
@@ -188,11 +188,11 @@ Al ingresar a un mercado donde interactúan sistemas empresariales heredados y p
 </p>
 
 <p align="justify">
-<strong>Táctica Ejecutable (Base de Datos y Lógica de Negocio):</strong> El esquema de la base de datos se diseñará con atributos ineludibles para la industria del frío. Mientras un e-commerce estándar maneja variables básicas (Nombre, Precio, Stock), nuestra entidad principal de "Producto" exigirá la parametrización de campos obligatorios como <code>Temperatura_Minima_Grados</code>, <code>Temperatura_Maxima_Grados</code> y <code>Vida_Util_Dias</code>.
+<strong>Táctica preliminar de producto:</strong> La propuesta debe resaltar de forma explícita variables del dominio refrigerado que suelen quedar invisibles en plataformas horizontales, como condiciones de conservación, rotación y sensibilidad operativa del producto.
 </p>
 
 <p align="justify">
-<strong>Táctica Ejecutable (Interfaz de Usuario):</strong> En la aplicación web del cliente comercial, el flujo de pedido puede incluir validaciones orientadas a compatibilidad básica de carga y a condiciones de conservación, de modo que el error se detecte antes de que el pedido llegue a preparación.
+<strong>Táctica preliminar de experiencia:</strong> La interacción con el pedido debe ayudar a detectar inconsistencias relevantes antes de que la operación confirme compromisos inviables, reforzando una propuesta de valor basada en mayor claridad y menor retrabajo.
 </p>
 
 **Estrategia de adopción incremental (Posicionamiento frente a Drivin y RedGPS)**
@@ -202,11 +202,11 @@ Al ingresar a un mercado donde interactúan sistemas empresariales heredados y p
 </p>
 
 <p align="justify">
-<strong>Táctica Ejecutable (Fase 1 — MVP):</strong> La primera fase se concentra en ordenar la recepción del pedido, la validación comercial, la disponibilidad y el seguimiento mínimo del despacho. El objetivo es que la información de intención de compra deje de depender exclusivamente de mensajes dispersos y pase a una estructura operativa trazable.
+<strong>Táctica preliminar (Fase 1 — MVP):</strong> La primera fase se concentra en ordenar la recepción del pedido, la validación comercial, la disponibilidad y el seguimiento mínimo del despacho. El objetivo es que la información de intención de compra deje de depender exclusivamente de mensajes dispersos y pase a una estructura operativa trazable.
 </p>
 
 <p align="justify">
-<strong>Táctica Ejecutable (Fase 2 — Roadmap Tecnológico):</strong> Una vez validado el flujo principal, el producto puede evolucionar mediante integraciones con TMS o proveedores de monitoreo, apoyándose en una arquitectura preparada para intercambiar eventos y datos con servicios externos.
+<strong>Táctica preliminar (Fase 2 — Evolución):</strong> Una vez validado el flujo principal, el producto puede evolucionar hacia integraciones con soluciones de ruteo o monitoreo, siempre que ello responda a aprendizaje real del dominio y no a sobrealcance prematuro.
 </p>
 
 **Estrategia de adopción con baja fricción tecnológica**
@@ -216,10 +216,9 @@ Al ingresar a un mercado donde interactúan sistemas empresariales heredados y p
 </p>
 
 <p align="justify">
-<strong>Táctica Ejecutable para el cliente comercial:</strong> El portal B2B puede apoyarse en flujos de acceso simples, con cuentas preconfiguradas por la distribuidora y una experiencia de ingreso que reduzca pasos innecesarios. La meta es que el usuario empiece a operar rápido y encuentre desde el inicio su lista de precios y catálogo pertinente.
+<strong>Táctica preliminar para el cliente comercial:</strong> El portal B2B debe apoyarse en flujos de acceso simples y baja fricción, de modo que el usuario pueda empezar a operar rápido y encontrar desde el inicio la información pertinente para su cuenta.
 </p>
 
 <p align="justify">
-<strong>Táctica Ejecutable para el distribuidor:</strong> Para acortar el tiempo de puesta en marcha, el panel de administración puede incluir mecanismos de carga masiva de catálogo, stock base y clientes mediante formatos tabulares. Esto reduce esfuerzo inicial y facilita pruebas tempranas del flujo real.
-</p>
+<strong>Táctica preliminar para el distribuidor:</strong> La puesta en marcha debe evitar complejidad innecesaria en la etapa inicial, priorizando mecanismos que faciliten la incorporación gradual del catálogo, la base de clientes y la operación visible del MVP.
 </p>
