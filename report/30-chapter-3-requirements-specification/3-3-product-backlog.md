@@ -103,11 +103,11 @@ La priorización no responde únicamente a facilidad de implementación. Se cons
 **Total de Story Points del Proyecto: 238**
 
 <p align="justify">
-La secuencia del roadmap sigue una lógica deliberada. El <strong>Sprint 1</strong> concentra el frente público porque permite validar entendimiento del problema, foco de segmento y captación comercial sin bloquear todavía el núcleo transaccional. Dentro de ese bloque se adelantan primero las historias de mayor peso ligadas a contacto, validación y accesibilidad básica del sitio. El <strong>Sprint 2</strong> incorpora el corazón del valor prometido a S1 y S2: catálogo, condiciones y captura o registro del pedido, abriendo antes con las historias más costosas de destrabar. El <strong>Sprint 3</strong> extiende ese valor hacia seguimiento, despacho, inventario y cierre; el <strong>Sprint 4</strong> consolida datos comerciales y control de acceso; y el <strong>Sprint 5</strong> formaliza contratos técnicos del API como capa de integración consistente con los flujos ya definidos funcionalmente.
+La secuencia del roadmap sigue una lógica deliberada. El <strong>Sprint 1</strong> concentra el frente público porque permite validar entendimiento del problema, foco de segmento y captación comercial sin bloquear todavía el núcleo transaccional. Dentro de ese bloque se adelantan primero las historias de mayor peso ligadas a contacto, validación y accesibilidad básica del sitio. El <strong>Sprint 2</strong> incorpora el corazón del valor prometido a Valeria y Hilda: catálogo, condiciones y captura o registro del pedido, abriendo antes con las historias más costosas de destrabar. El <strong>Sprint 3</strong> extiende ese valor hacia seguimiento, despacho, inventario y cierre; el <strong>Sprint 4</strong> consolida datos comerciales y control de acceso; y el <strong>Sprint 5</strong> formaliza contratos técnicos del API como capa de integración consistente con los flujos ya definidos funcionalmente.
 </p>
 
 <p align="justify">
-Las historias de inventario, validación y control se priorizan como parte del dominio que sostiene a S1, S2 y S3. No introducen un segmento adicional dentro del backlog; funcionan como reglas y soportes necesarios para que el flujo principal del pedido opere con información confiable.
+Aunque varias historias de inventario y control recaen sobre supervisión operativa, ese frente no se modela como un segmento protagónico independiente dentro del backlog. Se trata, más bien, de un soporte transversal que habilita a Valeria, Hilda y Pedro a operar con reglas confiables. Mantener esa distinción mejora la coherencia del capítulo y evita que la priorización se disperse en actores adicionales sin justificación narrativa o metodológica.
 </p>
 
 *Relación entre incrementos, actor dominante y riesgo mitigado*
@@ -115,8 +115,8 @@ Las historias de inventario, validación y control se priorizan como parte del d
 | Incremento | Actor dominante | Dolor que atiende primero | Riesgo que reduce |
 | :--- | :--- | :--- | :--- |
 | Sprint 1 - Validación comercial | Prospectos cercanos a S1 y S2 | Falta de claridad sobre el problema, el alcance y la propuesta de valor | Construir un producto sin validación comercial ni narrativa coherente |
-| Sprint 2 - Pedido y autoservicio inicial | S1 y S2 | Captura manual del pedido, revisión tardía de condiciones y dependencia del canal informal | Doble digitación, retrabajo y fricción en el abastecimiento |
-| Sprint 3 - Seguimiento e inventario | S2 y S3 | Baja visibilidad del despacho, poca predictibilidad y trazabilidad incompleta | Reclamos, promesas incumplidas y mala coordinación de stock |
+| Sprint 2 - Pedido y autoservicio inicial | Valeria y Hilda | Captura manual del pedido, revisión tardía de condiciones y dependencia del canal informal | Doble digitación, retrabajo y fricción en el abastecimiento |
+| Sprint 3 - Seguimiento e inventario | Hilda, Pedro y supervisión operativa | Baja visibilidad del despacho, poca predictibilidad y trazabilidad incompleta | Reclamos, promesas incumplidas y mala coordinación de stock |
 | Sprint 4 - Soporte comercial y acceso | Roles internos autorizados | Información comercial dispersa y control débil de usuarios | Operación inconsistente entre cuentas, reglas y permisos |
 | Sprint 5 - Contratos técnicos | Aplicaciones cliente y backend | Necesidad de integrar sin duplicar reglas de negocio | Fragmentación técnica y divergencia entre interfaces |
 

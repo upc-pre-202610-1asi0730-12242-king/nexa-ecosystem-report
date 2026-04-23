@@ -2,6 +2,7 @@
 
 <table>
   <tr><td><a href="02-version-history.md">Registro de Versiones del Informe</a></td></tr>
+  <tr><td><a href="03-project-report-collaboration-insights.md">Project Report Collaboration Insights</a></td></tr>
   <tr><td>Contenido</td></tr>
   <tr><td><a href="05-student-outcome.md">Student Outcome</a></td></tr>
 
@@ -63,13 +64,6 @@
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-7-software-object-oriented-design.md">4.7.1. Class Diagrams</a></td></tr>
   <tr><td><a href="../40-chapter-4-product-design/4-8-database-design.md">4.8. Database Design</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1. Database Diagrams</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.1. Identity</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.2. Catalog</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.3. Inventory</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.4. Customer Management</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.5. Commercial Conditions</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.6. Orders</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.7. Traceability</a></td></tr>
 
   <tr><td><b><a href="../50-chapter-5-implementation-validation-deployment/5-1-software-configuration-management.md">Capítulo V: Product Implementation, Validation &amp; Deployment</a></b></td></tr>
   <tr><td><a href="../50-chapter-5-implementation-validation-deployment/5-1-software-configuration-management.md">5.1. Software Configuration Management</a></td></tr>

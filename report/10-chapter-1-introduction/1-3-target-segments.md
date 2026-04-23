@@ -1,7 +1,7 @@
 ### 1.3. Segmentos Objetivos
 
 <p align="justify">
-La solución Nexa se organiza sobre tres segmentos objetivos que recorren el flujo principal del pedido B2B refrigerado: <strong>S1</strong> para la captura comercial, <strong>S2</strong> para el abastecimiento del cliente comercial y <strong>S3</strong> para la ejecución y cierre de la entrega. Esta taxonomía se mantiene estable en todo el informe y ordena la investigación, la especificación funcional y el diseño del producto.
+La solución Nexa se organiza sobre tres segmentos objetivos que recorren el flujo principal del pedido B2B refrigerado: <strong>S1</strong> para la captura comercial, <strong>S2</strong> para el abastecimiento del cliente comercial y <strong>S3</strong> para la ejecución y cierre de la entrega. Esta taxonomía se mantiene estable en todo el informe y sirve como base para personas, journeys, empathy maps, user stories, backlog y arquitectura del producto.
 </p>
 
 <p align="justify">
@@ -14,13 +14,13 @@ La caracterización presentada en este capítulo combina contexto sectorial, dat
 
 *Resumen de segmentos operativos primarios*
 
-| **Segmento** | **Descripción del segmento** | **Rol en el ecosistema** | **Necesidad dominante** | **Valor esperado de Nexa** |
+| **Segmento** | **Arquetipo canónico** | **Rol en el ecosistema** | **Necesidad dominante** | **Valor esperado de Nexa** |
 |--------------|-------------------------|---------------------------|--------------------------|-----------------------------|
-| **S1** | Coordinación comercial, mercaderistas y personal que captura pedidos | Recibe, interpreta, valida y canaliza pedidos hacia la operación | Reducir retrabajo, ambigüedad y pasos manuales en la toma del pedido | Flujo de captura estructurado, visibilidad inmediata de stock y menor dependencia de WhatsApp |
-| **S2** | Cliente comercial B2B que compra para sostener su negocio | Compra, repone stock y necesita predictibilidad para atender su negocio | Abastecerse con autonomía, certeza de disponibilidad y seguimiento confiable | Catálogo claro, pedido autónomo y entregas más previsibles |
-| **S3** | Personal de despacho, transporte y cierre de entrega | Ejecuta la entrega física y sufre interrupciones, demoras y problemas de cierre | Cumplir la ruta con menos interrupciones y evidencia clara de entrega | Seguimiento compartido, reducción de llamadas y cierre digital del despacho |
+| **S1** | Valeria, coordinadora comercial / mercaderista | Recibe, interpreta, valida y canaliza pedidos hacia la operación | Reducir retrabajo, ambigüedad y pasos manuales en la toma del pedido | Flujo de captura estructurado, visibilidad inmediata de stock y menor dependencia de WhatsApp |
+| **S2** | Hilda, cliente comercial B2B / administradora de minimarket | Compra, repone stock y necesita predictibilidad para atender su negocio | Abastecerse con autonomía, certeza de disponibilidad y seguimiento confiable | Catálogo claro, pedido autónomo y entregas más previsibles |
+| **S3** | Pedro, chofer de reparto / despacho | Ejecuta la entrega física y sufre interrupciones, demoras y problemas de cierre | Cumplir la ruta con menos interrupciones y evidencia clara de entrega | Seguimiento compartido, reducción de llamadas y cierre digital del despacho |
 
-Los segmentos operativos primarios son la referencia oficial para delimitar el problema, el alcance del MVP y la organización posterior del informe. Elaboración propia.
+Los segmentos operativos primarios son la referencia oficial para personas, journeys, empathy maps, user stories y backlog. Elaboración propia.
 
 > **Organización del análisis**
 >
@@ -108,7 +108,7 @@ La siguiente subsección traslada la caracterización previa al terreno de produ
 #### S1. Implicancias de diseño: Coordinación comercial y captura del pedido
 
 <p align="justify">
-Este segmento agrupa al personal que recibe pedidos desde múltiples canales, valida productos, consulta stock, corrige inconsistencias y traduce la intención del cliente a un formato operable por la empresa. Incluye mercaderistas, coordinadoras comerciales, ventas internas y personal que trabaja entre clientes, facturación, almacén y despacho. Su relevancia dentro del proyecto radica en que concentra la fricción cotidiana del proceso: mensajes ambiguos, doble validación, presión por responder rápido y necesidad de trabajar desde herramientas simples.
+Este segmento agrupa al personal que recibe pedidos desde múltiples canales, valida productos, consulta stock, corrige inconsistencias y traduce la intención del cliente a un formato operable por la empresa. Incluye mercaderistas, coordinadoras comerciales, ventas internas y personal que trabaja entre clientes, facturación, almacén y despacho. El arquetipo canónico es <strong>Valeria</strong>, porque sintetiza la fricción cotidiana del proceso: mensajes ambiguos, doble validación, presión por responder rápido y necesidad de trabajar desde herramientas simples.
 </p>
 
 <p align="justify">
@@ -116,7 +116,7 @@ Su valor esperado no está en funciones complejas, sino en la reducción de paso
 </p>
 
 <p align="justify">
-Desde el punto de vista del diseño, S1 es el segmento que más claramente tensiona usabilidad y estructura. Necesita una experiencia suficientemente guiada para evitar errores, pero no tan rígida que impida operar al ritmo que exige la atención comercial. Por eso este segmento es central en la definición del MVP: si la solución no funciona para quien captura y valida el pedido en condiciones de presión operativa, el resto del ecosistema tampoco podrá beneficiarse de una información mejor estructurada.
+Desde el punto de vista del diseño, Valeria representa al usuario que más claramente tensiona usabilidad y estructura. Necesita una experiencia suficientemente guiada para evitar errores, pero no tan rígida que le impida operar al ritmo que exige la atención comercial. Por eso este arquetipo es central en la definición del MVP: si la solución no funciona para quien captura y valida el pedido en condiciones de presión operativa, el resto del ecosistema tampoco podrá beneficiarse de una información mejor estructurada.
 </p>
 
 > **Necesidades principales**
@@ -136,7 +136,7 @@ Desde el punto de vista del diseño, S1 es el segmento que más claramente tensi
 #### S2. Implicancias de diseño: Cliente comercial B2B y abastecimiento recurrente
 
 <p align="justify">
-Este segmento representa a los negocios que dependen del distribuidor para mantener abastecida su operación, entre ellos minimarkets, bodegas, pequeños mayoristas y cuentas del canal HORECA. Su comportamiento esperado corresponde a compradores recurrentes que necesitan rapidez y no pueden detener su negocio para perseguir confirmaciones o esperar respuestas por WhatsApp.
+Este segmento representa a los negocios que dependen del distribuidor para mantener abastecida su operación, entre ellos minimarkets, bodegas, pequeños mayoristas y cuentas del canal HORECA. El arquetipo canónico es <strong>Hilda</strong>, sintetizada como administradora de minimarket que compra con frecuencia, necesita rapidez y no puede detener su negocio para perseguir confirmaciones o esperar respuestas por WhatsApp.
 </p>
 
 <p align="justify">
@@ -144,7 +144,7 @@ Desde su perspectiva, el problema no es “usar más tecnología”, sino compra
 </p>
 
 <p align="justify">
-S2 también es el segmento que más claramente obliga al proyecto a equilibrar autoservicio y acompañamiento. Un portal completamente deshumanizado puede reducir costos operativos para la distribuidora, pero no necesariamente aumentar adopción en un contexto donde la confianza comercial sigue siendo relacional. Por ello, el valor esperado para este perfil no consiste solo en “digitalizar el pedido”, sino en transformar la experiencia de abastecimiento sin romper la sensación de respaldo que hoy provee la comunicación directa con el vendedor o coordinador comercial.
+Hilda también es el segmento que más claramente obliga al proyecto a equilibrar autoservicio y acompañamiento. Un portal completamente deshumanizado puede reducir costos operativos para la distribuidora, pero no necesariamente aumentar adopción en un contexto donde la confianza comercial sigue siendo relacional. Por ello, el valor esperado para este perfil no consiste solo en “digitalizar el pedido”, sino en transformar la experiencia de abastecimiento sin romper la sensación de respaldo que hoy provee la comunicación directa con el vendedor o coordinador comercial.
 </p>
 
 > **Necesidades principales**
@@ -164,7 +164,7 @@ S2 también es el segmento que más claramente obliga al proyecto a equilibrar a
 #### S3. Implicancias de diseño: Despacho, transporte y cierre de entrega
 
 <p align="justify">
-Este segmento reúne a quienes ejecutan la entrega física y cargan con las consecuencias de una mala coordinación previa. Su necesidad central es avanzar en ruta sin responder llamadas constantes, llegar con información correcta y cerrar la entrega con evidencia suficiente para evitar reclamos posteriores.
+Este segmento reúne a quienes ejecutan la entrega física y cargan con las consecuencias de una mala coordinación previa. El arquetipo canónico es <strong>Pedro</strong>, chofer de reparto que necesita avanzar en ruta sin responder llamadas constantes, llegar con información correcta y cerrar la entrega con evidencia suficiente para evitar reclamos posteriores.
 </p>
 
 <p align="justify">
@@ -172,7 +172,7 @@ Este segmento es esencial porque representa el punto donde la promesa comercial 
 </p>
 
 <p align="justify">
-Metodológicamente, S3 cumple una función de cierre dentro de la segmentación: evita que el proyecto interprete el problema solo desde la captura del pedido o desde la compra del cliente, y obliga a considerar la ejecución física como parte del valor. En otras palabras, este segmento recuerda que la propuesta de Nexa no se valida solo cuando el pedido es registrado, sino cuando la coordinación generada por el sistema se traduce en una entrega más predecible, trazable y defendible frente a incidencias.
+Metodológicamente, Pedro cumple una función de cierre dentro de la segmentación: evita que el proyecto interprete el problema solo desde la captura del pedido o desde la compra del cliente, y obliga a considerar la ejecución física como parte del valor. En otras palabras, este segmento recuerda que la propuesta de Nexa no se valida solo cuando el pedido es registrado, sino cuando la coordinación generada por el sistema se traduce en una entrega más predecible, trazable y defendible frente a incidencias.
 </p>
 
 > **Necesidades principales**
@@ -203,10 +203,10 @@ El landing page utiliza una agrupación comercial adicional para orientar la pro
 
 | **Agrupación comercial del sitio** | **Rol comercial** | **Relación con los segmentos operativos** | **Nivel de prioridad** |
 |----------------------------------|-------------------|--------------------------------------------|------------------------|
-| **Distribuidores refrigerados** | Cliente pagador principal de la plataforma SaaS | Conecta directamente con S1, S2 y S3 a lo largo del flujo del pedido | Principal |
+| **Distribuidores refrigerados** | Cliente pagador principal de la plataforma SaaS | Conecta directamente con Valeria, Hilda y Pedro a lo largo del flujo del pedido | Principal |
 | **Importadores y mayoristas** | Segmento adyacente con problemas similares de catálogo, stock y coordinación | Se relaciona con los mismos puntos de fricción que S1, S2 y S3 en un contexto comercial más amplio | Adyacente |
 | **Operadores de cámaras frías** | Extensión estratégica del dominio hacia almacenamiento y trazabilidad | Se relaciona con necesidades de inventario, vencimientos y control de cadena de frío | Expansión |
 
 <p align="justify">
-Esta organización permite mantener coherencia entre investigación y comunicación comercial: el informe trabaja con tres segmentos operativos concretos, mientras que el sitio público presenta el mismo problema en términos comprensibles para los tipos de empresa que podrían comprar la solución.
+Esta organización permite mantener coherencia entre investigación y comunicación comercial: el informe trabaja con tres arquetipos operativos concretos, mientras que el sitio público presenta el mismo problema en términos comprensibles para los tipos de empresa que podrían comprar la solución.
 </p>
