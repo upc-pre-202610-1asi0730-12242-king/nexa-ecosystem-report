@@ -1,6 +1,6 @@
 ## 4.7. Software Object-Oriented Design
 
-Esta sección presenta el diseño orientado a objetos de Nexa por bounded context, siguiendo la misma separación introducida en la arquitectura del capítulo 4.6. En lugar de concentrar todo el dominio en un único diagrama, se muestran bloques más acotados para que cada contexto conserve una responsabilidad clara.
+Esta sección presenta el diseño orientado a objetos de Nexa por bounded context, siguiendo la separación consolidada al cierre de la arquitectura del capítulo 4.6. En lugar de concentrar todo el dominio en un único diagrama, se muestran bloques más acotados para que cada contexto conserve una responsabilidad clara.
 
 El propósito de esta vista no es reemplazar el diseño de base de datos ni anticipar el código final de implementación, sino identificar las clases que concentran estado y comportamiento dentro de cada parte del sistema. Por eso algunos diagramas incluyen clases marcadas como <code>&lt;&lt;Reference&gt;&gt;</code>, usadas para representar dependencias con otros contextos sin absorber su modelo completo.
 
@@ -52,7 +52,7 @@ El contexto de trazabilidad representa la ejecución posterior al pedido: despac
 
 Los diagramas de esta sección siguen tres criterios. Primero, cada bounded context conserva sus clases propias y solo usa referencias hacia otros contextos cuando la relación es necesaria para explicar una validación o un flujo. Segundo, los métodos visibles responden a decisiones del dominio y no solo a almacenamiento de datos. Tercero, la separación entre catálogo, inventario, pedidos, clientes y trazabilidad evita que una misma entidad absorba responsabilidades que pertenecen a otro bloque.
 
-Este criterio también mantiene coherencia con la vista C4 del capítulo anterior. Si en la arquitectura cada contexto tiene una responsabilidad diferenciada, esa separación debe seguir siendo visible en los diagramas de clases. Por eso no se fuerza un modelo empresarial único dentro de cada imagen, sino una lectura más acotada y útil para cada parte del sistema.
+Este criterio también mantiene coherencia con la vista C4 del capítulo anterior. El C4 resume contenedores, piezas de interfaz y servicios de soporte como pagos o notificaciones; los diagramas de clases, en cambio, preservan la separación fina del dominio en siete contextos principales. Por eso no se fuerza una correspondencia literal entre cada caja del C4 y cada diagrama de clases.
 
 ### 4.7.3. Traceability Matrix: Requirements and OOD
 
