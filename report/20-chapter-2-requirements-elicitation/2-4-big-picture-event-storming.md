@@ -5,35 +5,44 @@ El Big Picture EventStorming de Nexa modela el flujo principal del pedido B2B de
 </p>
 
 <p align="justify">
-El modelado mantiene la misma taxonomía canónica definida en el proyecto. En ese marco, <strong>S1</strong> se expresa principalmente en la captura asistida y validación comercial, <strong>S2</strong> en la consulta, envío y seguimiento del pedido por parte del cliente comercial, y <strong>S3</strong> en el despacho, la gestión de incidencias y el cierre de la entrega. Las restricciones operativas del dominio permanecen visibles a lo largo del flujo, pero no redefinen la segmentación del informe.
+El modelado mantiene la misma taxonomía canónica definida en el proyecto. En ese marco, <strong>S1</strong> se expresa principalmente en la captura asistida y validación comercial, <strong>S2</strong> en la consulta, envío y seguimiento del pedido por parte del cliente comercial, y <strong>S3</strong> en el despacho, la gestión de incidencias y el cierre de la entrega. La jefatura logística permanece como stakeholder secundario que define políticas y restricciones del dominio.
 </p>
 
 <p align="justify">
 El EventStorming se construyó como un ejercicio de síntesis del dominio a partir de la evidencia reunida en entrevistas, needfinding y análisis competitivo. En lugar de partir de pantallas o módulos, el equipo ordenó primero los hechos que modifican el estado del pedido y luego examinó qué actores, restricciones y tensiones aparecen en esas transiciones. Este enfoque resulta útil porque evita diseñar el sistema desde una lista de funcionalidades dispersas y obliga a pensar el producto como una secuencia coherente de eventos del negocio.
 </p>
 
-Como respaldo del trabajo colaborativo, la evidencia visual del modelado presenta las tres primeras etapas (Exploración, Línea de Tiempo y Puntos de Dolor) directamente en esta sección. El detalle técnico completo (desde la definición de Comandos y Políticas hasta los Contextos Delimitados) se documenta en la sección 4.6.1, junto con las evidencias de coordinación del sprint registradas en el anexo.
-
-
 ### 2.4.1. Proceso de construcción del modelado
-
-*Design-Level EventStorming — Step 1: Exploration*
-![DDD Step 1](../assets/images/ddd/step-01.png)
-
-*Design-Level EventStorming — Step 2: Timeline*
-![DDD Step 2](../assets/images/ddd/step-02.png)
-
-*Design-Level EventStorming — Step 3: Pain Points*
-![DDD Step 3](../assets/images/ddd/step-03.png)
 
 *Proceso de construcción del modelado*
 
-| Etapa | Propósito | Resultado obtenido |
-| :--- | :--- | :--- |
-| **1. Delimitación del flujo** | Definir qué tramo del negocio debía representarse en el MVP | Se acotó el modelado desde la intención de compra hasta el cierre de entrega |
-| **2. Identificación de eventos** | Reconocer qué hechos cambian realmente el estado del pedido | Se consolidó la secuencia borrador → envío → validación → confirmación → preparación → despacho → entrega |
-| **3. Asociación de actores e intervención** | Vincular cada cambio de estado con los responsables y momentos críticos del flujo | Se clarificó la participación de cliente comercial, coordinación comercial, operación y reparto |
-| **4. Identificación de restricciones** | Hacer visibles las fricciones y condiciones operativas que impiden un flujo continuo | Se incorporaron validación comercial tardía, stock incierto, FEFO manual, visibilidad fragmentada y cierre débil de entrega |
+<table border="1" cellspacing="0" cellpadding="6" align="center">
+  <tr>
+    <th>Etapa</th>
+    <th>Propósito</th>
+    <th>Resultado obtenido</th>
+  </tr>
+  <tr>
+    <td><strong>1. Delimitación del flujo</strong></td>
+    <td>Definir qué tramo del negocio debía representarse en el MVP</td>
+    <td>Se acotó el modelado desde la intención de compra hasta el cierre de entrega</td>
+  </tr>
+  <tr>
+    <td><strong>2. Identificación de eventos</strong></td>
+    <td>Reconocer qué hechos cambian realmente el estado del pedido</td>
+    <td>Se consolidó la secuencia borrador → envío → validación → confirmación → preparación → despacho → entrega</td>
+  </tr>
+  <tr>
+    <td><strong>3. Asociación de actores e intervención</strong></td>
+    <td>Vincular cada cambio de estado con los responsables y momentos críticos del flujo</td>
+    <td>Se clarificó la participación de cliente comercial, coordinación comercial, operación y reparto</td>
+  </tr>
+  <tr>
+    <td><strong>4. Identificación de restricciones</strong></td>
+    <td>Hacer visibles las fricciones y condiciones operativas que impiden un flujo continuo</td>
+    <td>Se incorporaron validación comercial tardía, stock incierto, FEFO manual, visibilidad fragmentada y cierre débil de entrega</td>
+  </tr>
+</table>
 
 La tabla resume el proceso seguido para convertir evidencia cualitativa en un modelo de dominio entendible y útil para el MVP. Elaboración propia.
 
@@ -83,16 +92,16 @@ La tabla resume el proceso seguido para convertir evidencia cualitativa en un mo
 ### 2.4.5. Flujo resumido del dominio
 
 1. El cliente consulta el catálogo o la coordinación comercial captura el pedido de forma asistida.
-2. Se identifican las condiciones comerciales y la disponibilidad necesarias para revisar el pedido.
-3. El pedido pasa de borrador a enviado para validación.
-4. La coordinación comercial y la operación revisan crédito, morosidad y disponibilidad básica antes de confirmar.
-5. Si la validación es satisfactoria, el pedido se confirma y queda listo para preparación.
-6. La operación prepara la salida y coordina el despacho.
-7. Durante el despacho pueden registrarse incidencias y actualizarse la comunicación de entrega.
-8. La entrega se cierra con evidencia y el pedido queda concluido.
+2. El sistema identifica al cliente y recupera sus condiciones comerciales.
+3. El pedido pasa de borrador a enviado.
+4. El sistema valida crédito, morosidad y disponibilidad básica.
+5. Si la validación es satisfactoria, el pedido se confirma y reserva stock.
+6. La operación lo pasa a preparación y luego a despacho.
+7. Durante el despacho se pueden registrar incidencias y recalcular la ETA.
+8. La entrega se cierra con evidencia y el pedido queda entregado.
 
 <p align="justify">
-Este modelado refuerza dos ideas centrales del proyecto: el problema principal no está en un único “módulo” aislado, sino en la transición entre captura, validación, disponibilidad, despacho y cierre; y las restricciones operativas del dominio siguen siendo decisivas para definir reglas y criterios de funcionamiento a lo largo del flujo.
+Este modelado refuerza dos ideas centrales del proyecto: el problema principal no está en un único “módulo” aislado, sino en la transición entre captura, validación, disponibilidad, despacho y cierre; y la jefatura logística, aunque no sea una persona primaria del backlog, sigue siendo fundamental para definir restricciones y criterios operativos del dominio.
 </p>
 
 <p align="justify">
