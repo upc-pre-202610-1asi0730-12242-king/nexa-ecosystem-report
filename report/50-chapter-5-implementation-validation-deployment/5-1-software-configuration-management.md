@@ -28,7 +28,7 @@ Para estandarizar el trabajo colaborativo del equipo y asegurar trazabilidad ent
 | Despliegue | **GitHub Pages** | Publicación del MVP público | URL activa del sitio web |
 
 <p align="justify">
-Adicionalmente, el corte AV1 deja preparada una capacidad técnica futura que todavía no debe confundirse con software implementado. El backlog y los capítulos de diseño ya prevén repositorios y componentes para <strong>web application</strong> y <strong>backend en ASP.NET Core</strong>; sin embargo, al cierre de esta revisión esa capa permanece como alcance modelado y priorizado, no como incremento desplegado.
+Adicionalmente, el corte AV1 deja preparada una capacidad técnica futura que todavía no debe confundirse con software implementado. El backlog y los capítulos de diseño ya prevén una <strong>web application autenticada</strong> y una <strong>capa de servicios</strong>; sin embargo, al cierre de esta entrega esa capa permanece como alcance modelado y priorizado, no como incremento desarrollado dentro del sprint visible.
 </p>
 
 ### 5.1.2. Source Code Management
@@ -43,8 +43,6 @@ El control de versiones se organiza bajo una convención GitFlow adaptada al alc
 |---|---|---|---|---|
 | `nexa-report` | Informe técnico, trazabilidad académica y narrativa del proyecto | `main` | `develop`, `release/v1.0.0`, ramas de respaldo locales | [nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) |
 | `nexa-website` | Implementación del MVP público desplegado | `main` | `develop`, `release/v1.0.0` | [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) |
-| `nexa-webapp` | Evolución futura de la web application autenticada | Pendiente de verificación detallada en esta revisión | Pendiente de verificación detallada en esta revisión | [nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) |
-| `nexa-platform` | Evolución futura del backend y servicios REST | Pendiente de verificación detallada en esta revisión | Pendiente de verificación detallada en esta revisión | [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) |
 
 **Convención de ramas declarada para el proyecto**
 
@@ -56,6 +54,10 @@ El control de versiones se organiza bajo una convención GitFlow adaptada al alc
 
 <p align="justify">
 En la práctica, `nexa-report` y `nexa-website` funcionan como dos flujos sincronizados: el primero preserva la justificación ingenieril y el segundo concentra la ejecución visible del MVP. Esta separación reduce ruido entre documentación y código y facilita relacionar commits, capturas Jira, artefactos de diseño y despliegue público dentro de un mismo sprint.
+</p>
+
+<p align="justify">
+La web application autenticada y la futura capa de servicios ya están nombradas en backlog, arquitectura y diseño, pero no forman parte del control de versiones activo que este capítulo necesita defender como evidencia de AV1. Por ello, aquí solo se documentan los repositorios que sí sostienen la entrega visible del sprint.
 </p>
 
 ### 5.1.3. Source Code Style Guide & Conventions
@@ -85,23 +87,14 @@ Para garantizar mantenibilidad y lectura homogénea del proyecto, el equipo adop
 - Los nombres de clases e identificadores del frontend siguen `kebab-case`.
 - La lógica de internacionalización se centraliza en un módulo propio de JavaScript.
 
-**Convenciones REST API planificadas**
+**Convenciones de servicios previstas**
 
-Aunque el API no forma parte del despliegue activo de AV1, el capítulo 4 y el backlog ya fijan la convención REST basada en recursos en plural y sustantivos:
-
-- `GET /orders` — listado de pedidos
-- `GET /orders/{id}` — detalle de un pedido
-- `POST /orders` — creación de pedido
-- `GET /products` — catálogo de productos
-- `GET /products/{id}` — detalle de producto
-- `GET /inventory` — estado del inventario
-
-**Convenciones de backend previstas:** PascalCase para clases y métodos; camelCase para parámetros y variables locales en el contexto de C# / ASP.NET Core.
+Aunque la capa de servicios no forma parte del incremento activo de AV1, el backlog y la arquitectura ya fijan una orientación REST basada en recursos y responsabilidades separadas. Esa definición funciona aquí como preparación técnica del dominio, no como software implementado dentro de esta entrega.
 
 ### 5.1.4. Software Deployment Configuration
 
 <p align="justify">
-La configuración de despliegue de AV1 debe leerse en dos niveles: <strong>despliegue activo</strong> para el MVP público y <strong>despliegue proyectado</strong> para la capa transaccional aún no publicada. Esta distinción evita sobredeclarar capacidades no demostradas.
+La configuración de despliegue de AV1 debe leerse en dos niveles: <strong>despliegue activo</strong> para el MVP público y <strong>preparación futura</strong> para la capa transaccional aún no desarrollada dentro de esta entrega. Esta distinción evita sobredeclarar capacidades no demostradas.
 </p>
 
 *Configuración de despliegue observable en el corte AV1*
@@ -112,9 +105,9 @@ La configuración de despliegue de AV1 debe leerse en dos niveles: <strong>despl
 | Calidad mínima del repositorio web | Workflow de **GitHub Actions** para `markdownlint` y `commitlint` en `main` y `develop` | **Activo en repositorio** | Archivo `.github/workflows/lint.yml` en `nexa-website` |
 | Informe técnico `nexa-report` | Gestión Docs-as-Code y compilación posterior a PDF | **Activo como repositorio fuente** | Estructura `report/` y control de versiones en GitHub |
 | Gestión del sprint | Publicación de backlog y sprint en **Jira** | **Activa como evidencia de proceso** | Capturas y referencias del Sprint 1 |
-| Web application autenticada | Despliegue futuro | **No verificable en esta revisión** | Repositorio existente, sin URL pública demostrada en el informe |
-| Backend y servicios REST | Despliegue futuro | **No verificable en esta revisión** | Repositorio existente, sin Swagger ni endpoint público evidenciado |
+| Web application autenticada | Alcance futuro nombrado en diseño y backlog | **No forma parte de AV1** | Referida en capítulos 3 y 4 como evolución posterior |
+| Backend y servicios REST | Alcance futuro nombrado en arquitectura y backlog | **No forma parte de AV1** | Referido en capítulos 3 y 4 como preparación técnica |
 
 <p align="justify">
-En consecuencia, el procedimiento de despliegue defendible para AV1 se reduce a la capa que sí está operativa: versionar cambios en `nexa-website`, integrarlos en la rama estable, publicar el sitio en GitHub Pages y validar la navegación pública resultante. La capa transaccional del producto permanece correctamente identificada como siguiente fase de implementación.
+En consecuencia, el procedimiento de despliegue defendible para AV1 se reduce a la capa que sí está operativa: versionar cambios en `nexa-website`, integrarlos en la rama estable, publicar el sitio en GitHub Pages y validar la navegación pública resultante. La capa transaccional del producto permanece identificada como siguiente fase de implementación y no debe leerse como evidencia de esta entrega.
 </p>

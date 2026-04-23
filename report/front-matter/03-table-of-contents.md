@@ -2,7 +2,6 @@
 
 <table>
   <tr><td><a href="02-version-history.md">Registro de Versiones del Informe</a></td></tr>
-  <tr><td><a href="03-project-report-collaboration-insights.md">Project Report Collaboration Insights</a></td></tr>
   <tr><td>Contenido</td></tr>
   <tr><td><a href="05-student-outcome.md">Student Outcome</a></td></tr>
 
@@ -64,6 +63,13 @@
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-7-software-object-oriented-design.md">4.7.1. Class Diagrams</a></td></tr>
   <tr><td><a href="../40-chapter-4-product-design/4-8-database-design.md">4.8. Database Design</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1. Database Diagrams</a></td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.1. Identity</a></td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.2. Catalog</a></td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.3. Inventory</a></td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.4. Customer Management</a></td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.5. Commercial Conditions</a></td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.6. Orders</a></td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.7. Traceability</a></td></tr>
 
   <tr><td><b><a href="../50-chapter-5-implementation-validation-deployment/5-1-software-configuration-management.md">Capítulo V: Product Implementation, Validation &amp; Deployment</a></b></td></tr>
   <tr><td><a href="../50-chapter-5-implementation-validation-deployment/5-1-software-configuration-management.md">5.1. Software Configuration Management</a></td></tr>
@@ -81,11 +87,8 @@
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.1.6. Services Documentation Evidence for Sprint Review</a></td></tr>
 	  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.1.7. Software Deployment Evidence for Sprint Review</a></td></tr>
 	  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.1.8. Team Collaboration Insights during Sprint</a></td></tr>
-  <tr><td><a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3. Validation Interviews</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3.1. Diseño de Entrevistas</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3.2. Registro de Entrevistas</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3.3. Evaluaciones según heurísticas</a></td></tr>
-  <tr><td><a href="../50-chapter-5-implementation-validation-deployment/5-4-video-about-the-product.md">5.4. Video About-the-Product</a></td></tr>
+	  <tr><td><a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3. Validation Interviews</a></td></tr>
+	  <tr><td><a href="../50-chapter-5-implementation-validation-deployment/5-4-video-about-the-product.md">5.4. Video About-the-Product</a></td></tr>
 
 	  <tr><td><b><a href="../90-conclusions.md">Conclusiones</a></b></td></tr>
   <tr><td><b><a href="../99-bibliography.md">Bibliografía</a></b></td></tr>

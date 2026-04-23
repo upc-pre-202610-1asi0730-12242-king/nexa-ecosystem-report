@@ -1,13 +1,13 @@
 ## 5.2. Landing Page, Services & Applications Implementation
 
 <p align="justify">
-Para AV1, la evidencia de implementación de Nexa debe concentrarse en el incremento que sí alcanzó un estado demostrable y defendible ante la rúbrica: <strong>Sprint 1</strong>. En esta iteración convergen la planificación en Jira, la consolidación del backlog, la producción de artefactos de diseño, la documentación arquitectónica y la construcción de la landing page pública desplegada. El tablero evidencia <strong>54 actividades</strong> y <strong>256 puntos visibles</strong>, distribuidos entre investigación, UX/UI, implementación pública, arquitectura y documentación; por ello, este sprint no puede leerse como un simple esfuerzo de maquetación, sino como el primer incremento formal del producto Nexa.
+Para AV1, la evidencia de implementación de Nexa debe concentrarse en el incremento que sí alcanzó un estado demostrable y defendible ante la rúbrica: <strong>Sprint 1</strong>. En esta iteración convergen la planificación en Jira, la consolidación del backlog, la producción de artefactos de diseño, la documentación arquitectónica y la construcción de la landing page pública desplegada. El tablero evidencia <strong>54 actividades</strong> y <strong>256 puntos visibles</strong>, distribuidos entre investigación, UX/UI, implementación pública, arquitectura y documentación; por ello, este sprint no puede leerse como un simple esfuerzo de maquetación, sino como el primer incremento formal y visible del proyecto.
 </p>
 
 ### 5.2.1. Sprint 1
 
 <p align="justify">
-El Sprint 1 concentra la entrega AV1 y constituye la base del incremento visible del proyecto. La salida funcional verificable es la landing page pública en GitHub Pages; sin embargo, la lectura ingenieril del sprint exige considerar también la coherencia entre backlog, diseño, arquitectura, trazabilidad documental y coordinación del equipo. Bajo esta lógica, la revisión del sprint no se limita a “qué página se publicó”, sino a <strong>qué sistema de trabajo permitió llegar a esa publicación sin perder consistencia con el problema, los segmentos y la evolución futura de la web application y los servicios</strong>.
+El Sprint 1 concentra la entrega AV1 y constituye la base del incremento visible del proyecto. La salida funcional verificable es la landing page pública en GitHub Pages; sin embargo, la lectura ingenieril del sprint exige considerar también la coherencia entre backlog, diseño, arquitectura, trazabilidad documental y coordinación del equipo. Bajo esta lógica, la revisión del sprint no se limita a “qué página se publicó”, sino a <strong>qué sistema de trabajo permitió llegar a esa publicación sin perder consistencia con el problema, los segmentos y la preparación técnica del producto</strong>.
 </p>
 
 #### 5.2.1.1. Sprint Planning 1.
@@ -29,7 +29,7 @@ La planificación del Sprint 1 se orientó a producir un incremento AV1 que pudi
 | Attendees | **[Completar con la lista real de asistentes]** |
 | Herramienta principal de planificación | Jira Software |
 | Carga visible del sprint | 54 actividades y 256 puntos visibles en el tablero revisado |
-| Resultado esperado | Dejar operativa la exposición pública del producto y, al mismo tiempo, preparar la base documental y técnica de la futura web application B2B y sus servicios REST |
+| Resultado esperado | Dejar operativa la exposición pública del producto y, al mismo tiempo, preparar la base documental y técnica necesaria para la siguiente fase del proyecto |
 
 <p align="justify">
 La tabla anterior debe completarse con los datos reales de la sesión de planificación. No conviene inventarlos: ante revisión docente, esta subsección gana más valor si se acompaña de una captura o acta breve de la reunión y coincide con las evidencias de colaboración del anexo.
@@ -68,7 +68,7 @@ Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Bac
 | Fundamento de negocio e investigación | NX-59, NX-61, NX-62, NX-63, NX-67, NX-68, NX-69, NX-71, NX-169 | Consolidar startup profile, segmentos, entrevistas, personas, journeys, EventStorming y glosario para sostener el MVP con evidencia de dominio |
 | Diseño visual e información | NX-57, NX-64, NX-70, NX-77 | Traducir la investigación en style guidelines, arquitectura de información, wireframes, mockups y criterios de accesibilidad |
 | Sitio público y experiencia multipágina | NX-81, NX-84, NX-88, NX-91, NX-97, NX-100, NX-224 a NX-243 | Implementar Home, Platform, Solutions, Company y FAQ con narrativa coherente, CTA y soporte bilingüe EN/ES |
-| Arquitectura y base técnica futura | NX-94, NX-106, NX-113, NX-116, NX-122, NX-128, NX-133, NX-138 | Dejar preparada la evolución hacia dashboard B2B, DDD, autenticación, servicios y documentación técnica |
+| Arquitectura y base técnica futura | NX-94, NX-106, NX-113, NX-116, NX-122, NX-128, NX-133, NX-138 | Dejar preparada la evolución del producto en términos de dominio, arquitectura y documentación técnica |
 | Trazabilidad académica y despliegue | NX-142, NX-148, NX-153, NX-158, NX-161, NX-164, NX-167 | Alinear user stories, priorización, Student Outcome, estadísticas, publicación del sitio y compilación del informe |
 
 *Vista general del Sprint 1 cargado en Jira*
@@ -105,13 +105,13 @@ Este primer bloque del backlog en Jira demuestra que las historias priorizadas p
 
 ![Product Backlog bloque B](../assets/images/jira/jira-backlog-block-b.png)
 
-El segundo bloque confirma continuidad entre historias del sitio público, backlog técnico y evolución prevista hacia la web application autenticada. Elaboración propia.
+El segundo bloque confirma continuidad entre historias del sitio público, backlog técnico y preparación de la siguiente fase del producto. Elaboración propia.
 
 *Verificación del Product Backlog en Jira — bloque C*
 
 ![Product Backlog bloque C](../assets/images/jira/jira-backlog-block-c.png)
 
-El tercer bloque permite contrastar la lógica de priorización del capítulo 3 con la evidencia viva de Jira, incluyendo historias orientadas a despliegue, trazabilidad académica y preparación de servicios futuros. Elaboración propia.
+El tercer bloque permite contrastar la lógica de priorización del capítulo 3 con la evidencia viva de Jira, incluyendo historias orientadas a despliegue, trazabilidad académica y preparación técnica posterior. Elaboración propia.
 
 #### 5.2.1.4. Development Evidence for Sprint Review.
 
@@ -130,7 +130,7 @@ La evidencia de desarrollo del Sprint 1 se distribuye en cuatro capas verificabl
 | Internacionalización y accesibilidad | Selector EN/ES, `skip-to-content`, estructura semántica y metadatos en HTML | Desarrollo no limitado a maquetación superficial |
 
 <p align="justify">
-En conjunto, esta evidencia muestra que AV1 sí produjo desarrollo real: no solo existe una página publicada, sino un ecosistema de artefactos coherentes que conectan investigación, diseño, documentación y construcción. Si el equipo decide grabar una explicación breve del avance del sprint para uso interno o para anexos, este es el lugar correcto para insertar una captura del video y una nota de contexto; sin embargo, <strong>la rúbrica no exige un video resumen del sprint dentro de 5.2.1.4</strong>. El requerimiento explícito de video aparece en la sección 4.5 para prototipos y, si se mantiene, en 5.4 para el video del producto.
+En conjunto, esta evidencia muestra que AV1 sí produjo desarrollo real: no solo existe una página publicada, sino un ecosistema de artefactos coherentes que conectan investigación, diseño, documentación y construcción. Si el equipo decide grabar una explicación breve del avance del sprint para uso interno o para anexos, este es el lugar correcto para insertar una captura del video y una nota de contexto; sin embargo, <strong>la rúbrica no exige un video resumen del sprint dentro de 5.2.1.4</strong>. El requerimiento explícito de video aparece en la sección 4.5 para prototipos.
 </p>
 
 #### 5.2.1.5. Execution Evidence for Sprint Review.
@@ -150,17 +150,17 @@ La ejecución visible del sprint ya se materializa en una landing page pública 
 | Página FAQ | `pages/faq.html` | Implementado |
 | Sistema bilingüe | `assets/js/i18n.js` y selector EN/ES | Implementado |
 | Interacciones del sitio | `assets/js/interactions.js` y `assets/js/animations.js` | Implementado |
-| Portal B2B autenticado | Solo modelado en backlog y diseño | No implementado en AV1 |
-| API y servicios REST | Solo modelados en backlog y arquitectura | No implementados en AV1 |
+| Portal B2B autenticado | Solo modelado en backlog y diseño | No forma parte de AV1 |
+| API y servicios REST | Solo modelados en backlog y arquitectura | No forma parte de AV1 |
 
 <p align="justify">
-Al mismo tiempo, la ejecución debe leerse con honestidad de alcance: el portal B2B autenticado, la captura transaccional de pedidos, el catálogo privado, la autenticación y el seguimiento operativo aún no forman parte del incremento desplegado. Su presencia en backlog y en arquitectura demuestra preparación, pero no debe confundirse con ejecución completada dentro de AV1.
+Al mismo tiempo, la ejecución debe leerse con honestidad de alcance: el portal B2B autenticado, la captura transaccional de pedidos, el catálogo privado, la autenticación y el seguimiento operativo aún no forman parte del incremento entregado. Su presencia en backlog y en arquitectura demuestra preparación, pero no debe confundirse con ejecución completada dentro de AV1.
 </p>
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
 
 <p align="justify">
-La documentación de servicios en AV1 existe principalmente como <strong>evidencia de diseño y preparación técnica</strong>. El backlog ya incorpora historias de API y documentación (`NX-138`, además de las historias técnicas del bloque US58-US64), mientras que el capítulo 4 conserva la arquitectura DDD/C4, el diseño orientado a objetos y la base de datos que servirán de soporte a los futuros endpoints. Esta base es válida como sustento de ingeniería, porque muestra contratos previstos, separación de capas y reglas de negocio modeladas antes de implementar controladores productivos.
+La documentación de servicios en AV1 existe principalmente como <strong>evidencia de diseño y preparación técnica</strong>. El backlog ya incorpora historias de API y documentación (`NX-138`, además de las historias técnicas del bloque US58-US64), mientras que el capítulo 4 conserva la arquitectura DDD/C4, el diseño orientado a objetos y la base de datos que servirán de soporte a una fase posterior. Esta base es válida como sustento de ingeniería, porque muestra contratos previstos, separación de capas y reglas de negocio modeladas antes de implementar controladores productivos.
 </p>
 
 *Evidencia disponible de documentación de servicios en AV1*
@@ -171,11 +171,10 @@ La documentación de servicios en AV1 existe principalmente como <strong>evidenc
 | Diseño DDD y bounded contexts | Sección 4.6 | Delimita responsabilidades del dominio |
 | Diseño orientado a objetos | Sección 4.7 | Anticipa entidades y relaciones del backend |
 | Diseño de base de datos | Sección 4.8 | Prepara persistencia para futuros servicios |
-| Swagger / OpenAPI operativo | **No evidenciado en esta revisión** | Pendiente para iteraciones posteriores |
-| Endpoints ejecutables o colección Postman | **No evidenciado en esta revisión** | Pendiente para iteraciones posteriores |
+| Implementación ejecutable de servicios | **No corresponde en esta entrega** | Queda fuera del alcance observable de AV1 |
 
 <p align="justify">
-Sin embargo, la revisión del workspace y de los repositorios remotos declara una frontera clara: aunque ya existen los repositorios <strong>`nexa-webapp`</strong> y <strong>`nexa-platform`</strong> en GitHub, no se encontró en esta revisión evidencia verificable de Swagger/OpenAPI publicado, controladores expuestos ni endpoints en operación para presentar como prueba cerrada de servicios en AV1. Por tanto, esta subsección debe defenderse como <strong>documentación técnica preparada</strong>, no como servicio desplegado y documentado en producción.
+Por tanto, esta subsección debe defenderse como <strong>documentación técnica preparada</strong>, no como servicio implementado ni desplegado en producción. En AV1 basta con demostrar que el producto ya tiene una base de arquitectura y de contratos pensada para la siguiente fase, sin sobredeclarar software que todavía no corresponde a esta entrega.
 </p>
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review.
@@ -191,11 +190,11 @@ La evidencia de despliegue de AV1 sí existe, pero está concentrada en el frent
 | Landing page pública | **Desplegada y navegable** | [GitHub Pages](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) |
 | Repositorio documental | **Versionado y colaborativo** | [nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) |
 | Repositorio del sitio público | **Implementación visible del frontend público** | [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) |
-| Web application autenticada | **Repositorio existente, sin evidencia de despliegue verificable en esta revisión** | [nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) |
-| Backend / servicios | **Repositorio existente, sin evidencia de API publicada o Swagger operativo en esta revisión** | [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) |
+| Web application autenticada | **Fase posterior del producto** | Nombrada en diseño y backlog, no como evidencia de despliegue AV1 |
+| Backend / servicios | **Fase posterior del producto** | Nombrado en arquitectura y backlog, no como evidencia de despliegue AV1 |
 
 <p align="justify">
-Esta lectura permite defender el despliegue con precisión: Nexa ya tiene una capa pública activa y demostrable, pero la capa transaccional aún debe presentarse como roadmap técnico respaldado por backlog y arquitectura, no como despliegue concluido.
+Esta lectura permite defender el despliegue con precisión: Nexa ya tiene una capa pública activa y demostrable, pero la capa transaccional aún debe presentarse como roadmap técnico respaldado por backlog y arquitectura, no como despliegue concluido ni como parte del alcance observable de esta entrega.
 </p>
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint.

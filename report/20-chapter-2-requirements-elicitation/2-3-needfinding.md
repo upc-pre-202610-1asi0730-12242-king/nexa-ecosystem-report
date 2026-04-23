@@ -11,14 +11,11 @@ La construcción de este bloque parte de tres insumos previos. El primero es el 
 Por ello, los artefactos de needfinding no deben interpretarse como piezas visuales aisladas. Su función es traducir evidencia cualitativa en criterios de diseño: quién necesita autonomía, quién necesita visibilidad, quién necesita rapidez, quién necesita trazabilidad y en qué punto del recorrido cada una de esas necesidades se vuelve más sensible. Bajo ese enfoque, el valor del needfinding no está únicamente en mostrar personas, tareas o journeys, sino en demostrar cómo esas representaciones ayudan a delimitar el alcance del MVP y a justificar decisiones posteriores de backlog, arquitectura y experiencia de usuario.
 </p>
 
-<div style="padding: 14px 16px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 16px 0;">
-  <strong>Criterio de construcción de arquetipos.</strong><br/><br/>
-  <ul>
-    <li><strong>Valeria (S1):</strong> sintetiza patrones compartidos por el personal de coordinación comercial entrevistado.</li>
-    <li><strong>Hilda (S2):</strong> sintetiza patrones del cliente comercial B2B y no corresponde a una única entrevistada individual.</li>
-    <li><strong>Pedro (S3):</strong> sintetiza el rol de despacho y cierre a partir de triangulación entre restricciones operativas, pain points del seguimiento y modelado del flujo.</li>
-  </ul>
-</div>
+> **Criterio de construcción de arquetipos**
+>
+> - **Valeria (S1):** sintetiza patrones compartidos por el personal de coordinación comercial entrevistado.
+> - **Hilda (S2):** sintetiza patrones del cliente comercial B2B y no corresponde a una única entrevistada individual.
+> - **Pedro (S3):** sintetiza el rol de despacho y cierre a partir de hallazgos del seguimiento, las incidencias y el cierre de entrega observados en la investigación.
 
 ### 2.3.1. User Personas
 
@@ -47,7 +44,7 @@ Las user personas no sustituyen a los entrevistados reales; funcionan como sínt
   </tr>
   <tr>
     <td><strong>Pedro (S3)</strong></td>
-    <td>Triangulación entre stakeholder operativo, pain points del seguimiento y modelado del flujo</td>
+    <td>Hallazgos del seguimiento, las incidencias y el cierre de entrega observados en la investigación</td>
     <td>Necesidad de cierre con evidencia, reducción de interrupciones y visibilidad del estado de entrega</td>
     <td>Representar la ejecución física del pedido y el momento donde la promesa comercial se valida o fracasa</td>
   </tr>
@@ -65,7 +62,7 @@ Representación sintética del arquetipo de cliente comercial B2B, construida a 
 
 *User Persona — Segmento 3: Pedro*
 ![User Persona 3](../assets/images/user-persona-3.png)
-Representación sintética del arquetipo de despacho y entrega, enfocada en la eficiencia de ruta y el cierre digital con evidencia. Su construcción se apoya en triangulación entre stakeholder operativo, pain points del seguimiento y modelado del flujo de dominio. Elaboración propia.
+Representación sintética del arquetipo de despacho y entrega, enfocada en la eficiencia de ruta y el cierre digital con evidencia. Su construcción se apoya en hallazgos del seguimiento del pedido, las incidencias y el cierre de entrega dentro del dominio. Elaboración propia.
 
 <p align="justify">
 En conjunto, las tres personas muestran una progresión coherente del mismo problema. Valeria evidencia cómo la información del pedido nace fragmentada; Hilda expresa la incertidumbre que ese desorden produce en el cliente comercial; y Pedro representa el punto donde la falta de coordinación se vuelve retraso, reclamo o cierre débil de la entrega. Esta continuidad resulta importante porque permite que los artefactos del capítulo no describan actores desconectados, sino tres posiciones sobre una misma historia operativa.

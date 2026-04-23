@@ -5,11 +5,15 @@ El Big Picture EventStorming de Nexa modela el flujo principal del pedido B2B de
 </p>
 
 <p align="justify">
-El modelado mantiene la misma taxonomía canónica definida en el proyecto. En ese marco, <strong>S1</strong> se expresa principalmente en la captura asistida y validación comercial, <strong>S2</strong> en la consulta, envío y seguimiento del pedido por parte del cliente comercial, y <strong>S3</strong> en el despacho, la gestión de incidencias y el cierre de la entrega. La jefatura logística permanece como stakeholder secundario que define políticas y restricciones del dominio.
+El modelado mantiene la misma taxonomía canónica definida en el proyecto. En ese marco, <strong>S1</strong> se expresa principalmente en la captura asistida y validación comercial, <strong>S2</strong> en la consulta, envío y seguimiento del pedido por parte del cliente comercial, y <strong>S3</strong> en el despacho, la gestión de incidencias y el cierre de la entrega. Las restricciones operativas del dominio permanecen visibles a lo largo del flujo, pero no redefinen la segmentación del informe.
 </p>
 
 <p align="justify">
 El EventStorming se construyó como un ejercicio de síntesis del dominio a partir de la evidencia reunida en entrevistas, needfinding y análisis competitivo. En lugar de partir de pantallas o módulos, el equipo ordenó primero los hechos que modifican el estado del pedido y luego examinó qué actores, restricciones y tensiones aparecen en esas transiciones. Este enfoque resulta útil porque evita diseñar el sistema desde una lista de funcionalidades dispersas y obliga a pensar el producto como una secuencia coherente de eventos del negocio.
+</p>
+
+<p align="justify">
+Como respaldo del trabajo colaborativo, la evidencia visual del modelado se complementa con las capturas de la sesión preservadas en la sección 4.6.1 y con las evidencias de coordinación del sprint registradas en el anexo. En esta sección, el énfasis está en la lectura del flujo y no en repetir capturas ya documentadas en el bloque de arquitectura.
 </p>
 
 ### 2.4.1. Proceso de construcción del modelado
@@ -92,16 +96,16 @@ La tabla resume el proceso seguido para convertir evidencia cualitativa en un mo
 ### 2.4.5. Flujo resumido del dominio
 
 1. El cliente consulta el catálogo o la coordinación comercial captura el pedido de forma asistida.
-2. El sistema identifica al cliente y recupera sus condiciones comerciales.
-3. El pedido pasa de borrador a enviado.
-4. El sistema valida crédito, morosidad y disponibilidad básica.
-5. Si la validación es satisfactoria, el pedido se confirma y reserva stock.
-6. La operación lo pasa a preparación y luego a despacho.
-7. Durante el despacho se pueden registrar incidencias y recalcular la ETA.
-8. La entrega se cierra con evidencia y el pedido queda entregado.
+2. Se identifican las condiciones comerciales y la disponibilidad necesarias para revisar el pedido.
+3. El pedido pasa de borrador a enviado para validación.
+4. La coordinación comercial y la operación revisan crédito, morosidad y disponibilidad básica antes de confirmar.
+5. Si la validación es satisfactoria, el pedido se confirma y queda listo para preparación.
+6. La operación prepara la salida y coordina el despacho.
+7. Durante el despacho pueden registrarse incidencias y actualizarse la comunicación de entrega.
+8. La entrega se cierra con evidencia y el pedido queda concluido.
 
 <p align="justify">
-Este modelado refuerza dos ideas centrales del proyecto: el problema principal no está en un único “módulo” aislado, sino en la transición entre captura, validación, disponibilidad, despacho y cierre; y la jefatura logística, aunque no sea una persona primaria del backlog, sigue siendo fundamental para definir restricciones y criterios operativos del dominio.
+Este modelado refuerza dos ideas centrales del proyecto: el problema principal no está en un único “módulo” aislado, sino en la transición entre captura, validación, disponibilidad, despacho y cierre; y las restricciones operativas del dominio siguen siendo decisivas para definir reglas y criterios de funcionamiento a lo largo del flujo.
 </p>
 
 <p align="justify">

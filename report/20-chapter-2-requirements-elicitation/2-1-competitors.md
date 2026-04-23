@@ -154,24 +154,21 @@ Tabla de análisis competitivo. Elaboración propia.
 A partir de la matriz expuesta, el equipo ha identificado cuatro implicancias estratégicas para el desarrollo del producto.
 </p>
 
-<div style="display: grid; grid-template-columns: 1fr; gap: 12px; margin: 16px 0;">
-  <div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff;">
-    <strong>1. Especialización funcional del dominio</strong><br/>
-    La oportunidad principal de Nexa no está en competir por profundidad algorítmica con un TMS ni por sofisticación de hardware con una plataforma telemétrica, sino en modelar mejor la relación entre pedido, disponibilidad, rotación y seguimiento en un dominio de productos perecederos.
-  </div>
-  <div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff;">
-    <strong>2. Alcance realista del MVP</strong><br/>
-    El análisis también muestra un límite claro: en su primera versión, Nexa no necesita replicar todas las capacidades de ruteo avanzado o monitoreo IoT, sino ofrecer trazabilidad documental y visibilidad operativa suficientes para validar valor en el flujo principal del pedido.
-  </div>
-  <div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff;">
-    <strong>3. Valor regulatorio y operativo</strong><br/>
-    En un sector donde trazabilidad, control documental y conservación del producto tienen relevancia normativa, una solución que ordene información comercial y operativa puede adquirir valor no solo por eficiencia, sino también por capacidad de respuesta ante incidencias o auditorías.
-  </div>
-  <div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff;">
-    <strong>4. Riesgo de adopción</strong><br/>
-    La principal amenaza competitiva inmediata no proviene solo de otras plataformas, sino de la persistencia de canales informales ya aceptados por los usuarios. Por ello, la propuesta debe minimizar complejidad de uso y reducir fricción de entrada desde el primer contacto.
-  </div>
-</div>
+> **1. Especialización funcional del dominio**
+>
+> La oportunidad principal de Nexa no está en competir por profundidad algorítmica con un TMS ni por sofisticación de hardware con una plataforma telemétrica, sino en modelar mejor la relación entre pedido, disponibilidad, rotación y seguimiento en un dominio de productos perecederos.
+>
+> **2. Alcance realista del MVP**
+>
+> El análisis también muestra un límite claro: en su primera versión, Nexa no necesita replicar todas las capacidades de ruteo avanzado o monitoreo IoT, sino ofrecer trazabilidad documental y visibilidad operativa suficientes para validar valor en el flujo principal del pedido.
+>
+> **3. Valor regulatorio y operativo**
+>
+> En un sector donde trazabilidad, control documental y conservación del producto tienen relevancia normativa, una solución que ordene información comercial y operativa puede adquirir valor no solo por eficiencia, sino también por capacidad de respuesta ante incidencias o auditorías.
+>
+> **4. Riesgo de adopción**
+>
+> La principal amenaza competitiva inmediata no proviene solo de otras plataformas, sino de la persistencia de canales informales ya aceptados por los usuarios. Por ello, la propuesta debe minimizar complejidad de uso y reducir fricción de entrada desde el primer contacto.
 
 <p align="justify">
 En conjunto, el landscape sugiere que Nexa puede encontrar espacio si mantiene una propuesta acotada y coherente: integrar la capa comercial-operativa que hoy aparece separada entre soluciones de venta, ruteo y telemetría, sin asumir desde el inicio la profundidad funcional completa de cada una de ellas.

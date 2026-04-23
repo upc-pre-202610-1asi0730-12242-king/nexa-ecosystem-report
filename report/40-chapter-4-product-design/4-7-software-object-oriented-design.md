@@ -1,221 +1,77 @@
 ## 4.7. Software Object-Oriented Design
 
-<p align="justify">
-El diseño orientado a objetos de Nexa trasciende la mera representación de datos para convertirse en un <strong>modelo de dominio activo</strong>. Siguiendo los principios de <em>Clean Architecture</em> y <em>Domain-Driven Design (DDD)</em>, el sistema se estructura en contextos delimitados que encapsulan no solo el estado, sino el comportamiento crítico de la cadena de frío y la operatividad B2B. Cada clase ha sido diseñada para garantizar la alta cohesión y el bajo acoplamiento, facilitando la escalabilidad del SaaS.
-</p>
+Esta sección presenta el diseño orientado a objetos de Nexa por bounded context, siguiendo la separación consolidada al cierre de la arquitectura del capítulo 4.6. En lugar de concentrar todo el dominio en un único diagrama, se muestran bloques más acotados para que cada contexto conserve una responsabilidad clara.
 
----
+El propósito de esta vista no es reemplazar el diseño de base de datos ni anticipar el código final de implementación, sino identificar las clases que concentran estado y comportamiento dentro de cada parte del sistema. Por eso algunos diagramas incluyen clases marcadas como <code>&lt;&lt;Reference&gt;&gt;</code>, usadas para representar dependencias con otros contextos sin absorber su modelo completo.
 
-<div id="class-diagram-header" style="padding: 20px; background-color: #f1f5f9; border-left: 5px solid #0f172a; margin-bottom: 25px;">
-  <h3 style="margin: 0; color: #0f172a;">4.7.1. Class Diagrams</h3>
-  <p style="margin: 5px 0 0 0; color: #64748b; font-style: italic;">"Modelando el comportamiento inteligente de la distribución primaria."</p>
-</div>
+### 4.7.1. Class Diagrams
 
-*Diagrama de Clases del Ecosistema Nexa (Enterprise Model)*
+#### Identity
 
-```mermaid
-classDiagram
-    class User {
-        +int id
-        +string email
-        +string status
-        +login() bool
-        +updateProfile()
-        +getAuditHistory() List
-    }
-    class Role {
-        +int id
-        +string name
-        +hasPermission(code) bool
-    }
-    class CommercialClient {
-        +int id
-        +string ruc
-        +string businessName
-        +calculateCurrentRisk() float
-        +getAvailableCredit() float
-    }
-    class CommercialCondition {
-        +float creditLimit
-        +float currentBalance
-        +int gracePeriod
-        +isCreditApproved(amount) bool
-    }
-    class Product {
-        +int id
-        +string sku
-        +string name
-        +float standardPrice
-        +validateStock() bool
-        +getSpecifications() ProductSpec
-    }
-    class ProductSpec {
-        +string storageTempRange
-        +float storageHumidity
-        +isOptimalConditions(temp) bool
-    }
-    class Batch {
-        +string batchNumber
-        +date expiryDate
-        +string status
-        +isExpired() bool
-        +getDaysToExpiry() int
-    }
-    class InventoryStock {
-        +int quantityOnHand
-        +int quantityReserved
-        +reserve(qty) bool
-        +release(qty)
-    }
-    class Order {
-        +int id
-        +string status
-        +float totalAmount
-        +calculateTotals()
-        +validateCommercialTerms() bool
-        +updateStatus(newStatus)
-        +authorize()
-    }
-    class OrderItem {
-        +int quantity
-        +float unitPrice
-        +calculateSubtotal() float
-    }
-    class Dispatch {
-        +int id
-        +string status
-        +datetime departureTime
-        +calculateETA() datetime
-        +verifyColdChain() bool
-        +registerIncident(type)
-        +finalizeDelivery(pod)
-    }
-    class Vehicle {
-        +string plate
-        +float tempCapacity
-        +isCompatible(reqTemp) bool
-    }
-    class Incident {
-        +string type
-        +string severity
-        +resolve()
-    }
+![Identity Class Diagram](../assets/images/class-diagrams/01-identity-classes.svg)
 
-    class Permission {
-        +int id
-        +string code
-        +string description
-        +validateScope() bool
-    }
-    class Category {
-        +int id
-        +string name
-        +getProducts() List
-    }
-    class Warehouse {
-        +int id
-        +string name
-        +checkStorageCapacity() float
-    }
-    class WarehouseLocation {
-        +int id
-        +string code
-        +isOccupied() bool
-    }
-    class Driver {
-        +int id
-        +string name
-        +string licenseNumber
-        +isAvailable() bool
-    }
-    class POD {
-        +int id
-        +string signedBy
-        +datetime timestamp
-        +file evidenceFile
-        +verifyIntegrity() bool
-    }
+El contexto de identidad reúne las clases necesarias para autenticar usuarios, asignar roles y validar permisos. También incorpora los registros de auditoría y de inicio de sesión, ya que ambos dependen de la actividad del usuario autenticado y ayudan a sostener control operativo sobre accesos y cambios.
 
-    %% Relationships
-    User "1" --> "1" Role : assigned_to
-    Role "1" --o "*" Permission : contains
-    User "1" --o "1" CommercialClient : manages
-    CommercialClient "1" *-- "1" CommercialCondition : governed_by
-    CommercialClient "1" --o "*" Order : places
-    
-    Category "1" --* "*" Product : classifies
-    Product "1" *-- "1" ProductSpec : detailed_by
-    Product "1" --o "*" Batch : lot_tracking
-    
-    Warehouse "1" --* "*" InventoryStock : stores
-    Warehouse "1" --* "*" WarehouseLocation : partitions
-    WarehouseLocation "1" --o "*" InventoryStock : hosts
-    InventoryStock "1" --> "1" Product : item
-    InventoryStock "1" --> "1" Batch : specific_batch
-    
-    Order "1" *-- "*" OrderItem : comprises
-    OrderItem "1" --> "1" Product : refs
-    
-    Dispatch "1" --> "1" Order : fulfills
-    Dispatch "1" --> "1" Vehicle : transport_via
-    Dispatch "1" --> "1" Driver : operated_by
-    Dispatch "1" *-- "*" Incident : logs
-    Dispatch "1" *-- "0..1" POD : evidence
-```
+#### Catalog
 
-El diagrama de clases integra las reglas de negocio transaccionales con el modelo relacional. A diferencia del ERD, aquí se destacan los métodos de control (ej: <code>verifyColdChain</code>, <code>isCreditApproved</code>) que aseguran la integridad del proceso de distribución. Elaboración propia.
+![Catalog Class Diagram](../assets/images/class-diagrams/02-catalog-classes.svg)
 
----
+El contexto de catálogo concentra la estructura maestra del producto: categoría, marca, unidad de medida, producto y especificación. Aquí el foco está en describir el producto y sus condiciones de conservación, no en resolver stock o movimientos de almacén.
 
-### 4.7.2. Metodología de Diseño y Correspondencia Lógica
+#### Inventory
 
-<p align="justify">
-El diseño orientado a objetos ha sido validado contra el esquema de base de datos (Capítulo 4.8) para garantizar una <strong>correspondencia biunívoca</strong> entre las entidades de persistencia y las clases de dominio. Esta simetría permite que la capa de aplicación (Services) interactúe con el modelo sin fricciones arquitectónicas.
-</p>
+![Inventory Class Diagram](../assets/images/class-diagrams/03-inventory-classes.svg)
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
-  <div style="background-color: #f8fafc; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0;">
-    <h4 style="color: #2554df; margin-top: 0;">Lógica de Negocio Encapsulada</h4>
-    <ul style="font-size: 13px; color: #475569;">
-      <li><strong>Control de Riesgos:</strong> La clase <code>CommercialCondition</code> encapsula la validación de créditos, impidiendo la creación de pedidos si el cliente excede su saldo.</li>
-      <li><strong>Seguridad Térmica:</strong> Los métodos en <code>ProductSpec</code> y <code>Vehicle</code> permiten pre-validar la compatibilidad de carga antes del despacho.</li>
-    </ul>
-  </div>
-  <div style="background-color: #f8fafc; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0;">
-    <h4 style="color: #2554df; margin-top: 0;">Trazabilidad y Auditoría</h4>
-    <ul style="font-size: 13px; color: #475569;">
-      <li><strong>Ciclo de Vida del Lote:</strong> Se implementa un seguimiento granular por <code>Batch</code> para gestionar alertas de caducidad automática.</li>
-      <li><strong>Integridad Atómica:</strong> El objeto <code>Order</code> actúa como raíz del agregado, asegurando que los cambios en <code>Items</code> impacten en los totales y el stock de forma simultánea.</li>
-    </ul>
-  </div>
-</div>
+El contexto de inventario modela la disponibilidad física del producto mediante almacenes, ubicaciones, stock, lotes y movimientos. La inclusión de <code>InventoryTrans</code> permite representar que los cambios de stock no se tratan como un valor aislado, sino como movimientos registrados dentro del mismo contexto.
 
----
+#### Customer Management
 
-### 4.7.3. Matriz de Trazabilidad: Requerimientos vs. Diseño OOD
+![Customer Management Class Diagram](../assets/images/class-diagrams/04-customer-management-classes.svg)
 
-<p align="justify">
-Para asegurar la integridad del sistema, se presenta la siguiente matriz que vincula las historias de usuario críticas con los componentes del diseño orientado a objetos que las materializan.
-</p>
+El contexto de gestión de clientes agrupa la información comercial básica del cliente y su pertenencia a una zona operativa. La referencia hacia usuario se mantiene ligera porque aquí importa la relación de acceso o vínculo comercial, no la administración completa de identidad.
 
-*Matriz de Coherencia Requerimiento-Objeto*
+#### Commercial Conditions
 
-| User Story ID | Req. Title | Entidad/Clase Principal | Método/Lógica Vinculada |
+![Commercial Conditions Class Diagram](../assets/images/class-diagrams/05-commercial-conditions-classes.svg)
+
+El contexto de condiciones comerciales contiene las reglas que afectan crédito, saldo, términos de pago y listas de precio. Este bloque se mantiene separado del contexto de pedidos para dejar claro que las reglas comerciales existen como una fuente de validación y no como un detalle embebido dentro de cada orden.
+
+#### Orders
+
+![Orders Class Diagram](../assets/images/class-diagrams/06-orders-classes.svg)
+
+El contexto de pedidos modela la orden, sus ítems y su historial de estados. Las referencias hacia cliente, producto y condiciones comerciales se mantienen fuera de la propiedad central del agregado, pero siguen visibles para justificar cálculos, validaciones y cambios de estado dentro del flujo transaccional.
+
+#### Traceability
+
+![Traceability Class Diagram](../assets/images/class-diagrams/07-traceability-classes.svg)
+
+El contexto de trazabilidad representa la ejecución posterior al pedido: despacho, vehículo, conductor, incidentes y evidencia de entrega. La referencia al pedido se conserva porque el despacho no se entiende como proceso aislado, sino como continuidad operativa de una orden ya confirmada.
+
+### 4.7.2. Design Criteria
+
+Los diagramas de esta sección siguen tres criterios. Primero, cada bounded context conserva sus clases propias y solo usa referencias hacia otros contextos cuando la relación es necesaria para explicar una validación o un flujo. Segundo, los métodos visibles responden a decisiones del dominio y no solo a almacenamiento de datos. Tercero, la separación entre catálogo, inventario, pedidos, clientes y trazabilidad evita que una misma entidad absorba responsabilidades que pertenecen a otro bloque.
+
+Este criterio también mantiene coherencia con la vista C4 del capítulo anterior. El C4 resume contenedores, piezas de interfaz y servicios de soporte como pagos o notificaciones; los diagramas de clases, en cambio, preservan la separación fina del dominio en siete contextos principales. Por eso no se fuerza una correspondencia literal entre cada caja del C4 y cada diagrama de clases.
+
+### 4.7.3. Traceability Matrix: Requirements and OOD
+
+La siguiente matriz resume la relación entre requerimientos relevantes y las clases o métodos que los sostienen dentro del diseño orientado a objetos.
+
+| User Story ID | Req. Title | Main Class | Related Method or Logic |
 | :--- | :--- | :--- | :--- |
-| **US24** | Consultar catálogo | `Product` / `Category` | `validateStock()`, `getProducts()` |
-| **US32** | Alertas de crédito | `CommercialCondition` | `isCreditApproved(amount)` |
-| **US42** | Registro de POD | `POD` / `Dispatch` | `finalizeDelivery(pod)`, `verifyIntegrity()` |
-| **US45** | Registro de Lotes | `Batch` / `ProductSpec` | `isExpired()`, `isOptimalConditions()` |
-| **US47** | Reserva de Stock | `InventoryStock` | `reserve(qty)`, `release(qty)` |
-| **US39** | Tracking & ETA | `Dispatch` | `calculateETA()` |
-| **US41** | Estados de Pedido | `Order` | `updateStatus(newStatus)` |
-| **US51** | Saldo y Morosidad | `CommercialCondition` | `currentBalance` |
-| **US54** | Login Interno | `User` | `login()` |
-| **US57** | Roles | `Role` / `Permission` | `hasPermission()`, `validateScope()` |
-| **US48** | Bloqueo Producto | `Product` | `status`, `validateStock()` |
-| **US44** | Monitor Inventario | `InventoryStock` | `quantityOnHand`, `quantityReserved` |
-| **US61** | API Registro Pedido| `Order` / `OrderItem` | `calculateTotals()`, `authorize()` |
-| **US46** | Alertas FEFO | `Batch` | `expiryDate`, `isExpired()` |
-| **US63** | API POD/Eventos | `POD` / `Incident` | `verifyIntegrity()`, `resolve()` |
+| **US54** | Login interno | `User` | `login()` |
+| **US57** | Roles y permisos | `Role` / `Permission` | `hasPermission(code)`, `validateScope()` |
+| **US24** | Consultar catálogo | `Category` / `Product` | `getProducts()`, `getSpecifications()` |
+| **US45** | Registro de lotes | `Batch` | `isExpired()`, `getDaysToExpiry()` |
+| **US44** | Monitor de inventario | `InventoryStock` | `quantityOnHand`, `quantityReserved` |
+| **US47** | Reserva de stock | `InventoryStock` | `reserve(qty)`, `release(qty)` |
+| **US32** | Validación de crédito | `CommercialCondition` | `isCreditApproved(amount)` |
+| **US51** | Saldo y riesgo comercial | `CommercialCondition` | `currentBalance`, `calculateCurrentRisk()` |
+| **US41** | Estados del pedido | `Order` / `OrderHistory` | `updateStatus(newStatus)` |
+| **US61** | Registro de pedido | `Order` / `OrderItem` | `calculateTotals()`, `authorize()` |
+| **US39** | Tracking y ETA | `Dispatch` | `calculateETA()`, `verifyColdChain()` |
+| **US42** | Registro de POD | `Dispatch` / `POD` | `finalizeDelivery(pod)`, `verifyIntegrity()` |
+| **US63** | Eventos de despacho y POD | `Dispatch` / `Incident` | `registerIncident(type)`, `resolve()` |
 
-Se evidencia que cada funcionalidad crítica del negocio tiene un respaldo explícito en el diseño de clases, garantizando que el software sea una representación fiel de los requerimientos. Elaboración propia.
+La matriz no reemplaza la especificación funcional del capítulo 3, pero sí muestra qué clases concentran la lógica necesaria para responder a los requerimientos más importantes del dominio. Elaboración propia.

@@ -5,13 +5,13 @@ El diseño de la web application de Nexa debe leerse como la continuación opera
 </p>
 
 <p align="justify">
-En esta capa del producto, la interfaz deja de priorizar conversión comercial y pasa a priorizar decisión. Cada pantalla debe ayudar a responder una pregunta concreta del dominio: qué pedido está en riesgo, qué producto necesita atención, qué validación bloquea la operación, qué unidad está en ruta y qué evidencia respalda el cierre. Bajo esa lógica, el bloque se organiza en cuatro partes: wireframes, wireflow, mock-ups y user flows.
+En esta capa del producto, la interfaz deja de priorizar conversión comercial y pasa a priorizar decisión. Cada pantalla debe ayudar a responder una pregunta concreta del dominio: qué pedido está en riesgo, qué producto necesita atención, qué validación bloquea la operación, qué unidad está en ruta y qué evidencia respalda el cierre. Bajo esa lógica, el bloque se organiza en cuatro partes: wireframes, wireflow, mock-ups y user flows. Los artefactos se trabajaron en Figma y luego se exportaron para documentar el recorrido funcional del MVP.
 </p>
 
 ### 4.4.1. Web Applications Wireframes.
 
 <p align="justify">
-Los wireframes de la aplicación web fueron elaborados para ordenar la estructura funcional antes de entrar en alta fidelidad. Su valor no está en el acabado visual, sino en definir jerarquías, zonas de información, módulos persistentes y rutas de interacción. En Nexa, esta etapa fue clave porque el problema no consiste solo en “dibujar pantallas”, sino en traducir flujos complejos del dominio a superficies que puedan usarse bajo presión operativa.
+Los wireframes de la aplicación web fueron elaborados en Figma para ordenar la estructura funcional antes de entrar en alta fidelidad. Su valor no está en el acabado visual, sino en definir jerarquías, zonas de información, módulos persistentes y rutas de interacción. En Nexa, esta etapa fue clave porque el problema no consiste solo en “dibujar pantallas”, sino en traducir flujos complejos del dominio a superficies que puedan usarse bajo presión operativa.
 </p>
 
 <p align="justify">
@@ -138,10 +138,43 @@ graph LR
 
 Elaboración propia. El flujo concentra la continuidad entre captura, validación, seguimiento y cierre, evitando que el pedido quede fragmentado en herramientas paralelas.
 
+*Wireflow de captura asistida y validación comercial*
+
+```mermaid
+flowchart LR
+    A["Bandeja de pedidos o Dashboard"] --> B["Abrir pedido asistido"]
+    B --> C["Identificar cliente"]
+    C --> D["Cargar condiciones comerciales"]
+    D --> E["Agregar productos y cantidades"]
+    E --> F{"¿Hay alertas de stock o crédito?"}
+    F -->|Sí| G["Corregir pedido o detener envío"]
+    G --> E
+    F -->|No| H["Enviar para confirmación"]
+    H --> I["Pedido listo para preparación"]
+```
+
+Elaboración propia. Este wireflow muestra el recorrido interno de coordinación comercial, donde el valor está en detectar problemas antes de comprometer el pedido.
+
+*Wireflow del cliente B2B desde acceso hasta seguimiento*
+
+```mermaid
+flowchart LR
+    A["Log in"] --> B["Catálogo personalizado"]
+    B --> C["Detalle de producto"]
+    C --> D["Carrito o borrador"]
+    D --> E["Revisión del pedido"]
+    E --> F["Envío y confirmación"]
+    F --> G["Historial del pedido"]
+    G --> H["Seguimiento y ETA"]
+    H --> I["Cierre con evidencia visible"]
+```
+
+Elaboración propia. Aquí se resume el recorrido del cliente comercial cuando compra, revisa el estado del pedido y necesita entender cómo avanza la entrega.
+
 ### 4.4.3. Web Applications Mock-ups.
 
 <p align="justify">
-Los mock-ups de la web application desarrollan en alta fidelidad la lógica ya probada en wireframes. Su función no es “decorar” el sistema, sino validar que la jerarquía visual, los componentes y la lectura operativa sigan siendo claros cuando se incorporan color, densidad informativa, estados y patrones definitivos de interfaz. En este proyecto, las diez capturas cubren el mismo recorrido funcional del MVP y permiten explicar cómo la solución se presentaría ante usuarios reales.
+Los mock-ups de la web application desarrollan en alta fidelidad la lógica ya probada en wireframes. Su función no es “decorar” el sistema, sino validar que la jerarquía visual, los componentes y la lectura operativa sigan siendo claros cuando se incorporan color, densidad informativa, estados y patrones definitivos de interfaz. En este proyecto, las diez capturas cubren el mismo recorrido funcional del MVP y permiten explicar cómo la solución se presentaría ante usuarios reales. También fueron consolidadas en Figma antes de documentarse en el informe.
 </p>
 
 #### Dashboard Operativo Total Control
@@ -255,3 +288,37 @@ sequenceDiagram
 ```
 
 Elaboración propia. El flujo refleja tanto la ruta esperada como la rama de bloqueo comercial, ambas necesarias para defender la lógica del MVP transaccional.
+
+*User Flow de la coordinadora comercial con rama de corrección*
+
+```mermaid
+flowchart TD
+    A["La coordinadora abre un pedido asistido"] --> B["Identifica al cliente"]
+    B --> C["Carga condiciones y selecciona productos"]
+    C --> D{"¿El sistema muestra una alerta?"}
+    D -->|Sí| E["Revisa stock, crédito o datos del pedido"]
+    E --> F["Corrige información y vuelve a validar"]
+    F --> D
+    D -->|No| G["Envía el pedido"]
+    G --> H["Recibe confirmación trazable"]
+    H --> I["Entrega el pedido a preparación"]
+```
+
+Elaboración propia. Este user flow enfatiza el punto de corrección temprana, que es donde Nexa busca reducir retrabajo y promesas inviables.
+
+*User Flow del cliente B2B con seguimiento e incidencia*
+
+```mermaid
+flowchart TD
+    A["El cliente inicia sesión"] --> B["Explora catálogo y arma su pedido"]
+    B --> C["Confirma el envío"]
+    C --> D["Recibe confirmación del pedido"]
+    D --> E["Consulta estado y ETA"]
+    E --> F{"¿Aparece una incidencia?"}
+    F -->|No| G["Espera la entrega"]
+    F -->|Sí| H["Revisa actualización o aviso"]
+    H --> E
+    G --> I["Recibe pedido y valida cierre"]
+```
+
+Elaboración propia. Este recorrido pone el foco en la necesidad de previsibilidad del cliente y en la forma en que una incidencia debe ser visible sin obligarlo a volver al canal informal.
