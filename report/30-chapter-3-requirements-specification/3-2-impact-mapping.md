@@ -17,32 +17,32 @@ El mapa se estructura en cuatro niveles fundamentales:
 3. **Impacto:** cambio observable en la forma de actuar del actor.
 4. **Entregable (Deliverable):** componente funcional o técnico que facilita dicho cambio.
 
-**Ilustración 19**
-
 *Impact Mapping de Nexa — Alineación de metas, actores e impactos del MVP*
 
 ![Impact-mapping](../assets/images/impact-map1.png)
 
-*Nota. Elaboración propia. El mapa sintetiza la relación entre problemas observados en la investigación, actores priorizados y entregables requeridos para el MVP.*
+Elaboración propia. El mapa sintetiza la relación entre problemas observados en la investigación, actores priorizados y entregables requeridos para el MVP.
 
 <p align="justify">
 La lectura central del diagrama es que Nexa no persigue una optimización genérica de la cadena de frío, sino una reducción específica de fricción en el pedido y en su trazabilidad posterior. Esa definición es importante porque delimita alcance. El proyecto prioriza visibilidad comercial y operativa donde la investigación encontró mayor densidad de errores: captura informal del pedido, validación tardía de stock o condiciones, incertidumbre sobre la entrega y baja capacidad de cierre con evidencia trazable.
 </p>
 
-**Tabla 16**
+<p align="justify">
+En esta lectura, el mapa conserva como actores protagónicos a S1, S2 y S3 porque son ellos quienes concentran la interacción funcional más directa con el flujo del MVP. Las restricciones de validación, inventario, estados y trazabilidad permanecen dentro del dominio del problema, pero no introducen una segmentación adicional respecto del Capítulo 2.
+</p>
 
 *Lectura analítica del Impact Mapping de Nexa*
 
 | Nivel del mapa | Elemento priorizado | Sustento en Capítulo 2 | Traducción en especificación |
 | :--- | :--- | :--- | :--- |
-| Meta | Reducir la opacidad del flujo de pedido B2B refrigerado | Entrevistas y needfinding mostraron dependencia de mensajes dispersos, revisión manual y seguimiento poco visible. | Priorización de historias de catálogo, captura asistida, pedido B2B, ETA, POD e inventario. |
-| Actor | `Valeria` como frente comercial interno | Necesidad de registrar pedidos sin doble digitación y consultar condiciones del cliente antes de comprometer la operación. | Épicas EP07, EP12 y parte de EP14. |
-| Actor | `Hilda` como cliente comercial recurrente | Necesidad de consultar un catálogo confiable, repetir compras y seguir el despacho sin depender de llamadas o WhatsApp. | Épicas EP07, EP08 y EP10. |
-| Actor | `Pedro` y el cierre operativo | Necesidad de registrar eventos, documentar la entrega y sostener reclamos con evidencia verificable. | Épicas EP10, EP11 y servicios de tracking/POD. |
-| Impacto | Sustituir interacciones informales por flujos estructurados | En el análisis de entrevistas se observaron audios, listas y llamadas como soporte principal del pedido. | Historias de pedido asistido, borradores, confirmación trazable y endpoints de creación de órdenes. |
-| Impacto | Anticipar restricciones antes de prometer la entrega | Hallazgos sobre stock incierto, mora, crédito y validación demasiado tardía. | Alertas de validación, bloqueo por crédito, reserva de stock y consulta de saldo. |
-| Impacto | Dar visibilidad al estado real del despacho | Needfinding y journey maps mostraron incertidumbre sobre ETA, incidencias y recepción. | Gestión de estados, tracking, incidencias, POD y consulta de cierre. |
-| Deliverable | MVP dividido en frente público, núcleo transaccional y capa de integración | La solución necesita comunicar valor, ejecutar el flujo central y sostenerlo con contratos consistentes. | Organización del backlog en EP01-EP14 y release map por bloques funcionales. |
+| Meta | **Reducir el tiempo de coordinación manual en un 30% y los errores de despacho en un 15% al cierre del primer release del MVP.** | Entrevistas y needfinding mostraron dependencia de mensajes dispersos, revisión manual y seguimiento poco visible. | Meta SMART alineada a la eficiencia operativa y reducción de mermas. |
+| Actor | `S1` como frente comercial interno | Necesidad de registrar pedidos sin doble digitación y consultar condiciones del cliente antes de comprometer la operación. | Épicas EP07, EP12 y parte de EP14. |
+| Actor | `S2` como cliente comercial recurrente | Necesidad de consultar un catálogo confiable, repetir compras y seguir el despacho sin depender de llamadas o WhatsApp. | Épicas EP07, EP08 y EP10. |
+| Actor | `S3` como cierre operativo del pedido | Necesidad de registrar eventos, documentar la entrega y sostener reclamos con evidencia verificable. | Épicas EP10, EP11 y servicios de tracking/POD. |
+| Impacto | Sustituir interacciones informales por flujos estructurados | En el análisis de entrevistas se observaron audios, listas y llamadas como soporte principal del pedido. | **US: Como coordinador, deseo capturar pedidos estructurados para evitar el retrabajo por datos ambiguos.** |
+| Impacto | Anticipar restricciones antes de prometer la entrega | Hallazgos sobre stock incierto, mora, crédito y validación demasiado tardía. | **US: Como cliente, deseo ver el stock real y mi saldo disponible para realizar pedidos sin riesgo de rechazo.** |
+| Impacto | Dar visibilidad al estado real del despacho | Needfinding y journey maps mostraron incertidumbre sobre ETA, incidencias y recepción. | **US: Como transportista, deseo registrar el POD digitalmente para reducir reclamos por falta de evidencia.** |
+| Deliverable | MVP dividido en frente público, núcleo transaccional y capa de integración | La solución necesita comunicar valor, ejecutar el flujo central y sostenerlo con contratos consistentes. | **US: Como administrador, deseo una plataforma centralizada para monitorear el ciclo de vida completo del pedido.** |
 
 <p align="justify">
 Una consecuencia relevante de esta lectura es que el mapa también justifica exclusiones. Quedan fuera del MVP inicial funcionalidades más amplias como analítica avanzada, optimización de rutas o automatizaciones secundarias porque, aunque puedan ser valiosas en el mediano plazo, no atacan primero el punto de quiebre identificado en la investigación: la discontinuidad entre captura, validación, abastecimiento y entrega. Mantener esa frontera fortalece la coherencia del capítulo, ya que el backlog deja de parecer una acumulación de ideas y se presenta como una secuencia argumentada de decisiones.
