@@ -12,28 +12,41 @@ El modelado mantiene la misma taxonomía canónica definida en el proyecto. En e
 El EventStorming se construyó como un ejercicio de síntesis del dominio a partir de la evidencia reunida en entrevistas, needfinding y análisis competitivo. En lugar de partir de pantallas o módulos, el equipo ordenó primero los hechos que modifican el estado del pedido y luego examinó qué actores, restricciones y tensiones aparecen en esas transiciones. Este enfoque resulta útil porque evita diseñar el sistema desde una lista de funcionalidades dispersas y obliga a pensar el producto como una secuencia coherente de eventos del negocio.
 </p>
 
-Como respaldo del trabajo colaborativo, la evidencia visual del modelado presenta las tres primeras etapas (Exploración, Línea de Tiempo y Puntos de Dolor) directamente en esta sección. El detalle técnico completo (desde la definición de Comandos y Políticas hasta los Contextos Delimitados) se documenta en la sección 4.6.1, junto con las evidencias de coordinación del sprint registradas en el anexo.
-
+<p align="justify">
+Como respaldo del trabajo colaborativo, la evidencia visual del modelado se complementa con las capturas de la sesión preservadas en la sección 4.6.1 y con las evidencias de coordinación del sprint registradas en el anexo. En esta sección, el énfasis está en la lectura del flujo y no en repetir capturas ya documentadas en el bloque de arquitectura.
+</p>
 
 ### 2.4.1. Proceso de construcción del modelado
 
-*Design-Level EventStorming — Step 1: Exploration*
-![DDD Step 1](../assets/images/ddd/step-01.png)
-
-*Design-Level EventStorming — Step 2: Timeline*
-![DDD Step 2](../assets/images/ddd/step-02.png)
-
-*Design-Level EventStorming — Step 3: Pain Points*
-![DDD Step 3](../assets/images/ddd/step-03.png)
-
 *Proceso de construcción del modelado*
 
-| Etapa | Propósito | Resultado obtenido |
-| :--- | :--- | :--- |
-| **1. Delimitación del flujo** | Definir qué tramo del negocio debía representarse en el MVP | Se acotó el modelado desde la intención de compra hasta el cierre de entrega |
-| **2. Identificación de eventos** | Reconocer qué hechos cambian realmente el estado del pedido | Se consolidó la secuencia borrador → envío → validación → confirmación → preparación → despacho → entrega |
-| **3. Asociación de actores e intervención** | Vincular cada cambio de estado con los responsables y momentos críticos del flujo | Se clarificó la participación de cliente comercial, coordinación comercial, operación y reparto |
-| **4. Identificación de restricciones** | Hacer visibles las fricciones y condiciones operativas que impiden un flujo continuo | Se incorporaron validación comercial tardía, stock incierto, FEFO manual, visibilidad fragmentada y cierre débil de entrega |
+<table border="1" cellspacing="0" cellpadding="6" align="center">
+  <tr>
+    <th>Etapa</th>
+    <th>Propósito</th>
+    <th>Resultado obtenido</th>
+  </tr>
+  <tr>
+    <td><strong>1. Delimitación del flujo</strong></td>
+    <td>Definir qué tramo del negocio debía representarse en el MVP</td>
+    <td>Se acotó el modelado desde la intención de compra hasta el cierre de entrega</td>
+  </tr>
+  <tr>
+    <td><strong>2. Identificación de eventos</strong></td>
+    <td>Reconocer qué hechos cambian realmente el estado del pedido</td>
+    <td>Se consolidó la secuencia borrador → envío → validación → confirmación → preparación → despacho → entrega</td>
+  </tr>
+  <tr>
+    <td><strong>3. Asociación de actores e intervención</strong></td>
+    <td>Vincular cada cambio de estado con los responsables y momentos críticos del flujo</td>
+    <td>Se clarificó la participación de cliente comercial, coordinación comercial, operación y reparto</td>
+  </tr>
+  <tr>
+    <td><strong>4. Identificación de restricciones</strong></td>
+    <td>Hacer visibles las fricciones y condiciones operativas que impiden un flujo continuo</td>
+    <td>Se incorporaron validación comercial tardía, stock incierto, FEFO manual, visibilidad fragmentada y cierre débil de entrega</td>
+  </tr>
+</table>
 
 La tabla resume el proceso seguido para convertir evidencia cualitativa en un modelo de dominio entendible y útil para el MVP. Elaboración propia.
 
