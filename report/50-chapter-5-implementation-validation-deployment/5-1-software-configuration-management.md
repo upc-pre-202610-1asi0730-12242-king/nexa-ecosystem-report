@@ -12,8 +12,6 @@ La gestión de la configuración del software en Nexa se documenta a partir de l
 Para estandarizar el trabajo colaborativo del equipo y asegurar trazabilidad entre investigación, diseño, implementación y documentación, se configuró un entorno de trabajo compuesto por herramientas efectivamente observables en los repositorios revisados y por plataformas de coordinación ya utilizadas durante el Sprint 1. La siguiente tabla resume el entorno base con el que se produjo el incremento AV1.
 </p>
 
-**Tabla 35**
-
 *Configuración observable del entorno de desarrollo utilizada en AV1*
 
 | Componente del entorno | Herramienta o tecnología | Uso dentro del proyecto | Evidencia verificable en AV1 |
@@ -38,8 +36,6 @@ Adicionalmente, el corte AV1 deja preparada una capacidad técnica futura que to
 <p align="justify">
 El control de versiones se organiza bajo una convención GitFlow adaptada al alcance real de AV1. La revisión de los repositorios activos permite distinguir una estructura mínima pero consistente de ramas y responsabilidades.
 </p>
-
-**Tabla 36**
 
 *Repositorios activos y configuración de versionado utilizada en AV1*
 
@@ -107,8 +103,6 @@ Aunque el API no forma parte del despliegue activo de AV1, el capítulo 4 y el b
 <p align="justify">
 La configuración de despliegue de AV1 debe leerse en dos niveles: <strong>despliegue activo</strong> para el MVP público y <strong>despliegue proyectado</strong> para la capa transaccional aún no publicada. Esta distinción evita sobredeclarar capacidades no demostradas.
 </p>
-
-**Tabla 37**
 
 *Configuración de despliegue observable en el corte AV1*
 

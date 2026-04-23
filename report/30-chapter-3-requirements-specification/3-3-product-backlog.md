@@ -8,8 +8,6 @@ El Product Backlog de Nexa organiza el universo de requerimientos en una secuenc
 La priorización no responde únicamente a facilidad de implementación. Se construye sobre cuatro criterios combinados: visibilidad temprana del producto para validación comercial, reducción inmediata de fricción en el flujo de pedido, habilitación progresiva de reglas de negocio críticas y preparación de contratos técnicos que sostengan la evolución del MVP. Así, el backlog mantiene continuidad con el Impact Mapping y evita que historias de soporte o conveniencia se ubiquen por encima del núcleo funcional identificado en el trabajo de campo.
 </p>
 
-**Tabla 26**
-
 *Criterios de priorización del Product Backlog*
 
 | Criterio | Qué evalúa | Aplicación en Nexa |
@@ -20,8 +18,6 @@ La priorización no responde únicamente a facilidad de implementación. Se cons
 | Coherencia técnica | Qué tanto conviene consolidar contratos y reglas compartidas antes de expandir interfaces | Las historias de API se ubican en una fase técnica específica, pero derivan directamente del flujo ya priorizado. |
 
 ### 3.3.1. Detalle del Product Backlog (Full Backlog)
-
-**Tabla 27**
 
 *Product Backlog — Ordenamiento, Valor y Estimación*
 
@@ -94,8 +90,6 @@ La priorización no responde únicamente a facilidad de implementación. Se cons
 
 ### 3.3.2. Resumen de Estimación y Release Map
 
-**Tabla 28**
-
 *Resumen de Estimación por Épica y Roadmap de Lanzamiento*
 
 | Épica | Historias Incluidas | SP Total | Sprint Sugerido | Prioridad Negocio |
@@ -115,8 +109,6 @@ La secuencia del roadmap sigue una lógica deliberada. El <strong>Sprint 1</stro
 <p align="justify">
 Aunque varias historias de inventario y control recaen sobre supervisión operativa, ese frente no se modela como un segmento protagónico independiente dentro del backlog. Se trata, más bien, de un soporte transversal que habilita a Valeria, Hilda y Pedro a operar con reglas confiables. Mantener esa distinción mejora la coherencia del capítulo y evita que la priorización se disperse en actores adicionales sin justificación narrativa o metodológica.
 </p>
-
-**Tabla 29**
 
 *Relación entre incrementos, actor dominante y riesgo mitigado*
 
@@ -144,4 +136,4 @@ La evidencia principal de esta subsección es el enlace público al backlog carg
 
 ---
 
-*Nota.* La elaboración del backlog prioriza la validación comercial y el flujo principal del pedido por encima de funcionalidades de soporte, manteniendo consistencia con el Impact Mapping y con la evidencia levantada en el Capítulo 2. Elaboración propia.
+La elaboración del backlog prioriza la validación comercial y el flujo principal del pedido por encima de funcionalidades de soporte, manteniendo consistencia con el Impact Mapping y con la evidencia levantada en el Capítulo 2. Elaboración propia.

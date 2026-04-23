@@ -6,9 +6,10 @@ El Capítulo IV representa la transición técnica desde la fase de descubrimien
 
 ---
 
-## 4.1. Style Guidelines
-
-> *"Estableciendo el lenguaje visual para el control absoluto de la cadena de frío."*
+<div id="style-guidelines-header" style="padding: 20px; background-color: #f8faff; border-left: 5px solid #2554df; margin-bottom: 25px;">
+  <h2 style="margin: 0; color: #2554df;">4.1. Style Guidelines</h2>
+  <p style="margin: 5px 0 0 0; color: #475569; font-style: italic;">"Estableciendo el lenguaje visual para el control absoluto de la cadena de frío."</p>
+</div>
 
 ## 4.1.1. General Style Guidelines (Design Ethos)
 
@@ -26,7 +27,7 @@ Nexa se rige por el principio de <strong>"Calm-Tech"</strong>: la interfaz debe 
 
 ## 4.1.2. Web Style Guidelines
 
-### 01. Colorimetry: El Sistema HSL Dinámico
+#### 01. Colorimetry: El Sistema HSL Dinámico
 
 <p align="justify">
 La paleta se fundamenta en un sistema <strong>HSL (Hue, Saturation, Lightness)</strong> que permite una gestión dinámica del contraste y la adaptabilidad ante diversas condiciones lumínicas en centros logísticos.
@@ -77,12 +78,15 @@ Se ha estandarizado el uso de <strong>Inter</strong> como familia tipográfica u
 
 Definición de jerarquías para Display, Headings, Body y Mono. Elaboración propia.
 
-> **Matriz Tipográfica Técnica**
->
-> - **Hero Titles:** <code>clamp(46px, 5.8vw, 84px)</code> | Letter-spacing: -0.065em (Compresión para impacto visual).
-> - **Data Subtitles:** <code>18px - 21px</code> | Weight: 600 (Énfasis estructural).
-> - **Operational Body:** <code>16px</code> | Line-height: 1.68 (Optimizado para lectura prolongada).
-> - **Monospace Data:** <code>12px - 14px</code> | **Fira Code** (Para lotes, SKUs y telemetría).
+<div style="background-color: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-top: 15px;">
+  <p style="margin: 0; font-size: 14px;"><strong>Matriz Tipográfica Técnica:</strong></p>
+  <ul style="font-size: 13px; margin-top: 8px;">
+    <li><strong>Hero Titles:</strong> <code>clamp(46px, 5.8vw, 84px)</code> | Letter-spacing: -0.065em (Compresión para impacto visual).</li>
+    <li><strong>Data Subtitles:</strong> <code>18px - 21px</code> | Weight: 600 (Énfasis estructural).</li>
+    <li><strong>Operational Body:</strong> <code>16px</code> | Line-height: 1.68 (Optimizado para lectura prolongada).</li>
+    <li><strong>Monospace Data:</strong> <code>12px - 14px</code> | <strong>Fira Code</strong> (Para lotes, SKUs y telemetría).</li>
+  </ul>
+</div>
 
 #### 03. Iconography: Linealidad y Fluidez
 
