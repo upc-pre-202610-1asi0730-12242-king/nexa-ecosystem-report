@@ -16,8 +16,6 @@ El Sprint 1 concentra la entrega AV1 y constituye la base del incremento visible
 La planificación del Sprint 1 se orientó a producir un incremento AV1 que pudiera exponerse de forma pública sin sacrificar profundidad técnica. El objetivo no fue desplegar todavía el portal transaccional completo, sino articular una primera capa visible del producto respaldada por investigación, diseño y arquitectura. La captura de Jira muestra un sprint cargado con trabajo concurrente en varios frentes, lo cual confirma una planificación por capas y no por tareas aisladas.
 </p>
 
-**Tabla 42**
-
 *Resumen formal del Sprint Planning 1*
 
 | Campo | Registro |
@@ -43,8 +41,6 @@ La tabla anterior debe completarse con los datos reales de la sesión de planifi
 La ejecución del sprint evidencia una distribución funcional del liderazgo. En lugar de concentrar toda la iteración en un único perfil, el equipo repartió la responsabilidad entre dominio, diseño, arquitectura, documentación y construcción visible del sitio. Esta organización es consistente con el Student Outcome ABET 5 y explica por qué el incremento AV1 combina trabajo público demostrable con profundidad ingenieril.
 </p>
 
-**Tabla 36**
-
 *Distribución de liderazgos y roles funcionales en el Sprint 1*
 
 | Aspecto del sprint | Liderazgo principal | Colaboradores clave | Resultado visible en AV1 |
@@ -65,8 +61,6 @@ La forma más clara de leer el Sprint Backlog 1 no es como una lista plana de ti
 Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Backlog documentado en la sección 3.3</strong>. Las capturas Jira verifican que la priorización descrita en el informe sí fue llevada a la herramienta de gestión: primero se ordenaron historias públicas y de validación comercial, luego se preservaron historias de arquitectura, documentación y preparación técnica futura. Por ello, la evidencia visual siguiente cumple una doble función: <strong>demuestra selección de trabajo para el sprint</strong> y <strong>verifica consistencia entre backlog académico y backlog operativo en Jira</strong>.
 </p>
 
-**Tabla 37**
-
 *Agrupación de frentes de trabajo y issues en el Sprint 1*
 
 | Frente de trabajo | Issues visibles en las capturas Jira | Resultado esperado dentro del sprint |
@@ -77,69 +71,53 @@ Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Bac
 | Arquitectura y base técnica futura | NX-94, NX-106, NX-113, NX-116, NX-122, NX-128, NX-133, NX-138 | Dejar preparada la evolución hacia dashboard B2B, DDD, autenticación, servicios y documentación técnica |
 | Trazabilidad académica y despliegue | NX-142, NX-148, NX-153, NX-158, NX-161, NX-164, NX-167 | Alinear user stories, priorización, Student Outcome, estadísticas, publicación del sitio y compilación del informe |
 
-**Ilustración 63**
-
 *Vista general del Sprint 1 cargado en Jira*
 
 ![Vista general del Sprint 1](../assets/images/jira/jira-sprint-0-overview.png)
 
-*Nota.* La vista general del tablero permite verificar el volumen de trabajo visible del incremento AV1 y su organización inicial antes de revisar los bloques específicos. Elaboración propia.
-
-**Ilustración 64**
+La vista general del tablero permite verificar el volumen de trabajo visible del incremento AV1 y su organización inicial antes de revisar los bloques específicos. Elaboración propia.
 
 *Sprint 1 — bloque A de trabajo planificado en Jira*
 
 ![Sprint 1 bloque A](../assets/images/jira/jira-sprint-1-block-a.png)
 
-*Nota.* El primer bloque del Sprint 1 muestra tareas de lineamientos visuales, arquitectura de información, wireframes, accesibilidad, scaffolding del sitio y componentes iniciales de frontend y backend. Elaboración propia.
-
-**Ilustración 65**
+El primer bloque del Sprint 1 muestra tareas de lineamientos visuales, arquitectura de información, wireframes, accesibilidad, scaffolding del sitio y componentes iniciales de frontend y backend. Elaboración propia.
 
 *Sprint 1 — bloque B de trabajo planificado en Jira*
 
 ![Sprint 1 bloque B](../assets/images/jira/jira-sprint-1-block-b.png)
 
-*Nota.* El segundo bloque evidencia continuidad entre especificación de user stories, priorización del MVP, despliegue del website y cierre documental de la entrega. Elaboración propia.
-
-**Ilustración 66**
+El segundo bloque evidencia continuidad entre especificación de user stories, priorización del MVP, despliegue del website y cierre documental de la entrega. Elaboración propia.
 
 *Sprint 1 — bloque C de historias públicas dentro del sprint*
 
 ![Sprint 1 bloque C](../assets/images/jira/jira-sprint-1-block-c.png)
 
-*Nota.* Este bloque agrupa historias del sitio público para Home, Platform, Solutions, Company y FAQ, todas asignadas al Sprint 1. Su presencia confirma que la experiencia pública forma parte directa del incremento AV1. Elaboración propia.
-
-**Ilustración 67**
+Este bloque agrupa historias del sitio público para Home, Platform, Solutions, Company y FAQ, todas asignadas al Sprint 1. Su presencia confirma que la experiencia pública forma parte directa del incremento AV1. Elaboración propia.
 
 *Verificación del Product Backlog en Jira — bloque A*
 
 ![Product Backlog bloque A](../assets/images/jira/jira-backlog-block-a.png)
 
-*Nota.* Este primer bloque del backlog en Jira demuestra que las historias priorizadas para investigación, diseño y composición del MVP sí fueron registradas en la herramienta y no solo descritas en el informe. Elaboración propia.
-
-**Ilustración 68**
+Este primer bloque del backlog en Jira demuestra que las historias priorizadas para investigación, diseño y composición del MVP sí fueron registradas en la herramienta y no solo descritas en el informe. Elaboración propia.
 
 *Verificación del Product Backlog en Jira — bloque B*
 
 ![Product Backlog bloque B](../assets/images/jira/jira-backlog-block-b.png)
 
-*Nota.* El segundo bloque confirma continuidad entre historias del sitio público, backlog técnico y evolución prevista hacia la web application autenticada. Elaboración propia.
-
-**Ilustración 69**
+El segundo bloque confirma continuidad entre historias del sitio público, backlog técnico y evolución prevista hacia la web application autenticada. Elaboración propia.
 
 *Verificación del Product Backlog en Jira — bloque C*
 
 ![Product Backlog bloque C](../assets/images/jira/jira-backlog-block-c.png)
 
-*Nota.* El tercer bloque permite contrastar la lógica de priorización del capítulo 3 con la evidencia viva de Jira, incluyendo historias orientadas a despliegue, trazabilidad académica y preparación de servicios futuros. Elaboración propia.
+El tercer bloque permite contrastar la lógica de priorización del capítulo 3 con la evidencia viva de Jira, incluyendo historias orientadas a despliegue, trazabilidad académica y preparación de servicios futuros. Elaboración propia.
 
 #### 5.2.1.4. Development Evidence for Sprint Review.
 
 <p align="justify">
 La evidencia de desarrollo del Sprint 1 se distribuye en cuatro capas verificables. La primera es el repositorio <strong>`nexa-report`</strong>, donde quedaron formalizados el problema, la especificación del backlog, la arquitectura y la narrativa académica del producto. La segunda es el repositorio <strong>`nexa-website`</strong>, que concentra la implementación real del sitio público. La tercera son los artefactos visuales preservados en el capítulo 4, donde se documentan lineamientos de estilo, arquitectura de información, wireframes y mockups. La cuarta es el tablero Jira, que da trazabilidad entre trabajo planificado, frentes de ejecución y alcance visible.
 </p>
-
-**Tabla 39**
 
 *Evidencias de desarrollo acumuladas para la Sprint Review 1*
 
@@ -160,8 +138,6 @@ En conjunto, esta evidencia muestra que AV1 sí produjo desarrollo real: no solo
 <p align="justify">
 La ejecución visible del sprint ya se materializa en una landing page pública operativa con navegación multipágina, selector bilingüe, CTA de demostración, páginas por segmento y un relato claro sobre inventario, pedidos, temperatura y entrega. Esta salida confirma que el equipo sí llevó una parte del producto hasta una instancia de exposición real, lo que permite validación comercial y revisión técnica de consistencia entre lo prometido y lo implementado.
 </p>
-
-**Tabla 40**
 
 *Ejecución observable del incremento Sprint 1*
 
@@ -187,8 +163,6 @@ Al mismo tiempo, la ejecución debe leerse con honestidad de alcance: el portal 
 La documentación de servicios en AV1 existe principalmente como <strong>evidencia de diseño y preparación técnica</strong>. El backlog ya incorpora historias de API y documentación (`NX-138`, además de las historias técnicas del bloque US58-US64), mientras que el capítulo 4 conserva la arquitectura DDD/C4, el diseño orientado a objetos y la base de datos que servirán de soporte a los futuros endpoints. Esta base es válida como sustento de ingeniería, porque muestra contratos previstos, separación de capas y reglas de negocio modeladas antes de implementar controladores productivos.
 </p>
 
-**Tabla 41**
-
 *Evidencia disponible de documentación de servicios en AV1*
 
 | Tipo de evidencia | Fuente | Alcance defendible |
@@ -209,8 +183,6 @@ Sin embargo, la revisión del workspace y de los repositorios remotos declara un
 <p align="justify">
 La evidencia de despliegue de AV1 sí existe, pero está concentrada en el frente público. La siguiente tabla separa lo que ya es demostrable de lo que todavía permanece en fase preparatoria.
 </p>
-
-**Tabla 38**
 
 *Estado de despliegue y evidencia verificable de artefactos en AV1*
 
@@ -235,8 +207,6 @@ El Sprint 1 revela un patrón de colaboración técnicamente sano: investigació
 <p align="justify">
 La principal conclusión colaborativa del sprint es que Nexa no se construyó como un esfuerzo fragmentado entre “los que escriben” y “los que programan”. El incremento visible solo fue posible porque Jira, el reporte, el diseño y la landing page evolucionaron de manera sincronizada. Aun cuando persista backlog remanente para portal B2B, autenticación, inventario transaccional y servicios, el equipo deja en AV1 una base metodológica sólida, trazable y escalable para la siguiente iteración.
 </p>
-
-**Tabla 43**
 
 *Evidencias de colaboración que deben respaldar esta subsección*
 

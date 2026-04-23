@@ -10,8 +10,6 @@ La arquitectura de información de Nexa se define a partir de la estructura real
 El sitio de Nexa presenta una arquitectura predominantemente jerárquica con apoyo matricial. El punto de entrada es la página principal, desde la cual el usuario puede desplazarse hacia cuatro áreas troncales: <strong>Platform</strong>, <strong>Solutions</strong>, <strong>Company</strong> y <strong>FAQ</strong>. Dentro de <strong>Solutions</strong> existe un segundo nivel de profundidad que segmenta el contenido por tipo de operador: <strong>Importers & Wholesalers</strong>, <strong>Distributors</strong> y <strong>Cold Storage Operators</strong>. Esta decisión permite que el usuario no tenga que interpretar una lista abstracta de funcionalidades, sino entrar por el nodo operativo que más se parece a su realidad.
 </p>
 
-**Ilustración 27**
-
 *Sitemap del sitio público Nexa*
 
 ```mermaid
@@ -34,8 +32,6 @@ graph TD
 <p align="justify">
 La profundidad máxima observable es de <strong>dos niveles</strong> desde la página principal. Por ejemplo, un usuario puede seguir la ruta <code>Home &gt; Solutions &gt; Distributors</code> sin pasar por capas intermedias innecesarias. Esta baja profundidad favorece rapidez de acceso, simplifica la orientación del usuario y reduce la necesidad de estructuras auxiliares complejas como navegación facetada o árboles extensos de categorías.
 </p>
-
-**Tabla 30**
 
 *Estructura organizacional observable del sitio público*
 

@@ -14,8 +14,6 @@ La especificación no parte de una colección arbitraria de funcionalidades. Cad
 La lógica de actores se mantiene estable respecto del capítulo anterior. Los arquetipos canónicos continúan siendo Valeria, Hilda y Pedro; mientras que la supervisión operativa conserva un rol de <em>stakeholder secundario</em> que influye sobre reglas de negocio, control de stock, lotes y cierre, pero no reemplaza a los tres protagonistas funcionales del MVP. Esta precisión evita duplicidades de segmentación y refuerza la continuidad narrativa del informe.
 </p>
 
-**Tabla 23**
-
 *Trazabilidad de épicas con actores, evidencia y propósito funcional*
 
 <table>
@@ -66,8 +64,6 @@ La lógica de actores se mantiene estable respecto del capítulo anterior. Los a
 </tr>
 </tbody>
 </table>
-
-**Tabla 24**
 
 *User Stories — Épicas, historias, criterios de aceptación y estimación*
 
@@ -1635,8 +1631,8 @@ entonces el API emite un nuevo token de acceso sin requerir que el usuario ingre
 </tbody>
 </table>
 
-*Nota. Detalle de requerimientos funcionales estructurados bajo el estándar Gherkin para validación técnica. Elaboración propia.*
+Detalle de requerimientos funcionales estructurados bajo el estándar Gherkin para validación técnica. Elaboración propia.
 
 ---
 
-*Nota.* La tabla integra el sitio público, el producto transaccional y las historias técnicas del API bajo una taxonomía coherente con la investigación de campo y el landing page. La estimación en puntos de historia (SP) sigue la escala Fibonacci (1, 2, 3, 5, 8, 13). Elaboración propia.
+La tabla integra el sitio público, el producto transaccional y las historias técnicas del API bajo una taxonomía coherente con la investigación de campo y el landing page. La estimación en puntos de historia (SP) sigue la escala Fibonacci (1, 2, 3, 5, 8, 13). Elaboración propia.

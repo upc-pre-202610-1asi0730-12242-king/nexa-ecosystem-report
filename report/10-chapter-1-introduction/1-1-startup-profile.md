@@ -1,4 +1,4 @@
-# Capítulo I: Introducción
+# Capítulo I: Introducción y Perfil de la Solución
 
 ## 1.1. Startup Profile
 <p align = "justify">

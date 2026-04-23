@@ -18,8 +18,6 @@ Los wireframes de la aplicación web fueron elaborados para ordenar la estructur
 Las diez vistas siguientes cubren el recorrido principal del MVP transaccional: control general, gestión de órdenes, captura asistida, inventario, analítica FEFO, despacho, seguimiento, detalle de pedido y cierre con evidencia. Cada wireframe modela primero la lógica de trabajo y luego la visualización final.
 </p>
 
-**Tabla 31**
-
 *Cobertura funcional de wireframes de la web application*
 
 | Wireframe | Módulo | Decisión principal que habilita |
@@ -121,8 +119,6 @@ El detalle del pedido organiza la historia completa de una orden en una sola sup
 El wireflow sintetiza cómo se conectan entre sí las superficies principales de la aplicación. A diferencia del wireframe, que se enfoca en la estructura interna de una vista, el wireflow muestra continuidad entre acceso, captura, validación, seguimiento y cierre. En Nexa, esta lectura es indispensable porque el valor del sistema depende precisamente de no romper el flujo entre áreas y estados.
 </p>
 
-**Ilustración 45**
-
 *Wireflow del pedido Nexa desde acceso hasta cierre operativo*
 
 ```mermaid
@@ -140,7 +136,7 @@ graph LR
     J --> K[POD y cierre]
 ```
 
-*Nota. Elaboración propia. El flujo concentra la continuidad entre captura, validación, seguimiento y cierre, evitando que el pedido quede fragmentado en herramientas paralelas.*
+Elaboración propia. El flujo concentra la continuidad entre captura, validación, seguimiento y cierre, evitando que el pedido quede fragmentado en herramientas paralelas.
 
 ### 4.4.3. Web Applications Mock-ups.
 
@@ -234,8 +230,6 @@ El detalle de trazabilidad en alta fidelidad reconstruye el historial del pedido
 El user flow complementa wireframes y mock-ups porque modela la interacción secuencial entre usuario y sistema. En Nexa, el flujo crítico es el reabastecimiento B2B con validaciones de negocio, ya que ahí se expresa con más claridad la promesa central del producto: hacer visible lo que hoy se valida tarde o de forma dispersa.
 </p>
 
-**Ilustración 46**
-
 *User Flow del reabastecimiento B2B con validación de negocio*
 
 ```mermaid
@@ -260,4 +254,4 @@ sequenceDiagram
     end
 ```
 
-*Nota. Elaboración propia. El flujo refleja tanto la ruta esperada como la rama de bloqueo comercial, ambas necesarias para defender la lógica del MVP transaccional.*
+Elaboración propia. El flujo refleja tanto la ruta esperada como la rama de bloqueo comercial, ambas necesarias para defender la lógica del MVP transaccional.

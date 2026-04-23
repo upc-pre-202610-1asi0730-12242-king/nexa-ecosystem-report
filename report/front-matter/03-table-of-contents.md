@@ -4,8 +4,6 @@
   <tr><td><a href="02-version-history.md">Registro de Versiones del Informe</a></td></tr>
   <tr><td><a href="03-project-report-collaboration-insights.md">Project Report Collaboration Insights</a></td></tr>
   <tr><td>Contenido</td></tr>
-  <tr><td><a href="04-list-of-tables-and-figures.md">Lista de Tablas</a></td></tr>
-  <tr><td><a href="04-list-of-tables-and-figures.md">Lista de Ilustraciones</a></td></tr>
   <tr><td><a href="05-student-outcome.md">Student Outcome</a></td></tr>
 
   <tr><td><b><a href="../10-chapter-1-introduction/1-1-startup-profile.md">Capítulo I: Introducción y Perfil de la Solución</a></b></td></tr>

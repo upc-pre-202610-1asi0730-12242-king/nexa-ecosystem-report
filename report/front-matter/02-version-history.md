@@ -1,6 +1,6 @@
 ## Registro de Versiones del Informe
 
-**Tabla 1** *Registro de versiones del informe*
+*Registro de versiones del informe*
 
 | Versión | Fecha | Autor | Descripción de modificación |
 |---------|-------|-------|-----------------------------|
@@ -47,4 +47,4 @@
 | TB1 V1.6.5 | 22/04/2026 | Yucra Sandoval, Diego Sebastian | Corrección quirúrgica del Capítulo II y III: ajuste del enfoque estratégico en 2.1.2, limpieza de historias con lenguaje demasiado técnico, alineación del actor `Developer` en technical stories y corrección del total real del backlog a 238 story points |
 | TB1 V1.6.6 | 22/04/2026 | Yucra Sandoval, Diego Sebastian | Cierre estructural de front matter y coherencia técnica: creación de `Project Report Collaboration Insights`, actualización de la tabla de contenido, refinamiento del Student Outcome según rúbricas ABET/Logro y corrección de consistencia en DDD, OOD y Database Design |
 
-*Nota.* La tabla documenta los cambios significativos y las contribuciones individuales realizadas al informe a lo largo del ciclo del proyecto, asegurando la trazabilidad de su evolución. *Elaboración propia.*
+La tabla documenta los cambios significativos y las contribuciones individuales realizadas al informe a lo largo del ciclo del proyecto, asegurando la trazabilidad de su evolución. Elaboración propia.

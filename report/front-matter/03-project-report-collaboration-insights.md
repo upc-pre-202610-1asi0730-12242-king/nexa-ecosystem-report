@@ -12,8 +12,6 @@ El repositorio del informe del proyecto Nexa se gestiona en GitHub bajo un enfoq
 Durante AV1, la elaboración del informe se desarrolló en paralelo con la investigación, el diseño UX/UI, la arquitectura y la implementación visible de la landing page. Por ello, la colaboración del equipo no se limita a la redacción de capítulos: también incluye la integración de capturas, enlaces de evidencia, organización del backlog académico, revisión de consistencia entre capítulos y actualización de activos visuales dentro del repositorio.
 </p>
 
-**Tabla 1A**
-
 *Síntesis de colaboración del equipo en la elaboración del informe durante AV1*
 
 | Frente de colaboración en el informe | Evidencia principal | Ubicación complementaria |
@@ -31,4 +29,4 @@ La lectura correcta de esta sección es complementaria. El <strong>registro de v
 Para fortalecer esta sección antes del cierre final de AV1, todavía conviene incorporar capturas reales de analíticos de colaboración en GitHub y al menos una evidencia de revisión grupal con fecha visible, de modo que la narrativa quede respaldada también por prueba visual directa.
 </p>
 
-*Nota.* Esta sección resume la colaboración del equipo en la elaboración del informe y enlaza las evidencias documentales que la respaldan dentro del propio repositorio. *Elaboración propia.*
+Esta sección resume la colaboración del equipo en la elaboración del informe y enlaza las evidencias documentales que la respaldan dentro del propio repositorio. Elaboración propia.
