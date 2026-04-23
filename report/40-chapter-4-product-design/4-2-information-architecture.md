@@ -94,17 +94,17 @@ Es importante señalar dos límites técnicos con honestidad. Primero, el sitio 
 | Cold Storage | `/nexa-website/pages/solutions/cold-storage.html` | `Nexa Solutions — Cold Storage Operators` | `Nexa Solutions — Cold Storage Operators for cheese, charcuterie...` | `Nexa` | `Nexa Solutions — Cold Storage Operators` | `Monitor cheese rooms, dairy chambers...` | No implementado |
 
 <p align="justify">
-Además de estas metaetiquetas, todas las páginas incluyen `<meta name="viewport">`, un `<h1>` principal visible y estructura semántica consistente basada en `nav`, `header`, `section`, `aside`, `main` y `footer`. Esto fortalece la legibilidad del contenido para buscadores y usuarios, y refuerza la relación entre SEO y arquitectura de información.
+Además de estas metaetiquetas, todas las páginas incluyen la etiqueta viewport, un encabezado principal visible y una estructura semántica consistente basada en elementos como nav, header, section, aside, main y footer. Esto mejora la legibilidad del contenido tanto para buscadores como para usuarios.
 </p>
 
 ### 4.2.4. Searching Systems
 
 <p align="justify">
-Tras revisar la implementación real del sitio, se concluye que Nexa <strong>no incorpora un motor de búsqueda tradicional</strong>. No existe una barra de búsqueda global, no hay formularios con `<input type="search">`, no se observaron filtros dinámicos ni páginas de resultados indexadas. Por tanto, esta subsección no debe describir un sistema de búsqueda inexistente.
+Nexa <strong>no incorpora un motor de búsqueda tradicional</strong>. En el sitio no existe una barra de búsqueda global, tampoco formularios de búsqueda, filtros dinámicos ni páginas de resultados. Por ello, en esta etapa no corresponde describir un search engine como parte del producto público.
 </p>
 
 <p align="justify">
-En lugar de ello, el sitio resuelve la necesidad de descubrimiento mediante mecanismos alternativos adecuados a su tamaño y complejidad. Primero, el volumen de contenido es reducido y la profundidad del sitio es baja; esto disminuye la necesidad de una búsqueda formal. Segundo, la sección <strong>Solutions</strong> y el dropdown del navbar permiten llegar rápidamente al contenido segmentado. Tercero, varias páginas incluyen un acceso destacado al <strong>FAQ</strong> mediante el bloque “Buscar en el FAQ”; aunque visualmente usa el verbo “buscar”, técnicamente se trata de un <strong>atajo de navegación hacia la página FAQ</strong>, no de un motor de búsqueda.
+La necesidad de descubrimiento se resuelve con navegación directa. El volumen de páginas es reducido, la profundidad del sitio es baja y el dropdown de <strong>Solutions</strong> ya permite llegar rápido al contenido segmentado. Además, varias vistas muestran el acceso “Buscar en el FAQ”; sin embargo, ese recurso funciona como enlace hacia la página de preguntas frecuentes, no como búsqueda interna real.
 </p>
 
 | Mecanismo de descubrimiento | Implementación observable | Alcance real |
@@ -115,7 +115,7 @@ En lugar de ello, el sitio resuelve la necesidad de descubrimiento mediante meca
 | Atajos de soporte | `support-card` y `support-search` | Acceso rápido a ayuda y contacto |
 
 <p align="justify">
-En síntesis, el sistema de búsqueda de Nexa en esta etapa debe describirse como un <strong>modelo de descubrimiento guiado por navegación</strong>, no como un motor de búsqueda autónomo. Esta formulación es más rigurosa y más fiel al código realmente implementado.
+En consecuencia, el searching system de Nexa en este corte debe entenderse como un mecanismo de descubrimiento apoyado en navegación y accesos directos, no como un buscador autónomo.
 </p>
 
 ### 4.2.5. Navigation Systems
