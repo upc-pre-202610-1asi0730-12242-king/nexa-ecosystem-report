@@ -10,12 +10,12 @@
 
 <br>
 
-### Ingeniería de Software
+## Ingeniería de Software
 
 <br>
 <br>
 
-**Período:** 2026-01  
+**Período:** 2026-10
 **Curso:** Aplicaciones Web (NRC 12242)  
 **Docente:** Velásquez Núñez, Ángel Augusto
 
@@ -24,14 +24,14 @@
 
 ---
 
-# INFORME DE TRABAJO FINAL
+# INFORME DE AVANCE 1 (AV1)
 
 ---
 
 <br>
 <br>
 
-### Relación de integrantes
+## Relación de integrantes
 
 <br>
 
