@@ -10,7 +10,19 @@ En esta sección el foco está en el vínculo entre workshop y arquitectura. La 
 
 ### 4.6.1. Design-Level EventStorming
 
-El Design-Level EventStorming permitió pasar de un flujo general del pedido a una lectura más ordenada del dominio. Las primeras tres etapas (Exploration, Timeline y Pain Points) se documentan en la sección 2.4 como parte del entendimiento del negocio. Las capturas siguientes corresponden al desarrollo técnico posterior usado por el equipo. Como respaldo adicional se mantiene el board de Miro: [Design-Level EventStorming en Miro](https://miro.com/welcomeonboard/OC95SW9ySW9zY3Q5QURlWWFpTlN4NmVuY2xHWVRYdTBkd3hZR2FHcEZ1cDRBYm5SY1NYMkpvNFdYSmc1T1hLZ2lsQko3Z2RKUDdlbWF6ZmRRU21EalNzSEZqc2NKT2l6MTc2TXBFbjFUTTM2L3phOTVDWktNeTVnY1hVZGVEZjZBd044SHFHaVlWYWk0d3NxeHNmeG9BPT0hdjE=?share_link_id=419986690457).
+El Design-Level EventStorming permitió pasar de un flujo general del pedido a una lectura más ordenada del dominio. Las capturas siguientes corresponden a la sesión de trabajo usada por el equipo. Como respaldo adicional se mantiene el board de Miro: [Design-Level EventStorming en Miro](https://miro.com/welcomeonboard/OC95SW9ySW9zY3Q5QURlWWFpTlN4NmVuY2xHWVRYdTBkd3hZR2FHcEZ1cDRBYm5SY1NYMkpvNFdYSmc1T1hLZ2lsQko3Z2RKUDdlbWF6ZmRRU21EalNzSEZqc2NKT2l6MTc2TXBFbjFUTTM2L3phOTVDWktNeTVnY1hVZGVEZjZBd044SHFHaVlWYWk0d3NxeHNmeG9BPT0hdjE=?share_link_id=419986690457).
+
+*Design-Level EventStorming — Step 1: Exploration*
+![DDD Step 1](../assets/images/ddd/step-01.png)
+La primera vista recogió eventos del dominio sin imponer todavía un orden rígido. Sirvió para abrir la conversación alrededor de pedidos, validaciones, inventario, pagos, alertas y entrega.
+
+*Design-Level EventStorming — Step 2: Timeline*
+![DDD Step 2](../assets/images/ddd/step-02.png)
+Después, esos eventos se acomodaron en secuencia. Esto ayudó a distinguir qué ocurre antes de confirmar un pedido, qué depende de stock y qué ya pertenece al tramo de despacho o cierre.
+
+*Design-Level EventStorming — Step 3: Pain Points*
+![DDD Step 3](../assets/images/ddd/step-03.png)
+Sobre la línea temporal se marcaron los puntos de fricción. En esta etapa se hizo visible dónde se traban más seguido la validación del cliente, la confirmación del pedido y la coordinación posterior.
 
 *Design-Level EventStorming — Step 4: Pivotal Points*
 ![DDD Step 4](../assets/images/ddd/step-04.png)
