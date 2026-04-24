@@ -7,10 +7,8 @@ La landing page de Nexa se trabajó primero en <strong>Figma</strong> mediante w
 </p>
 
 <p align="justify">
-En esta fase, el equipo se concentró en tres preguntas simples: qué debe entender un visitante en los primeros segundos, cómo se le guía hacia la sección que más le importa y dónde conviene invitarlo a solicitar una demo. Por eso los wireframes se usaron como una herramienta de estructura y no como una versión incompleta del diseño final. Esta revisión se hizo tanto para <strong>Desktop Web Browser</strong> como para <strong>Mobile Web Browser</strong>, manteniendo la misma jerarquía de contenido y la misma lógica de navegación.
+En esta fase, el equipo se concentró en tres preguntas simples: qué debe entender un visitante en los primeros segundos, cómo se le guía hacia la sección que más le importa y dónde conviene invitarlo a solicitar una demo. Por eso los wireframes se usaron como una herramienta de estructura y no como una versión incompleta del diseño final.
 </p>
-
-#### A. Desktop Web Browser
 
 *Estructura base de la Home y sus puntos de lectura*
 
@@ -38,26 +36,14 @@ Finalmente, el bloque de Platform y FAQ se resolvió con una lógica modular. La
 
 Elaboración propia. Esta vista ordena módulos, bloques informativos y preguntas frecuentes desde una lectura más funcional que decorativa.
 
-#### B. Mobile Web Browser
-
-<p align="justify">
-Como contraste, el equipo preparó una versión móvil de las pantallas principales en Figma para revisar cómo se adaptaban el hero, la navegación colapsada, los bloques de plataforma y las páginas de soporte en un ancho reducido. Esta validación permitió comprobar que el sitio seguía siendo legible y que los llamados a la acción principales conservaban prioridad visual en móvil.
-</p>
-
-*Wireframes móviles de Home, Platform, FAQ y Company*
-
-![Landing Mobile Wireframes](../assets/images/mobile-browser/landing-wireframes-mobile-overview.png)
-
-Elaboración propia. La versión móvil conserva la estructura general del sitio, pero simplifica el ritmo vertical y concentra la navegación en un menú compacto.
-
 ### 4.3.2. Landing Page Mock-up.
 
 <p align="justify">
-Una vez validada la estructura, los mockups se desarrollaron en <strong>Figma</strong> para definir el comportamiento visual del sitio público. Aquí sí se resolvieron tipografía, color, jerarquía de botones, ritmo entre secciones e identidad de marca, pero manteniendo la misma lógica de navegación ya fijada en wireframes. Igual que en la etapa anterior, el trabajo se revisó tanto para escritorio como para navegación móvil.
+Una vez validada la estructura, los mockups se desarrollaron en <strong>Figma</strong> para definir el comportamiento visual del sitio público. Aquí sí se resolvieron tipografía, color, jerarquía de botones, ritmo entre secciones e identidad de marca, pero manteniendo la misma lógica de navegación ya fijada en wireframes.
 </p>
 
 <p align="justify">
-La intención de estos mockups no fue vender una imagen exagerada del producto, sino mostrar cómo Nexa comunica el problema, el valor y la progresión del recorrido público con un lenguaje visual consistente. Las capturas siguientes corresponden primero al recorrido principal en <strong>Desktop Web Browser</strong> y luego a una muestra breve de la adaptación en <strong>Mobile Web Browser</strong>.
+La intención de estos mockups no fue vender una imagen exagerada del producto, sino mostrar cómo Nexa comunica el problema, el valor y la progresión del recorrido público con un lenguaje visual consistente. Las capturas siguientes corresponden a los bloques principales del sitio ya en alta fidelidad.
 </p>
 
 #### A. Página de Inicio (Home)
@@ -161,33 +147,3 @@ Elaboración propia. Esta sección da contexto al proyecto y refuerza la dimensi
 ![FAQ Section 1](../assets/images/mockups/landing-faq-1.png)
 
 Elaboración propia. El FAQ ordena preguntas recurrentes del sitio en una estructura directa, pensada para reducir fricción antes del contacto.
-
-#### E. Mobile Web Browser
-
-<p align="justify">
-La versión móvil no replantea el contenido desde cero. Su objetivo fue adaptar la misma narrativa pública a una interacción más breve, con lectura vertical, botones más directos y secciones condensadas para consulta rápida desde teléfono.
-</p>
-
-*Mobile mock-up — primeras vistas públicas de Home, Platform, FAQ y Company*
-
-![Landing Mobile Mockups Overview](../assets/images/mobile-browser/landing-mockups-mobile-overview.png)
-
-Elaboración propia. Esta vista permite verificar el tratamiento del hero, la navegación compacta y la continuidad visual entre las páginas principales del sitio.
-
-*Mobile mock-up — secciones operativas y bloques de contacto*
-
-![Landing Mobile Mockups Sections](../assets/images/mobile-browser/landing-mockups-mobile-sections.png)
-
-Elaboración propia. La adaptación móvil conserva el recorrido entre propuesta de valor, FAQ, soporte de implementación y contacto comercial sin romper la jerarquía del contenido.
-
-*Mobile mock-up — detalle de cobertura funcional y uso del producto*
-
-![Landing Mobile Mockups Usage](../assets/images/mobile-browser/landing-mockups-mobile-usage.png)
-
-Elaboración propia. Estas pantallas ayudaron a comprobar que la explicación del producto seguía siendo clara en un formato más compacto.
-
-*Mobile mock-up — cierre, CTA y footer*
-
-![Landing Mobile Mockups CTA and Footer](../assets/images/mobile-browser/landing-mockups-mobile-cta-footer.png)
-
-Elaboración propia. El cierre móvil mantiene acceso directo al contacto, a la plataforma y a los enlaces institucionales sin perder legibilidad.

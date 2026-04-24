@@ -1,53 +1,43 @@
 # Anexos
 
-## A.1. Evidencia de Coordinación Grupal del Sprint 1
+## A.1. Videos de Exposiciones
 
 <p align="justify">
-Este anexo respalda la subsección <strong>5.2.1.8. Team Collaboration Insights during Sprint</strong>. Aquí deben colocarse las pruebas de coordinación síncrona y asíncrona del equipo, especialmente cuando la rúbrica solicite evidencia de llamada grupal, revisión de avance o acuerdos de trabajo.
+En esta sección se preserva el registro audiovisual de las sustentaciones correspondientes a cada hito de entrega, garantizando la trazabilidad de la presentación del producto y la evolución del equipo frente a los objetivos de cada Sprint.
 </p>
 
-*Tipos de evidencia de coordinación grupal del Sprint 1*
+| Hito | Enlace al Video de Exposición (Microsoft Stream) |
+| :--- | :--- |
+| **Sprint Review AV1** | [Video de Exposición AV1 (Stream)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416289_upc_edu_pe/IQB9UxQlyAadTrNwHMsfHOSkAcwzBEKYn5CqSyxh8gOaJ_0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CeJeA8) |
 
-| Tipo de evidencia | Qué debe colocarse | Formato sugerido |
-|---|---|---|
-| Llamada grupal o reunión síncrona | captura de Meet, Teams, Discord o WhatsApp Call con fecha visible | imagen + pie de figura |
-| Revisión de avance interno | captura del espacio compartido, tablero o documento revisado en grupo | imagen + 2 o 3 líneas de contexto |
-| Acuerdo de responsabilidades | extracto o captura donde se evidencie reparto de tareas | imagen o tabla |
-| Seguimiento de pendientes | evidencia de cierre, reasignación o destrabe entre integrantes | imagen + nota breve |
+## A.2. Evidencia de Needfinding
 
 <p align="justify">
-Para cada evidencia conviene registrar: <strong>fecha</strong>, <strong>participantes</strong>, <strong>canal</strong>, <strong>objetivo de la sesión</strong> y <strong>resultado concreto</strong>. De ese modo, el anexo no se limita a “capturas sueltas”, sino que demuestra colaboración efectiva y gestión del sprint.
+Como respaldo de la fase de levantamiento de requisitos e investigación de campo (Capítulo 2), se adjunta el video consolidado con las sesiones de entrevistas realizadas a los segmentos objetivo.
 </p>
 
-<p align="justify">
-Si la rúbrica o el profesor piden una <strong>prueba grupal</strong> o una <strong>evidencia de coordinación síncrona</strong>, este es el primer anexo que todavía conviene completar con material real. La prioridad más alta es una captura de reunión grupal con fecha visible y una nota breve del acuerdo alcanzado.
-</p>
-
-## A.2. Evidencia de Avance y Sprint Review Interna
-
-<p align="justify">
-Este apartado debe concentrar pruebas del progreso del incremento AV1 antes de la entrega: comparativas de mockups, revisión de Jira, estado del landing page, chequeos del reporte o cualquier evidencia que muestre evolución del sprint.
-</p>
-
-*Registro de evidencia de avance y Sprint Review interna*
-
-| Evidencia de avance | Qué conviene anexar |
-|---|---|
-| Revisión del backlog en Jira | captura del bloque revisado y breve explicación del frente validado |
-| Validación del landing page | captura del sitio publicado o de la revisión previa al deploy |
-| Revisión de diseño | captura del Figma con el frame discutido y breve nota del objetivo |
-| Integración del informe | evidencia de capítulos revisados o checklist compartido del AV1 |
-
-<p align="justify">
-Si aún no cuentan con estas capturas, este apartado puede funcionar como placeholder formal de evidencia pendiente, pero lo ideal es reemplazarlo antes de la entrega final por pruebas concretas de revisión interna del sprint.
-</p>
+| Artefacto | Enlace de Evidencia |
+| :--- | :--- |
+| **Entrevistas Consolidadas (Todos los Segmentos)** | [Video de Entrevistas Juntas (Stream)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416289_upc_edu_pe/IQDezzsX9DTfSL6nZX-Z1M8sAY4Hn7S5ElLJ-UNTR3bi9qo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=9tSeZD) |
 
 ## A.3. Enlaces Maestros de Soporte
 
-*Enlaces maestros de soporte técnico y de diseño*
+<p align="justify">
+El siguiente cuadro concentra los enlaces a las plataformas colaborativas y repositorios utilizados para gestionar el ciclo de vida de Nexa, asegurando acceso directo a los artefactos originales de diseño y código.
+</p>
 
-| Artefacto | Enlace |
-|---|---|
-| Jira Product Backlog | [Nexa Product Backlog](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog?epics=visible) |
-| Figma Project | [Nexa Landing Page / Project](https://www.figma.com/files/team/1586383034175281439/project/587167294) |
-| Figma Web App File | [Web App - Design File](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=0-1) |
+| Herramienta / Artefacto | Enlace |
+| :--- | :--- |
+| **Jira Product Backlog** | [Nexa Product Backlog (Jira)](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog?epics=visible) |
+| **Figma Project (Landing Page)** | [Nexa Landing Page Design](https://www.figma.com/files/team/1586383034175281439/project/587167294) |
+| **Figma Project (Web App)** | [Nexa Web App Design](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=0-1) |
+| **Repositorio GitHub (Reporte)** | [upc-pre-202610-1asi0730-12242-king/nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) |
+| **Repositorio GitHub (Website)** | [upc-pre-202610-1asi0730-12242-king/nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) |
+
+## A.4. Evidencia de Coordinación Grupal del Sprint 1
+
+<p align="justify">
+Este anexo respalda la subsección <strong>5.2.1.8. Team Collaboration Insights during Sprint</strong>. A continuación, se registran las pruebas de coordinación síncrona y asíncrona del equipo, incluyendo capturas de reuniones, revisiones de diseño y acuerdos de trabajo que garantizaron la integración continua del producto.
+</p>
+
+*(Aquí se deben colocar las capturas de pantalla de las reuniones de Teams, WhatsApp o Discord con sus respectivas fechas y breves notas de contexto)*

@@ -9,7 +9,7 @@
 | AV1 V0.3 | 02/04/2026 | Yucra Sandoval, Diego Sebastian | Redacción del Startup Profile: descripción de la startup, misión, visión, valores y perfiles del equipo |
 | AV1 V0.4 | 02/04/2026 | Torrejón De Los Santos, Gino Rodrigo | Adición de la sección Student Outcome con estructura inicial del cuadro ABET 5 |
 | AV1 V0.5 | 03/04/2026 | Yucra Sandoval, Diego Sebastian | Redacción del Solution Profile con antecedentes, problemática, Lean UX Process (Problem Statements, Assumptions e Hypothesis) |
-| AV1 V0.6 | 03/04/2026 | Marín Cueva, César Fernando | Adición de la sección de Segmentos Objetivo con definición de los segmentos operativos S1, S2 y S3 |
+| AV1 V0.6 | 03/04/2026 | Marín Cueva, César Fernando | Adición de la sección de Segmentos Objetivo con definición de arquetipos operativos S1, S2 y S3 |
 | AV1 V0.7 | 04/04/2026 | Marín Cueva, César Fernando | Adición del análisis competitivo (Landscape y SWOT) con los competidores Riqra, Drivin y OnTracking, y estrategias frente a ellos |
 | AV1 V0.8 | 04/04/2026 | Marín Cueva, César Fernando | Adición de guía de entrevistas y registro de candidatos entrevistados por segmento |
 | AV1 V0.9 | 05/04/2026 | Torrejón De Los Santos, Gino Rodrigo | Adición del Needfinding: User Personas, User Task Matrix y Journey Maps para los tres segmentos operativos |
@@ -27,7 +27,7 @@
 | AV1 V0.21 | 20/04/2026 | Torrejón De Los Santos, Gino Rodrigo | Actualización de los artefactos de needfinding: User Personas, User Task Matrix y Journey Maps con refinamiento basado en análisis de entrevistas |
 | AV1 V0.22 | 20/04/2026 | Marín Cueva, César Fernando | Adición de secciones faltantes del informe con contenido inicial de todos los capítulos restantes |
 | AV1 V0.23 | 20/04/2026 | Yucra Sandoval, Diego Sebastian | Mejora de formato APA 7, hipervínculos, imágenes y bibliografía en todas las secciones del informe |
-| AV1 V0.24 | 20/04/2026 | Yucra Sandoval, Diego Sebastian | Reestructuración completa del Solution Profile con Lean UX Process por segmento, reformulación de segmentos objetivo y alineación con backlog y needfinding |
+| AV1 V0.24 | 20/04/2026 | Yucra Sandoval, Diego Sebastian | Reestructuración completa del Solution Profile con Lean UX Process completo por arquetipo, reformulación de segmentos objetivo y alineación con backlog y needfinding |
 | AV1 V0.25 | 20/04/2026 | Yucra Sandoval, Diego Sebastian | Reescritura del Capítulo II: registro y análisis de entrevistas con 7 entrevistados, matriz de trazabilidad landing-backlog y expansión del Big Picture EventStorming |
 | AV1 V0.26 | 20/04/2026 | Yucra Sandoval, Diego Sebastian | Reescritura completa del Capítulo III: 64 user stories distribuidas en 14 épicas con criterios de aceptación Gherkin; estructuración del product backlog con historias críticas del MVP y criterios de orden |
 | AV1 V0.27 | 20/04/2026 | Yucra Sandoval, Diego Sebastian | Desarrollo de la arquitectura de información con bounded contexts, organización multipágina, labeling bilingüe EN/ES, lineamientos SEO y sistemas de navegación por rol |
@@ -45,7 +45,7 @@
 | AV1 V1.6.3 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Integración de verificación completa Jira-Sprint-Backlog con capturas, registro del archivo Figma real de la web application y creación de anexos guía para evidencias de coordinación |
 | AV1 V1.6.4 | 22/04/2026 | Yucra Sandoval, Diego Sebastian | Integración de wireframes, mockups y prototyping de la web application con activos normalizados en `report/assets/images` y referencias explícitas a Figma |
 | AV1 V1.6.5 | 22/04/2026 | Yucra Sandoval, Diego Sebastian | Corrección quirúrgica del Capítulo II y III: ajuste del enfoque estratégico en 2.1.2, limpieza de historias con lenguaje demasiado técnico, alineación del actor `Developer` en technical stories y corrección del total real del backlog a 238 story points |
-| AV1 V1.6.6 | 22/04/2026 | Yucra Sandoval, Diego Sebastian | Cierre estructural de front matter y coherencia técnica: actualización de la tabla de contenido, refinamiento del Student Outcome según rúbricas ABET/Logro y corrección de consistencia en DDD, OOD y Database Design |
+| AV1 V1.6.6 | 22/04/2026 | Yucra Sandoval, Diego Sebastian | Cierre estructural de front matter y coherencia técnica: creación de `Project Report Collaboration Insights`, actualización de la tabla de contenido, refinamiento del Student Outcome según rúbricas ABET/Logro y corrección de consistencia en DDD, OOD y Database Design |
 | AV1 V1.6.7 | 22/04/2026 | Yucra Sandoval, Diego Sebastian | Limpieza final de AV1: normalización de segmentos a S1-S2-S3, ajuste del Product Backlog, mejora de wireflows y user flows en Mermaid, refuerzo del bloque de prototipado y vaciado formal de 5.3 y 5.4 |
 | AV1 V1.6.8 | 22/04/2026 | Yucra Sandoval, Diego Sebastian | Reencuadre del Capítulo V al alcance real de AV1: foco en `nexa-report` y `nexa-website`, ajuste del lenguaje sobre capas futuras y limpieza del bloque de implementación, servicios y despliegue |
 

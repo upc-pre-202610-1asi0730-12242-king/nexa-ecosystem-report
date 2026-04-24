@@ -206,7 +206,9 @@ Además de las capturas integradas en el informe, el archivo audiovisual origina
 
 Captura de sesión de entrevista. Elaboración propia.
 
-**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e1%20diego%20-%20lorena%20silva.mp4?web=1)
+**Inicio de la entrevista:** 0:00:05  
+**Fin de la entrevista:** 0:26:05  
+**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e1%20diego%20-%20lorena%20silva.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -231,7 +233,9 @@ A nivel técnico, reporta fricciones severas con el sistema actual (Fontana), el
 
 Captura de sesión de entrevista. Elaboración propia.
 
-**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e2%20cesar%20-%20paola%20levano.mp4?web=1)
+**Inicio de la entrevista:** 0:26:06  
+**Fin de la entrevista:** 0:47:05  
+**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e2%20cesar%20-%20paola%20levano.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -256,7 +260,9 @@ Cinthia enfatiza la necesidad de simplicidad. Describe su flujo actual como una 
 
 Captura de sesión de entrevista. Elaboración propia.
 
-**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e3%20diego%20-%20cecilia%20perez.mp4?web=1)
+**Inicio de la entrevista:** 0:47:06  
+**Fin de la entrevista:** 1:04:01  
+**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e3%20diego%20-%20cecilia%20perez.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -268,7 +274,7 @@ Celia Pérez, con experiencia previa en ventas de ruta, aporta una perspectiva c
 Su testimonio confirma que, para el personal en ruta, la estabilidad de la conexión y la velocidad de respuesta del sistema son factores determinantes para la adopción tecnológica. Cualquier retraso en el dispositivo móvil se traduce en una atención deficiente al cliente y en una carga operativa innecesaria al final del día.
 </p>
 
-**Bloque complementario de operación y restricciones del dominio**
+**Segmento S2: Clientes comerciales B2B (minoristas y mayoristas)**
 
 **Entrevistado 1**
 
@@ -283,7 +289,9 @@ Su testimonio confirma que, para el personal en ruta, la estabilidad de la conex
 
 Captura de sesión de entrevista. Elaboración propia.
 
-**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e1%20diego%20-%20hilda%20litano.mp4?web=1)
+**Inicio de la entrevista:** 1:04:07  
+**Fin de la entrevista:** 1:19:39  
+**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e1%20diego%20-%20hilda%20litano.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -304,7 +312,9 @@ Hilda Litano supervisa procesos de importación y cumplimiento sanitario. Su enf
 
 Captura de sesión de entrevista. Elaboración propia.
 
-**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e2%20gino%20-%20edith%20taype.mp4?web=1)
+**Inicio de la entrevista:** 1:19:40  
+**Fin de la entrevista:** 1:51:08  
+**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e2%20gino%20-%20edith%20taype.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -325,7 +335,9 @@ Edith Taype opera en el punto de venta (supermercados), donde la manipulación y
 
 Captura de sesión de entrevista. Elaboración propia.
 
-**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e3%20diego%20-%20jesica%20sandoval.mp4?web=1)
+**Inicio de la entrevista:** 1:51:09  
+**Fin de la entrevista:** 2:12:02  
+**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e3%20diego%20-%20jesica%20sandoval.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -333,7 +345,7 @@ Captura de sesión de entrevista. Elaboración propia.
 Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcripción manual de pedidos, donde los errores en cantidades obligan a validaciones individuales de cada orden. Señala que la variable crítica es el control de fechas de vencimiento (FEFO), información que actualmente no está integrada en el sistema central y requiere coordinación verbal constante con almacén.
 </p>
 
-**Segmento canónico S2: Clientes comerciales B2B (minoristas y mayoristas)**
+**Segmento S3: Despacho, transporte y cierre de entrega**
 
 **Entrevistado 1**
 
@@ -348,7 +360,9 @@ Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcrip
 
 Captura de sesión de entrevista. Elaboración propia.
 
-**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e1%20diego%20-%20pedro%20puente.mp4?web=1)
+**Inicio de la entrevista:** 2:12:08  
+**Fin de la entrevista:** 2:24:34  
+**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e1%20diego%20-%20pedro%20puente.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -369,7 +383,9 @@ Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre log�
 
 Captura de sesión de entrevista. Elaboración propia.
 
-**Respaldo audiovisual:** [Entrevista - 00:00 min](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e2%20cesar%20-%20henry%20garcia.mp4?web=1)
+**Inicio de la entrevista:** 2:24:35  
+**Fin de la entrevista:** 2:40:00  
+**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e2%20cesar%20-%20henry%20garcia.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -586,6 +602,18 @@ El segmento canónico S3 expresa el tramo final del flujo del pedido: despacho, 
 <p align="justify">
 Tras el análisis detallado de los ocho perfiles levantados y de la lectura conjunta de los tres segmentos del producto, se identifica una <strong>brecha de trazabilidad integral</strong>. Esta brecha se manifiesta en la desconexión entre la promesa comercial capturada por canales informales y la realidad operativa gestionada con sistemas fragmentados, validaciones manuales y visibilidad incompleta del despacho.
 </p>
+
+*Cuantificación explícita de hallazgos (base: 8 entrevistados)*
+
+- **6 de 8 entrevistados (75%)** mencionan a WhatsApp como canal operativo principal para coordinar pedidos o urgencias logísticas.
+- **7 de 8 entrevistados (88%)** reportan fragmentación de información entre sistemas formales (ERP), hojas de cálculo y canales informales.
+- **6 de 8 entrevistados (75%)** identifican re-digitación o validaciones manuales como fuente recurrente de retrabajo.
+- **5 de 8 entrevistados (63%)** señalan falta de visibilidad logística sobre stock real, ETA o estado del pedido.
+- **4 de 8 entrevistados (50%)** describen inestabilidad, lentitud o cierres inesperados del software actualmente usado.
+- **8 de 8 entrevistados (100%)** expresan apertura a adoptar una herramienta digital siempre que reduzca pasos, no añada complejidad y responda en entornos móviles.
+
+Elaboración propia a partir de la codificación temática de las ocho entrevistas.
+
 
 *Distribución de Canales de Comunicación Identificados*
 

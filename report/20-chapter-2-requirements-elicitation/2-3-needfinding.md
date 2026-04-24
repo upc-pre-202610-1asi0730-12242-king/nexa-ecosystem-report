@@ -68,6 +68,43 @@ Representación sintética del arquetipo de despacho y entrega, enfocada en la e
 En conjunto, las tres personas muestran una progresión coherente del mismo problema. Valeria evidencia cómo la información del pedido nace fragmentada; Hilda expresa la incertidumbre que ese desorden produce en el cliente comercial; y Pedro representa el punto donde la falta de coordinación se vuelve retraso, reclamo o cierre débil de la entrega. Esta continuidad resulta importante porque permite que los artefactos del capítulo no describan actores desconectados, sino tres posiciones sobre una misma historia operativa.
 </p>
 
+### Soporte de Variables Adicionales para User Personas
+
+<p align="justify">
+Para dar soporte empírico a la construcción de los User Personas y asegurar su viabilidad técnica, a continuación se detallan las variables adicionales obligatorias identificadas durante las entrevistas, que condicionan el comportamiento y adopción tecnológica de cada segmento:
+</p>
+
+<table border="1" cellspacing="0" cellpadding="6" align="center">
+  <tr>
+    <th>Segmento / Persona</th>
+    <th>Dispositivos / Browsers de uso frecuente</th>
+    <th>Marcas de uso cotidiano</th>
+    <th>Influencias y canales de adopción</th>
+  </tr>
+  <tr>
+    <td><strong>S1: Valeria</strong> (Coordinación)</td>
+    <td>Laptops corporativas (Windows), Smartphones Android (Samsung, Xiaomi). Browser: Google Chrome.</td>
+    <td>WhatsApp Business, Excel, Fontana (ERP heredado), Outlook.</td>
+    <td>Colegas de ventas, supervisores comerciales, urgencia del cliente. Buscan agilidad sobre estética.</td>
+  </tr>
+  <tr>
+    <td><strong>S2: Hilda</strong> (Cliente B2B)</td>
+    <td>Smartphones Android (Gama media). Poco uso de desktop. Browser: Chrome Mobile.</td>
+    <td>WhatsApp, Yape, Plin, Facebook, plataformas de bancos locales (BCP, BBVA).</td>
+    <td>Promotores de venta, recomendaciones de otros bodegueros, desconfianza hacia apps complejas.</td>
+  </tr>
+  <tr>
+    <td><strong>S3: Pedro</strong> (Despacho)</td>
+    <td>Smartphones robustos o personales con plan de datos limitado. Navegación mínima.</td>
+    <td>Google Maps, Waze, WhatsApp, sistemas simples de GPS vehicular.</td>
+    <td>Rutinas de tráfico, jefes de almacén. Adopción empujada solo si reduce llamadas e interrupciones.</td>
+  </tr>
+</table>
+
+<p align="justify">
+Estas variables confirman que la plataforma web (Nexa) debe estar fuertemente optimizada para <strong>Google Chrome</strong> y priorizar un diseño <strong>Mobile First</strong>, dado el alto uso de smartphones en S2 y S3 y la rotación en campo del S1.
+</p>
+
 ### 2.3.2. User Task Matrix
 
 <p align="justify">
@@ -128,7 +165,30 @@ El principal valor del bloque no está en describir tres trayectos separados, si
 Esta lectura también deja una implicancia directa para diseño: el MVP necesita mejorar no solo la captura del pedido, sino también los momentos de transición entre estados. Si el sistema estructura bien el pedido, pero no comunica con claridad su confirmación, preparación, despacho o entrega, el valor percibido seguirá fragmentado. Por eso los journeys sostienen la prioridad de estados visibles, historial del pedido, confirmación clara y trazabilidad mínima del cierre.
 </p>
 
-### 2.3.4. Empathy Mapping
+### 2.3.4. As-Is Scenario Map
+
+<p align="justify">
+El <strong>As-Is Scenario Map</strong> sintetiza cómo ocurre hoy el flujo completo de un pedido en el dominio B2B de distribución refrigerada de Nexa (quesos, lácteos, charcutería y otros perecederos en cadena de frío). Su propósito no es describir la solución futura, sino dejar explícito el estado actual, con sus acciones reales, sus dolores y sus oportunidades de diseño. Mantiene el alcance honesto de AV1: la plataforma Nexa aún no está desplegada de forma transaccional; lo que se documenta aquí es el mundo <em>tal cual opera hoy</em>, antes de Nexa.
+</p>
+
+<p align="justify">
+El recorrido se estructura en seis etapas operativas, alineadas con los tres segmentos canónicos del producto (S1 coordinación comercial y captura, S2 cliente comercial B2B, S3 despacho y cierre de entrega).
+</p>
+
+| Etapa (As-Is) | Actores | Acciones actuales | Pain points reales | Emociones / Fricciones | Oportunidades de diseño |
+|---|---|---|---|---|---|
+| **1. Necesidad y reabastecimiento** | S2 (Cliente B2B) | Revisa stock propio, estima rotación, arma lista mental o en papel, consulta por WhatsApp/llamada | Catálogo desactualizado, sin precios ni disponibilidad visible, sin histórico de compras | Incertidumbre, urgencia, dependencia del vendedor | Catálogo vivo con precios, disponibilidad y sugerencias FEFO por cliente |
+| **2. Captura del pedido** | S1 (Coordinación), S2 | Pedido entra por WhatsApp, audio, foto de lista o llamada; S1 transcribe al ERP/Excel | Transcripción manual, ambigüedad de códigos, doble digitación, stock no confirmado en tiempo real | Presión, retrabajo, miedo a equivocarse | Formulario estructurado con validación de SKU, precio, stock y crédito en un solo paso |
+| **3. Validación de stock, crédito y FEFO** | S1, jefatura, almacén | S1 consulta stock en ERP y por teléfono a almacén; revisa crédito en módulo separado; pregunta por lote/vencimiento | Stock desactualizado en ERP, crédito fragmentado, rotación FEFO/FIFO coordinada verbalmente | Desconfianza del sistema, interrupciones constantes | Vista única de stock real, crédito disponible y lotes priorizados por vencimiento |
+| **4. Preparación y picking en almacén** | Almacén, supervisor | Se imprime guía, se arman cajas manualmente, se valida visualmente temperatura y fecha | Errores de picking, lote incorrecto, ruptura de cadena de frío no registrada, productos próximos a vencer mezclados con nuevos | Estrés por tiempo, reclamos posteriores, mermas | Lista de picking con lote/vencimiento sugerido (FEFO) y checklist de temperatura |
+| **5. Despacho y tránsito** | S3 (Despacho/transporte) | Cargan vehículo, salen con guía física, coordinan ruta con Maps/Waze; cliente llama para saber ETA | Sin ETA visible para cliente, sin trazabilidad de temperatura en ruta, reclamos por demoras, llamadas interrumpen al conductor | Cansancio, llamadas invasivas, ansiedad del cliente | ETA compartido, seguimiento de ruta ligero y registro mínimo de temperatura |
+| **6. Entrega y cierre** | S3, S2 | Descarga, conteo manual, firma en guía física; reclamos posteriores por cantidades o vencimientos | Cierre sin evidencia digital, disputas difíciles de resolver, trazabilidad posterior casi nula | Frustración, desconfianza, reclamos post-entrega | Prueba de entrega digital (POD) con firma, foto y temperatura; cierre trazable |
+
+<p align="justify">
+La lectura horizontal del mapa deja explícitos los dolores estructurales del dominio en su estado actual: pedidos por WhatsApp/llamada, catálogo desactualizado, visibilidad limitada de stock, coordinación manual, errores de picking/preparación, seguimiento débil de despacho, problemas de rotación FEFO/FIFO, riesgo de vencimiento y trazabilidad casi inexistente entre áreas. Estos puntos no se presentan como funciones implementadas de Nexa en AV1, sino como el mapa de oportunidades que el producto pretende atacar por incrementos, empezando por la captura estructurada del pedido y la visibilidad de estado entre S1, S2 y S3.
+</p>
+
+### 2.3.5. Empathy Mapping
 
 <p align="justify">
 Los empathy maps complementan la lectura operativa con variables de percepción, confianza, frustración y expectativa. Este nivel resulta importante porque la adopción del producto no dependerá solo de eficiencia funcional, sino también de si cada segmento siente que el sistema le reduce carga, incertidumbre o exposición al error.
