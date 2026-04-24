@@ -9,6 +9,7 @@ En esta sección se preserva el registro audiovisual de las sustentaciones corre
 | Hito | Enlace al Video de Exposición (Microsoft Stream) |
 | :--- | :--- |
 | **Sprint Review AV1** | [Video de Exposición AV1 (Stream)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416289_upc_edu_pe/IQB9UxQlyAadTrNwHMsfHOSkAcwzBEKYn5CqSyxh8gOaJ_0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CeJeA8) |
+| **Video About the Team (Sprint 1)** | [Video de Presentación del Equipo (Stream)](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202416289%5Fupc%5Fedu%5Fpe%2FDocuments%2FKing%20Nexa%2FVideo%20About%20the%20Team%2Fupc%2Dpre%2D202610%2D1asi0730%2D12242%2DKing%2Dabout%20the%2Dteam%2Dsprint%2D1%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaeab184a%2Dd0fa%2D45e0%2Da028%2D24c81baa0590) |
 
 ## A.2. Evidencia de Needfinding
 

@@ -11,11 +11,14 @@ La construcción de este bloque parte de tres insumos previos. El primero es el 
 Por ello, los artefactos de needfinding no deben interpretarse como piezas visuales aisladas. Su función es traducir evidencia cualitativa en criterios de diseño: quién necesita autonomía, quién necesita visibilidad, quién necesita rapidez, quién necesita trazabilidad y en qué punto del recorrido cada una de esas necesidades se vuelve más sensible. Bajo ese enfoque, el valor del needfinding no está únicamente en mostrar personas, tareas o journeys, sino en demostrar cómo esas representaciones ayudan a delimitar el alcance del MVP y a justificar decisiones posteriores de backlog, arquitectura y experiencia de usuario.
 </p>
 
-> **Criterio de construcción de arquetipos**
->
-> - **Valeria (S1):** sintetiza patrones compartidos por el personal de coordinación comercial entrevistado.
-> - **Hilda (S2):** sintetiza patrones del cliente comercial B2B y no corresponde a una única entrevistada individual.
-> - **Pedro (S3):** sintetiza el rol de despacho y cierre a partir de hallazgos del seguimiento, las incidencias y el cierre de entrega observados en la investigación.
+<div style="padding: 14px 16px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 16px 0;">
+  <strong>Criterio de construcción de arquetipos.</strong><br/><br/>
+  <ul>
+    <li><strong>Valeria (S1):</strong> sintetiza patrones compartidos por el personal de coordinación comercial entrevistado.</li>
+    <li><strong>Hilda (S2):</strong> sintetiza patrones del cliente comercial B2B y no corresponde a una única entrevistada individual.</li>
+    <li><strong>Pedro (S3):</strong> sintetiza el rol de despacho y cierre a partir de triangulación entre restricciones operativas, pain points del seguimiento y modelado del flujo.</li>
+  </ul>
+</div>
 
 ### 2.3.1. User Personas
 
@@ -44,65 +47,31 @@ Las user personas no sustituyen a los entrevistados reales; funcionan como sínt
   </tr>
   <tr>
     <td><strong>Pedro (S3)</strong></td>
-    <td>Hallazgos del seguimiento, las incidencias y el cierre de entrega observados en la investigación</td>
+    <td>Triangulación entre stakeholder operativo, pain points del seguimiento y modelado del flujo</td>
     <td>Necesidad de cierre con evidencia, reducción de interrupciones y visibilidad del estado de entrega</td>
     <td>Representar la ejecución física del pedido y el momento donde la promesa comercial se valida o fracasa</td>
   </tr>
 </table>
 
-La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado y función de diseño. Elaboración propia.
+*Nota.* La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado y función de diseño. Elaboración propia.
 
+**Ilustración 1**
 *User Persona — Segmento 1: Valeria Sánchez*
 ![User Persona 1](../assets/images/user-persona-1.png)
-Representación del arquetipo de coordinación comercial, enfocado en reducir la carga administrativa y el retrabajo. Elaboración propia.
+*Nota.* Representación del arquetipo de coordinación comercial, enfocado en reducir la carga administrativa y el retrabajo. Elaboración propia.
 
+**Ilustración 2**
 *User Persona — Segmento 2: Hilda*
 ![User Persona 2](../assets/images/user-persona-2.png)
-Representación sintética del arquetipo de cliente comercial B2B, construida a partir de entrevistas a compradores minoristas y mayoristas, más evidencia de adopción digital del canal tradicional. Elaboración propia.
+*Nota.* Representación sintética del arquetipo de cliente comercial B2B, construida a partir de entrevistas a compradores minoristas y mayoristas, más evidencia de adopción digital del canal tradicional. Elaboración propia.
 
+**Ilustración 3**
 *User Persona — Segmento 3: Pedro*
 ![User Persona 3](../assets/images/user-persona-3.png)
-Representación sintética del arquetipo de despacho y entrega, enfocada en la eficiencia de ruta y el cierre digital con evidencia. Su construcción se apoya en hallazgos del seguimiento del pedido, las incidencias y el cierre de entrega dentro del dominio. Elaboración propia.
+*Nota.* Representación sintética del arquetipo de despacho y entrega, enfocada en la eficiencia de ruta y el cierre digital con evidencia. Su construcción se apoya en triangulación entre stakeholder operativo, pain points del seguimiento y modelado del flujo de dominio. Elaboración propia.
 
 <p align="justify">
 En conjunto, las tres personas muestran una progresión coherente del mismo problema. Valeria evidencia cómo la información del pedido nace fragmentada; Hilda expresa la incertidumbre que ese desorden produce en el cliente comercial; y Pedro representa el punto donde la falta de coordinación se vuelve retraso, reclamo o cierre débil de la entrega. Esta continuidad resulta importante porque permite que los artefactos del capítulo no describan actores desconectados, sino tres posiciones sobre una misma historia operativa.
-</p>
-
-### Soporte de Variables Adicionales para User Personas
-
-<p align="justify">
-Para dar soporte empírico a la construcción de los User Personas y asegurar su viabilidad técnica, a continuación se detallan las variables adicionales obligatorias identificadas durante las entrevistas, que condicionan el comportamiento y adopción tecnológica de cada segmento:
-</p>
-
-<table border="1" cellspacing="0" cellpadding="6" align="center">
-  <tr>
-    <th>Segmento / Persona</th>
-    <th>Dispositivos / Browsers de uso frecuente</th>
-    <th>Marcas de uso cotidiano</th>
-    <th>Influencias y canales de adopción</th>
-  </tr>
-  <tr>
-    <td><strong>S1: Valeria</strong> (Coordinación)</td>
-    <td>Laptops corporativas (Windows), Smartphones Android (Samsung, Xiaomi). Browser: Google Chrome.</td>
-    <td>WhatsApp Business, Excel, Fontana (ERP heredado), Outlook.</td>
-    <td>Colegas de ventas, supervisores comerciales, urgencia del cliente. Buscan agilidad sobre estética.</td>
-  </tr>
-  <tr>
-    <td><strong>S2: Hilda</strong> (Cliente B2B)</td>
-    <td>Smartphones Android (Gama media). Poco uso de desktop. Browser: Chrome Mobile.</td>
-    <td>WhatsApp, Yape, Plin, Facebook, plataformas de bancos locales (BCP, BBVA).</td>
-    <td>Promotores de venta, recomendaciones de otros bodegueros, desconfianza hacia apps complejas.</td>
-  </tr>
-  <tr>
-    <td><strong>S3: Pedro</strong> (Despacho)</td>
-    <td>Smartphones robustos o personales con plan de datos limitado. Navegación mínima.</td>
-    <td>Google Maps, Waze, WhatsApp, sistemas simples de GPS vehicular.</td>
-    <td>Rutinas de tráfico, jefes de almacén. Adopción empujada solo si reduce llamadas e interrupciones.</td>
-  </tr>
-</table>
-
-<p align="justify">
-Estas variables confirman que la plataforma web (Nexa) debe estar fuertemente optimizada para <strong>Google Chrome</strong> y priorizar un diseño <strong>Mobile First</strong>, dado el alto uso de smartphones en S2 y S3 y la rotación en campo del S1.
 </p>
 
 ### 2.3.2. User Task Matrix
@@ -145,17 +114,20 @@ Los journey maps modelan la situación <em>as-is</em> de cada segmento. Su valor
 Leídos en conjunto, los tres journeys permiten reconstruir el recorrido completo del pedido desde perspectivas complementarias. El journey de S1 muestra el desgaste que produce convertir mensajes ambiguos en pedidos operables; el de S2 expone la ansiedad del cliente cuando no puede saber con certeza qué recibirá ni cuándo llegará; y el de S3 muestra cómo la falta de coordinación previa se traslada a la ruta, al contacto con el punto de entrega y al cierre final del servicio.
 </p>
 
+**Ilustración 4**
 *Journey Map — Segmento 1: Coordinación Comercial*
 ![Journey Map 1](../assets/images/journey-map-1.png)
-Mapeo del proceso de captura y gestión de pedidos, identificando puntos de dolor en la transcripción manual. Elaboración propia.
+*Nota.* Mapeo del proceso de captura y gestión de pedidos, identificando puntos de dolor en la transcripción manual. Elaboración propia.
 
+**Ilustración 5**
 *Journey Map — Segmento 2: Cliente Comercial B2B*
 ![Journey Map 2](../assets/images/journey-map-2.png)
-Mapeo de la experiencia de abastecimiento del cliente, destacando la incertidumbre en el seguimiento de entrega. Elaboración propia.
+*Nota.* Mapeo de la experiencia de abastecimiento del cliente, destacando la incertidumbre en el seguimiento de entrega. Elaboración propia.
 
+**Ilustración 6**
 *Journey Map — Segmento 3: Despacho y Entrega*
 ![Journey Map 3](../assets/images/journey-map-3.png)
-Mapeo de la ruta logística, enfatizando los cuellos de botella en la comunicación de incidencias. Elaboración propia.
+*Nota.* Mapeo de la ruta logística, enfatizando los cuellos de botella en la comunicación de incidencias. Elaboración propia.
 
 <p align="justify">
 El principal valor del bloque no está en describir tres trayectos separados, sino en demostrar que el punto de dolor cambia de forma pero no de origen. En S1 el problema aparece como ambigüedad y retrabajo; en S2 como opacidad del abastecimiento; y en S3 como interrupción, demora o cierre sin evidencia suficiente. Dicho de otro modo, los journeys confirman que el problema central no es una sola pantalla mal resuelta, sino una cadena de decisiones y validaciones que hoy pierde continuidad entre actores.
@@ -165,30 +137,7 @@ El principal valor del bloque no está en describir tres trayectos separados, si
 Esta lectura también deja una implicancia directa para diseño: el MVP necesita mejorar no solo la captura del pedido, sino también los momentos de transición entre estados. Si el sistema estructura bien el pedido, pero no comunica con claridad su confirmación, preparación, despacho o entrega, el valor percibido seguirá fragmentado. Por eso los journeys sostienen la prioridad de estados visibles, historial del pedido, confirmación clara y trazabilidad mínima del cierre.
 </p>
 
-### 2.3.4. As-Is Scenario Map
-
-<p align="justify">
-El <strong>As-Is Scenario Map</strong> sintetiza cómo ocurre hoy el flujo completo de un pedido en el dominio B2B de distribución refrigerada de Nexa (quesos, lácteos, charcutería y otros perecederos en cadena de frío). Su propósito no es describir la solución futura, sino dejar explícito el estado actual, con sus acciones reales, sus dolores y sus oportunidades de diseño. Mantiene el alcance honesto de AV1: la plataforma Nexa aún no está desplegada de forma transaccional; lo que se documenta aquí es el mundo <em>tal cual opera hoy</em>, antes de Nexa.
-</p>
-
-<p align="justify">
-El recorrido se estructura en seis etapas operativas, alineadas con los tres segmentos canónicos del producto (S1 coordinación comercial y captura, S2 cliente comercial B2B, S3 despacho y cierre de entrega).
-</p>
-
-| Etapa (As-Is) | Actores | Acciones actuales | Pain points reales | Emociones / Fricciones | Oportunidades de diseño |
-|---|---|---|---|---|---|
-| **1. Necesidad y reabastecimiento** | S2 (Cliente B2B) | Revisa stock propio, estima rotación, arma lista mental o en papel, consulta por WhatsApp/llamada | Catálogo desactualizado, sin precios ni disponibilidad visible, sin histórico de compras | Incertidumbre, urgencia, dependencia del vendedor | Catálogo vivo con precios, disponibilidad y sugerencias FEFO por cliente |
-| **2. Captura del pedido** | S1 (Coordinación), S2 | Pedido entra por WhatsApp, audio, foto de lista o llamada; S1 transcribe al ERP/Excel | Transcripción manual, ambigüedad de códigos, doble digitación, stock no confirmado en tiempo real | Presión, retrabajo, miedo a equivocarse | Formulario estructurado con validación de SKU, precio, stock y crédito en un solo paso |
-| **3. Validación de stock, crédito y FEFO** | S1, jefatura, almacén | S1 consulta stock en ERP y por teléfono a almacén; revisa crédito en módulo separado; pregunta por lote/vencimiento | Stock desactualizado en ERP, crédito fragmentado, rotación FEFO/FIFO coordinada verbalmente | Desconfianza del sistema, interrupciones constantes | Vista única de stock real, crédito disponible y lotes priorizados por vencimiento |
-| **4. Preparación y picking en almacén** | Almacén, supervisor | Se imprime guía, se arman cajas manualmente, se valida visualmente temperatura y fecha | Errores de picking, lote incorrecto, ruptura de cadena de frío no registrada, productos próximos a vencer mezclados con nuevos | Estrés por tiempo, reclamos posteriores, mermas | Lista de picking con lote/vencimiento sugerido (FEFO) y checklist de temperatura |
-| **5. Despacho y tránsito** | S3 (Despacho/transporte) | Cargan vehículo, salen con guía física, coordinan ruta con Maps/Waze; cliente llama para saber ETA | Sin ETA visible para cliente, sin trazabilidad de temperatura en ruta, reclamos por demoras, llamadas interrumpen al conductor | Cansancio, llamadas invasivas, ansiedad del cliente | ETA compartido, seguimiento de ruta ligero y registro mínimo de temperatura |
-| **6. Entrega y cierre** | S3, S2 | Descarga, conteo manual, firma en guía física; reclamos posteriores por cantidades o vencimientos | Cierre sin evidencia digital, disputas difíciles de resolver, trazabilidad posterior casi nula | Frustración, desconfianza, reclamos post-entrega | Prueba de entrega digital (POD) con firma, foto y temperatura; cierre trazable |
-
-<p align="justify">
-La lectura horizontal del mapa deja explícitos los dolores estructurales del dominio en su estado actual: pedidos por WhatsApp/llamada, catálogo desactualizado, visibilidad limitada de stock, coordinación manual, errores de picking/preparación, seguimiento débil de despacho, problemas de rotación FEFO/FIFO, riesgo de vencimiento y trazabilidad casi inexistente entre áreas. Estos puntos no se presentan como funciones implementadas de Nexa en AV1, sino como el mapa de oportunidades que el producto pretende atacar por incrementos, empezando por la captura estructurada del pedido y la visibilidad de estado entre S1, S2 y S3.
-</p>
-
-### 2.3.5. Empathy Mapping
+### 2.3.4. Empathy Mapping
 
 <p align="justify">
 Los empathy maps complementan la lectura operativa con variables de percepción, confianza, frustración y expectativa. Este nivel resulta importante porque la adopción del producto no dependerá solo de eficiencia funcional, sino también de si cada segmento siente que el sistema le reduce carga, incertidumbre o exposición al error.
@@ -198,17 +147,20 @@ Los empathy maps complementan la lectura operativa con variables de percepción,
 En S1, el empathy map concentra emociones ligadas a presión, urgencia y desgaste por duplicación de tareas; en S2, predominan la desconfianza frente a la opacidad del abastecimiento y la necesidad de respaldo humano; y en S3, la carga emocional se asocia a interrupciones, reclamos y falta de evidencia al cierre. Estas diferencias son útiles porque muestran que la adopción no depende de un único argumento de valor para todos los actores.
 </p>
 
+**Ilustración 7**
 *Empathy Map — Segmento 1: Coordinación Comercial*
 ![Empathy Map 1](../assets/images/empathy-map-1.png)
-Análisis de expectativas y temores del personal administrativo respecto a la adopción tecnológica. Elaboración propia.
+*Nota.* Análisis de expectativas y temores del personal administrativo respecto a la adopción tecnológica. Elaboración propia.
 
+**Ilustración 8**
 *Empathy Map — Segmento 2: Cliente Comercial B2B*
 ![Empathy Map 2](../assets/images/empathy-map-2.png)
-Identificación de motivadores extrínsecos e intrínsecos para la digitalización del bodeguero. Elaboración propia.
+*Nota.* Identificación de motivadores extrínsecos e intrínsecos para la digitalización del bodeguero. Elaboración propia.
 
+**Ilustración 9**
 *Empathy Map — Segmento 3: Despacho y Entrega*
 ![Empathy Map 3](../assets/images/empathy-map-3.png)
-Exploración del entorno laboral y necesidades de soporte del personal en ruta. Elaboración propia.
+*Nota.* Exploración del entorno laboral y necesidades de soporte del personal en ruta. Elaboración propia.
 
 <p align="justify">
 En términos de producto, los empathy maps confirman tres criterios de diseño. Primero, la herramienta debe reducir esfuerzo cognitivo en S1, no aumentarlo. Segundo, debe generar confianza en S2, no solo eficiencia transaccional. Tercero, debe proteger a S3 frente a ambigüedades del cierre, ofreciendo un registro simple pero suficiente de la entrega. Bajo esta lectura, el needfinding deja de ser un conjunto de imágenes explicativas y se convierte en una base argumental para justificar por qué el MVP prioriza captura estructurada, visibilidad compartida y evidencia mínima de entrega.
