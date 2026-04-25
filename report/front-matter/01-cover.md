@@ -27,7 +27,7 @@
 
 # Informe de Trabajo Final
 
-## Informe de Avance 1 (AV1)
+### Informe de Avance 1 (AV1)
 
 **Startup:** Nexa  
 **Producto:** Nexa  
