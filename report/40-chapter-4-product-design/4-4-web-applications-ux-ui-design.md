@@ -5,13 +5,13 @@ El diseño de la web application de Nexa debe leerse como la continuación opera
 </p>
 
 <p align="justify">
-En esta capa del producto, la interfaz deja de priorizar conversión comercial y pasa a priorizar decisión. Cada pantalla debe ayudar a responder una pregunta concreta del dominio: qué pedido está en riesgo, qué producto necesita atención, qué validación bloquea la operación, qué unidad está en ruta y qué evidencia respalda el cierre. Bajo esa lógica, el bloque se organiza en cuatro partes: wireframes, wireflow, mock-ups y user flows.
+En esta capa del producto, la interfaz deja de priorizar conversión comercial y pasa a priorizar decisión. Cada pantalla debe ayudar a responder una pregunta concreta del dominio: qué pedido está en riesgo, qué producto necesita atención, qué validación bloquea la operación, qué unidad está en ruta y qué evidencia respalda el cierre. Bajo esa lógica, el bloque se organiza en cuatro partes: wireframes, wireflow, mock-ups y user flows. Los artefactos se trabajaron en Figma y luego se exportaron para documentar el recorrido funcional del MVP.
 </p>
 
 ### 4.4.1. Web Applications Wireframes.
 
 <p align="justify">
-Los wireframes de la aplicación web fueron elaborados para ordenar la estructura funcional antes de entrar en alta fidelidad. Su valor no está en el acabado visual, sino en definir jerarquías, zonas de información, módulos persistentes y rutas de interacción. En Nexa, esta etapa fue clave porque el problema no consiste solo en “dibujar pantallas”, sino en traducir flujos complejos del dominio a superficies que puedan usarse bajo presión operativa.
+Los wireframes de la aplicación web fueron elaborados en Figma para ordenar la estructura funcional antes de entrar en alta fidelidad. Su valor no está en el acabado visual, sino en definir jerarquías, zonas de información, módulos persistentes y rutas de interacción. En Nexa, esta etapa fue clave porque el problema no consiste solo en “dibujar pantallas”, sino en traducir flujos complejos del dominio a superficies que puedan usarse bajo presión operativa.
 </p>
 
 <p align="justify">
@@ -119,6 +119,14 @@ El detalle del pedido organiza la historia completa de una orden en una sola sup
 El wireflow sintetiza cómo se conectan entre sí las superficies principales de la aplicación. A diferencia del wireframe, que se enfoca en la estructura interna de una vista, el wireflow muestra continuidad entre acceso, captura, validación, seguimiento y cierre. En Nexa, esta lectura es indispensable porque el valor del sistema depende precisamente de no romper el flujo entre áreas y estados.
 </p>
 
+#### Wireflow 1 — Pedido end-to-end
+
+- **User Goal:** Como coordinación comercial (S1) o cliente B2B (S2), necesito llevar un pedido desde el acceso hasta el cierre con evidencia sin perder continuidad entre áreas.
+- **Segmentos vinculados:** S1 (captura), S2 (abastecimiento), S3 (despacho).
+- **Problema de dominio que atiende:** fragmentación entre captura, validación, despacho y cierre; hoy el pedido pierde estado al saltar entre WhatsApp, ERP y operación.
+- **Happy path:** login → dashboard/catálogo según rol → pedido asistido o autónomo → validación de stock y crédito OK → confirmación → seguimiento/ETA → POD y cierre.
+- **Unhappy path:** si la validación detecta bloqueo de crédito o stock insuficiente, el flujo se desvía a <em>Alerta y corrección</em> y vuelve a la captura; ningún pedido avanza a confirmación sin validación OK.
+
 *Wireflow del pedido Nexa desde acceso hasta cierre operativo*
 
 ```mermaid
@@ -138,10 +146,59 @@ graph LR
 
 Elaboración propia. El flujo concentra la continuidad entre captura, validación, seguimiento y cierre, evitando que el pedido quede fragmentado en herramientas paralelas.
 
+#### Wireflow 2 — Captura asistida y validación comercial
+
+- **User Goal:** Como coordinación comercial (S1), quiero capturar un pedido en representación del cliente verificando stock y crédito antes de comprometerlo.
+- **Segmento priorizado:** S1 (captura y validación).
+- **Problema de dominio:** validación tardía de crédito y stock que deriva en promesas inviables y retrabajo.
+- **Happy path:** bandeja → pedido asistido → identificar cliente → condiciones comerciales → líneas de pedido → sin alertas → envío para confirmación → pedido listo para preparación.
+- **Unhappy path:** si aparecen alertas de stock o crédito, el flujo regresa a las líneas para corregir cantidades, SKU o condición comercial; si no se pueden resolver, el pedido se detiene y queda registrado como bloqueado.
+
+*Wireflow de captura asistida y validación comercial*
+
+```mermaid
+flowchart LR
+    A["Bandeja de pedidos o Dashboard"] --> B["Abrir pedido asistido"]
+    B --> C["Identificar cliente"]
+    C --> D["Cargar condiciones comerciales"]
+    D --> E["Agregar productos y cantidades"]
+    E --> F{"¿Hay alertas de stock o crédito?"}
+    F -->|Sí| G["Corregir pedido o detener envío"]
+    G --> E
+    F -->|No| H["Enviar para confirmación"]
+    H --> I["Pedido listo para preparación"]
+```
+
+Elaboración propia. Este wireflow muestra el recorrido interno de coordinación comercial, donde el valor está en detectar problemas antes de comprometer el pedido.
+
+#### Wireflow 3 — Cliente B2B desde acceso hasta seguimiento
+
+- **User Goal:** Como cliente comercial B2B (S2), quiero comprar de forma autónoma, confirmar mi pedido y saber cuándo llegará sin tener que perseguir por WhatsApp al vendedor.
+- **Segmento priorizado:** S2 (cliente B2B y abastecimiento recurrente).
+- **Problema de dominio:** opacidad del abastecimiento y ausencia de ETA confiable.
+- **Happy path:** login → catálogo personalizado → detalle de producto → carrito → revisión → envío y confirmación → historial → seguimiento/ETA → cierre con evidencia visible.
+- **Unhappy path:** si el pedido no puede confirmarse por stock o crédito, el sistema muestra alerta explícita con motivo y acción sugerida (reducir cantidad, cambiar SKU o contactar soporte), evitando que el cliente quede en silencio.
+
+*Wireflow del cliente B2B desde acceso hasta seguimiento*
+
+```mermaid
+flowchart LR
+    A["Log in"] --> B["Catálogo personalizado"]
+    B --> C["Detalle de producto"]
+    C --> D["Carrito o borrador"]
+    D --> E["Revisión del pedido"]
+    E --> F["Envío y confirmación"]
+    F --> G["Historial del pedido"]
+    G --> H["Seguimiento y ETA"]
+    H --> I["Cierre con evidencia visible"]
+```
+
+Elaboración propia. Aquí se resume el recorrido del cliente comercial cuando compra, revisa el estado del pedido y necesita entender cómo avanza la entrega.
+
 ### 4.4.3. Web Applications Mock-ups.
 
 <p align="justify">
-Los mock-ups de la web application desarrollan en alta fidelidad la lógica ya probada en wireframes. Su función no es “decorar” el sistema, sino validar que la jerarquía visual, los componentes y la lectura operativa sigan siendo claros cuando se incorporan color, densidad informativa, estados y patrones definitivos de interfaz. En este proyecto, las diez capturas cubren el mismo recorrido funcional del MVP y permiten explicar cómo la solución se presentaría ante usuarios reales.
+Los mock-ups de la web application desarrollan en alta fidelidad la lógica ya probada en wireframes. Su función no es “decorar” el sistema, sino validar que la jerarquía visual, los componentes y la lectura operativa sigan siendo claros cuando se incorporan color, densidad informativa, estados y patrones definitivos de interfaz. En este proyecto, las diez capturas cubren el mismo recorrido funcional del MVP y permiten explicar cómo la solución se presentaría ante usuarios reales. También fueron consolidadas en Figma antes de documentarse en el informe.
 </p>
 
 #### Dashboard Operativo Total Control
@@ -230,6 +287,14 @@ El detalle de trazabilidad en alta fidelidad reconstruye el historial del pedido
 El user flow complementa wireframes y mock-ups porque modela la interacción secuencial entre usuario y sistema. En Nexa, el flujo crítico es el reabastecimiento B2B con validaciones de negocio, ya que ahí se expresa con más claridad la promesa central del producto: hacer visible lo que hoy se valida tarde o de forma dispersa.
 </p>
 
+#### User Flow 1 — Reabastecimiento B2B con validación de negocio
+
+- **User Goal:** Como cliente B2B (S2) o coordinadora (S1), quiero que la plataforma me deje confirmar el pedido solo cuando el sistema ya validó stock real, lote FEFO y crédito disponible.
+- **Segmento:** S2 (autonomía) + S1 (asistido).
+- **Problema atendido:** promesas comerciales inviables por falta de validación temprana.
+- **Happy path:** login → catálogo con contexto → carrito → consulta de stock y lotes → consulta de crédito/mora → reglas OK → confirmación con seguimiento activo.
+- **Unhappy path:** si mora o stock no dan, el sistema corta el flujo en la validación y devuelve un mensaje explícito con acción correctiva (ajustar cantidad, regularizar crédito o escalar a soporte).
+
 *User Flow del reabastecimiento B2B con validación de negocio*
 
 ```mermaid
@@ -255,3 +320,53 @@ sequenceDiagram
 ```
 
 Elaboración propia. El flujo refleja tanto la ruta esperada como la rama de bloqueo comercial, ambas necesarias para defender la lógica del MVP transaccional.
+
+#### User Flow 2 — Coordinadora comercial con rama de corrección
+
+- **User Goal:** Como coordinación comercial (S1), quiero corregir un pedido cuando la validación detecta inconsistencias, sin perder la información ya capturada.
+- **Segmento:** S1.
+- **Problema atendido:** retrabajo manual y pérdida de datos cuando el pedido se rechaza.
+- **Happy path:** pedido asistido → validación OK → confirmación.
+- **Unhappy path:** validación detecta problema → rama de corrección (ajustar SKU, cantidad, condición comercial) → revalidación → confirmación o bloqueo registrado.
+
+*User Flow de la coordinadora comercial con rama de corrección*
+
+```mermaid
+flowchart TD
+    A["La coordinadora abre un pedido asistido"] --> B["Identifica al cliente"]
+    B --> C["Carga condiciones y selecciona productos"]
+    C --> D{"¿El sistema muestra una alerta?"}
+    D -->|Sí| E["Revisa stock, crédito o datos del pedido"]
+    E --> F["Corrige información y vuelve a validar"]
+    F --> D
+    D -->|No| G["Envía el pedido"]
+    G --> H["Recibe confirmación trazable"]
+    H --> I["Entrega el pedido a preparación"]
+```
+
+Elaboración propia. Este user flow enfatiza el punto de corrección temprana, que es donde Nexa busca reducir retrabajo y promesas inviables.
+
+#### User Flow 3 — Cliente B2B con seguimiento e incidencia
+
+- **User Goal:** Como cliente B2B (S2), quiero seguir mi pedido y reportar una incidencia sin tener que llamar ni escribir por WhatsApp.
+- **Segmento:** S2 con interacción de S3 (despacho).
+- **Problema atendido:** falta de visibilidad del despacho y ausencia de canal formal para reportar incidencias.
+- **Happy path:** historial → seguimiento → ETA → entrega → cierre con POD disponible.
+- **Unhappy path:** si hay incidencia de ruta, el cliente recibe notificación automática, puede registrar reclamo formal y ver la bitácora del pedido con evidencia asociada.
+
+*User Flow del cliente B2B con seguimiento e incidencia*
+
+```mermaid
+flowchart TD
+    A["El cliente inicia sesión"] --> B["Explora catálogo y arma su pedido"]
+    B --> C["Confirma el envío"]
+    C --> D["Recibe confirmación del pedido"]
+    D --> E["Consulta estado y ETA"]
+    E --> F{"¿Aparece una incidencia?"}
+    F -->|No| G["Espera la entrega"]
+    F -->|Sí| H["Revisa actualización o aviso"]
+    H --> E
+    G --> I["Recibe pedido y valida cierre"]
+```
+
+Elaboración propia. Este recorrido pone el foco en la necesidad de previsibilidad del cliente y en la forma en que una incidencia debe ser visible sin obligarlo a volver al canal informal.
