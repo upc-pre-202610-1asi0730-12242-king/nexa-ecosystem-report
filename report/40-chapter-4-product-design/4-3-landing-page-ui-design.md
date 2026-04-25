@@ -3,171 +3,191 @@
 ### 4.3.1. Landing Page Wireframe.
 
 <p align="justify">
-Previo a la fase de alta fidelidad, se estructuró la Landing Page mediante <em>wireframes</em> de baja fidelidad con el objetivo primordial de validar la arquitectura de información y la jerarquía de los elementos de conversión (CTA). Este proceso permitió iterar sobre la disposición de los bloques de contenido sin la distracción de elementos estéticos, asegurando que la narrativa comercial fuera coherente y directa.
+La landing page de Nexa se trabajó primero en <strong>Figma</strong> mediante wireframes de baja fidelidad. El objetivo de esta etapa no fue cerrar una estética final, sino ordenar el contenido, probar la jerarquía de secciones y ubicar los puntos de conversión antes de pasar a mockups de mayor detalle.
 </p>
 
-**Ilustración 21**
+<p align="justify">
+En esta fase, el equipo se concentró en tres preguntas simples: qué debe entender un visitante en los primeros segundos, cómo se le guía hacia la sección que más le importa y dónde conviene invitarlo a solicitar una demo. Por eso los wireframes se usaron como una herramienta de estructura y no como una versión incompleta del diseño final. Esta revisión se hizo tanto para <strong>Desktop Web Browser</strong> como para <strong>Mobile Web Browser</strong>, manteniendo la misma jerarquía de contenido y la misma lógica de navegación.
+</p>
 
-*Estructura Ósea de la Home — Jerarquía de Secciones y Call to Action*
+#### A. Desktop Web Browser
+
+*Estructura base de la Home y sus puntos de lectura*
 
 ![Home Wireframes](../assets/images/wireframes/home-wireframe-1.png)
 
-*Nota. Elaboración propia. Los wireframes de la página de inicio priorizan la sección Hero con una zona de conversión inmediata, seguida por la validación de problemas operativos.*
+Elaboración propia. Este primer wireframe ordena la portada pública en bloques de problema, propuesta de valor y llamada a la acción principal.
 
 <p align="justify">
-La disposición de los wireframes para los segmentos específicos (Distribuidores, Importadores y Operadores de Frío) se centró en la creación de "Landing Pages de Segmento" que actúan como embudos de venta especializados. Cada estructura fue diseñada para responder a las preguntas críticas de cada actor: "¿Cómo mejora mi control?", "¿Es escalable?" y "¿Qué visibilidad gano?".
+Los wireframes del frente comercial también permitieron separar el contenido por tipo de visitante. En lugar de escribir una sola página genérica, se definieron rutas distintas para quienes quieren entender la plataforma, para quienes buscan una solución por segmento y para quienes necesitan una sección de soporte o contexto institucional.
 </p>
 
-**Ilustración 22**
-
-*Wireframes de Segmentos y Hub de Soluciones*
+*Wireframes del hub de soluciones y páginas por frente comercial*
 
 ![Solutions Wireframes](../assets/images/wireframes/solutions-wireframe-1.png)
 
-*Nota. Elaboración propia. Diseño de la arquitectura de enrutamiento comercial para los tres perfiles de usuario identificados en el Capítulo 2.*
+Elaboración propia. La estructura de soluciones organiza la navegación hacia distribuidores, importadores y operadores de cámaras frías sin romper la coherencia general del sitio.
 
 <p align="justify">
-Finalmente, para las secciones de soporte (FAQ) y plataforma (Platform), los wireframes definieron una disposición modular que facilita la exploración de funcionalidades técnicas y la resolución autónoma de dudas. Se utilizó un esquema de cuadrículas (grids) consistente para mantener la sobriedad requerida en un producto de software empresarial.
+Finalmente, el bloque de Platform y FAQ se resolvió con una lógica modular. La intención fue que cada página explique una parte concreta del producto sin cargar al visitante con demasiados elementos al mismo tiempo.
 </p>
 
-**Ilustración 23**
-
-*Wireframes de Módulos Técnicos y Centro de Soporte*
+*Wireframes de Platform y del centro de soporte*
 
 ![Platform Wireframes](../assets/images/wireframes/platform-wireframe-1.png)
 
-*Nota. Elaboración propia. Estructura de componentes funcionales para la explicación detallada de las capacidades de la plataforma Nexa.*
+Elaboración propia. Esta vista ordena módulos, bloques informativos y preguntas frecuentes desde una lectura más funcional que decorativa.
+
+#### B. Mobile Web Browser
+
+<p align="justify">
+Como contraste, el equipo preparó una versión móvil de las pantallas principales en Figma para revisar cómo se adaptaban el hero, la navegación colapsada, los bloques de plataforma y las páginas de soporte en un ancho reducido. Esta validación permitió comprobar que el sitio seguía siendo legible y que los llamados a la acción principales conservaban prioridad visual en móvil.
+</p>
+
+*Wireframes móviles de Home, Platform, FAQ y Company*
+
+![Landing Mobile Wireframes](../assets/images/mobile-browser/landing-wireframes-mobile-overview.png)
+
+Elaboración propia. La versión móvil conserva la estructura general del sitio, pero simplifica el ritmo vertical y concentra la navegación en un menú compacto.
 
 ### 4.3.2. Landing Page Mock-up.
 
 <p align="justify">
-El diseño de alta fidelidad de Nexa adopta una estética <strong>B2B Premium</strong>, caracterizada por el uso de una paleta de colores profesional (Azul Cobalto y Gris Pizarra) que evoca confianza y sobriedad. La interfaz ha sido diseñada bajo principios de <em>flat design</em> y minimalismo operativo, eliminando distracciones visuales para centrarse en la claridad de los datos y la eficiencia de la navegación.
+Una vez validada la estructura, los mockups se desarrollaron en <strong>Figma</strong> para definir el comportamiento visual del sitio público. Aquí sí se resolvieron tipografía, color, jerarquía de botones, ritmo entre secciones e identidad de marca, pero manteniendo la misma lógica de navegación ya fijada en wireframes. Igual que en la etapa anterior, el trabajo se revisó tanto para escritorio como para navegación móvil.
+</p>
+
+<p align="justify">
+La intención de estos mockups no fue vender una imagen exagerada del producto, sino mostrar cómo Nexa comunica el problema, el valor y la progresión del recorrido público con un lenguaje visual consistente. Las capturas siguientes corresponden primero al recorrido principal en <strong>Desktop Web Browser</strong> y luego a una muestra breve de la adaptación en <strong>Mobile Web Browser</strong>.
 </p>
 
 #### A. Página de Inicio (Home)
 
 <p align="justify">
-La página de inicio actúa como el punto de entrada principal para tomadores de decisiones. Su estructura está diseñada para convertir visitantes en leads mediante una narrativa que escala desde el problema hasta la solución.
+La Home funciona como la puerta de entrada al producto. Su tarea principal es explicar con rapidez qué resuelve Nexa y por qué un equipo comercial u operativo debería prestarle atención.
 </p>
 
-**Ilustración 24**
-
-*Hero Section — Captura de Atención y Propuesta de Valor*
+*Home — Hero y propuesta principal*
 
 ![Home Section 1 - Hero and Value Proposition](../assets/images/mockups/landing-home-1.png)
 
-*Nota. Elaboración propia. La primera impresión presenta un titular potente centrado en el control operativo, utilizando un CTA claro y contrastado para invitar al registro de demos.*
+Elaboración propia. El hero concentra el mensaje principal, el CTA de demo y la primera promesa de valor del producto.
 
-**Ilustración 25**
-
-*Diferenciales de Servicio — Pilares Tecnológicos de Nexa*
+*Home — Capacidades y diferenciales comunicados*
 
 ![Home Section 2 - Core Services and Differentiators](../assets/images/mockups/landing-home-2.png)
 
-*Nota. Elaboración propia. Sección que desglosa los tres pilares de Nexa: Visibilidad, Control y Trazabilidad, utilizando iconos minimalistas y tipografía Inter para facilitar la lectura.*
+Elaboración propia. Esta sección traduce la propuesta en capacidades visibles para que el visitante entienda qué cambia en su operación.
 
-**Ilustración 26**
-
-*Validación de Industria — Generación de Confianza B2B*
+*Home — Prueba contextual y confianza*
 
 ![Home Section 3 - Industry Proof and Trust](../assets/images/mockups/landing-home-3.png)
 
-*Nota. Elaboración propia. Integración de prueba social y métricas de impacto que refuerzan la autoridad de Nexa en el sector de alimentos refrigerados.*
+Elaboración propia. El bloque de confianza ayuda a conectar la narrativa comercial con un contexto B2B más creíble y menos abstracto.
 
-**Ilustración 27**
-
-*Cierre y Navegación Secundaria — Footer Institucional*
+*Home — Cierre, contacto y navegación secundaria*
 
 ![Home Section 4 - Final CTA and Footer](../assets/images/mockups/landing-home-4.png)
 
-*Nota. Elaboración propia. El pie de página integra enlaces legales y de contacto bajo un esquema de colores oscuros, manteniendo la seriedad institucional.*
+Elaboración propia. El cierre retoma el llamado a la acción y ordena el acceso a enlaces complementarios del sitio.
 
 #### B. Módulos de la Plataforma (Platform)
 
 <p align="justify">
-Esta sección detalla las capacidades internas de la plataforma Nexa, permitiendo al usuario visualizar las herramientas que controlarán su operación.
+La página Platform se diseñó para explicar el producto más allá del mensaje inicial de la Home. Su función es mostrar, con un lenguaje visual más técnico, cómo Nexa articula pedidos, inventario, trazabilidad y lectura operativa.
 </p>
 
-**Ilustración 28**
-
-*Vista General de la Plataforma — Módulos de Gestión Centralizada*
+*Platform — Vista general de la plataforma*
 
 ![Platform Section 1 - Operational Overview](../assets/images/mockups/landing-platform-1.png)
 
-*Nota. Elaboración propia. Introducción a los módulos de gestión que explica cómo la plataforma centraliza la data de diversos puntos de la cadena.*
+Elaboración propia. Esta primera vista ordena la plataforma como un sistema compuesto por módulos conectados.
 
-**Ilustración 29**
-
-*Dashboard de Inventarios — Control de Stock y Variables Térmicas*
+*Platform — Gestión de inventario y disponibilidad*
 
 ![Platform Section 2 - B2B Inventory Management](../assets/images/mockups/landing-platform-2.png)
 
-*Nota. Elaboración propia. Interfaz de visualización de stock por lotes y temperaturas, resaltando la simplicidad y el minimalismo operativo.*
+Elaboración propia. La página aterriza el valor del control de inventario sobre una lectura sencilla para un visitante no técnico.
 
-**Ilustración 30**
-
-*Módulo de Trazabilidad — Seguimiento en Tiempo Real*
+*Platform — Seguimiento y trazabilidad de la operación*
 
 ![Platform Section 3 - Real-time Traceability](../assets/images/mockups/landing-platform-3.png)
 
-*Nota. Elaboración propia. Detalle técnico sobre el seguimiento de los despachos y la integridad térmica de los productos mediante telemetría IoT.*
+Elaboración propia. Aquí se comunica el seguimiento del pedido como parte del valor central del producto y no como un módulo aislado.
 
-**Ilustración 31**
-
-*Analítica de Datos — Reportes Automáticos y KPIs Logísticos*
+*Platform — Analítica y lectura de decisiones*
 
 ![Platform Section 4 - Data Analytics and Reporting](../assets/images/mockups/landing-platform-4.png)
 
-*Nota. Elaboración propia. Presentación de reportes automáticos diseñados para la gerencia operativa y la toma de decisiones basada en datos.*
+Elaboración propia. Este bloque muestra cómo la plataforma puede apoyar decisiones operativas sin salir del relato principal del sitio.
 
 #### C. Soluciones por Segmento (Solutions)
 
 <p align="justify">
-Nexa ofrece <em>landing pages</em> especializadas para cada actor de la cadena, abordando sus problemas específicos con un lenguaje técnico alineado a sus necesidades.
+La sección Solutions traduce la misma propuesta de Nexa a contextos comerciales distintos. No redefine la segmentación oficial del informe, pero sí permite que cada visitante se reconozca en una ruta pública más cercana a su tipo de negocio.
 </p>
 
-**Ilustración 32**
-
-*Soluciones para Distribuidores — Eficiencia en Despachos Masivos*
+*Solutions — Distribuidores*
 
 ![Solutions Distributors 1](../assets/images/mockups/landing-solutions-distributors-1.png)
 
-*Nota. Elaboración propia. Enfoque en la eficiencia logística y la gestión de pedidos masivos mediante interfaces optimizadas para la velocidad.*
+Elaboración propia. La propuesta para distribuidores enfatiza coordinación de pedidos, visibilidad y continuidad operativa.
 
-**Ilustración 33**
-
-*Soluciones para Importadores — Trazabilidad Origen-Destino Global*
+*Solutions — Importadores y mayoristas*
 
 ![Solutions Importers 1](../assets/images/mockups/landing-solutions-importers-1.png)
 
-*Nota. Elaboración propia. Foco en la integración de suministros internacionales y la narrativa visual que enfatiza la escala global de la operación.*
+Elaboración propia. Esta variante adapta la narrativa a operaciones con más dependencia de abastecimiento y visibilidad de stock.
 
-**Ilustración 34**
-
-*Operadores de Frío — Control Estricto de Temperatura y Almacenamiento*
+*Solutions — Operadores de cámaras frías*
 
 ![Solutions Cold Storage 1](../assets/images/mockups/landing-solutions-cold-storage-1.png)
 
-*Nota. Elaboración propia. Se resalta el control estricto de temperatura y la ubicación de almacenes, transmitiendo profesionalismo y tecnología de refrigeración.*
+Elaboración propia. La comunicación se orienta aquí a control, almacenamiento y trazabilidad del producto sensible.
 
 #### D. Identidad y Soporte (Company & FAQ)
 
 <p align="justify">
-Secciones orientadas a la transparencia corporativa y la resolución de dudas técnicas, fundamentales para establecer una relación comercial a largo plazo.
+Las páginas Company y FAQ cumplen una función de confianza y cierre. No son accesorios del sitio, sino piezas que ayudan a responder quién está detrás del producto y cómo se resuelven las dudas frecuentes antes de una conversación comercial.
 </p>
 
-**Ilustración 35**
-
-*Nuestra Identidad — Visión, Equipo y Cultura Nexa*
+*Company — identidad del proyecto y equipo*
 
 ![Company Section 1](../assets/images/mockups/landing-company-1.png)
 
-*Nota. Elaboración propia. Sección diseñada para humanizar la marca y transmitir la cultura de innovación y el equipo detrás de la plataforma.*
+Elaboración propia. Esta sección da contexto al proyecto y refuerza la dimensión humana detrás del producto.
 
-**Ilustración 36**
-
-*Centro de Soporte — FAQ Categorizado por Módulos*
+*FAQ — preguntas frecuentes y soporte inicial*
 
 ![FAQ Section 1](../assets/images/mockups/landing-faq-1.png)
 
-*Nota. Elaboración propia. Organización de preguntas frecuentes mediante una interfaz de acordeones limpia para facilitar la auto-resolución de dudas.*
+Elaboración propia. El FAQ ordena preguntas recurrentes del sitio en una estructura directa, pensada para reducir fricción antes del contacto.
+
+#### E. Mobile Web Browser
+
+<p align="justify">
+La versión móvil no replantea el contenido desde cero. Su objetivo fue adaptar la misma narrativa pública a una interacción más breve, con lectura vertical, botones más directos y secciones condensadas para consulta rápida desde teléfono.
+</p>
+
+*Mobile mock-up — primeras vistas públicas de Home, Platform, FAQ y Company*
+
+![Landing Mobile Mockups Overview](../assets/images/mobile-browser/landing-mockups-mobile-overview.png)
+
+Elaboración propia. Esta vista permite verificar el tratamiento del hero, la navegación compacta y la continuidad visual entre las páginas principales del sitio.
+
+*Mobile mock-up — secciones operativas y bloques de contacto*
+
+![Landing Mobile Mockups Sections](../assets/images/mobile-browser/landing-mockups-mobile-sections.png)
+
+Elaboración propia. La adaptación móvil conserva el recorrido entre propuesta de valor, FAQ, soporte de implementación y contacto comercial sin romper la jerarquía del contenido.
+
+*Mobile mock-up — detalle de cobertura funcional y uso del producto*
+
+![Landing Mobile Mockups Usage](../assets/images/mobile-browser/landing-mockups-mobile-usage.png)
+
+Elaboración propia. Estas pantallas ayudaron a comprobar que la explicación del producto seguía siendo clara en un formato más compacto.
+
+*Mobile mock-up — cierre, CTA y footer*
+
+![Landing Mobile Mockups CTA and Footer](../assets/images/mobile-browser/landing-mockups-mobile-cta-footer.png)
+
+Elaboración propia. El cierre móvil mantiene acceso directo al contacto, a la plataforma y a los enlaces institucionales sin perder legibilidad.

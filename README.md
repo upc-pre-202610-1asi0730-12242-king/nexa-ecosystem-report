@@ -45,7 +45,7 @@ nexa-report/
     │   ├── 01-cover.md
     │   ├── 02-version-history.md
     │   ├── 03-table-of-contents.md
-    │   ├── 04-list-of-tables-and-figures.md
+    │   ├── 04-project-report-collaboration-insights.md
     │   └── 05-student-outcome.md
     │
     ├── 10-chapter-1-introduction/

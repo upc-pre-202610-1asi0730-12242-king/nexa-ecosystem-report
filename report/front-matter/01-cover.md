@@ -15,8 +15,9 @@
 <br>
 <br>
 
-**Período:** 2026-10
+**Período Académico:** 2026-10
 **Curso:** Aplicaciones Web (NRC 12242)  
+**Sección:** 1ASI0730
 **Docente:** Velásquez Núñez, Ángel Augusto
 
 <br>
@@ -24,7 +25,14 @@
 
 ---
 
-# INFORME DE AVANCE 1 (AV1)
+# Informe de Trabajo Final
+
+## Informe de Avance 1 (AV1)
+
+**Startup:** Nexa  
+**Producto:** Nexa  
+**Equipo:** KING  
+**Mes y Año:** Abril 2026
 
 ---
 

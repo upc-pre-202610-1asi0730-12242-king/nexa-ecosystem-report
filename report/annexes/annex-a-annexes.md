@@ -8,7 +8,7 @@ En esta sección se preserva el registro audiovisual de las sustentaciones corre
 
 | Hito | Enlace al Video de Exposición (Microsoft Stream) |
 | :--- | :--- |
-| **Sprint Review AV1** | [Video de Exposición AV1 (Stream)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416289_upc_edu_pe/IQB9UxQlyAadTrNwHMsfHOSkAcwzBEKYn5CqSyxh8gOaJ_0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CeJeA8) |
+| **Sprint Review AV1** | [Video de Exposición AV1 (Stream)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQ8s2hgsqeRJNEIU3s7xVQAaHQWopLhfeeIKXPLi5JzF0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=lM91mG) |
 | **Video About the Team (Sprint 1)** | [Video de Presentación del Equipo (Stream)](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202416289%5Fupc%5Fedu%5Fpe%2FDocuments%2FKing%20Nexa%2FVideo%20About%20the%20Team%2Fupc%2Dpre%2D202610%2D1asi0730%2D12242%2DKing%2Dabout%20the%2Dteam%2Dsprint%2D1%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaeab184a%2Dd0fa%2D45e0%2Da028%2D24c81baa0590) |
 
 ## A.2. Evidencia de Needfinding
@@ -19,7 +19,7 @@ Como respaldo de la fase de levantamiento de requisitos e investigación de camp
 
 | Artefacto | Enlace de Evidencia |
 | :--- | :--- |
-| **Entrevistas Consolidadas (Todos los Segmentos)** | [Video de Entrevistas Juntas (Stream)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416289_upc_edu_pe/IQDezzsX9DTfSL6nZX-Z1M8sAY4Hn7S5ElLJ-UNTR3bi9qo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=9tSeZD) |
+| **Entrevistas Consolidadas (Todos los Segmentos)** | [Video de Entrevistas Juntas (Stream)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=IeXiWj) |
 
 ## A.3. Enlaces Maestros de Soporte
 
@@ -41,4 +41,17 @@ El siguiente cuadro concentra los enlaces a las plataformas colaborativas y repo
 Este anexo respalda la subsección <strong>5.2.1.8. Team Collaboration Insights during Sprint</strong>. A continuación, se registran las pruebas de coordinación síncrona y asíncrona del equipo, incluyendo capturas de reuniones, revisiones de diseño y acuerdos de trabajo que garantizaron la integración continua del producto.
 </p>
 
-*(Aquí se deben colocar las capturas de pantalla de las reuniones de Teams, WhatsApp o Discord con sus respectivas fechas y breves notas de contexto)*
+<p align="center">
+  <img src="../assets/images/project-collaboration/sprint-collaboration-evidence.jpg" alt="Evidencia de coordinación grupal Sprint 1" width="85%">
+  <br><em>Figura: Trabajo colaborativo del equipo KING durante el Sprint 1. Elaboración propia.</em>
+</p>
+
+<p align="center">
+  <img src="../assets/images/project-collaboration/team-collaboration-meeting.jpg" alt="Reunión de coordinación del equipo KING" width="85%">
+  <br><em>Figura: Reunión de coordinación del equipo KING — sesión de modelado y planificación del Sprint 1. Elaboración propia.</em>
+</p>
+
+<p align="center">
+  <img src="../assets/images/project-collaboration/presentation-practice-evidence.png" alt="Práctica de exposición AV1" width="85%">
+  <br><em>Figura: Práctica de exposición del equipo KING para la sustentación AV1. Elaboración propia.</em>
+</p>
