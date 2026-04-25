@@ -73,60 +73,60 @@ Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Bac
 
 | Key | US | Summary Jira | SP Backlog | Estado Jira | Evidencia / alcance |
 | :--- | :--- | :--- | :---: | :--- | :--- |
-| NX-224 | US01 | Navegar entre páginas | 2 | Por hacer | Navegación pública entre Home, Platform, Solutions, Company y FAQ. |
-| NX-225 | US02 | Dropdown de Solutions | 2 | Por hacer | Acceso rápido a segmentos desde el menú Solutions. |
-| NX-226 | US03 | Cambio de idioma | 3 | Por hacer | Selector EN/ES y persistencia del idioma en la experiencia pública. |
-| NX-227 | US04 | Navegación en Footer | 1 | Por hacer | Enlaces de cierre hacia páginas públicas y puntos de contacto. |
-| NX-228 | US05 | Propuesta en Hero | 2 | Por hacer | Propuesta de valor inicial del Home. |
-| NX-229 | US06 | Problema operativo | 2 | Por hacer | Narrativa del problema de coordinación, inventario y pedidos. |
-| NX-230 | US07 | Capacidades clave | 2 | Por hacer | Bloques de capacidades centrales del producto. |
-| NX-231 | US08 | Solicitar demo | 2 | Por hacer | CTA comercial hacia contacto o conversación de demo. |
-| NX-232 | US09 | Módulos en Platform | 2 | Por hacer | Presentación pública de módulos y alcance funcional. |
-| NX-233 | US10 | Cambio operativo | 2 | Por hacer | Explicación del cambio esperado en la operación diaria. |
-| NX-234 | US11 | MVP vs Expansión | 2 | Por hacer | Separación entre capacidades visibles del MVP y roadmap futuro. |
-| NX-235 | US12 | Hub de Solutions | 2 | Por hacer | Página hub para elegir segmento comercial. |
-| NX-236 | US13 | Propuesta Distribuidores | 2 | Por hacer | Landing específica para distribuidores. |
-| NX-237 | US14 | Propuesta Importadores | 2 | Por hacer | Landing específica para importadores y mayoristas. |
-| NX-238 | US15 | Propuesta Cámaras Frías | 2 | Por hacer | Landing específica para operadores de almacenamiento frío. |
-| NX-239 | US16 | Narrativa Company | 2 | Por hacer | Historia, propósito y equipo detrás de Nexa. |
-| NX-240 | US17 | Soporte Humano | 2 | Por hacer | Mensaje de soporte e implementación acompañada. |
-| NX-241 | US18 | Envío de contacto | 3 | Por hacer | Formulario público como canal comercial inicial. |
-| NX-242 | US19 | Validación Feedback | 3 | Por hacer | Validaciones visibles antes del envío del formulario. |
-| NX-243 | US20 | FAQ por Categorías | 2 | Por hacer | Organización de preguntas frecuentes por tema. |
-| NX-244 | US21 | Expandir FAQ | 2 | Por hacer | Interacción de acordeón para consultar respuestas. |
-| NX-245 | US22 | Soporte Flotante | 2 | Por hacer | Launcher de soporte persistente en el sitio público. |
-| NX-246 | US23 | Acceso público al portal en preparación | 1 | Por hacer | Estado visible del botón Log in sin prometer portal operativo. |
+| NX-224 | US01 | Navegar entre páginas | 2 | Finalizado | Navegación pública entre Home, Platform, Solutions, Company y FAQ. |
+| NX-225 | US02 | Dropdown de Solutions | 2 | Finalizado | Acceso rápido a segmentos desde el menú Solutions. |
+| NX-226 | US03 | Cambio de idioma | 3 | Finalizado | Selector EN/ES y persistencia del idioma en la experiencia pública. |
+| NX-227 | US04 | Navegación en Footer | 1 | Finalizado | Enlaces de cierre hacia páginas públicas y puntos de contacto. |
+| NX-228 | US05 | Propuesta en Hero | 2 | Finalizado | Propuesta de valor inicial del Home. |
+| NX-229 | US06 | Problema operativo | 2 | Finalizado | Narrativa del problema de coordinación, inventario y pedidos. |
+| NX-230 | US07 | Capacidades clave | 2 | Finalizado | Bloques de capacidades centrales del producto. |
+| NX-231 | US08 | Solicitar demo | 2 | Finalizado | CTA comercial hacia contacto o conversación de demo. |
+| NX-232 | US09 | Módulos en Platform | 2 | Finalizado | Presentación pública de módulos y alcance funcional. |
+| NX-233 | US10 | Cambio operativo | 2 | Finalizado | Explicación del cambio esperado en la operación diaria. |
+| NX-234 | US11 | MVP vs Expansión | 2 | Finalizado | Separación entre capacidades visibles del MVP y roadmap futuro. |
+| NX-235 | US12 | Hub de Solutions | 2 | Finalizado | Página hub para elegir segmento comercial. |
+| NX-236 | US13 | Propuesta Distribuidores | 2 | Finalizado | Landing específica para distribuidores. |
+| NX-237 | US14 | Propuesta Importadores | 2 | Finalizado | Landing específica para importadores y mayoristas. |
+| NX-238 | US15 | Propuesta Cámaras Frías | 2 | Finalizado | Landing específica para operadores de almacenamiento frío. |
+| NX-239 | US16 | Narrativa Company | 2 | Finalizado | Historia, propósito y equipo detrás de Nexa. |
+| NX-240 | US17 | Soporte Humano | 2 | Finalizado | Mensaje de soporte e implementación acompañada. |
+| NX-241 | US18 | Envío de contacto | 3 | Finalizado | Formulario público como canal comercial inicial. |
+| NX-242 | US19 | Validación Feedback | 3 | Finalizado | Validaciones visibles antes del envío del formulario. |
+| NX-243 | US20 | FAQ por Categorías | 2 | Finalizado | Organización de preguntas frecuentes por tema. |
+| NX-244 | US21 | Expandir FAQ | 2 | Finalizado | Interacción de acordeón para consultar respuestas. |
+| NX-245 | US22 | Soporte Flotante | 2 | Finalizado | Launcher de soporte persistente en el sitio público. |
+| NX-246 | US23 | Acceso público al portal en preparación | 1 | Finalizado | Estado visible del botón Log in sin prometer portal operativo. |
 
 *Sprint 1 Jira - Tareas Transversales*
 
 | Key | Tipo | Summary Jira | Estado Jira | Evidencia / salida |
 | :--- | :--- | :--- | :--- | :--- |
-| NX-57 | style | style: Definir guidelines visuales y design tokens | Por hacer | Lineamientos visuales del Capítulo 4 y tokens del sitio público. |
-| NX-59 | docs | docs: Redactar Startup Profile y Solution Profile | Por hacer | Base de negocio del Capítulo 1. |
-| NX-61 | docs | docs: Definir segmentos objetivo y análisis competitivo | Por hacer | Segmentos S1, S2, S3 y contexto competitivo. |
-| NX-62 | docs | docs: Diseñar guía de entrevistas y registrar ejecución | Por hacer | Evidencia de entrevistas y guía de investigación. |
-| NX-63 | docs | docs: Sintetizar User Personas y User Task Matrix | Por hacer | Personas, tareas y lectura de necesidad del Capítulo 2. |
-| NX-64 | docs | docs: Diseñar arquitectura de información y taxonomía | Por hacer | Navegación, sitemap y estructura de contenido. |
-| NX-67 | docs | docs: Elaborar Customer Journey Maps | Por hacer | Journey maps derivados de investigación. |
-| NX-68 | docs | docs: Registrar Big Picture EventStorming | Por hacer | Eventos, comandos y políticas de dominio. |
-| NX-69 | docs | docs: Consolidar glosario de Ubiquitous Language | Por hacer | Lenguaje ubicuo usado en historias y arquitectura. |
-| NX-70 | style | style: Diseñar wireframes Lo-Fi/Hi-Fi de landing y portal futuro | Por hacer | Wireframes y mockups para landing y referencia futura. |
-| NX-71 | docs | docs: Consolidar Impact Mapping | Por hacer | Trazabilidad entre objetivos, actores e impactos. |
-| NX-77 | style | style: Documentar accesibilidad WCAG 2.1 y Motion Principles | Por hacer | Criterios visuales, accesibilidad y movimiento. |
-| NX-81 | chore | chore: Scaffold repositorio website público | Por hacer | Estructura base del repositorio de landing. |
-| NX-84 | feat | feat(i18n): Implementar motor de internacionalización vanilla JS | Por hacer | Motor bilingüe EN/ES del sitio público. |
-| NX-88 | feat | feat(landing): Maquetar Hero y Features | Por hacer | Implementación visible del Home. |
-| NX-91 | feat | feat(contact): Implementar formulario y validación JS | Por hacer | Formulario público y validación del frente comercial. |
-| NX-106 | docs | docs: Diseñar modelo C4 del sistema | Por hacer | Contexto y contenedores del Capítulo 4. |
-| NX-113 | docs | docs: Expandir EventStorming con comandos y políticas | Por hacer | Profundización del modelo de dominio. |
-| NX-142 | docs | docs: Especificar 64 User Stories en BDD/Gherkin | Por hacer | User Stories completas del Capítulo 3. |
-| NX-148 | docs | docs: Priorizar MVP desde las 64 User Stories | Por hacer | Ordenamiento y release map del Product Backlog. |
-| NX-153 | docs | docs: Crear matriz de trazabilidad landing-backlog | Por hacer | Relación entre landing, backlog y alcance AV1. |
-| NX-158 | docs | docs: Graficar estadísticas de madurez digital | Por hacer | Sustento cuantitativo y visual de contexto. |
-| NX-161 | docs | docs: Completar cuadro Student Outcome ABET 5 | Por hacer | Evidencia de colaboración y roles. |
-| NX-164 | deploy | deploy: Publicar website en Vercel/GitHub Pages | Por hacer | Publicación del sitio público. |
-| NX-167 | docs | docs: Corregir APA 7, links rotos y compilación PDF | Por hacer | Cierre editorial y consistencia del informe. |
-| NX-169 | docs | docs: Estructurar Product Backlog inicial | Por hacer | Backlog priorizado del Capítulo 3. |
+| NX-57 | style | style: Definir guidelines visuales y design tokens | Finalizado | Lineamientos visuales del Capítulo 4 y tokens del sitio público. |
+| NX-59 | docs | docs: Redactar Startup Profile y Solution Profile | Finalizado | Base de negocio del Capítulo 1. |
+| NX-61 | docs | docs: Definir segmentos objetivo y análisis competitivo | Finalizado | Segmentos S1, S2, S3 y contexto competitivo. |
+| NX-62 | docs | docs: Diseñar guía de entrevistas y registrar ejecución | Finalizado | Evidencia de entrevistas y guía de investigación. |
+| NX-63 | docs | docs: Sintetizar User Personas y User Task Matrix | Finalizado | Personas, tareas y lectura de necesidad del Capítulo 2. |
+| NX-64 | docs | docs: Diseñar arquitectura de información y taxonomía | Finalizado | Navegación, sitemap y estructura de contenido. |
+| NX-67 | docs | docs: Elaborar Customer Journey Maps | Finalizado | Journey maps derivados de investigación. |
+| NX-68 | docs | docs: Registrar Big Picture EventStorming | Finalizado | Eventos, comandos y políticas de dominio. |
+| NX-69 | docs | docs: Consolidar glosario de Ubiquitous Language | Finalizado | Lenguaje ubicuo usado en historias y arquitectura. |
+| NX-70 | style | style: Diseñar wireframes Lo-Fi/Hi-Fi de landing y portal futuro | Finalizado | Wireframes y mockups para landing y referencia futura. |
+| NX-71 | docs | docs: Consolidar Impact Mapping | Finalizado | Trazabilidad entre objetivos, actores e impactos. |
+| NX-77 | style | style: Documentar accesibilidad WCAG 2.1 y Motion Principles | Finalizado | Criterios visuales, accesibilidad y movimiento. |
+| NX-81 | chore | chore: Scaffold repositorio website público | Finalizado | Estructura base del repositorio de landing. |
+| NX-84 | feat | feat(i18n): Implementar motor de internacionalización vanilla JS | Finalizado | Motor bilingüe EN/ES del sitio público. |
+| NX-88 | feat | feat(landing): Maquetar Hero y Features | Finalizado | Implementación visible del Home. |
+| NX-91 | feat | feat(contact): Implementar formulario y validación JS | Finalizado | Formulario público y validación del frente comercial. |
+| NX-106 | docs | docs: Diseñar modelo C4 del sistema | Finalizado | Contexto y contenedores del Capítulo 4. |
+| NX-113 | docs | docs: Expandir EventStorming con comandos y políticas | Finalizado | Profundización del modelo de dominio. |
+| NX-142 | docs | docs: Especificar 64 User Stories en BDD/Gherkin | Finalizado | User Stories completas del Capítulo 3. |
+| NX-148 | docs | docs: Priorizar MVP desde las 64 User Stories | Finalizado | Ordenamiento y release map del Product Backlog. |
+| NX-153 | docs | docs: Crear matriz de trazabilidad landing-backlog | Finalizado | Relación entre landing, backlog y alcance AV1. |
+| NX-158 | docs | docs: Graficar estadísticas de madurez digital | Finalizado | Sustento cuantitativo y visual de contexto. |
+| NX-161 | docs | docs: Completar cuadro Student Outcome ABET 5 | Finalizado | Evidencia de colaboración y roles. |
+| NX-164 | deploy | deploy: Publicar website en Vercel/GitHub Pages | Finalizado | Publicación del sitio público. |
+| NX-167 | docs | docs: Corregir APA 7, links rotos y compilación PDF | Finalizado | Cierre editorial y consistencia del informe. |
+| NX-169 | docs | docs: Estructurar Product Backlog inicial | Finalizado | Backlog priorizado del Capítulo 3. |
 | NX-254 | docs | docs: Redactar README principal del repositorio Nexa | Finalizado | README principal del repositorio como evidencia Docs-as-Code. |
 | NX-255 | docs | docs: Documentar arquitectura del sistema con diagramas C4 | Finalizado | Diagramas C4 y documentación arquitectónica asociada. |
 
@@ -134,22 +134,22 @@ Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Bac
 
 | Parent | Subtask | Summary Jira | Estado Jira | Propósito |
 | :--- | :--- | :--- | :--- | :--- |
-| NX-224 / US01 | NX-269 | feat(nav): Integrar rutas públicas principales | Por hacer | Implementar rutas de navegación del sitio público. |
-| NX-224 / US01 | NX-270 | test(nav): Verificar navegación desktop y mobile | Por hacer | Revisar navegación en vistas desktop y mobile. |
-| NX-226 / US03 | NX-271 | feat(i18n): Configurar selector EN/ES en navegación | Por hacer | Habilitar cambio de idioma desde la navegación. |
-| NX-226 / US03 | NX-272 | test(i18n): Verificar persistencia de idioma entre páginas públicas | Por hacer | Confirmar persistencia de idioma entre páginas. |
-| NX-241 / US18 | NX-273 | feat(contact): Maquetar formulario de contacto público | Por hacer | Construir el formulario visible de contacto. |
-| NX-241 / US18 | NX-274 | test(contact): Validar envío y mensaje de confirmación | Por hacer | Verificar respuesta tras intento de envío. |
-| NX-242 / US19 | NX-275 | feat(contact): Agregar validación de campos obligatorios | Por hacer | Añadir validaciones de campos requeridos. |
-| NX-242 / US19 | NX-276 | test(contact): Validar errores de nombre, correo y mensaje | Por hacer | Verificar mensajes de error del formulario. |
-| NX-243 / US20 | NX-277 | feat(faq): Estructurar categorías de preguntas frecuentes | Por hacer | Organizar preguntas por tema dentro del FAQ. |
-| NX-243 / US20 | NX-278 | test(faq): Verificar navegación por categorías del FAQ | Por hacer | Validar acceso a preguntas por categoría. |
-| NX-244 / US21 | NX-279 | feat(faq): Implementar acordeón de preguntas | Por hacer | Habilitar expandir y colapsar respuestas. |
-| NX-244 / US21 | NX-280 | test(faq): Verificar expandir y colapsar respuestas | Por hacer | Revisar comportamiento del acordeón. |
-| NX-245 / US22 | NX-281 | feat(support): Implementar launcher flotante de soporte | Por hacer | Mostrar acceso rápido a soporte visible. |
-| NX-245 / US22 | NX-282 | test(support): Verificar enlaces de soporte hacia contacto, plataforma y FAQ | Por hacer | Confirmar que los enlaces de soporte no rompen navegación. |
-| NX-246 / US23 | NX-283 | feat(auth-placeholder): Implementar estado visible de Log in | Por hacer | Mostrar el acceso al portal como preparación, no como feature completada. |
-| NX-246 / US23 | NX-284 | test(auth-placeholder): Verificar que Log in no dirige a una ruta rota | Por hacer | Evitar que el placeholder genere una experiencia rota. |
+| NX-224 / US01 | NX-269 | feat(nav): Integrar rutas públicas principales | Finalizado | Implementar rutas de navegación del sitio público. |
+| NX-224 / US01 | NX-270 | test(nav): Verificar navegación desktop y mobile | Finalizado | Revisar navegación en vistas desktop y mobile. |
+| NX-226 / US03 | NX-271 | feat(i18n): Configurar selector EN/ES en navegación | Finalizado | Habilitar cambio de idioma desde la navegación. |
+| NX-226 / US03 | NX-272 | test(i18n): Verificar persistencia de idioma entre páginas públicas | Finalizado | Confirmar persistencia de idioma entre páginas. |
+| NX-241 / US18 | NX-273 | feat(contact): Maquetar formulario de contacto público | Finalizado | Construir el formulario visible de contacto. |
+| NX-241 / US18 | NX-274 | test(contact): Validar envío y mensaje de confirmación | Finalizado | Verificar respuesta tras intento de envío. |
+| NX-242 / US19 | NX-275 | feat(contact): Agregar validación de campos obligatorios | Finalizado | Añadir validaciones de campos requeridos. |
+| NX-242 / US19 | NX-276 | test(contact): Validar errores de nombre, correo y mensaje | Finalizado | Verificar mensajes de error del formulario. |
+| NX-243 / US20 | NX-277 | feat(faq): Estructurar categorías de preguntas frecuentes | Finalizado | Organizar preguntas por tema dentro del FAQ. |
+| NX-243 / US20 | NX-278 | test(faq): Verificar navegación por categorías del FAQ | Finalizado | Validar acceso a preguntas por categoría. |
+| NX-244 / US21 | NX-279 | feat(faq): Implementar acordeón de preguntas | Finalizado | Habilitar expandir y colapsar respuestas. |
+| NX-244 / US21 | NX-280 | test(faq): Verificar expandir y colapsar respuestas | Finalizado | Revisar comportamiento del acordeón. |
+| NX-245 / US22 | NX-281 | feat(support): Implementar launcher flotante de soporte | Finalizado | Mostrar acceso rápido a soporte visible. |
+| NX-245 / US22 | NX-282 | test(support): Verificar enlaces de soporte hacia contacto, plataforma y FAQ | Finalizado | Confirmar que los enlaces de soporte no rompen navegación. |
+| NX-246 / US23 | NX-283 | feat(auth-placeholder): Implementar estado visible de Log in | Finalizado | Mostrar el acceso al portal como preparación, no como feature completada. |
+| NX-246 / US23 | NX-284 | test(auth-placeholder): Verificar que Log in no dirige a una ruta rota | Finalizado | Evitar que el placeholder genere una experiencia rota. |
 
 *Backlog futuro fuera del Sprint 1*
 
@@ -169,53 +169,39 @@ Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Bac
 Las capturas siguientes deben leerse como soporte visual del tablero. La referencia normalizada para evaluación es la tabla anterior, porque separa explícitamente historias, tareas, subtareas y backlog futuro sin mezclar módulos no entregados dentro del Sprint 1.
 </p>
 
-*Vista general del Sprint 1 cargado en Jira*
+*Vista general Sprint 0 + Sprint 1 cargado en Jira*
 
-![Vista general del Sprint 1](../assets/images/jira/jira-sprint-0-overview.png)
+![Vista general del Sprint 0 y Sprint 1](../assets/images/jira/sprint-0-sprint-1.png)
 
 La vista general del tablero permite verificar el volumen de trabajo visible del incremento AV1 y su organización inicial antes de revisar los bloques específicos. Elaboración propia.
 
-*Sprint 1 — bloque A de trabajo planificado en Jira*
-
-![Sprint 1 bloque A](../assets/images/jira/jira-sprint-1-block-a.png)
-
-El primer bloque del Sprint 1 muestra tareas de lineamientos visuales, arquitectura de información, wireframes, accesibilidad, scaffolding del sitio y componentes iniciales del frente público. Elaboración propia.
-
 *Sprint 1 — bloque B de trabajo planificado en Jira*
 
-![Sprint 1 bloque B](../assets/images/jira/jira-sprint-1-block-b.png)
+![Sprint 1 parte 2](../assets/images/jira/sprint-1-p2.png)
 
-El segundo bloque evidencia continuidad entre especificación de user stories, priorización del MVP, despliegue del website y cierre documental de la entrega. Elaboración propia.
+Este bloque evidencia continuidad entre especificación de user stories, priorización del MVP, despliegue del website y cierre documental de la entrega. Elaboración propia.
 
-*Sprint 1 — bloque C de historias públicas dentro del sprint*
+*Sprint 1 — parte 3 de historias públicas dentro del sprint*
 
-![Sprint 1 bloque C](../assets/images/jira/jira-sprint-1-block-c.png)
+![Sprint 1 parte 3](../assets/images/jira/sprint-1-p3.png)
 
 Este bloque agrupa historias del sitio público para Home, Platform, Solutions, Company y FAQ, todas asignadas al Sprint 1. Su presencia confirma que la experiencia pública forma parte directa del incremento AV1. Elaboración propia.
 
-*Verificación del Product Backlog en Jira — bloque A*
+*Verificación del Product Backlog en Jira*
 
-![Product Backlog bloque A](../assets/images/jira/jira-backlog-block-a.png)
+![Product Backlog completo](../assets/images/jira/backlog.png)
 
-Este primer bloque del backlog en Jira demuestra que las historias priorizadas para investigación, diseño y composición del MVP sí fueron registradas en la herramienta y no solo descritas en el informe. Elaboración propia.
-
-*Verificación del Product Backlog en Jira — bloque B*
-
-![Product Backlog bloque B](../assets/images/jira/jira-backlog-block-b.png)
-
-El segundo bloque confirma continuidad entre historias del sitio público, backlog técnico y preparación de la siguiente fase del producto. Elaboración propia.
-
-*Verificación del Product Backlog en Jira — bloque C*
-
-![Product Backlog bloque C](../assets/images/jira/jira-backlog-block-c.png)
-
-El tercer bloque permite contrastar la lógica de priorización del capítulo 3 con la evidencia viva de Jira, incluyendo historias orientadas a despliegue, trazabilidad académica y preparación técnica posterior. Elaboración propia.
+El backlog en Jira demuestra que las historias priorizadas para investigación, diseño y composición del MVP sí fueron registradas en la herramienta y no solo descritas en el informe. Permite contrastar la lógica de priorización del capítulo 3 con la evidencia viva de Jira, incluyendo historias orientadas a despliegue, trazabilidad académica y preparación técnica posterior. Elaboración propia.
 
 #### 5.2.1.4. Development Evidence for Sprint Review.
 
 <p align="justify">
-La evidencia de desarrollo del Sprint 1 abarca cuatro repositorios activos dentro de la organización <a href="https://github.com/upc-pre-202610-1asi0730-12242-king">upc-pre-202610-1asi0730-12242-king</a>. El repositorio <strong>nexa-report</strong> concentra toda la documentación académica del proyecto, construida de forma incremental desde el 01/04/2026. El repositorio <strong>nexa-website</strong> contiene la implementación real del Landing Page desplegado en GitHub Pages. Los repositorios <strong>nexa-platform</strong> y <strong>nexa-webapp</strong> fueron inicializados durante el sprint como base para la siguiente iteración. A continuación se presenta la tabla de commits relacionados con el incremento del Sprint 1, organizados por repositorio.
+La evidencia de desarrollo del Sprint 1 abarca cuatro repositorios activos dentro de la organización <a href="https://github.com/upc-pre-202610-1asi0730-12242-king">upc-pre-202610-1asi0730-12242-king</a>. El repositorio <strong>nexa-report</strong> concentra toda la documentación académica del proyecto, construida de forma incremental desde el 01/04/2026. El repositorio <strong>nexa-website</strong> contiene la implementación real del Landing Page desplegado en GitHub Pages. Los repositorios <strong><a href="https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform">nexa-platform</a></strong> y <strong><a href="https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp">nexa-webapp</a></strong> fueron inicializados durante el sprint como base para la siguiente iteración. A continuación se presenta la tabla de commits relacionados con el incremento del Sprint 1, organizados por repositorio.
 </p>
+
+*Commits del repositorio `nexa-report`*
+
+Documentación académica del proyecto, construida de forma incremental.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -250,10 +236,28 @@ La evidencia de desarrollo del Sprint 1 abarca cuatro repositorios activos dentr
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `43a1178` | `docs(report): polish AV1 with re-indexed illustrations and synced TOC` | | 20/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `d660ca8` | `docs(report): restructure AV1 evidence, clean assets and enforce rubric formats` | | 23/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `9ab7067` | `fix(lint): resolve markdownlint heading increment and hard tab errors` | | 23/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `3b97299` | `Initial commit` | | 15/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `a175f4c` | `chore: set up initial repository structure and project documentation` | | 18/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `53ef7e3` | `docs: add initial README with project overview and structure` | | 18/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `bdd0ddc` | `docs(ch5): expand development evidence table with real commits from all four repositories` | | 23/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `2996ede` | `docs(ch5): update sprint review evidence blocks and replace jira screenshots` | | 23/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `910087f` | `docs(ch2): add interview percentage breakdown and as-is scenario map` | | 23/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `21858a8` | `docs(ch2-ch4): complete DDD table and add user goal paths to wireflows` | | 23/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `1ffed9c` | `docs(jira): document sprint 1 backlog evidence` | | 24/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `9e7e0a3` | `assets(project-collaboration): add sprint evidence, github insights and commit screenshots` | | 24/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `1133e54` | `docs(front-matter): add collaboration insights, update cover and complete annexes A.4` | | 24/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `65cf019` | `assets(jira): update sprint and backlog screenshots` | | 24/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `12a30a3` | `docs(front-matter): update jira image references in collaboration insights` | | 24/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `880b191` | `docs(ch5): sync website commit table and fix heading lint in cover` | | 24/04/2026 |
+
+*Commits del repositorio `nexa-website`*
+
+Implementación real del Landing Page desplegado en GitHub Pages.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `3b97299` | `Initial commit` | | 14/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `a175f4c` | `chore: set up initial repository structure and project documentation` | | 17/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `53ef7e3` | `docs: add initial README with project overview and structure` | | 17/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `215b125` | `style(tokens): define Nexa brand design tokens v1.1.0` | | 19/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `05e01ce` | `docs: add project notes and planning decisions` | | 19/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `1332ae2` | `feat(landing): scaffold semantic index.html for 4-band Flecto layout` | Bands 1–3 with [data-band] scopes: dark hero, white tabs, cream segments, dark trust+contact. | 19/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `c0877ea` | `feat(landing): add styles/main.css + mirror tokens.css` | Layout grid system bound to tokens.css band scopes ([data-band]). Components and utility classes. | 19/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `d37c0a3` | `feat(landing): add i18n toggle for es_419/en_US lang pairs` | | 19/04/2026 |
@@ -263,18 +267,33 @@ La evidencia de desarrollo del Sprint 1 abarca cuatro repositorios activos dentr
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `1d91315` | `feat(design): implement premium visual redesign with new assets` | | 19/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `2d87251` | `feat: restore landing page to stable baseline` | | 19/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `427f52b` | `feat: translate DOM content to Spanish and update copy for local context` | | 19/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `525feac` | `fix(landing): fix i18n bindings, token references and layout inconsistencies` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `e89e497` | `chore: archive legacy docs to nexa-archive` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `f8d12a6` | `chore: clean up code comments` | | 20/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `525feac` | `fix(landing): fix i18n bindings, token references and layout inconsistencies` | | 19/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `e89e497` | `chore: archive legacy docs to nexa-archive` | | 19/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `f8d12a6` | `chore: clean up code comments` | | 19/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5601bd3` | `fix(landing): viewport height fixes for laptop screens` | | 20/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `78fd683` | `docs: update README with live link, repo references and clean structure` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `4a7b43e` | `chore: add .gitignore for OS and system files` | | 21/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5255e41` | `ci(lint): add markdownlint and commitlint workflow` | | 21/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `57e0f9c` | `chore(git): ignore .claude worktree directory` | | 21/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `f30b3f5` | `fix(docs): correct filename typos in requirements folder` | | 21/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `94d4735` | `feat(a11y): add skip-to-content link to all pages for WCAG compliance` | | 21/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `4a7b43e` | `chore: add .gitignore for OS and system files` | | 20/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5cc9089` | `Update team member ID in README.md` | | 20/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5255e41` | `ci(lint): add markdownlint and commitlint workflow` | | 20/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `57e0f9c` | `chore(git): ignore .claude worktree directory` | | 20/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `f30b3f5` | `fix(docs): correct filename typos in requirements folder` | | 20/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `94d4735` | `feat(a11y): add skip-to-content link to all pages for WCAG compliance` | | 20/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `505f4f6` | `docs(report): data update` | | 23/04/2026 |
+
+*Commits del repositorio `nexa-platform`*
+
+Inicialización del repositorio base para el portal transaccional.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | `upc-pre-202610-1asi0730-12242-king/nexa-platform` | `main` | `520138d` | `Initial commit` | | 15/04/2026 |
+
+*Commits del repositorio `nexa-webapp`*
+
+Inicialización del repositorio base para la Web Application.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `f374393` | `Initial commit` | | 15/04/2026 |
 
 #### 5.2.1.5. Execution Evidence for Sprint Review.
@@ -334,8 +353,8 @@ La evidencia de despliegue de AV1 sí existe, pero está concentrada en el frent
 | Landing page pública | **Desplegada y navegable** | [GitHub Pages](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) |
 | Repositorio documental | **Versionado y colaborativo** | [nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) |
 | Repositorio del sitio público | **Implementación visible del frontend público** | [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) |
-| Web application autenticada | **Fase posterior del producto** | Nombrada en diseño y backlog, no como evidencia de despliegue AV1 |
-| Backend / servicios | **Fase posterior del producto** | Nombrado en arquitectura y backlog, no como evidencia de despliegue AV1 |
+| Web application autenticada | **Fase posterior del producto** | [nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp). Nombrada en diseño y backlog, no como evidencia de despliegue AV1 |
+| Backend / servicios | **Fase posterior del producto** | [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform). Nombrado en arquitectura y backlog, no como evidencia de despliegue AV1 |
 
 <p align="justify">
 Esta lectura permite defender el despliegue con precisión: Nexa ya tiene una capa pública activa y demostrable, pero la capa transaccional aún debe presentarse como roadmap técnico respaldado por backlog y arquitectura, no como despliegue concluido ni como parte del alcance observable de esta entrega.
@@ -371,45 +390,27 @@ Adicionalmente, el proceso de integración continua hacia GitHub Pages operó co
 <br>
 
 <p align="center">
-  <img src="../assets/images/jira/jira-sprint-0-overview.png" alt="Jira — Vista general Sprint 0 y Sprint 1" width="80%">
+  <img src="../assets/images/jira/sprint-0-sprint-1.png" alt="Jira — Vista general Sprint 0 y Sprint 1" width="80%">
   <br>
   <em>Evidencia 2: Vista general Sprint 0 + Sprint 1 en el tablero Jira del equipo KING. Elaboración propia.</em>
 </p>
 
 <p align="center">
-  <img src="../assets/images/jira/jira-sprint-1-block-a.png" alt="Jira Sprint 1 — bloque A" width="80%">
+  <img src="../assets/images/jira/sprint-1-p2.png" alt="Jira Sprint 1 — parte 2" width="80%">
   <br>
-  <em>Evidencia 3: Sprint 1 en Jira — bloque A. Elaboración propia.</em>
+  <em>Evidencia 3: Sprint 1 en Jira — parte 2. Elaboración propia.</em>
 </p>
 
 <p align="center">
-  <img src="../assets/images/jira/jira-sprint-1-block-b.png" alt="Jira Sprint 1 — bloque B" width="80%">
+  <img src="../assets/images/jira/sprint-1-p3.png" alt="Jira Sprint 1 — parte 3" width="80%">
   <br>
-  <em>Evidencia 4: Sprint 1 en Jira — bloque B. Elaboración propia.</em>
+  <em>Evidencia 4: Sprint 1 en Jira — parte 3. Elaboración propia.</em>
 </p>
 
 <p align="center">
-  <img src="../assets/images/jira/jira-sprint-1-block-c.png" alt="Jira Sprint 1 — bloque C" width="80%">
+  <img src="../assets/images/jira/backlog.png" alt="Jira Product Backlog completo" width="80%">
   <br>
-  <em>Evidencia 5: Sprint 1 en Jira — bloque C. Elaboración propia.</em>
-</p>
-
-<p align="center">
-  <img src="../assets/images/jira/jira-backlog-block-a.png" alt="Jira Product Backlog — bloque A" width="80%">
-  <br>
-  <em>Evidencia 6: Product Backlog en Jira — bloque A. Elaboración propia.</em>
-</p>
-
-<p align="center">
-  <img src="../assets/images/jira/jira-backlog-block-b.png" alt="Jira Product Backlog — bloque B" width="80%">
-  <br>
-  <em>Evidencia 7: Product Backlog en Jira — bloque B. Elaboración propia.</em>
-</p>
-
-<p align="center">
-  <img src="../assets/images/jira/jira-backlog-block-c.png" alt="Jira Product Backlog — bloque C" width="80%">
-  <br>
-  <em>Evidencia 8: Product Backlog en Jira — bloque C. Elaboración propia.</em>
+  <em>Evidencia 5: Product Backlog completo en Jira. Elaboración propia.</em>
 </p>
 
 <br>
