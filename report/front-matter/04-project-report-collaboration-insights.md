@@ -73,38 +73,23 @@ El equipo se organizó alrededor de liderazgos funcionales en lugar de dividir p
 ### Sprint collaboration en Jira
 
 <p align="center">
-  <img src="../assets/images/jira/jira-sprint-0-overview.png" alt="Jira — Vista general Sprint 0 y Sprint 1" width="85%">
+  <img src="../assets/images/jira/sprint-0-sprint-1.png" alt="Jira — Vista general Sprint 0 y Sprint 1" width="85%">
   <br><em>Figura: Vista general Sprint 0 + Sprint 1 en Jira. Elaboración propia.</em>
 </p>
 
 <p align="center">
-  <img src="../assets/images/jira/jira-sprint-1-block-a.png" alt="Jira Sprint 1 — bloque A" width="85%">
-  <br><em>Figura: Sprint 1 en Jira — bloque A. Elaboración propia.</em>
+  <img src="../assets/images/jira/sprint-1-p2.png" alt="Jira Sprint 1 — parte 2" width="85%">
+  <br><em>Figura: Sprint 1 en Jira — parte 2. Elaboración propia.</em>
 </p>
 
 <p align="center">
-  <img src="../assets/images/jira/jira-sprint-1-block-b.png" alt="Jira Sprint 1 — bloque B" width="85%">
-  <br><em>Figura: Sprint 1 en Jira — bloque B. Elaboración propia.</em>
+  <img src="../assets/images/jira/sprint-1-p3.png" alt="Jira Sprint 1 — parte 3" width="85%">
+  <br><em>Figura: Sprint 1 en Jira — parte 3. Elaboración propia.</em>
 </p>
 
 <p align="center">
-  <img src="../assets/images/jira/jira-sprint-1-block-c.png" alt="Jira Sprint 1 — bloque C" width="85%">
-  <br><em>Figura: Sprint 1 en Jira — bloque C. Elaboración propia.</em>
-</p>
-
-<p align="center">
-  <img src="../assets/images/jira/jira-backlog-block-a.png" alt="Jira Product Backlog — bloque A" width="85%">
-  <br><em>Figura: Product Backlog en Jira — bloque A. Elaboración propia.</em>
-</p>
-
-<p align="center">
-  <img src="../assets/images/jira/jira-backlog-block-b.png" alt="Jira Product Backlog — bloque B" width="85%">
-  <br><em>Figura: Product Backlog en Jira — bloque B. Elaboración propia.</em>
-</p>
-
-<p align="center">
-  <img src="../assets/images/jira/jira-backlog-block-c.png" alt="Jira Product Backlog — bloque C" width="85%">
-  <br><em>Figura: Product Backlog en Jira — bloque C. Elaboración propia.</em>
+  <img src="../assets/images/jira/backlog.png" alt="Jira Product Backlog" width="85%">
+  <br><em>Figura: Product Backlog completo en Jira. Elaboración propia.</em>
 </p>
 
 ### Evidencias de coordinación y trabajo en equipo
