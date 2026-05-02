@@ -1,14 +1,20 @@
 ## 5.2. Landing Page, Services & Applications Implementation
 
-Para AV1, la evidencia de implementación de Nexa debe concentrarse en el incremento que sí alcanzó un estado demostrable y defendible ante la rúbrica: **Sprint 1**. En esta iteración convergen la planificación en Jira, la consolidación del backlog, la producción de artefactos de diseño, la documentación arquitectónica y la construcción de la landing page pública desplegada. El tablero vivo de Jira registra **51 issues principales** dentro del sprint, distribuidos en **23 historias de usuario** y **28 tareas**, además de **16 subtareas reales** asociadas por parent. Por ello, este sprint no puede leerse como un simple esfuerzo de maquetación, sino como el primer incremento formal y visible del proyecto.
+<p align="justify">
+Para AV1, la evidencia de implementación de Nexa debe concentrarse en el incremento que sí alcanzó un estado demostrable y defendible ante la rúbrica: <strong>Sprint 1</strong>. En esta iteración convergen la planificación en Jira, la consolidación del backlog, la producción de artefactos de diseño, la documentación arquitectónica y la construcción de la landing page pública desplegada. El tablero vivo de Jira registra <strong>51 issues principales</strong> dentro del sprint, distribuidos en <strong>23 historias de usuario</strong> y <strong>28 tareas</strong>, además de <strong>16 subtareas reales</strong> asociadas por parent. Por ello, este sprint no puede leerse como un simple esfuerzo de maquetación, sino como el primer incremento formal y visible del proyecto.
+</p>
 
 ### 5.2.1. Sprint 1
 
-El Sprint 1 concentra la entrega AV1 y constituye la base del incremento visible del proyecto. La salida funcional verificable es la landing page pública en GitHub Pages; sin embargo, la lectura ingenieril del sprint exige considerar también la coherencia entre backlog, diseño, arquitectura, trazabilidad documental y coordinación del equipo. Bajo esta lógica, la revisión del sprint no se limita a “qué página se publicó”, sino a **qué sistema de trabajo permitió llegar a esa publicación sin perder consistencia con el problema, los segmentos y la preparación técnica del producto**.
+<p align="justify">
+El Sprint 1 concentra la entrega AV1 y constituye la base del incremento visible del proyecto. La salida funcional verificable es la landing page pública en GitHub Pages; sin embargo, la lectura ingenieril del sprint exige considerar también la coherencia entre backlog, diseño, arquitectura, trazabilidad documental y coordinación del equipo. Bajo esta lógica, la revisión del sprint no se limita a “qué página se publicó”, sino a <strong>qué sistema de trabajo permitió llegar a esa publicación sin perder consistencia con el problema, los segmentos y la preparación técnica del producto</strong>.
+</p>
 
 #### 5.2.1.1. Sprint Planning 1.
 
+<p align="justify">
 La planificación del Sprint 1 se orientó a producir un incremento AV1 que pudiera exponerse de forma pública sin sacrificar profundidad técnica. El objetivo no fue desplegar todavía el portal transaccional completo, sino articular una primera capa visible del producto respaldada por investigación, diseño y arquitectura. La captura de Jira muestra un sprint cargado con trabajo concurrente en varios frentes, lo cual confirma una planificación por capas y no por tareas aisladas.
+</p>
 
 *Resumen formal del Sprint Planning 1*
 
@@ -24,11 +30,15 @@ La planificación del Sprint 1 se orientó a producir un incremento AV1 que pudi
 | **Herramienta principal** | Jira Software |
 | **Carga visible** | 51 issues principales en Sprint 1: 23 historias + 28 tareas; 16 subtareas reales asociadas por parent |
 
+<p align="justify">
 La carga anterior corresponde al corte normalizado de Jira verificado el 24 de abril de 2026. Las subtareas no aparecen como issues directas del sprint en la consulta principal porque Jira las administra bajo sus historias padre; por eso se documentan en una tabla separada, preservando la trazabilidad entre historia, tarea técnica y evidencia del incremento.
+</p>
 
 #### 5.2.1.2. Aspect Leaders and Collaborators.
 
+<p align="justify">
 La ejecución del sprint evidencia una distribución funcional del liderazgo. En lugar de concentrar toda la iteración en un único perfil, el equipo repartió la responsabilidad entre dominio, diseño, arquitectura, documentación y construcción visible del sitio. Esta organización es consistente con el Student Outcome ABET 5 y explica por qué el incremento AV1 combina trabajo público demostrable con profundidad ingenieril.
+</p>
 
 *Distribución de liderazgos y roles funcionales en el Sprint 1*
 
@@ -42,9 +52,13 @@ La ejecución del sprint evidencia una distribución funcional del liderazgo. En
 
 #### 5.2.1.3. Sprint Backlog 1.
 
+<p align="justify">
 La forma más clara de leer el Sprint Backlog 1 no es como una lista plana de tickets, sino como un conjunto de frentes coordinados que alimentan un mismo incremento. La extracción de Jira confirma que el sprint no incluye el portal transaccional completo ni el backend productivo; concentra las historias públicas US01-US23, tareas transversales de investigación, UX/UI, arquitectura, despliegue y documentación, más subtareas específicas para las historias que necesitaban desglose operativo.
+</p>
 
-Además, el Sprint Backlog 1 no puede analizarse aislado del **Product Backlog documentado en la sección 3.3**. Las tablas siguientes conectan la priorización académica con el tablero operativo: las historias US01-US23 quedan dentro del Sprint 1, mientras que las historias transaccionales US24-US64 y las tareas técnicas de backend permanecen como backlog futuro. Esta separación permite defender AV1 sin declarar software que todavía no existe.
+<p align="justify">
+Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Backlog documentado en la sección 3.3</strong>. Las tablas siguientes conectan la priorización académica con el tablero operativo: las historias US01-US23 quedan dentro del Sprint 1, mientras que las historias transaccionales US24-US64 y las tareas técnicas de backend permanecen como backlog futuro. Esta separación permite defender AV1 sin declarar software que todavía no existe.
+</p>
 
 *Resumen cuantitativo del Sprint 1 en Jira*
 
@@ -151,7 +165,9 @@ Además, el Sprint Backlog 1 no puede analizarse aislado del **Product Backlog d
 | NX-266 | future: Dashboard de métricas comerciales | En curso | Dashboard interno futuro, fuera de la landing pública. |
 | NX-94, NX-97, NX-100, NX-116, NX-122, NX-128, NX-133, NX-138 | Tareas técnicas future-dashboard, future-webapp, future-auth, future-backend, future-orders y future-api | Fuera de Sprint 1 | Preparan módulos posteriores, pero no deben contarse como entregables AV1. |
 
+<p align="justify">
 Las capturas siguientes deben leerse como soporte visual del tablero. La referencia normalizada para evaluación es la tabla anterior, porque separa explícitamente historias, tareas, subtareas y backlog futuro sin mezclar módulos no entregados dentro del Sprint 1.
+</p>
 
 *Vista general Sprint 0 + Sprint 1 cargado en Jira*
 
@@ -179,7 +195,9 @@ El backlog en Jira demuestra que las historias priorizadas para investigación, 
 
 #### 5.2.1.4. Development Evidence for Sprint Review.
 
-La evidencia de desarrollo del Sprint 1 abarca cuatro repositorios activos dentro de la organización [upc-pre-202610-1asi0730-12242-king](https://github.com/upc-pre-202610-1asi0730-12242-king). El repositorio **nexa-report** concentra toda la documentación académica del proyecto, construida de forma incremental desde el 01/04/2026. El repositorio **nexa-website** contiene la implementación real del Landing Page desplegado en GitHub Pages. Los repositorios **[nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform)** y **[nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp)** fueron inicializados durante el sprint como base para la siguiente iteración. A continuación se presenta la tabla de commits relacionados con el incremento del Sprint 1, organizados por repositorio.
+<p align="justify">
+La evidencia de desarrollo del Sprint 1 abarca cuatro repositorios activos dentro de la organización <a href="https://github.com/upc-pre-202610-1asi0730-12242-king">upc-pre-202610-1asi0730-12242-king</a>. El repositorio <strong>nexa-report</strong> concentra toda la documentación académica del proyecto, construida de forma incremental desde el 01/04/2026. El repositorio <strong>nexa-website</strong> contiene la implementación real del Landing Page desplegado en GitHub Pages. Los repositorios <strong><a href="https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform">nexa-platform</a></strong> y <strong><a href="https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp">nexa-webapp</a></strong> fueron inicializados durante el sprint como base para la siguiente iteración. A continuación se presenta la tabla de commits relacionados con el incremento del Sprint 1, organizados por repositorio.
+</p>
 
 *Commits del repositorio `nexa-report`*
 
@@ -257,7 +275,7 @@ Implementación real del Landing Page desplegado en GitHub Pages.
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `4a7b43e` | `chore: add .gitignore for OS and system files` | | 20/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5cc9089` | `Update team member ID in README.md` | | 20/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5255e41` | `ci(lint): add markdownlint and commitlint workflow` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `57e0f9c` | `chore(repo): update local workspace ignore rules` | | 20/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `57e0f9c` | `chore(git): ignore .claude worktree directory` | | 20/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `f30b3f5` | `fix(docs): correct filename typos in requirements folder` | | 20/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `94d4735` | `feat(a11y): add skip-to-content link to all pages for WCAG compliance` | | 20/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `505f4f6` | `docs(report): data update` | | 23/04/2026 |
@@ -280,7 +298,9 @@ Inicialización del repositorio base para la Web Application.
 
 #### 5.2.1.5. Execution Evidence for Sprint Review.
 
+<p align="justify">
 La ejecución visible del sprint ya se materializa en una landing page pública operativa con navegación multipágina, selector bilingüe, CTA de demostración, páginas por segmento y un relato claro sobre inventario, pedidos, temperatura y entrega. Esta salida confirma que el equipo sí llevó una parte del producto hasta una instancia de exposición real, lo que permite validación comercial y revisión técnica de consistencia entre lo prometido y lo implementado.
+</p>
 
 *Ejecución observable del incremento Sprint 1*
 
@@ -296,11 +316,15 @@ La ejecución visible del sprint ya se materializa en una landing page pública 
 | Portal B2B autenticado | Solo modelado en backlog y diseño | No forma parte de AV1 |
 | API y servicios REST | Solo modelados en backlog y arquitectura | No forma parte de AV1 |
 
+<p align="justify">
 Al mismo tiempo, la ejecución debe leerse con honestidad de alcance: el portal B2B autenticado, la captura transaccional de pedidos, el catálogo privado, la autenticación y el seguimiento operativo aún no forman parte del incremento entregado. Su presencia en backlog y en arquitectura demuestra preparación, pero no debe confundirse con ejecución completada dentro de AV1.
+</p>
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
 
-La documentación de servicios en AV1 existe principalmente como **evidencia de diseño y preparación técnica**. El backlog ya incorpora historias de API y documentación (`NX-138`, además de las historias técnicas del bloque US58-US64), mientras que el capítulo 4 conserva la arquitectura DDD/C4, el diseño orientado a objetos y la base de datos que servirán de soporte a una fase posterior. Esta base es válida como sustento de ingeniería, porque muestra contratos previstos, separación de capas y reglas de negocio modeladas antes de implementar controladores productivos.
+<p align="justify">
+La documentación de servicios en AV1 existe principalmente como <strong>evidencia de diseño y preparación técnica</strong>. El backlog ya incorpora historias de API y documentación (`NX-138`, además de las historias técnicas del bloque US58-US64), mientras que el capítulo 4 conserva la arquitectura DDD/C4, el diseño orientado a objetos y la base de datos que servirán de soporte a una fase posterior. Esta base es válida como sustento de ingeniería, porque muestra contratos previstos, separación de capas y reglas de negocio modeladas antes de implementar controladores productivos.
+</p>
 
 *Evidencia disponible de documentación de servicios en AV1*
 
@@ -312,11 +336,15 @@ La documentación de servicios en AV1 existe principalmente como **evidencia de 
 | Diseño de base de datos | Sección 4.8 | Prepara persistencia para futuros servicios |
 | Implementación ejecutable de servicios | **No corresponde en esta entrega** | Queda fuera del alcance observable de AV1 |
 
-Por tanto, esta subsección debe defenderse como **documentación técnica preparada**, no como servicio implementado ni desplegado en producción. En AV1 basta con demostrar que el producto ya tiene una base de arquitectura y de contratos pensada para la siguiente fase, sin sobredeclarar software que todavía no corresponde a esta entrega.
+<p align="justify">
+Por tanto, esta subsección debe defenderse como <strong>documentación técnica preparada</strong>, no como servicio implementado ni desplegado en producción. En AV1 basta con demostrar que el producto ya tiene una base de arquitectura y de contratos pensada para la siguiente fase, sin sobredeclarar software que todavía no corresponde a esta entrega.
+</p>
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review.
 
+<p align="justify">
 La evidencia de despliegue de AV1 sí existe, pero está concentrada en el frente público. La siguiente tabla separa lo que ya es demostrable de lo que todavía permanece en fase preparatoria.
+</p>
 
 *Estado de despliegue y evidencia verificable de artefactos en AV1*
 
@@ -328,13 +356,19 @@ La evidencia de despliegue de AV1 sí existe, pero está concentrada en el frent
 | Web application autenticada | **Fase posterior del producto** | [nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp). Nombrada en diseño y backlog, no como evidencia de despliegue AV1 |
 | Backend / servicios | **Fase posterior del producto** | [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform). Nombrado en arquitectura y backlog, no como evidencia de despliegue AV1 |
 
+<p align="justify">
 Esta lectura permite defender el despliegue con precisión: Nexa ya tiene una capa pública activa y demostrable, pero la capa transaccional aún debe presentarse como roadmap técnico respaldado por backlog y arquitectura, no como despliegue concluido ni como parte del alcance observable de esta entrega.
+</p>
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 
+<p align="justify">
 El Sprint 1 revela un patrón de colaboración técnicamente sano: investigación y dominio por un lado, UX/UI e información por otro, implementación pública y despliegue por otro, y una capa transversal de arquitectura y documentación sosteniendo el conjunto. Esta organización permitió que el equipo avanzara en paralelo sin perder coherencia narrativa ni técnica, lo cual es especialmente valioso en AV1 porque el entregable combina secciones académicas, artefactos visuales y software visible.
+</p>
 
+<p align="justify">
 La principal conclusión colaborativa del sprint es que Nexa no se construyó como un esfuerzo fragmentado entre “los que escriben” y “los que programan”. El incremento visible solo fue posible porque Jira, el reporte, el diseño y la landing page evolucionaron de manera sincronizada. Aun cuando persista backlog remanente para portal B2B, autenticación, inventario transaccional y servicios, el equipo deja en AV1 una base metodológica sólida, trazable y escalable para la siguiente iteración.
+</p>
 
 *Evidencias de colaboración y métricas del equipo*
 
@@ -345,81 +379,107 @@ El análisis de la colaboración durante el Sprint 1 se evidencia en tres canale
 
 Adicionalmente, el proceso de integración continua hacia GitHub Pages operó como el principal punto de validación. Cada *pull request* o actualización en la rama principal desencadenaba un despliegue que permitía a todo el equipo revisar la apariencia y funcionalidad del sitio público desde cualquier dispositivo, garantizando que el diseño *mobile-first* propuesto en los mockups se cumpliera en la implementación real.
 
-  ![GitHub Insights & Commits](../assets/images/project-collaboration/github-insights.png)
-  
+<br>
 
-  *Evidencia 1: Actividad y contribuciones en los repositorios durante el Sprint 1. Elaboración propia.*
+<p align="center">
+  <img src="../assets/images/project-collaboration/github-insights.png" alt="GitHub Insights & Commits" width="80%">
+  <br>
+  <em>Evidencia 1: Actividad y contribuciones en los repositorios durante el Sprint 1. Elaboración propia.</em>
+</p>
 
-  ![Jira — Vista general Sprint 0 y Sprint 1](../assets/images/jira/sprint-0-sprint-1.png)
-  
+<br>
 
-  *Evidencia 2: Vista general Sprint 0 + Sprint 1 en el tablero Jira del equipo KING. Elaboración propia.*
+<p align="center">
+  <img src="../assets/images/jira/sprint-0-sprint-1.png" alt="Jira — Vista general Sprint 0 y Sprint 1" width="80%">
+  <br>
+  <em>Evidencia 2: Vista general Sprint 0 + Sprint 1 en el tablero Jira del equipo KING. Elaboración propia.</em>
+</p>
 
-  ![Jira Sprint 1 — parte 2](../assets/images/jira/sprint-1-p2.png)
-  
+<p align="center">
+  <img src="../assets/images/jira/sprint-1-p2.png" alt="Jira Sprint 1 — parte 2" width="80%">
+  <br>
+  <em>Evidencia 3: Sprint 1 en Jira — parte 2. Elaboración propia.</em>
+</p>
 
-  *Evidencia 3: Sprint 1 en Jira — parte 2. Elaboración propia.*
+<p align="center">
+  <img src="../assets/images/jira/sprint-1-p3.png" alt="Jira Sprint 1 — parte 3" width="80%">
+  <br>
+  <em>Evidencia 4: Sprint 1 en Jira — parte 3. Elaboración propia.</em>
+</p>
 
-  ![Jira Sprint 1 — parte 3](../assets/images/jira/sprint-1-p3.png)
-  
+<p align="center">
+  <img src="../assets/images/jira/backlog.png" alt="Jira Product Backlog completo" width="80%">
+  <br>
+  <em>Evidencia 5: Product Backlog completo en Jira. Elaboración propia.</em>
+</p>
 
-  *Evidencia 4: Sprint 1 en Jira — parte 3. Elaboración propia.*
-
-  ![Jira Product Backlog completo](../assets/images/jira/backlog.png)
-  
-
-  *Evidencia 5: Product Backlog completo en Jira. Elaboración propia.*
+<br>
 
 *Evidencia gráfica — Historial de commits en `nexa-report`*
 
-  ![Primeros commits nexa-report](../assets/images/project-collaboration/report-commits/first-commits.png)
-  
-*Figura: Primeros commits del repositorio `nexa-report`. Elaboración propia.*
+<p align="center">
+  <img src="../assets/images/project-collaboration/report-commits/first-commits.png" alt="Primeros commits nexa-report" width="85%">
+  <br><em>Figura: Primeros commits del repositorio `nexa-report`. Elaboración propia.</em>
+</p>
 
-  ![Commits intermedios nexa-report](../assets/images/project-collaboration/report-commits/commits.png)
-  
-*Figura: Bloque intermedio de commits del repositorio `nexa-report`. Elaboración propia.*
+<p align="center">
+  <img src="../assets/images/project-collaboration/report-commits/commits.png" alt="Commits intermedios nexa-report" width="85%">
+  <br><em>Figura: Bloque intermedio de commits del repositorio `nexa-report`. Elaboración propia.</em>
+</p>
 
-  ![Últimos commits nexa-report](../assets/images/project-collaboration/report-commits/last-commits.png)
-  
-*Figura: Últimos commits del repositorio `nexa-report` al cierre de AV1. Elaboración propia.*
+<p align="center">
+  <img src="../assets/images/project-collaboration/report-commits/last-commits.png" alt="Últimos commits nexa-report" width="85%">
+  <br><em>Figura: Últimos commits del repositorio `nexa-report` al cierre de AV1. Elaboración propia.</em>
+</p>
 
 *Evidencia gráfica — Historial de commits en `nexa-website`*
 
-  ![Primeros commits nexa-website](../assets/images/project-collaboration/website-commits/first-commits.png)
-  
-*Figura: Primeros commits del repositorio `nexa-website`. Elaboración propia.*
+<p align="center">
+  <img src="../assets/images/project-collaboration/website-commits/first-commits.png" alt="Primeros commits nexa-website" width="85%">
+  <br><em>Figura: Primeros commits del repositorio `nexa-website`. Elaboración propia.</em>
+</p>
 
-  ![Commits intermedios nexa-website](../assets/images/project-collaboration/website-commits/commits.png)
-  
-*Figura: Bloque intermedio de commits del repositorio `nexa-website`. Elaboración propia.*
+<p align="center">
+  <img src="../assets/images/project-collaboration/website-commits/commits.png" alt="Commits intermedios nexa-website" width="85%">
+  <br><em>Figura: Bloque intermedio de commits del repositorio `nexa-website`. Elaboración propia.</em>
+</p>
 
-  ![Últimos commits nexa-website](../assets/images/project-collaboration/website-commits/last-commits.png)
-  
-*Figura: Últimos commits del repositorio `nexa-website` al cierre de AV1. Elaboración propia.*
+<p align="center">
+  <img src="../assets/images/project-collaboration/website-commits/last-commits.png" alt="Últimos commits nexa-website" width="85%">
+  <br><em>Figura: Últimos commits del repositorio `nexa-website` al cierre de AV1. Elaboración propia.</em>
+</p>
 
-  ![Reunión de coordinación del equipo KING](../assets/images/project-collaboration/team-collaboration-meeting.jpg)
-  
+<br>
 
-  *Evidencia 6: Reunión de coordinación síncrona del equipo KING (Microsoft Teams). Elaboración propia.*
+<p align="center">
+  <img src="../assets/images/project-collaboration/team-collaboration-meeting.jpg" alt="Reunión de coordinación del equipo KING" width="80%">
+  <br>
+  <em>Evidencia 6: Reunión de coordinación síncrona del equipo KING (Microsoft Teams). Elaboración propia.</em>
+</p>
 
-  ![Colaboración durante sprint](../assets/images/project-collaboration/sprint-collaboration-evidence.jpg)
-  
+<p align="center">
+  <img src="../assets/images/project-collaboration/sprint-collaboration-evidence.jpg" alt="Colaboración durante sprint" width="80%">
+  <br>
+  <em>Evidencia 7: Trabajo colaborativo del equipo durante el Sprint 1. Elaboración propia.</em>
+</p>
 
-  *Evidencia 7: Trabajo colaborativo del equipo durante el Sprint 1. Elaboración propia.*
-
-  ![Práctica de exposición](../assets/images/project-collaboration/presentation-practice-evidence.png)
-  
-
-  *Evidencia 8: Sesión de práctica de exposición y preparación de la sustentación AV1. Elaboración propia.*
+<p align="center">
+  <img src="../assets/images/project-collaboration/presentation-practice-evidence.png" alt="Práctica de exposición" width="80%">
+  <br>
+  <em>Evidencia 8: Sesión de práctica de exposición y preparación de la sustentación AV1. Elaboración propia.</em>
+</p>
 
 ### 5.2.2. Sprint 2
 
+<p align="justify">
 El Sprint 2 corresponde al primer incremento operativo de la Web Application de Nexa para TB1. A diferencia del Sprint 1, cuya entrega visible se concentró en la landing page pública, este sprint conecta el sitio público con la aplicación autenticada y materializa los flujos internos y B2B con datos de prueba (mock/seed). El backend productivo, la API REST, la persistencia MySQL y la autenticación real continúan como roadmap explícito de TB2; este incremento valida la capa frontend, la coherencia de rutas, los guardas por rol y la trazabilidad documental que sostendrán la integración técnica posterior.
+</p>
 
 #### 5.2.2.1. Sprint Planning 2.
 
+<p align="justify">
 El Sprint Planning 2 fijó como objetivo desplegar la primera versión funcional de la Nexa Web Application para TB1, conectando la landing pública con flujos por rol dentro del webapp, usando datos mock, hash routing para GitHub Pages y evidencia frontend documentada. La planificación priorizó cerrar el bucle B2B (catálogo → checkout → confirmación → orden), reforzar guardas de autenticación, exponer reportes operativos y dejar el código listo para integrar servicios reales en TB2.
+</p>
 
 *Resumen formal del Sprint Planning 2*
 
@@ -437,7 +497,9 @@ El Sprint Planning 2 fijó como objetivo desplegar la primera versión funcional
 
 #### 5.2.2.2. Aspect Leaders and Collaborators.
 
+<p align="justify">
 El liderazgo del Sprint 2 se reorganiza para cubrir la naturaleza de la entrega: la Web Application requiere un foco más fuerte en arquitectura frontend, ruteo, autenticación por rol e i18n, mientras que la documentación y la coordinación general mantienen continuidad respecto del Sprint 1. La distribución sigue siendo coherente con el Student Outcome ABET 5 y refleja el esfuerzo paralelo de los tres repositorios (report, website y webapp).
+</p>
 
 *Distribución de liderazgos y roles funcionales en el Sprint 2*
 
@@ -451,7 +513,9 @@ El liderazgo del Sprint 2 se reorganiza para cubrir la naturaleza de la entrega:
 
 #### 5.2.2.3. Sprint Backlog 2.
 
-El Sprint Backlog 2 mira el incremento desde tres frentes coordinados: continuidad del sitio público (CTAs hacia el webapp, favicon, copy alineado a TB1), entrega del frontend de la Web Application con datos mock (operación interna y portal B2B) y evidencia documental TB1 sincronizada con los tres repositorios. El backlog incluye 5 nuevas historias (US65–US69) que formalizan comportamientos introducidos durante el sprint y refinamientos de escenario sobre US ya existentes que se completan en el frontend mock. Todas las issues de Jira se mantienen **In Progress** hasta cierre formal del sprint en revisión.
+<p align="justify">
+El Sprint Backlog 2 mira el incremento desde tres frentes coordinados: continuidad del sitio público (CTAs hacia el webapp, favicon, copy alineado a TB1), entrega del frontend de la Web Application con datos mock (operación interna y portal B2B) y evidencia documental TB1 sincronizada con los tres repositorios. El backlog incluye 5 nuevas historias (US65–US69) que formalizan comportamientos introducidos durante el sprint y refinamientos de escenario sobre US ya existentes que se completan en el frontend mock. Todas las issues de Jira se mantienen <strong>In Progress</strong> hasta cierre formal del sprint en revisión.
+</p>
 
 *Resumen cuantitativo del Sprint Backlog 2*
 
@@ -488,11 +552,15 @@ El Sprint Backlog 2 mira el incremento desde tres frentes coordinados: continuid
 | 19 | Actualización del Product Backlog (TB1) | EP13 | Medium | 1 | Diego | In Progress |
 | 20 | Refinamiento de escenarios de User Stories | EP13 | Medium | 2 | Joaquín | In Progress |
 
-La descomposición completa por épica, descripción, criterios de aceptación, asignaciones y subtareas se documenta en el anexo [Annex – Jira Sprint 2 Import Plan](../annexes/annex-jira-sprint-2-import.md), listo para creación manual o importación CSV en Jira. El estado por defecto es **In Progress** mientras el sprint sigue activo; ninguna issue se marca Done por defecto.
+<p align="justify">
+La descomposición completa por épica, descripción, criterios de aceptación, asignaciones y subtareas se documenta en el anexo <a href="../annexes/annex-jira-sprint-2-import.md">Annex – Jira Sprint 2 Import Plan</a>, listo para creación manual o importación CSV en Jira. El estado por defecto es <strong>In Progress</strong> mientras el sprint sigue activo; ninguna issue se marca Done por defecto.
+</p>
 
 #### 5.2.2.4. Development Evidence for Sprint Review.
 
-La evidencia de desarrollo del Sprint 2 se distribuye en tres repositorios activos: **nexa-website** (continuidad del sitio público y conexión con el webapp), **nexa-webapp** (frontend de la Web Application TB1 con datos mock) y **nexa-report** (documentación TB1 paralela). Las tablas siguientes reflejan únicamente commits reales verificados con `git log` sobre las ramas `main` remotas; los hashes y mensajes son reproducibles por cualquier integrante del equipo.
+<p align="justify">
+La evidencia de desarrollo del Sprint 2 se distribuye en tres repositorios activos: <strong>nexa-website</strong> (continuidad del sitio público y conexión con el webapp), <strong>nexa-webapp</strong> (frontend de la Web Application TB1 con datos mock) y <strong>nexa-report</strong> (documentación TB1 paralela). Las tablas siguientes reflejan únicamente commits reales verificados con <code>git log</code> sobre las ramas <code>main</code> remotas; los hashes y mensajes son reproducibles por cualquier integrante del equipo.
+</p>
 
 *Commits del repositorio `nexa-website` (Sprint 2)*
 
@@ -548,17 +616,19 @@ Documentación TB1: actualización de evidencias, integración de screenshots/wi
 
 | Repository | Branch | Commit Id | Commit Message | Commited on |
 | :--- | :--- | :--- | :--- | :--- |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `698971c` | `assets(webapp): add web application screenshots and wireframes for sprint 2 evidence` | 02/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `c7f0d3a` | `docs(ch3): add user stories US65-US69 and refine sprint 2 scope notes` | 02/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `4128978` | `docs(backlog): mirror sprint 2 jira plan and tb2 future backlog` | 02/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `95610ef` | `docs(ch4): reference web application screenshots in design evidence` | 02/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `83b3eee` | `docs(ch5): add sprint 2 implementation, deployment and collaboration evidence` | 02/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `8af403a` | `docs(jira): add sprint 2 issue import plan annex` | 02/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `4357269` | `docs(front-matter): add sprint 2 toc entries and version history rows` | 02/05/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `TODO` | `assets(webapp): add web application screenshots and wireframes for sprint 2 evidence` | TODO: pending Sprint 2 report commits after documentation update |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `TODO` | `docs(ch3): add user stories US65-US69 and refine sprint 2 scope notes` | TODO: pending Sprint 2 report commits after documentation update |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `TODO` | `docs(backlog): mirror sprint 2 jira plan and tb2 future backlog` | TODO: pending Sprint 2 report commits after documentation update |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `TODO` | `docs(ch4): reference web application screenshots in design evidence` | TODO: pending Sprint 2 report commits after documentation update |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `TODO` | `docs(ch5): add sprint 2 implementation, deployment and collaboration evidence` | TODO: pending Sprint 2 report commits after documentation update |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `TODO` | `docs(jira): add sprint 2 issue import plan annex` | TODO: pending Sprint 2 report commits after documentation update |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `TODO` | `docs(front-matter): add sprint 2 toc entries and version history rows` | TODO: pending Sprint 2 report commits after documentation update |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 
+<p align="justify">
 La ejecución observable del Sprint 2 se concreta en pantallas reales del frontend de la Web Application con datos mock. La tabla siguiente vincula cada pantalla con su propósito operativo, la imagen de evidencia, la User Story relacionada y el commit que la materializa. Las pantallas faltantes se marcan como TODO; no se inventan rutas ni se sustituyen por mockups.
+</p>
 
 *Pantallas ejecutadas - Web Application TB1*
 
@@ -582,11 +652,15 @@ La ejecución observable del Sprint 2 se concreta en pantallas reales del fronte
 | Portal B2B - Success | Confirmación post-checkout | TODO: pendiente captura `web-app-screenshots/portal-success.png` | US37 (refinada) | `5b53e6e` |
 | Portal B2B - Mis órdenes | Listado por cliente (clientId scoped) | TODO: pendiente captura `web-app-screenshots/portal-orders.png` | US38 (refinada) | `6053d18`, `6db2e58` |
 
+<p align="justify">
 La ejecución debe leerse con honestidad de alcance: el frontend funciona end-to-end con datos mock y persiste en memoria/store del cliente. La integración con servicios reales (autenticación, persistencia, POD con upload, pagos, ETA real e IoT) permanece como roadmap explícito de TB2, no como ejecución TB1.
+</p>
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
 
-En TB1, la documentación de servicios mantiene el carácter **preparatorio** establecido en el Sprint 1. La Web Application opera contra un store de datos mock con estructura *API-ready*: la separación por bounded context, los servicios cliente y la capa de acceso permiten reemplazar el origen de datos por una API REST sin reescribir consumidores. La capa Axios queda preparada en el código del webapp como anticipo de la integración con la API ASP.NET Core planificada para TB2.
+<p align="justify">
+En TB1, la documentación de servicios mantiene el carácter <strong>preparatorio</strong> establecido en el Sprint 1. La Web Application opera contra un store de datos mock con estructura <em>API-ready</em>: la separación por bounded context, los servicios cliente y la capa de acceso permiten reemplazar el origen de datos por una API REST sin reescribir consumidores. La capa Axios queda preparada en el código del webapp como anticipo de la integración con la API ASP.NET Core planificada para TB2.
+</p>
 
 *Estado de la documentación de servicios en TB1*
 
@@ -601,11 +675,15 @@ En TB1, la documentación de servicios mantiene el carácter **preparatorio** es
 | Persistencia MySQL | Roadmap TB2 | **No corresponde a TB1** |
 | Autenticación real (JWT + recover) | Roadmap TB2 | **No corresponde a TB1** |
 
+<p align="justify">
 La declaración honesta del alcance evita sobre-reportar capas que aún no existen. TB1 entrega una Web Application con datos mock y arquitectura preparada; TB2 sustituirá la fuente de datos por servicios reales sin alterar las superficies ya validadas.
+</p>
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
 
-TB1 entrega dos artefactos desplegados en GitHub Pages: la landing pública y la Web Application. El webapp adopta hash routing porque GitHub Pages no provee reescritura SPA (no hay control sobre el servidor para devolver `index.html` en rutas profundas), de modo que el hash evita el clásico 404 al refrescar o compartir un deep link.
+<p align="justify">
+TB1 entrega dos artefactos desplegados en GitHub Pages: la landing pública y la Web Application. El webapp adopta hash routing porque GitHub Pages no provee reescritura SPA (no hay control sobre el servidor para devolver <code>index.html</code> en rutas profundas), de modo que el hash evita el clásico 404 al refrescar o compartir un deep link.
+</p>
 
 *Estado de despliegue verificable en TB1*
 
@@ -635,7 +713,9 @@ TB1 entrega dos artefactos desplegados en GitHub Pages: la landing pública y la
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint.
 
-La colaboración del Sprint 2 se sostuvo sobre tres canales: (1) Jira como tablero operativo del sprint y trazabilidad de issues; (2) GitHub como espacio de revisión de código y contribución distribuida en los tres repositorios (website, webapp y report); (3) sesiones síncronas semanales por Microsoft Teams para alinear ruteo, autenticación, modelo de datos mock y estructura de evidencia. El equipo mantuvo la convención Docs-as-Code: cada incremento de código tuvo su contrapartida documental en `nexa-report`, lo que permitió cerrar el sprint con un reporte sincronizado con el estado real del producto.
+<p align="justify">
+La colaboración del Sprint 2 se sostuvo sobre tres canales: (1) Jira como tablero operativo del sprint y trazabilidad de issues; (2) GitHub como espacio de revisión de código y contribución distribuida en los tres repositorios (website, webapp y report); (3) sesiones síncronas semanales por Microsoft Teams para alinear ruteo, autenticación, modelo de datos mock y estructura de evidencia. El equipo mantuvo la convención Docs-as-Code: cada incremento de código tuvo su contrapartida documental en <code>nexa-report</code>, lo que permitió cerrar el sprint con un reporte sincronizado con el estado real del producto.
+</p>
 
 *Distribución de contribución (Sprint 2)*
 
@@ -653,5 +733,6 @@ La colaboración del Sprint 2 se sostuvo sobre tres canales: (1) Jira como table
 > TODO: pendiente captura `assets/images/jira/sprint-2-board.png` con el tablero Jira del Sprint 2 (vista completa).
 > TODO: pendiente captura `assets/images/jira/sprint-2-backlog.png` con el backlog de Sprint 2 antes de iniciar.
 
+<p align="justify">
 La principal lectura colaborativa del Sprint 2 es que el equipo logró sostener tres repositorios en paralelo sin perder consistencia narrativa ni técnica. La separación de responsabilidades por frente (webapp, website, report) y el cierre coordinado de evidencia documental confirman que la metodología Docs-as-Code adoptada en el Sprint 1 escala correctamente cuando el incremento agrega una aplicación frontend completa, aun cuando el backend permanece como roadmap TB2.
-
+</p>
