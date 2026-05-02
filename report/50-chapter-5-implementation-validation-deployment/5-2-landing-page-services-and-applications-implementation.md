@@ -275,7 +275,7 @@ Implementación real del Landing Page desplegado en GitHub Pages.
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `4a7b43e` | `chore: add .gitignore for OS and system files` | | 20/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5cc9089` | `Update team member ID in README.md` | | 20/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5255e41` | `ci(lint): add markdownlint and commitlint workflow` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `57e0f9c` | `chore(git): ignore .claude worktree directory` | | 20/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `57e0f9c` | `chore(repo): update local workspace ignore rules` | | 20/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `f30b3f5` | `fix(docs): correct filename typos in requirements folder` | | 20/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `94d4735` | `feat(a11y): add skip-to-content link to all pages for WCAG compliance` | | 20/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `505f4f6` | `docs(report): data update` | | 23/04/2026 |
@@ -616,13 +616,13 @@ Documentación TB1: actualización de evidencias, integración de screenshots/wi
 
 | Repository | Branch | Commit Id | Commit Message | Commited on |
 | :--- | :--- | :--- | :--- | :--- |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `TODO` | `assets(webapp): add web application screenshots and wireframes for sprint 2 evidence` | TODO: pending Sprint 2 report commits after documentation update |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `TODO` | `docs(ch3): add user stories US65-US69 and refine sprint 2 scope notes` | TODO: pending Sprint 2 report commits after documentation update |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `TODO` | `docs(backlog): mirror sprint 2 jira plan and tb2 future backlog` | TODO: pending Sprint 2 report commits after documentation update |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `TODO` | `docs(ch4): reference web application screenshots in design evidence` | TODO: pending Sprint 2 report commits after documentation update |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `TODO` | `docs(ch5): add sprint 2 implementation, deployment and collaboration evidence` | TODO: pending Sprint 2 report commits after documentation update |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `TODO` | `docs(jira): add sprint 2 issue import plan annex` | TODO: pending Sprint 2 report commits after documentation update |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `TODO` | `docs(front-matter): add sprint 2 toc entries and version history rows` | TODO: pending Sprint 2 report commits after documentation update |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `698971c` | `assets(webapp): add web application screenshots and wireframes for sprint 2 evidence` | 02/05/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `c7f0d3a` | `docs(ch3): add user stories US65-US69 and refine sprint 2 scope notes` | 02/05/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `4128978` | `docs(backlog): mirror sprint 2 jira plan and tb2 future backlog` | 02/05/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `95610ef` | `docs(ch4): reference web application screenshots in design evidence` | 02/05/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `83b3eee` | `docs(ch5): add sprint 2 implementation, deployment and collaboration evidence` | 02/05/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `8af403a` | `docs(jira): add sprint 2 issue import plan annex` | 02/05/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `4357269` | `docs(front-matter): add sprint 2 toc entries and version history rows` | 02/05/2026 |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 
