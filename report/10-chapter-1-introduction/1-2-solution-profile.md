@@ -116,13 +116,38 @@ La matriz resume el problema ya desarrollado en los antecedentes y la problemát
 
 ### 1.2.2. Lean UX Process
 
-<p align="justify">
-En este proyecto, el uso de Lean UX resulta pertinente porque el dominio combina restricciones comerciales, operativas y logísticas propias de la distribución B2B de productos refrigerados. El riesgo no consiste solo en desarrollar una aplicación web funcional, sino en construir una herramienta que reduzca fricción en la coordinación de pedidos, mejore la visibilidad operativa y aporte mayor orden al flujo entre la empresa distribuidora y el cliente comercial. Por ello, el bloque se organiza en cuatro partes: problem statements, assumptions, hypothesis statements y Lean UX Canvas.
-</p>
+Nexa adopta Lean UX como marco de trabajo porque permite formular la solución desde el aprendizaje y no únicamente desde una lista de funcionalidades. En lugar de asumir que el valor del producto se demuestra por la cantidad de módulos implementados, este enfoque prioriza entender qué problema concreto se intenta resolver, para quién se resuelve, qué comportamiento se espera modificar y qué evidencia permitirá decidir si la propuesta avanza, se ajusta o se descarta.
+En este proyecto, el uso de Lean UX resulta pertinente porque el dominio combina restricciones comerciales, operativas y logísticas propias de la distribución B2B de productos refrigerados. El riesgo no consiste solo en desarrollar una aplicación web funcional, sino en construir una herramienta que reduzca fricción en la coordinación de pedidos, mejore la visibilidad operativa y aporte mayor orden al flujo entre la empresa distribuidora y el cliente comercial. Por ello, el bloque se organiza en cinco partes: visión del modelo de negocio, problem statements, assumptions, hypothesis statements y Lean UX Canvas.
 
-<p align="justify">
-Desde esta perspectiva, Lean UX cumple dos funciones en el proyecto. La primera es estratégica: nos ayuda a formular con precisión qué problema se está abordando, para qué actores se está construyendo valor y qué parte del dominio quedará fuera del MVP inicial. La segunda es metodológica: convierte supuestos del equipo en hipótesis observables, reduciendo el riesgo de diseñar una solución sobredimensionada o incoherente con la realidad operativa del sector. Por ello, este bloque concentra las decisiones que conectan la problemática del capítulo con la investigación posterior, la priorización del backlog y el diseño del MVP.
-</p>
+Desde esta perspectiva, Lean UX cumple dos funciones en el proyecto. La primera es estratégica: obliga al equipo a formular con precisión qué problema se está abordando, para qué actores se está construyendo valor y qué parte del dominio quedará fuera del MVP inicial. La segunda es metodológica: convierte supuestos del equipo en hipótesis observables, reduciendo el riesgo de diseñar una solución sobredimensionada o incoherente con la realidad operativa del sector. Por ello, este bloque concentra las decisiones que conectan la problemática del capítulo con la investigación posterior, la priorización del backlog y el diseño del MVP.
+
+> **Componentes del bloque Lean UX**
+>
+> - **Visión del modelo de negocio:** define quién paga, quién usa y dónde se concentra el valor inicial del producto.
+> - **Problem Statements:** delimitan la brecha principal que afecta a cada segmento priorizado.
+> - **Assumptions:** explicitan los supuestos que todavía deben contrastarse.
+> - **Hypothesis Statements:** traducen esos supuestos en aprendizajes esperados.
+> - **Lean UX Canvas:** resume el vínculo entre problema, solución, usuarios y outcomes esperados.
+
+#### Visión del modelo de negocio soportado por el software
+
+Nexa soporta un modelo de negocio SaaS B2B especializado en la gestión del flujo principal de pedidos para empresas importadoras y distribuidoras de productos refrigerados y congelados. La lógica del negocio no se basa en vender un marketplace horizontal ni en reemplazar de inmediato todo el ecosistema logístico, sino en ofrecer una plataforma web que ordene el tramo donde hoy se concentran mayores fricciones: catálogo, registro de pedido, disponibilidad, control básico de inventario y seguimiento operativo.
+En este modelo, la empresa distribuidora es el cliente pagador de la solución y el entorno donde se produce la primera validación de valor. Sin embargo, el producto solo resulta sostenible si también genera beneficios claros para los usuarios internos que coordinan la operación y para el cliente comercial B2B que compra y hace seguimiento. Por ello, el software debe demostrar valor tanto hacia dentro de la operación, reduciendo retrabajo, errores y descoordinación, como hacia fuera, ofreciendo más claridad, autonomía y predictibilidad al comprador comercial.
+
+*Tabla de visión*
+
+| Componente del modelo de negocio | Definición aplicada a Nexa |
+| --- | --- |
+| Cliente pagador | Distribuidor refrigerado que adquiere la suscripción SaaS para ordenar su flujo comercial-operativo y mejorar la atención a clientes B2B. |
+| Usuarios operativos primarios | Segmento 1: Vendedoras y coordinación comercial; Segmento 2: Jefatura logística y coordinación operativa; Segmento 3: Compradores comerciales B2B mayoristas y minoristas. |
+| Contexto operativo del dominio | Reglas y restricciones de abastecimiento, inventario, despacho y cierre que delimitan el alcance inicial del MVP. |
+| Segmentos comerciales del sitio público | Distribuidores refrigerados como frente principal; importadores y mayoristas; operadores de cámaras frías como extensiones estratégicas. |
+| Propuesta de valor | Reducir fricción, errores y descoordinación en el flujo de pedidos B2B de productos refrigerados mediante una plataforma web especializada. |
+| Fuente principal de valor | Captura estructurada del pedido, condiciones comerciales visibles, inventario confiable y seguimiento compartido hasta la entrega. |
+| Alcance inicial | Sitio público multipágina, catálogo, pedido asistido, portal B2B, control básico de inventario, crédito comercial y seguimiento del despacho. |
+| Evolución prevista | Más automatización en campo, integraciones logísticas, trazabilidad térmica más profunda y expansión comercial hacia otros nodos de cadena de frío. |
+
+La visión del modelo de negocio muestra quién paga, quién usa, qué valor se entrega y sobre qué alcance inicial se justifica el producto.
 
 #### 1.2.2.1. Lean UX Problem Statements
 
