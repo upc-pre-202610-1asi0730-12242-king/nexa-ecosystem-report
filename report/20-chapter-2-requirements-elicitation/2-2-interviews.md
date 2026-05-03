@@ -468,10 +468,10 @@ El segmento de jefatura logística y coordinación operativa, representado en es
 
 <table border="1" cellspacing="0" cellpadding="6" align="center">
   <tr>
-    <th>Variable observada en stakeholder operativo</th>
+    <th>Variable observada en Segmento 2</th>
     <th>Evidencia recurrente</th>
     <th>Lectura analítica</th>
-    <th>Implicancia de dominio</th>
+    <th>Implicancia de diseño</th>
   </tr>
   <tr>
     <td>Trazabilidad documental sensible</td>
@@ -493,7 +493,7 @@ El segmento de jefatura logística y coordinación operativa, representado en es
   </tr>
 </table>
 
-La tabla sintetiza cómo las entrevistas de jefatura y operación alimentan reglas y restricciones del dominio. Elaboración propia.
+La tabla sintetiza los patrones de comportamiento, fricciones y consecuencias de diseño del Segmento 2 a partir de la muestra entrevistada. Elaboración propia.
 
 **Características objetivas:**
 
@@ -512,12 +512,12 @@ La tabla sintetiza cómo las entrevistas de jefatura y operación alimentan regl
 - **Conflictos de responsabilidad:** La rotura de la cadena de frío después de la entrega puede derivar en disputas difíciles de resolver cuando no existe evidencia digital suficiente del estado del producto.
 - **Validación manual de datos críticos:** En al menos una entrevista aparece la necesidad de revisar manualmente órdenes sensibles antes de liberarlas a operación, lo que evidencia falta de confianza en la captura inicial.
 
-**Hallazgos clave para el dominio y la arquitectura del producto:**
+**Hallazgos clave para el Segmento 2:**
 
-- Se requiere una **herramienta unificada** que centralice la documentación sanitaria con el estado real del stock.
-- La **trazabilidad de temperatura** debe ser una evidencia inalterable para proteger la responsabilidad de la distribuidora frente a reclamos de clientes.
-- Reducir los **silos de información** permitiendo diferentes niveles de acceso según el rol operativo.
-- El Segmento 2 confirma que la operación aporta reglas, políticas y riesgos que deben respetarse en el producto y que forman parte de la segmentación oficial del informe.
+- Se requiere una **herramienta unificada** que centralice la información de stock, vencimientos y estados del pedido con la documentación operativa.
+- La **trazabilidad del pedido** debe ser una evidencia inalterable para proteger la responsabilidad de la distribuidora frente a incidencias y reclamos.
+- Reducir los **silos de información** permitiendo diferentes niveles de acceso según el rol operativo, sin que la visibilidad dependa de coordinación verbal o papeles.
+- El Segmento 2 concentra las reglas, políticas y restricciones operativas que el producto debe respetar para que el flujo del pedido sea ejecutable y trazable.
 
 **Análisis del Segmento 3: Compradores comerciales B2B mayoristas y minoristas**
 
@@ -624,7 +624,7 @@ pie title Uso de Canales de Comunicación
     "ERP / Sistema Formal" : 10
 ```
 
-Elaboración propia. Resultados obtenidos de las 8 entrevistas a profundidad realizadas sobre coordinación comercial, cliente comercial B2B y evidencias complementarias de operación.
+Elaboración propia. Resultados obtenidos de las 8 entrevistas a profundidad realizadas con el Segmento 1 (coordinación comercial), el Segmento 2 (jefatura logística y coordinación operativa) y el Segmento 3 (compradores comerciales B2B).
 
 *Jerarquía de Puntos de Dolor por Incidencia en los Segmentos*
 
