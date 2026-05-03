@@ -1,10 +1,11 @@
-## **1.2. Solution Profile**
+## 1.2. Solution Profile
 
-### ***1.2.1. Antecedentes y problemática***
+### 1.2.1. Antecedentes y problemática
 
 La cadena de frío cumple un rol crítico en sectores como alimentos, productos farmacéuticos y agroexportación, al asegurar que los productos sensibles a la temperatura mantengan su calidad e inocuidad durante el almacenamiento, transporte y distribución hasta el usuario final (Vértiz, 2011). Estudios en distintos países de la región muestran que fallas en uno o varios eslabones de la cadena de frío, especialmente en transporte y venta al por menor, se asocian con incumplimientos de normas de temperatura, proliferación microbiana y reducción de la vida útil de lácteos, carnes y otros perecederos (Tutiven et al., 2026; Arriaga et al., 2023). Al respecto, las investigaciones demuestran una constante fluctuación térmica en la comercialización de cortes de res, registrando temperaturas que superan ampliamente los límites normativos, como se evidencia en la siguiente tabla. Esta deficiencia subraya la necesidad de un control logístico riguroso y continuo antes de que el producto llegue al cliente comercial.
 
 *Temperaturas promedio (°C) en cortes de carne de res*
+
 | Supermercado | Enero | Febrero | Marzo | Abril | Mayo | Media General |
 | --- | --- | --- | --- | --- | --- | --- |
 | Supermercado 1 | 10.17 | 9.78 | 10.16 | 8.91 | 9.71 | 9.75 |
@@ -12,11 +13,16 @@ La cadena de frío cumple un rol crítico en sectores como alimentos, productos 
 | Supermercado 3 | 6.81 | 7.18 | 12.84 | 8.36 | 9.37 | 8.91 |
 | Supermercado 4 | 2.99 | 3.78 | 4.24 | 5.63 | 4.45 | 4.22 |
 
-> *Nota:* La normativa para productos cárnicos refrigerados estipula una temperatura máxima de 4 °C. Los datos muestran abusos severos y constantes en la cadena de frío, particularmente en los supermercados 1 y 3. Adaptado de "Evaluación de la cadena de frío en cortes de res vendida en supermercados" por P. Arriaga-Lorenzo et al., 2023, Revista Chapingo Serie Agricultura Tropical, 3(1), p. 20.
+La normativa para productos cárnicos refrigerados estipula una temperatura máxima de 4 °C. Los datos muestran abusos severos y constantes en la cadena de frío, particularmente en los supermercados 1 y 3. Adaptado de "Evaluación de la cadena de frío en cortes de res vendida en supermercados" por P. Arriaga-Lorenzo et al., 2023, Revista Chapingo Serie Agricultura Tropical, 3(1), p. 20.
+
+---
 
 En el contexto peruano, investigaciones en salud y logística evidencian que las rupturas de cadena de frío no son un fenómeno aislado: por ejemplo, un estudio en establecimientos de salud de la Microred Río Negro registró múltiples excursiones térmicas por encima y por debajo de los rangos aceptables, con implicancias directas en la calidad de biológicos. Como se observa en la siguiente tabla, los incidentes de pérdida de temperatura son una constante mensual, evidenciando la alta vulnerabilidad operativa del ecosistema logístico del frío en el país.
 
-*Rupturas de cadena de frío por meses según tipo de desviación térmica en establecimientos de salud*
+---
+
+*Rupturas de cadena de frío por meses según tipo de desviación térmica en establecimientos de salud (Microred Río Negro)*
+
 | Mes | < 0°C (Congelación) | > 8°C (Sobrecalentamiento) | Total de Rupturas |
 | --- | --- | --- | --- |
 | Enero | 0 | 5 | 5 |
@@ -33,12 +39,12 @@ En el contexto peruano, investigaciones en salud y logística evidencian que las
 | Diciembre | 1 | 2 | 3 |
 | **Total** | **14** | **50** | **64** |
 
-> *Nota:* La tabla evidencia la recurrencia mensual de fallas en la cadena de frío, siendo el sobrecalentamiento (>8°C) la principal causa de riesgo. Adaptado de "Rupturas de cadena de frío en los establecimientos de salud de una Microred de salud - Perú" por R. Bravo De la Cruz, L. Orihuela De Santana y M. Huaman Huaman, 2025, Advances in Science and Innovation, 4(1), p. 59.
+La tabla evidencia la recurrencia mensual de fallas en la cadena de frío, siendo el sobrecalentamiento (>8°C) la principal causa de riesgo. Adaptado de "Rupturas de cadena de frío en los establecimientos de salud de una Microred de salud - Perú" por R. Bravo De la Cruz, L. Orihuela De Santana y M. Huaman Huaman, 2025, Advances in Science and Innovation, 4(1), p. 59.
 
 De forma similar, trabajos de tesis y proyectos tecnológicos en Perú muestran que la falta de sistemas de seguimiento y trazabilidad en tiempo real contribuye a pérdidas significativas de productos alimenticios refrigerados y a una visibilidad limitada del proceso logístico (Torres & Tardillo, 2020).  
 En paralelo, análisis regionales de la CEPAL y asociaciones del sector señalan que, aunque la infraestructura básica de frío en América Latina se ha expandido, persisten cuellos de botella en flotas refrigeradas, almacenes especializados y sistemas de monitoreo, lo que se traduce en pérdidas de alimentos y riesgos para la inocuidad (Aguayo et al., 2025). Estas brechas son especialmente relevantes para organizaciones que trabajan con productos refrigerados y congelados, como importadoras y distribuidoras, donde una falla en el control logístico afecta simultáneamente la eficiencia operativa, la calidad del producto y el cumplimiento normativo (Vértiz, 2011; Rivas & Castillo, 2020).  
 
-En cuanto a la digitalización del abastecimiento B2B en el canal tradicional peruano, la evidencia académica y de mercado apunta a una adopción heterogénea. Un estudio reciente sobre pagos digitales y competitividad de bodegas tradicionales en Huancavelica muestra que los pequeños comercios han comenzado a incorporar billeteras digitales y aplicaciones móviles, pero aún se encuentran en etapas iniciales de madurez digital (Taipe Quispe, 2025). De forma complementaria, el estudio de madurez digital del canal tradicional elaborado por Lucky-Xplora(2022) reporta que alrededor de un 28% de bodegas utiliza algún aplicativo para gestionar tareas del negocio, mientras que la mayoría sigue en un nivel "principiante". Estas cifras provienen de una fuente profesional de mercado, pero son coherentes con la caracterización académica de baja madurez digital en pequeños comercios.
+En cuanto a la digitalización del abastecimiento B2B en el canal tradicional peruano, la evidencia académica y de mercado apunta a una adopción heterogénea. Un estudio reciente sobre pagos digitales y competitividad de bodegas tradicionales en Huancavelica muestra que los pequeños comercios han comenzado a incorporar billeteras digitales y aplicaciones móviles, pero aún se encuentran en etapas iniciales de madurez digital (Taipe Quispe, 2025). De forma complementaria, el estudio de madurez digital del canal tradicional elaborado por Lucky-Xplora reporta que alrededor de un 28% de bodegas utiliza algún aplicativo para gestionar tareas del negocio, mientras que la mayoría sigue en un nivel "principiante" (Lucky-Xplora, 2022). Estas cifras provienen de una fuente profesional de mercado, pero son coherentes con la caracterización académica de baja madurez digital en pequeños comercios.
 
 Sobre esta base, es razonable inferir que una parte importante de la coordinación comercial entre empresas distribuidoras y clientes B2B del canal tradicional todavía se realiza mediante llamadas telefónicas, mensajes de WhatsApp y registros aislados, más que a través de plataformas transaccionales integradas. Esta forma de operar resulta particularmente problemática en el caso de productos refrigerados, donde el pedido no puede desvincularse de variables como disponibilidad real, rotación según fecha de vencimiento y conservación en frío. La literatura sobre riesgos en cadenas de suministro de alimentos perecederos subraya que la falta de integración entre pedidos, inventario y logística incrementa la exposición a disrupciones, desperdicios y fallas de servicio (Buenaño et al., 2024).  
 
@@ -49,12 +55,14 @@ Investigaciones sobre almacenamiento y distribución de perecederos muestran que
 Como consecuencia de esta desarticulación se observan tres impactos principales. Para hacerlos explícitos, la siguiente tabla resume qué ocurre en la operación, por qué ocurre y cuál es el sustento bibliográfico que respalda cada efecto.
 
 *Impactos operativos y comerciales de la fragmentación del pedido*
+
 | Impacto | Manifestación concreta en la operación | Relación con el problema | Sustento |
 | --- | --- | --- | --- |
 | **Errores en preparación y despacho** | Cantidades inexactas, productos equivocados, retrasos por quiebre de stock y necesidad de aclaraciones de último momento entre ventas, almacén y reparto. | Cuando el pedido se captura manualmente y luego se reinterpreta en sistemas no integrados, aumenta la probabilidad de que la información llegue incompleta, tarde o con ambigüedades al área operativa. | Muñoz et al. (2022); Buenaño et al. (2024). |
 | **Mermas económicas por mala rotación** | Pérdida de producto por caducidad, despacho de mercadería con rotación ineficiente y dificultad para aplicar criterios FIFO o FEFO de forma consistente. | Si pedidos, inventario y fechas de vencimiento no están conectados, la operación pierde capacidad para priorizar lotes y sostener una rotación compatible con productos perecederos. | Tutiven et al. (2026); Arriaga et al. (2023). |
 | **Riesgo normativo y sanitario** | Falta de trazabilidad, debilidad documental frente a auditorías, respuesta lenta ante incidencias y mayor exposición a incumplimientos en cadena de frío. | La comercialización y transporte de productos refrigerados exigen trazabilidad, registros de temperatura y capacidad de respuesta. Cuando esas evidencias no se consolidan, el riesgo deja de ser solo operativo y pasa a comprometer cumplimiento normativo e inocuidad. | Vértiz (2011); Tutiven et al. (2026). |
-> *Nota:* La tabla expone de forma comparativa cómo un mismo problema de fragmentación informativa deriva en efectos distintos sobre operación, costos y cumplimiento. Elaboración propia con base en la literatura citada.
+
+La tabla expone de forma comparativa cómo un mismo problema de fragmentación informativa deriva en efectos distintos sobre operación, costos y cumplimiento. Elaboración propia con base en la literatura citada.
 
 A pesar de ello, diferentes trabajos y diagnósticos sectoriales indican que muchas empresas de tamaño mediano priorizan aún la inversión en activos físicos, incluyendo vehículos, cámaras frigoríficas y equipos de refrigeración especializados, por encima de la inversión en soluciones digitales para la gestión integral de la cadena de frío y la operación comercial (Rivas & Castillo, 2020; Torres & Tardillo, 2020; Aguayo et al., 2025).
 
@@ -64,11 +72,15 @@ A partir de este contexto, el proyecto Nexa se plantea como respuesta a una prob
 
 La relevancia de este problema no radica únicamente en la pérdida de eficiencia interna. En un dominio como el de productos refrigerados y congelados, una falla en la coordinación del pedido compromete simultáneamente variables comerciales, operativas y sanitarias. Cuando el catálogo no refleja disponibilidad real, cuando la toma del pedido depende de mensajes dispersos o cuando el seguimiento del despacho carece de visibilidad compartida, la empresa no solo pierde tiempo: también deteriora la confianza del cliente comercial, incrementa el riesgo de quiebre de stock en el punto de venta y dificulta la respuesta ante incidencias o auditorías. Por ello, el problema del proyecto debe entenderse como una falla de articulación del flujo de información crítico del negocio, más que como una carencia aislada de software.
 
+> **Síntesis del problema**  
+> En el contexto de Nexa, el problema no es únicamente la falta de digitalización, sino la falta de integración operativa entre captura comercial, validación, inventario y seguimiento del pedido. Esa desconexión explica por qué errores aparentemente menores terminan convirtiéndose en sobrecostos, quiebres, reclamos y pérdida de trazabilidad.
+
 #### Objetivos y restricciones del proyecto
 
 En coherencia con la problemática expuesta, el proyecto requiere explicitar tanto los objetivos que orientan la propuesta como las restricciones que delimitan el alcance académico y técnico del MVP. Esta delimitación resulta importante porque evita sobredimensionar la solución: Nexa no busca demostrar que puede reemplazar de inmediato a todo el ecosistema logístico del frío, sino que puede ordenar el núcleo del flujo comercial-operativo donde hoy se concentra la mayor fricción.
 
 *Objetivos y restricciones del proyecto*
+
 | Tipo | Definición aplicada a Nexa |
 | --- | --- |
 | Objetivo general | Diseñar y validar una solución web especializada que permita ordenar el flujo principal de pedidos B2B de productos refrigerados, integrando catálogo, condiciones comerciales, captura del pedido, inventario básico y seguimiento operativo. |
@@ -80,7 +92,7 @@ En coherencia con la problemática expuesta, el proyecto requiere explicitar tan
 | Restricción operativa | La solución debe convivir con una madurez digital heterogénea entre distribuidoras y clientes B2B; por ello, no puede depender desde el inicio de procesos altamente tecnificados ni de adopción avanzada del usuario final. |
 | Restricción académica | La propuesta debe demostrar valor mediante un alcance implementable y validable dentro del ciclo del curso, priorizando el aprendizaje y la consistencia entre investigación, diseño e implementación. |
 
-> *Nota:* La tabla delimita el alcance real del proyecto y explicita el criterio de viabilidad que orienta la construcción del MVP. Elaboración propia.
+La tabla delimita el alcance real del proyecto y explicita el criterio de viabilidad que orienta la construcción del MVP. Elaboración propia.
 
 ## Análisis 5W2H del problema
 
@@ -99,15 +111,22 @@ El problema identificado puede estructurarse mediante la técnica 5W2H, lo que p
 | Why (por qué) | Entre las causas principales destacan la baja adopción de soluciones digitales integradas en pymes de distribución y en sus clientes B2B, la priorización de inversiones en activos físicos por encima de sistemas de información y la falta de estandarización de procesos y trazabilidad. En conjunto, estos factores elevan el riesgo y reducen la capacidad de coordinación entre demanda, inventario y operación. |
 | How (cómo) | El problema se materializa a través de un flujo de información fragmentado: el cliente comercial transmite su pedido por llamada, mensaje de texto o nota de voz; el personal de ventas o administrativo interpreta y transcribe el pedido a hojas de cálculo o sistemas parciales; y el área operativa prepara el pedido basándose en información de inventario que puede no estar actualizada ni vinculada a criterios formales de rotación. Parte de esta descripción operativa constituye una inferencia razonable sustentada en los estudios previamente mencionados. |
 | How much (cuánto) | No se han identificado estudios que cuantifiquen de forma específica, para importadoras y distribuidoras de productos refrigerados en Perú, el costo total de los errores de pedido y la ineficiencia derivada de procesos manuales. Sin embargo, la evidencia disponible permite aproximar la magnitud del riesgo: se reportaron 64 rupturas de cadena de frío en una sola microred de salud en un año, estudios regionales documentan pérdidas logísticas significativas en perecederos, y alrededor del 83% de bodegas se ubica todavía en un nivel principiante de transformación digital. En conjunto, estos datos sugieren que el impacto económico y operativo potencial de mantener procesos manuales y no trazables es considerable, aunque todavía poco medido de forma sistemática. |
-> *Nota:* La matriz resume el problema ya desarrollado en los antecedentes y la problemática, pero conserva los datos e indicadores más relevantes para evitar que la síntesis reduzca el valor analítico del apartado.
 
-### ***1.2.2. Lean UX Process***
+La matriz resume el problema ya desarrollado en los antecedentes y la problemática, pero conserva los datos e indicadores más relevantes para evitar que la síntesis reduzca el valor analítico del apartado.
 
+### 1.2.2. Lean UX Process
+
+<p align="justify">
 En este proyecto, el uso de Lean UX resulta pertinente porque el dominio combina restricciones comerciales, operativas y logísticas propias de la distribución B2B de productos refrigerados. El riesgo no consiste solo en desarrollar una aplicación web funcional, sino en construir una herramienta que reduzca fricción en la coordinación de pedidos, mejore la visibilidad operativa y aporte mayor orden al flujo entre la empresa distribuidora y el cliente comercial. Por ello, el bloque se organiza en cuatro partes: problem statements, assumptions, hypothesis statements y Lean UX Canvas.
+</p>
 
+<p align="justify">
 Desde esta perspectiva, Lean UX cumple dos funciones en el proyecto. La primera es estratégica: nos ayuda a formular con precisión qué problema se está abordando, para qué actores se está construyendo valor y qué parte del dominio quedará fuera del MVP inicial. La segunda es metodológica: convierte supuestos del equipo en hipótesis observables, reduciendo el riesgo de diseñar una solución sobredimensionada o incoherente con la realidad operativa del sector. Por ello, este bloque concentra las decisiones que conectan la problemática del capítulo con la investigación posterior, la priorización del backlog y el diseño del MVP.
+</p>
 
-#### **1.2.2.1. Lean UX Problem Statements**
+#### 1.2.2.1. Lean UX Problem Statements
+
+En esta versión se alinean con la taxonomía definitiva del informe: tres segmentos operativos primarios que recorren la captura, la compra y el cierre del pedido.
 
 Cada problem statement articula un dominio de fricción, un segmento afectado, una brecha observable y una dirección estratégica inicial. Esta estructura permite mantener separado el problema del segmento y la decisión de diseño que luego orientará el MVP.
 
@@ -174,14 +193,16 @@ Cada problem statement articula un dominio de fricción, un segmento afectado, u
 | :--- | :--- |
 | **Problema de negocio** | La coordinación de pedidos B2B de productos refrigerados se realiza con información fragmentada y dependiente de canales informales. Esto genera errores de captura, retrabajo, quiebres de inventario y falta de visibilidad en el despacho. |
 | **Resultados de negocio** | Reducción de errores y tiempos en la captura del pedido; mejor predictibilidad en el despacho y control logístico; validación de la adopción del producto MVP (SaaS). |
-| **Usuarios de negocio** | Segmento 1: Vendedoras y coordinación comercial (reciben y canalizan pedidos)</br>Segmento 2: Jefatura logística y coordinación operativa (organizan la operación interna)</br>Segmento 3: Compradores comerciales B2B (compran de forma recurrente). |
-| **Beneficios de usuario** | El Segmento 1 captura pedidos rápido sin depender de apuntes sueltos.</br>El Segmento 2 cuenta con la información exacta para organizar entregas sin sorpresas.</br>El Segmento 3 tiene autonomía y certeza de lo que compra y cuándo llega. |
+| **Usuarios de negocio** | Segmento 1: Vendedoras y coordinación comercial (reciben y canalizan pedidos); Segmento 2: Jefatura logística y coordinación operativa (organizan la operación interna); Segmento 3: Compradores comerciales B2B (compran de forma recurrente). |
+| **Beneficios de usuario** | El Segmento 1 captura pedidos rápido sin depender de apuntes sueltos. El Segmento 2 cuenta con la información exacta para organizar entregas sin sorpresas. El Segmento 3 tiene autonomía y certeza de lo que compra y cuándo llega. |
 | **Ideas de solución** | Aplicación web B2B que incluya: catálogo centralizado, visibilidad básica de inventario, flujo asistido para registrar pedidos y módulo compartido de seguimiento (status) de entregas. |
-| **Hipótesis** | H1: El flujo web reducirá el retrabajo del Segmento 1.</br>H2: La visibilidad compartida bajará las incidencias del Segmento 2.</br>H3: El portal de autogestión incentivará la autonomía del Segmento 3. |
+| **Hipótesis** | H1: El flujo web reducirá el retrabajo del Segmento 1. H2: La visibilidad compartida bajará las incidencias del Segmento 2. H3: El portal de autogestión incentivará la autonomía del Segmento 3. |
 | **Riesgos clave a validar (Qué aprender primero)** | ¿Adoptarán las vendedoras el portal o volverán a la informalidad por costumbre? ¿Los compradores B2B confiarán en el inventario que muestra la web? ¿Es suficiente este MVP para justificar un pago? |
 | **Prioridad de aprendizaje (El menor esfuerzo)** | Desarrollar estrictamente el flujo de catálogo, registro de pedido web y un cambio manual de "estado" de entrega; posponiendo cualquier automatización logística compleja hasta validar la adopción principal. |
-> *Nota:* El Lean UX Canvas resume los pilares estratégicos del proyecto, conectando el problema del usuario, la solución propuesta y los resultados de negocio, e incluye las hipótesis clave que orientan la validación inicial. Elaboración propia.
+
+El Lean UX Canvas resume los pilares estratégicos del proyecto, conectando el problema del usuario, la solución propuesta y los resultados de negocio, e incluye las hipótesis clave que orientan la validación inicial. Elaboración propia.
 
 ---
-El proceso Lean UX anterior permitió identificar, desde la perspectiva de la solución, tres perfiles de usuario con fricciones diferenciadas: quien captura el pedido (Segmento 1), quien organiza la operación interna (Segmento 2) y quien abastece su negocio como comprador recurrente (Segmento 3). Esta distinción no es intuitiva ni arbitraria: se desprende directamente de la forma en que el flujo del pedido distribuye responsabilidades a lo largo de la cadena comercial.
+
+El proceso Lean UX anterior permitió identificar, desde la perspectiva de la solución, tres perfiles de usuario con fricciones diferenciadas: quien captura el pedido (Segmento 1), quien organiza la operación interna (Segmento 2) y quien abastece su negocio como comprador recurrente (Segmento 3). Esta distinción no es intuitiva ni arbitraria: se desprende directamente de la forma en que el flujo del pedido distribuye responsabilidades a lo largo de la cadena comercial. Para que esa identificación tenga sustento metodológico más allá del análisis de la solución, el equipo la complementó con un proceso formal de segmentación documentado en la sección 1.3, donde cada perfil se caracteriza en sus dimensiones demográficas, conductuales, tecnológicas y de expectativa de valor, y se conecta con la evidencia recopilada en el trabajo de campo del Capítulo II.
 
