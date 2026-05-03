@@ -1,66 +1,313 @@
 ## 4.8. Database Design
 
-El diseño de base de datos de Nexa deriva de los diagramas de clases actualizados y de los bounded contexts consolidados en el diseño táctico. Organizamos las estructuras relacionales alrededor de **Identity & Access**, **Catalog**, **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**, manteniendo coherencia con EventStorming, DDD y C4.
-
-El modelo conserva las relaciones necesarias para usuarios, productos, clientes B2B, condiciones comerciales, pedidos, lotes de inventario, movimientos de stock, despacho y trazabilidad. Los reportes se tratan como read models derivados de tablas operativas; no constituyen un bounded context independiente.
-
-En TB1, la webapp utiliza Fake API como simulación para validar flujos y estructura funcional. Los siguientes diagramas representan una arquitectura relacional objetivo para una futura capa backend/base de datos; no declaran persistencia productiva, autenticación productiva ni REST API backend implementada en esta entrega.
+La persistencia de Nexa se organiza por bounded context. En lugar de dejar todo el modelo en un único diagrama general, esta sección separa las tablas principales de cada bloque del dominio para que la relación con los class diagrams sea más clara. Los servicios de soporte como pagos y notificaciones no se modelan aquí como contextos propios, porque en esta etapa funcionan como integraciones auxiliares.
 
 ### 4.8.1. Database Diagrams
 
-El diseño de base de datos se presenta como un modelo relacional objetivo derivado de los diagramas de clases. Para cada estructura se especifican tablas, columnas, claves primarias, claves foráneas y restricciones relevantes. Las relaciones se representan con cardinalidades para mantener coherencia con las asociaciones del modelo orientado a objetos.
+Los siguientes diagramas muestran la estructura relacional principal de cada contexto. Cuando una tabla depende de otra parte del sistema, esa referencia se incluye de forma mínima para no repetir el modelo completo en cada imagen.
 
-*Figura. Diagrama de base de datos del bounded context Identity & Access.*
+#### 4.8.1.1. Identity
 
-![Identity & Access](../assets/images/chapter-4/database/identity-and-access.png)
+```mermaid
+erDiagram
+    ROLE {
+        int id PK
+        string name
+        string description
+    }
+    USER {
+        int id PK
+        int role_id FK
+        string email
+        string password_hash
+        string status
+        string created_at
+    }
+    PERMISSION {
+        int id PK
+        string code
+        string description
+    }
+    ROLE_PERMISSION {
+        int role_id FK
+        int permission_id FK
+    }
+    AUDIT_LOG {
+        int id PK
+        int user_id FK
+        string action
+        string timestamp
+    }
+    LOGIN_HISTORY {
+        int id PK
+        int user_id FK
+        string ip_address
+        string login_at
+    }
 
-Nota. Elaboración propia. El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1.
+    ROLE ||--o{ USER : assigns
+    ROLE ||--o{ ROLE_PERMISSION : grants
+    PERMISSION ||--o{ ROLE_PERMISSION : defines
+    USER ||--o{ AUDIT_LOG : records
+    USER ||--o{ LOGIN_HISTORY : registers
+```
 
-*Figura. Diagrama de base de datos del bounded context Catalog.*
+Este contexto concentra autenticación, roles, permisos y trazas de acceso. La relación entre usuario, auditoría e historial de inicio de sesión permite sostener control operativo sin mezclar estas tablas con la lógica comercial del pedido.
 
-![Catalog](../assets/images/chapter-4/database/catalog.png)
+#### 4.8.1.2. Catalog
 
-Nota. Elaboración propia. El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1.
+```mermaid
+erDiagram
+    CATEGORY {
+        int id PK
+        string name
+    }
+    BRAND {
+        int id PK
+        string name
+    }
+    UOM {
+        int id PK
+        string code
+        string name
+    }
+    PRODUCT {
+        int id PK
+        int category_id FK
+        int brand_id FK
+        int uom_id FK
+        string sku
+        string name
+        float standard_price
+    }
+    PRODUCT_SPEC {
+        int id PK
+        int product_id FK
+        string storage_temp_range
+        float storage_humidity
+        string packaging_type
+    }
 
-*Figura. Diagrama de base de datos del bounded context Orders & Commercial Management.*
+    CATEGORY ||--o{ PRODUCT : classifies
+    BRAND ||--o{ PRODUCT : brands
+    UOM ||--o{ PRODUCT : measures
+    PRODUCT ||--o| PRODUCT_SPEC : details
+```
 
-![Orders & Commercial Management](../assets/images/chapter-4/database/orders-and-commercial-management.png)
+Catalog reúne la información maestra del producto. Aquí se describen categoría, marca, unidad y especificaciones de conservación, sin incorporar todavía stock, lotes o movimientos de almacén.
 
-Nota. Elaboración propia. El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1.
+#### 4.8.1.3. Inventory
 
-*Figura. Diagrama de base de datos del bounded context Inventory.*
+```mermaid
+erDiagram
+    PRODUCT {
+        int id PK
+        string sku
+        string name
+    }
+    WAREHOUSE {
+        int id PK
+        string name
+    }
+    WAREHOUSE_LOCATION {
+        int id PK
+        int warehouse_id FK
+        string code
+    }
+    BATCH {
+        int id PK
+        int product_id FK
+        string batch_number
+        string production_date
+        string expiry_date
+        string status
+    }
+    INVENTORY_STOCK {
+        int id PK
+        int warehouse_location_id FK
+        int product_id FK
+        int batch_id FK
+        int quantity_on_hand
+        int quantity_reserved
+    }
+    INVENTORY_TRANS {
+        int id PK
+        int stock_id FK
+        string type
+        int quantity
+        string trans_date
+    }
 
-![Inventory](../assets/images/chapter-4/database/inventory.png)
+    WAREHOUSE ||--o{ WAREHOUSE_LOCATION : partitions
+    PRODUCT ||--o{ BATCH : groups
+    WAREHOUSE_LOCATION ||--o{ INVENTORY_STOCK : stores
+    PRODUCT ||--o{ INVENTORY_STOCK : identifies
+    BATCH ||--o{ INVENTORY_STOCK : specifies
+    INVENTORY_STOCK ||--o{ INVENTORY_TRANS : logs
+```
 
-Nota. Elaboración propia. El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1.
+Inventory modela la disponibilidad física del producto. El stock se entiende como una combinación de ubicación, producto y lote, mientras que `INVENTORY_TRANS` deja constancia de los movimientos que alteran esa disponibilidad.
 
-*Figura. Diagrama de base de datos del bounded context Dispatch & Traceability.*
+#### 4.8.1.4. Customer Management
 
-![Dispatch & Traceability](../assets/images/chapter-4/database/dispatch-and-traceability.png)
+```mermaid
+erDiagram
+    USER {
+        int id PK
+        string email
+    }
+    ZONE {
+        int id PK
+        string name
+        string description
+    }
+    COMMERCIAL_CLIENT {
+        int id PK
+        int user_id FK
+        int zone_id FK
+        string ruc
+        string business_name
+        string legal_address
+        string contact_phone
+    }
 
-Nota. Elaboración propia. El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1.
+    USER ||--o| COMMERCIAL_CLIENT : accesses
+    ZONE ||--o{ COMMERCIAL_CLIENT : groups
+```
 
-*Figura. Diagrama de base de datos de read models.*
+Customer Management reúne la identidad comercial del cliente y su pertenencia a una zona operativa. La referencia al usuario se mantiene ligera, porque aquí importa el vínculo comercial del cliente, no la administración completa de identidad.
 
-![Read Models](../assets/images/chapter-4/database/read-models.png)
+#### 4.8.1.5. Commercial Conditions
 
-Nota. Elaboración propia. Los read models se derivan de Orders & Commercial Management, Inventory y Dispatch & Traceability; no constituyen un bounded context independiente.
+```mermaid
+erDiagram
+    COMMERCIAL_CLIENT {
+        int id PK
+        string business_name
+    }
+    COMMERCIAL_CONDITION {
+        int id PK
+        int client_id FK
+        float credit_limit
+        float current_balance
+        string payment_terms
+        int grace_period_days
+    }
+    PRICE_LIST {
+        int id PK
+        string name
+        string currency
+        boolean is_active
+    }
+    PRICE_LIST_ASSIGNMENT {
+        int id PK
+        int client_id FK
+        int price_list_id FK
+    }
 
-*Figura. Diagrama consolidado de base de datos objetivo de Nexa.*
+    COMMERCIAL_CLIENT ||--o| COMMERCIAL_CONDITION : has
+    COMMERCIAL_CLIENT ||--o{ PRICE_LIST_ASSIGNMENT : receives
+    PRICE_LIST ||--o{ PRICE_LIST_ASSIGNMENT : maps
+```
 
-![Full Database Diagram](../assets/images/chapter-4/database/full-database-diagram.png)
+Este contexto concentra reglas comerciales que luego afectan validaciones del pedido: crédito, saldo, términos de pago y asignación de listas de precio. Separarlo del bloque de órdenes evita que esas reglas queden embebidas dentro de cada pedido.
 
-Nota. Elaboración propia. La vista consolidada integra las estructuras por bounded context y sus relaciones principales como diseño objetivo.
+#### 4.8.1.6. Orders
 
-*Tabla. Agrupación de estructuras de base de datos por bounded context*
+```mermaid
+erDiagram
+    COMMERCIAL_CLIENT {
+        int id PK
+        string business_name
+    }
+    PRODUCT {
+        int id PK
+        string sku
+        string name
+    }
+    BATCH {
+        int id PK
+        string batch_number
+    }
+    ORDER {
+        int id PK
+        int client_id FK
+        string order_date
+        string status
+        float subtotal
+        float tax_total
+        float total_amount
+    }
+    ORDER_ITEM {
+        int id PK
+        int order_id FK
+        int product_id FK
+        int batch_id FK
+        int quantity
+        float unit_price
+        float discount
+    }
+    ORDER_HISTORY {
+        int id PK
+        int order_id FK
+        string status_code
+        string changed_at
+    }
 
-| Bounded context | Estructuras principales | Propósito de diseño |
-|---|---|---|
-| Identity & Access | `USERS`, `USER_SESSIONS` | Administrar usuarios, alcance de acceso, rol y sesiones como diseño objetivo de seguridad. |
-| Catalog | `CATEGORIES`, `PRODUCTS` | Mantener información maestra de productos, categorías y condiciones de conservación. |
-| Orders & Commercial Management | `B2B_CLIENTS`, `COMMERCIAL_CONDITIONS`, `CREDIT_WARNINGS`, `ORDERS`, `ORDER_ITEMS`, `ORDER_OBSERVATIONS` | Registrar clientes B2B, condiciones comerciales, alertas de crédito, pedidos, detalle y observaciones. |
-| Inventory | `WAREHOUSES`, `INVENTORY_LOTS`, `STOCK_MOVEMENTS` | Representar almacenes, lotes, disponibilidad, reservas y movimientos de stock. |
-| Dispatch & Traceability | `DISPATCHES`, `DISPATCH_INCIDENTS`, `TRACEABILITY_EVENTS`, `POD_EVIDENCE` | Registrar despacho, incidencias, eventos trazables y evidencia de cierre. |
-| Read models | `SALES_REPORT_READ_MODEL`, `INVENTORY_REPORT_READ_MODEL`, `DISPATCH_REPORT_READ_MODEL` | Derivados de Orders & Commercial Management, Inventory y Dispatch & Traceability; no constituyen un bounded context independiente. |
+    COMMERCIAL_CLIENT ||--o{ ORDER : places
+    ORDER ||--o{ ORDER_ITEM : contains
+    ORDER ||--o{ ORDER_HISTORY : tracks
+    PRODUCT ||--o{ ORDER_ITEM : identifies
+    BATCH ||--o{ ORDER_ITEM : specifies
+```
 
-> *Nota:* Elaboración propia. La agrupación mantiene la relación entre modelo relacional objetivo, bounded contexts y diagramas de clases sin declarar persistencia productiva para TB1.
+Orders modela la orden comercial, sus ítems y la evolución de estados. Las referencias a cliente, producto y lote se mantienen visibles porque son necesarias para validar condiciones, calcular totales y sostener la trazabilidad del flujo transaccional.
+
+#### 4.8.1.7. Traceability
+
+```mermaid
+erDiagram
+    ORDER {
+        int id PK
+        string status
+    }
+    VEHICLE {
+        int id PK
+        string plate
+        string model
+        float temp_cap
+    }
+    DRIVER {
+        int id PK
+        string name
+    }
+    DISPATCH {
+        int id PK
+        int order_id FK
+        int vehicle_id FK
+        int driver_id FK
+        string status
+        string departure
+    }
+    INCIDENT {
+        int id PK
+        int dispatch_id FK
+        string type
+        string severity
+        string reported_at
+    }
+    POD {
+        int id PK
+        int dispatch_id FK
+        string received_by
+        string timestamp
+    }
+
+    ORDER ||--o{ DISPATCH : triggers
+    VEHICLE ||--o{ DISPATCH : serves
+    DRIVER ||--o{ DISPATCH : handles
+    DISPATCH ||--o{ INCIDENT : records
+    DISPATCH ||--o| POD : closes
+```
+
+Traceability cubre la ejecución posterior al pedido: despacho, vehículo, conductor, incidentes y prueba de entrega. Este bloque existe para documentar el cierre operativo del pedido sin mezclarlo con la captura comercial o con el inventario.
