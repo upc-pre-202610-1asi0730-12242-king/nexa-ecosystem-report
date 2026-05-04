@@ -1,60 +1,71 @@
 <p align="center">
-  <img src="../assets/images/front-matter/cover/upc-logo.png" alt="UPC Logo" width="220"/>
+  <img src="../assets/images/image1.png" alt="UPC Logo" width="220"/>
 </p>
+
+<br>
 
 <div align="center">
 
-<h1>UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS</h1>
+# UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
 
-<h2>Ingeniería de Software</h2>
+<br>
 
-<p><strong>Período Académico:</strong> 2026-10</p>
-<p><strong>Código del curso:</strong> 1ASI0730</p>
-<p><strong>Curso:</strong> Aplicaciones Web</p>
-<p><strong>NRC:</strong> 12242</p>
-<p><strong>Docente:</strong> Velásquez Núñez, Ángel Augusto</p>
+## Ingeniería de Software
 
-<hr>
+<br>
+<br>
 
-<h1>Informe de Trabajo Final</h1>
+**Período Académico:** 2026-10
+**Curso:** Aplicaciones Web (NRC 12242)  
+**Sección:** 1ASI0730
+**Docente:** Velásquez Núñez, Ángel Augusto
 
-<p><strong>Entrega:</strong> Trabajo Parcial 1 (TB1)</p>
-<p><strong>Startup:</strong> King</p>
-<p><strong>Producto:</strong> Nexa</p>
-<p><strong>Mes y año:</strong> Mayo 2026</p>
+<br>
+<br>
 
-<h2>Relación de integrantes</h2>
+---
+
+# Informe de Trabajo Final
+
+## Informe de Avance 1 (AV1)
+
+**Startup:** King  
+**Producto:** Nexa  
+**Mes y Año:** Abril 2026
+
+---
+
+<br>
+<br>
+
+## Relación de integrantes
+
+<br>
 
 <table border="1" cellspacing="0" cellpadding="8" align="center">
-  <tr>
+  <tr style="background-color: #f2f2f2;">
     <th align="center">Código</th>
     <th align="center">Apellidos y nombres</th>
-    <th align="center">Carrera</th>
   </tr>
   <tr>
     <td>U202411937</td>
     <td>Marín Cueva, César Fernando</td>
-    <td>Ingeniería de Software</td>
   </tr>
   <tr>
     <td>U202413142</td>
     <td>Rojas Mancilla, Gerard Gianpier</td>
-    <td>Ingeniería de Software</td>
   </tr>
   <tr>
     <td>U202416289</td>
     <td>Torrejón De Los Santos, Gino Rodrigo</td>
-    <td>Ingeniería de Software</td>
   </tr>
   <tr>
     <td>U20241A054</td>
     <td>Verde Bueno, Joaquín Francisco</td>
-    <td>Ingeniería de Software</td>
   </tr>
   <tr>
     <td>U202323040</td>
     <td>Yucra Sandoval, Diego Sebastian</td>
-    <td>Ingeniería de Software</td>
   </tr>
 </table>
 
