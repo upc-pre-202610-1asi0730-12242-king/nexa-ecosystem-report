@@ -14,11 +14,11 @@ La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado 
 
 *User Persona — Segmento 2: Roberto García*
 ![User Persona 2](../assets/images/user-persona-2.png)
-> *Nota:* Representación sintética del arquetipo de comprador comercial B2B, construida a partir de entrevistas a compradores minoristas y mayoristas, más evidencia de adopción digital del canal tradicional. Elaboración propia.
+> *Nota:* Representación sintética del arquetipo de coordinación logística y operativa, enfocada en el control del cumplimiento, la visibilidad del despacho y el cierre con evidencia. Su construcción se apoya en hallazgos de trazabilidad, incidencias y coordinación operativa dentro del dominio. Elaboración propia.
 
 *User Persona — Segmento 3: Elena Litano*
 ![User Persona 3](../assets/images/user-persona-3.png)
-> *Nota:* Representación sintética del arquetipo de coordinación logística y operativa, enfocada en el control del cumplimiento, la visibilidad del despacho y el cierre con evidencia. Su construcción se apoya en hallazgos de trazabilidad, incidencias y coordinación operativa dentro del dominio. Elaboración propia.
+> *Nota:* Representación sintética del arquetipo de comprador comercial B2B, construida a partir de entrevistas a compradores minoristas y mayoristas, más evidencia de adopción digital del canal tradicional. Elaboración propia.
 
 ### ***2.3.2. User Task Matrix***
 
@@ -42,21 +42,21 @@ Esta Sección resume qué actividades concentran mayor frecuencia e importancia 
 ![Journey Map 1](../assets/images/journey-map-1.png)
 > *Nota:* Mapeo del proceso de captura y gestión de pedidos, identificando puntos de dolor en la transcripción manual. Elaboración propia.
 
-*Journey Map — Segmento 2: Cliente Comercial B2B*
+*Journey Map — Segmento 2: Despacho y Entrega*
 ![Journey Map 2](../assets/images/journey-map-2.png)
-> *Nota:* Mapeo de la experiencia de abastecimiento del cliente, destacando la incertidumbre en el seguimiento de entrega. Elaboración propia.
-
-*Journey Map — Segmento 3: Despacho y Entrega*
-![Journey Map 3](../assets/images/journey-map-3.png)
 > *Nota:* Mapeo de la ruta logística, enfatizando los cuellos de botella en la comunicación de incidencias. Elaboración propia.
 
-El principal valor del bloque no está en describir tres trayectos separados, sino en demostrar que el punto de dolor cambia de forma pero no de origen. En el Segmento 1 el problema aparece como ambigüedad y retrabajo; en el Segmento 3 como opacidad del abastecimiento e incertidumbre; y en el Segmento 2 como incidencias, demoras y cierre sin evidencia suficiente. Dicho de otro modo, los journeys confirman que el problema central no es una sola pantalla mal resuelta, sino una cadena de decisiones y validaciones que hoy pierde continuidad entre actores.
+*Journey Map — Segmento 3: Cliente Comercial B2B*
+![Journey Map 3](../assets/images/journey-map-3.png)
+> *Nota:* Mapeo de la experiencia de abastecimiento del cliente, destacando la incertidumbre en el seguimiento de entrega. Elaboración propia.
+
+El principal valor del bloque no está en describir tres trayectos separados, sino en demostrar que el punto de dolor cambia de forma pero no de origen. En el Segmento 1 el problema aparece como ambigüedad y retrabajo; en el Segmento 2 como opacidad del abastecimiento e incertidumbre; y en el Segmento 3 como incidencias, demoras y cierre sin evidencia suficiente. Dicho de otro modo, los journeys confirman que el problema central no es una sola pantalla mal resuelta, sino una cadena de decisiones y validaciones que hoy pierde continuidad entre actores.
 
 Esta lectura también deja una implicancia directa para diseño: el MVP necesita mejorar no solo la captura del pedido, sino también los momentos de transición entre estados. Si el sistema estructura bien el pedido, pero no comunica con claridad su confirmación, preparación, despacho o entrega, el valor percibido seguirá fragmentado. Por eso los journeys sostienen la prioridad de estados visibles, historial del pedido, confirmación clara y trazabilidad mínima del cierre.
 
 ### 2.3.4. As-Is Scenario Map
 
-El recorrido del As-Is Scenario Map se estructura en seis etapas operativas, alineadas estrictamente con los tres segmentos canónicos del producto y representados por sus respectivos User Personas: Segmento 1 (Coordinación Comercial), Segmento 2 (Transportista / Despacho) y Segmento 3 (Compradores B2B).
+El recorrido del As-Is Scenario Map se estructura en seis etapas operativas, alineadas estrictamente con los tres segmentos canónicos del producto y representados por sus respectivos User Personas: Segmento 1 (Coordinación Comercial), Segmento 2 (Jefatura logística) y Segmento 3 (Compradores B2B).
 
 #### Mapa de Escenario Actual (As-Is)
 
@@ -66,28 +66,25 @@ El recorrido del As-Is Scenario Map se estructura en seis etapas operativas, ali
 | **2. Captura del pedido** | S1: Coord. Comercial, S3: Compradores B2B | El pedido entra por WhatsApp, audio, foto de lista o llamada. S1 transcribe e interpreta al ERP/Excel. | Transcripción manual, ambigüedad de códigos, doble digitación, stock no confirmado en tiempo real. | Presión, retrabajo, miedo a equivocarse al transcribir. | Formulario estructurado con validación de SKU, precio, stock y crédito en un solo paso. |
 | **3. Validación de stock, crédito y FEFO** | S1: Coord. Comercial, S2: Jefatura Logística (ej. Roberto) | S1 consulta stock en ERP y por teléfono a almacén; revisa crédito en módulo separado. S2 confirma por lote/vencimiento. | Stock desactualizado en ERP, crédito fragmentado, rotación FEFO/FIFO coordinada verbalmente. | Desconfianza del sistema, interrupciones constantes entre áreas.                  | Vista única de stock real, crédito disponible y lotes priorizados por vencimiento. |
 | **4. Preparación y picking en almacén** | S2: Almacén y Jefatura Logística | Se imprime guía de remisión, se arman cajas/pallets manualmente, se valida visualmente temperatura y fecha. | Errores de picking, lote incorrecto, ruptura de cadena de frío no registrada, quiebres de stock descubiertos tarde. | Estrés por el tiempo, reclamos posteriores, riesgo de mermas.                      | Lista de picking digital con lote/vencimiento sugerido y checklist de temperatura integrado. |
-| **5. Despacho y tránsito** | S2: Coord. de Despacho | Cargan vehículo, salen con guía física, coordinan ruta por teléfono; el cliente llama a ventas para saber ETA. | "Ceguera logística": sin ETA visible para el cliente, sin trazabilidad en ruta, llamadas interrumpen al conductor. | Cansancio, llamadas invasivas cruzadas, ansiedad del cliente final.                  | ETA compartido, seguimiento de ruta ligero y registro mínimo de temperatura |
-| **6. Entrega y cierre** | S2: Transportista, S3: Compradores B2B | Descarga, conteo manual, firma en guía física manchada o arrugada; reclamos por cantidades o vencimientos. | Cierre sin evidencia digital, disputas difíciles de resolver sobre quién rompió la cadena de frío, trazabilidad nula. | Frustración, desconfianza, reclamos post-entrega que afectan cobranzas.                     | Prueba de entrega digital (POD) con captura de firma, fotos, registro de temperatura y motivos de rechazo. |
+| **5. Despacho y tránsito** | S2: Jefatura logística | Cargan vehículo, salen con guía física, coordinan ruta por teléfono; el cliente llama a ventas para saber ETA. | "Ceguera logística": sin ETA visible para el cliente, sin trazabilidad en ruta, llamadas interrumpen al conductor. | Cansancio, llamadas invasivas cruzadas, ansiedad del cliente final.                  | ETA compartido, seguimiento de ruta ligero y registro mínimo de temperatura |
+| **6. Entrega y cierre** | S2: Jefatura logística, S3: Compradores B2B | Descarga, conteo manual, firma en guía física manchada o arrugada; reclamos por cantidades o vencimientos. | Cierre sin evidencia digital, disputas difíciles de resolver sobre quién rompió la cadena de frío, trazabilidad nula. | Frustración, desconfianza, reclamos post-entrega que afectan cobranzas.                     | Prueba de entrega digital (POD) con captura de firma, fotos, registro de temperatura y motivos de rechazo. |
 
 Estos puntos no se presentan como funciones implementadas de Nexa en su primera versión, sino como el mapa general de oportunidades que el producto pretende atacar mediante incrementos. La prioridad inicial será resolver la captura estructurada del pedido y devolver la visibilidad de estado (trazabilidad) entre el Segmento 1 (Ventas), el Segmento 2 (Logística) y el Segmento 3 (Comprador).
 
 ### ***2.3.5. Empathy Mapping***
 
-Los empathy maps complementan la lectura operativa con variables de percepción, confianza, frustración y expectativa. Este nivel resulta importante porque la adopción del producto no dependerá solo de eficiencia funcional, sino también de si cada segmento siente que el sistema le reduce carga, incertidumbre o exposición al error.
-
-En el Segmento 1, el empathy map concentra emociones ligadas a presión, urgencia y desgaste por duplicación de tareas; en el Segmento 3, predominan la desconfianza frente a la opacidad del abastecimiento y la necesidad de respaldo humano; y en el Segmento 2, la carga emocional se asocia a incidencias, reclamos y falta de evidencia al cierre operativo. Estas diferencias son útiles porque muestran que la adopción no depende de un único argumento de valor para todos los actores.
+A continuación, se presentan los Empathy Maps desarrollados para cada segmento objetivo.
 
 *Empathy Map — Segmento 1: Coordinación Comercial*
 ![Empathy Map 1](../assets/images/empathy-map-1.png)
 > *Nota:* Análisis de expectativas y temores del personal administrativo respecto a la adopción tecnológica. Elaboración propia.
 
-*Empathy Map — Segmento 2: Cliente Comercial B2B*
+*Empathy Map — Segmento 2: Despacho y Entrega*
 ![Empathy Map 2](../assets/images/empathy-map-2.png)
-> *Nota:* Identificación de motivadores extrínsecos e intrínsecos para la digitalización del bodeguero. Elaboración propia.
-
-*Empathy Map — Segmento 3: Despacho y Entrega*
-![Empathy Map 3](../assets/images/empathy-map-3.png)
 > *Nota:* Exploración del entorno laboral y necesidades de soporte del personal en ruta. Elaboración propia.
 
-En términos de producto, los empathy maps confirman tres criterios de diseño. Primero, la herramienta debe reducir esfuerzo cognitivo en el Segmento 1, no aumentarlo. Segundo, debe generar confianza en el Segmento 3, no solo eficiencia transaccional. Tercero, debe proteger al Segmento 2 frente a ambigüedades del cierre operativo, ofreciendo visibilidad, trazabilidad y un registro suficiente de la preparación y entrega. Bajo esta lectura, el needfinding deja de ser un conjunto de imágenes explicativas y se convierte en una base argumental para justificar por qué el MVP prioriza captura estructurada, visibilidad compartida y evidencia mínima de entrega.
+*Empathy Map — Segmento 3: Cliente Comercial B2B*
+![Empathy Map 3](../assets/images/empathy-map-3.png)
+> *Nota:* Identificación de motivadores extrínsecos e intrínsecos para la digitalización del bodeguero. Elaboración propia.
+
 
