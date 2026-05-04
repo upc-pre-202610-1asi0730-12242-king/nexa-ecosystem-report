@@ -188,7 +188,7 @@ Además de las capturas integradas en el informe, el archivo audiovisual origina
 
 *Evidencia de entrevista: Lorena Silva*
 
-![Lorena](../assets/images/interviews/lorena-silva.jpeg)
+![Lorena](../assets/images/pruebas-entrevistas/Lorena.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
@@ -211,7 +211,7 @@ A nivel técnico, reporta fricciones severas con el sistema actual (Fontana), el
 
 *Evidencia de entrevista: Cinthia Levano*
 
-![Cinthia](../assets/images/interviews/cinthia-levano.jpeg)
+![Cinthia](../assets/images/pruebas-entrevistas/Paola.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
@@ -234,7 +234,7 @@ Cinthia enfatiza la necesidad de simplicidad. Describe su flujo actual como una 
 
 *Evidencia de entrevista: Celia Pérez*
 
-![Celia](../assets/images/interviews/celia-perez.jpeg)
+![Celia](../assets/images/pruebas-entrevistas/Celia.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
@@ -244,7 +244,7 @@ Captura de sesión de entrevista. Elaboración propia.
 
 **Resumen de la Entrevista**
 
-Celia Pérez, con experiencia previa en ventas de ruta, aporta una perspectiva crítica sobre el uso de herramientas en campo. Utilizó aplicaciones móviles (Rikra) que, aunque eficientes para digitalizar la venta en tiempo real y eliminar el papel, presentaban fallos de rendimiento y lentitud que forzaban el retorno a canales informales. Destaca que la herramienta ideal debe integrar datos del cliente (RUC, saldos, dirección) para evitar la doble digitación.
+Celia Pérez, con experiencia previa en ventas de ruta, aporta una perspectiva crítica sobre el uso de herramientas en campo. Utilizó aplicativos móviles (Rikra) que, aunque eficientes para digitalizar la venta en tiempo real y eliminar el papel, presentaban fallos de rendimiento y lentitud que forzaban el retorno a canales informales. Destaca que la herramienta ideal debe integrar datos del cliente (RUC, saldos, dirección) para evitar la doble digitación.
 
 Su testimonio confirma que, para el personal en ruta, la estabilidad de la conexión y la velocidad de respuesta del sistema son factores determinantes para la adopción tecnológica. Cualquier retraso en el dispositivo móvil se traduce en una atención deficiente al cliente y en una carga operativa innecesaria al final del día.
 
@@ -259,7 +259,7 @@ Su testimonio confirma que, para el personal en ruta, la estabilidad de la conex
 
 *Evidencia de entrevista: Hilda Litano*
 
-![Hilda](../assets/images/interviews/hilda-litano.jpeg)
+![Hilda](../assets/images/pruebas-entrevistas/Hilda.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
@@ -280,7 +280,7 @@ Hilda Litano supervisa procesos de importación y cumplimiento sanitario. Su enf
 
 *Evidencia de entrevista: Edith Taype*
 
-![Edith](../assets/images/interviews/edith-taype.jpeg)
+![Edith](../assets/images/pruebas-entrevistas/Edith.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
@@ -301,7 +301,7 @@ Edith Taype opera en el punto de venta (supermercados), donde la manipulación y
 
 *Evidencia de entrevista: Jesica Sandoval*
 
-![Jesica](../assets/images/interviews/jesica-sandoval.jpeg)
+![Jesica](../assets/images/pruebas-entrevistas/Jesica.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
@@ -324,7 +324,7 @@ Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcrip
 
 *Evidencia de entrevista: Pedro Puente*
 
-![Pedro](../assets/images/interviews/pedro-puente.jpeg)
+![Pedro](../assets/images/pruebas-entrevistas/Pedro.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
@@ -345,7 +345,7 @@ Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre log�
 
 *Evidencia de entrevista: Henrry García*
 
-![Henry](../assets/images/interviews/henrry-garcia.jpeg)
+![Henry](../assets/images/pruebas-entrevistas/Henry.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
@@ -486,23 +486,6 @@ El tramo final del flujo del pedido —despacho, seguimiento, incidencia y cierr
 - El estado del pedido debe mantenerse visible para el comprador, la coordinación comercial y la operación.
 - El cierre debe registrar una evidencia mínima consistente, suficiente para disminuir reclamos y ambigüedad posterior.
 
-**Contexto operativo complementario para análisis UX**
-
-Como complemento al análisis UX, el equipo registra los navegadores, dispositivos y canales más probables o declarados durante la interacción operativa. Cuando el dato no aparece de forma explícita en la entrevista, se considera como supuesto de diseño para orientar decisiones de compatibilidad y pruebas, no como respuesta literal de la persona entrevistada.
-
-| Entrevistado / segmento | Navegador considerado | Dispositivo principal | Canal de comunicación | Implicancia UX |
-| --- | --- | --- | --- | --- |
-| Lorena Silva / Coordinación comercial | Google Chrome como supuesto de análisis | Laptop durante gestión administrativa; móvil para coordinación en campo | WhatsApp declarado como canal operativo crítico; correo para formalidades | La captura de pedidos debe funcionar bien en Chrome y permitir consulta rápida sin depender de muchas ventanas. |
-| Cinthia Levano / Coordinación comercial | Google Chrome como supuesto de análisis | Computadora de oficina como contexto principal | WhatsApp, Trello y Excel declarados como herramientas de trabajo | El flujo debe centralizar información dispersa y reducir pasos repetidos entre sistemas. |
-| Celia Pérez / Ventas de ruta | Google Chrome como supuesto de análisis | Smartphone en campo; soporte administrativo posterior | Canales informales asociados al retorno desde aplicaciones lentas | La experiencia móvil debe ser liviana, rápida y tolerante a condiciones de conexión variables. |
-| Hilda Litano / Supervisión logística | Google Chrome como supuesto de análisis | Computadora de oficina para revisión documental | Coordinación interna y documentos operativos | La vista logística debe priorizar trazabilidad, certificados, stock y vencimientos en layouts de escritorio. |
-| Edith Taype / Operación en punto de venta | Google Chrome como supuesto de análisis | Dispositivo de trabajo compartido o consulta supervisada | Coordinación interna en piso y acceso mediado a información | El diseño debe contemplar permisos por rol y lectura clara para usuarios con acceso limitado al inventario. |
-| Jesica Sandoval / Supervisión Horeca | Safari como supuesto de análisis contextual; no declarado en entrevista | Dispositivo de escritorio o móvil según contexto de supervisión | Coordinación verbal con almacén para fechas de vencimiento y FEFO | Las pruebas deben cubrir Safari como navegador complementario y hacer visibles los criterios FEFO sin depender de llamadas. |
-| Pedro Puente / Comprador B2B | Google Chrome como supuesto de análisis | Móvil para pedidos rápidos; computadora para revisión si aplica | WhatsApp declarado para pedidos y coordinación | El portal debe ser entendible desde móvil, con confirmación y estado del pedido sin obligar a perseguir respuestas. |
-| Henrry García / Comprador B2B | Google Chrome como supuesto de análisis | Móvil para seguimiento y coordinación; computadora para revisión administrativa | Llamadas, WhatsApp y contacto humano para excepciones | El portal debe conservar una ruta de soporte humano y no convertir el autoservicio en una barrera de confianza. |
-
-> *Nota:* Esta tabla no agrega citas nuevas. Ordena información declarada en los resúmenes cuando existe evidencia y completa, como supuesto de análisis, los datos de navegador o dispositivo necesarios para orientar compatibilidad, responsive design y pruebas de UX.
-
 ### ***2.2.4. Síntesis Global de Hallazgos***
 
 Tras el análisis detallado de los ocho perfiles levantados y de la lectura conjunta de los tres segmentos del producto, se identifica una **brecha de trazabilidad integral**. Esta brecha se manifiesta en la desconexión entre la promesa comercial capturada por canales informales y la realidad operativa gestionada con sistemas fragmentados, validaciones manuales y visibilidad incompleta del despacho.
@@ -542,3 +525,4 @@ graph TD
 > *Nota:* Mapeo analítico construido a partir de la recurrencia de temas mencionados en las entrevistas; los porcentajes deben leerse como aproximaciones de frecuencia dentro de la muestra, no como mediciones estadísticas del mercado. Elaboración propia.
 
 En conclusión, Nexa no solo debe resolver la toma de pedidos, sino articular de forma consistente los tres segmentos del producto: quien captura y valida el pedido (Segmento 1: Vendedoras y coordinación comercial), quien coordina logística, inventario, preparación y despacho (Segmento 2: Jefatura logística y coordinación operativa), y quien se abastece y necesita previsibilidad (Segmento 3: Compradores comerciales B2B). Las reglas, restricciones y criterios de control del dominio acompañan ese flujo completo, y la segmentación del informe se organiza en esos tres tramos del producto.
+

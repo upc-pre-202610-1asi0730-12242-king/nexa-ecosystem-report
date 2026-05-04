@@ -1,147 +1,94 @@
 ## 3.3. Product Backlog
 
-<p align="justify">
-El Product Backlog de Nexa organiza el universo de requerimientos en una secuencia lógica de implementación, priorizando la visibilidad pública del producto y el flujo transaccional central antes que los sistemas de soporte técnico. Siguiendo los criterios de la rúbrica académica, este backlog se ordena por <strong>valor de negocio e importancia técnica</strong>, situando el despliegue del Landing Page en el primer sprint y consolidando los componentes de mayor complejidad (Story Points) al inicio de cada fase operativa para mitigar riesgos tempranos.
-</p>
+El Product Backlog de Nexa organiza las User Stories definidas en la sección 3.1 según valor de negocio, prioridad de entrega y dependencia funcional. La priorización inicia con las historias del Landing Page y del sitio público, porque permiten validar la propuesta desde el primer sprint. Luego avanza hacia acceso, portal B2B, catálogo, preparación de pedidos, captura comercial asistida, gestión operativa, inventario, clientes, despacho, reportes, administración y continuidad de información.
 
-<p align="justify">
-La priorización no responde únicamente a facilidad de implementación. Se construye sobre cuatro criterios combinados: visibilidad temprana del producto para validación comercial, reducción inmediata de fricción en el flujo de pedido, habilitación progresiva de reglas de negocio críticas y preparación de contratos técnicos que sostengan la evolución del MVP. Así, el backlog mantiene continuidad con el Impact Mapping y evita que historias de soporte o conveniencia se ubiquen por encima del núcleo funcional identificado en el trabajo de campo.
-</p>
+La estimación utiliza la escala de **1, 2, 3, 5 y 8 Story Points**. **1 SP** representa contenido muy pequeño o información estática simple; **2 SP**, historias simples de baja interacción; **3 SP**, interacciones estándar o reglas de negocio simples; **5 SP**, flujos de varios pasos, validaciones o visibilidad entre áreas; y **8 SP**, historias complejas con trazabilidad, sincronización, continuidad, evidencia, FEFO o dependencia operativa fuerte.
 
-**Tabla 26**
+*Tabla. Product Backlog priorizado de Nexa*
 
-*Criterios de priorización del Product Backlog*
+| # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
+|---|---|---|---|---:|
+| 1 | US01 | Identificar el problema que atiende Nexa | Como visitante comercial, quiero identificar qué problema operativo atiende Nexa, para decidir si la solución se relaciona con los pedidos refrigerados de mi negocio. | 2 |
+| 2 | US02 | Reconocer el impacto de la información dispersa | Como visitante comercial, quiero reconocer cómo los pedidos gestionados por mensajes, llamadas o registros manuales generan errores, para evaluar si Nexa responde a una fricción real de mi empresa. | 2 |
+| 3 | US07 | Identificar valor para distribuidoras refrigeradas | Como representante de distribuidora refrigerada, quiero identificar cómo Nexa conecta pedidos, disponibilidad y despacho, para evaluar si puede reducir errores entre ventas y operación. | 2 |
+| 4 | US08 | Identificar valor para importadoras y mayoristas | Como representante de importadora o mayorista, quiero identificar cómo Nexa ordena la atención de pedidos B2B recurrentes, para evaluar si puede mejorar la respuesta a mis clientes comerciales. | 2 |
+| 5 | US09 | Identificar valor para operadores de almacenamiento frío | Como responsable de operación en frío, quiero identificar cómo Nexa apoya el control de productos sensibles, para evaluar si mejora la visibilidad sobre inventario, preparación e incidencias. | 2 |
+| 6 | US11 | Reconocer capacidades centrales antes del acceso | Como visitante comercial, quiero reconocer las capacidades centrales de Nexa antes de ingresar a la aplicación, para decidir si la solución merece una revisión más detallada. | 2 |
+| 7 | US13 | Solicitar contacto comercial | Como visitante comercial, quiero enviar una solicitud de contacto con mis datos básicos, para iniciar una conversación con el equipo de Nexa. | 3 |
+| 8 | US14 | Indicar contexto de empresa interesada | Como visitante comercial, quiero indicar el tipo de empresa o contexto operativo al que pertenezco, para que el equipo de Nexa interprete mejor mi solicitud. | 2 |
+| 9 | US15 | Compartir necesidad operativa principal | Como visitante comercial, quiero describir brevemente el problema operativo que busco resolver, para que la conversación comercial se enfoque en una necesidad concreta. | 2 |
+| 10 | US18 | Revisar tratamiento de datos de contacto | Como visitante comercial, quiero revisar cómo se tratarán los datos que comparto, para decidir con mayor claridad si envío una solicitud. | 2 |
+| 11 | US19 | Consultar condiciones generales de uso | Como visitante o usuario potencial, quiero consultar condiciones generales de uso de Nexa, para entender responsabilidades antes de solicitar o usar la solución. | 2 |
+| 12 | US20 | Diferenciar sitio público y aplicación operativa | Como visitante comercial, quiero distinguir la información pública de la experiencia operativa de la aplicación, para no confundir comunicación comercial con trabajo dentro de la plataforma. | 2 |
+| 13 | US05 | Distinguir alcance inicial y evolución futura | Como visitante comercial, quiero distinguir qué capacidades pertenecen al alcance inicial de Nexa y cuáles corresponden a evolución futura, para formar expectativas realistas sobre la solución. | 2 |
+| 14 | US03 | Recorrer información pública con continuidad | Como visitante comercial, quiero recorrer la información principal de Nexa con continuidad, para evaluar la propuesta sin depender de explicaciones externas. | 2 |
+| 15 | US04 | Consultar la propuesta en el idioma preferido | Como visitante comercial bilingüe, quiero consultar la información pública en el idioma que manejo mejor, para evaluar Nexa sin perder términos comerciales u operativos relevantes. | 2 |
+| 16 | US06 | Encontrar información complementaria de confianza | Como visitante comercial, quiero encontrar información complementaria sobre la empresa, contacto y condiciones básicas, para evaluar la seriedad de Nexa antes de compartir datos. | 1 |
+| 17 | US12 | Resolver dudas frecuentes antes del contacto | Como visitante comercial, quiero consultar respuestas a dudas frecuentes, para decidir si necesito contactar al equipo o continuar evaluando Nexa por mi cuenta. | 2 |
+| 18 | US16 | Evaluar acompañamiento para adopción inicial | Como representante de empresa interesada, quiero saber si Nexa contempla acompañamiento durante la adopción inicial, para evaluar si mi equipo podría empezar a usar la solución sin una transición brusca. | 2 |
+| 19 | US17 | Conocer el propósito de Nexa | Como visitante comercial, quiero conocer el propósito de Nexa como producto, para evaluar si la solución responde a un problema real del sector B2B refrigerado. | 1 |
+| 20 | US10 | Trazar comunicación pública con la segmentación investigada | Como equipo de producto, quiero mantener trazabilidad entre las agrupaciones comerciales del sitio público y los segmentos investigados, para demostrar que la comunicación de Nexa nace de necesidades reales. | 2 |
+| 21 | US21 | Iniciar sesión como usuario interno autorizado | Como usuario interno autorizado, quiero iniciar sesión con mis credenciales de trabajo, para acceder a las funciones operativas que corresponden a mi responsabilidad. | 3 |
+| 22 | US22 | Iniciar sesión como comprador comercial B2B | Como comprador comercial B2B, quiero iniciar sesión en mi portal de cliente, para consultar catálogo, preparar pedidos y revisar el seguimiento de mis compras. | 3 |
+| 23 | US24 | Acceder según responsabilidad asignada | Como usuario interno autorizado, quiero acceder solo a información y acciones relacionadas con mi responsabilidad, para reducir errores y proteger datos operativos o comerciales. | 5 |
+| 24 | US25 | Recibir explicación ante acceso restringido | Como usuario interno autorizado, quiero recibir una explicación clara cuando no puedo acceder a una función, para distinguir si el problema depende de permisos o estado de cuenta. | 2 |
+| 25 | US26 | Entender estado de cuenta no disponible | Como usuario autorizado, quiero saber cuándo mi cuenta requiere atención, para entender por qué no puedo continuar y qué acción corresponde. | 2 |
+| 26 | US23 | Recuperar acceso a la cuenta | Como usuario autorizado, quiero recuperar el acceso a mi cuenta mediante un proceso controlado, para volver a usar Nexa sin depender de coordinaciones informales. | 3 |
+| 27 | US27 | Consultar resumen de cuenta B2B | Como comprador comercial B2B, quiero revisar un resumen de mi cuenta, para identificar pedidos activos, condiciones comerciales y próxima atención. | 3 |
+| 28 | US28 | Revisar condiciones comerciales de la cuenta | Como comprador comercial B2B, quiero revisar condiciones básicas asociadas a mi cuenta, para saber si mi compra depende de crédito, pago al contado u otra condición comercial. | 3 |
+| 29 | US29 | Revisar pedidos recientes desde el portal | Como comprador comercial B2B, quiero revisar mis pedidos recientes, para consultar su estado sin depender de mensajes externos. | 3 |
+| 30 | US30 | Encontrar productos relevantes para recompra | Como comprador comercial B2B, quiero encontrar productos relevantes para mi negocio al ingresar al portal, para iniciar compras recurrentes con menos esfuerzo. | 2 |
+| 31 | US31 | Consultar catálogo disponible según cuenta | Como comprador comercial B2B, quiero consultar los productos disponibles para mi cuenta, para preparar pedidos con información clara y confiable. | 5 |
+| 32 | US32 | Buscar productos por nombre o código | Como comprador comercial B2B, quiero buscar productos por nombre o código, para encontrar rápidamente lo que necesito comprar. | 3 |
+| 33 | US33 | Filtrar productos por categoría | Como comprador comercial B2B, quiero filtrar productos por categoría, para revisar solo grupos de productos relacionados con mi necesidad de compra. | 3 |
+| 34 | US34 | Revisar detalle comercial y operativo del producto | Como comprador comercial B2B, quiero revisar el detalle de un producto antes de agregarlo al pedido, para decidir considerando precio, conservación, unidad y disponibilidad. | 3 |
+| 35 | US35 | Reconocer disponibilidad limitada antes de pedir | Como comprador comercial B2B, quiero reconocer cuándo un producto tiene disponibilidad limitada, para evitar asumir que la cantidad solicitada será confirmada automáticamente. | 3 |
+| 36 | US36 | Agregar productos al pedido | Como comprador comercial B2B, quiero agregar productos disponibles a mi pedido, para construir una solicitud de abastecimiento desde el portal. | 5 |
+| 37 | US37 | Ajustar cantidades del pedido | Como comprador comercial B2B, quiero ajustar cantidades de productos seleccionados, para adecuar el pedido a la demanda real de mi negocio. | 5 |
+| 38 | US38 | Revisar resumen del pedido antes de enviarlo | Como comprador comercial B2B, quiero revisar productos, cantidades y total antes de enviar mi pedido, para reducir errores en la solicitud de abastecimiento. | 3 |
+| 39 | US39 | Enviar pedido para validación | Como comprador comercial B2B, quiero enviar mi pedido para revisión de la distribuidora, para recibir confirmación sobre disponibilidad, condiciones y atención. | 5 |
+| 40 | US40 | Recibir confirmación inicial del pedido enviado | Como comprador comercial B2B, quiero recibir una confirmación clara después de enviar mi pedido, para saber que la solicitud fue recibida y qué ocurrirá después. | 3 |
+| 41 | US41 | Registrar pedido recibido por canal externo | Como coordinadora comercial, quiero registrar en Nexa un pedido recibido por conversación, llamada o coordinación directa, para evitar que la información quede dispersa fuera del flujo operativo. | 5 |
+| 42 | US42 | Seleccionar cliente durante la captura del pedido | Como coordinadora comercial, quiero asociar cada pedido a un cliente comercial existente, para asegurar que las condiciones y datos de atención correspondan al comprador correcto. | 5 |
+| 43 | US43 | Completar productos y cantidades solicitadas | Como coordinadora comercial, quiero registrar productos y cantidades solicitadas por el cliente, para trasladar el pedido a logística con información clara y verificable. | 5 |
+| 44 | US44 | Registrar observaciones comerciales del pedido | Como coordinadora comercial, quiero agregar observaciones relevantes al pedido, para que logística comprenda condiciones, urgencias o acuerdos mencionados por el cliente. | 3 |
+| 45 | US45 | Revisar pedido capturado antes de enviarlo | Como coordinadora comercial, quiero revisar el pedido capturado antes de enviarlo a revisión, para reducir errores de cliente, producto, cantidad o condiciones. | 5 |
+| 46 | US46 | Diferenciar pedido capturado por comercial y pedido enviado por cliente | Como coordinadora comercial, quiero identificar si un pedido fue capturado internamente o enviado desde el portal B2B, para entender el origen de la solicitud y atenderla con el contexto adecuado. | 3 |
+| 47 | US47 | Consultar pedidos pendientes de revisión | Como jefatura logística, quiero consultar los pedidos pendientes de revisión, para organizar la validación operativa sin depender de mensajes dispersos. | 5 |
+| 48 | US48 | Revisar detalle operativo de un pedido | Como jefatura logística, quiero revisar el detalle completo de un pedido, para decidir si puede prepararse, observarse o rechazarse. | 5 |
+| 49 | US49 | Cambiar estado de revisión del pedido | Como jefatura logística, quiero actualizar el estado de revisión de un pedido, para que coordinación comercial y comprador sepan si la solicitud avanza, requiere ajuste o no puede atenderse. | 5 |
+| 50 | US50 | Registrar motivo de observación o rechazo | Como jefatura logística, quiero registrar el motivo por el que un pedido queda observado o rechazado, para que comercial pueda comunicarlo al cliente con claridad. | 5 |
+| 51 | US51 | Priorizar pedidos por urgencia operativa | Como jefatura logística, quiero identificar pedidos con mayor urgencia o cercanía de atención, para organizar mejor la preparación del día. | 5 |
+| 52 | US52 | Consultar historial de cambios del pedido | Como coordinadora comercial, quiero consultar los cambios relevantes de un pedido, para explicar al cliente qué ocurrió durante la revisión y preparación. | 8 |
+| 53 | US53 | Consultar disponibilidad de productos | Como jefatura logística, quiero consultar disponibilidad de productos, para validar si un pedido puede prepararse antes de confirmarlo al cliente. | 5 |
+| 54 | US54 | Identificar lotes próximos a vencer | Como jefatura logística, quiero identificar lotes próximos a vencer, para priorizar su rotación y reducir riesgo de merma. | 5 |
+| 55 | US55 | Aplicar criterio FEFO en preparación | Como jefatura logística, quiero considerar primero los productos con vencimiento más cercano, para preparar pedidos respetando una rotación adecuada. | 8 |
+| 56 | US56 | Revisar condición de conservación del producto | Como jefatura logística, quiero consultar la condición de conservación de cada producto, para evitar preparar o despachar productos bajo condiciones incorrectas. | 5 |
+| 57 | US58 | Detectar productos críticos para atención del día | Como jefatura logística, quiero identificar productos con baja disponibilidad o vencimiento cercano, para anticipar problemas antes de confirmar pedidos. | 5 |
+| 58 | US57 | Registrar ajuste de disponibilidad | Como jefatura logística, quiero registrar ajustes de disponibilidad cuando se detecten diferencias, para mantener la información operativa lo más confiable posible. | 8 |
+| 59 | US59 | Consultar perfil comercial del cliente | Como coordinadora comercial, quiero consultar el perfil de un cliente B2B, para atender sus pedidos considerando datos de contacto, tipo de negocio y relación comercial. | 3 |
+| 60 | US60 | Revisar condiciones comerciales del cliente | Como coordinadora comercial, quiero revisar condiciones comerciales asociadas a un cliente, para validar si un pedido debe atenderse con crédito, pago al contado u otra condición. | 5 |
+| 61 | US61 | Registrar nuevo cliente comercial | Como coordinadora comercial, quiero registrar un nuevo cliente B2B con datos básicos, para habilitar la atención de pedidos futuros dentro de Nexa. | 5 |
+| 62 | US62 | Actualizar datos de contacto del cliente | Como coordinadora comercial, quiero actualizar datos de contacto del cliente, para evitar errores al comunicar confirmaciones, observaciones o incidencias. | 3 |
+| 63 | US63 | Diferenciar clientes por tipo de negocio | Como coordinadora comercial, quiero clasificar clientes según su tipo de negocio, para adaptar la atención comercial y operativa a sus necesidades. | 3 |
+| 64 | US64 | Identificar pedidos listos para despacho | Como responsable de despacho, quiero identificar pedidos listos para entrega, para organizar la distribución del día con información confiable. | 5 |
+| 65 | US65 | Asignar responsable de entrega | Como responsable de despacho, quiero asignar una entrega a una persona encargada, para mantener trazabilidad sobre quién atiende cada pedido. | 5 |
+| 66 | US66 | Actualizar avance de despacho | Como responsable de despacho, quiero actualizar el avance de una entrega, para que comercial, logística y cliente conozcan el estado del pedido. | 5 |
+| 67 | US67 | Registrar incidencia durante el despacho | Como responsable de despacho, quiero registrar incidencias ocurridas durante la entrega, para dejar constancia de retrasos, diferencias o problemas de recepción. | 5 |
+| 68 | US68 | Confirmar entrega con evidencia | Como responsable de despacho, quiero registrar evidencia de entrega, para respaldar que el pedido fue atendido correctamente. | 8 |
+| 69 | US69 | Consultar seguimiento del pedido como comprador | Como comprador comercial B2B, quiero consultar el avance de mis pedidos, para planificar recepción y reducir consultas repetitivas a la distribuidora. | 5 |
+| 70 | US70 | Consultar resumen operativo del día | Como jefatura logística, quiero consultar un resumen operativo del día, para priorizar pedidos, preparación, despacho e incidencias. | 5 |
+| 71 | US71 | Revisar pedidos por estado | Como coordinadora comercial, quiero revisar pedidos agrupados por estado, para dar seguimiento a solicitudes pendientes, aprobadas, observadas o entregadas. | 3 |
+| 72 | US72 | Identificar incidencias recurrentes | Como jefatura logística, quiero revisar incidencias registradas por tipo o frecuencia, para detectar problemas operativos que requieren mejora. | 5 |
+| 73 | US73 | Consultar productos con mayor movimiento | Como coordinadora comercial, quiero identificar productos con mayor movimiento, para entender mejor la demanda de clientes B2B y anticipar necesidades comerciales. | 5 |
+| 74 | US74 | Administrar usuarios internos | Como administrador, quiero registrar y mantener usuarios internos autorizados, para que cada persona trabaje con una cuenta identificable dentro de Nexa. | 5 |
+| 75 | US75 | Asignar responsabilidades por rol | Como administrador, quiero asignar responsabilidades según rol, para que cada usuario acceda solo a funciones necesarias para su trabajo. | 5 |
+| 76 | US76 | Mantener preferencias básicas del perfil | Como usuario interno autorizado, quiero actualizar información básica de mi perfil, para mantener datos de contacto y preferencias de trabajo actualizadas. | 3 |
+| 77 | US77 | Conservar información del pedido entre sesiones | Como comprador comercial B2B, quiero que la información de mis pedidos enviados se conserve cuando vuelva a ingresar, para consultar seguimiento o historial sin repetir solicitudes. | 8 |
+| 78 | US78 | Mantener estados sincronizados entre áreas | Como jefatura logística, quiero que los estados de los pedidos se mantengan actualizados para comercial y compradores, para evitar respuestas contradictorias durante la atención. | 8 |
+| 79 | US79 | Registrar trazabilidad de acciones relevantes | Como administrador, quiero que las acciones importantes queden registradas, para auditar cambios críticos en pedidos, clientes, disponibilidad o despacho. | 8 |
+| 80 | US80 | Registrar oportunidades de mejora desde validación | Como miembro del equipo de King, quiero registrar oportunidades de mejora encontradas durante validaciones con usuarios, para priorizar ajustes futuros sin perder trazabilidad del aprendizaje. | 3 |
 
-| Criterio | Qué evalúa | Aplicación en Nexa |
-| :--- | :--- | :--- |
-| Valor de negocio inmediato | Qué tan rápido la historia reduce un dolor visible o genera validación comercial | El sitio público y la solicitud de demo se ubican al inicio para habilitar exposición, comprensión del producto y captación temprana. |
-| Dependencia funcional | Qué historias habilitan otras historias posteriores | Catálogo, condiciones comerciales, captura del pedido y autenticación anteceden a seguimiento avanzado y funciones complementarias. |
-| Riesgo operativo | Qué tan crítica es la historia para evitar errores de stock, crédito, trazabilidad o cierre | Reserva de stock, alertas de validación, gestión de estados y POD se priorizan antes que mejoras accesorias. |
-| Coherencia técnica | Qué tanto conviene consolidar contratos y reglas compartidas antes de expandir interfaces | Las historias de API se ubican en una fase técnica específica, pero derivan directamente del flujo ya priorizado. |
+Total: 80 User Stories.
 
-### 3.3.1. Detalle del Product Backlog (Full Backlog)
-
-**Tabla 27**
-
-*Product Backlog — Ordenamiento, Valor y Estimación*
-
-| # Orden | User Story Id | Título | Descripción | Story Points |
-| :--- | :--- | :--- | :--- | :--- |
-| **1** | US01 | Navegar entre páginas | Como visitante del sitio, quiero navegar entre Home, Platform, Company y FAQ desde el navbar, para revisar el proyecto Nexa sin fricción. | 2 |
-| **2** | US05 | Propuesta en Hero | Como visitante, quiero ver la propuesta principal de Nexa desde la Home, para entender rápidamente qué problema operativo resuelve. | 2 |
-| **3** | US06 | Problema operativo | Como visitante del sitio, quiero entender el problema operativo que Nexa busca corregir, para comparar la situación actual con el valor propuesto. | 2 |
-| **4** | US07 | Capacidades clave | Como visitante del sitio, quiero visualizar las capacidades centrales de Nexa desde la Home, para relacionarlas con mis problemas operativos concretos. | 2 |
-| **5** | US08 | Solicitar demo | Como visitante comercial, quiero iniciar una solicitud de demo desde la Home, para abrir una conversación sobre el producto. | 2 |
-| **6** | US18 | Envío de contacto | Como visitante bilingüe del sitio, quiero enviar mis datos a través del formulario, para abrir una línea de conversación oficial sobre Nexa. | 3 |
-| **7** | US19 | Validación Feedback | Como visitante del sitio, quiero recibir validaciones instantáneas, para corregir errores de formato antes de intentar enviar el formulario. | 3 |
-| **8** | US09 | Módulos en Platform | Como visitante del sitio, quiero revisar los módulos visibles de la página Platform, para entender el alcance funcional comunicado. | 2 |
-| **9** | US10 | Cambio operativo | Como visitante del sitio, quiero comprender cómo cambia la operación diaria con Nexa, para evaluar si el producto encaja con mi flujo real. | 2 |
-| **10** | US11 | MVP vs Expansión | Como visitante del sitio, quiero distinguir entre capacidades del MVP y expansión futura, para no confundir el producto disponible con el roadmap. | 2 |
-| **11** | US12 | Hub de Solutions | Como visitante del sitio, quiero explorar el hub de Solutions, para identificar el segmento comercial con el que más coincido. | 2 |
-| **12** | US13 | Propuesta Distribuidores | Como visitante distribuidor, quiero ver una propuesta específica para mi operación, para evaluar si Nexa resuelve mis problemas de coordinación. | 2 |
-| **13** | US16 | Narrativa Company | Como visitante del sitio, quiero conocer la narrativa de Company, para entender quién impulsa Nexa y por qué existe el producto. | 2 |
-| **14** | US17 | Soporte Humano | Como visitante del sitio, quiero identificar cómo funciona el soporte e implementación, para saber si Nexa complementa la relación comercial. | 2 |
-| **15** | US03 | Cambio de idioma | Como visitante bilingüe, quiero cambiar el idioma del sitio entre EN y ES, para revisar el contenido sin perder el contexto de navegación. | 3 |
-| **16** | US02 | Dropdown de Solutions | Como visitante del sitio, quiero abrir el menú Solutions y escoger un segmento comercial, para acceder rápidamente a la propuesta de mi interés. | 2 |
-| **17** | US14 | Propuesta Importadores | Como visitante importador o mayorista, quiero ver una propuesta conectada con mi realidad, para entender si Nexa aporta visibilidad a mi empresa. | 2 |
-| **18** | US15 | Propuesta Cámaras Frías | Como visitante de cámaras frías, quiero ver la propuesta para almacenamiento, para evaluar si aplica a mi inventario y trazabilidad. | 2 |
-| **19** | US20 | FAQ por Categorías | Como visitante del sitio, quiero navegar el FAQ por categorías, para revisar respuestas según el tipo específico de duda. | 2 |
-| **20** | US21 | Expandir FAQ | Como visitante del sitio, quiero expandir y colapsar preguntas dentro del FAQ, para leer una respuesta específica sin abandonar la página. | 2 |
-| **21** | US22 | Soporte Flotante | Como visitante del sitio, quiero abrir el panel flotante de soporte, para acceder rápidamente a ayuda sin perder el contexto actual. | 2 |
-| **22** | US04 | Navegación en Footer | Como visitante del sitio, quiero usar los enlaces del footer, para moverme a contenido adicional o puntos de contacto desde el final de la página. | 1 |
-| **23** | US23 | Acceso público al portal en preparación | Como visitante del sitio, quiero entender qué ocurre al pulsar Log in, para no perderme si el portal todavía no está disponible. | 1 |
-| **24** | US24 | Catálogo personalizado | Como cliente comercial, quiero consultar un catálogo personalizado, para ver únicamente los productos que puedo comprar según mi cuenta. | 5 |
-| **25** | US28 | Mantenimiento Catálogo | Como supervisora autorizada, quiero publicar u ocultar productos del catálogo, para controlar qué ve el cliente en cada momento. | 5 |
-| **26** | US29 | Pedido Asistido | Como coordinadora comercial, quiero crear un pedido asistido para un cliente, para registrar su solicitud sin depender de canales informales. | 5 |
-| **27** | US30 | Carga de Condiciones | Como coordinadora comercial, quiero identificar al cliente por RUC/DNI y cargar sus condiciones, para no validar crédito ni precios manualmente. | 5 |
-| **28** | US32 | Alertas de Validación | Como coordinadora comercial, quiero visualizar alertas de stock y crédito antes de enviar, para evitar prometer entregas incumplibles. | 5 |
-| **29** | US34 | Compra B2B | Como cliente comercial, quiero crear un pedido desde el portal B2B, para abastecerme de forma autónoma sin depender de llamadas. | 5 |
-| **30** | US36 | Repetir Pedido | Como cliente comercial, quiero repetir un pedido anterior como base, para acelerar compras recurrentes y reducir tiempo. | 5 |
-| **31** | US25 | Búsqueda SKU/Nombre | Como cliente comercial, quiero buscar productos por nombre o código SKU, para ubicar rápidamente lo que necesito pedir. | 3 |
-| **32** | US26 | Filtros de Categoría | Como cliente comercial, quiero filtrar el catálogo por categoría y conservación, para explorar la oferta de forma más precisa. | 3 |
-| **33** | US27 | Ficha Técnica | Como cliente comercial, quiero ver el detalle, disponibilidad y ficha técnica de un producto, para tomar decisiones de compra confiables. | 3 |
-| **34** | US31 | Registro en Campo | Como coordinadora comercial, quiero registrar productos y capturar evidencia en campo, para digitalizar pedidos en tiempo real. | 3 |
-| **35** | US33 | Confirmación Trazable | Como coordinadora comercial, quiero enviar el pedido asistido y recibir confirmación, para que la operación tenga evidencia del origen. | 3 |
-| **36** | US35 | Borradores B2B | Como cliente comercial, quiero guardar un borrador y retomarlo luego, para no perder información de una compra en proceso. | 3 |
-| **37** | US37 | Envío & Confirmación | Como cliente comercial, quiero enviar mi pedido desde el portal y recibir confirmación clara, para saber que el distribuidor ya recibió la solicitud. | 3 |
-| **38** | US38 | Historial de Pedidos | Como cliente comercial, quiero consultar mi historial y detalle de pedidos, para revisar compras anteriores y estados actuales. | 3 |
-| **39** | US47 | Reserva Automática | Como sistema de inventario, quiero reservar y liberar stock según el estado del pedido, para mantener la disponibilidad consistente. | 8 |
-| **40** | US39 | Seguimiento & ETA | Como cliente comercial, quiero visualizar el estado actual y la ETA de mi pedido, para preparar la recepción de mercadería con certeza. | 5 |
-| **41** | US41 | Gestión de Estados | Como usuaria autorizada, quiero actualizar los estados del pedido en secuencia válida, para reflejar el avance real de la operación. | 5 |
-| **42** | US42 | Registro POD | Como transportista autorizado, quiero registrar el despacho y generar el POD, para cerrar la trazabilidad con evidencia digital. | 5 |
-| **43** | US44 | Monitor Stock | Como supervisora, quiero visualizar el stock total y comprometido por SKU, para no prometer pedidos que la empresa no puede cubrir. | 5 |
-| **44** | US45 | Gestión de Lotes | Como supervisora operativa, quiero registrar lotes y vencimientos por SKU, para habilitar rotación FEFO y mejorar la trazabilidad. | 5 |
-| **45** | US46 | Alertas FEFO | Como supervisora operativa, quiero consultar alertas de vencimiento próximo, para priorizar la rotación y evitar pérdidas. | 5 |
-| **46** | US48 | Bloqueo Producto | Como supervisora operativa, quiero bloquear productos con restricciones, para evitar que ingresen en pedidos con observaciones. | 5 |
-| **47** | US40 | Visibilidad de Incidencias | Como cliente comercial, quiero recibir visibilidad de demoras e incidencias, para entender cambios relevantes en la entrega. | 3 |
-| **48** | US43 | Consulta de Cierre | Como usuaria autorizada, quiero consultar la evidencia y el cierre de la entrega, para resolver reclamos y confirmar la trazabilidad. | 3 |
-| **49** | US52 | Bloqueo por Crédito | Como sistema comercial, quiero bloquear pedidos que incumplen reglas de crédito o mora, para evitar operaciones inviables. | 8 |
-| **50** | US49 | Ficha de Cliente | Como usuaria interna, quiero registrar y mantener la ficha del cliente comercial, para operar pedidos con información confiable. | 5 |
-| **51** | US50 | Condiciones de Venta | Como usuaria interna, quiero asignar listas de precio y crédito a un cliente, para diferenciar el comportamiento comercial por cuenta. | 5 |
-| **52** | US51 | Saldo & Morosidad | Como supervisora autorizada, quiero visualizar el saldo vigente y morosidad al operar, para decidir si un pedido puede continuar. | 5 |
-| **53** | US57 | Gestión de Cuentas | Como administradora, quiero crear y desactivar cuentas internas, para controlar quién puede ingresar al sistema y sus permisos. | 5 |
-| **54** | US53 | Historial Comercial | Como usuaria interna, quiero consultar el historial comercial y operativo por cliente, para revisar el comportamiento de la relación. | 3 |
-| **55** | US54 | Login Interno | Como usuaria interna, quiero iniciar sesión en la plataforma, para acceder únicamente a los módulos que corresponden a mi rol. | 3 |
-| **56** | US55 | Login B2B | Como cliente comercial, quiero iniciar sesión en el portal, para gestionar mi catálogo y pedidos de forma privada. | 3 |
-| **57** | US56 | Recuperar Acceso | Como usuaria del sistema, quiero recuperar mi acceso mediante un flujo controlado, para volver a operar de forma segura. | 5 |
-| **58** | US58 | API Catálogo | Como Developer, quiero un endpoint de catálogo (GET /products), para que el portal consulte productos según el contexto. | 5 |
-| **59** | US59 | API Ficha Producto | Como Developer, quiero un endpoint de detalle (GET /products/{id}), para mostrar info ampliada y documentos técnicos. | 5 |
-| **60** | US60 | API Cliente & Crédito | Como Developer, quiero un endpoint (GET /customers), para soportar el flujo asistido con carga automática de condiciones comerciales. | 8 |
-| **61** | US61 | API Registro Pedido | Como Developer, quiero un endpoint (POST /orders), para recibir solicitudes estructuradas desde el portal o captura asistida. | 8 |
-| **62** | US62 | API Tracking & ETA | Como Developer, quiero un endpoint (GET /shipments/{id}), para mostrar el estado actualizado y la predictibilidad de entrega. | 5 |
-| **63** | US63 | API POD & Eventos | Como Developer, quiero un endpoint (POST /shipments/{id}/pod), para registrar salida y cierre con evidencia digital. | 5 |
-| **64** | US64 | API Auth & Recover | Como Developer, quiero endpoints de autenticación (/auth), para que las aplicaciones operen con sesiones seguras y controladas. | 5 |
-
-### 3.3.2. Resumen de Estimación y Release Map
-
-**Tabla 28**
-
-*Resumen de Estimación por Épica y Roadmap de Lanzamiento*
-
-| Épica | Historias Incluidas | SP Total | Sprint Sugerido | Prioridad Negocio |
-| :--- | :--- | :--- | :--- | :--- |
-| EP01-EP06 | US01-US23 | 43 | Sprint 1 | Crítica (Landing) |
-| EP07-EP09 | US24-US38 | 65 | Sprint 2 | Alta (Ventas) |
-| EP10-EP11 | US39-US48 | 51 | Sprint 3 | Alta (Logística) |
-| EP12-EP13 | US49-US57 | 39 | Sprint 4 | Media (Soporte) |
-| EP14 | US58-US64 | 41 | Sprint 5 | Técnica (Backend) |
-
-**Total de Story Points del Proyecto: 238**
-
-<p align="justify">
-La secuencia del roadmap sigue una lógica deliberada. El <strong>Sprint 1</strong> concentra el frente público porque permite validar entendimiento del problema, foco de segmento y captación comercial sin bloquear todavía el núcleo transaccional. El <strong>Sprint 2</strong> incorpora el corazón del valor prometido a Valeria y Hilda: catálogo, condiciones y captura o registro del pedido. El <strong>Sprint 3</strong> extiende ese valor hacia seguimiento, despacho, inventario y cierre. El <strong>Sprint 4</strong> consolida datos comerciales y control de acceso, necesarios para operar con reglas mínimas y diferenciación por cuenta. Finalmente, el <strong>Sprint 5</strong> formaliza contratos técnicos del API como capa de integración consistente con los flujos ya definidos funcionalmente.
-</p>
-
-<p align="justify">
-Aunque varias historias de inventario y control recaen sobre supervisión operativa, ese frente no se modela como un segmento protagónico independiente dentro del backlog. Se trata, más bien, de un soporte transversal que habilita a Valeria, Hilda y Pedro a operar con reglas confiables. Mantener esa distinción mejora la coherencia del capítulo y evita que la priorización se disperse en actores adicionales sin justificación narrativa o metodológica.
-</p>
-
-**Tabla 29**
-
-*Relación entre incrementos, actor dominante y riesgo mitigado*
-
-| Incremento | Actor dominante | Dolor que atiende primero | Riesgo que reduce |
-| :--- | :--- | :--- | :--- |
-| Sprint 1 - Validación comercial | Prospectos cercanos a S1 y S2 | Falta de claridad sobre el problema, el alcance y la propuesta de valor | Construir un producto sin validación comercial ni narrativa coherente |
-| Sprint 2 - Pedido y autoservicio inicial | Valeria y Hilda | Captura manual del pedido, revisión tardía de condiciones y dependencia del canal informal | Doble digitación, retrabajo y fricción en el abastecimiento |
-| Sprint 3 - Seguimiento e inventario | Hilda, Pedro y supervisión operativa | Baja visibilidad del despacho, poca predictibilidad y trazabilidad incompleta | Reclamos, promesas incumplidas y mala coordinación de stock |
-| Sprint 4 - Soporte comercial y acceso | Roles internos autorizados | Información comercial dispersa y control débil de usuarios | Operación inconsistente entre cuentas, reglas y permisos |
-| Sprint 5 - Contratos técnicos | Aplicaciones cliente y backend | Necesidad de integrar sin duplicar reglas de negocio | Fragmentación técnica y divergencia entre interfaces |
-
----
-
-### 3.3.3. Evidencias del Backlog en Herramienta de Gestión
-
-<p align="justify">
-A continuación se presenta la evidencia visual del backlog cargado en la herramienta Jira, siguiendo la priorización por valor de negocio y el roadmap de lanzamientos definido.
-</p>
-
-[**Enlace Público al Product Backlog (Jira)**](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog?epics=visible)
-
-<p align="justify">
-La evidencia principal de esta subsección es el enlace público al backlog cargado en Jira, donde puede verificarse la organización por épicas, el orden relativo de historias y la consistencia entre estimación y roadmap. Dado que el backlog es una herramienta viva de gestión, el informe conserva aquí la referencia directa al tablero para transparentar la priorización utilizada en el proyecto, en lugar de depender exclusivamente de una captura estática que podría quedar desactualizada.
-</p>
-
----
-
-*Nota.* La elaboración del backlog prioriza la validación comercial y el flujo principal del pedido por encima de funcionalidades de soporte, manteniendo consistencia con el Impact Mapping y con la evidencia levantada en el Capítulo 2. Elaboración propia.
+> *Nota*: La estimación utiliza la escala de Story Points solicitada para el curso. El orden prioriza valor de negocio, entregabilidad y dependencia funcional.
