@@ -56,6 +56,8 @@ La vista de contenedores separa el sitio público, la web application transaccio
 
 En esta versión del C4, el sitio público se representa como una capa en HTML, CSS y JavaScript; la aplicación transaccional aparece como un cliente web separado; el backend se mantiene en ASP.NET Core Web API; y la persistencia se concentra en MySQL. También se muestran servicios externos de soporte como Stripe, Google Notification, OAuth, Calendar y Cloud Storage.
 
+> **Nota de alcance TB1:** Este diagrama representa la arquitectura objetivo del sistema Nexa. En TB1, la entrega incluye únicamente la aplicación web (Vue 3 SPA) conectada a una API simulada mediante JSON Server. El backend en ASP.NET Core, la base de datos MySQL y las integraciones externas (Stripe, OAuth, Calendar, Cloud Storage) forman parte del diseño de la arquitectura objetivo y están previstas para etapas posteriores de implementación.
+
 ### 4.6.4. Software Architecture Components Diagrams
 
 La vista de componentes baja un nivel más y muestra cómo se reparte la responsabilidad entre interfaz, backend y servicios de apoyo. No todos los bounded contexts aparecen con la misma granularidad en esta lámina, por lo que su lectura debe complementarse con 4.7 y 4.8.
