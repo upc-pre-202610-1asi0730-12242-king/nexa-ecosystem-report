@@ -1,4 +1,4 @@
-### 1.3. Segmentos Objetivos
+### **1.3. Segmentos Objetivos**
 
 La segmentación de Nexa se define a partir del flujo real del pedido B2B de productos refrigerados. El problema no se concentra en un único usuario, sino en la interacción entre tres actores que participan en la solicitud, captura, validación, preparación y seguimiento del pedido.
 
@@ -7,12 +7,11 @@ En esta sección, los segmentos objetivo funcionan como la base de investigació
 
 ---
 
-### 1.3.1. Resumen de Segmentos Objetivo
+### ***1.3.1. Resumen de Segmentos Objetivo***
 
 Los segmentos se organizan según su posición en el flujo comercial-operativo. El Segmento 1 representa la captura y coordinación comercial del pedido; el Segmento 2 representa la validación y organización logística interna; y el Segmento 3 representa la demanda comercial recurrente de compradores mayoristas y minoristas.
 
 *Tabla. Resumen comparativo de segmentos objetivo de Nexa*
-
 | Segmento objetivo | Actor principal | Rol en el flujo del pedido | Fricción dominante | Valor esperado de Nexa |
 |---|---|---|---|---|
 | Segmento 1: Vendedoras y coordinación comercial | Vendedoras, asesoras comerciales, mercaderistas o personal que trata directamente con compradores. | Reciben consultas, interpretan pedidos, validan información preliminar y canalizan la solicitud hacia operación. | Pedidos dispersos, doble digitación, validaciones manuales y baja visibilidad inmediata de stock o condiciones. | Captura estructurada, consulta rápida de disponibilidad y menor retrabajo entre ventas y operación. |
@@ -39,7 +38,7 @@ flowchart LR
 
 ---
 
-### 1.3.2. Sustento demográfico y estadístico
+### ***1.3.2. Sustento demográfico y estadístico***
 
 El dominio de Nexa se ubica en la distribución B2B de productos refrigerados y congelados, donde la coordinación entre ventas, logística y compradores comerciales todavía depende de canales informales, validaciones manuales y registros dispersos. Esta situación es especialmente crítica porque el pedido no solo contiene una intención de compra: también activa decisiones de disponibilidad, inventario, rotación, preparación, despacho y seguimiento.
 
@@ -61,7 +60,7 @@ En paralelo, la captura comercial sigue siendo un punto sensible del flujo. Cuan
 
 >*Nota*: La tabla organiza evidencia estadística externa y observaciones del dominio para justificar la segmentación. Elaboración propia con base en Lucky-Xplora (2022) y Bravo De la Cruz et al. (2025).
 
-*Figura 2. Lectura visual del sustento de segmentación*
+*Figura. Lectura visual del sustento de segmentación*
 
 ```mermaid
 mindmap
@@ -87,13 +86,13 @@ mindmap
 
 ---
 
-### 1.3.3. Análisis detallado por segmento
+### ***1.3.3. Análisis detallado por segmento***
 
 El análisis de cada segmento se desarrolla en cuatro planos: demográfico y ocupacional, conductual, tecnológico y valor esperado. Esta estructura permite pasar de una descripción general del actor a implicancias concretas para diseño, validación y priorización del producto.
 
-#### Segmento 1: Vendedoras y coordinación comercial
+#### **Segmento 1: Vendedoras y coordinación comercial**
 
-El Segmento 1 está conformado por vendedoras, asesoras comerciales, mercaderistas y personal de coordinación comercial que mantiene contacto directo con compradores mayoristas y minoristas. Este segmento representa el primer punto de entrada del pedido dentro del flujo operativo de Nexa.
+Este segmento está conformado por vendedoras, asesoras comerciales, mercaderistas y personal de coordinación comercial que mantiene contacto directo con compradores mayoristas y minoristas. Este segmento representa el primer punto de entrada del pedido dentro del flujo operativo de Nexa.
 
 Su importancia radica en que una parte significativa de los errores posteriores puede originarse en esta etapa. Si el pedido se captura con datos incompletos, productos mal interpretados, cantidades ambiguas o condiciones comerciales no verificadas, el problema se traslada hacia logística, preparación, despacho y atención posterior.
 
@@ -176,11 +175,11 @@ El valor esperado para el Segmento 1 se concentra en reducir retrabajo y aumenta
 
 ---
 
-#### Segmento 2: Jefatura logística y coordinación operativa
+#### **Segmento 2: Jefatura logística y coordinación operativa**
 
-El Segmento 2 está conformado por jefas, responsables o coordinadoras de logística, almacén, inventario, despacho y operación interna. Este segmento se ubica por encima del flujo comercial directo y tiene una visión más amplia del cumplimiento del pedido. Su responsabilidad principal es convertir la solicitud comercial en una operación ejecutable.
+El segmento 2 está conformado por jefas, responsables o coordinadoras de logística, almacén, inventario, despacho y operación interna. Este segmento se ubica por encima del flujo comercial directo y tiene una visión más amplia del cumplimiento del pedido. Su responsabilidad principal es convertir la solicitud comercial en una operación ejecutable.
 
-El Segmento 2 es clave porque concentra la validación operativa. Aunque no siempre inicia la relación con el comprador, sí debe asegurar que el pedido pueda cumplirse con stock disponible, preparación adecuada, coordinación de despacho y control de incidencias.
+Este segmento clave porque concentra la validación operativa. Aunque no siempre inicia la relación con el comprador, sí debe asegurar que el pedido pueda cumplirse con stock disponible, preparación adecuada, coordinación de despacho y control de incidencias.
 
 ##### Ficha rápida del segmento
 
@@ -260,7 +259,7 @@ El valor esperado para el Segmento 2 se relaciona con control operativo. Nexa de
 
 ---
 
-#### Segmento 3: Compradores comerciales B2B mayoristas y minoristas
+#### **Segmento 3: Compradores comerciales B2B mayoristas y minoristas**
 
 El Segmento 3 está conformado por compradores comerciales B2B mayoristas y minoristas, incluyendo bodegas, minimarkets, pequeños mayoristas, negocios HORECA y otros clientes recurrentes que compran productos refrigerados para sostener su operación comercial.
 
@@ -370,7 +369,7 @@ Esta separación permite mantener coherencia entre investigación y comunicació
 
 ---
 
-### 1.3.5. Impacto en el MVP y Métricas de Validación
+### ***1.3.5. Impacto en el MVP y Métricas de Validación***
 
 Los tres segmentos validan el núcleo inicial del producto porque cubren el recorrido mínimo que Nexa necesita ordenar: solicitud del comprador, captura comercial, validación operativa, preparación, despacho y seguimiento. En consecuencia, el MVP no debe evaluarse solo por la cantidad de pantallas implementadas, sino por su capacidad para reducir fricción entre estos actores.
 

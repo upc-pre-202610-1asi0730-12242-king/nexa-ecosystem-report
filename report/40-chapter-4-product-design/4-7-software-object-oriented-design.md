@@ -1,91 +1,77 @@
 ## 4.7. Software Object-Oriented Design
 
-Para el diseño orientado a objetos de Nexa, organizamos los diagramas de clases a partir de los cinco bounded contexts consolidados durante el modelado táctico: **Identity & Access**, **Catalog**, **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**. Esta separación mantiene la trazabilidad con el EventStorming, el modelo DDD y la vista C4, evitando mezclar responsabilidades comerciales, logísticas y de acceso dentro de un único modelo general.
+Esta sección presenta el diseño orientado a objetos de Nexa por bounded context, siguiendo la separación consolidada al cierre de la arquitectura del capítulo 4.6. En lugar de concentrar todo el dominio en un único diagrama, se muestran bloques más acotados para que cada contexto conserve una responsabilidad clara.
 
-Definimos los diagramas con PlantUML para mantener una representación consistente de entidades, value objects, servicios de aplicación, repositorios y recursos expuestos por cada contexto. El diagrama general presenta la relación táctica entre contextos, mientras que los diagramas individuales permiten revisar con mayor detalle las clases y dependencias internas de cada parte del dominio.
-
-En TB1, estos diagramas representan el diseño objetivo del dominio. La webapp utiliza Fake API como simulación para validar flujos y estructura funcional, por lo que no se afirma la existencia de un backend productivo, una base de datos productiva ni autenticación productiva. Los reportes no se modelan como bounded context independiente, sino como read models derivados de **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**.
+El propósito de esta vista no es reemplazar el diseño de base de datos ni anticipar el código final de implementación, sino identificar las clases que concentran estado y comportamiento dentro de cada parte del sistema. Por eso algunos diagramas incluyen clases marcadas como `<<Reference>>`, usadas para representar dependencias con otros contextos sin absorber su modelo completo.
 
 ### 4.7.1. Class Diagrams
 
-En los diagramas individuales se muestran las clases principales de cada bounded context, junto con sus atributos, operaciones, visibilidad y relaciones. Cuando el modelo lo requiere, se incluyen enumeraciones para representar estados del dominio y relaciones con multiplicidad para precisar cardinalidades entre entidades.
+#### Identity
 
-*Tabla. Criterios UML aplicados en los diagramas de clases*
+![Identity Class Diagram](../assets/images/class-diagrams/01-identity-classes.svg)
 
-| Criterio UML | Aplicación en Nexa |
-|---|---|
-| Clases y responsabilidades | Cada bounded context agrupa las clases que concentran la lógica principal de su parte del dominio. |
-| Atributos y métodos | Las clases incluyen miembros relevantes para expresar estado y comportamiento esperado. |
-| Visibilidad / scope | PlantUML representa scope cuando corresponde mediante `+` public, `-` private y `#` protected. |
-| Relaciones y dirección | Las asociaciones muestran dependencias entre clases y dirección cuando el modelo la hace explícita. |
-| Multiplicidad | Las relaciones indican cardinalidad cuando resulta necesaria para leer el vínculo entre entidades. |
-| Enumeraciones de dominio | Los estados del dominio se modelan como enumeraciones cuando el diagrama lo requiere. |
-| Separación por bounded context | Identity & Access, Catalog, Orders & Commercial Management, Inventory y Dispatch & Traceability se mantienen como límites tácticos. |
+El contexto de identidad reúne las clases necesarias para autenticar usuarios, asignar roles y validar permisos. También incorpora los registros de auditoría y de inicio de sesión, ya que ambos dependen de la actividad del usuario autenticado y ayudan a sostener control operativo sobre accesos y cambios.
 
-> *Nota:* Elaboración propia, basada en los criterios UML solicitados para la sección de Class Diagrams.
+#### Catalog
 
-*Figura. Mapa táctico general de clases por bounded context*
+![Catalog Class Diagram](../assets/images/class-diagrams/02-catalog-classes.svg)
 
-![Mapa táctico general de clases por bounded context](../assets/images/chapter-4/architecture/class-diagrams/consolidated-ddd-tactical-map.png)
+El contexto de catálogo concentra la estructura maestra del producto: categoría, marca, unidad de medida, producto y especificación. Aquí el foco está en describir el producto y sus condiciones de conservación, no en resolver stock o movimientos de almacén.
 
-Nota. Elaboración propia mediante PlantUML. El mapa consolida la relación entre los cinco bounded contexts y ubica los read models de reportes como salidas derivadas del dominio operativo.
+#### Inventory
 
-*Figura. Diagrama de clases del bounded context Identity & Access*
+![Inventory Class Diagram](../assets/images/class-diagrams/03-inventory-classes.svg)
 
-![Diagrama de clases del bounded context Identity & Access](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-identity-access.png)
+El contexto de inventario modela la disponibilidad física del producto mediante almacenes, ubicaciones, stock, lotes y movimientos. La inclusión de `InventoryTrans` permite representar que los cambios de stock no se tratan como un valor aislado, sino como movimientos registrados dentro del mismo contexto.
 
-Nota. Elaboración propia mediante PlantUML. Este contexto concentra usuarios, sesiones, roles, permisos y validaciones de acceso como diseño objetivo.
+#### Customer Management
 
-*Figura. Diagrama de clases del bounded context Catalog*
+![Customer Management Class Diagram](../assets/images/class-diagrams/04-customer-management-classes.svg)
 
-![Diagrama de clases del bounded context Catalog](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-catalog.png)
+El contexto de gestión de clientes agrupa la información comercial básica del cliente y su pertenencia a una zona operativa. La referencia hacia usuario se mantiene ligera porque aquí importa la relación de acceso o vínculo comercial, no la administración completa de identidad.
 
-Nota. Elaboración propia mediante PlantUML. Catalog organiza productos, categorías y reglas de conservación sin asumir stock ni despacho.
+#### Commercial Conditions
 
-*Figura. Diagrama de clases del bounded context Orders & Commercial Management*
+![Commercial Conditions Class Diagram](../assets/images/class-diagrams/05-commercial-conditions-classes.svg)
 
-![Diagrama de clases del bounded context Orders & Commercial Management](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-orders-commercial-management.png)
+El contexto de condiciones comerciales contiene las reglas que afectan crédito, saldo, términos de pago y listas de precio. Este bloque se mantiene separado del contexto de pedidos para dejar claro que las reglas comerciales existen como una fuente de validación y no como un detalle embebido dentro de cada orden.
 
-Nota. Elaboración propia mediante PlantUML. Este contexto integra cliente B2B, condiciones comerciales, alertas de crédito, pedidos, ítems y observaciones.
+#### Orders
 
-*Figura. Diagrama de clases del bounded context Inventory*
+![Orders Class Diagram](../assets/images/class-diagrams/06-orders-classes.svg)
 
-![Diagrama de clases del bounded context Inventory](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-inventory.png)
+El contexto de pedidos modela la orden, sus ítems y su historial de estados. Las referencias hacia cliente, producto y condiciones comerciales se mantienen fuera de la propiedad central del agregado, pero siguen visibles para justificar cálculos, validaciones y cambios de estado dentro del flujo transaccional.
 
-Nota. Elaboración propia mediante PlantUML. Inventory modela almacenes, lotes, disponibilidad, reserva y movimientos de stock.
+#### Traceability
 
-*Figura. Diagrama de clases del bounded context Dispatch & Traceability*
+![Traceability Class Diagram](../assets/images/class-diagrams/07-traceability-classes.svg)
 
-![Diagrama de clases del bounded context Dispatch & Traceability](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-dispatch-traceability.png)
-
-Nota. Elaboración propia mediante PlantUML. Dispatch & Traceability modela despacho, incidentes, eventos trazables y evidencia POD como continuidad operativa del pedido.
+El contexto de trazabilidad representa la ejecución posterior al pedido: despacho, vehículo, conductor, incidentes y evidencia de entrega. La referencia al pedido se conserva porque el despacho no se entiende como proceso aislado, sino como continuidad operativa de una orden ya confirmada.
 
 ### 4.7.2. Design Criteria
 
-Consolidamos el diseño en cinco bounded contexts para mantener límites tácticos claros. **Identity & Access** resuelve acceso y sesiones; **Catalog** conserva la información maestra de productos; **Orders & Commercial Management** agrupa cliente, condiciones y pedido; **Inventory** administra lotes, almacenes y movimientos; **Dispatch & Traceability** cubre salida, seguimiento, incidencias y evidencia de entrega.
+Los diagramas de esta sección siguen tres criterios. Primero, cada bounded context conserva sus clases propias y solo usa referencias hacia otros contextos cuando la relación es necesaria para explicar una validación o un flujo. Segundo, los métodos visibles responden a decisiones del dominio y no solo a almacenamiento de datos. Tercero, la separación entre catálogo, inventario, pedidos, clientes y trazabilidad evita que una misma entidad absorba responsabilidades que pertenecen a otro bloque.
 
-Usamos referencias entre contextos solo cuando son necesarias para expresar continuidad del flujo. Un pedido puede requerir productos del catálogo, disponibilidad de inventario y despacho posterior, pero cada contexto conserva sus clases propias para evitar que una entidad concentre responsabilidades que pertenecen a otra parte del dominio.
-
-Los reportes se tratan como read models. En el diseño aparecen como resultados consultables que se alimentan de Orders & Commercial Management, Inventory y Dispatch & Traceability, no como un bounded context adicional.
+Este criterio también mantiene coherencia con la vista C4 del capítulo anterior. El C4 resume contenedores, piezas de interfaz y servicios de soporte como pagos o notificaciones; los diagramas de clases, en cambio, preservan la separación fina del dominio en siete contextos principales. Por eso no se fuerza una correspondencia literal entre cada caja del C4 y cada diagrama de clases.
 
 ### 4.7.3. Traceability Matrix: Requirements and OOD
 
 La siguiente matriz resume la relación entre requerimientos relevantes y las clases o métodos que los sostienen dentro del diseño orientado a objetos.
 
-| User Story ID | Req. Title | Bounded context | Main Class | Related Method or Logic |
-| :--- | :--- | :--- | :--- | :--- |
-| **US54** | Login interno | Identity & Access | `User` / `UserSession` | `startSession()`, `validateAccessScope()` |
-| **US57** | Roles y permisos | Identity & Access | `Role` / `Permission` | `hasPermission(code)`, `assignRole(role)` |
-| **US24** | Consultar catálogo | Catalog | `Product` / `Category` | `describeStorageRange()`, `filterByCategory()` |
-| **US45** | Registro de lotes | Inventory | `InventoryLot` | `isExpired()`, `calculateDaysToExpiry()` |
-| **US44** | Monitor de inventario | Inventory | `InventoryLot` / `Warehouse` | `availableQuantity`, `reservedQuantity` |
-| **US47** | Reserva de stock | Inventory | `InventoryLot` / `StockMovement` | `reserve(quantity)`, `registerMovement(type)` |
-| **US32** | Validación de crédito | Orders & Commercial Management | `CommercialCondition` | `hasAvailableCredit(amount)` |
-| **US51** | Saldo y riesgo comercial | Orders & Commercial Management | `CommercialCondition` / `CreditWarning` | `availableCredit`, `createWarning(amount)` |
-| **US41** | Estados del pedido | Orders & Commercial Management | `Order` | `updateStatus(newStatus)` |
-| **US61** | Registro de pedido | Orders & Commercial Management | `Order` / `OrderItem` | `calculateTotal()`, `addItem(product, quantity)` |
-| **US64** | Actualizar avance de despacho | Dispatch & Traceability | `Dispatch` / `TraceabilityEvent` | `updateStatus(newStatus)`, `recordEvent(type)` |
-| **US65** | Registrar incidencia durante el despacho | Dispatch & Traceability | `DispatchIncident` | `registerIncident(severity)`, `resolve()` |
-| **US66** | Confirmar entrega con evidencia | Dispatch & Traceability | `PodEvidence` / `Dispatch` | `closeWithEvidence(pod)`, `markDelivered()` |
+| User Story ID | Req. Title | Main Class | Related Method or Logic |
+| :--- | :--- | :--- | :--- |
+| **US54** | Login interno | `User` | `login()` |
+| **US57** | Roles y permisos | `Role` / `Permission` | `hasPermission(code)`, `validateScope()` |
+| **US24** | Consultar catálogo | `Category` / `Product` | `getProducts()`, `getSpecifications()` |
+| **US45** | Registro de lotes | `Batch` | `isExpired()`, `getDaysToExpiry()` |
+| **US44** | Monitor de inventario | `InventoryStock` | `quantityOnHand`, `quantityReserved` |
+| **US47** | Reserva de stock | `InventoryStock` | `reserve(qty)`, `release(qty)` |
+| **US32** | Validación de crédito | `CommercialCondition` | `isCreditApproved(amount)` |
+| **US51** | Saldo y riesgo comercial | `CommercialCondition` | `currentBalance`, `calculateCurrentRisk()` |
+| **US41** | Estados del pedido | `Order` / `OrderHistory` | `updateStatus(newStatus)` |
+| **US61** | Registro de pedido | `Order` / `OrderItem` | `calculateTotals()`, `authorize()` |
+| **US39** | Tracking y ETA | `Dispatch` | `calculateETA()`, `verifyColdChain()` |
+| **US42** | Registro de POD | `Dispatch` / `POD` | `finalizeDelivery(pod)`, `verifyIntegrity()` |
+| **US63** | Eventos de despacho y POD | `Dispatch` / `Incident` | `registerIncident(type)`, `resolve()` |
 
-La matriz no reemplaza la especificación funcional del capítulo 3. Su función es mostrar qué clases concentran la lógica de dominio necesaria para responder a los requerimientos más importantes. Elaboración propia.
+La matriz no reemplaza la especificación funcional del capítulo 3, pero sí muestra qué clases concentran la lógica necesaria para responder a los requerimientos más importantes del dominio. Elaboración propia.

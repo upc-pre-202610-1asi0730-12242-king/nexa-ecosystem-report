@@ -41,7 +41,7 @@ En esta lectura, el mapa conserva como actores protagónicos al Segmento 1, al S
 | Actor | Segmento 2: Jefatura logística y coordinación operativa | Necesidad de validar disponibilidad, organizar preparación, gestionar incidencias y documentar la entrega con evidencia verificable. | Épicas EP10, EP11 y servicios de tracking/POD. |
 | Impacto | Sustituir interacciones informales por flujos estructurados | En el análisis de entrevistas se observaron audios, listas y llamadas como soporte principal del pedido. | **US: Como coordinador, deseo capturar pedidos estructurados para evitar el retrabajo por datos ambiguos.** |
 | Impacto | Anticipar restricciones antes de prometer la entrega | Hallazgos sobre stock incierto, mora, crédito y validación demasiado tardía. | **US: Como cliente, deseo ver el stock real y mi saldo disponible para realizar pedidos sin riesgo de rechazo.** |
-| Impacto | Dar visibilidad al estado real del despacho | Needfinding y journey maps mostraron incertidumbre sobre ETA, incidencias y recepción. | **US: Como transportista, deseo registrar el POD digitalmente para reducir reclamos por falta de evidencia.** |
+| Impacto | Dar visibilidad al estado real del despacho | Needfinding y journey maps mostraron incertidumbre sobre ETA, incidencias y recepción. | **US: Como jefe del área logística, deseo registrar el POD digitalmente para reducir reclamos por falta de evidencia.** |
 | Deliverable | MVP dividido en frente público, núcleo transaccional y capa de integración | La solución necesita comunicar valor, ejecutar el flujo central y sostenerlo con contratos consistentes. | **US: Como administrador, deseo una plataforma centralizada para monitorear el ciclo de vida completo del pedido.** |
 
 <p align="justify">

@@ -16,9 +16,8 @@
 <br>
 
 **Período Académico:** 2026-10
-**Código del curso:** 1ASI0730  
-**Curso:** Aplicaciones Web  
-**NRC:** 12242  
+**Curso:** Aplicaciones Web (NRC 12242)  
+**Sección:** 1ASI0730
 **Docente:** Velásquez Núñez, Ángel Augusto
 
 <br>
@@ -26,11 +25,13 @@
 
 ---
 
-# Informe de Trabajo Final — Trabajo Parcial 1 (TB1)
+# Informe de Trabajo Final
+
+## Informe de Avance 1 (AV1)
 
 **Startup:** King  
 **Producto:** Nexa  
-**Mes y Año:** Mayo 2026
+**Mes y Año:** Abril 2026
 
 ---
 
