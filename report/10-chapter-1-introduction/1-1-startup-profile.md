@@ -31,7 +31,7 @@ A partir de esa base, la startup proyecta una evolución futura coherente con la
 
 ### ***1.1.2. Perfiles de integrantes del equipo***
 
-Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo con perfiles complementarios que posean habilidades en análisis de sistemas, modelado de datos, programación, documentación técnica, diseño de experiencia de usuario y gestión del trabajo colaborativo. En este apartado, cada integrante aporta fortalezas diferenciadas que permiten cubrir la investigación, la estructuración del informe, el diseño de la solución, la implementación técnica y la coordinación general del proyecto.
+Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo con perfiles complementarios que posean habilidades en análisis de sistemas, modelado de datos, programación, documentación técnica, diseño de experiencia de usuario y gestión del trabajo colaborativo. En esta sección, cada integrante aporta fortalezas diferenciadas que permiten cubrir la investigación, la estructuración del informe, el diseño de la solución, la implementación técnica y la coordinación general del proyecto.
 
 *Perfiles de integrantes del equipo*
 | Código | Nombre | Rol | Descripción |

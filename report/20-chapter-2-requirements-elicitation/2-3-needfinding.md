@@ -1,6 +1,6 @@
 ## **2.3. Needfinding**
 
-La construcción de este bloque parte de tres insumos previos. El primero es el análisis de entrevistas del apartado 2.2, que identifica patrones de comportamiento, fricciones recurrentes y expectativas de adopción. El segundo es el análisis competitivo del apartado 2.1, que muestra que las soluciones existentes resuelven fragmentos del problema, pero no articulan con suficiente claridad la continuidad entre captura comercial, abastecimiento del cliente y cierre de entrega. El tercero es la lógica del dominio modelada en el proyecto, que obliga a representar no solo quién usa el sistema, sino en qué momento del flujo su intervención resulta crítica.
+La construcción de este bloque parte de tres insumos previos. El primero es el análisis de entrevistas de la sección 2.2, que identifica patrones de comportamiento, fricciones recurrentes y expectativas de adopción. El segundo es el análisis competitivo de la sección 2.1, que muestra que las soluciones existentes resuelven fragmentos del problema, pero no articulan con suficiente claridad la continuidad entre captura comercial, abastecimiento del cliente y cierre de entrega. El tercero es la lógica del dominio modelada en el proyecto, que obliga a representar no solo quién usa el sistema, sino en qué momento del flujo su intervención resulta crítica.
 
 Por ello, los artefactos de needfinding no deben interpretarse como piezas visuales aisladas. Su función es traducir evidencia cualitativa en criterios de diseño: quién necesita autonomía, quién necesita visibilidad, quién necesita rapidez, quién necesita trazabilidad y en qué punto del recorrido cada una de esas necesidades se vuelve más sensible. Bajo ese enfoque, el valor del needfinding no está únicamente en mostrar personas, tareas o journeys, sino en demostrar cómo esas representaciones ayudan a delimitar el alcance del MVP y a justificar decisiones posteriores de backlog, arquitectura y experiencia de usuario.
 
@@ -22,8 +22,12 @@ La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado 
 
 ### ***2.3.2. User Task Matrix***
 
-Esta Sección resume qué actividades concentran mayor frecuencia e importancia relativa para cada segmento canónico. Su función no es enumerar funcionalidades del sistema, sino identificar qué tareas del trabajo real deben ser mejor soportadas por el producto para reducir fricción y sostener adopción.
-| Tareas Identificadas (Tasks)                                                           | Segmento 1: Valeria (Ventas) |           | Segmento 2: Roberto (Logística) |       | Segmento 3: Elena (Comprador) |       |
+User Task Matrix: Frecuencia e Importancia por Arquetipo
+
+#### Tabla User Task Matrix
+
+|        Tareas Identificadas (Tasks)                                                           | Segmento 1: Valeria (Ventas) |   |  |      | Segmento 2: Roberto (Logística) |   | |    | Segmento 3: Elena (Comprador) |  ||
+|                                                          | Frecuencia  |           | Importancia |       | Frecuencia |   Importancia    |
 |:---------------------------------------------------------------------------------------|:-----------------------------|:----------|:--------------------------------|:------|:------------------------------|:------|
 | **Evaluar necesidades de abastecimiento e inventario local**                           | -                            | -         | -                               | -     | Alta                          | Alta  |
 | **Consultar y validar disponibilidad de stock (Catálogo/Cámara)**                      | Alta                         | Alta      | Alta                            | Alta  | Alta                          | Alta  |
@@ -31,10 +35,11 @@ Esta Sección resume qué actividades concentran mayor frecuencia e importancia 
 | **Recepcionar, interpretar y transcribir el pedido**                                   | Alta                         | Alta      | -                               | -     | -                             | -     |
 | **Consolidar pedidos y preparar mercadería (Picking)**                                 | -                            | -         | Alta                            | Alta  | -                             | -     |
 | **Asignar rutas y gestionar el despacho de transporte**                                | -                            | -         | Alta                            | Alta  | -                             | -     |
-| **Hacer seguimiento al estado de la entrega en ruta (Tracking)**                       | Media                        | Alta      | Altta                           | Alta  | Alta                          | Alta  |
+| **Hacer seguimiento al estado de la entrega en ruta (Tracking)**                       | Media                        | Alta      | Alta                            | Alta  | Alta                          | Alta  |
 | **Recepcionar la mercadería en el punto de venta y pagar**                             | -                            | -         | -                               | -     | Alta                          | Alta  |
 | **Gestionar documentación física (Guías de remisión, facturas)**                       | Baja                         | Media     | Alta                            | Alta  | Media                         | Media |
 | **Atender y gestionar incidencias, reclamos o devoluciones**                           | Media                        | Alta      | Media                           | Alta  | Media                         | Alta  |
+> *Nota:* Análisis de la carga de tareas manuales distribuidas a lo largo de la cadena de suministro refrigerada. Frecuencia e importancia determinadas mediante el análisis cualitativo de las entrevistas (Needfinding). Elaboración propia.
 
 ### ***2.3.3. User Journey Mapping***
 
@@ -56,7 +61,7 @@ Esta lectura también deja una implicancia directa para diseño: el MVP necesita
 
 ### 2.3.4. As-Is Scenario Map
 
-El recorrido del As-Is Scenario Map se estructura en seis etapas operativas, alineadas estrictamente con los tres segmentos canónicos del producto y representados por sus respectivos User Personas: Segmento 1 (Coordinación Comercial), Segmento 2 (Transportista / Despacho) y Segmento 3 (Compradores B2B).
+El recorrido del As-Is Scenario Map se estructura en seis etapas operativas, alineadas estrictamente con los tres segmentos canónicos del producto y representados por sus respectivos User Personas: Segmento 1 (Coordinación Comercial), Segmento 2 (Jefatura logística) y Segmento 3 (Compradores B2B).
 
 #### Mapa de Escenario Actual (As-Is)
 
@@ -66,8 +71,8 @@ El recorrido del As-Is Scenario Map se estructura en seis etapas operativas, ali
 | **2. Captura del pedido** | S1: Coord. Comercial, S3: Compradores B2B | El pedido entra por WhatsApp, audio, foto de lista o llamada. S1 transcribe e interpreta al ERP/Excel. | Transcripción manual, ambigüedad de códigos, doble digitación, stock no confirmado en tiempo real. | Presión, retrabajo, miedo a equivocarse al transcribir. | Formulario estructurado con validación de SKU, precio, stock y crédito en un solo paso. |
 | **3. Validación de stock, crédito y FEFO** | S1: Coord. Comercial, S2: Jefatura Logística (ej. Roberto) | S1 consulta stock en ERP y por teléfono a almacén; revisa crédito en módulo separado. S2 confirma por lote/vencimiento. | Stock desactualizado en ERP, crédito fragmentado, rotación FEFO/FIFO coordinada verbalmente. | Desconfianza del sistema, interrupciones constantes entre áreas.                  | Vista única de stock real, crédito disponible y lotes priorizados por vencimiento. |
 | **4. Preparación y picking en almacén** | S2: Almacén y Jefatura Logística | Se imprime guía de remisión, se arman cajas/pallets manualmente, se valida visualmente temperatura y fecha. | Errores de picking, lote incorrecto, ruptura de cadena de frío no registrada, quiebres de stock descubiertos tarde. | Estrés por el tiempo, reclamos posteriores, riesgo de mermas.                      | Lista de picking digital con lote/vencimiento sugerido y checklist de temperatura integrado. |
-| **5. Despacho y tránsito** | S2: Coord. de Despacho | Cargan vehículo, salen con guía física, coordinan ruta por teléfono; el cliente llama a ventas para saber ETA. | "Ceguera logística": sin ETA visible para el cliente, sin trazabilidad en ruta, llamadas interrumpen al conductor. | Cansancio, llamadas invasivas cruzadas, ansiedad del cliente final.                  | ETA compartido, seguimiento de ruta ligero y registro mínimo de temperatura |
-| **6. Entrega y cierre** | S2: Transportista, S3: Compradores B2B | Descarga, conteo manual, firma en guía física manchada o arrugada; reclamos por cantidades o vencimientos. | Cierre sin evidencia digital, disputas difíciles de resolver sobre quién rompió la cadena de frío, trazabilidad nula. | Frustración, desconfianza, reclamos post-entrega que afectan cobranzas.                     | Prueba de entrega digital (POD) con captura de firma, fotos, registro de temperatura y motivos de rechazo. |
+| **5. Despacho y tránsito** | S2: Jefatura logística | Cargan vehículo, salen con guía física, coordinan ruta por teléfono; el cliente llama a ventas para saber ETA. | "Ceguera logística": sin ETA visible para el cliente, sin trazabilidad en ruta, llamadas interrumpen al conductor. | Cansancio, llamadas invasivas cruzadas, ansiedad del cliente final.                  | ETA compartido, seguimiento de ruta ligero y registro mínimo de temperatura |
+| **6. Entrega y cierre** | S2: Jefatura logística, S3: Compradores B2B | Descarga, conteo manual, firma en guía física manchada o arrugada; reclamos por cantidades o vencimientos. | Cierre sin evidencia digital, disputas difíciles de resolver sobre quién rompió la cadena de frío, trazabilidad nula. | Frustración, desconfianza, reclamos post-entrega que afectan cobranzas.                     | Prueba de entrega digital (POD) con captura de firma, fotos, registro de temperatura y motivos de rechazo. |
 
 Estos puntos no se presentan como funciones implementadas de Nexa en su primera versión, sino como el mapa general de oportunidades que el producto pretende atacar mediante incrementos. La prioridad inicial será resolver la captura estructurada del pedido y devolver la visibilidad de estado (trazabilidad) entre el Segmento 1 (Ventas), el Segmento 2 (Logística) y el Segmento 3 (Comprador).
 

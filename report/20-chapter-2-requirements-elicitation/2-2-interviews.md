@@ -244,7 +244,7 @@ Captura de sesión de entrevista. Elaboración propia.
 
 **Resumen de la Entrevista**
 
-Celia Pérez, con experiencia previa en ventas de ruta, aporta una perspectiva crítica sobre el uso de herramientas en campo. Utilizó aplicativos móviles (Rikra) que, aunque eficientes para digitalizar la venta en tiempo real y eliminar el papel, presentaban fallos de rendimiento y lentitud que forzaban el retorno a canales informales. Destaca que la herramienta ideal debe integrar datos del cliente (RUC, saldos, dirección) para evitar la doble digitación.
+Celia Pérez, con experiencia previa en ventas de ruta, aporta una perspectiva crítica sobre el uso de herramientas en campo. Utilizó aplicaciones móviles (Rikra) que, aunque eficientes para digitalizar la venta en tiempo real y eliminar el papel, presentaban fallos de rendimiento y lentitud que forzaban el retorno a canales informales. Destaca que la herramienta ideal debe integrar datos del cliente (RUC, saldos, dirección) para evitar la doble digitación.
 
 Su testimonio confirma que, para el personal en ruta, la estabilidad de la conexión y la velocidad de respuesta del sistema son factores determinantes para la adopción tecnológica. Cualquier retraso en el dispositivo móvil se traduce en una atención deficiente al cliente y en una carga operativa innecesaria al final del día.
 

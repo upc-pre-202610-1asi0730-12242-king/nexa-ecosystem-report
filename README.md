@@ -63,13 +63,23 @@ nexa-report/
 
 ---
 
+## PDF export
+
+```bash
+bash scripts/build-pdf.sh
+```
+
+Requires [Pandoc](https://pandoc.org/) installed locally. Output is written to `dist/nexa-report.pdf`.
+
+---
+
 ## Related repositories
 
 | Repository | Description |
 |---|---|
 | [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) | Landing page (HTML5 / CSS3 / JS) |
 | [nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) | Main web application (Vue.js) |
-| [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) | Backend API (ASP.NET Core) |
+| [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) | Planned backend service layer (future milestone) |
 
 ---
 

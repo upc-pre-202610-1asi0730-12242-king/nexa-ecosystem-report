@@ -27,11 +27,10 @@
 
 # Informe de Trabajo Final
 
-### Informe de Avance 1 (AV1)
+## Informe de Avance 1 (AV1)
 
-**Startup:** Nexa  
+**Startup:** King  
 **Producto:** Nexa  
-**Equipo:** KING  
 **Mes y Año:** Abril 2026
 
 ---
