@@ -106,7 +106,7 @@ flowchart LR
     S2Inventory --> S2Lots["Lot list and FEFO indicators"]
     S2Lots --> S2Detail["Lot detail drawer: expiry, stock, warehouse"]
     S2D -. "logistics role has extended access" .-> S2Access["Can access clients, orders, inventory, dispatch, reports"]
-    C -- "Lucía - Comprador B2B" --> S3Home["Portal home"]
+    C -- "Elena - Comprador B2B" --> S3Home["Portal home"]
     S3Home --> S3Catalog["Portal catalog"]
     S3Catalog --> S3Cart["Cart / order submission"]
     S3Cart --> S3Orders["Portal orders"]
@@ -120,7 +120,7 @@ Elaboración propia. Este wireflow es de nivel pantalla. Separa los roles intern
 |---|---|---|---|
 | S1 Commercial Assisted Order | Valeria / Coordinación comercial | Crear y rastrear un pedido asistido validando condición del cliente y disponibilidad de producto | Mermaid en Markdown + mockups S1 seleccionados |
 | S2 Logistics Operations | Roberto / Jefatura logística | Monitorear stock y riesgo FEFO, coordinar despacho y cerrar POD mock | Mermaid en Markdown + mockups S2 seleccionados |
-| S3 B2B Buyer Portal | Lucía / Comprador B2B | Explorar catálogo, enviar pedido y consultar estado | Mermaid en Markdown como flujo portal de planificación |
+| S3 B2B Buyer Portal | Elena / Comprador B2B | Explorar catálogo, enviar pedido y consultar estado | Mermaid en Markdown como flujo portal de planificación |
 
 La evidencia visual se documenta en Markdown mediante notación `flowchart` y se mantiene en el tablero FigJam como artefacto colaborativo de diseño. El reporte incluye la estructura completa del flujo y mockups representativos; no replica todas las pantallas del tablero como galería.
 
@@ -132,7 +132,7 @@ Los mockups representan pantallas seleccionadas de alta fidelidad para la direcc
 |---|---|---|---|---|
 | S1 Commercial assisted order | Valeria / S1 | Crear y seguir un pedido asistido | Login, dashboard, cliente, pedido, detalle, reportes | Evidenciar captura comercial guiada, validaciones y trazabilidad |
 | S2 Logistics operations | Roberto / S2 | Controlar inventario, despacho y POD mock | Dashboard, inventario, lote, despacho, POD mock, reportes | Evidenciar monitoreo FEFO, operación logística y cierre simulado |
-| S3 Portal buyer flow | Lucía / S3 | Comprar desde portal B2B | Flujo Mermaid de portal | Documentar alcance comprador sin inventar capturas no disponibles |
+| S3 Portal buyer flow | Elena / S3 | Comprar desde portal B2B | Flujo Mermaid de portal | Documentar alcance comprador sin inventar capturas no disponibles |
 
 #### S1 — Commercial assisted order mockups
 
@@ -168,7 +168,7 @@ Elaboración propia. Este grupo resume el recorrido logístico desde monitoreo h
 
 #### S3 — Portal buyer planning flow
 
-El portal B2B se documenta como flujo comprador de planificación. En esta entrega no se agregan capturas S3 porque el ZIP de mockups recibido contiene material S1 y S2, no pantallas portal. Para evitar rutas inventadas, la evidencia visual del portal queda representada por el user flow Mermaid de Lucía y por su separación explícita respecto a los roles internos Ops.
+El portal B2B se documenta como flujo comprador de planificación. En esta entrega no se agregan capturas S3 porque el ZIP de mockups recibido contiene material S1 y S2, no pantallas portal. Para evitar rutas inventadas, la evidencia visual del portal queda representada por el user flow Mermaid de Elena y por su separación explícita respecto a los roles internos Ops.
 
 ### 4.4.4. Web Applications User Flow Diagrams.
 
@@ -243,13 +243,13 @@ Elaboración propia. El happy path recorre inventario, riesgo FEFO, despacho, PO
 
 #### User Flow S3 — Comprador B2B: portal de compra
 
-**User Goal:** As Lucía, a B2B buyer, the goal is to browse the portal catalog, submit an order and review order status from the buyer-facing portal.
+**User Goal:** As Elena, a B2B buyer, the goal is to browse the portal catalog, submit an order and review order status from the buyer-facing portal.
 
-**Persona:** Lucía / Comprador B2B. Accede a Portal home, catálogo, carrito y órdenes. El portal queda separado de las rutas internas Ops.
+**Persona:** Elena / Comprador B2B. Accede a Portal home, catálogo, carrito y órdenes. El portal queda separado de las rutas internas Ops.
 
 ```mermaid
 flowchart LR
-    A["Start"] --> B["Login — choose Lucía profile"]
+    A["Start"] --> B["Login — choose Elena profile"]
     B --> C["Portal home"]
     C --> D["Open portal catalog"]
     D --> E["Review products"]
