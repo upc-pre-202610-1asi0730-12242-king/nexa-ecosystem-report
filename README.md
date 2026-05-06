@@ -37,7 +37,7 @@ This repository contains the full academic documentation for the Nexa project, s
 
 ## Repository structure
 
-```
+```text
 nexa-report/
 │
 └── report/
@@ -63,13 +63,28 @@ nexa-report/
 
 ---
 
+## Report PDF
+
+Generate locally (requires Pandoc + XeLaTeX):
+
+```bash
+bash scripts/build-pdf.sh
+```
+
+Output is written to `dist/nexa-report.pdf`.
+
+The latest generated PDF can also be downloaded from GitHub Actions:
+**Actions → Build Report PDF → Artifacts → `nexa-report-pdf`**
+
+---
+
 ## Related repositories
 
 | Repository | Description |
 |---|---|
 | [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) | Landing page (HTML5 / CSS3 / JS) |
 | [nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) | Main web application (Vue.js) |
-| [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) | Backend API (ASP.NET Core) |
+| [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) | Planned backend service layer (future milestone) |
 
 ---
 

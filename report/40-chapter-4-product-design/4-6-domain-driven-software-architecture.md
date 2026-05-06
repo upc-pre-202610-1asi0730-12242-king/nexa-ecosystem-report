@@ -1,5 +1,7 @@
 ## 4.6. Domain-Driven Software Architecture
 
+> **Nota de alcance**: Las secciones 4.6, 4.7 y 4.8 documentan la arquitectura objetivo del sistema. En el corte TB1, la webapp opera con Fake API (JSON Server) para simular integración; el backend real y la base de datos normalizada son planificación arquitectónica, no implementación desplegada. Esta distinción es importante para no confundir diseño de dominio con evidencia de producción.
+
 La arquitectura de Nexa se apoya en Domain-Driven Design para ordenar el dominio antes de bajar a clases, tablas o detalles de implementación. El punto de partida fue el workshop de EventStorming; a partir de esa sesión, el equipo fue separando eventos, reglas, vistas de lectura y límites funcionales hasta llegar a una estructura más clara del sistema.
 
 En esta sección el foco está en el vínculo entre workshop y arquitectura. La separación más fina del dominio se desarrolla después en las secciones 4.7 y 4.8, donde se presentan los diagramas de clases y persistencia por bounded context.
