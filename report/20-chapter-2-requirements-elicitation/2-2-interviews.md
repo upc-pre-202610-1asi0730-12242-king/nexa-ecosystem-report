@@ -1,8 +1,8 @@
-## 2.2. Entrevistas
+## **2.2. Entrevistas**
 
-Para mantener continuidad con el Capítulo I y con los artefactos posteriores de needfinding, este capítulo trabaja con tres segmentos del producto: **Segmento 1: Vendedoras y coordinación comercial**, **Segmento 2: Jefatura logística y coordinación operativa** y **Segmento 3: Compradores comerciales B2B mayoristas y minoristas**. Las entrevistas se organizaron para entender cómo el problema aparece en esos tres tramos del flujo. Cuando fue necesario, también se recogió información operativa del dominio para aclarar reglas, restricciones y puntos de quiebre del proceso, sin alterar la segmentación oficial del proyecto.
+Las entrevistas se organizaron para entender cómo el problema aparece en esos tres tramos del flujo. Cuando fue necesario, también se recogió información operativa del dominio para aclarar reglas, restricciones y puntos de quiebre del proceso, sin alterar la segmentación oficial del proyecto.
 
-### 2.2.1. Diseño de entrevistas
+### ***2.2.1. Diseño de entrevistas***
 
 **Apertura sugerida para cualquier segmento**
 
@@ -62,8 +62,6 @@ Aquí todavía no se vende la solución; se explora el mínimo valor esperado.
 **Cierre**
 - Si pudieras cambiar una sola cosa del proceso actual, ¿qué cambiarías primero y por qué?  
 - ¿Hay algo importante sobre tu trabajo o sobre este proceso que no te haya preguntado y creas que debería entender?  
-
-**Nota para el moderador.** No es necesario formular todas las preguntas literalmente. Lo importante es mantener el foco, pedir ejemplos recientes, repreguntar “por qué” cuando aparezca un problema y no interrumpir silencios útiles.
 
 **Segmento 2: Jefatura logística y coordinación operativa**
 
@@ -173,11 +171,9 @@ No basta saber si usa apps; importa cómo decide confiar en una herramienta.
 - ¿Qué pasos deberían simplificarse primero?  
 - ¿Hay algo importante sobre tu forma de comprar o abastecerte que no te haya preguntado y consideres clave mencionar?  
 
-**Nota para el moderador**. No es necesario formular todas las preguntas literalmente. Lo importante es mantener el foco, pedir ejemplos recientes, repreguntar “por qué” cuando aparezca un problema y no interrumpir silencios útiles.
+### ***2.2.2. Registro de entrevistas***
 
-### 2.2.2. Registro de entrevistas
-
-En esta subsección se preservan los nombres y cargos reales de las personas entrevistadas. La síntesis posterior del capítulo se organiza por segmento para mantener continuidad con el resto del informe sin perder trazabilidad respecto de la evidencia levantada.
+En esta subsección se preservan los nombres y cargos reales de las personas entrevistadas.
 
 Además de las capturas integradas en el informe, el archivo audiovisual original de las ocho entrevistas se conserva en la carpeta compartida **King Nexa** de OneDrive. Cada ficha incluye su enlace directo para mantener trazabilidad entre la evidencia visual resumida y la grabación completa utilizada en el levantamiento.
 
@@ -192,13 +188,13 @@ Además de las capturas integradas en el informe, el archivo audiovisual origina
 
 *Evidencia de entrevista: Lorena Silva*
 
-![Lorena](../assets/images/pruebas-entrevistas/Lorena.jpeg)
+![Lorena](../assets/images/interviews/lorena-silva.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
 **Inicio de la entrevista:** 0:00:05  
 **Fin de la entrevista:** 0:26:05  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQBh49Y9SDAgRZlPLZSquYZRAdC_CjYnFHvBVKZmg3bhzQQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xeVLVO)
+**Enlace de la entrevista:** [Segmento 1 Entrevista 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQBh49Y9SDAgRZlPLZSquYZRAdC_CjYnFHvBVKZmg3bhzQQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xeVLVO)
 
 **Resumen de la Entrevista**
 
@@ -215,13 +211,13 @@ A nivel técnico, reporta fricciones severas con el sistema actual (Fontana), el
 
 *Evidencia de entrevista: Cinthia Levano*
 
-![Cinthia](../assets/images/pruebas-entrevistas/Paola.jpeg)
+![Cinthia](../assets/images/interviews/cinthia-levano.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
 **Inicio de la entrevista:** 0:26:06  
 **Fin de la entrevista:** 0:47:05  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQAyzf03TLfeSbIYrCXh28BxAd8G-WNr_uB1Uu5jS__edvc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=nDmxW2)
+**Enlace de la entrevista:** [Segmento 1 Entrevista 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQAyzf03TLfeSbIYrCXh28BxAd8G-WNr_uB1Uu5jS__edvc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=nDmxW2)
 
 **Resumen de la Entrevista**
 
@@ -238,17 +234,17 @@ Cinthia enfatiza la necesidad de simplicidad. Describe su flujo actual como una 
 
 *Evidencia de entrevista: Celia Pérez*
 
-![Celia](../assets/images/pruebas-entrevistas/Celia.jpeg)
+![Celia](../assets/images/interviews/celia-perez.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
 **Inicio de la entrevista:** 0:47:06  
 **Fin de la entrevista:** 1:04:01  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQDmUgpre5wLTJEjeIpKE5gMAR8lhXNb8-aN_5nfkE2mY-8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=cqpqFZ)
+**Enlace de la entrevista:** [Segmento 1 Entrevista 3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQDmUgpre5wLTJEjeIpKE5gMAR8lhXNb8-aN_5nfkE2mY-8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=cqpqFZ)
 
 **Resumen de la Entrevista**
 
-Celia Pérez, con experiencia previa en ventas de ruta, aporta una perspectiva crítica sobre el uso de herramientas en campo. Utilizó aplicativos móviles (Rikra) que, aunque eficientes para digitalizar la venta en tiempo real y eliminar el papel, presentaban fallos de rendimiento y lentitud que forzaban el retorno a canales informales. Destaca que la herramienta ideal debe integrar datos del cliente (RUC, saldos, dirección) para evitar la doble digitación.
+Celia Pérez, con experiencia previa en ventas de ruta, aporta una perspectiva crítica sobre el uso de herramientas en campo. Utilizó aplicaciones móviles (Rikra) que, aunque eficientes para digitalizar la venta en tiempo real y eliminar el papel, presentaban fallos de rendimiento y lentitud que forzaban el retorno a canales informales. Destaca que la herramienta ideal debe integrar datos del cliente (RUC, saldos, dirección) para evitar la doble digitación.
 
 Su testimonio confirma que, para el personal en ruta, la estabilidad de la conexión y la velocidad de respuesta del sistema son factores determinantes para la adopción tecnológica. Cualquier retraso en el dispositivo móvil se traduce en una atención deficiente al cliente y en una carga operativa innecesaria al final del día.
 
@@ -263,13 +259,13 @@ Su testimonio confirma que, para el personal en ruta, la estabilidad de la conex
 
 *Evidencia de entrevista: Hilda Litano*
 
-![Hilda](../assets/images/pruebas-entrevistas/Hilda.jpeg)
+![Hilda](../assets/images/interviews/hilda-litano.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
 **Inicio de la entrevista:** 1:04:07  
 **Fin de la entrevista:** 1:19:39  
-**Enlace de la entrevista:** [Video unificado en OneDrive](nexa-interview-s2-e1-diego-hilda-litano)
+**Enlace de la entrevista:** [Segmento 2 Entrevista 1](nexa-interview-s2-e1-diego-hilda-litano)
 
 **Resumen de la Entrevista**
 
@@ -284,13 +280,13 @@ Hilda Litano supervisa procesos de importación y cumplimiento sanitario. Su enf
 
 *Evidencia de entrevista: Edith Taype*
 
-![Edith](../assets/images/pruebas-entrevistas/Edith.jpeg)
+![Edith](../assets/images/interviews/edith-taype.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
 **Inicio de la entrevista:** 1:19:40  
 **Fin de la entrevista:** 1:51:08  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQA-I6vCEGaNSr22U2cE6mS3AQWy6KV2LrkCrZkvACBGJgw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=TPayIp)
+**Enlace de la entrevista:** [Segmento 2 Entrevista 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQA-I6vCEGaNSr22U2cE6mS3AQWy6KV2LrkCrZkvACBGJgw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=TPayIp)
 
 **Resumen de la Entrevista**
 
@@ -305,13 +301,13 @@ Edith Taype opera en el punto de venta (supermercados), donde la manipulación y
 
 *Evidencia de entrevista: Jesica Sandoval*
 
-![Jesica](../assets/images/pruebas-entrevistas/Jesica.jpeg)
+![Jesica](../assets/images/interviews/jesica-sandoval.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
 **Inicio de la entrevista:** 1:51:09  
 **Fin de la entrevista:** 2:12:02  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQBvq5XhZwCRS5Gl-opHnp9-Ac-dkhnzHv_Yd3ET8251hbs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=jDo3F6)
+**Enlace de la entrevista:** [Segmento 2 Entrevista 3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQBvq5XhZwCRS5Gl-opHnp9-Ac-dkhnzHv_Yd3ET8251hbs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=jDo3F6)
 
 **Resumen de la Entrevista**
 
@@ -328,17 +324,17 @@ Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcrip
 
 *Evidencia de entrevista: Pedro Puente*
 
-![Pedro](../assets/images/pruebas-entrevistas/Pedro.jpeg)
+![Pedro](../assets/images/interviews/pedro-puente.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
 **Inicio de la entrevista:** 2:12:08  
 **Fin de la entrevista:** 2:24:34  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCYUvW2Mz8eQK0fo9Lddyv3AYFVeaOL7QGRwgePWMtQ99s?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=wZjyWp)
+**Enlace de la entrevista:** [Segmento 3 Entrevista 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCYUvW2Mz8eQK0fo9Lddyv3AYFVeaOL7QGRwgePWMtQ99s?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=wZjyWp)
 
 **Resumen de la Entrevista**
 
-Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre logística. Realiza pedidos por WhatsApp, pero la falta de visibilidad sobre la ETA (tiempo estimado de llegada) le impide coordinar con sus propios clientes finales. Reporta que los proveedores suelen priorizar a las grandes cadenas, dejando a los minoristas con quiebres de stock que impactan directamente en su rentabilidad.
+Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre logística. Realiza pedidos por WhatsApp, pero la falta de visibilidad sobre el momento estimado de llegada le impide coordinar con sus propios clientes finales. Reporta que los proveedores suelen priorizar a las grandes cadenas, dejando a los minoristas con quiebres de stock que impactan directamente en su rentabilidad.
 
 **Entrevistado 2**
 
@@ -349,19 +345,19 @@ Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre log�
 
 *Evidencia de entrevista: Henrry García*
 
-![Henry](../assets/images/pruebas-entrevistas/Henry.jpeg)
+![Henry](../assets/images/interviews/henrry-garcia.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
 **Inicio de la entrevista:** 2:24:35  
 **Fin de la entrevista:** 2:40:00  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQAH4V2bsaaTRq3LvOpIH7oBAesfDCbmetCKnYA7IjyxJuo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tOoyGC)
+**Enlace de la entrevista:** [Segmento 3 Entrevista 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQAH4V2bsaaTRq3LvOpIH7oBAesfDCbmetCKnYA7IjyxJuo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tOoyGC)
 
 **Resumen de la Entrevista**
 
 Henrry García enfatiza que la confianza es el motor de la relación B2B. Aunque utiliza tecnología con GPS para monitorear sus propios despachos, rechaza que el software reemplace la comunicación humana personalizada. Su visión es que una plataforma ideal debe ser una herramienta de soporte que automatice el inventario y el seguimiento, pero permitiendo siempre una interacción directa para resolver excepciones.
 
-### 2.2.3. Análisis de entrevistas
+### ***2.2.3. Análisis de entrevistas***
 
 **Análisis del Segmento 1: Vendedoras y coordinación comercial**
 
@@ -374,8 +370,7 @@ El segmento de vendedoras y personal de coordinación comercial, representado en
 | Uso intensivo de WhatsApp y canales paralelos | Lorena, Cinthia y Celia describen dependencia de mensajería y validaciones externas | El pedido nace en un entorno rápido, pero con baja estructuración de datos | El flujo inicial debe capturar rapidez sin perder consistencia ni trazabilidad |
 | Validación manual de stock y crédito | Lorena y Cinthia reportan consultas adicionales antes de confirmar pedidos | La captura del pedido no está suficientemente conectada con la información crítica del negocio | Conviene unificar stock, crédito y condiciones comerciales en la misma experiencia |
 | Necesidad de operar en movilidad | Celia y Lorena describen trabajo fuera del escritorio o en condiciones de campo | La experiencia comercial no puede depender exclusivamente de entornos de oficina | La interfaz debe responder bien en móvil y reducir pasos innecesarios |
-
-La tabla resume la cadena dato observado → patrón → implicancia de diseño dentro de la muestra analizada. Elaboración propia.
+> *Nota:* La tabla resume la cadena dato observado → patrón → implicancia de diseño dentro de la muestra analizada. Elaboración propia.
 
 **Características objetivas:**
 
@@ -414,8 +409,7 @@ El segmento de jefatura logística y coordinación operativa, representado en es
 | Trazabilidad documental sensible | Hilda y Jesica enfatizan control de documentación, temperatura y vencimientos | La operación necesita respaldo verificable, no solo visibilidad superficial del pedido | El modelo del dominio debe contemplar evidencia, estados y reglas de validación |
 | Rotación y vencimientos como restricción real | Jesica y Edith describen dependencia de coordinación manual para FEFO y disponibilidad | La calidad de la entrega depende de decisiones previas sobre inventario y priorización | El sistema debe hacer visible stock, vencimientos y criterios de rotación relevantes |
 | Accesos y visibilidad fragmentados | Edith reporta limitaciones de acceso y necesidad de intermediación interna | La operación no comparte la misma información con el mismo nivel de oportunidad | Se requieren roles, permisos y vistas diferenciadas sobre un mismo flujo |
-
-La tabla sintetiza los patrones de comportamiento, fricciones y consecuencias de diseño del Segmento 2 a partir de la muestra entrevistada. Elaboración propia.
+> *Nota:* La tabla sintetiza los patrones de comportamiento, fricciones y consecuencias de diseño del Segmento 2 a partir de la muestra entrevistada. Elaboración propia.
 
 **Características objetivas:**
 
@@ -442,7 +436,6 @@ La tabla sintetiza los patrones de comportamiento, fricciones y consecuencias de
 - El Segmento 2 concentra las reglas, políticas y restricciones operativas que el producto debe respetar para que el flujo del pedido sea ejecutable y trazable.
 
 **Análisis del Segmento 3: Compradores comerciales B2B mayoristas y minoristas**
-
 El análisis de Pedro Puente y Henrry García muestra un patrón consistente: el comprador comercial necesita previsibilidad logística, pero no está dispuesto a adoptarla a costa de complejidad adicional o pérdida de trato humano. Para ambos, el distribuidor no es solo un proveedor, sino un actor del que depende la continuidad operativa del negocio.
 
 *Análisis del Segmento 3: Compradores comerciales B2B mayoristas y minoristas*
@@ -452,8 +445,7 @@ El análisis de Pedro Puente y Henrry García muestra un patrón consistente: el
 | Dependencia de canales informales para pedir | Pedro y Henrry describen uso de llamadas y WhatsApp para resolver urgencias | La velocidad de respuesta pesa más que la sofisticación funcional | El portal debe ser rápido de usar y fácil de entender desde el primer contacto |
 | Necesidad de visibilidad del estado del pedido | Ambos expresan incertidumbre sobre stock, confirmación y entrega | El principal valor esperado no es solo comprar, sino saber qué ocurrirá después del pedido | Conviene priorizar confirmación clara, estados visibles y seguimiento del despacho |
 | Confianza como condición de adopción | Henrry enfatiza soporte humano y Pedro asocia servicio con continuidad del negocio | Una digitalización excesivamente impersonal puede afectar adopción | La experiencia debe combinar autoservicio con posibilidad de soporte cuando haga falta |
-
-La tabla ordena la relación entre evidencia empírica del cliente comercial y decisiones esperadas del portal B2B. Elaboración propia.
+> *Nota:* La tabla ordena la relación entre evidencia empírica del cliente comercial y decisiones esperadas del portal B2B. Elaboración propia.
 
 **Características objetivas:**
 
@@ -469,7 +461,7 @@ La tabla ordena la relación entre evidencia empírica del cliente comercial y d
 **Problemas más comunes:**
 
 - **Quiebres de stock inesperados:** Ambos entrevistados reportan haber enfrentado cancelaciones o faltantes por visibilidad insuficiente del stock antes de la entrega.
-- **Opacidad del ETA (Estimated Time of Arrival):** La falta de seguimiento de ruta obliga a esperar con alta incertidumbre la llegada del pedido y dificulta preparar la recepción.
+- **Opacidad del momento de llegada:** La falta de actualización del estado de despacho obliga a esperar con alta incertidumbre la llegada del pedido y dificulta preparar la recepción.
 - **Asimetría competitiva:** En la muestra aparece la percepción de que los clientes pequeños quedan en desventaja frente a cuentas grandes cuando el stock o la capacidad de entrega se tensionan.
 
 **Hallazgos clave para el Segmento 3:**
@@ -480,12 +472,12 @@ La tabla ordena la relación entre evidencia empírica del cliente comercial y d
 
 **Implicancias de diseño operativo para el flujo de despacho y entrega**
 
-El tramo final del flujo del pedido —despacho, seguimiento, incidencia y cierre con evidencia— forma parte de las responsabilidades del Segmento 2 (Jefatura logística y coordinación operativa). A partir de los hallazgos sobre visibilidad de entrega, necesidad de ETA comunicable, cierre defendible y carga operativa durante la ruta, se identifican las siguientes implicancias de diseño que complementan la caracterización del Segmento 2.
+El tramo final del flujo del pedido —despacho, seguimiento, incidencia y cierre con evidencia— forma parte de las responsabilidades del Segmento 2 (Jefatura logística y coordinación operativa). A partir de los hallazgos sobre visibilidad de entrega, necesidad de estado comunicable, cierre defendible y carga operativa durante la ruta, se identifican las siguientes implicancias de diseño que complementan la caracterización del Segmento 2.
 
 **Evidencia que sustenta estas implicancias:**
 
 - Desde la evidencia del Segmento 2, aparece la necesidad de contar con trazabilidad documental y cierre defendible frente a incidencias.
-- Desde el Segmento 3 (compradores), aparece la necesidad de una ETA comunicable, menor opacidad del despacho y confirmación confiable de entrega.
+- Desde el Segmento 3 (compradores), aparece la necesidad de un estado de despacho comunicable, menor opacidad operativa y confirmación confiable de entrega.
 - Desde el flujo del dominio, el cierre del pedido exige estados claros, registro de incidencias y prueba de entrega, lo que forma parte del alcance operativo que el Segmento 2 debe gestionar.
 
 **Implicancias de diseño para el tramo de despacho y entrega:**
@@ -494,7 +486,24 @@ El tramo final del flujo del pedido —despacho, seguimiento, incidencia y cierr
 - El estado del pedido debe mantenerse visible para el comprador, la coordinación comercial y la operación.
 - El cierre debe registrar una evidencia mínima consistente, suficiente para disminuir reclamos y ambigüedad posterior.
 
-### 2.2.4. Síntesis Global de Hallazgos
+**Contexto operativo complementario para análisis UX**
+
+Como complemento al análisis UX, el equipo registra los navegadores, dispositivos y canales más probables o declarados durante la interacción operativa. Cuando el dato no aparece de forma explícita en la entrevista, se considera como supuesto de diseño para orientar decisiones de compatibilidad y pruebas, no como respuesta literal de la persona entrevistada.
+
+| Entrevistado / segmento | Navegador considerado | Dispositivo principal | Canal de comunicación | Implicancia UX |
+| --- | --- | --- | --- | --- |
+| Lorena Silva / Coordinación comercial | Google Chrome como supuesto de análisis | Laptop durante gestión administrativa; móvil para coordinación en campo | WhatsApp declarado como canal operativo crítico; correo para formalidades | La captura de pedidos debe funcionar bien en Chrome y permitir consulta rápida sin depender de muchas ventanas. |
+| Cinthia Levano / Coordinación comercial | Google Chrome como supuesto de análisis | Computadora de oficina como contexto principal | WhatsApp, Trello y Excel declarados como herramientas de trabajo | El flujo debe centralizar información dispersa y reducir pasos repetidos entre sistemas. |
+| Celia Pérez / Ventas de ruta | Google Chrome como supuesto de análisis | Smartphone en campo; soporte administrativo posterior | Canales informales asociados al retorno desde aplicaciones lentas | La experiencia móvil debe ser liviana, rápida y tolerante a condiciones de conexión variables. |
+| Hilda Litano / Supervisión logística | Google Chrome como supuesto de análisis | Computadora de oficina para revisión documental | Coordinación interna y documentos operativos | La vista logística debe priorizar trazabilidad, certificados, stock y vencimientos en layouts de escritorio. |
+| Edith Taype / Operación en punto de venta | Google Chrome como supuesto de análisis | Dispositivo de trabajo compartido o consulta supervisada | Coordinación interna en piso y acceso mediado a información | El diseño debe contemplar permisos por rol y lectura clara para usuarios con acceso limitado al inventario. |
+| Jesica Sandoval / Supervisión Horeca | Safari como supuesto de análisis contextual; no declarado en entrevista | Dispositivo de escritorio o móvil según contexto de supervisión | Coordinación verbal con almacén para fechas de vencimiento y FEFO | Las pruebas deben cubrir Safari como navegador complementario y hacer visibles los criterios FEFO sin depender de llamadas. |
+| Pedro Puente / Comprador B2B | Google Chrome como supuesto de análisis | Móvil para pedidos rápidos; computadora para revisión si aplica | WhatsApp declarado para pedidos y coordinación | El portal debe ser entendible desde móvil, con confirmación y estado del pedido sin obligar a perseguir respuestas. |
+| Henrry García / Comprador B2B | Google Chrome como supuesto de análisis | Móvil para seguimiento y coordinación; computadora para revisión administrativa | Llamadas, WhatsApp y contacto humano para excepciones | El portal debe conservar una ruta de soporte humano y no convertir el autoservicio en una barrera de confianza. |
+
+> *Nota:* Esta tabla no agrega citas nuevas. Ordena información declarada en los resúmenes cuando existe evidencia y completa, como supuesto de análisis, los datos de navegador o dispositivo necesarios para orientar compatibilidad, responsive design y pruebas de UX.
+
+### ***2.2.4. Síntesis Global de Hallazgos***
 
 Tras el análisis detallado de los ocho perfiles levantados y de la lectura conjunta de los tres segmentos del producto, se identifica una **brecha de trazabilidad integral**. Esta brecha se manifiesta en la desconexión entre la promesa comercial capturada por canales informales y la realidad operativa gestionada con sistemas fragmentados, validaciones manuales y visibilidad incompleta del despacho.
 
@@ -503,11 +512,11 @@ Tras el análisis detallado de los ocho perfiles levantados y de la lectura conj
 - **6 de 8 entrevistados (75%)** mencionan a WhatsApp como canal operativo principal para coordinar pedidos o urgencias logísticas.
 - **7 de 8 entrevistados (88%)** reportan fragmentación de información entre sistemas formales (ERP), hojas de cálculo y canales informales.
 - **6 de 8 entrevistados (75%)** identifican re-digitación o validaciones manuales como fuente recurrente de retrabajo.
-- **5 de 8 entrevistados (63%)** señalan falta de visibilidad logística sobre stock real, ETA o estado del pedido.
+- **5 de 8 entrevistados (63%)** señalan falta de visibilidad logística sobre stock real, avance de despacho o estado del pedido.
 - **4 de 8 entrevistados (50%)** describen inestabilidad, lentitud o cierres inesperados del software actualmente usado.
 - **8 de 8 entrevistados (100%)** expresan apertura a adoptar una herramienta digital siempre que reduzca pasos, no añada complejidad y responda en entornos móviles.
 
-Elaboración propia a partir de la codificación temática de las ocho entrevistas.
+> *Nota:* Elaboración propia a partir de la codificación temática de las ocho entrevistas.
 
 *Distribución de Canales de Comunicación Identificados*
 
@@ -518,7 +527,7 @@ pie title Uso de Canales de Comunicación
     "ERP / Sistema Formal" : 10
 ```
 
-Elaboración propia. Resultados obtenidos de las 8 entrevistas a profundidad realizadas con el Segmento 1 (coordinación comercial), el Segmento 2 (jefatura logística y coordinación operativa) y el Segmento 3 (compradores comerciales B2B).
+> *Nota:* Resultados obtenidos de las 8 entrevistas a profundidad realizadas con el Segmento 1 (coordinación comercial), el Segmento 2 (jefatura logística y coordinación operativa) y el Segmento 3 (compradores comerciales B2B). Elaboración propia. 
 
 *Jerarquía de Puntos de Dolor por Incidencia en los Segmentos*
 
@@ -530,7 +539,6 @@ graph TD
     A --> E(Inestabilidad de Software Actual: 50%)
 ```
 
-Elaboración propia. Mapeo analítico construido a partir de la recurrencia de temas mencionados en las entrevistas; los porcentajes deben leerse como aproximaciones de frecuencia dentro de la muestra, no como mediciones estadísticas del mercado.
+> *Nota:* Mapeo analítico construido a partir de la recurrencia de temas mencionados en las entrevistas; los porcentajes deben leerse como aproximaciones de frecuencia dentro de la muestra, no como mediciones estadísticas del mercado. Elaboración propia.
 
 En conclusión, Nexa no solo debe resolver la toma de pedidos, sino articular de forma consistente los tres segmentos del producto: quien captura y valida el pedido (Segmento 1: Vendedoras y coordinación comercial), quien coordina logística, inventario, preparación y despacho (Segmento 2: Jefatura logística y coordinación operativa), y quien se abastece y necesita previsibilidad (Segmento 3: Compradores comerciales B2B). Las reglas, restricciones y criterios de control del dominio acompañan ese flujo completo, y la segmentación del informe se organiza en esos tres tramos del producto.
-

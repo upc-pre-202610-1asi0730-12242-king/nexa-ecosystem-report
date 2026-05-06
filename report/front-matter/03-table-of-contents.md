@@ -39,14 +39,20 @@
 
   <tr><td><b><a href="../40-chapter-4-product-design/4-1-style-guidelines.md">Capítulo IV: Product Design</a></b></td></tr>
   <tr><td><a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1. Style Guidelines</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.1. General Style Guidelines</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.2. Web Style Guidelines</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.1. Visual System Overview</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.2. Color Palette</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.3. Typography</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.4. Components and UI Patterns</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.5. Responsive and Surface Adaptation</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.6. Iconography</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.7. Accessibility (WCAG 2.1 AA)</a></td></tr>
   <tr><td><a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2. Information Architecture</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.1. Organization Systems</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.2. Labeling Systems</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.3. SEO Tags and Meta Tags</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.4. Searching Systems</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.5. Navigation Systems</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.2. Route Architecture and Navigation Storytelling</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.3. Labeling Systems</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.4. SEO Tags and Meta Tags</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.5. Searching Systems</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.6. Navigation Systems</a></td></tr>
   <tr><td><a href="../40-chapter-4-product-design/4-3-landing-page-ui-design.md">4.3. Landing Page UI Design</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-3-landing-page-ui-design.md">4.3.1. Landing Page Wireframe</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-3-landing-page-ui-design.md">4.3.2. Landing Page Mock-up</a></td></tr>
@@ -56,6 +62,7 @@
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-4-web-applications-ux-ui-design.md">4.4.3. Web Applications Mock-ups</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-4-web-applications-ux-ui-design.md">4.4.4. Web Applications User Flow Diagrams</a></td></tr>
   <tr><td><a href="../40-chapter-4-product-design/4-5-web-applications-prototyping.md">4.5. Web Applications Prototyping</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-5-web-applications-prototyping.md">4.5.1. Sistema de navegación aplicado al prototipo</a></td></tr>
   <tr><td><a href="../40-chapter-4-product-design/4-6-domain-driven-software-architecture.md">4.6. Domain-Driven Software Architecture</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-6-domain-driven-software-architecture.md">4.6.1. Design-Level EventStorming</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-6-domain-driven-software-architecture.md">4.6.2. Software Architecture Context Diagram</a></td></tr>
@@ -63,6 +70,8 @@
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-6-domain-driven-software-architecture.md">4.6.4. Software Architecture Components Diagrams</a></td></tr>
   <tr><td><a href="../40-chapter-4-product-design/4-7-software-object-oriented-design.md">4.7. Software Object-Oriented Design</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-7-software-object-oriented-design.md">4.7.1. Class Diagrams</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-7-software-object-oriented-design.md">4.7.2. Design Criteria</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-7-software-object-oriented-design.md">4.7.3. Traceability Matrix: Requirements and OOD</a></td></tr>
   <tr><td><a href="../40-chapter-4-product-design/4-8-database-design.md">4.8. Database Design</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1. Database Diagrams</a></td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-8-database-design.md">4.8.1.1. Identity</a></td></tr>
@@ -89,7 +98,7 @@
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.1.6. Services Documentation Evidence for Sprint Review</a></td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.1.7. Software Deployment Evidence for Sprint Review</a></td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.1.8. Team Collaboration Insights during Sprint</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.2. Sprint 2</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.2. Sprint 2 — Web Application Consolidation and Role-Aware Operations</a></td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.2.1. Sprint Planning 2</a></td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.2.2. Aspect Leaders and Collaborators</a></td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.2.3. Sprint Backlog 2</a></td></tr>

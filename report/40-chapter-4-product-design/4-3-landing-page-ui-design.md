@@ -1,5 +1,18 @@
 ## 4.3. Landing Page UI Design.
 
+La landing page es la superficie pública de entrada al ecosistema Nexa. Su función principal es comunicar la propuesta de valor, segmentar visitantes por tipo de operación y dirigirlos hacia la demostración o el acceso al producto. Cada elemento del sitio público tiene continuidad con alguna superficie operativa de la webapp o del portal B2B:
+
+| Elemento de la landing | Continuidad en el producto | Superficie relacionada |
+|---|---|---|
+| CTA "Ingresar" | Acceso autenticado al sistema | `/auth/login` |
+| Segmento Importadores/Mayoristas | Flujos de pedido asistido (S1) | `/ops/orders/new` |
+| Segmento Distribuidores | Control logístico y despacho (S2) | `/ops/dispatch`, `/ops/inventory` |
+| Segmento Cámaras Frías | Monitoreo y trazabilidad (S2) | `/ops/inventory`, `/ops/reports` |
+| Propuesta de catálogo/pedidos | Compra autónoma B2B (S3) | `/portal/catalog`, `/portal/orders` |
+| Explicación de la plataforma | Dashboard y módulos operativos | `/ops/dashboard` |
+
+Esta continuidad no implica que la landing replique las pantallas operativas; más bien, cada promesa comercial del sitio público se resuelve en una superficie funcional concreta del producto autenticado.
+
 ### 4.3.1. Landing Page Wireframe.
 
 La landing page de Nexa se trabajó primero en **Figma** mediante wireframes de baja fidelidad. El objetivo de esta etapa no fue cerrar una estética final, sino ordenar el contenido, probar la jerarquía de secciones y ubicar los puntos de conversión antes de pasar a mockups de mayor detalle.

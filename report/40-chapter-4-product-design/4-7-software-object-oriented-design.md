@@ -70,8 +70,8 @@ La siguiente matriz resume la relación entre requerimientos relevantes y las cl
 | **US51** | Saldo y riesgo comercial | `CommercialCondition` | `currentBalance`, `calculateCurrentRisk()` |
 | **US41** | Estados del pedido | `Order` / `OrderHistory` | `updateStatus(newStatus)` |
 | **US61** | Registro de pedido | `Order` / `OrderItem` | `calculateTotals()`, `authorize()` |
-| **US39** | Tracking y ETA | `Dispatch` | `calculateETA()`, `verifyColdChain()` |
-| **US42** | Registro de POD | `Dispatch` / `POD` | `finalizeDelivery(pod)`, `verifyIntegrity()` |
-| **US63** | Eventos de despacho y POD | `Dispatch` / `Incident` | `registerIncident(type)`, `resolve()` |
+| **US64** | Actualizar avance de despacho | `Dispatch` | `updateStatus(newStatus)`, `recordProgressNote()` |
+| **US65** | Registrar incidencia durante el despacho | `Dispatch` / `Incident` | `registerIncident(type)`, `resolve()` |
+| **US66** | Confirmar entrega con evidencia | `Dispatch` / `POD` | `finalizeDelivery(pod)`, `attachDeliveryEvidence()` |
 
 La matriz no reemplaza la especificación funcional del capítulo 3, pero sí muestra qué clases concentran la lógica necesaria para responder a los requerimientos más importantes del dominio. Elaboración propia.

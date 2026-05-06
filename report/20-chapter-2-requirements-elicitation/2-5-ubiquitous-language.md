@@ -1,45 +1,46 @@
 ## 2.5. Ubiquitous Language
 
-El siguiente glosario establece el vocabulario compartido entre el equipo de desarrollo y los expertos del dominio para el sistema Nexa. Todos los artefactos del proyecto —historias de usuario, diagramas, código y documentación— utilizan estos términos de manera consistente para evitar ambigüedades entre disciplinas e integrantes del equipo. Este glosario sigue los principios descritos por Eric Evans en *Domain-Driven Design: Tackling Complexity in the Heart of Software*, donde el Lenguaje Ubicuo se modela dentro de un contexto delimitado para que los términos tengan un significado preciso y unívoco acordado por todos los interesados.
+El siguiente glosario establece el vocabulario compartido del proyecto Nexa. Su objetivo es que el equipo, los usuarios de negocio y los evaluadores lean los mismos términos con el mismo significado, sin depender de instrucciones técnicas, nombres internos de herramientas o jerga innecesaria.
 
-La selección de términos también mantiene continuidad con la segmentación del informe. Por ello, el glosario refuerza el lenguaje de los tres segmentos canónicos del MVP, evitando que entrevistas, needfinding, modelado del dominio y backlog utilicen nombres distintos para el mismo actor o para la misma transición del pedido.
+La selección de términos se alinea con los tres segmentos del producto: coordinación comercial, jefatura logística y compradores comerciales B2B. También conecta entrevistas, needfinding, user stories, diseño UX/UI y arquitectura del dominio.
 
-*Glosario de Lenguaje Ubicuo — Dominio: Distribución B2B de productos refrigerados y congelados*
+*Glosario de Lenguaje Ubicuo — Dominio: Distribución B2B de productos refrigerados*
 
-| Término | Definición de Dominio | Contexto |
-|------|-------------------|---------|
-| **Order** | Solicitud formal de productos emitida por un cliente comercial a la empresa distribuidora, especificando productos, cantidades y condiciones de entrega. | Gestión de Pedidos |
-| **Assisted Order** | Pedido registrado por el equipo de coordinación comercial en nombre del cliente, utilizando un flujo estructurado dentro de Nexa. | Gestión de Pedidos |
-| **Order Draft** | Estado inicial editable de un pedido antes de su envío formal. | Gestión de Pedidos |
-| **Order Status** | Valor que refleja la fase actual del flujo del pedido: `draft` (borrador), `submitted` (enviado), `confirmed` (confirmado), `in_preparation` (en preparación), `dispatched` (despachado), `delivered` (entregado) o `cancelled` (cancelado). | Gestión de Pedidos |
-| **Catalog** | Conjunto estructurado de productos disponibles para compra B2B, incluyendo descripción, formato de presentación, requisitos de almacenamiento y condiciones comerciales. | Catálogo |
-| **Product Sheet** | Resumen técnico asociado a un producto, utilizado para proporcionar información relevante al cliente o al equipo comercial. | Catálogo / Comercial |
-| **SKU** *(Stock Keeping Unit)* | Código único que identifica cada variante de producto en el sistema. | Catálogo / Inventario |
-| **Batch** | Agrupación de unidades del mismo SKU producidas o recibidas en la misma fecha. | Inventario / Trazabilidad |
-| **FEFO** *(First Expired, First Out)* | Política de rotación que prioriza el despacho del lote con la fecha de vencimiento más cercana. | Inventario |
-| **Availability** | Cantidad realmente disponible para nuevos pedidos, tras deducir reservas, bloqueos o restricciones aplicables. | Inventario |
-| **Committed Stock** | Cantidad reservada para pedidos confirmados que aún no han sido entregados. | Inventario |
-| **Blocked Stock** | Cantidad o producto no habilitado para la venta debido a indisponibilidad, incidente sanitario o restricción operativa. | Inventario |
-| **Available Credit** | Capacidad comercial remanente con la que un cliente puede seguir comprando bajo condiciones de crédito. | Comercial |
-| **Outstanding Balance** | Deuda comercial fuera del plazo de pago acordado con la distribuidora. | Comercial |
-| **Delinquent Client** | Cliente que mantiene un saldo vencido y puede estar sujeto a bloqueos de nuevas operaciones. | Comercial |
-| **Commercial Conditions** | Reglas asignadas a un cliente, como lista de precios, método de pago, límite de crédito, documentos requeridos o límites de compra. | Comercial |
-| **Commercial Client** | Empresa que compra a la distribuidora para reventa o consumo en su propia operación: minimarket, bodega, restaurante, hotel u otro actor B2B. | Actor del Dominio |
-| **Merchandiser / Commercial Coordinator** | Personal interno que recibe, interpreta y gestiona los pedidos antes de la preparación y el despacho. | Actor del Dominio |
-| **Delivery Driver** | Personal responsable de ejecutar la entrega física del pedido y registrar su cierre. | Actor del Dominio |
-| **Refrigerated Distributor** | Cliente principal de Nexa (pago SaaS), responsable de vender y entregar productos refrigerados o congelados a clientes comerciales. | Actor del Dominio |
-| **Importer** | Empresa que trae productos del extranjero al mercado local y puede operar como proveedor o cliente SaaS. | Actor del Dominio |
-| **Cold Storage Operator** | Organización enfocada en el almacenamiento refrigerado y la trazabilidad de productos sensibles. | Actor del Dominio |
-| **Dispatch** | Proceso de envío del pedido desde la empresa distribuidora hacia el cliente. | Operaciones |
-| **ETA** *(Estimated Time of Arrival)* | Ventana de llegada estimada del despacho al punto de entrega. | Trazabilidad / Despacho |
-| **Incident** | Evento que altera el cumplimiento del pedido, como un retraso, observación operativa o problema en la entrega. | Trazabilidad / Operaciones |
-| **POD** *(Proof of Delivery)* | Evidencia digital o documental que respalda la entrega efectiva del pedido. | Trazabilidad / Despacho |
-| **Remittance Note** | Documento que acompaña al envío (Guía de Remisión) y que puede formar parte de la evidencia de entrega. | Despacho |
-| **Cold Chain** | Conjunto de condiciones y controles que aseguran que el producto se mantenga dentro de su rango térmico. | Calidad / Trazabilidad |
-| **Thermal Range** | Intervalo de temperatura permitido para almacenar un producto de manera segura. | Calidad |
-| **B2B Portal** | Interfaz web a través de la cual el cliente comercial consulta el catálogo, registra pedidos y revisa su seguimiento. | Módulo del Sistema |
-| **Landing Page** | Sitio web público orientado a comunicar la propuesta de valor de Nexa y capturar solicitudes de demo. | Sitio Público |
-| **Hybrid Support** | Enfoque donde la plataforma resuelve parte del proceso y el equipo comercial mantiene contacto humano cuando es necesario. | Servicio |
-| **Rework** | Actividad duplicada o correctiva que surge por ambigüedad o error en la recepción manual de pedidos. | Gestión de Pedidos |
+| Término | Definición |
+| --- | --- |
+| **Nexa** | Plataforma propuesta para ordenar pedidos B2B, inventario, despacho y trazabilidad en empresas que distribuyen productos refrigerados. |
+| **SaaS** | Modelo de software al que se accede por internet, normalmente mediante una suscripción, sin que el cliente tenga que instalar o mantener servidores propios. |
+| **B2B** | Relación comercial entre empresas. En Nexa, representa pedidos de negocios como bodegas, minimarkets, restaurantes u hoteles hacia una distribuidora. |
+| **Cadena de frío** | Conjunto de cuidados necesarios para mantener un producto dentro de una temperatura segura desde almacén hasta entrega. |
+| **Producto refrigerado** | Producto que necesita conservarse en frío para mantener su calidad, inocuidad y valor comercial. |
+| **Inventario** | Registro de productos disponibles, reservados o no aptos para venta dentro de la operación. |
+| **Lote** | Grupo de unidades de un mismo producto recibido o producido bajo una misma referencia, útil para controlar vencimiento y trazabilidad. |
+| **Vencimiento** | Fecha límite en la que un producto puede venderse o usarse de forma segura. |
+| **FEFO** | Regla de rotación que prioriza vender o despachar primero el lote que vence antes. Ayuda a reducir merma en productos perecibles. |
+| **FIFO** | Regla de rotación que prioriza vender o despachar primero lo que ingresó primero al inventario. Se usa cuando el vencimiento no es la principal restricción. |
+| **Pedido asistido** | Pedido registrado por coordinación comercial en nombre del cliente, especialmente cuando la solicitud llegó por WhatsApp, llamada u otro canal externo. |
+| **Cliente B2B** | Negocio que compra productos a una distribuidora para revenderlos o usarlos en su propia operación. |
+| **Coordinación comercial** | Rol que recibe pedidos, valida información del cliente, revisa condiciones comerciales y encamina la solicitud hacia operación. |
+| **Jefatura logística** | Rol que supervisa inventario, preparación, despacho, incidencias y cierre operativo del pedido. |
+| **Despacho** | Proceso mediante el cual el pedido sale de la distribuidora hacia el cliente. |
+| **Trazabilidad** | Capacidad de reconstruir qué pasó con un pedido, producto o lote desde su registro hasta su entrega. |
+| **POD / prueba de entrega** | Evidencia que respalda que un pedido fue entregado. Puede ser una confirmación, documento, firma o registro asociado al cierre. |
+| **Condición comercial** | Regla asignada a un cliente, como forma de pago, límite de crédito, lista de precios o restricción de compra. |
+| **Crédito** | Monto o plazo aprobado para que un cliente compre y pague después según condiciones acordadas. |
+| **Catálogo** | Lista organizada de productos disponibles para consulta o compra, con información relevante como presentación, precio, conservación y disponibilidad. |
+| **Portal B2B** | Superficie web pensada para que el cliente comercial revise catálogo, envíe pedidos y consulte el estado de sus compras. |
+| **Landing Page** | Página pública que explica la propuesta de valor de Nexa y permite iniciar contacto comercial. |
+| **Web Application** | Aplicación web usada desde un navegador para realizar tareas como gestionar pedidos, revisar inventario o consultar reportes. |
+| **User Flow** | Secuencia de pasos que una persona sigue para cumplir una meta concreta dentro del producto. |
+| **Wireflow** | Representación que combina pantallas y flujo de navegación para mostrar cómo cambia la experiencia cuando el usuario avanza o decide. |
+| **Wireframe** | Boceto estructural de una pantalla. Sirve para definir contenido, jerarquía y navegación antes del diseño visual final. |
+| **Mock-up** | Representación visual de alta fidelidad de una pantalla, con estilo, distribución y componentes cercanos al diseño final. |
+| **Prototype** | Versión navegable o demostrable de una experiencia, usada para validar recorrido, comprensión y flujo antes de construir una versión completa. |
+| **Fake API** | Servicio simulado de datos usado para probar pantallas y flujos sin depender todavía de un backend productivo. |
+| **Mock data** | Datos de prueba que representan casos reales de forma simulada para validar diseño, navegación o comportamiento del sistema. |
+| **Bounded Context** | Límite del dominio donde un conjunto de términos y reglas mantiene un significado claro. Por ejemplo, inventario y pedidos pueden tener reglas propias aunque estén conectados. |
+| **DDD** | Enfoque de diseño que organiza el software a partir del conocimiento del negocio, sus reglas y su lenguaje común. |
+| **C4 Model** | Forma de explicar la arquitectura de un sistema en distintos niveles: contexto, contenedores, componentes y, si hace falta, código. |
+| **ERD** | Diagrama que muestra las entidades principales de datos y sus relaciones, útil para entender cómo se estructura la información del sistema. |
 
-Los términos del lenguaje ubicuo resultan de la investigación cualitativa, los artefactos de needfinding y el modelado del dominio. Su uso es obligatorio en todos los entregables del proyecto para evitar contradicciones entre investigación, diseño y backlog. Elaboración propia.
+Este lenguaje ubicuo debe usarse de forma consistente en entrevistas, análisis, historias de usuario, diagramas y diseño de la solución. Elaboración propia.
