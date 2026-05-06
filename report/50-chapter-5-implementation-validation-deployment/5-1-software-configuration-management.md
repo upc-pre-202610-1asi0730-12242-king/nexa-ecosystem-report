@@ -27,57 +27,62 @@ Adicionalmente, el corte AV1 deja preparada una capacidad técnica futura que to
 
 ### 5.1.2. Source Code Management
 
-El control de versiones se organiza bajo GitFlow adaptado al alcance real del proyecto. Los cuatro repositorios activos reflejan estrategias de ramas acordes con el trabajo ejecutado hasta TB1.
+El control de versiones se organiza bajo una convención GitFlow adaptada al alcance real de AV1. La revisión de los repositorios activos permite distinguir una estructura mínima pero consistente de ramas y responsabilidades.
 
-*Tabla. Resumen de repositorios auditados al cierre de TB1*
-
-| Repositorio | Ramas revisadas | Commits no-merge revisados | Commits representativos TB1 | Evidencia principal |
-|---|---:|---:|---:|---|
-| `nexa-report` | `main`, `develop`, `release/tb1-final` | 558 | 100 | Historial GitHub, rama `main` |
-| `nexa-webapp` | `main`, `develop`, 12 ramas `feature/*`, 7 ramas `release/*` | 152 | 51 | Historial GitHub, rama `main` |
-| `nexa-website` | `main`, `develop`, `release/tb1-final` | 91 | 14 | Historial GitHub, rama `main` |
-| `nexa-platform` | `main`, `backup/platform-before-tb1-reset` | 15 | 13 | Historial GitHub, rama `main` |
-
-*Repositorios activos y configuración de versionado utilizada hasta TB1*
+*Repositorios activos y configuración de versionado utilizada en AV1*
 
 | Repositorio | Propósito | Rama principal observable | Otras ramas observables | URL |
 |---|---|---|---|---|
-| `nexa-report` | Informe técnico, trazabilidad académica y documentación del proyecto | `main` | `develop`, `release/tb1-report-language-commit-evidence`, `release/tb1-sprint-commit-evidence`, `release/tb1-final` | [nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) |
-| `nexa-website` | Implementación del sitio público desplegado | `main` | `develop`, `release/tb1-final` | [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) |
-| `nexa-webapp` | Web application TB1 con frontend operativo y datos simulados | `main` | `develop`, `feature/*` (11 ramas), `release/*` (7 ramas) | [nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) |
-| `nexa-platform` | Alcance backend planificado para siguiente hito | `main` | `backup/platform-before-tb1-reset` | [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) |
+| `nexa-report` | Informe técnico, trazabilidad académica y narrativa del proyecto | `main` | `develop`, `release/tb1-final` | [nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) |
+| `nexa-website` | Implementación del MVP público desplegado | `main` | `develop`, `release/tb1-final` | [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) |
 
 **GitFlow del Proyecto**
 
-La organización del control de versiones sigue un modelo GitFlow adaptado al alcance real del proyecto. La rama `main` concentra la versión entregable; `develop` integra trabajo previo a cada entrega; las ramas `feature/*` delimitan funcionalidades por frente de trabajo; las ramas `release/*` formalizan el cierre de cada hito. No se registró rama `hotfix` en este corte, dado que no fue necesaria una corrección urgente sobre una versión estable de producción en TB1.
+La organización del control de versiones puede representarse mediante un GitFlow adaptado al alcance real del proyecto: un informe técnico en Docs-as-Code, una landing page pública y una web application. Se propone un flujo deliberadamente ligero que prioriza trazabilidad sobre complejidad procedimental, y que resulta manejable para un equipo de cinco personas trabajando en tres frentes simultáneos.
 
-*Tabla. Tipos de rama, evidencia real en repositorios y propósito en el proyecto Nexa*
+*Tabla. Convención de ramas y ejemplos aplicados en Nexa*
 
-| Tipo de rama | Evidencia real en repositorios | Propósito en Nexa | Uso en TB1 |
-|---|---|---|---|
-| `main` | `nexa-report`, `nexa-webapp`, `nexa-website`, `nexa-platform` | Versión estable y entregable; rama de entrega oficial del hito | Concentra el incremento final de cada entrega: AV1 y TB1 |
-| `develop` | `nexa-report`, `nexa-webapp`, `nexa-website` | Integración continua de feature branches antes de cada release | Punto de convergencia del trabajo de Sprint 2 antes del merge a `main` |
-| `feature/*` | `nexa-webapp` (12 ramas activas), `nexa-report` (múltiples ramas) | Desarrollo enfocado por frente de trabajo o bounded context | Sprint 2: estructuración DDD, integración de Fake API en la nube, semántica de bounded contexts, alineación de capa DDD, router modular, infraestructura compartida |
-| `release/*` | `nexa-webapp` (7 ramas), `nexa-report`, `nexa-website` | Estabilización y validación previas al merge en `main` | Cierre TB1 por frente: `release/tb1-ddd-render-firebase-readiness`, `release/tb1-firebase-static-api-deploy`, `release/tb1-final-ddd-alignment`, `release/tb1-sprint-commit-evidence`, entre otras |
-| `hotfix/*` | No registrada en ningún repositorio en TB1 | Corrección urgente sobre versión estable de producción | No aplicable: no se requirió corrección urgente sobre producción en este hito |
-| `backup/*` | `nexa-platform` (`backup/platform-before-tb1-reset`) | Preservación del estado del repositorio previo a una reestructuración de alcance | Salvaguarda el estado de `nexa-platform` antes del ajuste al alcance real de TB1 |
+| Rama | Uso correcto | Ejemplo aplicado en Nexa |
+|---|---|---|
+| `main` | Versión estable entregable | Lo presentado como versión final para revisión académica |
+| `develop` | Integración previa a entrega | Unión de cambios del informe, landing page y webapp antes del corte |
+| `feature/*` | Desarrollo por funcionalidad o sección del informe | `feature/user-stories-rewrite`, `feature/landing-page-av1` |
+| `release/*` | Congelamiento de entrega para revisión final | `release/tb1-final` |
+| `hotfix/*` | Corrección urgente sobre versión estable | `hotfix/report-critical-wording` |
 
-*Tabla. Ramas observables por repositorio al cierre de TB1*
+**Flujo de integración propuesto**
 
-| Repositorio | Ramas principales | Ramas feature observadas | Ramas release observadas | Notas |
-|---|---|---|---|---|
-| `nexa-report` | `main`, `develop` | `feature/report-ubiquitous-language-commit-evidence`, `feature/relocate-sprint-commit-evidence` | `release/tb1-report-language-commit-evidence`, `release/tb1-sprint-commit-evidence`, `release/tb1-final` | GitFlow aplicado en el informe técnico desde TB1 |
-| `nexa-webapp` | `main`, `develop` | `feature/bounded-context-structure-polish`, `feature/cloud-fake-api-integration`, `feature/ddd-render-firebase-readiness`, `feature/final-ddd-layer-alignment`, `feature/final-firebase-static-api-deploy`, `feature/final-webapp-structure-semantics-responsive`, `feature/modular-router-alignment`, `feature/remove-hardcoded-business-data`, `feature/semantic-bounded-context-names`, `feature/server-fake-api-migration`, `feature/shared-infrastructure-api` | `release/tb1-cloud-api-cleanup`, `release/tb1-ddd-render-firebase-readiness`, `release/tb1-final-ddd-alignment`, `release/tb1-final-webapp-polish`, `release/tb1-firebase-static-api-deploy`, `release/tb1-semantic-contexts`, `release/tb1-structure-alignment` | Repositorio con mayor densidad de GitFlow en TB1; flujo completo `feature → develop → release → main` verificable |
-| `nexa-website` | `main`, `develop` | — | `release/tb1-final` | GitFlow básico aplicado; sin ramas feature individuales por el alcance de mantenimiento de la landing |
-| `nexa-platform` | `main` | — | — | `backup/platform-before-tb1-reset` preserva el estado previo al ajuste de alcance; sin GitFlow activo en TB1 |
-
-**Flujo de integración aplicado**
-
-```
-feature/* → develop → release/* → main
+```text
+feature/* → develop → release/tb1-final → main → tag/release
 ```
 
-> El detalle de commits representativos y la contribución por repositorio se documenta en la sección 5.2 como evidencia de implementación del Sprint 2 / TB1. En esta sección se conserva únicamente la estrategia de configuración, ramas y convenciones de control de versiones.
+Para efectos de trazabilidad, se establece como flujo de trabajo el ciclo en que cada unidad de trabajo parte de una rama `feature/*`, se integra en `develop` una vez revisada, avanza a `release/tb1-final` cuando el equipo congela el contenido para revisión, y finalmente se incorpora a `main` con un tag de versión semántica que identifica el hito entregado. Este flujo soporta cuatro funciones prácticas para el proyecto:
+
+- **Trazabilidad:** permite relacionar cada cambio con su autor, su alcance y el contexto de sprint en que se produjo.
+- **Control de integración:** evita que cambios parciales o no revisados alcancen la versión pública antes de pasar por `develop`.
+- **Estabilización de entrega:** la rama `release/*` actúa como zona de congelamiento donde solo se permiten ajustes menores antes del corte académico.
+- **Corrección urgente:** `hotfix/*` permite atender errores críticos detectados sobre `main` sin interrumpir el trabajo en curso en `develop`.
+
+Este esquema es adecuado para el proyecto porque separa los cambios del informe de los del sitio web, mantiene una versión pública limpia en `main`, y otorga estructura a los commits ya realizados sin exigir una adopción retroactiva perfecta.
+
+*Tabla. Correspondencia entre frentes de trabajo y ramas sugeridas*
+
+| Frente de trabajo | Rama sugerida |
+|---|---|
+| Reestructuración de segmentos objetivo | `feature/target-segments-rework` |
+| Actualización de needfinding | `feature/needfinding-update` |
+| Reescritura de User Stories | `feature/user-stories-rewrite` |
+| Priorización del Product Backlog | `feature/product-backlog-prioritization` |
+| Implementación de Landing Page AV1 | `feature/landing-page-av1` |
+| Implementación base de Web Application TB1 | `feature/webapp-tb1-core` |
+| Configuración de Fake API / JSON Server | `feature/json-fake-api` |
+| Evidencia de Sprint 2 | `feature/sprint-2-evidence` |
+| Limpieza final de entrega | `release/tb1-final` |
+| Corrección crítica de redacción o nombres | `hotfix/report-critical-wording` |
+
+En la práctica, `nexa-report` y `nexa-website` funcionan como dos flujos sincronizados: el primero preserva la justificación ingenieril y el segundo concentra la ejecución visible del MVP. Esta separación reduce ruido entre documentación y código y facilita relacionar commits, capturas Jira, artefactos de diseño y despliegue público dentro de un mismo sprint.
+
+La web application autenticada y la futura capa de servicios ya están nombradas en backlog, arquitectura y diseño, pero no forman parte del control de versiones activo que este capítulo necesita defender como evidencia de AV1. Por ello, aquí solo se documentan los repositorios que sí sostienen la entrega visible del sprint.
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
@@ -121,7 +126,7 @@ La configuración de despliegue de AV1 debe leerse en dos niveles: **despliegue 
 | Informe técnico `nexa-report` | Gestión Docs-as-Code y compilación posterior a PDF | **Activo como repositorio fuente** | Estructura `report/` y control de versiones en GitHub |
 | Gestión del sprint | Publicación de backlog y sprint en **Jira** | **Activa como evidencia de proceso** | Capturas y referencias del Sprint 1 |
 | Web application autenticada | Alcance futuro nombrado en diseño y backlog | **No forma parte de AV1** | Referida en capítulos 3 y 4 como evolución posterior |
-| Web application autenticada `nexa-webapp` | Publicación en **GitHub Pages** desde rama `main` vía GitHub Actions | **Activo en TB2** | [nexa-webapp](https://nexa-2f1bb.web.app) |
+| Web application autenticada `nexa-webapp` | Publicación en **GitHub Pages** desde rama `main` vía GitHub Actions | **Activo en TB2** | [nexa-webapp](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-webapp/) |
 | Backend y servicios REST | Alcance futuro nombrado en arquitectura y backlog | **No forma parte de AV1** | Referido en capítulos 3 y 4 como preparación técnica |
 
 En consecuencia, el procedimiento de despliegue defendible para AV1 se reduce a la capa que sí está operativa: versionar cambios en `nexa-website`, integrarlos en la rama estable, publicar el sitio en GitHub Pages y validar la navegación pública resultante. La capa transaccional del producto permanece identificada como siguiente fase de implementación y no debe leerse como evidencia de esta entrega.
