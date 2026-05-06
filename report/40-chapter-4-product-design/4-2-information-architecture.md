@@ -44,10 +44,10 @@ La webapp utiliza Vue Router con hash history (necesario para despliegue en GitH
 | Ops | `/ops/inventory` | Control de inventario | Roberto (S2) | Disponibilidad, FEFO, riesgo |
 | Ops | `/ops/dispatch` | Despacho y asignación | Roberto (S2) | Preparar salidas, asignar flota |
 | Ops | `/ops/reports` | Reportes operativos | Valeria (S1), Roberto (S2) | Analítica de negocio |
-| Portal | `/portal/catalog` | Catálogo de productos | Lucía (S3) | Explorar y seleccionar productos |
-| Portal | `/portal/orders` | Mis pedidos | Lucía (S3) | Historial, seguimiento, recompra |
+| Portal | `/portal/catalog` | Catálogo de productos | Elena (S3) | Explorar y seleccionar productos |
+| Portal | `/portal/orders` | Mis pedidos | Elena (S3) | Historial, seguimiento, recompra |
 
-La arquitectura distingue superficies por scope: un comprador B2B (Lucía) se orienta al grupo `/portal`, mientras que coordinación comercial y jefatura logística operan sobre `/ops`. Dentro de Ops, la navegación por responsabilidad organiza la visibilidad de módulos sin convertir esta sección en evidencia de permisos productivos.
+La arquitectura distingue superficies por scope: un comprador B2B (Elena) se orienta al grupo `/portal`, mientras que coordinación comercial y jefatura logística operan sobre `/ops`. Dentro de Ops, la navegación por responsabilidad organiza la visibilidad de módulos sin convertir esta sección en evidencia de permisos productivos.
 
 ### 4.2.3. Labeling Systems
 
@@ -125,7 +125,7 @@ La webapp presenta un sidebar colapsable con módulos agrupados por dominio. Un 
 
 - **Valeria (S1)**: ve Dashboard, Pedidos, Clientes, Catálogo, Reportes.
 - **Roberto (S2)**: ve Dashboard, Inventario, Despacho, Reportes.
-- **Lucía (S3)**: ve Catálogo, Mis pedidos, Seguimiento.
+- **Elena (S3)**: ve Catálogo, Mis pedidos, Seguimiento.
 
 Los módulos internos usan tabs y breadcrumbs para movimiento lateral sin perder contexto (ej. `Pedidos > #ORD-2041 > Trazabilidad`).
 
