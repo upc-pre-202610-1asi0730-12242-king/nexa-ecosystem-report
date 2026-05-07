@@ -131,25 +131,28 @@ Cada problem statement articula un dominio de fricción, un segmento afectado, u
 
 #### 1.2.2.2. Lean UX Assumptions
 
-**Suposiciones de negocio y viabilidad**
+Las suposiciones se organizan en cinco categorías que cubren el negocio, los usuarios, el producto, la tecnología y el mercado/canal. Cada una se formula como hipótesis de trabajo sujeta a validación, no como hecho establecido.
 
-- Creemos que nuestros clientes (empresas distribuidoras e importadoras) tienen una gran necesidad de digitalizar, centralizar y ordenar la recepción de pedidos B2B y la gestión de su catálogo de productos refrigerados/congelados.
-- El valor principal que un cliente quiere de nuestro servicio es la reducción de errores en la toma de pedidos y el ahorro de tiempo operativo en el cuadre diario de ventas y despachos.
-- El cliente también puede obtener valor de la visibilidad básica del estado del despacho y de contar con un historial de compras centralizado, abandonando el desorden de WhatsApp o Excel.
-- Adquiriremos a la mayoría de nuestros clientes a través de ventas B2B directas, demostraciones guiadas del producto y referidos dentro del sector de distribución de alimentos.
+*Tabla: Lean UX Assumptions por categoría*
 
-**Suposiciones sobre usuarios y comportamiento**
+| Tipo de assumption | Assumption | Segmento relacionado | Riesgo si es falsa | Cómo se valida |
+|:---|:---|:---|:---|:---|
+| **Business** | Las distribuidoras e importadoras necesitan digitalizar y centralizar la recepción de pedidos B2B y la gestión de su catálogo de productos refrigerados | S1, S2 | El producto no genera valor diferencial respecto al uso de Excel o WhatsApp | Entrevistas con distribuidoras sobre fricción real en gestión de pedidos |
+| **Business** | El valor principal que busca el cliente es la reducción de errores en la toma de pedidos y el ahorro de tiempo operativo en el cuadre diario | S1, S2 | El precio o el soporte técnico son más determinantes que la reducción de errores | Sesiones de validación con perfiles de compra en distribuidoras target |
+| **Business** | El modelo de acceso SaaS es viable para distribuidoras de tamaño mediano en el mercado peruano | S1, S2 | El cliente prefiere soluciones on-premise o no está dispuesto a pagar por software | Demos guiadas con distribuidoras y relevamiento de disposición a pagar |
+| **User** | La coordinación comercial adoptará una herramienta nueva si reduce pasos manuales y hace visibles stock, crédito y estado del pedido en un solo flujo | S1 | El usuario vuelve al canal informal por costumbre aunque el sistema esté disponible | Pruebas de usabilidad y sesiones de validación con coordinadoras comerciales |
+| **User** | El comprador B2B usará un portal si es más claro que WhatsApp y mantiene opciones de soporte humano disponibles | S3 | El comprador prefiere siempre el canal informal independientemente de la claridad del portal | Entrevistas de validación con compradores B2B del canal tradicional |
+| **User** | Los usuarios internos (S1/S2) acceden preferentemente desde navegadores web en computadoras o tablets durante la jornada laboral | S1, S2 | El flujo no es usable en las resoluciones y condiciones reales de uso | Testing en múltiples resoluciones durante la validación con perfiles internos |
+| **User** | El personal de despacho puede usar el sistema desde navegador móvil en ruta para consultar y registrar avances | S2 | El flujo en dispositivos móviles no es suficientemente ágil para uso en campo | Validación del flujo de despacho con usuarios del segmento en resoluciones móviles |
+| **Product** | Una solución web responsiva es suficiente para validar el valor principal del producto en su primera iteración sin necesidad de una aplicación móvil nativa | S1, S2, S3 | Los usuarios no adoptan la experiencia web y requieren una app nativa desde el inicio | Sesiones de validación con prototipo web antes de invertir en desarrollo nativo |
+| **Product** | El flujo mínimo viable debe cubrir catálogo, captura de pedido, condiciones comerciales, inventario básico y seguimiento antes de profundizar en integraciones avanzadas | S1, S2, S3 | El alcance definido es demasiado amplio para una primera iteración o demasiado reducido para generar valor percibido | Revisión de alcance con feedback de usuarios y priorización del backlog |
+| **Product** | La claridad del flujo y la confiabilidad de la información son más determinantes para la adopción que una lista extensa de funcionalidades | S1, S2 | Los usuarios requieren más funciones para valorar el sistema como alternativa a Excel/WhatsApp | Sesiones de usabilidad priorizando los flujos core con usuarios representativos |
+| **Technical** | Es posible validar el flujo operativo principal con una experiencia web sin requerir infraestructura de backend compleja ni integraciones con sistemas externos desde la primera versión | S1, S2, S3 | Los usuarios o evaluadores exigen servicios en producción y no aceptan una validación con datos simulados | Comunicar el alcance de la primera iteración durante la validación y ajustar en función del feedback recibido |
+| **Technical** | Una plataforma web construida con tecnologías estándar del lado del cliente es suficiente para demostrar el valor del flujo principal sin depender de un framework específico o arquitectura avanzada desde el inicio | S1, S2, S3 | La experiencia resulta lenta, poco mantenible o insuficiente para soportar la validación con usuarios | Evaluar el stack tecnológico en función de los resultados de la validación inicial antes de escalar |
+| **Market / Channel** | WhatsApp sigue siendo el canal dominante en la coordinación de pedidos B2B; Nexa debe reducir esa dependencia de forma progresiva, no eliminarla de inmediato | S1, S3 | El mercado ya ha migrado espontáneamente a plataformas digitales y no requiere convivencia con canales informales | Análisis de entrevistas y datos de madurez digital del canal tradicional |
+| **Market / Channel** | Las distribuidoras de tamaño mediano son el segmento de adopción más viable para el MVP antes de expandirse a grandes distribuidoras o pequeños negocios | S1, S2 | Las distribuidoras grandes tienen soluciones propias y las pequeñas no tienen presupuesto ni madurez digital suficiente | Demos guiadas con distribuidoras del segmento target y análisis de feedback inicial |
 
-- La coordinación comercial adoptará una herramienta nueva si reduce pasos manuales y hace visibles stock, crédito y estado del pedido.
-- El cliente comercial usará un portal B2B si este es más claro que el canal informal y mantiene opciones de soporte humano.
-- Nexa podría convertirse en una herramienta operativa frecuente durante la jornada laboral para revisar disponibilidad de productos perecibles, registrar compras y consultar el avance de sus pedidos.
-- Los perfiles administrativos y clientes lo usarán preferentemente desde navegadores web en computadoras o tablets, mientras que el personal de despacho lo utilizará desde navegadores móviles en ruta.
-
-**Suposiciones de solución y alcance**
-
-- Una web application responsiva sigue siendo suficiente para validar el valor principal del producto en esta etapa.
-- El MVP debe cubrir sitio público, catálogo, pedido, condiciones comerciales, inventario básico y seguimiento antes de profundizar en integraciones avanzadas.
-- La claridad del flujo y la confiabilidad de la información son más determinantes para la adopción que una lista extensa de funcionalidades.
+> *Nota:* Las suposiciones son hipótesis de trabajo que guían el diseño del MVP y el proceso de validación. No se presentan como hechos establecidos. Los segmentos S1, S2 y S3 corresponden a Coordinación comercial, Jefatura logística y Comprador B2B respectivamente. Elaboración propia.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 

@@ -2,7 +2,7 @@
 
 El siguiente glosario establece el vocabulario compartido del proyecto Nexa. Su objetivo es que el equipo, los usuarios de negocio y los evaluadores lean los mismos términos con el mismo significado, sin depender de instrucciones técnicas, nombres internos de herramientas o jerga innecesaria.
 
-La selección de términos se alinea con los tres segmentos del producto: coordinación comercial, jefatura logística y compradores comerciales B2B. También conecta entrevistas, needfinding, user stories, diseño UX/UI y arquitectura del dominio.
+La selección de términos se alinea con los tres segmentos del producto: coordinación comercial, jefatura logística y compradores comerciales B2B. También conecta entrevistas, needfinding, historias de usuario y diseño de la solución. El glosario incluye únicamente términos del dominio de negocio; conceptos de implementación, arquitectura o herramientas se documentan en los capítulos correspondientes.
 
 *Glosario de Lenguaje Ubicuo — Dominio: Distribución B2B de productos refrigerados*
 
@@ -30,17 +30,11 @@ La selección de términos se alinea con los tres segmentos del producto: coordi
 | **Catálogo** | Lista organizada de productos disponibles para consulta o compra, con información relevante como presentación, precio, conservación y disponibilidad. |
 | **Portal B2B** | Superficie web pensada para que el cliente comercial revise catálogo, envíe pedidos y consulte el estado de sus compras. |
 | **Landing Page** | Página pública que explica la propuesta de valor de Nexa y permite iniciar contacto comercial. |
-| **Web Application** | Aplicación web usada desde un navegador para realizar tareas como gestionar pedidos, revisar inventario o consultar reportes. |
-| **User Flow** | Secuencia de pasos que una persona sigue para cumplir una meta concreta dentro del producto. |
-| **Wireflow** | Representación que combina pantallas y flujo de navegación para mostrar cómo cambia la experiencia cuando el usuario avanza o decide. |
-| **Wireframe** | Boceto estructural de una pantalla. Sirve para definir contenido, jerarquía y navegación antes del diseño visual final. |
-| **Mock-up** | Representación visual de alta fidelidad de una pantalla, con estilo, distribución y componentes cercanos al diseño final. |
-| **Prototype** | Versión navegable o demostrable de una experiencia, usada para validar recorrido, comprensión y flujo antes de construir una versión completa. |
-| **Fake API** | Servicio simulado de datos usado para probar pantallas y flujos sin depender todavía de un backend productivo. |
-| **Mock data** | Datos de prueba que representan casos reales de forma simulada para validar diseño, navegación o comportamiento del sistema. |
-| **Bounded Context** | Límite del dominio donde un conjunto de términos y reglas mantiene un significado claro. Por ejemplo, inventario y pedidos pueden tener reglas propias aunque estén conectados. |
-| **DDD** | Enfoque de diseño que organiza el software a partir del conocimiento del negocio, sus reglas y su lenguaje común. |
-| **C4 Model** | Forma de explicar la arquitectura de un sistema en distintos niveles: contexto, contenedores, componentes y, si hace falta, código. |
-| **ERD** | Diagrama que muestra las entidades principales de datos y sus relaciones, útil para entender cómo se estructura la información del sistema. |
+| **Stock disponible** | Cantidad de producto que puede destinarse a nuevos pedidos sin comprometer reservas previas ni unidades no aptas para venta. |
+| **Merma** | Pérdida de producto por deterioro, vencimiento o error operativo. Indicador clave en la gestión de perecederos refrigerados. |
+| **Canal de venta** | Medio por el que un cliente B2B envía su pedido: WhatsApp, llamada telefónica, portal web u otra coordinación directa. |
+| **Seguimiento de pedido** | Capacidad del cliente o del equipo interno de consultar el avance de un pedido desde su registro hasta su entrega. |
+| **Almacén** | Espacio físico donde se conservan y organizan los productos refrigerados antes de su preparación y despacho. |
+| **Incidencia** | Evento inesperado registrado durante la preparación o entrega de un pedido, como diferencias de cantidad, retraso o problema de recepción. |
 
 Este lenguaje ubicuo debe usarse de forma consistente en entrevistas, análisis, historias de usuario, diagramas y diseño de la solución. Elaboración propia.

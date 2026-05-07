@@ -27,9 +27,9 @@
   <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.1. User Personas</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.2. User Task Matrix</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.3. User Journey Mapping</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">As-Is Scenario Map</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.4. Empathy Mapping</a></td></tr>
-  <tr><td><a href="../20-chapter-2-requirements-elicitation/2-4-big-picture-event-storming.md">2.4. Big Picture EventStorming</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.4. As-Is Scenario Map</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.5. Empathy Mapping</a></td></tr>
+  <tr><td><a href="../20-chapter-2-requirements-elicitation/2-4-big-picture-event-storming.md">2.4. Big Picture Eventstorming</a></td></tr>
   <tr><td><a href="../20-chapter-2-requirements-elicitation/2-5-ubiquitous-language.md">2.5. Ubiquitous Language</a></td></tr>
 
   <tr><td><b><a href="../30-chapter-3-requirements-specification/3-1-user-stories.md">Capítulo III: Requirements Specification</a></b></td></tr>
@@ -39,15 +39,20 @@
 
   <tr><td><b><a href="../40-chapter-4-product-design/4-1-style-guidelines.md">Capítulo IV: Product Design</a></b></td></tr>
   <tr><td><a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1. Style Guidelines</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.1. General Style Guidelines</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.2. Web Style Guidelines</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.1. Visual System Overview</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.2. Color Palette</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.3. Typography</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.4. Components and UI Patterns</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.5. Responsive and Surface Adaptation</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.6. Iconography</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-1-style-guidelines.md">4.1.7. Accessibility (WCAG 2.1 AA)</a></td></tr>
   <tr><td><a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2. Information Architecture</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.1. Organization Systems</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.1.1. Route Architecture and Navigation Storytelling</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.2. Labeling Systems</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.3. SEO Tags and Meta Tags</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.4. Searching Systems</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.5. Navigation Systems</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.2. Route Architecture and Navigation Storytelling</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.3. Labeling Systems</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.4. SEO Tags and Meta Tags</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.5. Searching Systems</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.6. Navigation Systems</a></td></tr>
   <tr><td><a href="../40-chapter-4-product-design/4-3-landing-page-ui-design.md">4.3. Landing Page UI Design</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-3-landing-page-ui-design.md">4.3.1. Landing Page Wireframe</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-3-landing-page-ui-design.md">4.3.2. Landing Page Mock-up</a></td></tr>

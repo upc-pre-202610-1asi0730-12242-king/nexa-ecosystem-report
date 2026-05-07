@@ -39,17 +39,19 @@ La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado 
 
 ### ***2.3.3. User Journey Mapping***
 
-*Journey Map — Segmento 1: Coordinación Comercial*
+Los Journey Maps describen la situación actual de cada segmento antes de Nexa. Representan el recorrido As-Is: cómo se realiza hoy cada proceso, qué fricciones aparecen en cada etapa y dónde se concentra el mayor estrés operativo. No describen la experiencia dentro de la plataforma propuesta.
+
+*Journey Map — Segmento 1: Coordinación Comercial (situación actual, As-Is)*
 ![Journey Map 1](../assets/images/journey-map-1.png)
-> *Nota:* Mapeo del proceso de captura y gestión de pedidos, identificando puntos de dolor en la transcripción manual. Elaboración propia.
+> *Nota:* Mapeo del proceso actual de captura y gestión de pedidos, identificando puntos de dolor en la transcripción manual y la dispersión de canales. Elaboración propia.
 
-*Journey Map — Segmento 2: Despacho y Entrega*
+*Journey Map — Segmento 2: Despacho y Entrega (situación actual, As-Is)*
 ![Journey Map 2](../assets/images/journey-map-2.png)
-> *Nota:* Mapeo de la ruta logística, enfatizando los cuellos de botella en la comunicación de incidencias. Elaboración propia.
+> *Nota:* Mapeo de la ruta logística actual, enfatizando los cuellos de botella en la comunicación de incidencias y la falta de trazabilidad operativa. Elaboración propia.
 
-*Journey Map — Segmento 3: Cliente Comercial B2B*
+*Journey Map — Segmento 3: Cliente Comercial B2B (situación actual, As-Is)*
 ![Journey Map 3](../assets/images/journey-map-3.png)
-> *Nota:* Mapeo de la experiencia de abastecimiento del cliente, destacando la incertidumbre en el seguimiento de entrega. Elaboración propia.
+> *Nota:* Mapeo de la experiencia actual de abastecimiento del cliente, destacando la incertidumbre en el seguimiento de entrega y la dependencia del vendedor. Elaboración propia.
 
 El principal valor del bloque no está en describir tres trayectos separados, sino en demostrar que el punto de dolor cambia de forma pero no de origen. En el Segmento 1 el problema aparece como ambigüedad y retrabajo; en el Segmento 2 como opacidad del abastecimiento e incertidumbre; y en el Segmento 3 como incidencias, demoras y cierre sin evidencia suficiente. Dicho de otro modo, los journeys confirman que el problema central no es una sola pantalla mal resuelta, sino una cadena de decisiones y validaciones que hoy pierde continuidad entre actores.
 
@@ -87,3 +89,34 @@ A continuación, se presentan los Empathy Maps desarrollados para cada segmento 
 *Empathy Map — Segmento 3: Cliente Comercial B2B*
 ![Empathy Map 3](../assets/images/empathy-map-3.png)
 > *Nota:* Identificación de motivadores extrínsecos e intrínsecos para la digitalización del comprador comercial B2B. Elaboración propia.
+
+### ***2.3.6. User Goals por Segmento***
+
+Los user goals sintetizan el objetivo principal que cada persona busca alcanzar al interactuar con el producto. Su función es conectar los hallazgos de la investigación cualitativa con los flujos de diseño documentados en la sección 4.4, asegurando que cada wireflow y user flow tenga origen en una necesidad identificada y no en una decisión arbitraria de diseño.
+
+*Tabla: User Goals por segmento*
+
+| Segmento | User Persona | User goal | Pain actual | Criterio de éxito | Flujo relacionado |
+|:---|:---|:---|:---|:---|:---|
+| S1 — Coordinación comercial | Valeria Sánchez | Registrar o asistir un pedido B2B validando cliente, condición comercial y disponibilidad de productos, con trazabilidad posterior del estado del pedido | Captura manual por WhatsApp/audio, doble digitación, validaciones dispersas entre ERP y teléfono, sin historial integrado accesible | El pedido se crea con cliente y productos validados en un solo flujo estructurado, queda trazable y es visible para coordinación operativa | User Flow S1 — Pedido asistido (4.4.4) |
+| S2 — Jefatura logística | Roberto García | Supervisar inventario, riesgo FEFO, despacho y cierre de entrega con registro de conformidad | Opacidad del abastecimiento, coordinación verbal con almacén, cierres de entrega sin evidencia digital y falta de visibilidad compartida entre áreas | El ciclo logístico completo (inventario → despacho → cierre) se ejecuta con información estructurada y evidencia registrada en el sistema | User Flow S2 — Inventario, despacho y cierre (4.4.4) |
+| S3 — Comprador B2B | Elena Litano | Consultar catálogo, seleccionar productos y dar seguimiento autónomo a pedidos desde un portal B2B sin depender del vendedor | Incertidumbre sobre disponibilidad real, dependencia del vendedor para conocer el estado del pedido y ausencia de historial de compras accesible | El comprador puede explorar el catálogo, enviar un pedido y consultar su estado sin necesidad de contacto por WhatsApp ni llamada telefónica | User Flow S3 — Portal de compra (4.4.4) — *Flujo de planificación, primera iteración* |
+
+> *Nota:* S3 se documenta como flujo de planificación en la primera iteración; los flujos internos S1 y S2 constituyen la evidencia de validación principal. Los user goals conectan la investigación cualitativa del needfinding con los wireflows y user flows de la sección 4.4. Elaboración propia.
+
+### ***2.3.7. Trazabilidad investigación → producto***
+
+La siguiente tabla documenta cómo cada insumo de investigación derivó en un artefacto de diseño, qué segmento afecta y cómo informa las decisiones de producto. Su función es demostrar que el MVP no surge de suposiciones no sustentadas, sino de evidencia cualitativa sistemáticamente procesada.
+
+*Tabla: Trazabilidad investigación → producto*
+
+| Insumo de investigación | Artefacto derivado | Segmento | Cómo informa el diseño del producto |
+|:---|:---|:---|:---|
+| Entrevistas: pedidos recibidos por WhatsApp, audio y listas manuales; doble digitación y errores de transcripción | User Persona S1 (Valeria) → User Goal S1 | S1 | Justifica el flujo asistido de captura de pedido con validación de cliente, stock y condición comercial en un solo paso |
+| Entrevistas: falta de visibilidad de inventario en tiempo real, coordinación verbal con almacén, cierres sin evidencia | User Persona S2 (Roberto) → User Goal S2 | S2 | Justifica el módulo de inventario con FEFO, el dispatch board y el cierre simulado POD mock |
+| Entrevistas: incertidumbre del comprador sobre disponibilidad y estado del pedido; dependencia del vendedor | User Persona S3 (Elena) → User Goal S3 | S3 | Justifica el portal B2B con catálogo consultable, flujo de pedido y seguimiento autónomo |
+| User Task Matrix: tareas de alta frecuencia e importancia por arquetipo | Priorización de funcionalidades core del MVP | S1, S2, S3 | Identifica qué tareas el producto debe resolver primero para generar valor operativo visible |
+| Journey Maps: mapeo de fricciones por etapa del proceso actual | Puntos de dolor por segmento → decisiones de diseño | S1, S2, S3 | Revela los momentos de mayor fricción y orienta la priorización de estados visibles, trazabilidad y transiciones entre pantallas |
+| As-Is Scenario Map: recorrido operativo actual en seis etapas | Oportunidades de diseño por etapa operativa | S1, S2, S3 | Conecta el estado actual del proceso fragmentado con las decisiones de alcance del MVP y la lógica de los flujos diseñados |
+
+> *Nota:* La trazabilidad demuestra que cada decisión de diseño tiene origen identificable en evidencia cualitativa. Los artefactos de investigación son fuente directa del backlog, los user goals y la arquitectura de información. Elaboración propia.

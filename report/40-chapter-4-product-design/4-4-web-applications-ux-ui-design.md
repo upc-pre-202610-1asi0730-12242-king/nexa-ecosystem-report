@@ -1,6 +1,6 @@
 ## 4.4. Web Applications UX/UI Design.
 
-Esta sección documenta el diseño UX/UI de las dos superficies autenticadas del producto: la **webapp operativa interna (Ops)** para coordinación comercial (S1) y logística (S2), y el **portal B2B** para compradores comerciales (S3). Ambas superficies comparten el sistema visual definido en 4.1, pero operan con criterios de diseño distintos a la landing: aquí la prioridad es **claridad operativa, lectura rápida del estado del negocio y reducción de fricción en tareas repetitivas**.
+Esta sección documenta el diseño UX/UI de las superficies autenticadas del producto. La **webapp operativa interna (Ops)** para coordinación comercial (S1) y logística (S2) constituye la evidencia principal de diseño e implementación de esta entrega. El **portal B2B** para compradores comerciales (S3) se documenta a nivel de planificación en TB1: el flujo está definido mediante wireflow y user flow Mermaid, pero no cuenta con mockups implementados en esta iteración. S1 y S2 son la evidencia de validación principal. Las tres superficies comparten el sistema visual definido en 4.1, pero la prioridad de diseño en la webapp Ops es **claridad operativa, lectura rápida del estado del negocio y reducción de fricción en tareas repetitivas**.
 
 Cada pantalla resuelve una pregunta concreta del dominio: qué pedido está en riesgo, qué producto necesita atención, qué validación bloquea la operación, qué unidad está en ruta y qué evidencia respalda el cierre. La documentación se organiza en wireframes, wireflows, mock-ups y user flows como artefactos de diseño UX/UI.
 
@@ -124,6 +124,26 @@ Elaboración propia. Este wireflow es de nivel pantalla. Separa los roles intern
 
 La evidencia visual se documenta en Markdown mediante notación `flowchart` y se mantiene en el tablero FigJam como artefacto colaborativo de diseño. El reporte incluye la estructura completa del flujo y mockups representativos; no replica todas las pantallas del tablero como galería.
 
+#### Evidencia visual Lucidchart — Userflows S1/S2
+
+El user flow del Segmento 1 representa el recorrido de Valeria, responsable de coordinación comercial, desde el acceso al sistema hasta la creación y seguimiento de un pedido asistido. El flujo incluye validaciones de condición comercial, disponibilidad de productos y rutas alternativas para restricciones de cliente o cantidad insuficiente.
+
+[Ver userflow S1 en Lucidchart](https://lucid.app/lucidchart/8f6d6af2-f229-47f8-ba02-86b27cdc6fed/edit?invitationId=inv_09391266-7e11-4614-8edf-12cf979cdabf)
+
+![S1 Commercial Userflow](../assets/images/userflows/s1-commercial-userflow-lucid.png)
+
+Figura. User flow visual para el Segmento 1 — coordinación comercial.
+
+El user flow del Segmento 2 representa el recorrido de Roberto, responsable logístico, desde la revisión de inventario y lotes con criterio FEFO hasta la gestión de despacho y cierre con POD simulado. El flujo incluye rutas alternativas para riesgo operativo, despacho no listo y evidencia incompleta.
+
+[Ver userflow S2 en Lucidchart](https://lucid.app/lucidchart/b91c8e98-a38b-456a-92e5-f942be7e8439/edit?invitationId=inv_5c030713-67e5-4e84-90bf-661b26cef528)
+
+![S2 Logistics Userflow](../assets/images/userflows/s2-logistics-userflow-lucid.png)
+
+Figura. User flow visual para el Segmento 2 — jefatura logística.
+
+Para el Segmento 3, el flujo del comprador B2B se mantiene como alcance parcial de TB1. Se documenta a nivel de planificación para conectar catálogo, pedido y seguimiento, sin presentar evidencia completa de mockups finales en esta entrega.
+
 ### 4.4.3. Web Applications Mock-ups.
 
 Los mockups representan pantallas seleccionadas de alta fidelidad para la dirección actual de la webapp. Se agrupan por segmento y user goal para mostrar evidencia visual sin convertir el capítulo en una galería extensa. El tablero completo contiene más pantallas; este reporte incluye solo vistas representativas que sostienen los recorridos S1 y S2, mientras que S3 permanece documentado como flujo portal de planificación en esta iteración.
@@ -171,6 +191,31 @@ Elaboración propia. Este grupo resume el recorrido logístico desde monitoreo h
 El portal B2B se documenta como flujo comprador de planificación. En esta entrega no se agregan capturas S3 porque el ZIP de mockups recibido contiene material S1 y S2, no pantallas portal. Para evitar rutas inventadas, la evidencia visual del portal queda representada por el user flow Mermaid de Elena y por su separación explícita respecto a los roles internos Ops.
 
 ### 4.4.4. Web Applications User Flow Diagrams.
+
+#### Criterios de resolución de flujo
+
+El diseño UX/UI de aplicaciones web se construye en cuatro niveles de resolución creciente. Cada nivel responde a una pregunta concreta sobre el recorrido del usuario y sirve de base para el siguiente. La secuencia es: User Goal → Task Flow → Wireflow → User Flow.
+
+*Tabla: Niveles de resolución de flujo aplicados en Nexa*
+
+| Nivel | Propósito en el diseño | Evidencia en esta sección |
+|:---|:---|:---|
+| **User Goal** | Define qué objetivo concreto persigue cada persona antes de entrar al flujo. Responde a: ¿qué quiere lograr este usuario? | Objetivos de S1, S2 y S3 derivados del needfinding (sección 2.3.6) |
+| **Task Flow** | Lista las acciones que el usuario necesita ejecutar para alcanzar el objetivo. Responde a: ¿qué pasos tiene que dar? | Secuencia de pasos por segmento en la tabla siguiente |
+| **Wireflow** | Conecta las pantallas y estados de la interfaz recorridos durante la tarea. Responde a: ¿qué pantallas aparecen en ese recorrido? | Mermaid wireflow consolidado en 4.4.2 |
+| **User Flow** | Agrega decisiones, caminos alternativos y estados finales al recorrido. Responde a: ¿qué ocurre si algo sale distinto? | Diagramas Mermaid por segmento en esta sección |
+
+*Tabla: User Goals, Task Flows y referencias de flujo por segmento*
+
+| Segmento | Persona | User Goal | Task Flow Summary | Wireflow | User Flow |
+|:---|:---|:---|:---|:---|:---|
+| S1 — Coordinación comercial | Valeria Sánchez | Registrar o asistir un pedido B2B validando cliente, condición comercial, disponibilidad de productos y seguimiento posterior | Login → dashboard comercial → clientes → detalle de cliente → pedido asistido → selección de productos → entrega → confirmación → seguimiento | S1 Commercial Assisted Order (4.4.2) | S1 Pedido asistido — más abajo en esta sección |
+| S2 — Jefatura logística | Roberto García | Supervisar inventario, lotes, riesgos FEFO, despacho, cierre operativo y reportes | Login → dashboard logística → inventario → detalle de lote → revisión FEFO/stock → despacho → confirmación de cierre → reportes | S2 Logistics Operations (4.4.2) | S2 Inventario, despacho y cierre — más abajo en esta sección |
+| S3 — Comprador B2B | Elena Litano | Consultar catálogo, seleccionar productos y revisar pedidos desde una experiencia de portal B2B | Login portal → catálogo → selección de productos → carrito/pedido → confirmación → seguimiento | S3 B2B Buyer Portal (4.4.2) | S3 Portal de compra — más abajo en esta sección *(flujo de planificación, primera iteración)* |
+
+> *Nota:* Los user goals provienen de la sección 2.3.6. Los task flows resumen la secuencia de acciones sin entrar en decisiones específicas, que se detallan en los user flows. S3 se documenta como flujo de planificación en la primera iteración; los flujos S1 y S2 constituyen la evidencia de validación principal. Elaboración propia.
+
+---
 
 Un user flow se enfoca en las decisiones y caminos que sigue una persona para completar un user goal. Los diagramas siguientes usan notación `flowchart`, declaran persona y meta, e incluyen happy path y rutas alternativas.
 
@@ -263,12 +308,14 @@ flowchart LR
     K --> L["End: buyer order registered in Fake API"]
 ```
 
-Elaboración propia. This flow is documented as a planning-level buyer-facing flow for the portal surface. The internal S1/S2 flows remain the main validation focus of this iteration.
+Elaboración propia. Este flujo se documenta como recorrido de planificación para la superficie del portal comprador. Los flujos internos S1/S2 se mantienen como foco principal de validación en esta iteración.
 
-#### Tabla de consistencia wireflows y user flows
+#### Tabla de consistencia: User Goals, wireflows y user flows
 
-| User flow | Derivado del wireflow | Happy path | Alternativas | Evidencia visual |
-|---|---|---|---|---|
-| S1 Pedido asistido | S1 Commercial Assisted Order | Sí | Credenciales inválidas, condición de cliente, cantidad disponible, guard de rol | Mermaid + mockups S1 seleccionados |
-| S2 Inventario, despacho y cierre | S2 Logistics Operations | Sí | Credenciales inválidas, riesgo FEFO, despacho sin acción, evidencia POD mock incompleta | Mermaid + mockups S2 seleccionados |
-| S3 Portal de compra | S3 B2B Buyer Portal | Sí | Validación de carrito o pedido | Mermaid de planificación portal |
+| User goal | Persona | Wireflow | User flow | Evidencia visual | Estado TB1 |
+|:---|:---|:---|:---|:---|:---|
+| Registrar pedido asistido validando cliente, condición comercial y disponibilidad de producto | Valeria (S1) | S1 Commercial Assisted Order | S1 Pedido asistido (4.4.4) | Mermaid + mockups S1 seleccionados | Documentado e implementado en webapp |
+| Supervisar inventario FEFO, coordinar despacho y cerrar entrega con POD mock | Roberto (S2) | S2 Logistics Operations | S2 Inventario, despacho y cierre (4.4.4) | Mermaid + mockups S2 seleccionados | Documentado e implementado en webapp |
+| Explorar catálogo, enviar pedido y consultar estado desde portal B2B | Elena (S3) | S3 B2B Buyer Portal | S3 Portal de compra (4.4.4) | Mermaid de planificación portal | Documentado como flujo de planificación para TB1 |
+
+> *Nota:* Los user goals provienen de la sección 2.3.6. S1 y S2 están validados con mockups y evidencia de webapp; S3 se documenta como flujo de planificación y no se afirma implementación completa del portal en TB1. Elaboración propia.

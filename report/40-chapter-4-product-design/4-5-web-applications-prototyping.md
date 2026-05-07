@@ -15,6 +15,14 @@ Además, el FigJam board de Userflow/Wireflow se utiliza como artefacto de traba
 | [Responsive Prototype - Video Evidence](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQDBP5iLNJedR6OhB8Sivc1rAaVCa4SDrxvranY5tTLbkPM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=QD00j7) | Evidencia audiovisual del prototipo responsive, mostrando la navegación desde navegador móvil |
 | [FigJam — Userflow y Wireflow S1/S2](https://www.figma.com/board/LjIjtyfoOpeYa5OCSJUYpD/Nexa-Ops-S1-S2-Userflow-Wireflow?node-id=0-1&t=F9ZnAAAzCUpiK4qs-1) | Board de trabajo para validación de rutas y flujos operativos de la webapp |
 
+*Referencias específicas de userflow para TB1*
+
+| Prototype / flow artifact | Tool | Link | Scope |
+|---|---|---|---|
+| S1 Commercial Userflow | Lucidchart | [Ver userflow S1](https://lucid.app/lucidchart/8f6d6af2-f229-47f8-ba02-86b27cdc6fed/edit?invitationId=inv_09391266-7e11-4614-8edf-12cf979cdabf) | TB1 implemented / documented |
+| S2 Logistics Userflow | Lucidchart | [Ver userflow S2](https://lucid.app/lucidchart/b91c8e98-a38b-456a-92e5-f942be7e8439/edit?invitationId=inv_5c030713-67e5-4e84-90bf-661b26cef528) | TB1 implemented / documented |
+| S3 Buyer Portal Flow | Report / planning | Sin evidencia visual completa en Lucidchart para TB1 | TB1 partial |
+
 La utilidad metodológica del prototipo es doble. Primero, permite revisar continuidad entre módulos sin depender todavía de desarrollo productivo. Segundo, ofrece una base defendible para explicar cómo evolucionará Nexa desde su capa pública hacia su capa transaccional. En otras palabras, el prototipo no sustituye al desarrollo, pero sí reduce el riesgo de que la implementación futura contradiga lo ya investigado, priorizado y diseñado.
 
 *Captura referencial del prototipo de la web application*
