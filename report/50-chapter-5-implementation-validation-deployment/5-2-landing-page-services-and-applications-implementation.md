@@ -1,6 +1,25 @@
 ## 5.2. Landing Page, Services & Applications Implementation
 
-Para AV1, la evidencia de implementación de Nexa debe concentrarse en el incremento que sí alcanzó un estado demostrable y defendible ante la rúbrica: **Sprint 1**. En esta iteración convergen la planificación en Jira, la consolidación del backlog, la producción de artefactos de diseño, la documentación arquitectónica y la construcción de la landing page pública desplegada. El tablero vivo de Jira registra **51 issues principales** dentro del sprint, distribuidos en **23 historias de usuario** y **28 tareas**, además de **16 subtareas reales** asociadas por parent. Por ello, este sprint no puede leerse como un simple esfuerzo de maquetación, sino como el primer incremento formal y visible del proyecto.
+Para TB1, esta sección debe leerse como una secuencia de incrementos. **Sprint 1** corresponde a la línea base histórica de AV1: landing page pública, estructura documental, investigación inicial, diseño y preparación del producto. **Sprint 2** corresponde al incremento actual de TB1: consolidación de la Web Application, evidencia frontend, flujos por rol y soporte simulado para revisar el circuito comercial-logístico.
+
+La entrega TB1 se concentra en la Web Application como evidencia central. Los recorridos priorizados pertenecen a S1 (coordinación comercial / ventas internas) y S2 (jefatura logística / coordinación operativa), porque Sprint 2 enfoca el circuito interno de captura, revisión, disponibilidad, despacho y seguimiento. S3 (comprador B2B / cliente comercial) se mantiene como segmento objetivo válido, con cobertura parcial a nivel visual y continuidad documentada a nivel de requisitos y flujos.
+
+Sprint 1 no se elimina ni se reinterpreta como entrega actual. Se conserva como antecedente AV1 porque explica la base pública, el trabajo de planificación y la evolución del informe. La lectura principal de TB1 se ubica en Sprint 2, donde se documentan los commits, mockups, rutas, capturas ya existentes y límites del alcance actual sin declarar servicios productivos que todavía no corresponden a la entrega.
+
+*Alcance TB1 frente a evolución prevista*
+
+| Artefacto | Estado en TB1 | Evidencia en el reporte | Evolución esperada |
+|---|---|---|---|
+| Landing Page | Línea base AV1 conservada y conectada al avance TB1 | Sprint 1, evidencias de despliegue del sitio público y continuidad en Sprint 2 | Mantenerla como entrada pública y punto de enlace hacia la Web Application |
+| Web Application | Incremento central de TB1 | Sprint 2, mockups actuales, screenshots existentes, rutas y commits representativos | Ampliar cobertura funcional y validación con usuarios |
+| Fake API / servicios simulados | Soporte simulado para revisar flujos frontend | Sprint 2 y Services Documentation Evidence for Sprint Review | Evolucionar hacia servicios internos formales cuando el backend esté implementado |
+| RESTful API interna | Evolución prevista; no se declara implementación productiva en TB1 | Arquitectura objetivo y planificación de servicios | Implementar contratos reales para Web Services |
+| OpenAPI / Swagger | Evolución prevista; no se declara documentación formal en TB1 | Referencia como documentación futura de la API interna | Documentar endpoints cuando exista la API interna |
+| Backend C# / ASP.NET Core | Alcance futuro / diseño objetivo | `nexa-platform` como repositorio planificado y arquitectura del Capítulo IV | Implementar la capa backend en un hito posterior |
+| Database | Modelo objetivo; no se declara base de datos productiva en TB1 | Database Design del Capítulo IV | Llevar el modelo a persistencia real cuando maduren servicios y backend |
+| Validation Interviews | No desarrollado en TB1 | Encabezado 5.3 sin desarrollo | Ejecutar y documentar entrevistas de validación en el siguiente hito |
+| Video About-the-Product | No desarrollado en TB1 | Encabezado 5.4 sin desarrollo | Producir el video cuando el alcance de validación corresponda |
+| S3 UI coverage | Parcial en TB1 | Requisitos, user flow Mermaid y nota de alcance en UX/UI | Ampliar mockups y evidencia visual del comprador B2B en el siguiente hito |
 
 ### 5.2.1. Sprint 1
 
@@ -17,7 +36,7 @@ La planificación del Sprint 1 se orientó a producir un incremento AV1 que pudi
 | **Sprint** | Sprint 1 |
 | **Objetivo del sprint (SMART)** | Desplegar la primera versión pública de la Landing Page de Nexa y su arquitectura base (Outcome) para validar la propuesta de valor y atraer prospectos (Impact) enfocados en los segmentos S1 y S2 (Customer) al cierre de la entrega AV1 el 23 de abril de 2026 (Event). |
 | **Fecha del sprint** | 01 de abril de 2026 - 23 de abril de 2026 |
-| **Modalidad / Ubicación** | Sesiones remotas grabadas vía Microsoft Stream / Microsoft Teams |
+| **Modalidad / canal** | Sesiones remotas grabadas vía Microsoft Stream / Microsoft Teams |
 | **Enlace de la sesión** | [Grabación del Sprint 1 (Stream)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQB8-qbGfc2ITIq6rlp5kvTuAWFIKesw8RDNiVv6OZDrAHE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=3i1BUi) |
 | **Preparado por** | Yucra Sandoval, Diego Sebastian |
 | **Asistentes** | Diego Yucra, Joaquín Verde, César Marín, Gino Torrejón, Gerard Rojas |
@@ -42,140 +61,49 @@ La ejecución del sprint evidencia una distribución funcional del liderazgo. En
 
 #### 5.2.1.3. Sprint Backlog 1.
 
-La forma más clara de leer el Sprint Backlog 1 no es como una lista plana de tickets, sino como un conjunto de frentes coordinados que alimentan un mismo incremento. La extracción de Jira confirma que el sprint no incluye el portal transaccional completo ni el backend productivo; concentra las historias públicas US01-US23, tareas transversales de investigación, UX/UI, arquitectura, despliegue y documentación, más subtareas específicas para las historias que necesitaban desglose operativo.
+El Sprint Backlog 1 concentra el trabajo realizado entre el **2026-04-01 y 2026-04-23**. El objetivo principal del sprint fue construir la base documental del proyecto, organizar el trabajo bajo Docs-as-Code y consolidar el primer entregable visible mediante el Landing Page, junto con los artefactos iniciales de investigación, diseño y backlog.
 
-Además, el Sprint Backlog 1 no puede analizarse aislado del **Product Backlog documentado en la sección 3.3**. Las tablas siguientes conectan la priorización académica con el tablero operativo: las historias US01-US23 quedan dentro del Sprint 1, mientras que las historias transaccionales US24-US64 y las tareas técnicas de backend permanecen como backlog futuro. Esta separación permite defender AV1 sin declarar software que todavía no existe.
+![Sprint Backlog 1 en Jira](../assets/images/jira/sprint-1-board-jira.png)
 
-*Resumen cuantitativo del Sprint 1 en Jira*
+**URL del board/backlog:** [Jira Backlog — Proyecto Nexa](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog)
 
-| Bloque | Cantidad | Códigos Jira | Lectura dentro de AV1 |
-| :--- | :---: | :--- | :--- |
-| Historias de usuario | 23 | NX-224 a NX-246 | Corresponden a US01-US23 del Product Backlog y cubren el sitio público, bilingüismo, contacto, FAQ, soporte visible y acceso público al portal en preparación. |
-| Tareas principales | 28 | NX-57, NX-59, NX-61 a NX-64, NX-67 a NX-71, NX-77, NX-81, NX-84, NX-88, NX-91, NX-106, NX-113, NX-142, NX-148, NX-153, NX-158, NX-161, NX-164, NX-167, NX-169, NX-254, NX-255 | Agrupan investigación, UX/UI, arquitectura, Docs-as-Code, despliegue, evidencia académica y dos tareas documentales finalizadas. |
-| Subtareas reales | 16 | NX-269 a NX-284 | Desglosan trabajo operativo bajo US01, US03, US18, US19, US20, US21, US22 y US23. |
-| Backlog futuro fuera del sprint | 44 historias sin sprint y tareas técnicas futuras | NX-247 a NX-251, NX-259, NX-260, NX-266 y tareas futuras como NX-94, NX-97, NX-100, NX-116, NX-122, NX-128, NX-133, NX-138 | Mantienen el alcance transaccional, dashboard, autenticación, API y backend fuera de AV1. |
+La siguiente tabla presenta los User Stories asignados al Sprint 1 y los Work-items utilizados para descomponer el trabajo. Las tareas adicionales sin User Story directa corresponden a actividades de configuración, documentación y soporte necesarias para cumplir el objetivo del sprint.
 
-*Sprint 1 Jira - Historias de Usuario*
+| Sprint # | User Story Id | User Story Title | Work-Item / Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---:|---|---|
+| Sprint 1 | - | Setup inicial del entorno Docs-as-Code | NX-56 | Preparar estructura base del reporte | Organizar la base documental en Markdown para registrar el avance del proyecto desde el primer sprint. | 3.5 | Diego Yucra Sandoval | Done |
+| Sprint 1 | - | Redactar reporte de avance del Sprint 0 con métricas del equipo | NX-252 | Documentar avance inicial del proyecto | Registrar el avance documental inicial y las primeras decisiones del equipo para sostener la trazabilidad del informe. | 7.0 | Diego Yucra Sandoval | Done |
+| Sprint 1 | - | Crear y configurar repositorio en GitHub con estructura inicial | NX-253 | Configurar repositorio del proyecto | Crear la base del repositorio y organizar la estructura inicial del trabajo colaborativo. | 7.5 | Gerard Rojas Mancilla | Done |
+| Sprint 1 | - | Implementar estructura base de landing page pública | NX-389 | Construir base del Landing Page | Implementar la estructura inicial del sitio público para presentar la propuesta de valor del producto. | 5.0 | Diego Yucra Sandoval | Done |
+| Sprint 1 | - | Documentar wireframes y mockups de landing page | NX-390 | Registrar diseño visual del Landing Page | Documentar los wireframes y mockups del sitio público como evidencia de diseño UX/UI. | 3.0 | Diego Yucra Sandoval | Done |
+| Sprint 1 | - | Consolidar entrevistas y artefactos de needfinding | NX-391 | Organizar evidencia de investigación | Consolidar entrevistas, hallazgos y artefactos iniciales de análisis de usuarios. | 7.5 | Diego Yucra Sandoval | Done |
+| Sprint 1 | - | Modelar dominio inicial con EventStorming y C4 | NX-392 | Documentar modelado inicial de dominio | Elaborar y registrar artefactos iniciales de dominio y arquitectura de alto nivel. | 5.5 | Gerard Rojas Mancilla | Done |
+| Sprint 1 | - | Configurar estructura Docs-as-Code del reporte | NX-393 | Ordenar estructura documental del informe | Ajustar la organización del reporte para que siga la estructura solicitada en el statement. | 3.5 | Diego Yucra Sandoval | Done |
+| Sprint 1 | - | Documentar Lean UX Canvas y Assumptions | NX-534 | Completar artefactos Lean UX | Registrar assumptions, problem statements y canvas como soporte de discovery del proyecto. | 3.5 | Gino Torrejón | Done |
+| Sprint 1 | - | Estructurar Product Backlog y User Stories | NX-536 | Organizar backlog inicial | Redactar y ordenar las User Stories y el Product Backlog inicial del producto. | 4.0 | César Marín | Done |
+| Sprint 1 | - | Realizar análisis de competidores | NX-540 | Documentar benchmarking competitivo | Analizar competidores y registrar hallazgos para sustentar la diferenciación de Nexa. | 3.5 | Gerard Rojas Mancilla | Done |
+| Sprint 1 | US01 | Identificar el problema que atiende Nexa | NX-224 | Redactar contenido de problema principal | Presentar en el Landing Page el problema central que busca resolver Nexa. | 2.0 | Joaquín Verde | Done |
+| Sprint 1 | US02 | Reconocer el impacto de la información dispersa | NX-225 | Documentar impacto del problema | Explicar el impacto operativo de trabajar con información dispersa en pedidos y coordinación. | 2.0 | Gino Torrejón | Done |
+| Sprint 1 | US03 | Recorrer información pública con continuidad | NX-226 | Organizar recorrido del sitio público | Definir la continuidad de navegación del Landing Page para visitantes. | 2.5 | Diego Yucra Sandoval | Done |
+| Sprint 1 | US04 | Consultar la propuesta en el idioma preferido | NX-227 | Registrar soporte de idioma | Documentar la intención de consulta multilenguaje en la propuesta pública. | 2.0 | Joaquín Verde | Done |
+| Sprint 1 | US05 | Distinguir alcance inicial y evolución futura | NX-228 | Explicar alcance inicial del producto | Diferenciar el alcance inicial del producto y su evolución esperada. | 2.0 | Joaquín Verde | Done |
+| Sprint 1 | US06 | Encontrar información complementaria de confianza | NX-229 | Organizar información de confianza | Presentar información complementaria que refuerce la credibilidad del Landing Page. | 1.5 | César Marín | Done |
+| Sprint 1 | US07 | Identificar valor para distribuidoras refrigeradas | NX-230 | Redactar propuesta para distribuidoras | Explicar el valor de Nexa para distribuidoras de productos refrigerados. | 2.5 | Gino Torrejón | Done |
+| Sprint 1 | US08 | Identificar valor para importadoras y mayoristas | NX-231 | Redactar propuesta para importadoras y mayoristas | Presentar el valor de Nexa para importadoras y mayoristas con operación B2B. | 2.0 | Diego Yucra Sandoval | Done |
+| Sprint 1 | US09 | Identificar valor para operadores de almacenamiento frío | NX-232 | Redactar propuesta para almacenamiento frío | Explicar el valor del producto para operadores vinculados a almacenamiento refrigerado. | 2.0 | Diego Yucra Sandoval | Done |
+| Sprint 1 | US10 | Reconocer capacidades centrales antes del acceso | NX-233 | Documentar capacidades principales | Mostrar capacidades centrales del producto antes de ingresar a la aplicación operativa. | 2.0 | Diego Yucra Sandoval | Done |
+| Sprint 1 | US11 | Resolver dudas frecuentes antes del contacto | NX-234 | Estructurar preguntas frecuentes | Organizar dudas frecuentes para reducir fricción antes del contacto comercial. | 2.0 | Gerard Rojas Mancilla | Done |
+| Sprint 1 | US12 | Solicitar contacto comercial | NX-235 | Implementar contacto comercial | Habilitar una ruta de contacto para visitantes interesados en la propuesta. | 3.0 | César Marín | Done |
+| Sprint 1 | US13 | Indicar contexto de empresa interesada | NX-236 | Capturar contexto de empresa | Permitir que el visitante indique información básica sobre su empresa. | 2.0 | César Marín | Done |
+| Sprint 1 | US14 | Compartir necesidad operativa principal | NX-237 | Registrar necesidad operativa | Permitir que el visitante comunique la principal necesidad operativa que desea resolver. | 2.0 | César Marín | Done |
+| Sprint 1 | US15 | Evaluar acompañamiento para adopción inicial | NX-238 | Explicar acompañamiento inicial | Mostrar el soporte de adopción inicial considerado para empresas interesadas. | 2.5 | César Marín | Done |
+| Sprint 1 | US16 | Revisar tratamiento de datos de contacto | NX-239 | Documentar tratamiento de datos | Presentar el tratamiento básico de datos de contacto del visitante. | 2.0 | Diego Yucra Sandoval | Done |
+| Sprint 1 | US17 | Consultar condiciones generales de uso | NX-240 | Documentar condiciones generales | Presentar condiciones generales asociadas al uso de la experiencia pública. | 2.0 | Diego Yucra Sandoval | Done |
+| Sprint 1 | US18 | Diferenciar sitio público y aplicación operativa | NX-241 | Explicar relación Landing Page y Web Application | Diferenciar el sitio público informativo de la aplicación operativa interna. | 2.5 | Joaquín Verde | Done |
+| Sprint 1 | - | Desplegar Landing Page en hosting estático | NX-544 | Publicar Landing Page | Desplegar el Landing Page para disponer de una evidencia pública del primer incremento. | 7.0 | Diego Yucra Sandoval | Done |
 
-| Key | US | Summary Jira | SP Backlog | Estado Jira | Evidencia / alcance |
-| :--- | :--- | :--- | :---: | :--- | :--- |
-| NX-224 | US01 | Navegar entre páginas | 2 | Finalizado | Navegación pública entre Home, Platform, Solutions, Company y FAQ. |
-| NX-225 | US02 | Dropdown de Solutions | 2 | Finalizado | Acceso rápido a segmentos desde el menú Solutions. |
-| NX-226 | US03 | Cambio de idioma | 3 | Finalizado | Selector EN/ES y persistencia del idioma en la experiencia pública. |
-| NX-227 | US04 | Navegación en Footer | 1 | Finalizado | Enlaces de cierre hacia páginas públicas y puntos de contacto. |
-| NX-228 | US05 | Propuesta en Hero | 2 | Finalizado | Propuesta de valor inicial del Home. |
-| NX-229 | US06 | Problema operativo | 2 | Finalizado | Narrativa del problema de coordinación, inventario y pedidos. |
-| NX-230 | US07 | Capacidades clave | 2 | Finalizado | Bloques de capacidades centrales del producto. |
-| NX-231 | US08 | Solicitar demo | 2 | Finalizado | CTA comercial hacia contacto o conversación de demo. |
-| NX-232 | US09 | Módulos en Platform | 2 | Finalizado | Presentación pública de módulos y alcance funcional. |
-| NX-233 | US10 | Cambio operativo | 2 | Finalizado | Explicación del cambio esperado en la operación diaria. |
-| NX-234 | US11 | MVP vs Expansión | 2 | Finalizado | Separación entre capacidades visibles del MVP y roadmap futuro. |
-| NX-235 | US12 | Hub de Solutions | 2 | Finalizado | Página hub para elegir segmento comercial. |
-| NX-236 | US13 | Propuesta Distribuidores | 2 | Finalizado | Landing específica para distribuidores. |
-| NX-237 | US14 | Propuesta Importadores | 2 | Finalizado | Landing específica para importadores y mayoristas. |
-| NX-238 | US15 | Propuesta Cámaras Frías | 2 | Finalizado | Landing específica para operadores de almacenamiento frío. |
-| NX-239 | US16 | Narrativa Company | 2 | Finalizado | Historia, propósito y equipo detrás de Nexa. |
-| NX-240 | US17 | Soporte Humano | 2 | Finalizado | Mensaje de soporte e implementación acompañada. |
-| NX-241 | US18 | Envío de contacto | 3 | Finalizado | Formulario público como canal comercial inicial. |
-| NX-242 | US19 | Validación Feedback | 3 | Finalizado | Validaciones visibles antes del envío del formulario. |
-| NX-243 | US20 | FAQ por Categorías | 2 | Finalizado | Organización de preguntas frecuentes por tema. |
-| NX-244 | US21 | Expandir FAQ | 2 | Finalizado | Interacción de acordeón para consultar respuestas. |
-| NX-245 | US22 | Soporte Flotante | 2 | Finalizado | Launcher de soporte persistente en el sitio público. |
-| NX-246 | US23 | Acceso público al portal en preparación | 1 | Finalizado | Estado visible del botón Log in sin prometer portal operativo. |
 
-*Sprint 1 Jira - Tareas Transversales*
-
-| Key | Tipo | Summary Jira | Estado Jira | Evidencia / salida |
-| :--- | :--- | :--- | :--- | :--- |
-| NX-57 | style | style: Definir guidelines visuales y design tokens | Finalizado | Lineamientos visuales del Capítulo 4 y tokens del sitio público. |
-| NX-59 | docs | docs: Redactar Startup Profile y Solution Profile | Finalizado | Base de negocio del Capítulo 1. |
-| NX-61 | docs | docs: Definir segmentos objetivo y análisis competitivo | Finalizado | Segmentos S1, S2, S3 y contexto competitivo. |
-| NX-62 | docs | docs: Diseñar guía de entrevistas y registrar ejecución | Finalizado | Evidencia de entrevistas y guía de investigación. |
-| NX-63 | docs | docs: Sintetizar User Personas y User Task Matrix | Finalizado | Personas, tareas y lectura de necesidad del Capítulo 2. |
-| NX-64 | docs | docs: Diseñar arquitectura de información y taxonomía | Finalizado | Navegación, sitemap y estructura de contenido. |
-| NX-67 | docs | docs: Elaborar Customer Journey Maps | Finalizado | Journey maps derivados de investigación. |
-| NX-68 | docs | docs: Registrar Big Picture EventStorming | Finalizado | Eventos, comandos y políticas de dominio. |
-| NX-69 | docs | docs: Consolidar glosario de Ubiquitous Language | Finalizado | Lenguaje ubicuo usado en historias y arquitectura. |
-| NX-70 | style | style: Diseñar wireframes Lo-Fi/Hi-Fi de landing y portal futuro | Finalizado | Wireframes y mockups para landing y referencia futura. |
-| NX-71 | docs | docs: Consolidar Impact Mapping | Finalizado | Trazabilidad entre objetivos, actores e impactos. |
-| NX-77 | style | style: Documentar accesibilidad WCAG 2.1 y Motion Principles | Finalizado | Criterios visuales, accesibilidad y movimiento. |
-| NX-81 | chore | chore: Scaffold repositorio website público | Finalizado | Estructura base del repositorio de landing. |
-| NX-84 | feat | feat(i18n): Implementar motor de internacionalización vanilla JS | Finalizado | Motor bilingüe EN/ES del sitio público. |
-| NX-88 | feat | feat(landing): Maquetar Hero y Features | Finalizado | Implementación visible del Home. |
-| NX-91 | feat | feat(contact): Implementar formulario y validación JS | Finalizado | Formulario público y validación del frente comercial. |
-| NX-106 | docs | docs: Diseñar modelo C4 del sistema | Finalizado | Contexto y contenedores del Capítulo 4. |
-| NX-113 | docs | docs: Expandir EventStorming con comandos y políticas | Finalizado | Profundización del modelo de dominio. |
-| NX-142 | docs | docs: Especificar 64 User Stories en BDD/Gherkin | Finalizado | User Stories completas del Capítulo 3. |
-| NX-148 | docs | docs: Priorizar MVP desde las 64 User Stories | Finalizado | Ordenamiento y release map del Product Backlog. |
-| NX-153 | docs | docs: Crear matriz de trazabilidad landing-backlog | Finalizado | Relación entre landing, backlog y alcance AV1. |
-| NX-158 | docs | docs: Graficar estadísticas de madurez digital | Finalizado | Sustento cuantitativo y visual de contexto. |
-| NX-161 | docs | docs: Completar cuadro Student Outcome ABET 5 | Finalizado | Evidencia de colaboración y roles. |
-| NX-164 | deploy | deploy: Publicar website en Vercel/GitHub Pages | Finalizado | Publicación del sitio público. |
-| NX-167 | docs | docs: Corregir APA 7, links rotos y compilación PDF | Finalizado | Cierre editorial y consistencia del informe. |
-| NX-169 | docs | docs: Estructurar Product Backlog inicial | Finalizado | Backlog priorizado del Capítulo 3. |
-| NX-254 | docs | docs: Redactar README principal del repositorio Nexa | Finalizado | README principal del repositorio como evidencia Docs-as-Code. |
-| NX-255 | docs | docs: Documentar arquitectura del sistema con diagramas C4 | Finalizado | Diagramas C4 y documentación arquitectónica asociada. |
-
-*Sprint 1 Jira - Subtasks por User Story*
-
-| Parent | Subtask | Summary Jira | Estado Jira | Propósito |
-| :--- | :--- | :--- | :--- | :--- |
-| NX-224 / US01 | NX-269 | feat(nav): Integrar rutas públicas principales | Finalizado | Implementar rutas de navegación del sitio público. |
-| NX-224 / US01 | NX-270 | test(nav): Verificar navegación desktop y mobile | Finalizado | Revisar navegación en vistas desktop y mobile. |
-| NX-226 / US03 | NX-271 | feat(i18n): Configurar selector EN/ES en navegación | Finalizado | Habilitar cambio de idioma desde la navegación. |
-| NX-226 / US03 | NX-272 | test(i18n): Verificar persistencia de idioma entre páginas públicas | Finalizado | Confirmar persistencia de idioma entre páginas. |
-| NX-241 / US18 | NX-273 | feat(contact): Maquetar formulario de contacto público | Finalizado | Construir el formulario visible de contacto. |
-| NX-241 / US18 | NX-274 | test(contact): Validar envío y mensaje de confirmación | Finalizado | Verificar respuesta tras intento de envío. |
-| NX-242 / US19 | NX-275 | feat(contact): Agregar validación de campos obligatorios | Finalizado | Añadir validaciones de campos requeridos. |
-| NX-242 / US19 | NX-276 | test(contact): Validar errores de nombre, correo y mensaje | Finalizado | Verificar mensajes de error del formulario. |
-| NX-243 / US20 | NX-277 | feat(faq): Estructurar categorías de preguntas frecuentes | Finalizado | Organizar preguntas por tema dentro del FAQ. |
-| NX-243 / US20 | NX-278 | test(faq): Verificar navegación por categorías del FAQ | Finalizado | Validar acceso a preguntas por categoría. |
-| NX-244 / US21 | NX-279 | feat(faq): Implementar acordeón de preguntas | Finalizado | Habilitar expandir y colapsar respuestas. |
-| NX-244 / US21 | NX-280 | test(faq): Verificar expandir y colapsar respuestas | Finalizado | Revisar comportamiento del acordeón. |
-| NX-245 / US22 | NX-281 | feat(support): Implementar launcher flotante de soporte | Finalizado | Mostrar acceso rápido a soporte visible. |
-| NX-245 / US22 | NX-282 | test(support): Verificar enlaces de soporte hacia contacto, plataforma y FAQ | Finalizado | Confirmar que los enlaces de soporte no rompen navegación. |
-| NX-246 / US23 | NX-283 | feat(auth-preparation): Implementar estado visible de Log in | Finalizado | Mostrar el acceso al portal como preparación, no como feature completada. |
-| NX-246 / US23 | NX-284 | test(auth-preparation): Verificar que Log in no dirige a una ruta rota | Finalizado | Evitar que el acceso en preparación genere una experiencia rota. |
-
-*Backlog futuro fuera del Sprint 1*
-
-| Jira | Resumen | Estado | Motivo de exclusión de AV1 |
-| :--- | :--- | :--- | :--- |
-| NX-247 | US24 - Catálogo personalizado | Por hacer | Requiere portal privado y reglas comerciales no entregadas en AV1. |
-| NX-248 | US25 - Búsqueda SKU/Nombre | Por hacer | Depende del catálogo transaccional futuro. |
-| NX-249 | US26 - Filtros de Categoría | Por hacer | Pertenece al catálogo B2B posterior. |
-| NX-250 | US27 - Ficha Técnica | Por hacer | Requiere detalle de producto y datos operativos futuros. |
-| NX-251 | US28 - Mantenimiento Catálogo | Por hacer | Corresponde a administración interna del catálogo. |
-| NX-259 | US64 - API Auth & Recover | En curso | Es preparación técnica de autenticación y API, no incremento público AV1. |
-| NX-260 | US34 - Compra B2B | En curso | Pertenece al flujo transaccional del portal B2B. |
-| NX-266 | future: Dashboard de métricas comerciales | En curso | Dashboard interno futuro, fuera de la landing pública. |
-| NX-94, NX-97, NX-100, NX-116, NX-122, NX-128, NX-133, NX-138 | Tareas técnicas future-dashboard, future-webapp, future-auth, future-backend, future-orders y future-api | Fuera de Sprint 1 | Preparan módulos posteriores, pero no deben contarse como entregables AV1. |
-
-Las capturas siguientes deben leerse como soporte visual del tablero. La referencia normalizada para evaluación es la tabla anterior, porque separa explícitamente historias, tareas, subtareas y backlog futuro sin mezclar módulos no entregados dentro del Sprint 1.
-
-*Vista general Sprint 0 + Sprint 1 cargado en Jira*
-
-![Vista general del Sprint 0 y Sprint 1](../assets/images/jira/sprint-0-sprint-1.png)
-
-La vista general del tablero permite verificar el volumen de trabajo visible del incremento AV1 y su organización inicial antes de revisar los bloques específicos. Elaboración propia.
-
-*Sprint 1 — bloque B de trabajo planificado en Jira*
-
-![Sprint 1 parte 2](../assets/images/jira/sprint-1-p2.png)
-
-Este bloque evidencia continuidad entre especificación de user stories, priorización del MVP, despliegue del website y cierre documental de la entrega. Elaboración propia.
-
-*Sprint 1 — parte 3 de historias públicas dentro del sprint*
-
-![Sprint 1 parte 3](../assets/images/jira/sprint-1-p3.png)
-
-Este bloque agrupa historias del sitio público para Home, Platform, Solutions, Company y FAQ, todas asignadas al Sprint 1. Su presencia confirma que la experiencia pública forma parte directa del incremento AV1. Elaboración propia.
-
-*Verificación del Product Backlog en Jira*
-
-![Product Backlog completo](../assets/images/jira/backlog.png)
-
-El backlog en Jira demuestra que las historias priorizadas para investigación, diseño y composición del MVP sí fueron registradas en la herramienta y no solo descritas en el informe. Permite contrastar la lógica de priorización del capítulo 3 con la evidencia viva de Jira, incluyendo historias orientadas a despliegue, trazabilidad académica y preparación técnica posterior. Elaboración propia.
+Nota. Las estimaciones se registran en horas para el control del Sprint Backlog, mientras que la priorización general del Product Backlog se mantiene en Story Points. Elaboración propia.
 
 #### 5.2.1.4. Development Evidence for Sprint Review.
 
@@ -432,29 +360,70 @@ La evidencia de Sprint 2 se documenta mediante commits reales, estructura de rep
 
 #### 5.2.2.2. Aspect Leaders and Collaborators
 
-| Integrante | Rol principal durante TB1 | Evidencia de contribución | Observación |
-|---|---|---|---|
-| Diego Y. Sandoval | Liderazgo principal, coordinación general, integración final | Commits de consolidación en reporte y webapp; limpieza de alcance; QA Docs-as-Code; fake API; role-aware flows | Líder principal de TB1 |
-| César Marín | Documentación, continuidad visual y revisión de entregables | Commits de entrevistas, glosario, landing narrative, assets y ajustes de reporte | Apoyo significativo |
-| Joaquín Verde | IA, rutas, flows, user stories/backlog e impact mapping | Commits de IA, needfinding, user task matrix, impact mapping y webapp i18n/inventory | Apoyo significativo |
-| Gino Torrejón | UX webapp, mockups/evidencia y soporte documental | Commits de UX, webapp flows, assets y actualizaciones de capítulos | Apoyo significativo |
-| Gerard Rojas | Arquitectura DDD/C4 y artefactos técnicos puntuales | Commits vinculados a C4, HTTP service layer y algunos módulos webapp | Aporte puntual frente al volumen global de integración TB1 |
+| Team Member | GitHub Username | Project Management | UX/UI Design | Software Architecture | Frontend Development | Documentation |
+|---|---|:---:|:---:|:---:|:---:|:---:|
+| Yucra Sandoval, Diego Sebastian | DiegoS284 | L | C | C | L | L |
+| Verde Bueno, Joaquín Francisco | JoaquinVerde115 | C | C | C | C | C |
+| Marín Cueva, César Fernando | Cmarin2802 | C | C | C | C | C |
+| Torrejón De Los Santos, Gino Rodrigo | R0obxdnt-bit | C | L | C | C | C |
+| Rojas Mancilla, Gerard Gianpier | GerardRojasMancilla | C | C | L | C | C |
 
 #### 5.2.2.3. Sprint Backlog 2
 
-La lectura del Sprint Backlog 2 se organiza por frentes reales de trabajo, no por promesas de Jira no verificadas.
+El Sprint Backlog 2 concentra el trabajo realizado entre el **2026-04-24 y 2026-05-15**. El objetivo principal del sprint fue consolidar la Web Application TB1, documentar los flujos internos de S1 y S2, actualizar la evidencia UX/UI y registrar el avance de implementación correspondiente al incremento de la entrega.
 
-| Frente Sprint 2 | Alcance TB1 | Evidencia |
-|---|---|---|
-| Webapp base | Vue 3, Vite, PrimeVue, Pinia, Axios y estructura por capas | `nexa-webapp` |
-| Acceso demo y roles | perfiles internos S1/S2 y comprador B2B, navegación protegida y scope por superficie | commits de auth/login/role guard |
-| Operación comercial S1 | dashboard, clientes, detalle, pedido asistido, origen del pedido y reportes comerciales | commits de clients/orders/reports |
-| Operación logística S2 | inventario, lotes FEFO, despacho, estado de entrega, POD mock y reportes operativos | commits de inventory/dispatch/reports |
-| Portal comprador S3 | home, catálogo, carrito, confirmación y órdenes con datos simulados | commits de portal/cart/orders |
-| Fake API | JSON Server y `mock-api/db.json` como soporte simulado | commits `4aa2812`, `7b9bf07`, `dbee8ed`, `6bffa73` |
-| Website continuity | CTAs, rutas hacia webapp, copy TB1, favicon y SEO | `nexa-website` |
-| Report documentation | Ch1–Ch4 cleanup, Ch5 TB1, mockups actuales, Mermaid flows y version history | `nexa-report` |
-| Platform/backend | alcance planificado, no incremento productivo TB1 | `nexa-platform` con reset a planned scope |
+![Sprint Backlog 2 en Jira](../assets/images/jira/sprint-2-board-jira.png)
+
+**URL del board/backlog:** [Jira Backlog — Proyecto Nexa](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog)
+
+La siguiente tabla presenta los User Stories asignados al Sprint 2 y los Work-items utilizados para descomponer el trabajo. Las tareas sin User Story directa corresponden a actividades de implementación, documentación o soporte necesarias para cerrar el incremento TB1.
+
+| Sprint # | User Story Id | User Story Title | Work-Item / Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---:|---|---|
+| Sprint 2 | - | Maquetar Login | NX-100 | Implementar pantalla de acceso | Construir la pantalla de login utilizada para seleccionar perfiles y acceder a los flujos internos de la Web Application. | 5.5 | César Marín | Done |
+| Sprint 2 | - | Implementar flujo de pedido asistido para coordinación comercial | NX-26 | Construir flujo de pedido asistido | Implementar el recorrido comercial para registrar pedidos internos desde el perfil de coordinación comercial. | 8.5 | Diego Yucra Sandoval | Done |
+| Sprint 2 | - | Implementar vista de inventario y lotes para jefatura logística | NX-28 | Construir vista de inventario y lotes | Implementar la vista de inventario, disponibilidad y lotes como soporte del flujo logístico. | 9.0 | Gerard Rojas Mancilla | Done |
+| Sprint 2 | - | Implementar tablero de despacho con cierre POD simulado | NX-29 | Construir tablero de despacho | Implementar el tablero de despacho y el cierre simulado con evidencia POD para la operación logística. | 8.0 | César Marín | Done |
+| Sprint 2 | - | Actualizar Capítulo 4 con UX/UI y arquitectura TB1 | NX-33 | Actualizar diseño UX/UI y arquitectura | Actualizar la documentación de UX/UI, flujos, mockups y arquitectura correspondiente al avance TB1. | 6.0 | Diego Yucra Sandoval | Done |
+| Sprint 2 | - | Maquetar layout Dashboard B2B | NX-4 | Construir layout principal de dashboard | Preparar la estructura visual base para dashboards y navegación de la Web Application. | 8.0 | Gerard Rojas Mancilla | Done |
+| Sprint 2 | US19 | Iniciar sesión como usuario interno autorizado | NX-242 | Implementar acceso de usuario interno | Permitir el ingreso de usuarios internos mediante perfiles usados en la simulación de la Web Application. | 3.0 | Joaquín Verde | Done |
+| Sprint 2 | US22 | Acceder según responsabilidad asignada | NX-245 | Configurar acceso por responsabilidad | Diferenciar el acceso de usuarios internos según el perfil operativo seleccionado. | 3.5 | Diego Yucra Sandoval | Done |
+| Sprint 2 | US23 | Recibir explicación ante acceso restringido | NX-248 | Documentar restricción de acceso | Mostrar una explicación cuando un perfil intenta ingresar a una ruta que no corresponde a su responsabilidad. | 3.0 | Diego Yucra Sandoval | Done |
+| Sprint 2 | US24 | Entender estado de cuenta no disponible | NX-334 | Definir estado de cuenta no disponible | Representar el estado de cuenta no disponible dentro del flujo de acceso y operación. | 2.5 | César Marín | Done |
+| Sprint 2 | - | Documentar user goal, task flow, wireflow y user flow S1 | NX-27 | Documentar flujo comercial S1 | Registrar la relación entre user goal, task flow, wireflow y user flow para coordinación comercial. | 5.0 | Diego Yucra Sandoval | Done |
+| Sprint 2 | US39 | Registrar pedido recibido por canal externo | NX-349 | Registrar pedido interno | Permitir que coordinación comercial registre un pedido recibido por canales externos. | 5.5 | Diego Yucra Sandoval | Done |
+| Sprint 2 | US40 | Seleccionar cliente durante la captura del pedido | NX-350 | Seleccionar cliente en pedido | Asociar el pedido interno con el cliente correspondiente durante la captura comercial. | 3.5 | Diego Yucra Sandoval | Done |
+| Sprint 2 | US41 | Completar productos y cantidades solicitadas | NX-351 | Completar productos y cantidades | Registrar productos y cantidades solicitadas dentro del pedido asistido. | 5.0 | Diego Yucra Sandoval | Done |
+| Sprint 2 | US42 | Registrar observaciones comerciales del pedido | NX-352 | Registrar observaciones comerciales | Incluir observaciones comerciales relevantes durante la captura del pedido. | 4.0 | Diego Yucra Sandoval | Done |
+| Sprint 2 | US43 | Revisar pedido capturado antes de enviarlo | NX-353 | Revisar pedido antes de enviar | Permitir una revisión previa del pedido para reducir errores antes de enviarlo a revisión. | 4.5 | Diego Yucra Sandoval | Done |
+| Sprint 2 | US44 | Diferenciar pedido capturado por comercial y pedido enviado por cliente | NX-354 | Diferenciar origen del pedido | Identificar si el pedido fue capturado internamente o enviado por el comprador. | 5.0 | Diego Yucra Sandoval | Done |
+| Sprint 2 | US50 | Consultar historial de cambios del pedido | NX-360 | Consultar historial del pedido | Mostrar cambios relevantes asociados a un pedido para apoyar trazabilidad comercial. | 8.0 | Diego Yucra Sandoval | Done |
+| Sprint 2 | US56 | Revisar condiciones comerciales del cliente | NX-366 | Revisar condiciones del cliente | Permitir la consulta de condiciones comerciales antes de confirmar acciones del pedido. | 3.5 | Joaquín Verde | Done |
+| Sprint 2 | US57 | Consultar perfil comercial del cliente | NX-367 | Consultar perfil comercial | Mostrar información comercial del cliente para apoyar la captura y seguimiento del pedido. | 3.5 | Diego Yucra Sandoval | Done |
+| Sprint 2 | US59 | Registrar nuevo cliente comercial | NX-369 | Registrar cliente comercial | Registrar información básica de un nuevo cliente comercial en la Web Application. | 5.5 | Gino Torrejón | Done |
+| Sprint 2 | US60 | Actualizar datos de contacto del cliente | NX-370 | Actualizar datos de contacto | Actualizar información de contacto del cliente comercial. | 5.0 | César Marín | Done |
+| Sprint 2 | US61 | Diferenciar clientes por tipo de negocio | NX-371 | Clasificar clientes por tipo | Diferenciar clientes según tipo de negocio para facilitar la lectura comercial. | 4.5 | Gerard Rojas Mancilla | Done |
+| Sprint 2 | US69 | Revisar pedidos por estado | NX-79 | Revisar pedidos por estado | Consultar pedidos agrupados por estado para facilitar seguimiento comercial y operativo. | 5.0 | Diego Yucra Sandoval | Done |
+| Sprint 2 | US71 | Consultar productos con mayor movimiento | NX-81 | Consultar productos de mayor movimiento | Revisar productos con mayor movimiento como apoyo a reportes comerciales. | 3.5 | Diego Yucra Sandoval | Done |
+| Sprint 2 | - | Implementar reportes diferenciados por roles comercial y logístico | NX-31 | Construir reportes por rol | Implementar reportes separados para lectura comercial y logística según perfil de usuario. | 5.5 | Diego Yucra Sandoval | Done |
+| Sprint 2 | - | Documentar user goal, task flow, wireflow y user flow S2 | NX-40 | Documentar flujo logístico S2 | Registrar la relación entre user goal, task flow, wireflow y user flow para jefatura logística. | 5.0 | Gerard Rojas Mancilla | Done |
+| Sprint 2 | US45 | Consultar pedidos por revisar | NX-355 | Consultar pedidos por revisar | Mostrar pedidos pendientes de revisión operativa para jefatura logística. | 5.0 | Gerard Rojas Mancilla | Done |
+| Sprint 2 | US46 | Revisar detalle operativo de un pedido | NX-356 | Revisar detalle operativo | Permitir la lectura del detalle operativo de un pedido antes de cambiar su estado. | 5.0 | Gerard Rojas Mancilla | Done |
+| Sprint 2 | US47 | Cambiar estado de revisión del pedido | NX-357 | Cambiar estado de revisión | Actualizar el estado de revisión de un pedido durante el flujo logístico. | 5.5 | Gerard Rojas Mancilla | Done |
+| Sprint 2 | US48 | Registrar motivo de observación o rechazo | NX-358 | Registrar observación o rechazo | Registrar el motivo cuando un pedido queda observado o rechazado. | 5.0 | Gerard Rojas Mancilla | Done |
+| Sprint 2 | US49 | Priorizar pedidos por urgencia operativa | NX-359 | Priorizar pedidos urgentes | Ordenar pedidos según urgencia operativa para orientar la revisión logística. | 5.0 | Gerard Rojas Mancilla | Done |
+| Sprint 2 | US51 | Consultar disponibilidad de productos | NX-361 | Consultar disponibilidad | Consultar disponibilidad de productos para apoyar decisiones de pedido y preparación. | 5.0 | César Marín | Done |
+| Sprint 2 | US52 | Identificar lotes próximos a vencer | NX-362 | Identificar lotes próximos a vencer | Visualizar lotes con riesgo de vencimiento para aplicar criterio operativo. | 5.0 | Joaquín Verde | Done |
+| Sprint 2 | US53 | Aplicar criterio FEFO en preparación | NX-363 | Aplicar criterio FEFO | Priorizar productos según vencimiento para reducir merma y mejorar rotación. | 5.0 | César Marín | Done |
+| Sprint 2 | US54 | Revisar condición de conservación del producto | NX-364 | Revisar condición de conservación | Consultar información de conservación asociada al producto o lote. | 5.0 | Joaquín Verde | Done |
+| Sprint 2 | US55 | Registrar ajuste de disponibilidad | NX-365 | Registrar ajuste de disponibilidad | Actualizar disponibilidad cuando se detecten diferencias operativas. | 8.0 | Gerard Rojas Mancilla | Done |
+| Sprint 2 | US68 | Consultar resumen operativo del día | NX-78 | Consultar resumen operativo | Revisar una síntesis operativa diaria para apoyar seguimiento de pedidos e inventario. | 5.0 | Diego Yucra Sandoval | Done |
+| Sprint 2 | US70 | Identificar incidencias recurrentes | NX-80 | Identificar incidencias recurrentes | Registrar lectura de incidencias recurrentes como parte de reportes operativos. | 5.0 | Diego Yucra Sandoval | Done |
+| Sprint 2 | - | Documentar flujo S3 de portal B2B como alcance parcial TB1 | NX-43 | Documentar flujo comprador B2B | Registrar el flujo comprador como planificación de alcance, sin afirmar implementación completa de mockups S3. | 5.0 | Diego Yucra Sandoval | Done |
+| Sprint 2 | - | Actualizar Capítulo 5 con evidencia de Sprint 2 | NX-34 | Actualizar evidencias de implementación TB1 | Consolidar en el reporte las evidencias del Sprint 2, incluyendo alcance, implementación y documentación del incremento. | 5.5 | Diego Yucra Sandoval | Done |
+
+
+Nota. Las horas estimadas se usan para control operativo del Sprint Backlog. Los Story Points se conservan como estimación relativa dentro del Product Backlog y Jira. Elaboración propia.
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
@@ -521,14 +490,12 @@ Figura. Evidencia visual complementaria de actividad y contribución en GitHub d
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-Para TB1, la integración funcional de la Web Application se validó mediante una Fake API con datos mock, lo que permitió comprobar consumo de datos, navegación y estados principales sin presentar aún el servicio RESTful definitivo. La documentación OpenAPI/Swagger corresponde al alcance de Web Services cuando se implemente el backend interno en ASP.NET Core.
-
-En TB1, la evidencia de servicios es preparatoria y simulada. La webapp consume datos mediante Fake API/JSON Server y servicios cliente separados por contexto. Esta decisión permite validar flujos sin afirmar servicios productivos.
+Para TB1, la evidencia de servicios se aborda como soporte simulado para la Web Application, sin afirmar todavía una implementación productiva de backend. Esta simulación permite validar los flujos frontend de la entrega mientras la RESTful API interna y su documentación formal se mantienen como evolución prevista.
 
 | Capa | Estado TB1 | Evidencia | Nota de alcance |
 |---|---|---|---|
-| Fake API | Implementada como soporte simulado | `mock-api/db.json`, JSON Server, commits de 04/05/2026 | Sirve para revisión académica y pruebas frontend |
-| Axios services | Organizados por bounded context | commits `7b9bf07` y `dbee8ed` | Preparan reemplazo por API real |
+| Fake API | Soporte simulado para la Web Application | `mock-api/db.json`, JSON Server, commits de 04/05/2026 | Sirve para revisión académica y pruebas frontend |
+| Servicios cliente | Organización interna de consumo de datos simulados | commits `7b9bf07` y `dbee8ed` | Preparan transición hacia API interna |
 | Backend ASP.NET Core | Planificado | `nexa-platform` y arquitectura objetivo | No implementado productivamente en TB1 |
 | Base de datos relacional | Modelo objetivo | Capítulo 4.8 | No implementada productivamente en TB1 |
 | POD | Mock confirmation | flujo de despacho TB1 | No hay evidencia de entrega productiva en TB1 |
