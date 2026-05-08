@@ -8,88 +8,117 @@ Por ello, los artefactos de needfinding no deben interpretarse como piezas visua
 
 La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado y función de diseño. Elaboración propia.
 
-*User Persona — Segmento 1: Valeria Sánchez*
+*User Persona — S1: Coordinación comercial / ventas internas — Valeria Sánchez*
 ![User Persona 1](../assets/images/user-persona-1.png)
 > *Nota:* Representación del arquetipo de vendedoras y coordinación comercial, enfocado en reducir la carga administrativa y el retrabajo en la captura del pedido. Elaboración propia.
 
-*User Persona — Segmento 2: Roberto García*
+*User Persona — S2: Jefatura logística / coordinación operativa — Roberto García*
 ![User Persona 2](../assets/images/user-persona-2.png)
 > *Nota:* Representación sintética del arquetipo de coordinación logística y operativa, enfocada en el control del cumplimiento, la visibilidad del despacho y el cierre con evidencia. Su construcción se apoya en hallazgos de trazabilidad, incidencias y coordinación operativa dentro del dominio. Elaboración propia.
 
-*User Persona — Segmento 3: Elena Litano*
+*User Persona — S3: Comprador B2B / cliente comercial — Elena Litano*
 ![User Persona 3](../assets/images/user-persona-3.png)
 > *Nota:* Representación sintética del arquetipo de comprador comercial B2B, construida a partir de entrevistas a compradores minoristas y mayoristas, más evidencia de adopción digital del canal tradicional. Elaboración propia.
 
 ### ***2.3.2. User Task Matrix***
 
-User Task Matrix: Frecuencia e Importancia por Arquetipo
+#### User Task Matrix: Frecuencia e Importancia por Arquetipo
 
-#### Tabla User Task Matrix
+| Tareas del Mundo Real                                     | Valeria (S1: Comercial) |             | Roberto (S2: Logística) |             | Comprador B2B (S3) |             |
+|:----------------------------------------------------------|:------------------------|:------------|:------------------------|:------------|:----------------------|:------------|
+|                                                           | Frecuencia              | Importancia | Frecuencia              | Importancia | Frecuencia            | Importancia |
+| **Revisar lista de precios y stock disponible**           | Alta                    | Alta        | Media                   | Alta        | Alta                  | Alta        |
+| **Elaborar y enviar listas de pedido**                    | Alta                    | Alta        | -                       | -           | Alta                  | Alta        |
+| **Revisar deudas y límite de crédito del comprador**      | Alta                    | Alta        | -                       | -           | Baja                  | Media       |
+| **Controlar fechas de caducidad de la mercadería**        | Media                   | Alta        | Alta                    | Alta        | Alta                  | Alta        |
+| **Preparar y organizar la carga física para el reparto**  | -                       | -           | Alta                    | Alta        | -                     | -           |
+| **Consultar avance o momento estimado de entrega**        | Alta                    | Media       | Alta                    | Alta        | Alta                  | Alta        |
+| **Verificar y dar conformidad a la mercadería entregada** | -                       | -           | Alta                    | Alta        | Alta                  | Alta        |
 
-|        Tareas Identificadas (Tasks)                                                           | Segmento 1: Valeria (Ventas) |   |  |      | Segmento 2: Roberto (Logística) |   | |    | Segmento 3: Elena (Comprador) |  ||
-|                                                          | Frecuencia  |           | Importancia |       | Frecuencia |   Importancia    |
-|:---------------------------------------------------------------------------------------|:-----------------------------|:----------|:--------------------------------|:------|:------------------------------|:------|
-| **Evaluar necesidades de abastecimiento e inventario local**                           | -                            | -         | -                               | -     | Alta                          | Alta  |
-| **Consultar y validar disponibilidad de stock (Catálogo/Cámara)**                      | Alta                         | Alta      | Alta                            | Alta  | Alta                          | Alta  |
-| **Emitir solicitud de pedido / Realizar la compra**                                    | -                            | -         | -                               | -     | Alta                          | Alta  |
-| **Recepcionar, interpretar y transcribir el pedido**                                   | Alta                         | Alta      | -                               | -     | -                             | -     |
-| **Consolidar pedidos y preparar mercadería (Picking)**                                 | -                            | -         | Alta                            | Alta  | -                             | -     |
-| **Asignar rutas y gestionar el despacho de transporte**                                | -                            | -         | Alta                            | Alta  | -                             | -     |
-| **Hacer seguimiento al estado de la entrega en ruta (Tracking)**                       | Media                        | Alta      | Alta                            | Alta  | Alta                          | Alta  |
-| **Recepcionar la mercadería en el punto de venta y pagar**                             | -                            | -         | -                               | -     | Alta                          | Alta  |
-| **Gestionar documentación física (Guías de remisión, facturas)**                       | Baja                         | Media     | Alta                            | Alta  | Media                         | Media |
-| **Atender y gestionar incidencias, reclamos o devoluciones**                           | Media                        | Alta      | Media                           | Alta  | Media                         | Alta  |
 > *Nota:* Análisis de la carga de tareas manuales distribuidas a lo largo de la cadena de suministro refrigerada. Frecuencia e importancia determinadas mediante el análisis cualitativo de las entrevistas (Needfinding). Elaboración propia.
 
 ### ***2.3.3. User Journey Mapping***
 
-*Journey Map — Segmento 1: Coordinación Comercial*
+Los Journey Maps describen la situación actual de cada segmento antes de Nexa. Representan el recorrido As-Is: cómo se realiza hoy cada proceso, qué fricciones aparecen en cada etapa y dónde se concentra el mayor estrés operativo. No describen la experiencia dentro de la plataforma propuesta.
+
+*Journey Map As-Is — S1: Coordinación comercial / ventas internas*
 ![Journey Map 1](../assets/images/journey-map-1.png)
-> *Nota:* Mapeo del proceso de captura y gestión de pedidos, identificando puntos de dolor en la transcripción manual. Elaboración propia.
+> *Nota:* Mapeo del proceso actual de captura y gestión de pedidos, identificando puntos de dolor en la transcripción manual y la dispersión de canales. Elaboración propia.
 
-*Journey Map — Segmento 2: Despacho y Entrega*
+*Journey Map As-Is — S2: Jefatura logística / coordinación operativa*
 ![Journey Map 2](../assets/images/journey-map-2.png)
-> *Nota:* Mapeo de la ruta logística, enfatizando los cuellos de botella en la comunicación de incidencias. Elaboración propia.
+> *Nota:* Mapeo de la ruta logística actual, enfatizando los cuellos de botella en la comunicación de incidencias y la falta de trazabilidad operativa. Elaboración propia.
 
-*Journey Map — Segmento 3: Cliente Comercial B2B*
+*Journey Map As-Is — S3: Comprador B2B / cliente comercial*
 ![Journey Map 3](../assets/images/journey-map-3.png)
-> *Nota:* Mapeo de la experiencia de abastecimiento del cliente, destacando la incertidumbre en el seguimiento de entrega. Elaboración propia.
+> *Nota:* Mapeo de la experiencia actual de abastecimiento del cliente, destacando la incertidumbre en el seguimiento de entrega y la dependencia del vendedor. Elaboración propia.
 
-El principal valor del bloque no está en describir tres trayectos separados, sino en demostrar que el punto de dolor cambia de forma pero no de origen. En el Segmento 1 el problema aparece como ambigüedad y retrabajo; en el Segmento 2 como opacidad del abastecimiento e incertidumbre; y en el Segmento 3 como incidencias, demoras y cierre sin evidencia suficiente. Dicho de otro modo, los journeys confirman que el problema central no es una sola pantalla mal resuelta, sino una cadena de decisiones y validaciones que hoy pierde continuidad entre actores.
+El principal valor del bloque no está en describir tres trayectos separados, sino en demostrar que el punto de dolor cambia de forma pero no de origen. En S1 el problema aparece como ambigüedad y retrabajo; en S2 como opacidad del abastecimiento e incertidumbre; y en S3 como incidencias, demoras y cierre sin evidencia suficiente. Dicho de otro modo, los journeys confirman que el problema central no es una sola pantalla mal resuelta, sino una cadena de decisiones y validaciones que hoy pierde continuidad entre actores.
 
 Esta lectura también deja una implicancia directa para diseño: el MVP necesita mejorar no solo la captura del pedido, sino también los momentos de transición entre estados. Si el sistema estructura bien el pedido, pero no comunica con claridad su confirmación, preparación, despacho o entrega, el valor percibido seguirá fragmentado. Por eso los journeys sostienen la prioridad de estados visibles, historial del pedido, confirmación clara y trazabilidad mínima del cierre.
 
-### 2.3.4. As-Is Scenario Map
+#### As-Is Scenario Map
 
-El recorrido del As-Is Scenario Map se estructura en seis etapas operativas, alineadas estrictamente con los tres segmentos canónicos del producto y representados por sus respectivos User Personas: Segmento 1 (Coordinación Comercial), Segmento 2 (Jefatura logística) y Segmento 3 (Compradores B2B).
+El recorrido del As-Is Scenario Map se estructura en seis etapas operativas, alineadas estrictamente con los tres segmentos canónicos del producto y representados por sus respectivos User Personas: S1 (Coordinación comercial / ventas internas), S2 (Jefatura logística / coordinación operativa) y S3 (Comprador B2B / cliente comercial).
 
 #### Mapa de Escenario Actual (As-Is)
 
 | Etapa Operativa (As-Is) | Actores | Acciones actuales | Pain points reales | Emociones / Fricciones                                               | Oportunidades de diseño |
 |---|---|---|---|----------------------------------------------------------------------|---|
-| **1. Necesidad y reabastecimiento** | S3: Compradores B2B | Revisa stock propio en sus conservadoras, estima rotación, arma lista mental o en papel, y consulta por WhatsApp/llamada. | Catálogo desactualizado, sin precios ni disponibilidad visible, sin histórico de compras ágil. | Incertidumbre, urgencia, dependencia del vendedor. | Catálogo vivo con precios, disponibilidad y sugerencias de compra por cliente. |
-| **2. Captura del pedido** | S1: Coord. Comercial, S3: Compradores B2B | El pedido entra por WhatsApp, audio, foto de lista o llamada. S1 transcribe e interpreta al ERP/Excel. | Transcripción manual, ambigüedad de códigos, doble digitación, stock no confirmado en tiempo real. | Presión, retrabajo, miedo a equivocarse al transcribir. | Formulario estructurado con validación de SKU, precio, stock y crédito en un solo paso. |
-| **3. Validación de stock, crédito y FEFO** | S1: Coord. Comercial, S2: Jefatura Logística (ej. Roberto) | S1 consulta stock en ERP y por teléfono a almacén; revisa crédito en módulo separado. S2 confirma por lote/vencimiento. | Stock desactualizado en ERP, crédito fragmentado, rotación FEFO/FIFO coordinada verbalmente. | Desconfianza del sistema, interrupciones constantes entre áreas.                  | Vista única de stock real, crédito disponible y lotes priorizados por vencimiento. |
-| **4. Preparación y picking en almacén** | S2: Almacén y Jefatura Logística | Se imprime guía de remisión, se arman cajas/pallets manualmente, se valida visualmente temperatura y fecha. | Errores de picking, lote incorrecto, ruptura de cadena de frío no registrada, quiebres de stock descubiertos tarde. | Estrés por el tiempo, reclamos posteriores, riesgo de mermas.                      | Lista de picking digital con lote/vencimiento sugerido y checklist de temperatura integrado. |
-| **5. Despacho y tránsito** | S2: Jefatura logística | Cargan vehículo, salen con guía física, coordinan ruta por teléfono; el cliente llama a ventas para saber ETA. | "Ceguera logística": sin ETA visible para el cliente, sin trazabilidad en ruta, llamadas interrumpen al conductor. | Cansancio, llamadas invasivas cruzadas, ansiedad del cliente final.                  | ETA compartido, seguimiento de ruta ligero y registro mínimo de temperatura |
-| **6. Entrega y cierre** | S2: Jefatura logística, S3: Compradores B2B | Descarga, conteo manual, firma en guía física manchada o arrugada; reclamos por cantidades o vencimientos. | Cierre sin evidencia digital, disputas difíciles de resolver sobre quién rompió la cadena de frío, trazabilidad nula. | Frustración, desconfianza, reclamos post-entrega que afectan cobranzas.                     | Prueba de entrega digital (POD) con captura de firma, fotos, registro de temperatura y motivos de rechazo. |
+| **1. Necesidad y reabastecimiento** | S3: Comprador B2B / cliente comercial | Revisa stock propio en sus conservadoras, estima rotación, arma lista mental o en papel, y consulta por WhatsApp/llamada. | Catálogo desactualizado, sin precios ni disponibilidad visible, sin histórico de compras ágil. | Incertidumbre, urgencia, dependencia del vendedor. | Catálogo vivo con precios, disponibilidad y sugerencias de compra por cliente. |
+| **2. Captura del pedido** | S1: Coordinación comercial / ventas internas, S3: Comprador B2B / cliente comercial | El pedido entra por WhatsApp, audio, foto de lista o llamada. S1 transcribe e interpreta al ERP/Excel. | Transcripción manual, ambigüedad de códigos, doble digitación, stock no confirmado en tiempo real. | Presión, retrabajo, miedo a equivocarse al transcribir. | Formulario estructurado con validación de SKU, precio, stock y crédito en un solo paso. |
+| **3. Validación de stock, crédito y FEFO** | S1: Coordinación comercial / ventas internas, S2: Jefatura logística / coordinación operativa | S1 consulta stock en ERP y por teléfono a almacén; revisa crédito en módulo separado. S2 confirma por lote/vencimiento. | Stock desactualizado en ERP, crédito fragmentado, rotación FEFO/FIFO coordinada verbalmente. | Desconfianza del sistema, interrupciones constantes entre áreas.                  | Vista única de stock real, crédito disponible y lotes priorizados por vencimiento. |
+| **4. Preparación y picking en almacén** | S2: Jefatura logística / coordinación operativa | Se imprime guía de remisión, se arman cajas/pallets manualmente, se valida visualmente temperatura y fecha. | Errores de picking, lote incorrecto, ruptura de cadena de frío no registrada, quiebres de stock descubiertos tarde. | Estrés por el tiempo, reclamos posteriores, riesgo de mermas.                      | Lista de picking digital con lote/vencimiento sugerido y checklist de temperatura integrado. |
+| **5. Despacho y tránsito** | S2: Jefatura logística / coordinación operativa | Cargan vehículo, salen con guía física, coordinan ruta por teléfono; el cliente llama a ventas para conocer el avance. | "Ceguera logística": sin estado visible para el cliente, sin trazabilidad operativa suficiente, llamadas interrumpen al conductor. | Cansancio, llamadas invasivas cruzadas, ansiedad del cliente final.                  | Estado compartido de despacho y registro operativo mínimo. |
+| **6. Entrega y cierre** | S2: Jefatura logística / coordinación operativa; S3: Comprador B2B / cliente comercial | Descarga, conteo manual, firma en guía física manchada o arrugada; reclamos por cantidades o vencimientos. | Cierre sin evidencia digital, disputas difíciles de resolver sobre quién rompió la cadena de frío, trazabilidad nula. | Frustración, desconfianza, reclamos post-entrega que afectan cobranzas.                     | Evidencia de conformidad de entrega como capacidad planificada del flujo. |
 
-Estos puntos no se presentan como funciones implementadas de Nexa en su primera versión, sino como el mapa general de oportunidades que el producto pretende atacar mediante incrementos. La prioridad inicial será resolver la captura estructurada del pedido y devolver la visibilidad de estado (trazabilidad) entre el Segmento 1 (Ventas), el Segmento 2 (Logística) y el Segmento 3 (Comprador).
+Estos puntos no se presentan como funciones implementadas de Nexa en su primera versión, sino como el mapa general de oportunidades que el producto pretende atacar mediante incrementos. La prioridad inicial será resolver la captura estructurada del pedido y devolver la visibilidad de estado (trazabilidad) entre S1, S2 y S3.
 
-### ***2.3.5. Empathy Mapping***
+### ***2.3.4. Empathy Mapping***
 
 A continuación, se presentan los Empathy Maps desarrollados para cada segmento objetivo.
 
-*Empathy Map — Segmento 1: Coordinación Comercial*
+*Empathy Map — S1: Coordinación comercial / ventas internas*
 ![Empathy Map 1](../assets/images/empathy-map-1.png)
 > *Nota:* Análisis de expectativas y temores del personal administrativo respecto a la adopción tecnológica. Elaboración propia.
 
-*Empathy Map — Segmento 2: Despacho y Entrega*
+*Empathy Map — S2: Jefatura logística / coordinación operativa*
 ![Empathy Map 2](../assets/images/empathy-map-2.png)
-> *Nota:* Exploración del entorno laboral y necesidades de soporte del personal en ruta. Elaboración propia.
+> *Nota:* Exploración del entorno laboral y necesidades de soporte de S2: Jefatura logística / coordinación operativa. Elaboración propia.
 
-*Empathy Map — Segmento 3: Cliente Comercial B2B*
+*Empathy Map — S3: Comprador B2B / cliente comercial*
 ![Empathy Map 3](../assets/images/empathy-map-3.png)
-> *Nota:* Identificación de motivadores extrínsecos e intrínsecos para la digitalización del bodeguero. Elaboración propia.
+> *Nota:* Identificación de motivadores extrínsecos e intrínsecos para la digitalización del comprador comercial B2B. Elaboración propia.
 
+### ***Síntesis complementaria de Needfinding***
 
+#### User Goals por Segmento
+
+Los user goals sintetizan el objetivo principal que cada persona busca alcanzar al interactuar con el producto. Su función es conectar los hallazgos de la investigación cualitativa con los flujos de diseño documentados en la sección 4.4, asegurando que cada wireflow y user flow tenga origen en una necesidad identificada y no en una decisión arbitraria de diseño.
+
+*Tabla: User Goals por segmento*
+
+| Segmento | User Persona | User goal | Pain actual | Criterio de éxito | Flujo relacionado |
+|:---|:---|:---|:---|:---|:---|
+| S1: Coordinación comercial / ventas internas | Valeria Sánchez | Registrar o asistir un pedido B2B validando cliente, condición comercial y disponibilidad de productos, con trazabilidad posterior del estado del pedido | Captura manual por WhatsApp/audio, doble digitación, validaciones dispersas entre ERP y teléfono, sin historial integrado accesible | El pedido se crea con cliente y productos validados en un solo flujo estructurado, queda trazable y es visible para coordinación operativa | User Flow S1 — Pedido asistido (4.4.4) |
+| S2: Jefatura logística / coordinación operativa | Roberto García | Supervisar inventario, riesgo FEFO, despacho y cierre de entrega con registro de conformidad | Opacidad del abastecimiento, coordinación verbal con almacén, cierres de entrega sin evidencia digital y falta de visibilidad compartida entre áreas | El ciclo logístico completo (inventario → despacho → cierre) se ejecuta con información estructurada y evidencia registrada en el sistema | User Flow S2 — Inventario, despacho y cierre (4.4.4) |
+| S3: Comprador B2B / cliente comercial | Elena Litano | Consultar catálogo, seleccionar productos y dar seguimiento autónomo a pedidos desde un portal B2B sin depender del vendedor | Incertidumbre sobre disponibilidad real, dependencia del vendedor para conocer el estado del pedido y ausencia de historial de compras accesible | El comprador puede explorar el catálogo, enviar un pedido y consultar su estado sin necesidad de contacto por WhatsApp ni llamada telefónica | User Flow S3 — Portal de compra (4.4.4) — *Flujo de planificación, primera iteración* |
+
+> *Nota:* S3 se documenta como flujo de planificación en la primera iteración; los flujos internos S1 y S2 constituyen la evidencia de validación principal. Los user goals conectan la investigación cualitativa del needfinding con los wireflows y user flows de la sección 4.4. Elaboración propia.
+
+#### Trazabilidad investigación → producto
+
+La siguiente tabla documenta cómo cada insumo de investigación derivó en un artefacto de diseño, qué segmento afecta y cómo informa las decisiones de producto. Su función es demostrar que el MVP no surge de suposiciones no sustentadas, sino de evidencia cualitativa sistemáticamente procesada.
+
+*Tabla: Trazabilidad investigación → producto*
+
+| Insumo de investigación | Artefacto derivado | Segmento | Cómo informa el diseño del producto |
+|:---|:---|:---|:---|
+| Entrevistas: pedidos recibidos por WhatsApp, audio y listas manuales; doble digitación y errores de transcripción | User Persona S1 (Valeria) → User Goal S1 | S1 | Justifica el flujo asistido de captura de pedido con validación de cliente, stock y condición comercial en un solo paso |
+| Entrevistas: falta de visibilidad de inventario en tiempo real, coordinación verbal con almacén, cierres sin evidencia | User Persona S2 (Roberto) → User Goal S2 | S2 | Justifica el módulo de inventario con FEFO, el dispatch board y el cierre simulado POD mock |
+| Entrevistas: incertidumbre del comprador sobre disponibilidad y estado del pedido; dependencia del vendedor | User Persona S3 (Elena) → User Goal S3 | S3 | Justifica el portal B2B con catálogo consultable, flujo de pedido y seguimiento autónomo |
+| User Task Matrix: tareas de alta frecuencia e importancia por arquetipo | Priorización de funcionalidades core del MVP | S1, S2, S3 | Identifica qué tareas el producto debe resolver primero para generar valor operativo visible |
+| Journey Maps: mapeo de fricciones por etapa del proceso actual | Puntos de dolor por segmento → decisiones de diseño | S1, S2, S3 | Revela los momentos de mayor fricción y orienta la priorización de estados visibles, trazabilidad y transiciones entre pantallas |
+| As-Is Scenario Map: recorrido operativo actual en seis etapas | Oportunidades de diseño por etapa operativa | S1, S2, S3 | Conecta el estado actual del proceso fragmentado con las decisiones de alcance del MVP y la lógica de los flujos diseñados |
+
+> *Nota:* La trazabilidad demuestra que cada decisión de diseño tiene origen identificable en evidencia cualitativa. Los artefactos de investigación son fuente directa del backlog, los user goals y la arquitectura de información. Elaboración propia.
