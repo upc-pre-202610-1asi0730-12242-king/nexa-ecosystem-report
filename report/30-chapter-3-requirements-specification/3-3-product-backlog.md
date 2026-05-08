@@ -91,4 +91,16 @@ La estimación utiliza la escala de **1, 2, 3, 5 y 8 Story Points**. **1 SP** re
 
 Total: 78 User Stories.
 
+### Evidencia del Product Backlog en Jira
+
+El Product Backlog de Nexa se gestiona en Jira como herramienta de seguimiento del proyecto. La vista permite observar las historias de usuario priorizadas por valor de negocio, su estado, responsable, épica asociada y estimación en Story Points. Esta evidencia complementa la tabla redactada en el reporte, donde se mantiene la descripción formal de cada User Story y su estimación.
+
+![Product Backlog en Jira](../assets/images/jira/product-backlog-jira-tb1.png)
+
+**URL del Product Backlog:** [Jira Backlog — Proyecto Nexa](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog)
+
+La captura muestra el backlog general del proyecto organizado en Jira. La priorización no se basa únicamente en el orden de ejecución por sprint, sino en la relevancia de cada historia para el modelo de negocio. Por ello, las historias asociadas a pedidos, disponibilidad, coordinación comercial-logística y seguimiento operativo se mantienen como núcleo funcional del producto, mientras que las historias del Landing Page se vinculan al Sprint 1 por corresponder al primer entregable visible del proyecto.
+
+> *Nota:* La evidencia visual de Jira respalda la existencia del Product Backlog en la herramienta de gestión; la tabla principal de la sección 3.3 conserva la especificación textual exigida para las User Stories, su descripción y sus Story Points. Elaboración propia.
+
 > *Nota*: La estimación utiliza la escala de Story Points solicitada para el curso. El orden prioriza valor de negocio, entregabilidad y dependencia funcional.
