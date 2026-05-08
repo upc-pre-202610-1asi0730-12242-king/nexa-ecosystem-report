@@ -1,7 +1,7 @@
 ## Project Report Collaboration Insights
 
 <p align="justify">
-Esta sección documenta la colaboración del equipo <strong>KING</strong> alrededor del desarrollo del informe académico y del ecosistema de repositorios del proyecto <strong>Nexa</strong>. Su propósito es hacer verificable la disciplina Docs-as-Code adoptada por el equipo: cómo se distribuyó el trabajo, qué evidencia existe del uso activo de GitHub como plataforma de colaboración, cómo se coordinaron los sprints y qué artefactos de reunión y práctica sustentan la sustentación AV1.
+Esta sección documenta la colaboración del equipo <strong>KING</strong> alrededor del desarrollo del informe académico y del ecosistema de repositorios del proyecto <strong>Nexa</strong>. Su propósito es hacer verificable la disciplina Docs-as-Code que adoptamos: cómo distribuimos el trabajo, qué evidencia existe del uso activo de GitHub como plataforma de colaboración, cómo coordinamos los sprints y qué artefactos de reunión y práctica sustentan cada entrega.
 </p>
 
 ### Organización en GitHub
@@ -11,14 +11,14 @@ Esta sección documenta la colaboración del equipo <strong>KING</strong> alrede
 | Organización GitHub del equipo KING | [https://github.com/upc-pre-202610-1asi0730-12242-king](https://github.com/upc-pre-202610-1asi0730-12242-king) |
 | Repositorio del informe (Docs-as-Code) | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) |
 | Repositorio de la Landing Page | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) |
-| Repositorio de la Web Application (futuro) | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) |
+| Repositorio de la Web Application TB1 | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) |
 | Repositorio del Backend / Plataforma (futuro) | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) |
 | Landing desplegada (GitHub Pages) | [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) |
 
 ### Distribución de actividades del equipo
 
 <p align="justify">
-El equipo se organizó alrededor de liderazgos funcionales en lugar de dividir por <em>autor por sección</em>. Cada integrante conservó uno o dos frentes principales y colaboró de manera transversal en los demás, lo que permitió ejecutar en paralelo investigación, diseño, arquitectura, documentación y publicación del sitio público sin perder coherencia narrativa ni técnica. La convención Conventional Commits y el branching GitFlow (`main`, `develop`, `feature/*`, `fix/*`) permitieron rastrear cada cambio.
+El equipo se organizó alrededor de liderazgos funcionales en lugar de dividir por <em>autor por sección</em>. Cada integrante conservó uno o dos frentes principales y colaboró de manera transversal en los demás, lo que permitió ejecutar en paralelo investigación, diseño, arquitectura, documentación y publicación del sitio público. Para TB1, la evidencia observable de control de versiones se concentra en `main` y en commits convencionales. GitFlow queda documentado como convención de trabajo para ordenar la evolución del proyecto en el siguiente hito.
 </p>
 
 | Integrante | Frentes de liderazgo | Frentes de colaboración |
@@ -91,6 +91,27 @@ El equipo se organizó alrededor de liderazgos funcionales en lugar de dividir p
   <img src="../assets/images/jira/backlog.png" alt="Jira Product Backlog" width="85%">
   <br><em>Figura: Product Backlog completo en Jira. Elaboración propia.</em>
 </p>
+
+### TB1 / Sprint 2 — Colaboración y coordinación
+
+Para TB1, nuestro equipo amplió la colaboración desde documentación e investigación hacia la consolidación de una web application y la limpieza integral del reporte. La siguiente tabla resume cómo trabajamos durante Sprint 2.
+
+| Área de colaboración | Cómo trabajamos durante TB1 | Evidencia |
+|---|---|---|
+| Coordinación general | Diego lideró la integración del reporte, webapp scope, QA Docs-as-Code y consolidación final de la entrega | Commits de integración en `nexa-report`, `nexa-webapp` y `nexa-website` |
+| Documentación y revisión | César, Joaquín y Gino sostuvieron limpieza de capítulos, actualización de needfinding, IA, impact mapping, user stories y revisión de entregables | Commits distribuidos en `nexa-report` del 2–5 de mayo |
+| UX/UI de webapp | Gino y Joaquín actualizaron user flows, wireflows y mockups; Diego reconstruyó la estructura 4.4 | Commits de Ch4 del 5 de mayo |
+| Webapp implementation | Todos contribuyeron a `nexa-webapp`: auth, dashboard, orders, inventory, dispatch, portal, reports e i18n | 80 commits en `nexa-webapp` del 26/04–05/05 |
+| Arquitectura | Gerard contribuyó en DDD/C4, HTTP service layer y módulos puntuales de webapp | Commits vinculados a C4 y webapp clients/portal |
+| Continuidad landing | César, Joaquín, Gino y Gerard actualizaron SEO, tokens y copy; Diego alineó CTAs con webapp | 18 commits en `nexa-website` del 28/04–03/05 |
+
+| Decisión o ajuste durante TB1 | Motivo | Resultado |
+|---|---|---|
+| Separar Sprint 1 baseline de Sprint 2 en Ch5 | Evitar mezclar landing AV1 con webapp TB1 | Capítulo 5 con dos sprints documentados por separado |
+| Usar Fake API / JSON Server en lugar de backend productivo | Validar flujos frontend sin afirmar servicios no implementados | Webapp demostrable sin sobredeclaración |
+| Reconstruir sección 4.4 con wireframes/wireflows/mockups actuales | Evidencia anterior estaba desactualizada respecto al producto | Documentación UX/UI alineada con webapp real |
+| Limpiar Capítulos 1–4 de terminología imprecisa | Algunos segmentos, personas y style guidelines no coincidían con el producto actual | Reporte más coherente y defendible |
+| Documentar contribución real por evidencia | Evitar afirmaciones de contribución igualitaria no verificable | Student Outcome con tablas de progresión AV1→TB1 |
 
 ### Evidencias de coordinación y trabajo en equipo
 
