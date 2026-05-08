@@ -22,7 +22,7 @@ La planificación del Sprint 1 organizó la base documental, visual y pública d
 | Sprint 1 Velocity | 99 Story Points |
 | Sum of Story Points | 99 Story Points |
 
-![Reunión virtual de planificación del Sprint 1](../../assets/images/front-matter/collaboration/team-collaboration-meeting.jpg)
+![Reunión virtual de planificación del Sprint 1](../../assets/images/project-collaboration/team-collaboration-meeting.jpg)
 
 Figura. Reunión virtual del equipo para coordinación de Sprint 1.
 
@@ -44,7 +44,7 @@ La ejecución del sprint evidencia una distribución funcional del liderazgo. En
 
 El Sprint Backlog 1 concentra el trabajo realizado entre el **2026-04-01 y 2026-04-23**. El objetivo principal del sprint fue construir la base documental del proyecto, organizar el trabajo bajo Docs-as-Code y consolidar el primer entregable visible mediante el Landing Page, junto con los artefactos iniciales de investigación, diseño y backlog.
 
-![Sprint Backlog 1 en Jira](../../assets/images/chapter-5/sprint-evidence/jira/sprint-1-board-jira.png)
+![Sprint Backlog 1 en Jira](../../assets/images/jira/sprint-1-board-jira.png)
 
 **URL del board/backlog:** [Jira Backlog — Proyecto Nexa](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog)
 

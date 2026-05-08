@@ -27,53 +27,53 @@ El equipo se organizó alrededor de liderazgos funcionales. Cada integrante mant
 
 ### Evidencias de GitHub Insights
 
-![GitHub Insights del equipo KING](../assets/images/front-matter/collaboration/github-insights.png)
+![GitHub Insights del equipo KING](../assets/images/project-collaboration/github-insights.png)
 
 Figura. GitHub Insights: actividad de contribuciones del equipo KING en los repositorios del proyecto Nexa. Elaboración propia.
 
 ### Evidencias de commits — nexa-report
 
-![Primeros commits nexa-report](../assets/images/front-matter/collaboration/report-commits/first-commits.png)
+![Primeros commits nexa-report](../assets/images/project-collaboration/report-commits/first-commits.png)
 
 Figura. Primeros commits del repositorio `nexa-report`. Elaboración propia.
 
-![Commits intermedios nexa-report](../assets/images/front-matter/collaboration/report-commits/commits.png)
+![Commits intermedios nexa-report](../assets/images/project-collaboration/report-commits/commits.png)
 
 Figura. Bloque intermedio de commits del repositorio `nexa-report`. Elaboración propia.
 
-![Últimos commits nexa-report](../assets/images/front-matter/collaboration/report-commits/last-commits.png)
+![Últimos commits nexa-report](../assets/images/project-collaboration/report-commits/last-commits.png)
 
 Figura. Últimos commits del repositorio `nexa-report` al cierre de AV1. Elaboración propia.
 
 ### Evidencias de commits — nexa-website
 
-![Primeros commits nexa-website](../assets/images/front-matter/collaboration/website-commits/first-commits.png)
+![Primeros commits nexa-website](../assets/images/project-collaboration/website-commits/first-commits.png)
 
 Figura. Primeros commits del repositorio `nexa-website`. Elaboración propia.
 
-![Commits intermedios nexa-website](../assets/images/front-matter/collaboration/website-commits/commits.png)
+![Commits intermedios nexa-website](../assets/images/project-collaboration/website-commits/commits.png)
 
 Figura. Bloque intermedio de commits del repositorio `nexa-website`. Elaboración propia.
 
-![Últimos commits nexa-website](../assets/images/front-matter/collaboration/website-commits/last-commits.png)
+![Últimos commits nexa-website](../assets/images/project-collaboration/website-commits/last-commits.png)
 
 Figura. Últimos commits del repositorio `nexa-website` al cierre de AV1. Elaboración propia.
 
 ### Sprint collaboration en Jira
 
-![Jira: Vista general Sprint 0 y Sprint 1](../assets/images/front-matter/collaboration/jira/sprint-0-sprint-1.png)
+![Jira: Vista general Sprint 0 y Sprint 1](../assets/images/jira/sprint-0-sprint-1.png)
 
 Figura. Vista general Sprint 0 + Sprint 1 en Jira. Elaboración propia.
 
-![Jira Sprint 1: parte 2](../assets/images/front-matter/collaboration/jira/sprint-1-p2.png)
+![Jira Sprint 1: parte 2](../assets/images/jira/sprint-1-p2.png)
 
 Figura. Sprint 1 en Jira, parte 2. Elaboración propia.
 
-![Jira Sprint 1: parte 3](../assets/images/front-matter/collaboration/jira/sprint-1-p3.png)
+![Jira Sprint 1: parte 3](../assets/images/jira/sprint-1-p3.png)
 
 Figura. Sprint 1 en Jira, parte 3. Elaboración propia.
 
-![Jira Product Backlog](../assets/images/front-matter/collaboration/jira/backlog.png)
+![Jira Product Backlog](../assets/images/jira/backlog.png)
 
 Figura. Product Backlog completo en Jira. Elaboración propia.
 
@@ -100,14 +100,14 @@ Para TB1, el equipo amplió la colaboración desde documentación e investigaci�
 
 ### Evidencias de coordinación y trabajo en equipo
 
-![Reunión de coordinación del equipo](../assets/images/front-matter/collaboration/team-collaboration-meeting.jpg)
+![Reunión de coordinación del equipo](../assets/images/project-collaboration/team-collaboration-meeting.jpg)
 
 Figura. Reunión de coordinación del equipo KING durante el Sprint 1. Elaboración propia.
 
-![Colaboración del equipo durante sprint](../assets/images/front-matter/collaboration/sprint-collaboration-evidence.jpg)
+![Colaboración del equipo durante sprint](../assets/images/project-collaboration/sprint-collaboration-evidence.jpg)
 
 Figura. Trabajo colaborativo del equipo durante el Sprint 1. Elaboración propia.
 
-![Práctica de exposición del equipo](../assets/images/front-matter/collaboration/presentation-practice-evidence.png)
+![Práctica de exposición del equipo](../assets/images/project-collaboration/presentation-practice-evidence.png)
 
 Figura. Práctica de exposición y preparación de la sustentación AV1 del equipo KING. Elaboración propia.

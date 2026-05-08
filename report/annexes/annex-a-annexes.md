@@ -36,20 +36,20 @@ El siguiente cuadro concentra los enlaces a las plataformas colaborativas y repo
 | **Repositorio GitHub (Webapp)** | [upc-pre-202610-1asi0730-12242-king/nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) |
 | **Repositorio GitHub (Backend / Plataforma futura)** | [upc-pre-202610-1asi0730-12242-king/nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) |
 | **Landing Page desplegada** | [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) |
-| **Webapp desplegada TB1** | [https://nexa-2f1bb.web.app](https://nexa-2f1bb.web.app) |
+| **Webapp desplegada TB1** | [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-webapp/#/auth/login](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-webapp/#/auth/login) |
 
 ## A.4. Evidencia de Coordinación Grupal del Sprint 1
 
 Este anexo respalda la subsección **5.2.1.8. Team Collaboration Insights during Sprint**. A continuación, se registran pruebas de coordinación síncrona y asíncrona del equipo, incluyendo capturas de reuniones, revisiones de diseño y acuerdos de trabajo.
 
-![Evidencia de coordinación grupal Sprint 1](../assets/images/front-matter/collaboration/sprint-collaboration-evidence.jpg)
+![Evidencia de coordinación grupal Sprint 1](../assets/images/project-collaboration/sprint-collaboration-evidence.jpg)
 
 Figura. Trabajo colaborativo del equipo KING durante el Sprint 1. Elaboración propia.
 
-![Reunión de coordinación del equipo KING](../assets/images/front-matter/collaboration/team-collaboration-meeting.jpg)
+![Reunión de coordinación del equipo KING](../assets/images/project-collaboration/team-collaboration-meeting.jpg)
 
 Figura. Reunión de coordinación del equipo KING durante Sprint 1. Elaboración propia.
 
-![Práctica de exposición AV1](../assets/images/front-matter/collaboration/presentation-practice-evidence.png)
+![Práctica de exposición AV1](../assets/images/project-collaboration/presentation-practice-evidence.png)
 
 Figura. Práctica de exposición del equipo KING para la sustentación AV1. Elaboración propia.

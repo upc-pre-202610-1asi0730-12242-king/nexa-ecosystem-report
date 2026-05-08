@@ -1,17 +1,21 @@
 ## 4.3. Landing Page UI Design.
 
-La landing page es la superficie pública de entrada al ecosistema Nexa. Su función principal es comunicar la propuesta de valor, segmentar visitantes por tipo de operación y dirigirlos hacia la demostración o el acceso al producto. Cada elemento del sitio público tiene continuidad con alguna superficie operativa de la webapp o del portal B2B:
+La landing page es la superficie pública de entrada al ecosistema Nexa. Su función principal es comunicar la propuesta de valor, segmentar visitantes por tipo de operación y dirigirlos hacia la demostración o el acceso al producto.
+
+La evidencia desplegada de la landing se encuentra en: [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/).
+
+Cada elemento del sitio público tiene continuidad con alguna superficie operativa de la webapp o del portal B2B:
 
 | Elemento de la landing | Continuidad en el producto | Superficie relacionada |
 |---|---|---|
-| CTA "Ingresar" | Acceso autenticado al sistema | `/auth/login` |
+| CTA "Ingresar" | Acceso autenticado al sistema | [Webapp login](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-webapp/#/auth/login) |
 | Segmento Importadores/Mayoristas | Flujos de pedido asistido (S1) | `/ops/orders/new` |
 | Segmento Distribuidores | Control logístico y despacho (S2) | `/ops/dispatch`, `/ops/inventory` |
 | Segmento Cámaras Frías | Monitoreo y trazabilidad (S2) | `/ops/inventory`, `/ops/reports` |
 | Propuesta de catálogo/pedidos | Compra autónoma B2B (S3) | `/portal/catalog`, `/portal/orders` |
 | Explicación de la plataforma | Dashboard y módulos operativos | `/ops/dashboard` |
 
-Esta continuidad no implica que la landing replique las pantallas operativas; más bien, cada promesa comercial del sitio público se resuelve en una superficie funcional concreta del producto autenticado.
+Esta continuidad no implica que la landing replique las pantallas operativas. Los CTAs principales dirigen al sitio desplegado o al login de la webapp; las rutas internas documentadas sirven como referencia de comportamiento dentro del producto autenticado.
 
 ### 4.3.1. Landing Page Wireframe.
 
@@ -79,7 +83,7 @@ Elaboración propia. Esta sección traduce la propuesta en capacidades visibles 
 
 ![Home Section 3 - Industry Proof and Trust](../assets/images/mockups/landing-home-3.png)
 
-Elaboración propia. El bloque de confianza ayuda a conectar la narrativa comercial con un contexto B2B más creíble y menos abstracto.
+Elaboración propia. El bloque de confianza ayuda a conectar la comunicación comercial con un contexto B2B más creíble y menos abstracto.
 
 *Home — Cierre, contacto y navegación secundaria*
 
@@ -129,7 +133,7 @@ Elaboración propia. La propuesta para distribuidores enfatiza coordinación de 
 
 ![Solutions Importers 1](../assets/images/mockups/landing-solutions-importers-1.png)
 
-Elaboración propia. Esta variante adapta la narrativa a operaciones con más dependencia de abastecimiento y visibilidad de stock.
+Elaboración propia. Esta variante adapta la propuesta a operaciones con más dependencia de abastecimiento y visibilidad de stock.
 
 *Solutions — Operadores de cámaras frías*
 
@@ -155,7 +159,7 @@ Elaboración propia. El FAQ ordena preguntas recurrentes del sitio en una estruc
 
 #### E. Mobile Web Browser
 
-La versión móvil no replantea el contenido desde cero. Su objetivo fue adaptar la misma narrativa pública a una interacción más breve, con lectura vertical, botones más directos y secciones condensadas para consulta rápida desde teléfono.
+La versión móvil no replantea el contenido desde cero. Su objetivo fue adaptar la misma comunicación pública a una interacción más breve, con lectura vertical, botones más directos y secciones condensadas para consulta rápida desde teléfono.
 
 *Mobile mock-up — primeras vistas públicas de Home, Platform, FAQ y Company*
 

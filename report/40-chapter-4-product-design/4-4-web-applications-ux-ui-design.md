@@ -1,484 +1,219 @@
 ## 4.4. Web Applications UX/UI Design.
 
-<p align="justify">
-El diseño de la web application de Nexa debe leerse como la continuación operativa de la landing page pública. Mientras el sitio público comunica el problema y la propuesta de valor, la aplicación autenticada resuelve el trabajo cotidiano mediante módulos de pedidos, inventario, despacho, trazabilidad y cierre de entrega. Por ello, su UX/UI se construye sobre un criterio distinto al marketing: <strong>claridad operativa, lectura rápida del estado del negocio y reducción de fricción en tareas repetitivas</strong>.
-</p>
+Esta sección documenta el diseño UX/UI de las superficies autenticadas del producto. La **webapp operativa interna (Ops)** para **S1: Coordinación comercial / ventas internas** y **S2: Jefatura logística / coordinación operativa** constituye la evidencia principal de diseño e implementación de esta entrega. El **portal B2B** para **S3: Comprador B2B / cliente comercial** se documenta a nivel de planificación en TB1: el flujo comprador está definido, pero no cuenta con pantallas implementadas en la webapp ni con mockups finales completos en esta iteración. S1 y S2 son la evidencia de validación principal. Las tres superficies comparten el sistema visual definido en 4.1, pero la prioridad de diseño en la webapp Ops es **claridad operativa, lectura rápida del estado del negocio y reducción de fricción en tareas repetitivas**.
 
-<p align="justify">
-En esta capa del producto, la interfaz deja de priorizar la conversión comercial y pasa a enfocarse en la toma de decisiones operativas rápidas. Cada pantalla debe ayudar a responder una pregunta concreta del dominio: qué pedido está en riesgo, qué producto necesita atención, qué validación bloquea la operación, qué unidad está en ruta y qué evidencia respalda el cierre. Bajo esa lógica, la documentación se organiza en cuatro partes esenciales: wireframes, wireflows, mock-ups y user flows detallados. Los artefactos se trabajaron colaborativamente en Figma y luego se exportaron para documentar todo el recorrido funcional del MVP.
-
-</p>
+Cada pantalla resuelve una pregunta concreta del dominio: qué pedido está en riesgo, qué producto necesita atención, qué validación bloquea la operación, qué unidad está en ruta y qué evidencia respalda el cierre. La documentación se organiza en wireframes, wireflows, mock-ups y user flows como artefactos de diseño UX/UI.
 
 ### 4.4.1. Web Applications Wireframes.
 
-<p align="justify">
-Los wireframes de la aplicación web fueron elaborados en Figma para ordenar la estructura funcional antes de entrar en alta fidelidad. Su valor no está en el acabado visual, sino en definir jerarquías, zonas de información, módulos persistentes y rutas de interacción. En Nexa, esta etapa fue clave porque el problema no consiste solo en “dibujar pantallas”, sino en traducir flujos complejos del dominio a superficies que puedan usarse bajo presión operativa.
-</p>
+Los wireframes ordenan la estructura funcional antes de entrar en alta fidelidad. Su valor está en definir jerarquías, zonas de información y rutas de interacción por superficie y persona. La colección se organiza como recorrido operativo de diseño para S1 y S2, con pantallas suficientes para explicar dashboard, pedidos, inventario, despacho, POD mock y trazabilidad.
 
-<p align="justify">
-Las diez vistas siguientes cubren el recorrido principal del MVP transaccional: control general, gestión de órdenes, captura asistida, inventario, analítica FEFO, despacho, seguimiento, detalle de pedido y cierre con evidencia. Cada wireframe modela primero la lógica de trabajo y luego la visualización final.
-</p>
+#### Sprint 1 — Wireframes de diseño
 
-*Cobertura funcional de wireframes de la web application*
-
-| Wireframe | Módulo | Decisión principal que habilita |
+| Wireframe | Persona / Segmento | User goal que habilita |
 |---|---|---|
-| Dashboard Operativo Total Control | Vista general del sistema | Priorizar alertas, revisar KPIs y detectar riesgos inmediatos |
-| B2B Orders Hub | Gestión de órdenes | Ordenar estados, filtrar pedidos y decidir acciones de seguimiento |
-| Creación de Pedido Asistido | Captura comercial | Registrar pedidos con validaciones antes del envío |
-| Inventory Management | Inventario | Revisar stock, riesgo térmico y rotación visible |
-| Confirmación de Despacho & Asignación de Flota | Despacho | Asignar transporte y liberar salida con contexto operativo |
-| FEFO Intelligence & Analytics | Analítica de rotación | Priorizar lotes y anticipar vencimientos |
-| Active Shipments & Routes | Seguimiento | Monitorear entregas activas e incidencias de ruta |
-| Cierre de Entrega (POD) & Certificación | Cierre operativo | Registrar evidencia y certificar cumplimiento |
-| Inventory Detail | Detalle de inventario | Profundizar en estado térmico y disponibilidad de un SKU |
-| Order Detail & Traceability | Trazabilidad por pedido | Reconstruir historial y validar cadena de custodia |
+| Dashboard Operativo Total Control | Valeria (S1), Roberto (S2) | Leer KPIs, alertas y accesos directos al iniciar sesión |
+| B2B Orders Hub | Valeria (S1) | Revisar bandeja de pedidos y priorizar acción |
+| Creación de Pedido Asistido | Valeria (S1) | Capturar un pedido con validación de cliente y stock |
+| Inventory Management | Roberto (S2) | Revisar disponibilidad, riesgo FEFO y rotación |
+| Confirmación de Despacho & Asignación de Flota | Roberto (S2) | Liberar salida y asignar unidad de transporte |
+| FEFO Intelligence & Analytics | Roberto (S2) | Priorizar lotes por vencimiento y riesgo de merma |
+| Active Shipments & Routes | Roberto (S2) | Monitorear unidades en tránsito y estado de ruta |
+| Cierre de Entrega (POD) & Certificación | Roberto (S2) | Registrar evidencia y cerrar entrega formalmente |
+| Inventory Detail | Roberto (S2) | Profundizar en estado de un SKU específico |
+| Order Detail & Traceability | Valeria (S1), Roberto (S2) | Reconstruir historial completo de un pedido |
 
 #### Dashboard Operativo Total Control
 
 ![Wireframe Dashboard Operativo Total Control](../assets/images/webapp-wireframes/webapp-wireframe-dashboard-operativo-total-control.png)
 
-<p align="justify">
 Este wireframe define la superficie de entrada para usuarios internos que necesitan leer rápidamente el estado del negocio. La composición concentra KPIs, alertas y accesos directos a módulos críticos, evitando que la supervisión tenga que saltar entre pantallas para detectar riesgos. Su función dentro del MVP es convertir una operación fragmentada en una vista centralizada de decisión.
-</p>
 
 #### B2B Orders Hub
 
 ![Wireframe B2B Orders Hub](../assets/images/webapp-wireframes/webapp-wireframe-b2b-orders-hub.png)
 
-<p align="justify">
 La vista de órdenes organiza el flujo comercial en una bandeja operable, con estados visibles, filtros y acceso al detalle de cada pedido. Aquí la prioridad de diseño no es “mostrar una tabla”, sino permitir lectura rápida de cola de trabajo, excepciones y prioridades. Esto responde directamente al problema de desorden entre pedidos informales, confirmaciones tardías y seguimiento manual.
-</p>
 
 #### Creación de Pedido Asistido
 
 ![Wireframe Creación de Pedido Asistido](../assets/images/webapp-wireframes/webapp-wireframe-creacion-pedido-asistido.png)
 
-<p align="justify">
 Este wireframe estructura el momento más sensible del flujo: la captura del pedido por coordinación comercial. El layout reserva zonas claras para identificación del cliente, selección de productos, condiciones comerciales y validaciones visibles, reduciendo el riesgo de doble digitación o ambigüedad. Su aporte es demostrar que la captura puede nacer ordenada desde el origen.
-</p>
 
 #### Inventory Management
 
 ![Wireframe Inventory Management](../assets/images/webapp-wireframes/webapp-wireframe-inventory-management.png)
 
-<p align="justify">
 La gestión de inventario fue diseñada como una vista de control y no solo de registro. El wireframe prioriza disponibilidad, riesgo, clasificación y acceso a detalle, porque el inventario en Nexa debe sostener decisiones comerciales y no limitarse a listar cantidades. Por eso la navegación permite pasar de visión agregada a intervención puntual sin romper el contexto.
-</p>
 
 #### Confirmación de Despacho & Asignación de Flota
 
 ![Wireframe Confirmación de Despacho y Asignación de Flota](../assets/images/webapp-wireframes/webapp-wireframe-confirmacion-despacho-asignacion-flota.png)
 
-<p align="justify">
 Esta pantalla modela la transición entre pedido confirmado y ejecución física. Su estructura visibiliza unidades listas para salir, asignación de transporte y condiciones necesarias para despachar, evitando que ese paso dependa de coordinación verbal dispersa. El wireframe muestra que despacho y planeamiento deben quedar dentro de la misma lógica operativa del sistema.
-</p>
 
 #### FEFO Intelligence & Analytics
 
 ![Wireframe FEFO Intelligence & Analytics](../assets/images/webapp-wireframes/webapp-wireframe-fefo-intelligence-analytics.png)
 
-<p align="justify">
 El módulo FEFO fue planteado como una vista analítica especializada para convertir vencimientos y rotación en decisiones visibles. El wireframe ordena señales de riesgo, lotes prioritarios y lectura de tendencias, reforzando que Nexa no solo administra pedidos, sino que también ayuda a prevenir pérdida de producto. Esta pantalla conecta directamente con la necesidad de reducir merma y sostener trazabilidad de inventario perecedero.
-</p>
 
 #### Active Shipments & Routes
 
 ![Wireframe Active Shipments & Routes](../assets/images/webapp-wireframes/webapp-wireframe-active-shipments-routes.png)
 
-<p align="justify">
-El seguimiento de rutas se diseñó como tablero de operación viva. Aquí la interfaz debe soportar lectura rápida de estado, ETA, incidencias y entregas activas, porque el usuario en esta fase necesita reaccionar y no navegar sin rumbo. La estructura apunta a reducir llamadas y mejorar visibilidad compartida entre operación, coordinación y cliente.
-</p>
+El seguimiento de rutas se diseñó como tablero de operación viva. Aquí la interfaz debe soportar lectura rápida de estado estimado, incidencias y entregas activas, porque el usuario en esta fase necesita reaccionar y no navegar sin rumbo. La estructura apunta a reducir llamadas y mejorar visibilidad compartida entre operación, coordinación y cliente.
 
 #### Cierre de Entrega (POD) & Certificación
 
 ![Wireframe Cierre de Entrega POD y Certificación](../assets/images/webapp-wireframes/webapp-wireframe-cierre-entrega-pod-certificacion.png)
 
-<p align="justify">
 El cierre del pedido no se resolvió como un formulario aislado, sino como una interfaz de certificación de cumplimiento. Este wireframe hace visibles los campos de evidencia, conformidad y validación final, porque el objetivo es reducir reclamos posteriores y sostener un historial trazable. Su diseño responde al problema recurrente de cierres débiles, pruebas dispersas y documentación poco defendible.
-</p>
 
 #### Inventory Detail
 
 ![Wireframe Inventory Detail](../assets/images/webapp-wireframes/webapp-wireframe-inventory-detail-premium-artisan-organic-milk.png)
 
-<p align="justify">
 El detalle de inventario baja al nivel de un SKU concreto para mostrar información que no cabe en la vista agregada: estado térmico, disponibilidad, riesgo y contexto del producto. Esta profundidad es importante porque muchos problemas de cadena de frío no se detectan en una vista general, sino al revisar condiciones específicas de un ítem. Por ello, el wireframe fue planteado como apoyo a decisiones finas y no solo como ficha informativa.
-</p>
 
 #### Order Detail & Traceability
 
 ![Wireframe Order Detail & Traceability](../assets/images/webapp-wireframes/webapp-wireframe-order-detail-traceability.png)
 
-<p align="justify">
 El detalle del pedido organiza la historia completa de una orden en una sola superficie: datos comerciales, estados, eventos logísticos y evidencia asociada. Esta pantalla resulta crítica para reclamos, auditoría interna y seguimiento operativo porque traduce la promesa de trazabilidad en una vista concreta. Su función es evitar que la explicación de “qué pasó con el pedido” vuelva a depender de mensajes sueltos o reconstrucciones manuales.
-</p>
 
 ### 4.4.2. Web Applications Wireflow Diagrams.
 
-<p align="justify">
-El wireflow sintetiza cómo se conectan entre sí las superficies principales de la aplicación. A diferencia del wireframe, que se enfoca en la estructura interna de una vista, el wireflow muestra continuidad entre acceso, captura, validación, seguimiento y cierre. En Nexa, esta lectura es indispensable porque el valor del sistema depende precisamente de no romper el flujo entre áreas y estados.
-</p>
+Un wireflow conecta pantallas, decisiones y estados de UI según un user goal concreto. En esta sección, los wireflows documentan cambios de pantalla, continuidad visual y restricciones de rol para las tres superficies principales: S1 comercial, S2 logística y S3 portal B2B.
 
-#### Wireflow 1 — Pedido end-to-end
+Los wireflows sintetizan las pantallas y estados principales derivados de los user flows. A diferencia de los user flows, no detallan todas las rutas alternativas, sino que muestran el recorrido visual mínimo necesario para cumplir cada user goal. Las decisiones específicas, restricciones y unhappy paths se desarrollan en los User Flow Diagrams.
 
-- **User Goal:** Como coordinación comercial (S1) o cliente B2B (S2), necesito llevar un pedido desde el acceso hasta el cierre con evidencia sin perder continuidad entre áreas.
-- **Segmentos vinculados:** S1 (captura), S2 (abastecimiento), S3 (despacho).
-- **Problema de dominio que atiende:** fragmentación entre captura, validación, despacho y cierre; hoy el pedido pierde estado al saltar entre WhatsApp, ERP y operación.
-- **Happy path:** login → dashboard/catálogo según rol → pedido asistido o autónomo → validación de stock y crédito OK → confirmación → seguimiento/ETA → POD y cierre.
-- **Unhappy path:** si la validación detecta bloqueo de crédito o stock insuficiente, el flujo se desvía a <em>Alerta y corrección</em> y vuelve a la captura; ningún pedido avanza a confirmación sin validación OK.
+**Evidencia FigJam:** [Wireflows Web Applications Nexa](https://www.figma.com/board/sjNuqAaFEa1MilaxkKwt3v)
 
-*Wireflow del pedido Nexa desde acceso hasta cierre operativo*
-
-```mermaid
-graph LR
-    A[Login] --> B{Tipo de usuario}
-    B -->|Coordinacion interna| C[Dashboard operativo]
-    B -->|Cliente B2B| D[Portal catalogo y carrito]
-    C --> E[Pedido asistido]
-    D --> F[Pedido autonomo]
-    E --> G[Validacion de stock y credito]
-    F --> G
-    G -->|OK| H[Confirmacion del pedido]
-    G -->|Bloqueo| I[Alerta y correccion]
-    H --> J[Seguimiento y ETA]
-    J --> K[POD y cierre]
-```
-
-Elaboración propia. El flujo concentra la continuidad entre captura, validación, seguimiento y cierre, evitando que el pedido quede fragmentado en herramientas paralelas.
-
-#### Wireflow 2 — Captura asistida y validación comercial
-
-- **User Goal:** Como coordinación comercial (S1), quiero capturar un pedido en representación del cliente verificando stock y crédito antes de comprometerlo.
-- **Segmento priorizado:** S1 (captura y validación).
-- **Problema de dominio:** validación tardía de crédito y stock que deriva en promesas inviables y retrabajo.
-- **Happy path:** bandeja → pedido asistido → identificar cliente → condiciones comerciales → líneas de pedido → sin alertas → envío para confirmación → pedido listo para preparación.
-- **Unhappy path:** si aparecen alertas de stock o crédito, el flujo regresa a las líneas para corregir cantidades, SKU o condición comercial; si no se pueden resolver, el pedido se detiene y queda registrado como bloqueado.
-
-*Wireflow de captura asistida y validación comercial*
-
-```mermaid
-flowchart LR
-    A["Bandeja de pedidos o Dashboard"] --> B["Abrir pedido asistido"]
-    B --> C["Identificar cliente"]
-    C --> D["Cargar condiciones comerciales"]
-    D --> E["Agregar productos y cantidades"]
-    E --> F{"¿Hay alertas de stock o crédito?"}
-    F -->|Sí| G["Corregir pedido o detener envío"]
-    G --> E
-    F -->|No| H["Enviar para confirmación"]
-    H --> I["Pedido listo para preparación"]
-```
-
-Elaboración propia. Este wireflow muestra el recorrido interno de coordinación comercial, donde el valor está en detectar problemas antes de comprometer el pedido.
-
-#### Wireflow 3 — Cliente B2B desde acceso hasta seguimiento
-
-- **User Goal:** Como cliente comercial B2B (S2), quiero comprar de forma autónoma, confirmar mi pedido y saber cuándo llegará sin tener que perseguir por WhatsApp al vendedor.
-- **Segmento priorizado:** S2 (cliente B2B y abastecimiento recurrente).
-- **Problema de dominio:** opacidad del abastecimiento y ausencia de ETA confiable.
-- **Happy path:** login → catálogo personalizado → detalle de producto → carrito → revisión → envío y confirmación → historial → seguimiento/ETA → cierre con evidencia visible.
-- **Unhappy path:** si el pedido no puede confirmarse por stock o crédito, el sistema muestra alerta explícita con motivo y acción sugerida (reducir cantidad, cambiar SKU o contactar soporte), evitando que el cliente quede en silencio.
-
-*Wireflow del cliente B2B desde acceso hasta seguimiento*
-
-```mermaid
-flowchart LR
-    A["Log in"] --> B["Catálogo personalizado"]
-    B --> C["Detalle de producto"]
-    C --> D["Carrito o borrador"]
-    D --> E["Revisión del pedido"]
-    E --> F["Envío y confirmación"]
-    F --> G["Historial del pedido"]
-    G --> H["Seguimiento y ETA"]
-    H --> I["Cierre con evidencia visible"]
-```
-
-Elaboración propia. Aquí se resume el recorrido del cliente comercial cuando compra, revisa el estado del pedido y necesita entender cómo avanza la entrega.
+| User goal | Segmento / User Persona | Tarea relacionada | Evidencia de wireflow | Explicación del recorrido |
+|---|---|---|---|---|
+| Registrar o asistir un pedido B2B validando cliente, condición comercial, disponibilidad de productos y seguimiento posterior. | S1: Coordinación comercial / ventas internas — Valeria Sánchez | Login — perfil Valeria → Dashboard comercial → Clientes → Detalle de cliente → Validación de condición comercial → Pedido asistido → Selección de productos → Validación de disponibilidad → Confirmación del pedido → Detalle y seguimiento del pedido → Reportes comerciales. | FigJam Wireflows Web Applications Nexa + mockups S1 seleccionados | El recorrido conecta la revisión comercial del cliente con la captura asistida del pedido y su seguimiento posterior, evitando que la coordinación dependa de mensajes dispersos. |
+| Supervisar inventario, lotes, riesgos FEFO, despacho, cierre operativo y reportes. | S2: Jefatura logística / coordinación operativa — Roberto García | Login — perfil Roberto → Dashboard logístico → Inventario → Detalle de lote → Revisión FEFO y stock → Priorización operativa → Tablero de despacho → Confirmación de despacho → POD mock → Validación de evidencia → Reportes operativos. | FigJam Wireflows Web Applications Nexa + mockups S2 seleccionados | El recorrido conecta lectura de inventario, priorización FEFO, despacho y cierre simulado para sostener trazabilidad operativa en Sprint 2. |
+| Consultar catálogo, seleccionar productos y revisar pedidos desde una experiencia de portal B2B. | S3: Comprador B2B / cliente comercial — Elena Litano | Login — perfil Elena → Portal comprador → Catálogo → Detalle de producto → Carrito / pedido → Confirmación de pedido → Órdenes / seguimiento. | FigJam Wireflows Web Applications Nexa | El recorrido representa el portal comprador como alcance de planificación TB1. No se declara cobertura completa de mockups S3 en esta entrega. |
 
 ### 4.4.3. Web Applications Mock-ups.
 
-<p align="justify">
-Los mock-ups de la web application desarrollan en alta fidelidad la lógica ya probada en wireframes. Su función no es “decorar” el sistema, sino validar que la jerarquía visual, los componentes y la lectura operativa sigan siendo claros cuando se incorporan color, densidad informativa, estados y patrones definitivos de interfaz. En este proyecto, las diez capturas cubren el mismo recorrido funcional del MVP y permiten explicar cómo la solución se presentaría ante usuarios reales. También fueron consolidadas en Figma antes de documentarse en el informe.
-</p>
+Los mockups representan pantallas seleccionadas de alta fidelidad para la dirección actual de la webapp. Se agrupan por segmento y user goal para mostrar evidencia visual sin convertir el capítulo en una galería extensa. El tablero completo contiene más pantallas; este reporte incluye solo vistas representativas que sostienen los recorridos S1 y S2, mientras que S3 permanece documentado como flujo portal de planificación en esta iteración.
 
-#### Dashboard Operativo Total Control
+| Mockup group | Segment | User goal | Included screens | Purpose |
+|---|---|---|---|---|
+| S1: Coordinación comercial / ventas internas | Valeria / S1 | Crear y seguir un pedido asistido | Login, dashboard, cliente, pedido, detalle, reportes | Evidenciar captura comercial guiada, validaciones y trazabilidad |
+| S2: Jefatura logística / coordinación operativa | Roberto / S2 | Controlar inventario, despacho y POD mock | Dashboard, inventario, lote, despacho, POD mock, reportes | Evidenciar monitoreo FEFO, operación logística y cierre simulado |
+| S3: Comprador B2B / cliente comercial | Elena / S3 | Comprar desde portal B2B | Flujo de planificación FigJam | Documentar alcance comprador sin inventar capturas no disponibles |
 
-![Mock-up Dashboard Operativo Total Control](../assets/images/webapp-mockups/webapp-dashboard-operativo-total-control.png)
+#### S1: Coordinación comercial / ventas internas — mockups de pedido asistido
 
-<p align="justify">
-La versión de alta fidelidad del dashboard confirma que la pantalla puede operar como centro de mando del sistema. KPIs, alertas y bloques operativos comparten una composición que privilegia lectura rápida, con énfasis en desviaciones críticas y accesos inmediatos. Visualmente, esta vista sostiene la promesa de centralización que en el proceso actual se pierde entre múltiples herramientas.
-</p>
+![S1 Login Valeria selected](../assets/images/webapp-mockups-current/s1-01-login-valeria-selected.png)
 
-#### B2B Orders Hub
+![S1 Dashboard coordinación comercial](../assets/images/webapp-mockups-current/s1-02-dashboard-commercial.png)
 
-![Mock-up B2B Orders Hub](../assets/images/webapp-mockups/webapp-b2b-orders-hub.png)
+![S1 Client detail drawer](../assets/images/webapp-mockups-current/s1-04-client-detail-drawer.png)
 
-<p align="justify">
-El mock-up del hub de órdenes transforma la bandeja de pedidos en una vista ejecutiva y accionable. El uso de estados, filtros y tarjetas permite identificar con rapidez qué pedidos requieren seguimiento, corrección o continuidad. Su principal aporte es hacer visible que el pedido deja de ser un mensaje informal y se convierte en un objeto gestionable.
-</p>
+![S1 Assisted order products step](../assets/images/webapp-mockups-current/s1-07-assisted-order-products-step.png)
 
-#### Creación de Pedido Asistido
+![S1 Order detail created by Valeria](../assets/images/webapp-mockups-current/s1-10-order-detail-created-by-valeria.png)
 
-![Mock-up Creación de Pedido Asistido](../assets/images/webapp-mockups/webapp-creacion-pedido-asistido.png)
+![S1 Reportes coordinación comercial](../assets/images/webapp-mockups-current/s1-12-commercial-reports.png)
 
-<p align="justify">
-Esta pantalla demuestra cómo la captura asistida puede combinar contexto de cliente, catálogo y validación sin saturar al usuario. La alta fidelidad deja ver mejor la separación entre datos del cliente, líneas de pedido y retroalimentación del sistema, reduciendo el riesgo de error. El resultado esperado es una experiencia comercial guiada, pero todavía ágil.
-</p>
+Elaboración propia. Este grupo muestra el recorrido comercial desde la selección de perfil hasta la evidencia de pedido y reportes. Las pantallas se eligieron porque cubren los puntos decisivos del user goal: acceso por rol, lectura de estado, revisión de cliente, armado de pedido, trazabilidad por creador y análisis comercial.
 
-#### Inventory Management
+#### S2: Jefatura logística / coordinación operativa — mockups de operación logística
 
-![Mock-up Inventory Management](../assets/images/webapp-mockups/webapp-inventory-management.png)
+![S2 Dashboard jefatura logística](../assets/images/webapp-mockups-current/s2-02-dashboard-logistics.png)
 
-<p align="justify">
-En alta fidelidad, la gestión de inventario se vuelve una vista de control operacional con mayor riqueza de lectura: disponibilidad, clasificación, indicadores y señales de riesgo. Esto es importante porque el inventario en Nexa no es un backoffice aislado, sino una pieza que alimenta la promesa comercial y la trazabilidad del pedido. El mock-up refuerza esa conexión entre stock visible y decisión de negocio.
-</p>
+![S2 Inventory overview](../assets/images/webapp-mockups-current/s2-03-inventory-overview.png)
 
-#### Confirmación de Despacho & Asignación de Flota
+![S2 Lot detail drawer](../assets/images/webapp-mockups-current/s2-05-lot-detail-drawer.png)
 
-![Mock-up Confirmación de Despacho y Asignación de Flota](../assets/images/webapp-mockups/webapp-confirmacion-despacho-asignacion-flota.png)
+![S2 Dispatch board](../assets/images/webapp-mockups-current/s2-07-dispatch-board.png)
 
-<p align="justify">
-La pantalla de despacho aterriza el momento donde la orden deja el estado interno y pasa a ejecución física. La composición hace visibles unidades, asignación y condiciones de salida en una misma vista, reduciendo dependencias externas para destrabar la operación. Así, el mock-up traduce una coordinación históricamente manual en una acción estructurada dentro del sistema.
-</p>
+![S2 POD mock modal](../assets/images/webapp-mockups-current/s2-09-pod-mock-modal.png)
 
-#### FEFO Intelligence & Analytics
+![S2 Operational reports](../assets/images/webapp-mockups-current/s2-12-operational-reports.png)
 
-![Mock-up FEFO Intelligence & Analytics](../assets/images/webapp-mockups/webapp-fefo-intelligence-analytics.png)
+Elaboración propia. Este grupo resume el recorrido logístico desde monitoreo hasta cierre simulado de entrega. Las pantallas seleccionadas cubren dashboard, inventario, lote, despacho, POD mock y reportes operativos, que son las evidencias visuales más representativas del flujo S2.
 
-<p align="justify">
-La analítica FEFO muestra cómo Nexa podría convertir vencimientos y rotación en una capa de inteligencia operativa. La alta fidelidad ayuda a leer prioridades, tendencias y alertas sin necesidad de interpretar datos dispersos. Su valor argumental es demostrar que la plataforma no solo registra inventario, sino que ayuda a protegerlo.
-</p>
+#### S3: Comprador B2B / cliente comercial — flujo planificado de portal
 
-#### Active Shipments & Routes
-
-![Mock-up Active Shipments & Routes](../assets/images/webapp-mockups/webapp-active-shipments-routes.png)
-
-<p align="justify">
-El seguimiento en ruta mantiene el mismo principio del wireframe, pero ahora con mayor densidad visual y mejor señalización de estados. Esta vista está orientada a monitoreo vivo, por lo que la jerarquía de colores, incidentes y estados en tránsito cumple una función operativa clara. El mock-up respalda la idea de visibilidad compartida durante despacho.
-</p>
-
-#### Cierre de Entrega (POD) & Certificación
-
-![Mock-up Cierre de Entrega POD y Certificación](../assets/images/webapp-mockups/webapp-cierre-entrega-pod-certificacion.png)
-
-<p align="justify">
-La captura final del cierre muestra cómo la evidencia de entrega se integra a una interfaz formal y defendible. Firma, conformidad y certificación aparecen como parte del flujo normal y no como anexos improvisados. Esto fortalece la propuesta de Nexa en un punto donde hoy suelen aparecer reclamos, debilidad documental y cierre inconsistente.
-</p>
-
-#### Inventory Detail Premium Artisan Organic Milk
-
-![Mock-up Inventory Detail Premium Artisan Organic Milk](../assets/images/webapp-mockups/webapp-inventory-detail-premium-artisan-organic-milk.png)
-
-<p align="justify">
-Esta pantalla profundiza en un producto concreto para mostrar que el sistema puede bajar de la visión agregada a la condición específica del SKU. La alta fidelidad expone mejor variables como temperatura, capacidad, riesgo y vencimiento, todas relevantes para cadena de frío. Su inclusión es importante porque demuestra que el diseño no se queda en tableros generales.
-</p>
-
-#### Order Detail & Traceability
-
-![Mock-up Order Detail & Traceability](../assets/images/webapp-mockups/webapp-order-detail-traceability.png)
-
-<p align="justify">
-El detalle de trazabilidad en alta fidelidad reconstruye el historial del pedido como una narrativa operativa completa. La vista combina eventos, estado, evidencia y contexto de la orden, reforzando la idea de continuidad entre captura, despacho y cierre. En términos de valor, esta pantalla es una de las más importantes para sostener trazabilidad y respuesta ante incidencias.
-</p>
+El portal B2B se documenta como flujo comprador de planificación. En esta entrega no se agregan capturas S3 porque la evidencia visual disponible se concentra en S1 y S2. Para evitar rutas inventadas, el portal queda representado por el wireflow de FigJam y por su separación explícita respecto a los roles internos Ops.
 
 ### 4.4.4. Web Applications User Flow Diagrams.
 
-<p align="justify">
-El user flow complementa wireframes y mock-ups porque modela la interacción secuencial entre usuario y sistema. En Nexa, el flujo crítico es el reabastecimiento B2B con validaciones de negocio, ya que ahí se expresa con más claridad la promesa central del producto: hacer visible lo que hoy se valida tarde o de forma dispersa.
-</p>
+#### Criterios de resolución de flujo
 
-#### User Flow 1 — Reabastecimiento B2B con validación de negocio
+El diseño UX/UI de aplicaciones web se construye en cuatro niveles de resolución creciente. Cada nivel responde a una pregunta concreta sobre el recorrido del usuario y sirve de base para el siguiente. La secuencia es: User Goal → Task Flow → Wireflow → User Flow.
 
-- **User Goal:** Como cliente B2B (S2) o coordinadora (S1), quiero que la plataforma me deje confirmar el pedido solo cuando el sistema ya validó stock real, lote FEFO y crédito disponible.
-- **Segmento:** S2 (autonomía) + S1 (asistido).
-- **Problema atendido:** promesas comerciales inviables por falta de validación temprana.
-- **Happy path:** login → catálogo con contexto → carrito → consulta de stock y lotes → consulta de crédito/mora → reglas OK → confirmación con seguimiento activo.
-- **Unhappy path:** si mora o stock no dan, el sistema corta el flujo en la validación y devuelve un mensaje explícito con acción correctiva (ajustar cantidad, regularizar crédito o escalar a soporte).
+*Tabla: Niveles de resolución de flujo aplicados en Nexa*
 
-*User Flow del reabastecimiento B2B con validación de negocio*
+| Nivel | Propósito en el diseño | Evidencia en esta sección |
+|:---|:---|:---|
+| **User Goal** | Define qué objetivo concreto persigue cada persona antes de entrar al flujo. Responde a: ¿qué quiere lograr este usuario? | Objetivos de S1, S2 y S3 derivados del needfinding (síntesis complementaria de Needfinding) |
+| **Task Flow** | Lista las acciones que el usuario necesita ejecutar para alcanzar el objetivo. Responde a: ¿qué pasos tiene que dar? | Secuencia de pasos por segmento en la tabla siguiente |
+| **Wireflow** | Conecta las pantallas y estados de la interfaz recorridos durante la tarea. Responde a: ¿qué pantallas aparecen en ese recorrido? | FigJam Wireflows Web Applications Nexa |
+| **User Flow** | Agrega decisiones, caminos alternativos y estados finales al recorrido. Responde a: ¿qué ocurre si algo sale distinto? | Diagramas visuales Lucidchart para S1/S2 y alcance planificado de S3 |
 
-```mermaid
-sequenceDiagram
-    participant U as Cliente o Coordinadora
-    participant S as Sistema Nexa
-    participant I as Inventario
-    participant C as Reglas comerciales
-    U->>S: Inicia sesion o abre pedido asistido
-    S->>U: Muestra catalogo y contexto del cliente
-    U->>S: Agrega productos y cantidades
-    S->>I: Consulta stock y lotes disponibles
-    I-->>S: Stock real y restricciones
-    S->>C: Consulta credito, mora y condiciones
-    C-->>S: Reglas de aprobacion
-    alt Stock y credito validos
-        S->>U: Pedido listo para confirmar
-        U->>S: Confirma envio
-        S->>U: Estado Submitted y seguimiento activo
-    else Mora o Falta Crédito
-        S->>U: Alerta explicita y accion correctiva
-    end
-```
+*Tabla: User Goals, Task Flows y referencias de flujo por segmento*
 
-Elaboración propia. El flujo refleja tanto la ruta esperada como la rama de bloqueo comercial, ambas necesarias para defender la lógica del MVP transaccional.
+| Segmento | Persona | User Goal | Task Flow Summary | Wireflow | User Flow |
+|:---|:---|:---|:---|:---|:---|
+| S1: Coordinación comercial / ventas internas | Valeria Sánchez | Registrar o asistir un pedido B2B validando cliente, condición comercial, disponibilidad de productos y seguimiento posterior | Login — perfil Valeria → Dashboard comercial → Clientes → Detalle de cliente → Validación de condición comercial → Pedido asistido → Selección de productos → Validación de disponibilidad → Confirmación del pedido → Detalle y seguimiento del pedido → Reportes comerciales | FigJam Wireflows Web Applications Nexa | Userflow S1 en Lucidchart |
+| S2: Jefatura logística / coordinación operativa | Roberto García | Supervisar inventario, lotes, riesgos FEFO, despacho, cierre operativo y reportes | Login — perfil Roberto → Dashboard logístico → Inventario → Detalle de lote → Revisión FEFO y stock → Priorización operativa → Tablero de despacho → Confirmación de despacho → POD mock → Validación de evidencia → Reportes operativos | FigJam Wireflows Web Applications Nexa | Userflow S2 en Lucidchart |
+| S3: Comprador B2B / cliente comercial | Elena Litano | Consultar catálogo, seleccionar productos y revisar pedidos desde una experiencia de portal B2B | Login — perfil Elena → Portal comprador → Catálogo → Detalle de producto → Carrito / pedido → Confirmación de pedido → Órdenes / seguimiento | FigJam Wireflows Web Applications Nexa | Flujo comprador documentado como alcance de planificación TB1 |
 
-#### User Flow 2 — Coordinadora comercial con rama de corrección
+> *Nota:* Los user goals provienen de la síntesis complementaria de Needfinding. Los task flows resumen la secuencia de acciones sin entrar en decisiones específicas, que se detallan en los user flows. S3 se documenta como flujo de planificación en la primera iteración; los flujos S1 y S2 constituyen la evidencia de validación principal. Elaboración propia.
 
-- **User Goal:** Como coordinación comercial (S1), quiero corregir un pedido cuando la validación detecta inconsistencias, sin perder la información ya capturada.
-- **Segmento:** S1.
-- **Problema atendido:** retrabajo manual y pérdida de datos cuando el pedido se rechaza.
-- **Happy path:** pedido asistido → validación OK → confirmación.
-- **Unhappy path:** validación detecta problema → rama de corrección (ajustar SKU, cantidad, condición comercial) → revalidación → confirmación o bloqueo registrado.
+---
 
-*User Flow de la coordinadora comercial con rama de corrección*
+Para TB1, la evidencia visual formal de user flows se presenta mediante Lucidchart para S1 y S2. S3 se conserva como flujo comprador planificado, sin declarar mockups completos ni evidencia final de implementación de portal.
 
-```mermaid
-flowchart TD
-    A["La coordinadora abre un pedido asistido"] --> B["Identifica al cliente"]
-    B --> C["Carga condiciones y selecciona productos"]
-    C --> D{"¿El sistema muestra una alerta?"}
-    D -->|Sí| E["Revisa stock, crédito o datos del pedido"]
-    E --> F["Corrige información y vuelve a validar"]
-    F --> D
-    D -->|No| G["Envía el pedido"]
-    G --> H["Recibe confirmación trazable"]
-    H --> I["Entrega el pedido a preparación"]
-```
+#### User Flow S1 — Coordinación comercial: pedido asistido
 
-Elaboración propia. Este user flow enfatiza el punto de corrección temprana, que es donde Nexa busca reducir retrabajo y promesas inviables.
+El user flow de S1 representa el recorrido de Valeria, responsable de coordinación comercial / ventas internas, desde el acceso al sistema hasta la creación y seguimiento de un pedido asistido. El flujo incluye validaciones de condición comercial, disponibilidad de productos y rutas alternativas para restricciones de cliente o cantidad insuficiente.
 
-#### User Flow 3 — Cliente B2B con seguimiento e incidencia
+[Ver userflow S1 en Lucidchart](https://lucid.app/lucidchart/8f6d6af2-f229-47f8-ba02-86b27cdc6fed/edit?invitationId=inv_09391266-7e11-4614-8edf-12cf979cdabf)
 
-- **User Goal:** Como cliente B2B (S2), quiero seguir mi pedido y reportar una incidencia sin tener que llamar ni escribir por WhatsApp.
-- **Segmento:** S2 con interacción de S3 (despacho).
-- **Problema atendido:** falta de visibilidad del despacho y ausencia de canal formal para reportar incidencias.
-- **Happy path:** historial → seguimiento → ETA → entrega → cierre con POD disponible.
-- **Unhappy path:** si hay incidencia de ruta, el cliente recibe notificación automática, puede registrar reclamo formal y ver la bitácora del pedido con evidencia asociada.
+![S1 User flow coordinación comercial](../assets/images/userflows/s1-commercial-userflow-lucid.png)
 
-*User Flow del cliente B2B con seguimiento e incidencia*
+Figura. User flow visual para S1: Coordinación comercial / ventas internas.
+
+#### User Flow S2 — Jefatura logística: inventario, despacho y cierre
+
+El user flow de S2 representa el recorrido de Roberto, responsable de jefatura logística / coordinación operativa, desde la revisión de inventario y lotes con criterio FEFO hasta la gestión de despacho y cierre con POD simulado. El flujo incluye rutas alternativas para riesgo operativo, despacho no listo y evidencia incompleta.
+
+[Ver userflow S2 en Lucidchart](https://lucid.app/lucidchart/b91c8e98-a38b-456a-92e5-f942be7e8439/edit?invitationId=inv_5c030713-67e5-4e84-90bf-661b26cef528)
+
+![S2 User flow jefatura logística](../assets/images/userflows/s2-logistics-userflow-lucid.png)
+
+Figura. User flow visual para S2: Jefatura logística / coordinación operativa.
+
+#### User Flow S3 — Comprador B2B: portal de compra
+
+Para S3: Comprador B2B / cliente comercial, el flujo se mantiene como alcance parcial de TB1. Se documenta a nivel de planificación para conectar catálogo, pedido y seguimiento, sin afirmar pantallas webapp implementadas ni mockups finales completos en esta entrega.
 
 ```mermaid
-flowchart TD
-    A["El cliente inicia sesión"] --> B["Explora catálogo y arma su pedido"]
-    B --> C["Confirma el envío"]
-    C --> D["Recibe confirmación del pedido"]
-    D --> E["Consulta estado y ETA"]
-    E --> F{"¿Aparece una incidencia?"}
-    F -->|No| G["Espera la entrega"]
-    F -->|Sí| H["Revisa actualización o aviso"]
-    H --> E
-    G --> I["Recibe pedido y valida cierre"]
+flowchart LR
+    A["S3: Comprador B2B / cliente comercial"] --> B["Consulta catálogo"]
+    B --> C["Revisa disponibilidad y condiciones"]
+    C --> D["Arma pedido"]
+    D --> E["Envía solicitud"]
+    E --> F["Recibe confirmación"]
+    F --> G["Consulta seguimiento"]
 ```
 
-Elaboración propia. Este recorrido pone el foco en la necesidad de previsibilidad del cliente y en la forma en que una incidencia debe ser visible sin obligarlo a volver al canal informal.
+Figura. User flow planificado para S3: Comprador B2B / cliente comercial. Elaboración propia.
 
-### 4.4.5. Web Applications Mobile UX/UI Design.
+#### Tabla de consistencia: User Goals, wireflows y user flows
 
-<p align="justify">
-Para garantizar una experiencia verdaderamente ubicua y accesible para los usuarios en movimiento (como conductores y personal en planta), las interfaces principales de la aplicación web de Nexa se adaptaron bajo principios <strong>mobile-first</strong>. Todo este trabajo de diseño estructural y visual se llevó a cabo utilizando la herramienta <strong>Figma</strong>.
-</p>
+| User goal | Persona | Wireflow | User flow | Evidencia visual | Estado TB1 |
+|:---|:---|:---|:---|:---|:---|
+| Registrar pedido asistido validando cliente, condición comercial y disponibilidad de producto | Valeria (S1) | FigJam Wireflows Web Applications Nexa | Userflow S1 en Lucidchart | Lucidchart + mockups S1 seleccionados | Documentado e implementado en webapp |
+| Supervisar inventario FEFO, coordinar despacho y cerrar entrega con POD mock | Roberto (S2) | FigJam Wireflows Web Applications Nexa | Userflow S2 en Lucidchart | Lucidchart + mockups S2 seleccionados | Documentado e implementado en webapp |
+| Explorar catálogo, enviar pedido y consultar estado desde portal B2B | Elena (S3) | FigJam Wireflows Web Applications Nexa | Flujo comprador planificado | FigJam como planificación portal | Documentado como alcance parcial de TB1 |
 
-#### A. Mobile Wireframes
-
-<p align="justify">
-Los wireframes para dispositivos móviles se diseñaron en Figma priorizando la densidad de información justa para pantallas compactas y reduciendo la complejidad visual sin comprometer la funcionalidad operativa.
-</p>
-
-*Estructura base del diseño móvil en Figma*
-
-![Mobile Wireframes Overview](../assets/images/mobile-browser/landing-wireframes-mobile-overview.png)
-
-Elaboración propia. Los wireframes móviles simplifican la lectura y aseguran que los botones de acción principal estén al alcance del pulgar del usuario.
-
-#### B. Mobile Mock-ups
-
-<p align="justify">
-Posteriormente, los mock-ups de alta fidelidad en Figma trasladaron el sistema de diseño definitivo a los flujos móviles clave, asegurando coherencia visual y usabilidad bajo condiciones de operación logística.
-</p>
-
-*Mock-ups de alta fidelidad móviles en Figma*
-
-![Mobile Mockups Overview](../assets/images/mobile-browser/landing-mockups-mobile-overview.png)
-
-![Mobile Mockups Sections](../assets/images/mobile-browser/landing-mockups-mobile-sections.png)
-
-![Mobile Mockups Usage](../assets/images/mobile-browser/landing-mockups-mobile-usage.png)
-
-![Mobile Mockups CTA and Footer](../assets/images/mobile-browser/landing-mockups-mobile-cta-footer.png)
-
-Elaboración propia. Muestras de alta fidelidad móvil que validan la interfaz adaptativa para el MVP de Nexa.
-
-### 4.4.5. Web Applications — Wireframes y Screenshots TB1 (Sprint 2)
-
-<p align="justify">
-Durante el Sprint 2 (TB1) se incorporaron dos colecciones nuevas de evidencia visual responsive web para la Web Application: una colección de <strong>wireframes</strong> alineados al alcance entregado en TB1 y una colección de <strong>screenshots</strong> reales del frontend con datos mock. Esta evidencia complementa los wireframes y mock-ups previos del Sprint 1 (sin reemplazarlos) y sustenta la sección §5.2.2.5 del Capítulo 5. Las imágenes corresponden a vistas web responsivas del webapp; no son aplicaciones móviles nativas.
-</p>
-
-*Cobertura de wireframes y screenshots TB1*
-
-| Pantalla | Wireframe TB1 | Screenshot TB1 |
-| :--- | :--- | :--- |
-| Login | `../assets/images/web-app-wireframes/log-in-wireframe.png` | `../assets/images/web-app-screenshots/log-in.png` |
-| Dashboard operativo | `../assets/images/web-app-wireframes/dashboard-wireframe.png` | `../assets/images/web-app-screenshots/dashboard.png` |
-| Catálogo de operación | `../assets/images/web-app-wireframes/catalog-wireframe.png` | `../assets/images/web-app-screenshots/catalog.png` |
-| Inventario (FEFO + drawer) | `../assets/images/web-app-wireframes/inventory-wireframe.png` | `../assets/images/web-app-screenshots/inventory.png` |
-| Clientes (drawer de ficha) | `../assets/images/web-app-wireframes/clients-wireframe.png` | `../assets/images/web-app-screenshots/clients.png` |
-| Creación de pedido asistido | `../assets/images/web-app-wireframes/new-order-wireframe.png` | `../assets/images/web-app-screenshots/create-order.png` |
-| Bandeja de órdenes | `../assets/images/web-app-wireframes/orders-wireframe.png` | `../assets/images/web-app-screenshots/orders.png` |
-| Despacho y POD | `../assets/images/web-app-wireframes/dispatch-wireframe.png` | `../assets/images/web-app-screenshots/dispatch.png` |
-| Reportes operativos | `../assets/images/web-app-wireframes/reports-wireframe.png` | `../assets/images/web-app-screenshots/reports.png` |
-| Perfil y preferencias | `../assets/images/web-app-wireframes/profile-wireframe.png` | `../assets/images/web-app-screenshots/profile.png` |
-| Configuración (operación) | `../assets/images/web-app-wireframes/settings-wireframe.png` | `../assets/images/web-app-screenshots/settings.png` |
-
-#### Wireframes TB1 — Web Application
-
-![Wireframe TB1 — Login](../assets/images/web-app-wireframes/log-in-wireframe.png)
-
-![Wireframe TB1 — Dashboard](../assets/images/web-app-wireframes/dashboard-wireframe.png)
-
-![Wireframe TB1 — Catálogo](../assets/images/web-app-wireframes/catalog-wireframe.png)
-
-![Wireframe TB1 — Inventario](../assets/images/web-app-wireframes/inventory-wireframe.png)
-
-![Wireframe TB1 — Clientes](../assets/images/web-app-wireframes/clients-wireframe.png)
-
-![Wireframe TB1 — Nuevo Pedido](../assets/images/web-app-wireframes/new-order-wireframe.png)
-
-![Wireframe TB1 — Órdenes](../assets/images/web-app-wireframes/orders-wireframe.png)
-
-![Wireframe TB1 — Despacho](../assets/images/web-app-wireframes/dispatch-wireframe.png)
-
-![Wireframe TB1 — Reportes](../assets/images/web-app-wireframes/reports-wireframe.png)
-
-![Wireframe TB1 — Perfil](../assets/images/web-app-wireframes/profile-wireframe.png)
-
-![Wireframe TB1 — Configuración](../assets/images/web-app-wireframes/settings-wireframe.png)
-
-#### Screenshots TB1 — Web Application desplegada
-
-![Screenshot TB1 — Login](../assets/images/web-app-screenshots/log-in.png)
-
-![Screenshot TB1 — Dashboard](../assets/images/web-app-screenshots/dashboard.png)
-
-![Screenshot TB1 — Catálogo](../assets/images/web-app-screenshots/catalog.png)
-
-![Screenshot TB1 — Inventario](../assets/images/web-app-screenshots/inventory.png)
-
-![Screenshot TB1 — Clientes](../assets/images/web-app-screenshots/clients.png)
-
-![Screenshot TB1 — Crear Pedido](../assets/images/web-app-screenshots/create-order.png)
-
-![Screenshot TB1 — Órdenes](../assets/images/web-app-screenshots/orders.png)
-
-![Screenshot TB1 — Despacho](../assets/images/web-app-screenshots/dispatch.png)
-
-![Screenshot TB1 — Reportes](../assets/images/web-app-screenshots/reports.png)
-
-![Screenshot TB1 — Perfil](../assets/images/web-app-screenshots/profile.png)
-
-![Screenshot TB1 — Configuración](../assets/images/web-app-screenshots/settings.png)
-
-> Capturas pendientes (TODO): `forbidden.png`, `portal-home.png`, `portal-catalog.png`, `portal-checkout.png`, `portal-success.png`, `portal-orders.png`. Se incorporarán cuando se obtengan las capturas reales de las pantallas correspondientes; no se sustituyen por mockups.
-
-Elaboración propia. La evidencia TB1 es responsive web; corresponde al webapp desplegado en GitHub Pages con datos mock.
-
+> *Nota:* Los user goals provienen de la síntesis complementaria de Needfinding. S1 y S2 están validados con mockups y evidencia de webapp; S3 se documenta como flujo de planificación y no se afirma implementación completa del portal en TB1. Elaboración propia.
