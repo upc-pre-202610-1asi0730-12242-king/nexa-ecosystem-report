@@ -2,6 +2,17 @@
 
 La persistencia de Nexa se organiza por bounded context. En lugar de dejar todo el modelo en un único diagrama general, esta sección separa las tablas principales de cada bloque del dominio para que la relación con los class diagrams sea más clara. Los servicios de soporte como pagos y notificaciones no se modelan aquí como contextos propios, porque en esta etapa funcionan como integraciones auxiliares.
 
+La implementación académica de TB1 utiliza Fake API con datos simulados para validar flujos y pantallas. Los diagramas siguientes representan el modelo objetivo de persistencia y no afirman una base de datos productiva implementada.
+
+| Fuente TB1 simulada | Contexto objetivo | Propósito de mapeo |
+|---|---|---|
+| Usuarios demo y perfiles | Identity | Relacionar acceso, rol y auditoría futura |
+| Clientes y condiciones comerciales | Customer Management / Commercial Conditions | Separar datos del cliente de reglas de crédito y atención |
+| Productos, categorías y precios | Catalog | Mantener la información maestra del producto |
+| Stock, almacenes y lotes | Inventory | Modelar disponibilidad, ubicación, vencimiento y FEFO |
+| Pedidos e ítems | Orders | Registrar solicitud, detalle y ciclo de estado |
+| Despacho, incidencias y evidencia | Traceability | Representar avance operativo, incidencias y cierre de entrega |
+
 ### 4.8.1. Database Diagrams
 
 Los siguientes diagramas muestran la estructura relacional principal de cada contexto. Cuando una tabla depende de otra parte del sistema, esa referencia se incluye de forma mínima para no repetir el modelo completo en cada imagen.

@@ -18,7 +18,7 @@ Esta sección documenta la colaboración del equipo <strong>KING</strong> alrede
 ### Distribución de actividades del equipo
 
 <p align="justify">
-El equipo se organizó alrededor de liderazgos funcionales en lugar de dividir por <em>autor por sección</em>. Cada integrante conservó uno o dos frentes principales y colaboró de manera transversal en los demás, lo que permitió ejecutar en paralelo investigación, diseño, arquitectura, documentación y publicación del sitio público. Para TB1, la evidencia observable de control de versiones se concentra en `main` y en commits convencionales. GitFlow queda documentado como convención de trabajo para ordenar la evolución del proyecto en el siguiente hito.
+El equipo se organizó alrededor de liderazgos funcionales en lugar de dividir por <em>autor por sección</em>. Cada integrante conservó uno o dos frentes principales y colaboró de manera transversal en los demás, lo que permitió ejecutar en paralelo investigación, diseño, arquitectura, documentación y publicación del sitio público sin perder coherencia narrativa ni técnica. La convención Conventional Commits y el branching GitFlow (`main`, `develop`, `feature/*`, `fix/*`) permitieron rastrear cada cambio.
 </p>
 
 | Integrante | Frentes de liderazgo | Frentes de colaboración |
