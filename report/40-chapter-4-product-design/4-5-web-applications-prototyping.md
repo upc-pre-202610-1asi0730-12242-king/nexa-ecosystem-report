@@ -15,17 +15,25 @@ Además, el FigJam board de Userflow/Wireflow se utiliza como artefacto de traba
 | [Responsive Prototype - Video Evidence](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQDBP5iLNJedR6OhB8Sivc1rAaVCa4SDrxvranY5tTLbkPM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=QD00j7) | Evidencia audiovisual del prototipo responsive, mostrando la navegación desde navegador móvil |
 | [FigJam — Userflow y Wireflow S1/S2](https://www.figma.com/board/LjIjtyfoOpeYa5OCSJUYpD/Nexa-Ops-S1-S2-Userflow-Wireflow?node-id=0-1&t=F9ZnAAAzCUpiK4qs-1) | Board de trabajo para validación de rutas y flujos operativos de la webapp |
 
+*Referencias específicas de userflow para TB1*
+
+| Prototype / flow artifact | Tool | Link | Scope |
+|---|---|---|---|
+| S1 Commercial Userflow | Lucidchart | [Ver userflow S1](https://lucid.app/lucidchart/8f6d6af2-f229-47f8-ba02-86b27cdc6fed/edit?invitationId=inv_09391266-7e11-4614-8edf-12cf979cdabf) | TB1 implemented / documented |
+| S2 Logistics Userflow | Lucidchart | [Ver userflow S2](https://lucid.app/lucidchart/b91c8e98-a38b-456a-92e5-f942be7e8439/edit?invitationId=inv_5c030713-67e5-4e84-90bf-661b26cef528) | TB1 implemented / documented |
+| S3 Buyer Portal Flow | Report / planning | Sin evidencia visual completa en Lucidchart para TB1 | TB1 partial |
+
 La utilidad metodológica del prototipo es doble. Primero, permite revisar continuidad entre módulos sin depender todavía de desarrollo productivo. Segundo, ofrece una base defendible para explicar cómo evolucionará Nexa desde su capa pública hacia su capa transaccional. En otras palabras, el prototipo no sustituye al desarrollo, pero sí reduce el riesgo de que la implementación futura contradiga lo ya investigado, priorizado y diseñado.
 
 *Captura referencial del prototipo de la web application*
 
-![Captura del prototipo de la web application](../assets/images/webapp-mockups-current/s1-02-dashboard-commercial.png)
+![Captura del prototipo de la web application](../assets/images/chapter-4/webapp/mockups/s1-02-dashboard-commercial.png)
 
 Elaboración propia. La captura corresponde a la pantalla principal del prototipo y resume la lógica de dashboard operativo utilizada como punto de entrada a la aplicación.
 
 *Prueba de interacción del prototipo responsive en navegador móvil*
 
-![Mobile Application Prototype Proof](../assets/images/mobile-browser/mobile-application-prototype-proof.png)
+![Mobile Application Prototype Proof](../assets/images/chapter-4/webapp/prototyping/mobile-application-prototype-proof.png)
 
 Elaboración propia. Evidencia visual del prototipo ejecutado desde navegador móvil como validación del diseño responsive.
 
@@ -35,4 +43,4 @@ Bajo esta lectura, el prototipado debe presentarse con honestidad de alcance: co
 
 El prototipo aplica un **sistema de navegación jerárquico por rol** con un nivel global y dos niveles contextuales, consistente con la arquitectura de información definida en la sección 4.2. El nivel global se expresa en un *top bar* persistente con identidad de marca, selector de contexto (empresa activa) y acciones de cuenta; el primer nivel contextual se expresa en un *side navigation* por módulo del dominio (Catálogo, Pedidos, Inventario, Clientes, Despacho, Trazabilidad); el segundo nivel se expresa como *tabs* y *breadcrumbs* dentro de cada módulo para movimientos laterales sin perder contexto.
 
-La navegación es **rol-consciente**: el Segmento 1 (coordinación comercial) ve por defecto Pedidos y Clientes; el Segmento 3 (compradores B2B) ve Catálogo, Mis pedidos y Seguimiento; el Segmento 2 (jefatura logística) ve Gestión operativa, Despachos y Evidencias. Los *call-to-actions* primarios (crear pedido, despachar, cerrar entrega) se mantienen siempre visibles como *floating action* en la parte inferior derecha del frame, respetando la lógica **mobile-first**. Las transiciones entre frames siguen el principio de *progressive disclosure*: el usuario avanza solo cuando el sistema ya puede confirmar stock, crédito o estado, evitando pantallas intermedias sin valor.
+La navegación es **rol-consciente**: S1: Coordinación comercial / ventas internas ve por defecto Pedidos y Clientes; S3: Comprador B2B / cliente comercial ve Catálogo, Mis pedidos y Seguimiento; S2: Jefatura logística / coordinación operativa ve Gestión operativa, Despachos y Evidencias. Los *call-to-actions* primarios (crear pedido, despachar, cerrar entrega) se mantienen siempre visibles como *floating action* en la parte inferior derecha del frame, respetando la lógica **mobile-first**. Las transiciones entre frames siguen el principio de *progressive disclosure*: el usuario avanza solo cuando el sistema ya puede confirmar stock, crédito o estado, evitando pantallas intermedias sin valor.
