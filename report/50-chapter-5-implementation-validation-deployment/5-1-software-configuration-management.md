@@ -18,71 +18,62 @@ Para estandarizar el trabajo colaborativo del equipo y asegurar trazabilidad ent
 | Editor de implementación y documentación | **Visual Studio Code** | Edición del sitio estático y del informe técnico | Compatible con la estructura HTML/CSS/JS y Markdown observada |
 | Diseño y prototipado | **Figma** | Wireframes, mockups y prototipos de la landing page y la web application | Enlaces y capturas referenciados en el Capítulo IV |
 | Investigación UX | **UXPressia** | Consolidación de personas, empathy maps y journey maps | Artefactos citados en el Capítulo II |
-| Modelado y arquitectura | **Visual Paradigm** | Diagramas C4, diseño orientado a objetos y base de datos | Diagramas del Capítulo IV |
+| Modelado y arquitectura | **Structurizr, PlantUML y Mermaid** | Diagramas C4, diseño orientado a objetos y base de datos objetivo | Diagramas y archivos de soporte del Capítulo IV |
 | Stack del sitio público | **HTML5 + CSS3 + JavaScript vanilla** | Implementación visible de la landing page pública multipágina | Estructura de `index.html`, `pages/`, `assets/css/` y `assets/js/` en `nexa-website` |
 | Stack webapp TB1 | **Vue 3 + Vite + PrimeVue + Pinia + Axios** | Web application con flujos operativos, portal comprador y datos simulados | Repositorio `nexa-webapp` |
-| Fake API TB1 | **JSON Server / mock data** | Soporte simulado para validar flujos sin backend productivo | `mock-api/db.json` y documentación del webapp |
+| Fake API TB1 | **Node.js + JSON Server + Render** | Soporte simulado para validar flujos sin backend productivo | `mock-api/db.json`, configuración JSON Server y URL pública del Fake API |
 | Internacionalización | **Módulo propio `i18n.js`** | Soporte bilingüe EN/ES en textos y metadatos | Archivo `assets/js/i18n.js` en `nexa-website` |
-| Despliegue | **GitHub Pages** | Publicación del sitio público y webapp frontend | URLs activas de `nexa-website` y `nexa-webapp` |
+| Despliegue | **GitHub Pages + Render** | Publicación del sitio público, webapp frontend y configuración pública del Fake API simulado | URLs activas de `nexa-website`, `nexa-webapp` y URL documentada del Fake API |
 
 Adicionalmente, TB1 deja una separación explícita entre software demostrado y arquitectura objetivo. La web application se valida con frontend y Fake API; servicios productivos, autenticación productiva y base de datos real permanecen como evolución posterior.
 
+Para TB1 utilizamos Fake API con JSON Server como mecanismo de simulación del backend. Esta decisión permitió integrar la webapp con recursos RESTful basados en `db.json`, validar flujos de pedido, inventario y despacho, y evitar que el frontend dependiera de un servicio backend aún no implementado. El Fake API no reemplaza la arquitectura objetivo del backend, pero permitió comprobar navegación y consumo de datos desde la webapp desplegada.
+
+La configuración local partió de Node.js, `db.json` y JSON Server ejecutado en `localhost:3000`. Al publicar la webapp en GitHub Pages, el consumo de `localhost` dejó de ser válido para usuarios externos, porque el navegador intentaba resolver la API en la máquina del visitante. Por ello se configuró el Fake API en Render, dejando una URL pública como punto de consumo para el frontend.
+
 ### 5.1.2. Source Code Management
 
-El control de versiones se organiza bajo una convención GitFlow adaptada al alcance real de AV1. La revisión de los repositorios activos permite distinguir una estructura mínima pero consistente de ramas y responsabilidades.
+Para TB1, la evidencia observable de trabajo se concentra en la rama `main` y en commits convencionales. El equipo documenta GitFlow como convención de trabajo para ordenar la evolución del proyecto; las ramas `develop` y `release/tb1-final` existen como evidencia de transición, no como prueba de que todo el trabajo previo se haya realizado bajo GitFlow completo.
 
 *Repositorios activos y configuración de versionado utilizada hasta TB1*
 
-| Repositorio | Propósito | Rama principal observable | Otras ramas observables | URL |
+| Repositorio | Propósito | Rama principal observable | Convención de ramas | URL |
 |---|---|---|---|---|
-| `nexa-report` | Informe técnico, trazabilidad académica y narrativa del proyecto | `main` | `develop`, `release/tb1-final` | [nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) |
-| `nexa-website` | Implementación del sitio público desplegado | `main` | `develop`, `release/tb1-final` | [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) |
-| `nexa-webapp` | Web application TB1 con frontend operativo y datos simulados | `main` | ramas de integración según feature | [nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) |
+| `nexa-report` | Informe técnico, trazabilidad académica y documentación del proyecto | `main` | GitFlow en transición | [nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) |
+| `nexa-website` | Implementación del sitio público desplegado | `main` | no documentadas como evidencia de TB1 en este informe | [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) |
+| `nexa-webapp` | Web application TB1 con frontend operativo y datos simulados | `main` | no documentadas como evidencia de TB1 en este informe | [nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) |
 | `nexa-platform` | Alcance backend/plataforma planificado | `main` | no aplica para incremento TB1 activo | [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) |
 
 **GitFlow del Proyecto**
 
-La organización del control de versiones se representa mediante un GitFlow adaptado al alcance real del proyecto: un informe técnico en Docs-as-Code, una landing page pública y una web application. Establecimos un flujo deliberadamente ligero que prioriza trazabilidad sobre complejidad procedimental, y que resulta manejable para un equipo de cinco personas trabajando en tres frentes simultáneos.
+La organización del control de versiones se representa mediante un GitFlow adaptado al alcance real del proyecto. En TB1, `main` funciona como rama observable de entrega y los commits convencionales son la principal evidencia verificable. El modelo completo de ramas se mantiene como convención de trabajo y será formalizado con mayor rigor operativo en el siguiente hito.
 
-*Tabla. Convención de ramas y ejemplos aplicados en Nexa*
+*Tabla. Convención de ramas y estado observable en TB1*
 
-| Rama | Uso correcto | Ejemplo aplicado en Nexa |
+| Rama | Estado TB1 | Uso |
 |---|---|---|
-| `main` | Versión estable entregable | Lo presentado como versión final para revisión académica |
-| `develop` | Integración previa a entrega | Unión de cambios del informe, landing page y webapp antes del corte |
-| `feature/*` | Desarrollo por funcionalidad o sección del informe | `feature/user-stories-rewrite`, `feature/landing-page-av1` |
-| `release/*` | Congelamiento de entrega para revisión final | `release/tb1-final` |
-| `hotfix/*` | Corrección urgente sobre versión estable | `hotfix/report-critical-wording` |
+| `main` | Observable | Versión entregable |
+| `develop` | Observable como rama de transición | Integración previa |
+| `feature/*` | Convención definida | Trabajo por funcionalidad |
+| `release/tb1-final` | Observable como rama de transición | Cierre de entrega TB1 |
+| `hotfix/*` | Convención definida | Correcciones urgentes |
 
-**Flujo de integración establecido**
+Este esquema permite explicar la estrategia de versionado solicitada por el statement sin presentar ramas de transición como si fueran evidencia histórica completa. Para esta entrega, la trazabilidad se sostiene principalmente en commits convencionales sobre `main`, historial de GitHub y separación por repositorio.
 
-```text
-feature/* → develop → release/tb1-final → main → tag/release
-```
+*Tabla. Correspondencia entre frentes de trabajo y trazabilidad usada en TB1*
 
-Para efectos de trazabilidad, adoptamos como flujo de trabajo el ciclo en que cada unidad de trabajo parte de una rama `feature/*`, se integra en `develop` una vez revisada, avanza a `release/tb1-final` cuando congelamos el contenido para revisión, y finalmente se incorpora a `main` con un tag de versión semántica que identifica el hito entregado. Este flujo soporta cuatro funciones prácticas para el proyecto:
-
-- **Trazabilidad:** permite relacionar cada cambio con su autor, su alcance y el contexto de sprint en que se produjo.
-- **Control de integración:** evita que cambios parciales o no revisados alcancen la versión pública antes de pasar por `develop`.
-- **Estabilización de entrega:** la rama `release/*` actúa como zona de congelamiento donde solo se permiten ajustes menores antes del corte académico.
-- **Corrección urgente:** `hotfix/*` permite atender errores críticos detectados sobre `main` sin interrumpir el trabajo en curso en `develop`.
-
-Este esquema es adecuado para el proyecto porque separa los cambios del informe de los del sitio web, mantiene una versión pública limpia en `main`, y otorga estructura a los commits ya realizados. La adopción fue gradual y no se afirma una implementación retroactiva perfecta desde el inicio del proyecto.
-
-*Tabla. Correspondencia entre frentes de trabajo y ramas establecidas*
-
-| Frente de trabajo | Rama establecida |
+| Frente de trabajo | Evidencia de trazabilidad |
 |---|---|
-| Reestructuración de segmentos objetivo | `feature/target-segments-rework` |
-| Actualización de needfinding | `feature/needfinding-update` |
-| Reescritura de User Stories | `feature/user-stories-rewrite` |
-| Priorización del Product Backlog | `feature/product-backlog-prioritization` |
-| Implementación de Landing Page AV1 | `feature/landing-page-av1` |
-| Implementación base de Web Application TB1 | `feature/webapp-tb1-core` |
-| Configuración de Fake API / JSON Server | `feature/json-fake-api` |
-| Evidencia de Sprint 2 | `feature/sprint-2-evidence` |
-| Limpieza final de entrega | `release/tb1-final` |
-| Corrección crítica de redacción o nombres | `hotfix/report-critical-wording` |
+| Reestructuración de segmentos objetivo | Commits documentales en el historial del informe |
+| Actualización de needfinding | Commits documentales y referencias en Capítulo II |
+| Reescritura de User Stories | Commits documentales y tabla de User Stories |
+| Priorización del Product Backlog | Commits documentales y evidencia Jira en Capítulo III |
+| Implementación de Landing Page AV1 | Historial del repositorio del sitio público y evidencia Sprint 1 |
+| Implementación base de Web Application TB1 | Historial del repositorio webapp y evidencia Sprint 2 |
+| Configuración de Fake API / JSON Server | Documentación del alcance simulado TB1 |
+| Evidencia de Sprint 2 | Commits del informe y capturas Jira integradas |
+| Limpieza final de entrega | Commits convencionales y consolidación en `main` |
+| Corrección crítica de redacción o nombres | Commits convencionales sobre el informe |
 
 En la práctica, `nexa-report`, `nexa-website` y `nexa-webapp` funcionan como flujos sincronizados: el primero preserva justificación ingenieril, el segundo sostiene la capa pública y el tercero concentra la experiencia operativa TB1. Esta separación reduce ruido entre documentación y código y facilita relacionar commits, artefactos de diseño y despliegue público dentro de un mismo sprint.
 
@@ -112,10 +103,23 @@ Para garantizar mantenibilidad y lectura homogénea del proyecto, el equipo adop
 - El sitio público mantiene una organización multipágina con archivos HTML por sección y assets desacoplados por responsabilidad.
 - Los nombres de clases e identificadores del frontend siguen `kebab-case`.
 - La lógica de internacionalización se centraliza en un módulo propio de JavaScript.
+- El Fake API organiza recursos en `db.json` con nombres consistentes para usuarios, productos, clientes, pedidos, inventario, despacho y actividad operativa.
+- El consumo frontend separa servicios por responsabilidad para facilitar la transición posterior hacia una API interna real.
+
+*Tabla. Convenciones de código por lenguaje*
+
+| Lenguaje | Convención adoptada | Aplicación en Nexa |
+|---|---|---|
+| HTML | Estructura semántica, atributos descriptivos, nombres de archivo en `kebab-case` y rutas relativas para assets | Landing Page y markup base de interfaces web documentadas |
+| CSS | Clases en `kebab-case`, tokens reutilizables, separación por responsabilidades visuales y reglas responsive por breakpoint | Consistencia visual entre sitio público, webapp y componentes de interfaz |
+| JavaScript | Módulos por responsabilidad, nombres de variables y funciones en `camelCase`, separación entre lógica de interfaz, datos e internacionalización | Comportamiento frontend, i18n, navegación y consumo de datos simulados |
+| C# | Convenciones objetivo de ASP.NET Core: tipos en `PascalCase`, miembros públicos en `PascalCase`, variables locales en `camelCase` y separación por capas | Alcance futuro para la RESTful API interna; no se declara backend productivo implementado en TB1 |
 
 **Convenciones de servicios previstas**
 
 En TB1, la webapp utiliza Fake API y servicios cliente para validar consumo por contexto. La orientación REST del backend objetivo funciona como preparación técnica del dominio, no como backend productivo implementado.
+
+Para el Fake API, los recursos expuestos mantienen nombres estables y respuestas JSON. La simulación admite operaciones CRUD propias de JSON Server sobre `db.json`; esto sostiene la revisión funcional de TB1 sin declarar que exista una REST API productiva ni persistencia final.
 
 ### 5.1.4. Software Deployment Configuration
 
@@ -126,10 +130,13 @@ La configuración de despliegue hasta TB1 debe leerse en dos niveles: **desplieg
 | Elemento | Configuración o mecanismo | Estado hasta TB1 | Evidencia |
 |---|---|---|---|
 | Sitio público `nexa-website` | Publicación en **GitHub Pages** desde el repositorio del proyecto | **Activo** | [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) |
-| Calidad mínima del repositorio web | Workflow de **GitHub Actions** para `markdownlint` y `commitlint` en `main` y `develop` | **Activo en repositorio** | Archivo `.github/workflows/lint.yml` en `nexa-website` |
+| Calidad mínima del repositorio web | Workflow de **GitHub Actions** para `markdownlint` y `commitlint` en `main` | **Activo en repositorio** | Archivo `.github/workflows/lint.yml` en `nexa-website` |
 | Informe técnico `nexa-report` | Gestión Docs-as-Code y compilación posterior a PDF | **Activo como repositorio fuente** | Estructura `report/` y control de versiones en GitHub |
 | Gestión del sprint | Publicación de backlog y sprint en **Jira** | **Activa como evidencia de proceso** | Capturas y referencias del Sprint 1 |
-| Web application `nexa-webapp` | Publicación en **GitHub Pages** desde rama `main` vía GitHub Actions | **Activo en TB1 como frontend con datos simulados** | [nexa-webapp](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-webapp/) |
-| Backend y servicios REST | Alcance futuro nombrado en arquitectura y backlog | **No forma parte de TB1 como backend productivo** | Referido en capítulos 3 y 4 como preparación técnica |
+| Web application `nexa-webapp` | Publicación en **GitHub Pages** desde rama `main` vía GitHub Actions | **Activo en TB1 como frontend con datos simulados** | [nexa-webapp](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-webapp/#/auth/login) |
+| Fake API TB1 | Publicación como **Render Web Service** con JSON Server | **Configurado como simulación pública para consumo de la webapp** | [https://nexa-api.onrender.com](https://nexa-api.onrender.com) |
+| Backend y servicios REST | Alcance futuro nombrado en arquitectura y backlog | **No forma parte de TB1 como backend productivo** | [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) |
 
-En consecuencia, el procedimiento de despliegue defendible para TB1 incluye versionar cambios en `nexa-website` y `nexa-webapp`, publicarlos en GitHub Pages y validar navegación pública con hash routing. La capa backend productiva permanece como siguiente fase y no debe leerse como evidencia de esta entrega.
+La configuración del Fake API en Render usa `npm install` como Build Command y `json-server --watch db.json --port 10000` como Start Command. La configuración del frontend reemplaza `localhost:3000` por la URL pública de Render, lo que resuelve el problema de acceso local que generaba `ERR_CONNECTION_REFUSED` al ejecutar el frontend desde un entorno desplegado.
+
+En consecuencia, el procedimiento de despliegue defendible para TB1 incluye versionar cambios en `nexa-website` y `nexa-webapp`, publicarlos en GitHub Pages, validar navegación pública con hash routing y consumir el Fake API expuesto públicamente. La capa backend productiva permanece como siguiente fase y no debe leerse como evidencia de esta entrega.

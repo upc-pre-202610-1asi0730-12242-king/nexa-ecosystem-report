@@ -16,7 +16,7 @@ La relación entre superficies es **consistente pero adaptada al contexto**: com
 
 ---
 
-### 4.1.1. Visual System Overview
+### 4.1.1. General Style Guidelines
 
 El sistema visual de Nexa se implementa mediante Design Tokens en CSS nativo (`tokens.css`), lo que permite gestionar cambios globales desde un único punto de verdad. Los tokens cubren color, tipografía, espaciado, radios y sombras, y se consumen tanto en la landing como en la webapp.
 
@@ -28,13 +28,13 @@ La arquitectura de tokens facilita:
 
 ---
 
-### 4.1.2. Color Palette
+#### Color Palette
 
 La paleta se organiza en cinco grupos funcionales: marca primaria, base/superficie, texto, estados semánticos y acentos de interacción.
 
 *Sistema de Colorimetría Nexa*
 
-![Colorimetry](../assets/images/style-guidelines/style-colors.png)
+![Colorimetry](../assets/images/chapter-4/style-guidelines/style-colors.png)
 
 Especificación de Brand Colors, Text Colors y Status Colors. Elaboración propia.
 
@@ -53,13 +53,13 @@ La diferencia principal entre superficies no está en los valores cromáticos si
 
 ---
 
-### 4.1.3. Typography
+#### Typography
 
 Nexa emplea **Inter** como familia tipográfica principal para interfaz y cuerpo de texto, seleccionada por su legibilidad en pantalla, soporte amplio de pesos y optimización para tamaños pequeños en contextos de alta densidad. Para datos técnicos, códigos de lote, SKUs y telemetría se utiliza **Fira Code** como familia monoespaciada.
 
 *Sistema Tipográfico Nexa*
 
-![Typography](../assets/images/style-guidelines/style-typography.png)
+![Typography](../assets/images/chapter-4/style-guidelines/style-typography.png)
 
 Definición de jerarquías para Display, Headings, Body y Mono. Elaboración propia.
 
@@ -75,13 +75,15 @@ La landing utiliza escalas tipográficas más amplias (hero hasta 84px) porque s
 
 ---
 
-### 4.1.4. Components and UI Patterns
+### 4.1.2. Web Style Guidelines
+
+#### Components and UI Patterns
 
 El sistema de componentes se construye sobre patrones reutilizables que varían en escala y densidad según la superficie.
 
 *Botones y Componentes Nexa*
 
-![Buttons](../assets/images/style-guidelines/Buttons.jpeg)
+![Buttons](../assets/images/chapter-4/style-guidelines/buttons.jpeg)
 
 Variantes de botones primarios, secundarios y estados. Elaboración propia.
 
@@ -108,19 +110,19 @@ Variantes de botones primarios, secundarios y estados. Elaboración propia.
 
 ---
 
-### 4.1.5. Responsive and Surface Adaptation
+#### Responsive and Surface Adaptation
 
 El sistema de diseño opera sobre una rejilla de 12 columnas con breakpoints para Desktop HD (1440px), Desktop (1024px), Tablet (768px) y Mobile (375px).
 
 *Sistema de Rejilla y Breakpoints*
 
-![Grid System](../assets/images/style-guidelines/grid-system.jpeg)
+![Grid System](../assets/images/chapter-4/style-guidelines/grid-system.jpeg)
 
 Dimensionamiento para Desktop HD, Desktop y Tablet. Elaboración propia.
 
 *Escala de Espaciado*
 
-![Spacing](../assets/images/style-guidelines/Spacing.jpeg)
+![Spacing](../assets/images/chapter-4/style-guidelines/spacing.jpeg)
 
 Escala basada en múltiplos de 4px, desde 4px hasta 96px. Elaboración propia.
 
@@ -134,19 +136,19 @@ Los componentes interactivos respetan una altura mínima de 44px en superficies 
 
 ---
 
-### 4.1.6. Iconography
+#### Iconography
 
 El sistema iconográfico utiliza trazos lineales consistentes (stroke-based) para mantener ligereza visual sin competir con la lectura de datos operativos.
 
 *Iconografía Nexa*
 
-![Iconography](../assets/images/style-guidelines/Iconography.jpeg)
+![Iconography](../assets/images/chapter-4/style-guidelines/iconography.jpeg)
 
 Biblioteca de iconos vectoriales para navegación y soporte. Elaboración propia.
 
 ---
 
-### 4.1.7. Accessibility (WCAG 2.1 AA)
+#### Accessibility (WCAG 2.1 AA)
 
 El sistema cumple con el estándar AA de WCAG 2.1 en ambas superficies:
 

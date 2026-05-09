@@ -2,43 +2,74 @@
 
 ## Student Outcome 5 — Trabajo en equipo
 
-Esta sección sustenta el Student Outcome 5 de ABET — EAC: *"La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos."*
+El curso contribuye al cumplimiento del Student Outcome ABET:
 
-La evidencia se organiza en tres niveles: (1) evolución de la contribución por integrante desde AV1 hasta TB1, (2) evidencia de trabajo en equipo alineada con los criterios ABET 5, y (3) conclusiones evaluativas de TB1. Las fuentes de evidencia son commits en GitHub, documentación Docs-as-Code, artefactos de diseño, estructura de repositorios y coordinación registrada en el informe.
+**ABET – EAC - Student Outcome 5**
 
-### Evolución de la contribución por integrante
+**Criterio:** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
 
-*Tabla 2. Contribución por integrante — progresión AV1 → TB1*
+El cuadro registra las acciones realizadas por el equipo en AV1 y TB1, organizadas según los dos criterios específicos del Student Outcome 5.
 
-| Integrante | AV1: participación inicial | TB1: contribución actual | Evidencia principal |
-|---|---|---|---|
-| **Yucra Sandoval, Diego Sebastian** | Coordinó la estructuración del backlog, la definición del Sprint 1 y la articulación entre arquitectura, diseño y evidencia documental. Consolidó correcciones transversales para mantener coherencia entre capítulos, Jira y el incremento visible del producto. | Liderazgo principal del proyecto: coordinación general de TB1, integración del reporte, dirección UX/producto, QA Docs-as-Code, consolidación de webapp/report/website, priorización de alcance, control de coherencia y seguimiento de repositorios. | Commits de integración en `nexa-report`, `nexa-webapp` y `nexa-website`; limpieza de Capítulos 1–4; fake API; role-aware flows; consolidación final de TB1. |
-| **Marín Cueva, César Fernando** | Asumió liderazgo en la consistencia editorial del informe, revisando redacción académica, continuidad argumental y alineación entre problema, propuesta de valor y secciones introductorias del proyecto. | Apoyo fuerte en documentación y continuidad visual: limpieza de secciones, revisión de entregables, ajustes de estilo, soporte en evidencias de entrevistas/glosario y coherencia visual del reporte y webapp. | Commits de limpieza documental, landing narrative, webapp portal views, i18n fixes y assets de needfinding. |
-| **Verde Bueno, Joaquín Francisco** | Lideró la producción de artefactos centrados en el usuario, incluyendo personas, journey maps, empathy maps y piezas visuales de UX/UI necesarias para explicar el producto y sus flujos principales. | Apoyo fuerte en Information Architecture, rutas, flujos, user stories/backlog y revisión estructural: IA webapp/portal, route storytelling, impact mapping, needfinding, user task matrix y webapp inventory/i18n. | Commits de IA, needfinding, impact mapping, wireflow documentation, webapp inventory y scope guard. |
-| **Torrejón De Los Santos, Gino Rodrigo** | Lideró parte de la síntesis del dominio y del modelado de procesos, vinculando entrevistas, needfinding, impact mapping y EventStorming para sostener la lógica del MVP. | Apoyo fuerte en UX de webapp, mockups/evidencia y soporte documental: webapp user flows, mockups actuales, organización de flujos, actualizaciones de capítulos y evidencia visual del producto. | Commits de UX/UI webapp, user flows per persona, webapp dispatch/catalog, impact mapping y assets visuales. |
-| **Rojas Mancilla, Gerard Gianpier** | Contribuyó a la formalización de arquitectura, configuración del trabajo bajo GitHub y convenciones de versionado, asegurando que el repositorio y los diagramas técnicos mantuvieran una base ordenada. | Contribución puntual en DDD/C4 y diagramas de arquitectura: artefactos de arquitectura, HTTP service layer y algunos módulos de webapp. | Commits vinculados a C4, HTTP service layer, portal order loop y webapp clients. |
+*Tabla: Acciones y conclusiones por criterio ABET – EAC - Student Outcome 5*
 
-### Evidencia de trabajo en equipo alineada con ABET 5
+<table>
+  <thead>
+    <tr>
+      <th>Criterio específico</th>
+      <th>Acciones realizadas</th>
+      <th>Conclusiones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Trabaja en equipo para proporcionar liderazgo en forma conjunta</td>
+      <td>
+        <p><strong>Yucra Sandoval, Diego Sebastian</strong></p>
+        <p>AV1: Coordinó la estructuración del backlog, la definición del Sprint 1 y la articulación entre arquitectura, diseño y evidencia documental. Consolidó correcciones transversales para mantener coherencia entre capítulos, Jira y el incremento visible del producto.</p>
+        <p>TB1: Asumió el liderazgo principal del proyecto TB1: coordinación general del equipo, dirección UX/producto, QA Docs-as-Code, consolidación de repositorios y priorización de alcance Sprint 2.</p>
+        <p><strong>Marín Cueva, César Fernando</strong></p>
+        <p>AV1: Lideró la consistencia editorial del informe, revisando redacción académica, continuidad argumental y alineación entre la problemática, la propuesta de valor y las secciones introductorias.</p>
+        <p>TB1: Lideró la limpieza documental y la coherencia visual del reporte y la webapp; revisó entregables, ajustó estilo y sostuvo la continuidad comunicacional de la landing.</p>
+        <p><strong>Verde Bueno, Joaquín Francisco</strong></p>
+        <p>AV1: Lideró la producción de artefactos centrados en el usuario: personas, journey maps, empathy maps y piezas visuales de UX/UI para explicar el producto y sus flujos principales.</p>
+        <p>TB1: Lideró la actualización de Information Architecture, rutas, user stories, impact mapping y needfinding; revisó wireflow documentation y correcciones de imagen del informe.</p>
+        <p><strong>Torrejón De Los Santos, Gino Rodrigo</strong></p>
+        <p>AV1: Lideró la síntesis del dominio y el modelado de procesos, vinculando entrevistas, needfinding, impact mapping y EventStorming para sostener la lógica del MVP.</p>
+        <p>TB1: Lideró la UX de webapp, los mockups actuales, la organización de user flows por persona y el soporte documental de secciones.</p>
+        <p><strong>Rojas Mancilla, Gerard Gianpier</strong></p>
+        <p>AV1: Lideró la formalización de arquitectura, la configuración de GitHub y las convenciones de versionado del repositorio, asegurando que los diagramas técnicos mantuvieran una base ordenada.</p>
+        <p>TB1: Contribuyó puntualmente en DDD/C4, HTTP service layer y módulos de webapp vinculados a arquitectura.</p>
+      </td>
+      <td>
+        <p>AV1: Nuestro equipo demostró liderazgo distribuido desde el inicio del proyecto, con cada integrante asumiendo responsabilidad sobre un frente especializado —documentación, UX, dominio y arquitectura— de forma paralela y coordinada. La distribución no fue uniforme en horas, sino diferenciada por especialidad y disponibilidad, lo que permitió avanzar en paralelo sin perder coherencia.</p>
+        <p>TB1: Diego asumió el liderazgo de integración general mientras César, Joaquín y Gino sostuvieron frentes de documentación, IA y UX con contribuciones verificables en commits. Gerard aportó puntualmente en arquitectura DDD/C4. El resultado fue una entrega coherente con liderazgos diferenciados y complementarios, verificables por evidencia en repositorios y no por afirmaciones de contribución igualitaria.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos</td>
+      <td>
+        <p><strong>Yucra Sandoval, Diego Sebastian</strong></p>
+        <p>AV1: Definió el scope del Sprint 1, estructuró el product backlog con épicas y criterios de priorización, y consolidó la coherencia entre capítulos del informe para sostener la propuesta del producto.</p>
+        <p>TB1: Estableció el alcance concreto de Sprint 2 (webapp role-aware, Fake API, mockups actuales, documentación TB1), coordinó la integración entre repositorios y ejecutó QA final de la entrega.</p>
+        <p><strong>Marín Cueva, César Fernando</strong></p>
+        <p>AV1: Colaboró en la alineación documental del proyecto, en la revisión cruzada de secciones y en la coherencia argumental entre el problema identificado y la propuesta de valor.</p>
+        <p>TB1: Participó en la revisión de entregables, ajustes de estilo, actualización de deployment config y soporte en evidencias visuales de la webapp.</p>
+        <p><strong>Verde Bueno, Joaquín Francisco</strong></p>
+        <p>AV1: Colaboró en la definición de user stories con criterios de aceptación Gherkin y en la extensión del EventStorming para ampliar la cobertura del dominio.</p>
+        <p>TB1: Colaboró en la actualización de la IA de webapp y portal, en la revisión de wireflow documentation y en la corrección de impact mapping e imágenes del informe.</p>
+        <p><strong>Torrejón De Los Santos, Gino Rodrigo</strong></p>
+        <p>AV1: Colaboró en la vinculación entre entrevistas, needfinding, personas y el modelo de dominio del proyecto, asegurando coherencia entre investigación y diseño.</p>
+        <p>TB1: Colaboró en la actualización de user stories, en la creación de user flows con flowcharts por persona y en la preparación de evidencia visual de la webapp.</p>
+        <p><strong>Rojas Mancilla, Gerard Gianpier</strong></p>
+        <p>AV1: Colaboró en la reestructuración del repositorio al estándar Docs-as-Code UPC, normalización de rutas de imágenes y corrección de errores de formato transversales.</p>
+        <p>TB1: Colaboró en la preparación de assets de screenshots y wireframes de webapp; soportó el plan de import de issues Jira documentado en el anexo.</p>
+      </td>
+      <td>
+        <p>AV1: El equipo estableció metas concretas para la entrega inicial —investigación, diseño y landing page pública— con tareas distribuidas por fortaleza y cumplidas con evidencia de commits, artefactos de diseño y coherencia entre capítulos. La planificación por sprint permitió avanzar en paralelo sin mezclar alcances.</p>
+        <p>TB1: El equipo definió explícitamente la web application frontend como incremento principal del Sprint 2, con un alcance controlado (webapp role-aware, Fake API, flujos por segmento, mockups actuales). La distribución de tareas se realizó según disponibilidad real y especialidad, lo que permitió cumplir los objetivos con evidencia verificable en repositorios y compromisos visibles en Jira. Los resultados no se presentan como contribución equivalente de todos los integrantes, sino como entrega integrada donde cada miembro sumó según su fortaleza.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-*Tabla 3. Evidencia TB1 por criterio ABET 5*
-
-| Criterio ABET 5 | Evidencia en TB1 | Resultado alcanzado |
-|---|---|---|
-| **5.c.1** Trabaja en equipo para proporcionar liderazgo en forma conjunta | Diego lideró la integración general; César, Joaquín y Gino sostuvieron frentes relevantes de documentación, IA, UX y revisión; Gerard aportó arquitectura DDD/C4 | Hubo liderazgo principal y liderazgos de apoyo por especialidad; no se presentan aportes iguales de forma artificial |
-| **5.c.2** Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos | Sprint 2 se enfocó en webapp role-aware, Fake API, mockups actuales y documentación TB1; la colaboración permitió integrar aportes diferenciados según fortaleza y disponibilidad | Las metas fueron concretas y alineadas al alcance académico; la planificación evitó mezclar landing inicial con webapp principal |
-| Trabaja efectivamente en equipo | Commits distribuidos en `nexa-report`, `nexa-website`, `nexa-webapp` y actualización coordinada de Capítulos 1–5 | Nuestro equipo sostuvo varios frentes sin perder trazabilidad entre producto, diseño y documentación |
-| Establece metas verificables | Sprint 2 definió alcance concreto: webapp con flujos por segmento, Fake API, role-aware navigation, mockups actualizados y documentación TB1 | Las metas se cumplieron con evidencia en repositorios, no con afirmaciones sin soporte |
-| Planifica tareas | Separación entre Sprint 1 baseline y Sprint 2/TB1; distribución por reporte, website y webapp | Planificación verificable por estructura de commits y repositorios |
-| Cumple objetivos | Capítulo 4 actualizado, webapp documentada, Ch5 limpiado, commits reales citados y checks Docs-as-Code ejecutados | TB1 queda defendible por evidencia documental y repositorios |
-
-### Conclusiones de trabajo en equipo TB1
-
-*Tabla 4. Conclusiones evaluativas de TB1*
-
-| Aspecto evaluado | Conclusión |
-|---|---|
-| Distribución de liderazgo | Nuestro equipo mantuvo un liderazgo principal claro (Diego) con colaboración distribuida. César, Joaquín y Gino aportaron de forma significativa en frentes documentales, IA y UX. Gerard contribuyó puntualmente en arquitectura. |
-| Honestidad de contribución | El resultado no se presenta como aporte equivalente de todos los integrantes, sino como una entrega integrada donde cada miembro sumó según su fortaleza y disponibilidad real. |
-| Evidencia verificable | La evidencia de TB1 proviene de commits reales, estructura de repositorios y documentación versionada. No se inventan reuniones, capturas de Jira ni contribuciones no verificables. |
-| Progresión AV1 → TB1 | AV1 dejó una base de investigación, diseño y landing page pública. TB1 consolidó una web application frontend, documentación Docs-as-Code limpia y coherencia entre repositorios. |
-| Alineación con ABET 5 | La lectura es más honesta y verificable que una afirmación genérica de trabajo igualitario. Se sustenta en evidencia de liderazgo conjunto, entorno colaborativo, metas definidas y objetivos cumplidos. |
+> *Nota:* La tabla sigue la estructura del Anexo A: criterio específico, acciones realizadas y conclusiones. Las acciones se apoyan en el historial del informe, la evidencia de Sprint 1 y Sprint 2, los commits documentados y las secciones de colaboración del reporte. Elaboración propia.
