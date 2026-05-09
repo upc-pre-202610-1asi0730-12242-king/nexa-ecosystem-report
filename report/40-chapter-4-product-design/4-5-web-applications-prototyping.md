@@ -27,13 +27,13 @@ La utilidad metodológica del prototipo es doble. Primero, permite revisar conti
 
 *Captura referencial del prototipo de la web application*
 
-![Captura del prototipo de la web application](../assets/images/webapp-mockups-current/s1-02-dashboard-commercial.png)
+![Captura del prototipo de la web application](../assets/images/chapter-4/webapp/mockups/s1-02-dashboard-commercial.png)
 
 Elaboración propia. La captura corresponde a la pantalla principal del prototipo y resume la lógica de dashboard operativo utilizada como punto de entrada a la aplicación.
 
 *Prueba de interacción del prototipo responsive en navegador móvil*
 
-![Mobile Application Prototype Proof](../assets/images/mobile-browser/mobile-application-prototype-proof.png)
+![Mobile Application Prototype Proof](../assets/images/chapter-4/webapp/prototyping/mobile-application-prototype-proof.png)
 
 Elaboración propia. Evidencia visual del prototipo ejecutado desde navegador móvil como validación del diseño responsive.
 
@@ -43,4 +43,4 @@ Bajo esta lectura, el prototipado debe presentarse con honestidad de alcance: co
 
 El prototipo aplica un **sistema de navegación jerárquico por rol** con un nivel global y dos niveles contextuales, consistente con la arquitectura de información definida en la sección 4.2. El nivel global se expresa en un *top bar* persistente con identidad de marca, selector de contexto (empresa activa) y acciones de cuenta; el primer nivel contextual se expresa en un *side navigation* por módulo del dominio (Catálogo, Pedidos, Inventario, Clientes, Despacho, Trazabilidad); el segundo nivel se expresa como *tabs* y *breadcrumbs* dentro de cada módulo para movimientos laterales sin perder contexto.
 
-La navegación es **rol-consciente**: el Segmento 1 (coordinación comercial) ve por defecto Pedidos y Clientes; el Segmento 3 (compradores B2B) ve Catálogo, Mis pedidos y Seguimiento; el Segmento 2 (jefatura logística) ve Gestión operativa, Despachos y Evidencias. Los *call-to-actions* primarios (crear pedido, despachar, cerrar entrega) se mantienen siempre visibles como *floating action* en la parte inferior derecha del frame, respetando la lógica **mobile-first**. Las transiciones entre frames siguen el principio de *progressive disclosure*: el usuario avanza solo cuando el sistema ya puede confirmar stock, crédito o estado, evitando pantallas intermedias sin valor.
+La navegación es **rol-consciente**: S1: Coordinación comercial / ventas internas ve por defecto Pedidos y Clientes; S3: Comprador B2B / cliente comercial ve Catálogo, Mis pedidos y Seguimiento; S2: Jefatura logística / coordinación operativa ve Gestión operativa, Despachos y Evidencias. Los *call-to-actions* primarios (crear pedido, despachar, cerrar entrega) se mantienen siempre visibles como *floating action* en la parte inferior derecha del frame, respetando la lógica **mobile-first**. Las transiciones entre frames siguen el principio de *progressive disclosure*: el usuario avanza solo cuando el sistema ya puede confirmar stock, crédito o estado, evitando pantallas intermedias sin valor.

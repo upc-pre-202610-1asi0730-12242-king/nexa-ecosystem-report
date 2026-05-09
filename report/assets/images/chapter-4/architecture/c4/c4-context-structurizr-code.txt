@@ -1,0 +1,58 @@
+workspace "Nexa System Context" "Diagrama de Contexto para el sistema Nexa" {
+
+    model {
+        # Personas / Actores
+        staff = person "Commercial Coordination Staff" "Receive, interpret, and channel orders into the operational flow, reducing manual workload and ambiguity"
+        b2bCustomer = person "B2B Customer" "Browses catalog, places orders, and tracks order status."
+        distributorStaff = person "Distributor Staff" "Manages inventory, updates product catalog, and processes orders."
+        visitorCustomer = person "Visitor – Customer" "External user exploring offered services and requesting cheese products."
+        visitorDistributor = person "Visitor – Distributor Company" "External company user exploring services to distribute their cheeses."
+
+        # Sistema Central
+        nexa = softwareSystem "Nexa" "Nexa is a web platform that enables distributors to manage catalog, inventory, and orders, while allowing clients to browse products, place orders, and track their status."
+
+        # Sistemas Externos
+        stripe = softwareSystem "Stripe" "Payment system" "External"
+        googleCalendar = softwareSystem "Google Calendar" "Synchronizes delivery dates and logistics events with customers’ or internal staff calendars." "External"
+        googleOAuth = softwareSystem "Google OAuth" "Manages user authentication and secure access to the system." "External"
+        googleCloudStorage = softwareSystem "Google Cloud Storage" "Stores documents, product images, and order records securely in the cloud.." "External"
+        googleNotification = softwareSystem "Google Notification" "Sends email, notifications, and SMS." "External"
+
+        # Relaciones: Usuarios -> Nexa
+        staff -> nexa "use"
+        b2bCustomer -> nexa "use"
+        distributorStaff -> nexa "use"
+        visitorCustomer -> nexa "use"
+        visitorDistributor -> nexa "use"
+
+        # Relaciones: Nexa -> Sistemas Externos
+        nexa -> stripe "pay"
+        nexa -> googleCalendar "use"
+        nexa -> googleOAuth "Authenticate/receive"
+        nexa -> googleCloudStorage "use"
+        nexa -> googleNotification "send"
+    }
+
+    views {
+        systemContext nexa "ContextDiagram" {
+            include *
+            autoLayout lr
+        }
+
+        styles {
+            element "Software System" {
+                background #1168bd
+                color #ffffff
+            }
+            element "External" {
+                background #999999
+                color #ffffff
+            }
+            element "Person" {
+                shape Person
+                background #08427b
+                color #ffffff
+            }
+        }
+    }
+}

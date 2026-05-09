@@ -90,14 +90,15 @@ The latest generated PDF can also be downloaded from GitHub Actions:
 
 ## Branching strategy
 
-This repository follows GitFlow:
+For TB1, observable delivery is concentrated in `main` and Conventional Commits. GitFlow remains documented as a working convention for the next delivery:
 
 | Branch | Purpose |
 |---|---|
-| `main` | Stable, reviewed releases |
-| `develop` | Integration branch |
-| `feature/*` | New content or sections |
-| `fix/*` | Corrections and typo fixes |
+| `main` | Stable deliverable version |
+| `develop` | Integration branch convention |
+| `feature/*` | Work by feature or section |
+| `release/*` | Delivery closing convention |
+| `hotfix/*` | Urgent correction convention |
 
 All commits follow [Conventional Commits 1.0.0](https://www.conventionalcommits.org/): `type(scope): description` — lowercase, no trailing period.
 

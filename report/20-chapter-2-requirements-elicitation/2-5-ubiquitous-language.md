@@ -2,7 +2,7 @@
 
 El siguiente glosario establece el vocabulario compartido del proyecto Nexa. Su objetivo es que el equipo, los usuarios de negocio y los evaluadores lean los mismos términos con el mismo significado, sin depender de instrucciones técnicas, nombres internos de herramientas o jerga innecesaria.
 
-La selección de términos se alinea con los tres segmentos del producto: coordinación comercial, jefatura logística y compradores comerciales B2B. También conecta entrevistas, needfinding, historias de usuario y diseño de la solución. El glosario incluye únicamente términos del dominio de negocio; conceptos de implementación, arquitectura o herramientas se documentan en los capítulos correspondientes.
+La selección de términos se alinea con los tres segmentos del producto: S1: Coordinación comercial / ventas internas, S2: Jefatura logística / coordinación operativa y S3: Comprador B2B / cliente comercial. También conecta entrevistas, needfinding, historias de usuario y diseño de la solución. El glosario incluye únicamente términos del dominio de negocio; conceptos de implementación, arquitectura o herramientas se documentan en los capítulos correspondientes.
 
 *Glosario de Lenguaje Ubicuo — Dominio: Distribución B2B de productos refrigerados*
 

@@ -8,43 +8,43 @@ El propósito de esta vista no es reemplazar el diseño de base de datos ni anti
 
 #### Identity
 
-![Identity Class Diagram](../assets/images/class-diagrams/01-identity-classes.svg)
+![Identity Class Diagram](../assets/images/chapter-4/architecture/class-diagrams/01-identity-classes.svg)
 
 El contexto de identidad reúne las clases necesarias para autenticar usuarios, asignar roles y validar permisos. También incorpora los registros de auditoría y de inicio de sesión, ya que ambos dependen de la actividad del usuario autenticado y ayudan a sostener control operativo sobre accesos y cambios.
 
 #### Catalog
 
-![Catalog Class Diagram](../assets/images/class-diagrams/02-catalog-classes.svg)
+![Catalog Class Diagram](../assets/images/chapter-4/architecture/class-diagrams/02-catalog-classes.svg)
 
 El contexto de catálogo concentra la estructura maestra del producto: categoría, marca, unidad de medida, producto y especificación. Aquí el foco está en describir el producto y sus condiciones de conservación, no en resolver stock o movimientos de almacén.
 
 #### Inventory
 
-![Inventory Class Diagram](../assets/images/class-diagrams/03-inventory-classes.svg)
+![Inventory Class Diagram](../assets/images/chapter-4/architecture/class-diagrams/03-inventory-classes.svg)
 
 El contexto de inventario modela la disponibilidad física del producto mediante almacenes, ubicaciones, stock, lotes y movimientos. La inclusión de `InventoryTrans` permite representar que los cambios de stock no se tratan como un valor aislado, sino como movimientos registrados dentro del mismo contexto.
 
 #### Customer Management
 
-![Customer Management Class Diagram](../assets/images/class-diagrams/04-customer-management-classes.svg)
+![Customer Management Class Diagram](../assets/images/chapter-4/architecture/class-diagrams/04-customer-management-classes.svg)
 
 El contexto de gestión de clientes agrupa la información comercial básica del cliente y su pertenencia a una zona operativa. La referencia hacia usuario se mantiene ligera porque aquí importa la relación de acceso o vínculo comercial, no la administración completa de identidad.
 
 #### Commercial Conditions
 
-![Commercial Conditions Class Diagram](../assets/images/class-diagrams/05-commercial-conditions-classes.svg)
+![Commercial Conditions Class Diagram](../assets/images/chapter-4/architecture/class-diagrams/05-commercial-conditions-classes.svg)
 
 El contexto de condiciones comerciales contiene las reglas que afectan crédito, saldo, términos de pago y listas de precio. Este bloque se mantiene separado del contexto de pedidos para dejar claro que las reglas comerciales existen como una fuente de validación y no como un detalle embebido dentro de cada orden.
 
 #### Orders
 
-![Orders Class Diagram](../assets/images/class-diagrams/06-orders-classes.svg)
+![Orders Class Diagram](../assets/images/chapter-4/architecture/class-diagrams/06-orders-classes.svg)
 
 El contexto de pedidos modela la orden, sus ítems y su historial de estados. Las referencias hacia cliente, producto y condiciones comerciales se mantienen fuera de la propiedad central del agregado, pero siguen visibles para justificar cálculos, validaciones y cambios de estado dentro del flujo transaccional.
 
 #### Traceability
 
-![Traceability Class Diagram](../assets/images/class-diagrams/07-traceability-classes.svg)
+![Traceability Class Diagram](../assets/images/chapter-4/architecture/class-diagrams/07-traceability-classes.svg)
 
 El contexto de trazabilidad representa la ejecución posterior al pedido: despacho, vehículo, conductor, incidentes y evidencia de entrega. La referencia al pedido se conserva porque el despacho no se entiende como proceso aislado, sino como continuidad operativa de una orden ya confirmada.
 

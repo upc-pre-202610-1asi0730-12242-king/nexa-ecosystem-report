@@ -30,7 +30,7 @@ La webapp se organiza por módulos de dominio agrupados en un sidebar persistent
 
 El portal ofrece una estructura lineal de catálogo → pedido → seguimiento, diseñada para que el comprador comercial complete su flujo de abastecimiento con autonomía.
 
-### 4.2.2. Route Architecture and Navigation Storytelling
+#### Route Architecture and Navigation Storytelling
 
 La webapp utiliza Vue Router con hash history (necesario para despliegue en GitHub Pages sin rewrite de rutas). Las rutas se agrupan por experiencia, no por página arbitraria:
 
@@ -49,7 +49,7 @@ La webapp utiliza Vue Router con hash history (necesario para despliegue en GitH
 
 La arquitectura distingue superficies por scope: un comprador B2B (Elena) se orienta al grupo `/portal`, mientras que coordinación comercial y jefatura logística operan sobre `/ops`. Dentro de Ops, la navegación por responsabilidad organiza la visibilidad de módulos sin convertir esta sección en evidencia de permisos productivos.
 
-### 4.2.3. Labeling Systems
+### 4.2.2. Labeling Systems
 
 El sistema de etiquetado mantiene consistencia entre superficies y alineación con el vocabulario del dominio.
 
@@ -78,7 +78,7 @@ El sistema de etiquetado mantiene consistencia entre superficies y alineación c
 | Navegación | Catálogo, Mis pedidos, Mi cuenta | Flujo de comprador |
 | Acciones | Agregar al pedido, Confirmar pedido, Ver seguimiento | Transacción B2B |
 
-### 4.2.4. SEO Tags and Meta Tags
+### 4.2.3. SEO Tags and Meta Tags
 
 La implementación SEO en el sitio público se apoya en etiquetas `<title>`, `<meta name="description">`, `<meta name="author">` y propiedades Open Graph adaptadas por vista. El sitio no implementa `<meta name="keywords">` (estrategia basada en contenido semántico, no en keywords explícitas).
 
@@ -92,7 +92,7 @@ La implementación SEO en el sitio público se apoya en etiquetas `<title>`, `<m
 
 La webapp y el portal no requieren SEO público porque operan detrás de autenticación.
 
-### 4.2.5. Searching Systems
+### 4.2.4. Searching Systems
 
 **Landing**: no incorpora motor de búsqueda. El volumen de páginas es reducido y el descubrimiento se resuelve con navegación directa (dropdown de Solutions, enlaces cruzados, sidebar de FAQ con categorías).
 
@@ -106,7 +106,7 @@ La webapp y el portal no requieren SEO público porque operan detrás de autenti
 | Webapp | Filtros en tabla + búsqueda en captura | Por módulo activo |
 | Portal | Filtro de catálogo | Productos disponibles para el comprador |
 
-### 4.2.6. Navigation Systems
+### 4.2.5. Navigation Systems
 
 #### Landing — navegación global + contextual
 

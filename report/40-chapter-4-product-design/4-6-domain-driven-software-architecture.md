@@ -11,29 +11,29 @@ En esta sección el foco está en el vínculo entre workshop y arquitectura. La 
 El Design-Level EventStorming permitió pasar de un flujo general del pedido a una lectura más ordenada del dominio. Las primeras tres etapas (Exploration, Timeline y Pain Points) se documentan en la sección 2.4 como parte del entendimiento del negocio. Las capturas siguientes corresponden al desarrollo técnico posterior usado por el equipo. Como respaldo adicional se mantiene el board de Miro: [Design-Level EventStorming en Miro](https://miro.com/welcomeonboard/OC95SW9ySW9zY3Q5QURlWWFpTlN4NmVuY2xHWVRYdTBkd3hZR2FHcEZ1cDRBYm5SY1NYMkpvNFdYSmc1T1hLZ2lsQko3Z2RKUDdlbWF6ZmRRU21EalNzSEZqc2NKT2l6MTc2TXBFbjFUTTM2L3phOTVDWktNeTVnY1hVZGVEZjZBd044SHFHaVlWYWk0d3NxeHNmeG9BPT0hdjE=?share_link_id=419986690457).
 
 *Design-Level EventStorming — Step 4: Pivotal Points*
-![DDD Step 4](../assets/images/ddd/step-04.png)
+![DDD Step 4](../assets/images/chapter-4/architecture/ddd/ddd-step-4.png)
 La cuarta vista resaltó los puntos de decisión. Aquí se identificaron momentos donde una confirmación, una alerta o un retraso cambia el recorrido esperado del proceso.
 
 *Design-Level EventStorming — Step 5: Commands*
-![DDD Step 5](../assets/images/ddd/step-05.png)
+![DDD Step 5](../assets/images/chapter-4/architecture/ddd/ddd-step-5.png)
 Con el flujo más claro, el workshop pasó a las acciones que disparan esos eventos. Aparecen operaciones como registrar pedido, validar disponibilidad, programar entrega o actualizar catálogo.
 
 *Design-Level EventStorming — Step 6: Policies*
-![DDD Step 6](../assets/images/ddd/step-06.png)
+![DDD Step 6](../assets/images/chapter-4/architecture/ddd/ddd-step-6.png)
 Las políticas permitieron fijar reglas del negocio que no dependen de una sola pantalla. Aquí se volvieron más explícitas las validaciones previas, restricciones de operación y condiciones de coordinación entre áreas.
 
 *Design-Level EventStorming — Step 7: Read Models*
-![DDD Step 7](../assets/images/ddd/step-07.png)
+![DDD Step 7](../assets/images/chapter-4/architecture/ddd/ddd-step-7.png)
 La séptima vista se concentró en qué información necesita ver cada actor para operar sin fricción. Esto dejó más claras salidas como listas de pedidos, paneles de inventario y vistas de seguimiento.
 
 El board exportado no conserva una captura separada del paso 8. La consolidación visible continúa en las vistas 9 y 10.
 
 *Design-Level EventStorming — Step 9: Consolidated Flow by Context*
-![DDD Step 9](../assets/images/ddd/step-09.png)
+![DDD Step 9](../assets/images/chapter-4/architecture/ddd/ddd-step-9.png)
 La novena vista reorganiza el flujo en bloques más estables. Aquí ya se empieza a ver qué eventos y decisiones permanecen juntos dentro de una misma área funcional.
 
 *Design-Level EventStorming — Step 10: Bounded Contexts*
-![DDD Step 10](../assets/images/ddd/step-10.png)
+![DDD Step 10](../assets/images/chapter-4/architecture/ddd/ddd-step-10.png)
 La última captura resume los bounded contexts resultantes. En el workshop todavía aparecen bloques amplios como Product Catalog, Order, Inventory, Shipment y Billing, pero esa salida fue un punto de transición y no el cierre final del modelo.
 
 La traducción posterior del workshop refinó esos bloques para el informe. Product Catalog pasó a leerse como **Catalog**; Order como **Orders**; Shipment como **Traceability**; Billing quedó absorbido como soporte de reglas comerciales e integración; y el diseño terminó separando además **Identity** y **Customer Management** como contextos necesarios para mantener límites más claros.
@@ -44,7 +44,7 @@ El diagrama de contexto muestra a Nexa como sistema central dentro de dos frente
 
 *Diagrama de Contexto del Sistema Nexa (C4 — Nivel 1)*
 
-![Diagrama de Contexto C4 — Sistema Nexa](../assets/images/c4/context.svg)
+![Diagrama de Contexto C4 — Sistema Nexa](../assets/images/chapter-4/architecture/c4/c4-context-diagram.svg)
 
 El contexto deja ver que el sistema no se limita a un solo actor. Hay visitantes que exploran la propuesta de valor, personal de la distribuidora que coordina la operación y clientes B2B que consultan catálogo, registran pedidos y siguen su estado. Las integraciones externas se entienden como apoyo del ecosistema, no como el núcleo del dominio.
 
@@ -54,7 +54,7 @@ La vista de contenedores separa el sitio público, la web application transaccio
 
 *Diagrama de Contenedores del Sistema Nexa (C4 — Nivel 2)*
 
-![Diagrama de Contenedores C4 — Sistema Nexa](../assets/images/c4/containers.svg)
+![Diagrama de Contenedores C4 — Sistema Nexa](../assets/images/chapter-4/architecture/c4/c4-container-diagram.svg)
 
 En esta versión del C4, el sitio público se representa como una capa en HTML, CSS y JavaScript; la aplicación transaccional aparece como un cliente web separado; el backend se mantiene en ASP.NET Core Web API; y la persistencia se concentra en MySQL. También se muestran servicios externos de soporte como Stripe, Google Notification, OAuth, Calendar y Cloud Storage.
 
@@ -66,7 +66,7 @@ La vista de componentes baja un nivel más y muestra cómo se reparte la respons
 
 *Diagrama de Componentes del Sistema Nexa (C4 — Nivel 3)*
 
-![Diagrama de Componentes C4 — Sistema Nexa](../assets/images/c4/components.svg)
+![Diagrama de Componentes C4 — Sistema Nexa](../assets/images/chapter-4/architecture/c4/c4-component-diagram.png)
 
 En la imagen aparecen piezas visibles como Auth, Catalog, Order, Inventory y Customer dentro del backend, además de componentes de soporte como Payment Integration y Notification. Para mantener coherencia con el dominio, el informe conserva como núcleo los contextos Identity, Catalog, Inventory, Customer Management, Commercial Conditions, Orders y Traceability. En esa lectura, **Auth** se alinea con **Identity**, **Customer** con **Customer Management**, y los servicios de pago o notificación se tratan como apoyo transversal, no como bounded contexts principales.
 

@@ -22,7 +22,7 @@ La evidencia de Sprint 2 se organiza mediante planificación, Sprint Backlog, co
 | Sprint 2 Velocity | 208 Story Points |
 | Sum of Story Points | 208 Story Points |
 
-![Reunión virtual de planificación del Sprint 2](../../assets/images/project-collaboration/team-collaboration-meeting.jpg)
+![Reunión virtual de planificación del Sprint 2](../../assets/images/front-matter/collaboration/team-collaboration-meeting.jpg)
 
 Figura. Reunión virtual del equipo para coordinación de Sprint 2.
 
@@ -40,7 +40,7 @@ Figura. Reunión virtual del equipo para coordinación de Sprint 2.
 
 El Sprint Backlog 2 concentra el trabajo realizado entre el **2026-04-24 y 2026-05-07**. El objetivo principal del sprint fue consolidar la Web Application TB1, documentar los flujos internos de S1 y S2, actualizar la evidencia UX/UI y registrar el avance de implementación correspondiente al incremento de la entrega.
 
-![Sprint Backlog 2 en Jira](../../assets/images/jira/sprint-2-board-jira.png)
+![Sprint Backlog 2 en Jira](../../assets/images/chapter-5/sprint-evidence/jira/sprint-2-board-jira.png)
 
 **URL del board/backlog:** [Jira Backlog — Proyecto Nexa](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog)
 
@@ -128,19 +128,19 @@ La siguiente tabla resume una selección canónica de commits representativos de
 
 Las siguientes capturas son evidencia visual complementaria. La tabla anterior conserva el formato solicitado por el statement; las capturas no sustituyen la tabla ni representan screenshots por cada commit.
 
-![TB1 GitHub report commit evidence](../../assets/images/tb1-commit-evidence/report-commits-tb1.png)
+![TB1 GitHub report commit evidence](../../assets/images/chapter-5/sprint-evidence/commit-evidence/report-commits-tb1.png)
 
 Figura. Evidencia visual complementaria de commits registrados en `nexa-report` durante TB1.
 
-![TB1 GitHub website commit evidence](../../assets/images/tb1-commit-evidence/website-commits-tb1.png)
+![TB1 GitHub website commit evidence](../../assets/images/chapter-5/sprint-evidence/commit-evidence/website-commits-tb1.png)
 
 Figura. Evidencia visual complementaria de commits registrados en `nexa-website` durante TB1.
 
-![TB1 GitHub webapp commit evidence](../../assets/images/tb1-commit-evidence/webapp-commits-tb1.png)
+![TB1 GitHub webapp commit evidence](../../assets/images/chapter-5/sprint-evidence/commit-evidence/webapp-commits-tb1.png)
 
 Figura. Evidencia visual complementaria de commits registrados en `nexa-webapp` durante TB1.
 
-![TB1 GitHub pulse evidence](../../assets/images/tb1-commit-evidence/github-insights-tb1.png)
+![TB1 GitHub pulse evidence](../../assets/images/chapter-5/sprint-evidence/commit-evidence/github-insights-tb1.png)
 
 Figura. Evidencia visual complementaria de actividad y contribución en GitHub durante TB1.
 
@@ -152,7 +152,7 @@ Figura. Evidencia visual complementaria de actividad y contribución en GitHub d
 | Landing → Webapp | CTAs y links alineados hacia GitHub Pages webapp | `nexa-website`: `22a715c`, `13ea635`, `4951d66` | No implica servicios productivos |
 | Login demo | Selector de perfiles y acceso rápido para revisión académica | `nexa-webapp`: `ca38d05`, `ad68f8c` | No es autenticación productiva |
 | Ops S1/S2 | Dashboard, navegación adaptada, clientes, pedidos, inventario, despacho y reportes | `nexa-webapp`: commits de dashboard/orders/inventory/dispatch/reports | Role-aware frontend, no IAM corporativo |
-| Portal comprador parcial | Recorrido simulado de catálogo, pedido y seguimiento para mantener trazabilidad de S3 | `nexa-webapp`: `6053d18`, `5b53e6e`, `6db2e58` | No declara cobertura completa de UI ni validación final de S3 en TB1 |
+| Portal comprador S3 | Recorrido comprador documentado como planificación de catálogo, pedido y seguimiento | FigJam y documentación de sección 4.4 | No declara pantallas webapp implementadas ni validación final de S3 en TB1 |
 | Fake API | JSON Server y servicios por bounded context | `nexa-webapp`: `4aa2812`, `7b9bf07`, `dbee8ed`, `6bffa73` | No es API final |
 | UX/UI reportada | FigJam wireflows y Lucidchart userflows, mockups actuales y evidencia por user goal | `nexa-report`: commits Ch4 del 5 de mayo | No sustituye un export completo de FigJam |
 
@@ -173,9 +173,9 @@ Para Sprint 2, la evidencia de servicios se aborda como soporte simulado para la
 | Artefacto | Estado TB1 | URL / evidencia | Observación |
 |---|---|---|---|
 | Landing page `nexa-website` | Publicada como capa pública | [GitHub Pages – nexa-website](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) | Punto de entrada comercial |
-| Web application `nexa-webapp` | Publicada para revisión TB1 con hash routing | [GitHub Pages – nexa-webapp](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-webapp/) | Frontend con datos simulados |
+| Web application `nexa-webapp` | Publicada para revisión TB1 con hash routing | [GitHub Pages – nexa-webapp](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-webapp/#/auth/login) | Frontend con datos simulados |
 | Reporte `nexa-report` | Fuente Docs-as-Code | repositorio GitHub y fuente Markdown | Evidencia documental |
-| Backend / plataforma | Planificado | `nexa-platform` | No se declara desplegado |
+| Backend / plataforma | Planificado | [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) | No se declara desplegado |
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
