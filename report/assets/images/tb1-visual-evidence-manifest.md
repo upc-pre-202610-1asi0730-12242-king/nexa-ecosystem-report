@@ -2,8 +2,8 @@
 
 | File | Source from ZIP | Used in section | Purpose |
 |---|---|---|---|
-| `report/assets/images/userflows/s1-commercial-userflow-lucid.png` | `userflows/Userflow 1.jpeg` | 4.4 Web Applications UX/UI Design | Visual user flow evidence for Segmento 1, coordinación comercial. |
-| `report/assets/images/userflows/s2-logistics-userflow-lucid.png` | `userflows/Userflow 2.jpeg` | 4.4 Web Applications UX/UI Design | Visual user flow evidence for Segmento 2, jefatura logística. |
+| `report/assets/images/userflows/s1-commercial-userflow-lucid.png` | `userflows/Userflow 1.jpeg` | 4.4 Web Applications UX/UI Design | Visual user flow evidence for S1: Coordinación comercial / ventas internas. |
+| `report/assets/images/userflows/s2-logistics-userflow-lucid.png` | `userflows/Userflow 2.jpeg` | 4.4 Web Applications UX/UI Design | Visual user flow evidence for S2: Jefatura logística / coordinación operativa. |
 | `report/assets/images/tb1-commit-evidence/report-commits-tb1.png` | `tb1-evidence-screenshots/github/report/report-commits-list.png` | 5.2 Development Evidence | Complementary GitHub visual evidence for report commits during TB1. |
 | `report/assets/images/tb1-commit-evidence/website-commits-tb1.png` | `tb1-evidence-screenshots/github/website/website-commits-list.png` | 5.2 Development Evidence | Complementary GitHub visual evidence for landing repository commits during TB1. |
 | `report/assets/images/tb1-commit-evidence/webapp-commits-tb1.png` | `tb1-evidence-screenshots/github/webapp/webapp-commits-list.png` | 5.2 Development Evidence | Complementary GitHub visual evidence for webapp commits during TB1. |

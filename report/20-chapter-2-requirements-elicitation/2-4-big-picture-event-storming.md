@@ -9,13 +9,13 @@ El EventStorming se construyó como un ejercicio de síntesis del dominio a part
 ### ***2.4.1. Proceso de construcción del modelado***
 
 *Design-Level EventStorming — Step 1: Exploration*
-![DDD Step 1](../assets/images/chapter-2/event-storming/ddd-step-1-event-storming.png)
+![DDD Step 1](../assets/images/ddd/step-01.png)
 
 *Design-Level EventStorming — Step 2: Timeline*
-![DDD Step 2](../assets/images/chapter-2/event-storming/ddd-step-2-event-storming.png)
+![DDD Step 2](../assets/images/ddd/step-02.png)
 
 *Design-Level EventStorming — Step 3: Pain Points*
-![DDD Step 3](../assets/images/chapter-2/event-storming/ddd-step-3-event-storming.png)
+![DDD Step 3](../assets/images/ddd/step-03.png)
 
 *Proceso de construcción del modelado*
 
@@ -91,7 +91,7 @@ Los comandos expresan la intención del actor; los eventos confirman que el esta
 
 ### ***2.4.6. Evidencia de colaboración del modelado***
 
-  ![Reunión de modelado EventStorming del equipo KING](../assets/images/front-matter/collaboration/team-collaboration-meeting.jpg)
+  ![Reunión de modelado EventStorming del equipo KING](../assets/images/project-collaboration/team-collaboration-meeting.jpg)
   
 > *Nota:* *Figura: Sesión colaborativa del equipo KING durante la construcción del Big Picture EventStorming. Elaboración propia.*
 

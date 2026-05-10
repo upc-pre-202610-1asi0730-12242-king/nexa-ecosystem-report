@@ -22,7 +22,7 @@ La evidencia de Sprint 2 se organiza mediante planificación, Sprint Backlog, co
 | Sprint 2 Velocity | 208 Story Points |
 | Sum of Story Points | 208 Story Points |
 
-![Reunión virtual de planificación del Sprint 2](../../assets/images/front-matter/collaboration/team-collaboration-meeting.jpg)
+![Reunión virtual de planificación del Sprint 2](../../assets/images/front-matter/collaboration/team-collaboration-metting-2.png)
 
 Figura. Reunión virtual del equipo para coordinación de Sprint 2.
 

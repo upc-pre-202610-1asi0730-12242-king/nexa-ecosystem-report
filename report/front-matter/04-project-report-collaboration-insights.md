@@ -12,6 +12,7 @@ Esta sección documenta la colaboración del equipo **KING** alrededor del infor
 | Repositorio de la Web Application TB1 | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) |
 | Repositorio del Backend / Plataforma (futuro) | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) |
 | Landing desplegada (GitHub Pages) | [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) |
+| Web App desplegada (Firebase Hosting) | [https://nexa-2f1bb.web.app/](https://nexa-2f1bb.web.app/) |
 
 ### Distribución de actividades del equipo
 
