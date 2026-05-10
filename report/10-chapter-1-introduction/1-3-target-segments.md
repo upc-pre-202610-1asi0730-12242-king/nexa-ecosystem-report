@@ -9,8 +9,6 @@ En esta sección, los segmentos objetivo funcionan como la base de investigació
 
 ### ***1.3.1. Resumen de Segmentos Objetivo***
 
-Los segmentos se organizan según su posición en el flujo comercial-operativo. El S1 representa la captura y coordinación comercial del pedido; el S2 representa la validación y organización logística interna; y el S3 representa la demanda comercial recurrente de compradores mayoristas y minoristas.
-
 *Tabla. Resumen comparativo de segmentos objetivo de Nexa*
 | Segmento objetivo | Actor principal | Rol en el flujo del pedido | Fricción dominante | Valor esperado de Nexa |
 |---|---|---|---|---|
@@ -88,8 +86,6 @@ mindmap
 
 ### ***1.3.3. Análisis detallado por segmento***
 
-El análisis de cada segmento se desarrolla en cuatro planos: demográfico y ocupacional, conductual, tecnológico y valor esperado. Esta estructura permite pasar de una descripción general del actor a implicancias concretas para diseño, validación y priorización del producto.
-
 #### **S1: Coordinación comercial / ventas internas**
 
 Este segmento está conformado por vendedoras, asesoras comerciales, mercaderistas y personal de coordinación comercial que mantiene contacto directo con compradores mayoristas y minoristas. Este segmento representa el primer punto de entrada del pedido dentro del flujo operativo de Nexa.
@@ -98,11 +94,11 @@ Su importancia radica en que una parte significativa de los errores posteriores 
 
 ##### Ficha rápida del segmento
 
-- Actor principal: vendedoras, asesoras comerciales, mercaderistas y personal de coordinación comercial.
-- Contexto dominante: atención rápida a compradores B2B mediante llamadas, WhatsApp, listas de productos, notas de voz o mensajes dispersos.
-- Responsabilidad principal: recibir, interpretar, ordenar y canalizar pedidos hacia operación.
-- Dolor principal: retrabajo por pedidos incompletos, validaciones manuales y falta de visibilidad inmediata de stock o condiciones.
-- Valor esperado: capturar pedidos de forma más clara, reducir errores y responder al comprador con mayor seguridad.
+- **Actor principal**: vendedoras, asesoras comerciales, mercaderistas y personal de coordinación comercial.
+- **Contexto dominante**: atención rápida a compradores B2B mediante llamadas, WhatsApp, listas de productos, notas de voz o mensajes dispersos.
+- **Responsabilidad principal**: recibir, interpretar, ordenar y canalizar pedidos hacia operación.
+- **Dolor principal**: retrabajo por pedidos incompletos, validaciones manuales y falta de visibilidad inmediata de stock o condiciones.
+- **Valor esperado**: capturar pedidos de forma más clara, reducir errores y responder al comprador con mayor seguridad.
 
 ##### Plano demográfico y ocupacional
 
@@ -267,11 +263,11 @@ Este segmento representa el origen de la demanda. Su interés principal no es us
 
 ##### Ficha rápida del segmento
 
-- Actor principal: compradores mayoristas, minoristas, bodegas, minimarkets, pequeños mayoristas y negocios HORECA.
-- Contexto dominante: compra recurrente de productos refrigerados para mantener stock, ventas y continuidad operativa.
-- Responsabilidad principal: solicitar productos, comparar condiciones, registrar pedidos y coordinar recepción.
-- Dolor principal: incertidumbre sobre disponibilidad, precios, confirmación, cambios de último minuto y tiempo de entrega.
-- Valor esperado: catálogo claro, pedido autónomo, confirmación confiable y seguimiento comprensible.
+- **Actor principal**: compradores mayoristas, minoristas, bodegas, minimarkets, pequeños mayoristas y negocios HORECA.
+- **Contexto dominante**: compra recurrente de productos refrigerados para mantener stock, ventas y continuidad operativa.
+- **Responsabilidad principal**: solicitar productos, comparar condiciones, registrar pedidos y coordinar recepción.
+- **Dolor principal**: incertidumbre sobre disponibilidad, precios, confirmación, cambios de último minuto y tiempo de entrega.
+- **Valor esperado**: catálogo claro, pedido autónomo, confirmación confiable y seguimiento comprensible.
 
 ##### Plano demográfico y ocupacional
 
@@ -346,10 +342,6 @@ El valor esperado para el S3 se relaciona con autonomía y confianza. Nexa debe 
 
 ### 1.3.4. Agrupaciones comerciales del sitio público
 
-Los segmentos objetivo anteriores corresponden a actores de investigación, diseño y validación del producto. Sin embargo, el sitio público de Nexa puede utilizar agrupaciones comerciales para comunicar la propuesta de valor a empresas compradoras del SaaS.
-
-Esto significa que las agrupaciones comerciales del landing page no reemplazan al S1, al S2 ni al S3. Su función es ordenar el discurso de adquisición comercial, mientras que los segmentos objetivo organizan la investigación, UX, requisitos y backlog.
-
 *Tabla. Agrupaciones comerciales del sitio público*
 
 | Agrupación comercial del sitio público | Rol comercial | Relación con los segmentos objetivo | Nivel de prioridad |
@@ -372,8 +364,6 @@ Esta separación permite mantener coherencia entre investigación y comunicació
 ### ***1.3.5. Impacto en el MVP y Métricas de Validación***
 
 Los tres segmentos validan el núcleo inicial del producto porque cubren el recorrido mínimo que Nexa necesita ordenar: solicitud del comprador, captura comercial, validación operativa, preparación, despacho y seguimiento. En consecuencia, el MVP no debe evaluarse solo por la cantidad de pantallas implementadas, sino por su capacidad para reducir fricción entre estos actores.
-
-El S1 valida si el pedido puede nacer estructurado desde la atención comercial. El S2 valida si esa información permite organizar disponibilidad, preparación y despacho con mayor control. El S3 valida si el comprador puede abastecerse con más claridad, autonomía y confianza.
 
 *Tabla. Impacto de los segmentos en el MVP y métricas de validación*
 
