@@ -119,19 +119,19 @@ Cada problem statement articula un dominio de fricción, un segmento afectado, u
 | Visibilidad operativa y organización logística | Preparación, inventario, despacho e incidencias de productos refrigerados | S2: Jefatura logística / coordinación operativa | Falta de visibilidad sobre pedidos confirmados, stock, preparación e incidencias | La operación no cuenta con una vista centralizada para decidir y priorizar | Dar trazabilidad operativa al ciclo pedido-inventario-despacho-cierre | S2 |
 | Abastecimiento y seguimiento del cliente comercial | Compra recurrente B2B y seguimiento de abastecimiento | S3: Comprador B2B / cliente comercial | Incertidumbre sobre catálogo, disponibilidad, confirmación y llegada del pedido | El comprador depende de canales lentos para abastecerse y consultar estado | Ofrecer un portal claro para compra, confirmación y seguimiento autónomo | S3 |
 
-### Problem Statement 1: Captura comercial y validación del pedido
+#### Problem Statement 1: Captura comercial y validación del pedido
 
 - **Contexto:** Nuestro contexto demanda un proceso rápido y estructurado para la recepción y validación de pedidos B2B, asegurando que la información inicial de la venta refleje correctamente las condiciones del cliente y la disponibilidad de los productos.
 - **Factor crítico:** Sin embargo, observamos que las vendedoras y coordinadoras comerciales invierten demasiado tiempo procesando pedidos informales (audios, mensajes, listas de WhatsApp) y validando información manualmente, lo que ocasiona retrasos, cuellos de botella y traslada errores hacia la fase logística.
-- **Pregunta retadora:** ¿Cómo podemos agilizar la captura y validación inicial de requerimientos para estructurar los pedidos desde el origen, reduciendo el trabajo manual y evitando errores de digitación?
+- **Pregunta retadora:** ¿Cómo podemos agilizar la captura y validación inicial de requisittos para estructurar los pedidos desde el origen, reduciendo el trabajo manual y evitando errores de digitación?
 
-### Problem Statement 2: Visibilidad operativa y organización logística
+#### Problem Statement 2: Visibilidad operativa y organización logística
 
 - **Contexto:** Nuestro contexto demanda un flujo de información centralizado y trazable que permita organizar la preparación de mercancía refrigerada, el despacho y las incidencias de manera eficiente.
 - **Factor crítico:** Sin embargo, observamos que S2: Jefatura logística / coordinación operativa sufren de falta de visibilidad y predictibilidad sobre los pedidos confirmados, lo que genera descoordinación con el área de ventas, interrupciones constantes y retrasos en la preparación de las entregas.
 - **Pregunta retadora:** ¿Cómo podemos proveer a la operación logística de información estructurada y en tiempo real para que puedan organizar los despachos con mayor eficiencia y menor dependencia de comunicaciones informales?
 
-### Problem Statement 3: Abastecimiento y seguimiento del cliente comercial
+#### Problem Statement 3: Abastecimiento y seguimiento del cliente comercial
 
 - **Contexto:** Nuestro contexto demanda ofrecer a los negocios un canal continuo, claro y confiable para que puedan realizar el abastecimiento recurrente de productos para sus operaciones.
 - **Factor crítico:** Sin embargo, observamos que S3: Comprador B2B / cliente comercial experimentan incertidumbre y dependencia de canales lentos para consultar catálogos, confirmar disponibilidad de stock y saber el estado o llegada de sus entregas.
@@ -181,17 +181,54 @@ Las suposiciones se organizan en cinco categorías que cubren el negocio, los us
 
 #### 1.2.2.4. Lean UX Canvas
 
-| **Sección** | **Contenido** |
-| :--- | :--- |
-| **Problema de negocio** | La coordinación de pedidos B2B de productos refrigerados se realiza con información fragmentada y apoyada en canales informales. Esto genera errores de captura, retrabajo, quiebres de inventario y falta de visibilidad en el despacho. |
-| **Resultados de negocio** | Reducción de errores y tiempos en la captura del pedido; mejor predictibilidad en el despacho y control logístico; validación de la adopción del producto MVP (SaaS). |
-| **Usuarios de negocio** | S1: Coordinación comercial / ventas internas (reciben y canalizan pedidos)</br>S2: Jefatura logística / coordinación operativa (organizan la operación interna)</br>S3: Comprador B2B / cliente comercial (compra de forma recurrente). |
-| **Beneficios de usuario** | S1 captura pedidos rápido sin depender de apuntes sueltos.</br>S2 cuenta con la información exacta para organizar entregas sin sorpresas.</br>S3 tiene autonomía y certeza de lo que compra y cuándo llega. |
-| **Ideas de solución** | Aplicación web B2B que incluya: catálogo centralizado, visibilidad básica de inventario, flujo asistido para registrar pedidos y módulo compartido de seguimiento (status) de entregas. |
-| **Hipótesis** | H1: El flujo web reducirá el retrabajo de S1.</br>H2: La visibilidad compartida bajará las incidencias de S2.</br>H3: El portal de autogestión incentivará la autonomía de S3. |
-| **Riesgos clave a validar (Qué aprender primero)** | ¿Adoptarán las vendedoras el portal o volverán a la informalidad por costumbre? ¿Los compradores B2B confiarán en el inventario que muestra la web? ¿Es suficiente este MVP para justificar un pago? |
-| **Prioridad de aprendizaje (El menor esfuerzo)** | Desarrollar estrictamente el flujo de catálogo, registro de pedido web y un cambio manual de "estado" de entrega; posponiendo cualquier automatización logística compleja hasta validar la adopción principal. |
-> *Nota:* El Lean UX Canvas resume los pilares estratégicos del proyecto, conectando el problema del usuario, la solución propuesta y los resultados de negocio, e incluye las hipótesis clave que orientan la validación inicial. Elaboración propia.
+El canvas completado para Nexa organiza el problema, los usuarios, los beneficios esperados, las hipótesis y el aprendizaje mínimo necesario para validar el flujo principal del pedido B2B refrigerado.
+
+*Tabla. Lean UX Canvas de Nexa*
+
+<table>
+  <thead>
+    <tr>
+      <th>Bloque del canvas</th>
+      <th>Contenido aplicado a Nexa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1. Business Problem</strong></td>
+      <td>Las empresas importadoras y distribuidoras de productos refrigerados coordinan pedidos B2B mediante WhatsApp, llamadas, audios, hojas de cálculo y sistemas no integrados. Esa fragmentación genera errores de captura, doble digitación, validaciones tardías de stock o crédito, baja visibilidad del despacho y dificultad para mantener trazabilidad sobre productos sensibles a temperatura.</td>
+    </tr>
+    <tr>
+      <td><strong>2. Business Outcomes</strong></td>
+      <td>Reducir errores y retrabajo en la toma de pedidos; mejorar la visibilidad comercial y logística del estado del pedido; disminuir consultas repetidas entre ventas, almacén y comprador; validar la adopción de una experiencia web SaaS para distribuidoras B2B antes de escalar automatizaciones o integraciones externas.</td>
+    </tr>
+    <tr>
+      <td><strong>3. Users</strong></td>
+      <td><strong>S1: Coordinación comercial / ventas internas.</strong> Recibe, interpreta, registra y canaliza pedidos.<br><br><strong>S2: Jefatura logística / coordinación operativa.</strong> Valida disponibilidad, organiza preparación, coordina despacho y atiende incidencias.<br><br><strong>S3: Comprador B2B / cliente comercial.</strong> Consulta catálogo, solicita productos, espera confirmación y requiere seguimiento comprensible del pedido.</td>
+    </tr>
+    <tr>
+      <td><strong>4. User Outcomes &amp; Benefits</strong></td>
+      <td><strong>S1</strong> necesita registrar pedidos con menor dependencia de apuntes, capturas o conversaciones dispersas, conservando cliente, productos, cantidades, condiciones y estado en un solo flujo.<br><br><strong>S2</strong> necesita leer disponibilidad, riesgo operativo, preparación, despacho e incidencias con suficiente claridad para priorizar y cerrar el pedido sin reconstruir información manualmente.<br><br><strong>S3</strong> necesita consultar productos y seguir su pedido con mayor autonomía, sin depender por completo del vendedor para confirmar disponibilidad o avance.</td>
+    </tr>
+    <tr>
+      <td><strong>5. Solutions</strong></td>
+      <td>Aplicación web B2B con catálogo centralizado, captura asistida de pedidos, consulta de cliente y condiciones comerciales, visibilidad básica de inventario, tablero operativo de pedidos, seguimiento de despacho y cierre con evidencia simulada para la primera iteración. El portal S3 se mantiene considerado dentro del flujo de compra y seguimiento, pero su cobertura visual completa queda como ampliación posterior.</td>
+    </tr>
+    <tr>
+      <td><strong>6. Hypotheses</strong></td>
+      <td><strong>H1:</strong> Si S1 registra pedidos mediante un flujo asistido, disminuirán el retrabajo y los errores de digitación frente al uso de mensajes dispersos.<br><br><strong>H2:</strong> Si S2 cuenta con visibilidad compartida sobre pedidos, inventario y despacho, podrá priorizar mejor la operación y reducir incidencias por información incompleta.<br><br><strong>H3:</strong> Si S3 accede a un portal claro de catálogo, pedido y seguimiento, aumentará su autonomía frente a WhatsApp y llamadas.</td>
+    </tr>
+    <tr>
+      <td><strong>7. What’s the most important thing we need to learn first?</strong></td>
+      <td>El aprendizaje principal es comprobar si los usuarios internos aceptan reemplazar parte del flujo informal por una experiencia web que ordene cliente, productos, stock, condiciones y estado sin volver más lenta la operación. También debe observarse si el comprador B2B percibe valor en consultar catálogo y seguimiento desde un portal propio.</td>
+    </tr>
+    <tr>
+      <td><strong>8. What’s the least amount of work we need to do to learn the next most important thing?</strong></td>
+      <td>Construir y validar el recorrido mínimo de catálogo, registro de pedido, revisión de cliente, lectura de disponibilidad y actualización manual de estado. Para esta etapa no se requieren sensores IoT, optimización automática de rutas, ERP integrado ni backend productivo; basta una webapp navegable con datos simulados y evidencia suficiente para probar comprensión, utilidad y continuidad del flujo.</td>
+    </tr>
+  </tbody>
+</table>
+
+> *Nota:* Elaboración propia, basada en el proceso Lean UX aplicado al dominio de distribución B2B de productos refrigerados.
 
 ---
 El proceso Lean UX anterior permitió identificar, desde la perspectiva de la solución, tres perfiles de usuario con fricciones diferenciadas: quien captura el pedido (S1), quien organiza la operación interna (S2) y quien abastece su negocio como comprador recurrente (S3). Esta distinción no es intuitiva ni arbitraria: se desprende directamente de la forma en que el flujo del pedido distribuye responsabilidades a lo largo de la cadena comercial.
