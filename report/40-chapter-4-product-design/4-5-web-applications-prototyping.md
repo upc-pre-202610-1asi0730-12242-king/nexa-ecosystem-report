@@ -29,13 +29,13 @@ La utilidad metodológica del prototipo es doble. Primero, permite revisar conti
 
 ![Captura del prototipo de la web application](../assets/images/chapter-4/webapp/mockups/s1-02-dashboard-commercial.png)
 
-Elaboración propia. La captura corresponde a la pantalla principal del prototipo y resume la lógica de dashboard operativo utilizada como punto de entrada a la aplicación.
+> *Nota:* La captura corresponde a la pantalla principal del prototipo y resume la lógica de dashboard operativo utilizada como punto de entrada a la aplicación. Elaboración propia.
 
 *Prueba de interacción del prototipo responsive en navegador móvil*
 
 ![Mobile Application Prototype Proof](../assets/images/chapter-4/webapp/prototyping/mobile-application-prototype-proof.png)
 
-Elaboración propia. Evidencia visual del prototipo ejecutado desde navegador móvil como validación del diseño responsive.
+> *Nota:* Evidencia visual del prototipo ejecutado desde navegador móvil como validación del diseño responsive. Elaboración propia.
 
 Bajo esta lectura, el prototipado debe presentarse con honestidad de alcance: constituye **evidencia de diseño integrado**, no evidencia de despliegue autenticado ni de operación real en producción. Su valor en el informe es mostrar que la web application ya fue pensada como un sistema consistente y recorrible antes de entrar en fases posteriores de implementación.
 
