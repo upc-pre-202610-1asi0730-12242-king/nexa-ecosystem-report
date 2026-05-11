@@ -7,7 +7,7 @@ En esta sección, los segmentos objetivo funcionan como la base de investigació
 
 ---
 
-### ***1.3.1. Resumen de Segmentos Objetivo***
+### ***Resumen de Segmentos Objetivo***
 
 *Tabla. Resumen comparativo de segmentos objetivo de Nexa*
 | Segmento objetivo | Actor principal | Rol en el flujo del pedido | Fricción dominante | Valor esperado de Nexa |
@@ -34,9 +34,7 @@ flowchart LR
 
 >*Nota*: El gráfico representa la circulación de información entre compradores, vendedoras y coordinación logística durante el flujo principal del pedido. Elaboración Propia.
 
----
-
-### ***1.3.2. Sustento demográfico y estadístico***
+### ***Sustento demográfico y estadístico***
 
 El dominio de Nexa se ubica en la distribución B2B de productos refrigerados y congelados, donde la coordinación entre ventas, logística y compradores comerciales todavía depende de canales informales, validaciones manuales y registros dispersos. Esta situación es especialmente crítica porque el pedido no solo contiene una intención de compra: también activa decisiones de disponibilidad, inventario, rotación, preparación, despacho y seguimiento.
 
@@ -45,18 +43,6 @@ El sustento estadístico permite justificar por qué los tres segmentos son rele
 Además, la problemática de cadena de frío exige control operativo. Bravo De la Cruz et al. (2025) reportan 64 incidentes de ruptura de cadena de frío en establecimientos de una microred de salud durante un año, lo que evidencia que la falta de control, trazabilidad y coordinación puede convertirse en un riesgo operativo recurrente. Este punto refuerza la importancia del S2, porque logística y coordinación operativa deben convertir la solicitud comercial en una operación viable, controlada y trazable.
 
 En paralelo, la captura comercial sigue siendo un punto sensible del flujo. Cuando los pedidos llegan por WhatsApp, llamada, audio o listas informales, la vendedora o coordinadora comercial debe interpretar información incompleta y trasladarla hacia operación. Por ello, el S1 es crítico: si el pedido nace desordenado, el error se propaga hacia inventario, preparación, despacho y atención posterior.
-
-*Tabla. Indicadores de contexto que sustentan la segmentación*
-
-| Indicador de contexto | Dato o evidencia considerada | Segmento más relacionado | Implicancia para Nexa |
-|---|---|---|---|
-| Madurez digital del canal tradicional | 83% de bodegas en nivel principiante de madurez digital, según Lucky-Xplora (2022). | S3 | El portal para compradores debe ser simple, rápido y compatible con hábitos digitales básicos. |
-| Uso de aplicaciones en bodegas | Alrededor del 28% utiliza alguna aplicación para gestionar tareas del negocio, según Lucky-Xplora (2022). | S3 | La adopción no puede depender de una experiencia compleja o demasiado alejada del canal informal. |
-| Riesgo operativo en cadena de frío | 64 incidentes de ruptura de cadena de frío reportados en microredes de salud, según Bravo De la Cruz et al. (2025). | S2 | La operación requiere trazabilidad, control de estados y coordinación más confiable entre pedido, inventario y despacho. |
-| Dependencia de canales informales | Uso frecuente de WhatsApp, llamadas, audios y listas para coordinar pedidos B2B. | S1 | La captura debe estructurar la información desde el origen para reducir ambigüedad y retrabajo. |
-| Necesidad de trazabilidad del pedido | El pedido pasa por solicitud, captura, validación, preparación, despacho y comunicación de estado. | Los tres segmentos | Nexa debe conectar a los actores sin convertir el flujo en una carga operativa adicional. |
-
->*Nota*: La tabla organiza evidencia estadística externa y observaciones del dominio para justificar la segmentación. Elaboración propia con base en Lucky-Xplora (2022) y Bravo De la Cruz et al. (2025).
 
 *Figura. Lectura visual del sustento de segmentación*
 
@@ -84,7 +70,7 @@ mindmap
 
 ---
 
-### ***1.3.3. Análisis detallado por segmento***
+### ***Análisis detallado por segmento***
 
 #### **S1: Coordinación comercial / ventas internas**
 
@@ -179,11 +165,11 @@ Este segmento clave porque concentra la validación operativa. Aunque no siempre
 
 ##### Ficha rápida del segmento
 
-- Actor principal: jefatura logística, responsable de almacén, coordinadora operativa, encargada de inventario o despacho.
-- Contexto dominante: coordinación entre ventas, almacén, inventario, preparación, despacho y resolución de incidencias.
-- Responsabilidad principal: validar disponibilidad, organizar preparación, priorizar pedidos, coordinar despacho y controlar cumplimiento.
-- Dolor principal: información dispersa entre áreas, falta de trazabilidad, cambios de último minuto y presión por resolver errores originados antes.
-- Valor esperado: mayor visibilidad operativa, mejor control del pedido y reducción de fricciones entre ventas, inventario y despacho.
+- **Actor principal:** jefatura logística, responsable de almacén, coordinadora operativa, encargada de inventario o despacho.
+- **Contexto dominante:** coordinación entre ventas, almacén, inventario, preparación, despacho y resolución de incidencias.
+- **Responsabilidad principal:** validar disponibilidad, organizar preparación, priorizar pedidos, coordinar despacho y controlar cumplimiento.
+- **Dolor principal:** información dispersa entre áreas, falta de trazabilidad, cambios de último minuto y presión por resolver errores originados antes.
+- **Valor esperado:** mayor visibilidad operativa, mejor control del pedido y reducción de fricciones entre ventas, inventario y despacho.
 
 ##### Plano demográfico y ocupacional
 
@@ -263,11 +249,11 @@ Este segmento representa el origen de la demanda. Su interés principal no es us
 
 ##### Ficha rápida del segmento
 
-- **Actor principal**: compradores mayoristas, minoristas, bodegas, minimarkets, pequeños mayoristas y negocios HORECA.
-- **Contexto dominante**: compra recurrente de productos refrigerados para mantener stock, ventas y continuidad operativa.
-- **Responsabilidad principal**: solicitar productos, comparar condiciones, registrar pedidos y coordinar recepción.
-- **Dolor principal**: incertidumbre sobre disponibilidad, precios, confirmación, cambios de último minuto y tiempo de entrega.
-- **Valor esperado**: catálogo claro, pedido autónomo, confirmación confiable y seguimiento comprensible.
+- **Actor principal:** compradores mayoristas, minoristas, bodegas, minimarkets, pequeños mayoristas y negocios HORECA.
+- **Contexto dominante:** compra recurrente de productos refrigerados para mantener stock, ventas y continuidad operativa.
+- **Responsabilidad principal:** solicitar productos, comparar condiciones, registrar pedidos y coordinar recepción.
+- **Dolor principal:** incertidumbre sobre disponibilidad, precios, confirmación, cambios de último minuto y tiempo de entrega.
+- **Valor esperado:** catálogo claro, pedido autónomo, confirmación confiable y seguimiento comprensible.
 
 ##### Plano demográfico y ocupacional
 
@@ -337,31 +323,9 @@ El valor esperado para el S3 se relaciona con autonomía y confianza. Nexa debe 
 
 >*Nota*: Conecta los principales dolores del S3 con respuestas funcionales y métricas futuras de validación. Elaboración Propia.
 
-
 ---
 
-### 1.3.4. Agrupaciones comerciales del sitio público
-
-*Tabla. Agrupaciones comerciales del sitio público*
-
-| Agrupación comercial del sitio público | Rol comercial | Relación con los segmentos objetivo | Nivel de prioridad |
-|---|---|---|---|
-| Distribuidores refrigerados | Cliente pagador principal de la plataforma SaaS. | Contienen internamente roles equivalentes al S1 y al S2, y atienden clientes como el S3. | Principal |
-| Importadores y mayoristas | Empresas con problemas similares de catálogo, stock, pedidos y coordinación comercial. | Pueden operar con equipos comerciales y logísticos similares, además de compradores recurrentes. | Adyacente |
-| Operadores de cámaras frías | Actores relacionados con almacenamiento, inventario y trazabilidad del frío. | Se relacionan principalmente con necesidades operativas similares a las del S2. | Expansión |
-
->*Nota*: Diferencia los segmentos objetivo usados para investigación de las agrupaciones comerciales utilizadas en el landing page. Elaboración Propia.
-
-Esta separación permite mantener coherencia entre investigación y comunicación comercial:
-
-- El S1, el S2 y el S3 son segmentos objetivo para entender usuarios, necesidades, flujos y requisitos.
-- Los distribuidores, importadores y operadores de cámaras frías son agrupaciones comerciales para explicar a qué tipo de empresa puede venderse Nexa.
-- El MVP debe priorizar los flujos donde los tres segmentos interactúan: pedido, validación, disponibilidad, preparación y seguimiento.
-
-
----
-
-### ***1.3.5. Impacto en el MVP y Métricas de Validación***
+### ***Impacto en el MVP y Métricas de Validación***
 
 Los tres segmentos validan el núcleo inicial del producto porque cubren el recorrido mínimo que Nexa necesita ordenar: solicitud del comprador, captura comercial, validación operativa, preparación, despacho y seguimiento. En consecuencia, el MVP no debe evaluarse solo por la cantidad de pantallas implementadas, sino por su capacidad para reducir fricción entre estos actores.
 
