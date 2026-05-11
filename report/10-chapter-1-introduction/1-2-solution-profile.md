@@ -228,5 +228,4 @@ El canvas completado para Nexa organiza el problema, los usuarios, los beneficio
 
 > *Nota:* Elaboración propia, basada en el proceso Lean UX aplicado al dominio de distribución B2B de productos refrigerados.
 
----
 El proceso Lean UX anterior permitió identificar, desde la perspectiva de la solución, tres perfiles de usuario con fricciones diferenciadas: quien captura el pedido (S1), quien organiza la operación interna (S2) y quien abastece su negocio como comprador recurrente (S3). Esta distinción no es intuitiva ni arbitraria: se desprende directamente de la forma en que el flujo del pedido distribuye responsabilidades a lo largo de la cadena comercial.
