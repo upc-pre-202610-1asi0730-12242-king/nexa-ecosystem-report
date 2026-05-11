@@ -14,43 +14,43 @@ El diseño de base de datos se presenta como un modelo relacional objetivo deriv
 
 ![Identity & Access](../assets/images/chapter-4/database/identity-and-access.png)
 
-Nota. Elaboración propia. El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1.
+> *Nota.* El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1. Elaboración propia.
 
 *Figura. Diagrama de base de datos del bounded context Catalog.*
 
 ![Catalog](../assets/images/chapter-4/database/catalog.png)
 
-Nota. Elaboración propia. El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1.
+> *Nota.* El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1. Elaboración propia.
 
 *Figura. Diagrama de base de datos del bounded context Orders & Commercial Management.*
 
 ![Orders & Commercial Management](../assets/images/chapter-4/database/orders-and-commercial-management.png)
 
-Nota. Elaboración propia. El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1.
+> *Nota.* El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1. Elaboración propia.
 
 *Figura. Diagrama de base de datos del bounded context Inventory.*
 
 ![Inventory](../assets/images/chapter-4/database/inventory.png)
 
-Nota. Elaboración propia. El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1.
+> *Nota.* El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1. Elaboración propia.
 
 *Figura. Diagrama de base de datos del bounded context Dispatch & Traceability.*
 
 ![Dispatch & Traceability](../assets/images/chapter-4/database/dispatch-and-traceability.png)
 
-Nota. Elaboración propia. El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1.
+> *Nota.* El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1. Elaboración propia.
 
 *Figura. Diagrama de base de datos de read models.*
 
 ![Read Models](../assets/images/chapter-4/database/read-models.png)
 
-Nota. Elaboración propia. Los read models se derivan de Orders & Commercial Management, Inventory y Dispatch & Traceability; no constituyen un bounded context independiente.
+> *Nota.* Los read models se derivan de Orders & Commercial Management, Inventory y Dispatch & Traceability; no constituyen un bounded context independiente. Elaboración propia.
 
 *Figura. Diagrama consolidado de base de datos objetivo de Nexa.*
 
 ![Full Database Diagram](../assets/images/chapter-4/database/full-database-diagram.png)
 
-Nota. Elaboración propia. La vista consolidada integra las estructuras por bounded context y sus relaciones principales como diseño objetivo.
+> *Nota.* La vista consolidada integra las estructuras por bounded context y sus relaciones principales como diseño objetivo. Elaboración propia.
 
 *Tabla. Agrupación de estructuras de base de datos por bounded context*
 
@@ -63,4 +63,4 @@ Nota. Elaboración propia. La vista consolidada integra las estructuras por boun
 | Dispatch & Traceability | `DISPATCHES`, `DISPATCH_INCIDENTS`, `TRACEABILITY_EVENTS`, `POD_EVIDENCE` | Registrar despacho, incidencias, eventos trazables y evidencia de cierre. |
 | Read models | `SALES_REPORT_READ_MODEL`, `INVENTORY_REPORT_READ_MODEL`, `DISPATCH_REPORT_READ_MODEL` | Derivados de Orders & Commercial Management, Inventory y Dispatch & Traceability; no constituyen un bounded context independiente. |
 
-> *Nota:* Elaboración propia. La agrupación mantiene la relación entre modelo relacional objetivo, bounded contexts y diagramas de clases sin declarar persistencia productiva para TB1.
+> *Nota:* La agrupación mantiene la relación entre modelo relacional objetivo, bounded contexts y diagramas de clases sin declarar persistencia productiva para TB1. Elaboración propia.

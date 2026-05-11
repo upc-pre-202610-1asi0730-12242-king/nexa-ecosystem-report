@@ -6,7 +6,7 @@ Definimos los diagramas con PlantUML para mantener una representación consisten
 
 En TB1, estos diagramas representan el diseño objetivo del dominio. La webapp utiliza Fake API como simulación para validar flujos y estructura funcional, por lo que no se afirma la existencia de un backend productivo, una base de datos productiva ni autenticación productiva. Los reportes no se modelan como bounded context independiente, sino como read models derivados de **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**.
 
-### 4.7.1. Class Diagrams
+### Class Diagrams
 
 En los diagramas individuales se muestran las clases principales de cada bounded context, junto con sus atributos, operaciones, visibilidad y relaciones. Cuando el modelo lo requiere, se incluyen enumeraciones para representar estados del dominio y relaciones con multiplicidad para precisar cardinalidades entre entidades.
 
@@ -22,45 +22,45 @@ En los diagramas individuales se muestran las clases principales de cada bounded
 | Enumeraciones de dominio | Los estados del dominio se modelan como enumeraciones cuando el diagrama lo requiere. |
 | Separación por bounded context | Identity & Access, Catalog, Orders & Commercial Management, Inventory y Dispatch & Traceability se mantienen como límites tácticos. |
 
-> *Nota:* Elaboración propia, basada en los criterios UML solicitados para la sección de Class Diagrams.
+> *Nota.* Basada en los criterios UML solicitados para la sección de Class Diagrams. Elaboración propia.
 
 *Figura. Mapa táctico general de clases por bounded context*
 
 ![Mapa táctico general de clases por bounded context](../assets/images/chapter-4/architecture/class-diagrams/consolidated-ddd-tactical-map.png)
 
-Nota. Elaboración propia mediante PlantUML. El mapa consolida la relación entre los cinco bounded contexts y ubica los read models de reportes como salidas derivadas del dominio operativo.
+> *Nota.* El mapa consolida la relación entre los cinco bounded contexts y ubica los read models de reportes como salidas derivadas del dominio operativo. Elaboración propia mediante PlantUML.
 
 *Figura. Diagrama de clases del bounded context Identity & Access*
 
 ![Diagrama de clases del bounded context Identity & Access](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-identity-access.png)
 
-Nota. Elaboración propia mediante PlantUML. Este contexto concentra usuarios, sesiones, roles, permisos y validaciones de acceso como diseño objetivo.
+> *Nota.* Este contexto concentra usuarios, sesiones, roles, permisos y validaciones de acceso como diseño objetivo. Elaboración propia mediante PlantUML.
 
 *Figura. Diagrama de clases del bounded context Catalog*
 
 ![Diagrama de clases del bounded context Catalog](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-catalog.png)
 
-Nota. Elaboración propia mediante PlantUML. Catalog organiza productos, categorías y reglas de conservación sin asumir stock ni despacho.
+> *Nota.* Catalog organiza productos, categorías y reglas de conservación sin asumir stock ni despacho. Elaboración propia mediante PlantUML.
 
 *Figura. Diagrama de clases del bounded context Orders & Commercial Management*
 
 ![Diagrama de clases del bounded context Orders & Commercial Management](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-orders-commercial-management.png)
 
-Nota. Elaboración propia mediante PlantUML. Este contexto integra cliente B2B, condiciones comerciales, alertas de crédito, pedidos, ítems y observaciones.
+> *Nota.*  Este contexto integra cliente B2B, condiciones comerciales, alertas de crédito, pedidos, ítems y observaciones. Elaboración propia mediante PlantUML.
 
 *Figura. Diagrama de clases del bounded context Inventory*
 
 ![Diagrama de clases del bounded context Inventory](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-inventory.png)
 
-Nota. Elaboración propia mediante PlantUML. Inventory modela almacenes, lotes, disponibilidad, reserva y movimientos de stock.
+> *Nota.* Inventory modela almacenes, lotes, disponibilidad, reserva y movimientos de stock. Elaboración propia mediante PlantUML.
 
 *Figura. Diagrama de clases del bounded context Dispatch & Traceability*
 
 ![Diagrama de clases del bounded context Dispatch & Traceability](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-dispatch-traceability.png)
 
-Nota. Elaboración propia mediante PlantUML. Dispatch & Traceability modela despacho, incidentes, eventos trazables y evidencia POD como continuidad operativa del pedido.
+> *Nota.* Dispatch & Traceability modela despacho, incidentes, eventos trazables y evidencia POD como continuidad operativa del pedido. Elaboración propia mediante PlantUML.
 
-### 4.7.2. Design Criteria
+### Design Criteria
 
 Consolidamos el diseño en cinco bounded contexts para mantener límites tácticos claros. **Identity & Access** resuelve acceso y sesiones; **Catalog** conserva la información maestra de productos; **Orders & Commercial Management** agrupa cliente, condiciones y pedido; **Inventory** administra lotes, almacenes y movimientos; **Dispatch & Traceability** cubre salida, seguimiento, incidencias y evidencia de entrega.
 
@@ -68,7 +68,7 @@ Usamos referencias entre contextos solo cuando son necesarias para expresar cont
 
 Los reportes se tratan como read models. En el diseño aparecen como resultados consultables que se alimentan de Orders & Commercial Management, Inventory y Dispatch & Traceability, no como un bounded context adicional.
 
-### 4.7.3. Traceability Matrix: Requirements and OOD
+### Traceability Matrix: Requirements and OOD
 
 La siguiente matriz resume la relación entre requisitos relevantes y las clases o métodos que los sostienen dentro del diseño orientado a objetos.
 
@@ -88,4 +88,4 @@ La siguiente matriz resume la relación entre requisitos relevantes y las clases
 | **US65** | Registrar incidencia durante el despacho | Dispatch & Traceability | `DispatchIncident` | `registerIncident(severity)`, `resolve()` |
 | **US66** | Confirmar entrega con evidencia | Dispatch & Traceability | `PodEvidence` / `Dispatch` | `closeWithEvidence(pod)`, `markDelivered()` |
 
-La matriz no reemplaza la especificación funcional del capítulo 3. Su función es mostrar qué clases concentran la lógica de dominio necesaria para responder a los requisitos más importantes. Elaboración propia.
+> *Nota.* La matriz no reemplaza la especificación funcional del capítulo 3. Su función es mostrar qué clases concentran la lógica de dominio necesaria para responder a los requisitos más importantes. Elaboración propia.
