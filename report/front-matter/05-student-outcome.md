@@ -2,9 +2,13 @@
 
 ## Student Outcome 5 — Trabajo en equipo
 
-El curso contribuye al cumplimiento del Student Outcome ABET – EAC - Student Outcome 5: *"La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos."*
+El curso contribuye al cumplimiento del Student Outcome ABET:
 
-En el siguiente cuadro se describen las acciones realizadas y los enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 5.
+**ABET – EAC - Student Outcome 5**
+
+**Criterio:** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
+
+El cuadro registra las acciones realizadas por el equipo en AV1 y TB1, organizadas según los dos criterios específicos del Student Outcome 5.
 
 *Tabla: Acciones y conclusiones por criterio ABET – EAC - Student Outcome 5*
 
@@ -18,14 +22,14 @@ En el siguiente cuadro se describen las acciones realizadas y los enunciados de 
   </thead>
   <tbody>
     <tr>
-      <td>Trabaja en equipo para proporcionar liderazgo en forma conjunta</td>
+      <td>5.c1. Trabaja en equipo para proporcionar liderazgo en forma conjunta</td>
       <td>
         <p><strong>Yucra Sandoval, Diego Sebastian</strong></p>
         <p>AV1: Coordinó la estructuración del backlog, la definición del Sprint 1 y la articulación entre arquitectura, diseño y evidencia documental. Consolidó correcciones transversales para mantener coherencia entre capítulos, Jira y el incremento visible del producto.</p>
         <p>TB1: Asumió el liderazgo principal del proyecto TB1: coordinación general del equipo, dirección UX/producto, QA Docs-as-Code, consolidación de repositorios y priorización de alcance Sprint 2.</p>
         <p><strong>Marín Cueva, César Fernando</strong></p>
         <p>AV1: Lideró la consistencia editorial del informe, revisando redacción académica, continuidad argumental y alineación entre la problemática, la propuesta de valor y las secciones introductorias.</p>
-        <p>TB1: Lideró la limpieza documental y la coherencia visual del reporte y la webapp; revisó entregables, ajustó estilo y sostuvo la continuidad narrativa de la landing.</p>
+        <p>TB1: Lideró la limpieza documental y la coherencia visual del reporte y la webapp; revisó entregables, ajustó estilo y sostuvo la continuidad comunicacional de la landing.</p>
         <p><strong>Verde Bueno, Joaquín Francisco</strong></p>
         <p>AV1: Lideró la producción de artefactos centrados en el usuario: personas, journey maps, empathy maps y piezas visuales de UX/UI para explicar el producto y sus flujos principales.</p>
         <p>TB1: Lideró la actualización de Information Architecture, rutas, user stories, impact mapping y needfinding; revisó wireflow documentation y correcciones de imagen del informe.</p>
@@ -42,13 +46,13 @@ En el siguiente cuadro se describen las acciones realizadas y los enunciados de 
       </td>
     </tr>
     <tr>
-      <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos</td>
+      <td>5.c2. Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos</td>
       <td>
         <p><strong>Yucra Sandoval, Diego Sebastian</strong></p>
-        <p>AV1: Definió el scope del Sprint 1, estructuró el product backlog con épicas y criterios de priorización, y consolidó la coherencia entre capítulos del informe para sostener la narrativa del producto.</p>
+        <p>AV1: Definió el scope del Sprint 1, estructuró el product backlog con épicas y criterios de priorización, y consolidó la coherencia entre capítulos del informe para sostener la propuesta del producto.</p>
         <p>TB1: Estableció el alcance concreto de Sprint 2 (webapp role-aware, Fake API, mockups actuales, documentación TB1), coordinó la integración entre repositorios y ejecutó QA final de la entrega.</p>
         <p><strong>Marín Cueva, César Fernando</strong></p>
-        <p>AV1: Colaboró en la alineación narrativa del proyecto, en la revisión cruzada de secciones y en la coherencia argumental entre el problema identificado y la propuesta de valor.</p>
+        <p>AV1: Colaboró en la alineación documental del proyecto, en la revisión cruzada de secciones y en la coherencia argumental entre el problema identificado y la propuesta de valor.</p>
         <p>TB1: Participó en la revisión de entregables, ajustes de estilo, actualización de deployment config y soporte en evidencias visuales de la webapp.</p>
         <p><strong>Verde Bueno, Joaquín Francisco</strong></p>
         <p>AV1: Colaboró en la definición de user stories con criterios de aceptación Gherkin y en la extensión del EventStorming para ampliar la cobertura del dominio.</p>
@@ -68,4 +72,4 @@ En el siguiente cuadro se describen las acciones realizadas y los enunciados de 
   </tbody>
 </table>
 
-> *Nota:* La tabla describe las acciones realizadas por integrante en cada entrega (AV1 y TB1) y las conclusiones grupales acumulativas, en alineación con los criterios 5.c.1 y 5.c.2 del Student Outcome 5 de ABET – EAC. Las fuentes de evidencia son commits en GitHub, documentación Docs-as-Code, artefactos de diseño y coordinación registrada en el informe. Elaboración propia.
+> *Nota:* La tabla sigue la estructura del Anexo A: criterio específico, acciones realizadas y conclusiones. Las acciones se apoyan en el historial del informe, la evidencia de Sprint 1 y Sprint 2, los commits documentados y las secciones de colaboración del reporte. Elaboración propia.
