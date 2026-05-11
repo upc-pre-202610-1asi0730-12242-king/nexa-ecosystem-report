@@ -23,7 +23,7 @@ Las entrevistas se organizaron para entender cómo el problema aparece en esos t
 **Foco principal:** Canales usados, pasos reales del proceso, ambigüedad de pedidos, retrabajo, presión operativa y criterios de adopción de una herramienta digital.
 
 **Warm-up y contexto del rol**
-Conviene arrancar por la rutina del trabajo, no por la solución.
+La entrevista inicia por la rutina del trabajo, antes de hablar de una posible solución.
 - Cuéntame un poco cuál es tu rol y qué parte del proceso te toca manejar más seguido.
 - ¿Desde hace cuánto haces este trabajo y con qué tipo de clientes o puntos de venta coordinas más?
 - En tu día a día, ¿qué canales usas más para comunicarte con vendedores, clientes o el equipo interno?
@@ -31,7 +31,7 @@ Conviene arrancar por la rutina del trabajo, no por la solución.
 
 **Flujo actual de coordinación de pedidos**
 
-Aquí interesa entender el proceso tal como ocurre hoy, paso a paso.
+Este bloque recoge el proceso actual tal como ocurre en la práctica.
 - Cuando un cliente necesita hacer un pedido o consultar disponibilidad, ¿cómo suele empezar todo?
 - ¿Qué tipo de mensajes recibes normalmente: texto, audio, foto, captura, lista, llamada?
 - Después de que llega el pedido, ¿qué haces tú paso a paso hasta dejarlo encaminado?
@@ -39,7 +39,7 @@ Aquí interesa entender el proceso tal como ocurre hoy, paso a paso.
 
 **Fricciones, errores y retrabajo**
 
-Aquí no basta con identificar el problema; hay que hacer que la persona recuerde casos reales.
+Este bloque busca casos recientes y no solo opiniones generales.
 
 - ¿Qué parte del proceso te hace perder más tiempo o te complica más?
 - ¿Te ha pasado que el pedido llegue mal armado, incompleto o con productos que no correspondían? ¿Qué pasó exactamente?
@@ -47,14 +47,14 @@ Aquí no basta con identificar el problema; hay que hacer que la persona recuerd
 - Cuando almacén o despacho detecta inconsistencias, ¿cómo te enteras y cómo se corrige eso?
 
 **Visibilidad y seguimiento**
-La meta es saber qué tan ciego o visible es el proceso una vez que el pedido ya avanzó.
+Este bloque revisa cuánta visibilidad conserva la persona una vez que el pedido avanza.
 
 - Una vez que el pedido ya fue enviado o quedó en proceso, ¿cómo haces el seguimiento?
 - ¿Puedes saber fácilmente si ya salió, si se retrasó o si hubo algún problema?
 - Cuando hay cambios o reclamos, ¿la información queda clara o termina dispersa entre mensajes y llamadas?
 
 **Expectativas sobre una herramienta digital**
-Aquí todavía no se vende la solución; se explora el mínimo valor esperado.
+Este bloque explora el valor mínimo esperado de una herramienta digital.
 - Si existiera una herramienta digital para ordenar este proceso, ¿qué tendría que resolver sí o sí para que te sirva de verdad?
 - ¿Qué información te gustaría tener más visible y qué tarea manual te gustaría dejar de hacer?
 - ¿Qué te haría desconfiar o rechazar una herramienta nueva: complejidad, tiempo, costumbre, mala experiencia previa u otra cosa?
@@ -75,10 +75,10 @@ Aquí todavía no se vende la solución; se explora el mínimo valor esperado.
 
 **Foco principal:** Trazabilidad, puntos de quiebre, visibilidad interna, coordinación entre áreas, prioridades del MVP y evolución futura.
 
-**Uso dentro del informe:** Este segmento aporta la perspectiva de coordinación logística y validación operativa. Su función es complementar la investigación con una visión de dominio y restricciones operativas que luego alimentan el diseño, el EventStorming y la delimitación del alcance.
+**Uso dentro del informe:** Este segmento aporta la perspectiva de coordinación logística y validación operativa, con restricciones que alimentan el diseño, el EventStorming y la delimitación del alcance.
 
 **Warm-up y alcance del cargo**
-La idea es ubicar rápido desde qué parte del proceso mira la operación.
+Este bloque ubica desde qué parte del proceso observa la operación.
 
 - Cuéntame cuál es tu cargo y qué responsabilidad tienes dentro de la operación logística o de distribución.
 - ¿Tu enfoque está más en almacén, despacho, planificación, control o supervisión?
@@ -86,7 +86,7 @@ La idea es ubicar rápido desde qué parte del proceso mira la operación.
 
 **Flujo operativo actual**
 
-Aquí debe salir el recorrido real del pedido de extremo a extremo.
+Este bloque registra el recorrido real del pedido de extremo a extremo.
 
 - Mirando el proceso completo desde que entra un pedido hasta que se entrega, ¿cómo funciona hoy en la práctica?
 - ¿Qué áreas intervienen y dónde se rompe más seguido el flujo?
@@ -95,7 +95,7 @@ Aquí debe salir el recorrido real del pedido de extremo a extremo.
 
 **Riesgos y puntos críticos**
 
-Busca hechos, no opiniones generales.
+Este bloque prioriza hechos y casos observables.
 
 - ¿Cuáles son los errores o incidencias que más afectan la operación logística?
 - En productos refrigerados, ¿qué variables son más delicadas y no se pueden perder de vista?
@@ -103,14 +103,14 @@ Busca hechos, no opiniones generales.
 - ¿Qué parte del flujo se vuelve más vulnerable cuando sube el volumen de pedidos?
 
 **Gestión, control y decisiones**
-Acá importa entender cómo decide y con qué información lo hace.
+Este bloque revisa cómo decide la persona y con qué información cuenta.
 - ¿Qué tan visible es hoy el estado real de cada pedido para el equipo interno?
 - ¿Con qué información priorizan, corrigen o reprograman la operación?
 - ¿Qué decisiones hoy dependen demasiado de personas específicas y no de un sistema claro?
 - ¿Qué pasa cuando falta alguien del equipo o cuando entran muchos pedidos a la vez?
 
 **Valor esperado de una solución**
-La meta es priorizar el valor real, no pedir features sueltas.
+Este bloque prioriza valor operativo antes que una lista de funciones.
 
 - Si pudieras ordenar el proceso con una sola mejora digital en esta etapa, ¿qué priorizarías?
 - ¿Qué sería suficiente para generar valor real desde una primera versión web?
@@ -145,7 +145,7 @@ El foco es ubicar frecuencia de compra y lógica de abastecimiento.
 
 **Forma actual de pedir y abastecerte**
 
-Aquí interesa el flujo real de compra, no la versión ideal.
+Este bloque recoge el flujo real de compra.
 - Cuando necesitas hacer un pedido, ¿cómo lo haces hoy normalmente?
 - ¿Qué tan fácil o difícil es saber qué productos hay disponibles, a qué precio y en qué condiciones?
 - Después de pedir, ¿cómo haces seguimiento a lo que solicitaste?
@@ -153,7 +153,7 @@ Aquí interesa el flujo real de compra, no la versión ideal.
 
 **Frustraciones y efectos en el negocio**
 
-Hay que conectar la mala experiencia con consecuencias reales.
+Este bloque conecta la mala experiencia con consecuencias concretas para el negocio.
 - ¿Qué es lo que más te incomoda o te hace perder tiempo cuando haces pedidos a distribuidores?
 - ¿Te ha pasado que pides algo y luego no llega como esperabas? ¿Qué ocurrió y cómo te afectó?
 - ¿Qué tan frecuente te pasa quedarte corto de stock o comprar de más por no tener información clara?
@@ -188,15 +188,15 @@ Además de las capturas integradas en el informe, el archivo audiovisual origina
 
 *Evidencia de entrevista: Lorena Silva*
 
-![Lorena](../assets/images/interviews/lorena-silva.jpeg)
+![Lorena](../assets/images/chapter-2/interviews/lorena-silva.jpeg)
 
-Captura de sesión de entrevista. Elaboración propia.
+> *Nota:* Captura de sesión de entrevista. Elaboración propia.
 
-**Inicio de la entrevista:** 0:00:05
-**Fin de la entrevista:** 0:26:05
-**Duración:** 26:01
-**Video individual de entrevista:** [Lorena Silva](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQBh49Y9SDAgRZlPLZSquYZRAdC_CjYnFHvBVKZmg3bhzQQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=SIMPpz)
-**Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
+- **Inicio de la entrevista:** 0:00:05
+- **Fin de la entrevista:** 0:26:05
+- **Duración:** 26:01
+- **Video individual de entrevista:** [Lorena Silva](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQBh49Y9SDAgRZlPLZSquYZRAdC_CjYnFHvBVKZmg3bhzQQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=SIMPpz)
+- **Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
 
 **Resumen de la Entrevista**
 
@@ -213,15 +213,15 @@ A nivel técnico, reporta fricciones severas con el sistema actual (Fontana), el
 
 *Evidencia de entrevista: Cinthia Levano*
 
-![Cinthia](../assets/images/interviews/cinthia-levano.jpeg)
+![Cinthia](../assets/images/chapter-2/interviews/cinthia-levano.jpeg)
 
-Captura de sesión de entrevista. Elaboración propia.
+> *Nota:* Captura de sesión de entrevista. Elaboración propia.
 
-**Inicio de la entrevista:** 0:26:06
-**Fin de la entrevista:** 0:47:05
-**Duración:** 20:59
-**Video individual de entrevista:** [Cinthia Paola Levano](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQAyzf03TLfeSbIYrCXh28BxAd8G-WNr_uB1Uu5jS__edvc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=GGnq0P)
-**Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
+- **Inicio de la entrevista:** 0:26:06
+- **Fin de la entrevista:** 0:47:05
+- **Duración:** 20:59
+- **Video individual de entrevista:** [Cinthia Paola Levano](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQAyzf03TLfeSbIYrCXh28BxAd8G-WNr_uB1Uu5jS__edvc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=GGnq0P)
+- **Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
 
 **Resumen de la Entrevista**
 
@@ -238,15 +238,15 @@ Cinthia enfatiza la necesidad de simplicidad. Describe su flujo actual como una 
 
 *Evidencia de entrevista: Celia Pérez*
 
-![Celia](../assets/images/interviews/celia-perez.jpeg)
+![Celia](../assets/images/chapter-2/interviews/celia-perez.jpeg)
 
-Captura de sesión de entrevista. Elaboración propia.
+> *Nota:* Captura de sesión de entrevista. Elaboración propia.
 
-**Inicio de la entrevista:** 0:47:06
-**Fin de la entrevista:** 1:04:01
-**Duración:** 16:55
-**Video individual de entrevista:** [Celia Pérez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQDmUgpre5wLTJEjeIpKE5gMAR8lhXNb8-aN_5nfkE2mY-8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=t3np2i)
-**Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
+- **Inicio de la entrevista:** 0:47:06
+- **Fin de la entrevista:** 1:04:01
+- **Duración:** 16:55
+- **Video individual de entrevista:** [Celia Pérez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQDmUgpre5wLTJEjeIpKE5gMAR8lhXNb8-aN_5nfkE2mY-8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=t3np2i)
+- **Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
 
 **Resumen de la Entrevista**
 
@@ -265,15 +265,15 @@ Su testimonio confirma que, para el personal en ruta, la estabilidad de la conex
 
 *Evidencia de entrevista: Hilda Litano*
 
-![Hilda](../assets/images/interviews/hilda-litano.jpeg)
+![Hilda](../assets/images/chapter-2/interviews/hilda-litano.jpeg)
 
-Captura de sesión de entrevista. Elaboración propia.
+> *Nota:* Captura de sesión de entrevista. Elaboración propia.
 
-**Inicio de la entrevista:** 1:04:07
-**Fin de la entrevista:** 1:19:39
-**Duración:** 15:32
-**Video individual de entrevista:** [Hilda Litano](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQBQPXT0TAEVTLmMz8A7zGA2AdMGLtCrXBNeYfsxzbA1jkk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=A7SHTR)
-**Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
+- **Inicio de la entrevista:** 1:04:07
+- **Fin de la entrevista:** 1:19:39
+- **Duración:** 15:32
+- **Video individual de entrevista:** [Hilda Litano](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQBQPXT0TAEVTLmMz8A7zGA2AdMGLtCrXBNeYfsxzbA1jkk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=A7SHTR)
+- **Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
 
 **Resumen de la Entrevista**
 
@@ -288,15 +288,15 @@ Hilda Litano supervisa procesos de importación y cumplimiento sanitario. Su enf
 
 *Evidencia de entrevista: Edith Taype*
 
-![Edith](../assets/images/interviews/edith-taype.jpeg)
+![Edith](../assets/images/chapter-2/interviews/edith-taype.jpeg)
 
-Captura de sesión de entrevista. Elaboración propia.
+> *Nota:* Captura de sesión de entrevista. Elaboración propia.
 
-**Inicio de la entrevista:** 1:19:40
-**Fin de la entrevista:** 1:51:08
-**Duración:** 31:28
-**Video individual de entrevista:** [Edith Taype](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQA-I6vCEGaNSr22U2cE6mS3AQWy6KV2LrkCrZkvACBGJgw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Y3Fkei)
-**Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
+- **Inicio de la entrevista:** 1:19:40
+- **Fin de la entrevista:** 1:51:08
+- **Duración:** 31:28
+- **Video individual de entrevista:** [Edith Taype](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQA-I6vCEGaNSr22U2cE6mS3AQWy6KV2LrkCrZkvACBGJgw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Y3Fkei)
+- **Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
 
 **Resumen de la Entrevista**
 
@@ -311,15 +311,15 @@ Edith Taype opera en el punto de venta (supermercados), donde la manipulación y
 
 *Evidencia de entrevista: Jesica Sandoval*
 
-![Jesica](../assets/images/interviews/jesica-sandoval.jpeg)
+![Jesica](../assets/images/chapter-2/interviews/jesica-sandoval.jpeg)
 
-Captura de sesión de entrevista. Elaboración propia.
+> *Nota:* Captura de sesión de entrevista. Elaboración propia.
 
-**Inicio de la entrevista:** 1:51:09
-**Fin de la entrevista:** 2:12:02
-**Duración:** 20:54
-**Video individual de entrevista:** [Jesica Sandoval](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQBvq5XhZwCRS5Gl-opHnp9-Ac-dkhnzHv_Yd3ET8251hbs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MXLRg9)
-**Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
+- **Inicio de la entrevista:** 1:51:09
+- **Fin de la entrevista:** 2:12:02
+- **Duración:** 20:54
+- **Video individual de entrevista:** [Jesica Sandoval](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQBvq5XhZwCRS5Gl-opHnp9-Ac-dkhnzHv_Yd3ET8251hbs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MXLRg9)
+- **Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
 
 **Resumen de la Entrevista**
 
@@ -338,15 +338,15 @@ Para TB1, S3 se mantiene como segmento objetivo válido a partir de dos entrevis
 
 *Evidencia de entrevista: Pedro Puente*
 
-![Pedro](../assets/images/interviews/pedro-puente.jpeg)
+![Pedro](../assets/images/chapter-2/interviews/pedro-puente.jpeg)
 
-Captura de sesión de entrevista. Elaboración propia.
+> *Nota:* Captura de sesión de entrevista. Elaboración propia.
 
-**Inicio de la entrevista:** 2:12:08
-**Fin de la entrevista:** 2:24:34
-**Duración:** 12:26
-**Video individual de entrevista:** [Pedro Puente](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCYUvW2Mz8eQK0fo9Lddyv3AYFVeaOL7QGRwgePWMtQ99s?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=zsffzS)
-**Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
+- **Inicio de la entrevista:** 2:12:08
+- **Fin de la entrevista:** 2:24:34
+- **Duración:** 12:26
+- **Video individual de entrevista:** [Pedro Puente](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCYUvW2Mz8eQK0fo9Lddyv3AYFVeaOL7QGRwgePWMtQ99s?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=zsffzS)
+- **Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
 
 **Resumen de la Entrevista**
 
@@ -361,15 +361,15 @@ Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre log�
 
 *Evidencia de entrevista: Henrry García*
 
-![Henry](../assets/images/interviews/henrry-garcia.jpeg)
+![Henry](../assets/images/chapter-2/interviews/henrry-garcia.jpeg)
 
-Captura de sesión de entrevista. Elaboración propia.
+> *Nota:* Captura de sesión de entrevista. Elaboración propia.
 
-**Inicio de la entrevista:** 2:24:35
-**Fin de la entrevista:** 2:40:00
-**Duración:** 40:40
-**Video individual de entrevista:** [Henrry García](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQAH4V2bsaaTRq3LvOpIH7oBAesfDCbmetCKnYA7IjyxJuo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=YDYNzb)
-**Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
+- **Inicio de la entrevista:** 2:24:35
+- **Fin de la entrevista:** 2:40:00
+- **Duración:** 40:40
+- **Video individual de entrevista:** [Henrry García](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQAH4V2bsaaTRq3LvOpIH7oBAesfDCbmetCKnYA7IjyxJuo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=YDYNzb)
+- **Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
 
 **Resumen de la Entrevista**
 
@@ -386,7 +386,7 @@ El segmento de vendedoras y personal de coordinación comercial, representado en
 | Variable observada en S1 | Evidencia recurrente | Lectura analítica | Implicancia de diseño |
 | --- | --- | --- | --- |
 | Uso intensivo de WhatsApp y canales paralelos | Lorena, Cinthia y Celia describen dependencia de mensajería y validaciones externas | El pedido nace en un entorno rápido, pero con baja estructuración de datos | El flujo inicial debe capturar rapidez sin perder consistencia ni trazabilidad |
-| Validación manual de stock y crédito | Lorena y Cinthia reportan consultas adicionales antes de confirmar pedidos | La captura del pedido no está suficientemente conectada con la información crítica del negocio | Conviene unificar stock, crédito y condiciones comerciales en la misma experiencia |
+| Validación manual de stock y crédito | Lorena y Cinthia reportan consultas adicionales antes de confirmar pedidos | La captura del pedido no está suficientemente conectada con la información crítica del negocio | Unificar stock, crédito y condiciones comerciales en la misma experiencia |
 | Necesidad de operar en movilidad | Celia y Lorena describen trabajo fuera del escritorio o en condiciones de campo | La experiencia comercial no puede depender exclusivamente de entornos de oficina | La interfaz debe responder bien en móvil y reducir pasos innecesarios |
 > *Nota:* La tabla resume la cadena dato observado → patrón → implicancia de diseño dentro de la muestra analizada. Elaboración propia.
 
@@ -413,7 +413,7 @@ El segmento de vendedoras y personal de coordinación comercial, representado en
 **Hallazgos clave para el S1:**
 
 - La solución debe acercarse a la rapidez percibida de WhatsApp, pero sin renunciar a una estructura de datos confiable.
-- Conviene integrar en la misma interfaz la visibilidad de crédito, cobranzas y disponibilidad para reducir validaciones paralelas.
+- Integrar en la misma interfaz la visibilidad de crédito, cobranzas y disponibilidad para reducir validaciones paralelas.
 - La experiencia debe responder bien en móvil, porque parte importante del trabajo ocurre fuera del escritorio o en condiciones de alta urgencia.
 
 **Análisis del S2: Jefatura logística / coordinación operativa**
@@ -461,7 +461,7 @@ El análisis de las dos entrevistas exploratorias con Pedro Puente y Henrry Garc
 | Variable observada en S3 | Evidencia recurrente | Lectura analítica | Implicancia de diseño |
 | --- | --- | --- | --- |
 | Dependencia de canales informales para pedir | Pedro y Henrry describen uso de llamadas y WhatsApp para resolver urgencias | La velocidad de respuesta pesa más que la sofisticación funcional | El portal debe ser rápido de usar y fácil de entender desde el primer contacto |
-| Necesidad de visibilidad del estado del pedido | Ambos expresan incertidumbre sobre stock, confirmación y entrega | El principal valor esperado no es solo comprar, sino saber qué ocurrirá después del pedido | Conviene priorizar confirmación clara, estados visibles y seguimiento del despacho |
+| Necesidad de visibilidad del estado del pedido | Ambos expresan incertidumbre sobre stock, confirmación y entrega | El principal valor esperado no es solo comprar, sino saber qué ocurrirá después del pedido | Priorizar confirmación clara, estados visibles y seguimiento del despacho |
 | Confianza como condición de adopción | Henrry enfatiza soporte humano y Pedro asocia servicio con continuidad del negocio | Una digitalización excesivamente impersonal puede afectar adopción | La experiencia debe combinar autoservicio con posibilidad de soporte cuando haga falta |
 > *Nota:* La tabla ordena la relación entre evidencia empírica del cliente comercial y decisiones esperadas del portal B2B. Elaboración propia.
 
@@ -510,18 +510,17 @@ Como complemento al análisis UX, el equipo registra los navegadores, dispositiv
 
 | Entrevistado / segmento | Navegador considerado | Dispositivo principal | Canal de comunicación | Implicancia UX |
 | --- | --- | --- | --- | --- |
-| Lorena Silva / Coordinación comercial | Google Chrome como supuesto de análisis | Laptop durante gestión administrativa; móvil para coordinación en campo | WhatsApp declarado como canal operativo crítico; correo para formalidades | La captura de pedidos debe funcionar bien en Chrome y permitir consulta rápida sin depender de muchas ventanas. |
-| Cinthia Levano / Coordinación comercial | Google Chrome como supuesto de análisis | Computadora de oficina como contexto principal | WhatsApp, Trello y Excel declarados como herramientas de trabajo | El flujo debe centralizar información dispersa y reducir pasos repetidos entre sistemas. |
-| Celia Pérez / Ventas de ruta | Google Chrome como supuesto de análisis | Smartphone en campo; soporte administrativo posterior | Canales informales asociados al retorno desde aplicaciones lentas | La experiencia móvil debe ser liviana, rápida y tolerante a condiciones de conexión variables. |
-| Hilda Litano / Supervisión logística | Google Chrome como supuesto de análisis | Computadora de oficina para revisión documental | Coordinación interna y documentos operativos | La vista logística debe priorizar trazabilidad, certificados, stock y vencimientos en layouts de escritorio. |
-| Edith Taype / Operación en punto de venta | Google Chrome como supuesto de análisis | Dispositivo de trabajo compartido o consulta supervisada | Coordinación interna en piso y acceso mediado a información | El diseño debe contemplar permisos por rol y lectura clara para usuarios con acceso limitado al inventario. |
-| Jesica Sandoval / Supervisión Horeca | Safari como supuesto de análisis contextual; no declarado en entrevista | Dispositivo de escritorio o móvil según contexto de supervisión | Coordinación verbal con almacén para fechas de vencimiento y FEFO | Las pruebas deben cubrir Safari como navegador complementario y hacer visibles los criterios FEFO sin depender de llamadas. |
-| Pedro Puente / Comprador B2B | Google Chrome como supuesto de análisis | Móvil para pedidos rápidos; computadora para revisión si aplica | WhatsApp declarado para pedidos y coordinación | El portal debe ser entendible desde móvil, con confirmación y estado del pedido sin obligar a perseguir respuestas. |
-| Henrry García / Comprador B2B | Google Chrome como supuesto de análisis | Móvil para seguimiento y coordinación; computadora para revisión administrativa | Llamadas, WhatsApp y contacto humano para excepciones | El portal debe conservar una ruta de soporte humano y no convertir el autoservicio en una barrera de confianza. |
+| Lorena Silva / Coordinación comercial | Google Chrome | Laptop durante gestión administrativa; móvil para coordinación en campo | WhatsApp declarado como canal operativo crítico; correo para formalidades | La captura de pedidos debe funcionar bien en Chrome y permitir consulta rápida sin depender de muchas ventanas. |
+| Cinthia Levano / Coordinación comercial | Google Chrome | Computadora de oficina como contexto principal | WhatsApp, Trello y Excel declarados como herramientas de trabajo | El flujo debe centralizar información dispersa y reducir pasos repetidos entre sistemas. |
+| Celia Pérez / Ventas de ruta | Google Chrome | Smartphone en campo; soporte administrativo posterior | Canales informales asociados al retorno desde aplicaciones lentas | La experiencia móvil debe ser liviana, rápida y tolerante a condiciones de conexión variables. |
+| Hilda Litano / Supervisión logística | Google Chrome | Computadora de oficina para revisión documental | Coordinación interna y documentos operativos | La vista logística debe priorizar trazabilidad, certificados, stock y vencimientos en layouts de escritorio. |
+| Edith Taype / Operación en punto de venta | Google Chrome | Dispositivo de trabajo compartido o consulta supervisada | Coordinación interna en piso y acceso mediado a información | El diseño debe contemplar permisos por rol y lectura clara para usuarios con acceso limitado al inventario. |
+| Jesica Sandoval / Supervisión Horeca | Safari | Dispositivo de escritorio o móvil según contexto de supervisión | Coordinación verbal con almacén para fechas de vencimiento y FEFO | Las pruebas deben cubrir Safari como navegador complementario y hacer visibles los criterios FEFO sin depender de llamadas. |
+| Pedro Puente / Comprador B2B | Safari | Móvil para pedidos rápidos; computadora para revisión si aplica | WhatsApp declarado para pedidos y coordinación | El portal debe ser entendible desde móvil, con confirmación y estado del pedido sin obligar a perseguir respuestas. |
+| Henrry García / Comprador B2B | Google Chrome | Móvil para seguimiento y coordinación; computadora para revisión administrativa | Llamadas, WhatsApp y contacto humano para excepciones | El portal debe conservar una ruta de soporte humano y no convertir el autoservicio en una barrera de confianza. |
 
 > *Nota:* Esta tabla no agrega citas nuevas. Ordena información declarada en los resúmenes cuando existe evidencia y completa, como supuesto de análisis, los datos de navegador o dispositivo necesarios para orientar compatibilidad, responsive design y pruebas de UX.
 
-### ***2.2.4. Síntesis Global de Hallazgos***
 
 Tras el análisis detallado de los ocho perfiles levantados y de la lectura conjunta de los tres segmentos del producto, se identifica una **brecha de trazabilidad integral**. Esta brecha se manifiesta en la desconexión entre la promesa comercial capturada por canales informales y la realidad operativa gestionada con sistemas fragmentados, validaciones manuales y visibilidad incompleta del despacho.
 
@@ -558,5 +557,3 @@ graph TD
 ```
 
 > *Nota:* Mapeo analítico construido a partir de la recurrencia de temas mencionados en las entrevistas; los porcentajes deben leerse como aproximaciones de frecuencia dentro de la muestra, no como mediciones estadísticas del mercado. Elaboración propia.
-
-En conclusión, Nexa no solo debe resolver la toma de pedidos, sino articular de forma consistente los tres segmentos del producto: quien captura y valida el pedido (S1: Coordinación comercial / ventas internas), quien coordina logística, inventario, preparación y despacho (S2: Jefatura logística / coordinación operativa), y quien se abastece y necesita previsibilidad (S3: Comprador B2B / cliente comercial). Las reglas, restricciones y criterios de control del dominio acompañan ese flujo completo, y la segmentación del informe se organiza en esos tres tramos del producto.
