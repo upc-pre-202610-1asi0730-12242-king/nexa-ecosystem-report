@@ -40,23 +40,54 @@ La traducción posterior del workshop refinó esos bloques para el informe. Prod
 
 ### 4.6.2. Software Architecture Context Diagram
 
+Para las vistas C4 utilizamos Structurizr como herramienta de modelado, manteniendo los diagramas y sus archivos de definición dentro del repositorio. La vista de contexto ubica a Nexa frente a sus usuarios y sistemas externos; la vista de contenedores separa landing page, webapp, Fake API y componentes objetivo de backend/plataforma; y la vista de componentes detalla la distribución esperada de responsabilidades dentro de la arquitectura objetivo.
+
+En TB1, la webapp consume Fake API como simulación, por lo que los elementos de backend, persistencia e integraciones externas se documentan como diseño objetivo y no como implementación productiva. Los archivos `c4-context-structurizr-code.txt` y `c4-container-structurizr-code.txt` quedan como evidencia de soporte del modelado en el repositorio.
+
+*Tabla. Relación entre vistas C4 y alcance TB1*
+
+| Vista C4 | Elementos documentados | Alcance TB1 |
+|---|---|---|
+| Context | Usuarios, Nexa, operación B2B e integraciones externas consideradas en el ecosistema | Representa la ubicación del sistema y sus actores principales |
+| Container | Landing page, webapp, Fake API, backend/plataforma objetivo y almacenamiento objetivo | Landing y webapp desplegadas; Fake API usada como simulación; backend y persistencia como diseño objetivo |
+| Component | Responsabilidades internas esperadas por módulo o contexto funcional | Referencia arquitectónica para la evolución posterior del backend/plataforma |
+| Supporting files | Archivos Structurizr almacenados en el repositorio | Evidencia documental del modelado C4 usado para generar las vistas |
+
+> *Nota:* Elaboración propia. La tabla distingue la evidencia operativa TB1 de la arquitectura objetivo.
+
 El diagrama de contexto muestra a Nexa como sistema central dentro de dos frentes de uso: el frente público del sitio y el frente operativo del producto. También ubica integraciones externas que acompañan el ecosistema, como autenticación, notificaciones, almacenamiento documental, calendario y pagos.
 
 *Diagrama de Contexto del Sistema Nexa (C4 — Nivel 1)*
 
 ![Diagrama de Contexto C4 — Sistema Nexa](../assets/images/chapter-4/architecture/c4/c4-context-diagram.svg)
 
+Nota. Elaboración propia mediante Structurizr.
+
+*Leyenda del diagrama C4 de contexto*
+
+![Leyenda del diagrama C4 de contexto](../assets/images/chapter-4/architecture/c4/c4-context-diagram-key.svg)
+
+Nota. Elaboración propia mediante Structurizr.
+
 El contexto deja ver que el sistema no se limita a un solo actor. Hay visitantes que exploran la propuesta de valor, personal de la distribuidora que coordina la operación y clientes B2B que consultan catálogo, registran pedidos y siguen su estado. Las integraciones externas se entienden como apoyo del ecosistema, no como el núcleo del dominio.
 
 ### 4.6.3. Software Architecture Container Diagrams
 
-La vista de contenedores separa el sitio público, la web application transaccional, el backend API y la base de datos. Esa separación permite distinguir mejor el frente comercial del frente operativo y evita mezclar en una sola pieza la experiencia pública, la lógica de negocio y la persistencia.
+La vista de contenedores separa el sitio público, la web application transaccional, el Fake API usado para TB1 y la plataforma/backend objetivo. Esa separación permite distinguir mejor el frente comercial del frente operativo y evita mezclar en una sola pieza la experiencia pública, la lógica de negocio simulada y la persistencia planificada.
 
 *Diagrama de Contenedores del Sistema Nexa (C4 — Nivel 2)*
 
 ![Diagrama de Contenedores C4 — Sistema Nexa](../assets/images/chapter-4/architecture/c4/c4-container-diagram.svg)
 
-En esta versión del C4, el sitio público se representa como una capa en HTML, CSS y JavaScript; la aplicación transaccional aparece como un cliente web separado; el backend se mantiene en ASP.NET Core Web API; y la persistencia se concentra en MySQL. También se muestran servicios externos de soporte como Stripe, Google Notification, OAuth, Calendar y Cloud Storage.
+Nota. Elaboración propia mediante Structurizr.
+
+*Leyenda del diagrama C4 de contenedores*
+
+![Leyenda del diagrama C4 de contenedores](../assets/images/chapter-4/architecture/c4/c4-container-diagram-key.svg)
+
+Nota. Elaboración propia mediante Structurizr.
+
+En esta versión del C4, el sitio público se representa como una capa en HTML, CSS y JavaScript; la aplicación transaccional aparece como un cliente web separado; el Fake API se mantiene como soporte de simulación para TB1; y el backend/plataforma, la persistencia y las integraciones externas quedan como arquitectura objetivo. También se muestran servicios externos de soporte como pagos, notificaciones, autenticación, calendario y almacenamiento documental.
 
 > **Nota de alcance TB1:** Este diagrama representa la arquitectura objetivo del sistema Nexa. En TB1, la entrega incluye únicamente la aplicación web (Vue 3 SPA) conectada a una API simulada mediante JSON Server. El backend en ASP.NET Core, la base de datos MySQL y las integraciones externas (Stripe, OAuth, Calendar, Cloud Storage) forman parte del diseño de la arquitectura objetivo y están previstas para etapas posteriores de implementación.
 
@@ -68,7 +99,8 @@ La vista de componentes baja un nivel más y muestra cómo se reparte la respons
 
 ![Diagrama de Componentes C4 — Sistema Nexa](../assets/images/chapter-4/architecture/c4/c4-component-diagram.png)
 
-En la imagen aparecen piezas visibles como Auth, Catalog, Order, Inventory y Customer dentro del backend, además de componentes de soporte como Payment Integration y Notification. Para mantener coherencia con el dominio, el informe conserva como núcleo los contextos Identity, Catalog, Inventory, Customer Management, Commercial Conditions, Orders y Traceability. En esa lectura, **Auth** se alinea con **Identity**, **Customer** con **Customer Management**, y los servicios de pago o notificación se tratan como apoyo transversal, no como bounded contexts principales.
+Nota. Elaboración propia. El diagrama representa la arquitectura objetivo; en TB1 la integración se valida mediante Fake API.
+
+En la imagen aparecen piezas visibles como Auth, Catalog, Order, Inventory y Customer dentro del backend objetivo, además de componentes de soporte como Payment Integration y Notification. Para mantener coherencia con el dominio consolidado, el informe conserva como núcleo los contextos **Identity & Access**, **Catalog**, **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**. En esa lectura, **Auth** se alinea con **Identity & Access**, **Order** con **Orders & Commercial Management**, y los servicios de pago o notificación se tratan como apoyo transversal, no como bounded contexts principales.
 
 Esta decisión evita forzar una correspondencia literal entre cada caja del C4 y cada bloque del dominio. El C4 resume capas e integraciones; los capítulos siguientes afinan la separación interna del modelo. Por eso Commercial Conditions y Traceability se desarrollan con más precisión en las secciones 4.7 y 4.8, donde la lógica del dominio se documenta con mayor detalle.
-

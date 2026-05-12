@@ -8,7 +8,7 @@ Cada elemento del sitio público tiene continuidad con alguna superficie operati
 
 | Elemento de la landing | Continuidad en el producto | Superficie relacionada |
 |---|---|---|
-| CTA "Ingresar" | Acceso autenticado al sistema | [Webapp login](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-webapp/#/auth/login) |
+| CTA "Ingresar" | Acceso autenticado al sistema | [Webapp login](https://nexa-2f1bb.web.app) |
 | Segmento Importadores/Mayoristas | Flujos de pedido asistido para S1: Coordinación comercial / ventas internas | `/ops/orders/new` |
 | Segmento Distribuidores | Control logístico y despacho para S2: Jefatura logística / coordinación operativa | `/ops/dispatch`, `/ops/inventory` |
 | Segmento Cámaras Frías | Monitoreo y trazabilidad para S2: Jefatura logística / coordinación operativa | `/ops/inventory`, `/ops/reports` |
