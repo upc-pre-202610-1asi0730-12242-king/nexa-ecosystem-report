@@ -9,22 +9,22 @@ Los artefactos de needfinding traducen evidencia cualitativa en criterios de dis
 La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado y función de diseño. Elaboración propia.
 
 *User Persona — S1: Coordinación comercial / ventas internas — Valeria Sánchez*
-![User Persona 1](../assets/images/user-persona-1.png)
+![User Persona 1](../assets/images/chapter-2/user-personas/user-persona-1.png)
 > *Nota:* Representación del arquetipo de vendedoras y coordinación comercial, enfocado en reducir la carga administrativa y el retrabajo en la captura del pedido. Elaboración propia.
 
 *User Persona — S2: Jefatura logística / coordinación operativa — Roberto García*
-![User Persona 2](../assets/images/user-persona-2.png)
+![User Persona 2](../assets/images/chapter-2/user-personas/user-persona-2.png)
 > *Nota:* Representación sintética del arquetipo de coordinación logística y operativa, enfocada en el control del cumplimiento, la visibilidad del despacho y el cierre con evidencia. Su construcción se apoya en hallazgos de trazabilidad, incidencias y coordinación operativa dentro del dominio. Elaboración propia.
 
 *User Persona — S3: Comprador B2B / cliente comercial — Elena Litano*
-![User Persona 3](../assets/images/user-persona-3.png)
+![User Persona 3](../assets/images/chapter-2/user-personas/user-persona-3.png)
 > *Nota:* Representación sintética del arquetipo de comprador comercial B2B, construida a partir de entrevistas a compradores minoristas y mayoristas, más evidencia de adopción digital del canal tradicional. Elaboración propia.
 
 ### ***2.3.2. User Task Matrix***
 
 #### User Task Matrix: Frecuencia e Importancia por Arquetipo
 
-| Tareas del Mundo Real                                     | Valeria (S1: Comercial) |             | Roberto (S2: Logística) |             | Comprador B2B (S3) |             |
+| Tareas del Mundo Real                                     | Valeria (S1: Comercial) |             | Roberto (S2: Logística) |             | Elena (S3: Comprador B2B) |             |
 |:----------------------------------------------------------|:------------------------|:------------|:------------------------|:------------|:----------------------|:------------|
 |                                                           | Frecuencia              | Importancia | Frecuencia              | Importancia | Frecuencia            | Importancia |
 | **Revisar lista de precios y stock disponible**           | Alta                    | Alta        | Media                   | Alta        | Alta                  | Alta        |
@@ -42,15 +42,15 @@ La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado 
 Los Journey Maps describen la situación actual de cada segmento antes de Nexa. Representan el recorrido As-Is: cómo se realiza hoy cada proceso, qué fricciones aparecen en cada etapa y dónde se concentra el mayor estrés operativo. No describen la experiencia dentro de la plataforma propuesta.
 
 *Journey Map As-Is — S1: Coordinación comercial / ventas internas*
-![Journey Map 1](../assets/images/journey-map-1.png)
+![Journey Map 1](../assets/images/chapter-2/journey-maps/journey-map-1.png)
 > *Nota:* Mapeo del proceso actual de captura y gestión de pedidos, identificando puntos de dolor en la transcripción manual y la dispersión de canales. Elaboración propia.
 
 *Journey Map As-Is — S2: Jefatura logística / coordinación operativa*
-![Journey Map 2](../assets/images/journey-map-2.png)
+![Journey Map 2](../assets/images/chapter-2/journey-maps/journey-map-2.png)
 > *Nota:* Mapeo de la ruta logística actual, enfatizando los cuellos de botella en la comunicación de incidencias y la falta de trazabilidad operativa. Elaboración propia.
 
 *Journey Map As-Is — S3: Comprador B2B / cliente comercial*
-![Journey Map 3](../assets/images/journey-map-3.png)
+![Journey Map 3](../assets/images/chapter-2/journey-maps/journey-map-3.png)
 > *Nota:* Mapeo de la experiencia actual de abastecimiento del cliente, destacando la incertidumbre en el seguimiento de entrega y la dependencia del vendedor. Elaboración propia.
 
 Los tres recorridos muestran un mismo flujo con fricciones distintas. En S1 el problema aparece como ambigüedad y retrabajo en la captura comercial; en S2 como presión operativa, incidencias y coordinación logística con información incompleta; y en S3 como incertidumbre sobre disponibilidad, confirmación y seguimiento del pedido.
@@ -79,15 +79,15 @@ Estos puntos describen oportunidades del proceso actual. La primera iteración p
 A continuación, se presentan los Empathy Maps desarrollados para cada segmento objetivo.
 
 *Empathy Map — S1: Coordinación comercial / ventas internas*
-![Empathy Map 1](../assets/images/empathy-map-1.png)
+![Empathy Map 1](../assets/images/chapter-2/empathy-maps/empathy-map-1.png)
 > *Nota:* Análisis de expectativas y temores del personal administrativo respecto a la adopción tecnológica. Elaboración propia.
 
 *Empathy Map — S2: Jefatura logística / coordinación operativa*
-![Empathy Map 2](../assets/images/empathy-map-2.png)
+![Empathy Map 2](../assets/images/chapter-2/empathy-maps/empathy-map-2.png)
 > *Nota:* Exploración del entorno laboral y necesidades de soporte de S2: Jefatura logística / coordinación operativa. Elaboración propia.
 
 *Empathy Map — S3: Comprador B2B / cliente comercial*
-![Empathy Map 3](../assets/images/empathy-map-3.png)
+![Empathy Map 3](../assets/images/chapter-2/empathy-maps/empathy-map-3.png)
 > *Nota:* Identificación de motivadores extrínsecos e intrínsecos para la digitalización del comprador comercial B2B. Elaboración propia.
 
 *Síntesis de Empathy Mapping*
