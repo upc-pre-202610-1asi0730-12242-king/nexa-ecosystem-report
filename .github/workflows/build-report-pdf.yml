@@ -1,0 +1,43 @@
+name: Build Report PDF
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: build-report-pdf-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Pandoc and LaTeX
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y \
+            pandoc \
+            texlive-xetex \
+            texlive-fonts-recommended \
+            texlive-lang-spanish \
+            librsvg2-bin
+
+      - name: Build PDF
+        run: bash scripts/build-pdf.sh
+
+      - name: Verify PDF
+        run: |
+          ls -lh dist/
+          test -f dist/nexa-report.pdf
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nexa-report-pdf
+          path: dist/nexa-report.pdf
+          retention-days: 30
+          if-no-files-found: error

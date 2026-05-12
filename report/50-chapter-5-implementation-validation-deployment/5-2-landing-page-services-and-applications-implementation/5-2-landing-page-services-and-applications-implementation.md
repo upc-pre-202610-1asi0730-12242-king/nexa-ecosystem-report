@@ -13,7 +13,7 @@ El contenido queda organizado por sprint para separar fechas, evidencias, commit
 |---|---|---|---|
 | Landing Page | Línea base AV1 conservada y conectada al avance TB1 | Sprint 1, evidencias de despliegue del sitio público y continuidad en Sprint 2 | Mantenerla como entrada pública y punto de enlace hacia la Web Application |
 | Web Application | Incremento central de TB1 | Sprint 2, mockups actuales, screenshots existentes, rutas y commits representativos | Ampliar cobertura funcional y validación con usuarios |
-| Fake API / servicios simulados | Soporte simulado para revisar flujos frontend | Sprint 2 y Services Documentation Evidence for Sprint Review | Evolucionar hacia servicios internos formales cuando el backend esté implementado |
+| Fake API / servicios simulados | Soporte simulado para revisar flujos frontend, documentado para consumo público desde la webapp desplegada | Sprint 2 y Services Documentation Evidence for Sprint Review | Evolucionar hacia servicios internos formales cuando el backend esté implementado |
 | RESTful API interna | Evolución prevista; no se declara implementación productiva en TB1 | Arquitectura objetivo y planificación de servicios | Implementar contratos reales para Web Services |
 | OpenAPI / Swagger | Evolución prevista; no se declara documentación formal en TB1 | Referencia como documentación futura de la API interna | Documentar endpoints cuando exista la API interna |
 | Backend C# / ASP.NET Core | Alcance futuro / diseño objetivo | `nexa-platform` como repositorio planificado y arquitectura del Capítulo IV | Implementar la capa backend en un hito posterior |

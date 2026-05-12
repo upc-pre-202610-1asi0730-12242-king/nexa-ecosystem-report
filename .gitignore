@@ -1,0 +1,9 @@
+
+# Local Evidence Folders
+reu screanshots/
+commits report/
+commits website/
+.DS_Store
+
+# PDF build output
+dist/

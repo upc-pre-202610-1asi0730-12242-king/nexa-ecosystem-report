@@ -1,6 +1,6 @@
-# Capítulo II: Requirements Elicitation & Analysis
+# **Capítulo II: Requirements Elicitation & Analysis**
 
-## 2.1. Competidores
+## **2.1. Competidores**
 
 El ecosistema de soluciones de software aplicadas a la gestión comercial y logística en América Latina ha experimentado un grado de maduración significativo. Sin embargo, una revisión crítica del paisaje competitivo demuestra que la oferta tecnológica padece de una severa hiperespecialización. Las plataformas dominantes tienden a enfocarse en nichos aislados: o resuelven exclusivamente la captura de la venta comercial, o se dedican estrictamente al monitoreo físico del transporte.
 
@@ -24,13 +24,13 @@ Para una pyme distribuidora de productos refrigerados, esta fragmentación sugie
 
 **Debilidad frente a nuestro nicho:** Operan en una capa principalmente técnica de telemetría y geolocalización, sin integrar de forma nativa la lógica comercial del pedido. No gestionan catálogos, condiciones comerciales ni la interacción con el cliente que realiza la compra. Además, suelen depender de hardware físico instalado en las unidades de transporte.
 
-### 2.1.1. Análisis competitivo (Landscape & SWOT)
+### ***2.1.1. Análisis competitivo (Landscape & SWOT)***
 
 El análisis competitivo estructurado a continuación emplea una matriz de variables del mercado (Landscape) y un análisis FODA cruzado (SWOT) para evaluar nuestro posicionamiento estratégico frente a las plataformas establecidas. Las dimensiones evaluadas no solo contemplan la arquitectura de software, sino también la fricción de adopción, el mercado objetivo y el modelo de monetización; factores críticos para la supervivencia de un SaaS en el canal comercial peruano. 
 
 *Análisis Competitivo*
 
-| Dimensión / Criterio | Nuestra Startup (SaaS B2B Frío) | Riqra (SaaS Ecommerce B2B) | Drivin (SaaS TMS Logística) | OnTracking / RedGPS (SaaS IoT Telemetría) |
+| Dimensión / Criterio | Nexa | Riqra (SaaS Ecommerce B2B) | Drivin (SaaS TMS Logística) | OnTracking / RedGPS (SaaS IoT Telemetría) |
 | --- | --- | --- | --- | --- |
 | **Overview** | Plataforma unificada que conecta la toma de pedidos B2B con la gestión operativa básica, especializada nativamente en productos de cadena de frío. | Portal B2B de comercio electrónico orientado a digitalizar ventas para fabricantes y distribuidores generalistas. | Plataforma TMS enfocada en la planificación de rutas, optimización de flota y última milla en múltiples industrias. | Plataforma de monitoreo de sensores IoT y rastreo vehicular, orientada al cumplimiento físico de la cadena de frío. |
 | **Ventaja Competitiva** | Integración del ciclo comercial (Portal) con la especificidad logística del frío (fechas de caducidad, rangos térmicos) en un solo software accesible. | Especialización profunda en integraciones comerciales con ERPs corporativos (SAP, Oracle). | Algoritmos avanzados de optimización de rutas y seguimiento en tiempo real del conductor. | Certificación de temperaturas y hardware telemétrico confiable de grado industrial. |
@@ -44,8 +44,7 @@ El análisis competitivo estructurado a continuación emplea una matriz de varia
 | **Debilidades (W)** | Marca nueva sin base instalada inicial. El MVP no incluye optimización avanzada de rutas ni conexión física con sensores (IoT). | Plataforma agnóstica; no entiende de fechas de caducidad ni incompatibilidad biológica de carga. | Nulo contacto con la etapa comercial. Asumen que la empresa ya tiene los pedidos ordenados antes de usar el sistema. | Dependencia de hardware instalado y costos adicionales asociados al despliegue en flota. |
 | **Oportunidades (O)** | Nuevas regulaciones del MINSA obligan a las pymes a buscar software de trazabilidad. Crecimiento de la cultura de comercio electrónico B2B. | Expansión a más países de LATAM donde el canal tradicional sigue siendo fuerte. | Aumento del e-commerce y servicios de última milla a nivel nacional. | Abaratamiento paulatino del costo de los dispositivos IoT. |
 | **Amenazas (T)** | Resistencia al cambio en segmentos acostumbrados a canales informales y posible expansión funcional de competidores ya consolidados. | Surgimiento de startups especializadas por sector que les roben cuota de mercado local. | Competencia agresiva por precio de otros TMS entrantes al mercado. | Aplicaciones móviles gratuitas que intenten reemplazar la necesidad de hardware. |
-
-Tabla de análisis competitivo. Elaboración propia.
+> *Nota:* Tabla de análisis competitivo. Elaboración propia.
 
 ---
 
@@ -53,25 +52,25 @@ Tabla de análisis competitivo. Elaboración propia.
 
 A partir de la matriz expuesta, el equipo ha identificado cuatro implicancias estratégicas para el desarrollo del producto.
 
-> **1. Especialización funcional del dominio**
->
-> La oportunidad principal de Nexa no está en competir por profundidad algorítmica con un TMS ni por sofisticación de hardware con una plataforma telemétrica, sino en modelar mejor la relación entre pedido, disponibilidad, rotación y seguimiento en un dominio de productos perecederos.
->
-> **2. Alcance realista del MVP**
->
-> El análisis también muestra un límite claro: en su primera versión, Nexa no necesita replicar todas las capacidades de ruteo avanzado o monitoreo IoT, sino ofrecer trazabilidad documental y visibilidad operativa suficientes para validar valor en el flujo principal del pedido.
->
-> **3. Valor regulatorio y operativo**
->
-> En un sector donde trazabilidad, control documental y conservación del producto tienen relevancia normativa, una solución que ordene información comercial y operativa puede adquirir valor no solo por eficiencia, sino también por capacidad de respuesta ante incidencias o auditorías.
->
-> **4. Riesgo de adopción**
->
-> La principal amenaza competitiva inmediata no proviene solo de otras plataformas, sino de la persistencia de canales informales ya aceptados por los usuarios. Por ello, la propuesta debe minimizar complejidad de uso y reducir fricción de entrada desde el primer contacto.
+**1. Especialización funcional del dominio**
+
+La oportunidad principal de Nexa no está en competir por profundidad algorítmica con un TMS ni por sofisticación de hardware con una plataforma telemétrica, sino en modelar mejor la relación entre pedido, disponibilidad, rotación y seguimiento en un dominio de productos perecederos.
+
+**2. Alcance realista del MVP**
+
+El análisis también muestra un límite claro: en su primera versión, Nexa no necesita replicar todas las capacidades de ruteo avanzado o monitoreo IoT, sino ofrecer trazabilidad documental y visibilidad operativa suficientes para validar valor en el flujo principal del pedido.
+
+**3. Valor regulatorio y operativo**
+
+En un sector donde trazabilidad, control documental y conservación del producto tienen relevancia normativa, una solución que ordene información comercial y operativa puede adquirir valor no solo por eficiencia, sino también por capacidad de respuesta ante incidencias o auditorías.
+
+**4. Riesgo de adopción**
+
+La principal amenaza competitiva inmediata no proviene solo de otras plataformas, sino de la persistencia de canales informales ya aceptados por los usuarios. Por ello, la propuesta debe minimizar complejidad de uso y reducir fricción de entrada desde el primer contacto.
 
 En conjunto, el landscape sugiere que Nexa puede encontrar espacio si mantiene una propuesta acotada y coherente: integrar la capa comercial-operativa que hoy aparece separada entre soluciones de venta, ruteo y telemetría, sin asumir desde el inicio la profundidad funcional completa de cada una de ellas.
 
-### 2.1.2. Estrategias y tácticas frente a competidores
+### ***2.1.2. Estrategias y tácticas frente a competidores***
 
 Al ingresar a un mercado donde interactúan sistemas empresariales heredados y plataformas consolidadas, el proyecto debe adoptar un criterio pragmático. La viabilidad de una primera versión no depende de replicar toda la profundidad funcional del mercado, sino de priorizar aquellas capacidades que conectan mejor con las fricciones identificadas en la investigación. A continuación, se sintetizan las estrategias preliminares de posicionamiento y adopción derivadas del análisis competitivo.
 
