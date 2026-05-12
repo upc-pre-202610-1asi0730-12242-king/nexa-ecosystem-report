@@ -1,301 +1,300 @@
 ## 4.4. Web Applications UX/UI Design.
 
-Esta sección documenta el diseño UX/UI de las dos superficies autenticadas del producto: la **webapp operativa interna (Ops)** para coordinación comercial (S1) y logística (S2), y el **portal B2B** para compradores comerciales (S3). Ambas superficies comparten el sistema visual definido en 4.1, pero operan con criterios de diseño distintos a la landing: aquí la prioridad es **claridad operativa, lectura rápida del estado del negocio y reducción de fricción en tareas repetitivas**.
+Esta sección documenta el diseño UX/UI de las superficies autenticadas del producto. La **webapp operativa interna (Ops)** para **S1: Coordinación comercial / ventas internas** y **S2: Jefatura logística / coordinación operativa** constituye la evidencia principal de diseño e implementación de esta entrega. El **portal B2B** para **S3: Comprador B2B / cliente comercial** se documenta a nivel de planificación en TB1: el flujo comprador está definido, pero no cuenta con pantallas implementadas en la webapp ni con mockups finales completos en esta iteración. S1 y S2 son la evidencia de validación principal. Las tres superficies comparten el sistema visual definido en 4.1, pero la prioridad de diseño en la webapp Ops es **claridad operativa, lectura rápida del estado del negocio y reducción de fricción en tareas repetitivas**.
 
 Cada pantalla resuelve una pregunta concreta del dominio: qué pedido está en riesgo, qué producto necesita atención, qué validación bloquea la operación, qué unidad está en ruta y qué evidencia respalda el cierre. La documentación se organiza en wireframes, wireflows, mock-ups y user flows como artefactos de diseño UX/UI.
 
 ### 4.4.1. Web Applications Wireframes.
 
-Los wireframes ordenan la estructura funcional antes de entrar en alta fidelidad. Su valor está en definir jerarquías, zonas de información y rutas de interacción por superficie y persona. La colección se organiza como recorrido operativo de diseño para S1 y S2, con pantallas suficientes para explicar dashboard, pedidos, inventario, despacho, POD mock y trazabilidad.
+Los wireframes actuales de la webapp se organizan por segmento operativo. La cobertura visual de TB1 se concentra en **S1: Coordinación comercial / ventas internas** y **S2: Jefatura logística / coordinación operativa**. **S3: Comprador B2B / cliente comercial** permanece como flujo planificado, sin pantallas webapp implementadas en esta entrega.
 
-#### Sprint 1 — Wireframes de diseño
+*Tabla: Wireframes de la webapp por segmento operativo*
 
-| Wireframe | Persona / Segmento | User goal que habilita |
-|---|---|---|
-| Dashboard Operativo Total Control | Valeria (S1), Roberto (S2) | Leer KPIs, alertas y accesos directos al iniciar sesión |
-| B2B Orders Hub | Valeria (S1) | Revisar bandeja de pedidos y priorizar acción |
-| Creación de Pedido Asistido | Valeria (S1) | Capturar un pedido con validación de cliente y stock |
-| Inventory Management | Roberto (S2) | Revisar disponibilidad, riesgo FEFO y rotación |
-| Confirmación de Despacho & Asignación de Flota | Roberto (S2) | Liberar salida y asignar unidad de transporte |
-| FEFO Intelligence & Analytics | Roberto (S2) | Priorizar lotes por vencimiento y riesgo de merma |
-| Active Shipments & Routes | Roberto (S2) | Monitorear unidades en tránsito y estado de ruta |
-| Cierre de Entrega (POD) & Certificación | Roberto (S2) | Registrar evidencia y cerrar entrega formalmente |
-| Inventory Detail | Roberto (S2) | Profundizar en estado de un SKU específico |
-| Order Detail & Traceability | Valeria (S1), Roberto (S2) | Reconstruir historial completo de un pedido |
+| Segmento | Pantallas documentadas | Recorrido cubierto |
+|:---|:---|:---|
+| S1: Coordinación comercial / ventas internas | Login, dashboard, clientes, detalle de cliente, pedidos, creación de pedido, productos, resumen, detalle de pedido y reportes | Ingreso, revisión comercial, gestión de clientes, registro de pedido, selección de productos, confirmación, seguimiento y consulta de reportes |
+| S2: Jefatura logística / coordinación operativa | Login, dashboard logístico, inventario general, inventario por lote, detalle de lote, creación/revisión operativa de pedido, despacho, registro de salida, notificación, confirmación y reportes operativos | Ingreso, control de inventario, revisión por lote, preparación de despacho, registro operativo, confirmación de salida y lectura de reportes |
+| S3: Comprador B2B / cliente comercial | Sin pantallas webapp implementadas en TB1 | Flujo comprador considerado en planificación de catálogo, pedido y seguimiento |
 
-#### Dashboard Operativo Total Control
+> *Nota:* Los wireframes S1 y S2 provienen de los artefactos actualizados de la webapp; S3 se conserva como alcance planificado para no afirmar pantallas que aún no forman parte de la implementación visual. Elaboración propia.
 
-![Wireframe Dashboard Operativo Total Control](../assets/images/webapp-wireframes/webapp-wireframe-dashboard-operativo-total-control.png)
+#### S1: Coordinación comercial / ventas internas
 
-Este wireframe define la superficie de entrada para usuarios internos que necesitan leer rápidamente el estado del negocio. La composición concentra KPIs, alertas y accesos directos a módulos críticos, evitando que la supervisión tenga que saltar entre pantallas para detectar riesgos. Su función dentro del MVP es convertir una operación fragmentada en una vista centralizada de decisión.
+El recorrido S1 cubre el trabajo de Valeria desde el ingreso a la plataforma hasta la consulta de reportes comerciales. La secuencia prioriza captura clara de pedidos, revisión de cliente, selección de productos y trazabilidad del pedido creado.
 
-#### B2B Orders Hub
+*Figura. Wireframe de login para S1*
 
-![Wireframe B2B Orders Hub](../assets/images/webapp-wireframes/webapp-wireframe-b2b-orders-hub.png)
+![Wireframe de login para S1](../assets/images/chapter-4/webapp/wireframes/s1-coordinacion-comercial-ventas-internas/wireframe-login.jpg)
 
-La vista de órdenes organiza el flujo comercial en una bandeja operable, con estados visibles, filtros y acceso al detalle de cada pedido. Aquí la prioridad de diseño no es “mostrar una tabla”, sino permitir lectura rápida de cola de trabajo, excepciones y prioridades. Esto responde directamente al problema de desorden entre pedidos informales, confirmaciones tardías y seguimiento manual.
+> *Nota*. La pantalla de ingreso separa el acceso autenticado del recorrido público de la landing. Elaboración propia.
 
-#### Creación de Pedido Asistido
+*Figura. Wireframe de dashboard comercial para S1*
 
-![Wireframe Creación de Pedido Asistido](../assets/images/webapp-wireframes/webapp-wireframe-creacion-pedido-asistido.png)
+![Wireframe de dashboard comercial para S1](../assets/images/chapter-4/webapp/wireframes/s1-coordinacion-comercial-ventas-internas/wireframe-dashboard.jpg)
 
-Este wireframe estructura el momento más sensible del flujo: la captura del pedido por coordinación comercial. El layout reserva zonas claras para identificación del cliente, selección de productos, condiciones comerciales y validaciones visibles, reduciendo el riesgo de doble digitación o ambigüedad. Su aporte es demostrar que la captura puede nacer ordenada desde el origen.
+> *Nota*. El dashboard reúne estado de pedidos, alertas comerciales y accesos a tareas frecuentes. Elaboración propia.
 
-#### Inventory Management
+*Figura. Wireframe de lista de clientes para S1*
 
-![Wireframe Inventory Management](../assets/images/webapp-wireframes/webapp-wireframe-inventory-management.png)
+![Wireframe de lista de clientes para S1](../assets/images/chapter-4/webapp/wireframes/s1-coordinacion-comercial-ventas-internas/wireframe-clientes-lista.jpg)
 
-La gestión de inventario fue diseñada como una vista de control y no solo de registro. El wireframe prioriza disponibilidad, riesgo, clasificación y acceso a detalle, porque el inventario en Nexa debe sostener decisiones comerciales y no limitarse a listar cantidades. Por eso la navegación permite pasar de visión agregada a intervención puntual sin romper el contexto.
+> *Nota*. La lista permite ubicar clientes y revisar información comercial antes de iniciar un pedido. Elaboración propia.
 
-#### Confirmación de Despacho & Asignación de Flota
+*Figura. Wireframe de detalle de cliente para S1*
 
-![Wireframe Confirmación de Despacho y Asignación de Flota](../assets/images/webapp-wireframes/webapp-wireframe-confirmacion-despacho-asignacion-flota.png)
+![Wireframe de detalle de cliente para S1](../assets/images/chapter-4/webapp/wireframes/s1-coordinacion-comercial-ventas-internas/wireframe-detalle-cliente.jpg)
 
-Esta pantalla modela la transición entre pedido confirmado y ejecución física. Su estructura visibiliza unidades listas para salir, asignación de transporte y condiciones necesarias para despachar, evitando que ese paso dependa de coordinación verbal dispersa. El wireframe muestra que despacho y planeamiento deben quedar dentro de la misma lógica operativa del sistema.
+> *Nota*. El detalle concentra condiciones, datos relevantes y contexto necesario para decidir si el pedido puede avanzar. Elaboración propia.
 
-#### FEFO Intelligence & Analytics
+*Figura. Wireframe de lista de pedidos para S1*
 
-![Wireframe FEFO Intelligence & Analytics](../assets/images/webapp-wireframes/webapp-wireframe-fefo-intelligence-analytics.png)
+![Wireframe de lista de pedidos para S1](../assets/images/chapter-4/webapp/wireframes/s1-coordinacion-comercial-ventas-internas/wireframe-pedidos-lista.jpg)
 
-El módulo FEFO fue planteado como una vista analítica especializada para convertir vencimientos y rotación en decisiones visibles. El wireframe ordena señales de riesgo, lotes prioritarios y lectura de tendencias, reforzando que Nexa no solo administra pedidos, sino que también ayuda a prevenir pérdida de producto. Esta pantalla conecta directamente con la necesidad de reducir merma y sostener trazabilidad de inventario perecedero.
+> *Nota*. La bandeja de pedidos ordena estados, prioridades y acceso rápido al detalle. Elaboración propia.
 
-#### Active Shipments & Routes
+*Figura. Wireframe de creación de pedido para S1*
 
-![Wireframe Active Shipments & Routes](../assets/images/webapp-wireframes/webapp-wireframe-active-shipments-routes.png)
+![Wireframe de creación de pedido para S1](../assets/images/chapter-4/webapp/wireframes/s1-coordinacion-comercial-ventas-internas/wireframe-crear-pedido.jpg)
 
-El seguimiento de rutas se diseñó como tablero de operación viva. Aquí la interfaz debe soportar lectura rápida de estado estimado, incidencias y entregas activas, porque el usuario en esta fase necesita reaccionar y no navegar sin rumbo. La estructura apunta a reducir llamadas y mejorar visibilidad compartida entre operación, coordinación y cliente.
+> *Nota*. La captura inicial del pedido separa cliente, condiciones y datos base para reducir ambigüedad. Elaboración propia.
 
-#### Cierre de Entrega (POD) & Certificación
+*Figura. Wireframe de selección de productos para S1*
 
-![Wireframe Cierre de Entrega POD y Certificación](../assets/images/webapp-wireframes/webapp-wireframe-cierre-entrega-pod-certificacion.png)
+![Wireframe de selección de productos para S1](../assets/images/chapter-4/webapp/wireframes/s1-coordinacion-comercial-ventas-internas/wireframe-crear-pedido-productos.jpg)
 
-El cierre del pedido no se resolvió como un formulario aislado, sino como una interfaz de certificación de cumplimiento. Este wireframe hace visibles los campos de evidencia, conformidad y validación final, porque el objetivo es reducir reclamos posteriores y sostener un historial trazable. Su diseño responde al problema recurrente de cierres débiles, pruebas dispersas y documentación poco defendible.
+> *Nota*. La selección de productos ayuda a revisar cantidades, disponibilidad y composición del pedido. Elaboración propia.
 
-#### Inventory Detail
+*Figura. Wireframe de resumen de pedido para S1*
 
-![Wireframe Inventory Detail](../assets/images/webapp-wireframes/webapp-wireframe-inventory-detail-premium-artisan-organic-milk.png)
+![Wireframe de resumen de pedido para S1](../assets/images/chapter-4/webapp/wireframes/s1-coordinacion-comercial-ventas-internas/wireframe-crear-pedido-resumen.jpg)
 
-El detalle de inventario baja al nivel de un SKU concreto para mostrar información que no cabe en la vista agregada: estado térmico, disponibilidad, riesgo y contexto del producto. Esta profundidad es importante porque muchos problemas de cadena de frío no se detectan en una vista general, sino al revisar condiciones específicas de un ítem. Por ello, el wireframe fue planteado como apoyo a decisiones finas y no solo como ficha informativa.
+> *Nota*. El resumen permite confirmar información antes de registrar el pedido. Elaboración propia.
 
-#### Order Detail & Traceability
+*Figura. Wireframe de detalle de pedido para S1*
 
-![Wireframe Order Detail & Traceability](../assets/images/webapp-wireframes/webapp-wireframe-order-detail-traceability.png)
+![Wireframe de detalle de pedido para S1](../assets/images/chapter-4/webapp/wireframes/s1-coordinacion-comercial-ventas-internas/wireframe-detalle-pedido.jpg)
 
-El detalle del pedido organiza la historia completa de una orden en una sola superficie: datos comerciales, estados, eventos logísticos y evidencia asociada. Esta pantalla resulta crítica para reclamos, auditoría interna y seguimiento operativo porque traduce la promesa de trazabilidad en una vista concreta. Su función es evitar que la explicación de “qué pasó con el pedido” vuelva a depender de mensajes sueltos o reconstrucciones manuales.
+> *Nota*. El detalle sostiene seguimiento comercial y lectura del historial de la orden. Elaboración propia.
+
+*Figura. Wireframe de reportes para S1*
+
+![Wireframe de reportes para S1](../assets/images/chapter-4/webapp/wireframes/s1-coordinacion-comercial-ventas-internas/wireframe-reportes.jpg)
+
+> *Nota*. Los reportes comerciales consolidan información para revisar actividad, pedidos y desempeño del flujo. Elaboración propia.
+
+#### S2: Jefatura logística / coordinación operativa
+
+El recorrido S2 cubre el trabajo de Roberto desde el ingreso a la plataforma hasta la lectura de reportes operativos. La secuencia prioriza inventario, lotes, despacho, registro de salida, confirmación y control de incidencias.
+
+*Figura. Wireframe de login para S2*
+
+![Wireframe de login para S2](../assets/images/chapter-4/webapp/wireframes/s2-jefatura-logistica-coordinacion-operativa/wireframe-login.jpg)
+
+> *Nota*. El acceso mantiene la separación por rol antes de entrar a módulos operativos. Elaboración propia.
+
+*Figura. Wireframe de dashboard logístico para S2*
+
+![Wireframe de dashboard logístico para S2](../assets/images/chapter-4/webapp/wireframes/s2-jefatura-logistica-coordinacion-operativa/wireframe-dashboard-logistica.jpg)
+
+> *Nota*. El dashboard logístico prioriza pedidos en riesgo, inventario, preparación y despacho. Elaboración propia.
+
+*Figura. Wireframe de inventario general para S2*
+
+![Wireframe de inventario general para S2](../assets/images/chapter-4/webapp/wireframes/s2-jefatura-logistica-coordinacion-operativa/wireframe-inventario-vista-general.jpg)
+
+> *Nota*. La vista general muestra disponibilidad, clasificación y señales operativas de inventario. Elaboración propia.
+
+*Figura. Wireframe de inventario por lote para S2*
+
+![Wireframe de inventario por lote para S2](../assets/images/chapter-4/webapp/wireframes/s2-jefatura-logistica-coordinacion-operativa/wireframe-inventario-por-lote.jpg)
+
+> *Nota*. La lectura por lote facilita priorización FEFO y revisión de riesgo. Elaboración propia.
+
+*Figura. Wireframe de detalle de lote para S2*
+
+![Wireframe de detalle de lote para S2](../assets/images/chapter-4/webapp/wireframes/s2-jefatura-logistica-coordinacion-operativa/wireframe-detalle-lote.jpg)
+
+> *Nota*. El detalle permite revisar condiciones específicas del lote antes de tomar acción operativa. Elaboración propia.
+
+*Figura. Wireframe de creación o revisión operativa de pedido para S2*
+
+![Wireframe de creación o revisión operativa de pedido para S2](../assets/images/chapter-4/webapp/wireframes/s2-jefatura-logistica-coordinacion-operativa/wireframe-crear-pedido-v2.jpg)
+
+> *Nota*. Esta pantalla conecta información de pedido con revisión operativa y disponibilidad. Elaboración propia.
+
+*Figura. Wireframe de despacho con pedidos listos para salir*
+
+![Wireframe de despacho con pedidos listos para salir](../assets/images/chapter-4/webapp/wireframes/s2-jefatura-logistica-coordinacion-operativa/wireframe-despacho-listos-para-salir.jpg)
+
+> *Nota*. El tablero de despacho agrupa pedidos listos y facilita priorizar salida. Elaboración propia.
+
+*Figura. Wireframe de registro de salida para S2*
+
+![Wireframe de registro de salida para S2](../assets/images/chapter-4/webapp/wireframes/s2-jefatura-logistica-coordinacion-operativa/wireframe-despacho-modal-registro.jpg)
+
+> *Nota*. El registro recoge datos necesarios para dejar constancia del despacho. Elaboración propia.
+
+*Figura. Wireframe de notificación de despacho para S2*
+
+![Wireframe de notificación de despacho para S2](../assets/images/chapter-4/webapp/wireframes/s2-jefatura-logistica-coordinacion-operativa/wireframe-despacho-notificacion.jpg)
+
+> *Nota*. La notificación confirma que el cambio de estado fue comunicado dentro del flujo. Elaboración propia.
+
+*Figura. Wireframe de confirmación de despacho para S2*
+
+![Wireframe de confirmación de despacho para S2](../assets/images/chapter-4/webapp/wireframes/s2-jefatura-logistica-coordinacion-operativa/wireframe-despacho-confirmacion.jpg)
+
+> *Nota*. La confirmación formaliza la salida y reduce dependencia de coordinación verbal. Elaboración propia.
+
+*Figura. Wireframe de reportes operativos para S2*
+
+![Wireframe de reportes operativos para S2](../assets/images/chapter-4/webapp/wireframes/s2-jefatura-logistica-coordinacion-operativa/wireframe-reportes-operativos-v2.jpg)
+
+> *Nota*. Los reportes operativos consolidan actividad, inventario, despacho e incidencias. Elaboración propia.
 
 ### 4.4.2. Web Applications Wireflow Diagrams.
 
-Un wireflow conecta pantallas, decisiones y estados de UI según un user goal concreto. En esta sección, los wireflows documentan cambios de pantalla, alternativas y restricciones de rol para las tres superficies principales: S1 comercial, S2 logística y S3 portal B2B.
+Los wireflows actualizados conectan las pantallas principales de S1 y S2 con sus recorridos de trabajo. S3 permanece documentado como flujo comprador planificado, sin afirmar pantallas completas de portal en TB1.
 
-#### Wireflow consolidado — S1, S2 y S3
+**Wireflow S1 en Lucidchart:** [S1: Coordinación comercial / ventas internas](https://lucid.app/lucidchart/4aeb3b33-353d-4b0c-b978-5bed19d4fdca/edit?viewport_loc=-11%2C-11%2C3028%2C1465%2C0_0&invitationId=inv_c95b5cdc-7bd7-46ad-aa88-0fa213649397)
 
-El diagrama siguiente muestra la continuidad de pantallas por perfil de usuario desde el acceso inicial hasta el cierre del objetivo principal de cada segmento.
+**Wireflow S2 en Lucidchart:** [S2: Jefatura logística / coordinación operativa](https://lucid.app/lucidchart/6573c628-5545-4360-8fb2-3bb444c7e648/edit?viewport_loc=-298%2C-263%2C3315%2C1788%2C0_0&invitationId=inv_5e548793-b34d-43ed-b8fc-0f9dd7cf81a5)
 
-```mermaid
-flowchart LR
-    A["Start: user opens Nexa Webapp"] --> B["Login screen: choose demo profile"]
-    B --> C{"Profile selected?"}
-    C -- "Invalid credentials" --> X["Show login error and stay on login"]
-    C -- "Valeria - Coordinación comercial" --> S1D["S1 Dashboard comercial"]
-    S1D --> S1Clients["Clientes: review client list"]
-    S1Clients --> S1Detail["Client detail drawer: RUC, contact, address, condition"]
-    S1Detail --> S1Order["Create assisted order"]
-    S1D -. "commercial role guard hides inventory and dispatch" .-> S1Blocked["Blocked: inventory or dispatch direct URL redirects"]
-    C -- "Roberto - Jefatura logística" --> S2D["S2 Dashboard logística"]
-    S2D --> S2Inventory["Inventory overview: stock and warehouses"]
-    S2Inventory --> S2Lots["Lot list and FEFO indicators"]
-    S2Lots --> S2Detail["Lot detail drawer: expiry, stock, warehouse"]
-    S2D -. "logistics role has extended access" .-> S2Access["Can access clients, orders, inventory, dispatch, reports"]
-    C -- "Elena - Comprador B2B" --> S3Home["Portal home"]
-    S3Home --> S3Catalog["Portal catalog"]
-    S3Catalog --> S3Cart["Cart / order submission"]
-    S3Cart --> S3Orders["Portal orders"]
-```
+| User goal | Segmento / User Persona | Tarea relacionada | Evidencia de wireflow | Explicación del recorrido |
+|---|---|---|---|---|
+| Registrar o asistir un pedido B2B validando cliente, condición comercial, disponibilidad de productos y seguimiento posterior. | S1: Coordinación comercial / ventas internas — Valeria Sánchez | Login → Dashboard comercial → Clientes → Detalle de cliente → Pedido asistido → Selección de productos → Resumen → Confirmación → Detalle de pedido → Reportes. | Lucidchart S1. | El recorrido conecta la revisión comercial del cliente con la captura asistida del pedido y su seguimiento posterior, evitando que la coordinación dependa de mensajes dispersos. |
+| Supervisar inventario, lotes, riesgos FEFO, despacho, cierre operativo y reportes. | S2: Jefatura logística / coordinación operativa — Roberto García | Login → Dashboard logístico → Inventario general → Inventario por lote → Detalle de lote → Revisión operativa de pedido → Despacho → Registro de salida → Notificación → Confirmación → Reportes operativos. | Lucidchart S2 y wireflow S2 documentado como figura. | El recorrido conecta lectura de inventario, priorización FEFO, despacho y cierre simulado para sostener trazabilidad operativa en Sprint 2. |
+| Consultar catálogo, seleccionar productos y revisar pedidos desde una experiencia de portal B2B. | S3: Comprador B2B / cliente comercial — Elena Litano | Portal comprador → Catálogo → Detalle de producto → Carrito / pedido → Confirmación de pedido → Órdenes / seguimiento. | Flujo planificado. | El recorrido representa el portal comprador como alcance de planificación TB1. No se declara cobertura completa de mockups S3 en esta entrega. |
 
-Elaboración propia. Este wireflow es de nivel pantalla. Separa los roles internos Ops del comprador del portal, incluye error de login y estados de protección por rol, y mantiene S1/S2 alineados al tablero FigJam de recorrido operativo. S3 se incorpora como flujo comprador de planificación para la superficie portal.
+*Figura. Wireflow principal para S2: Jefatura logística / coordinación operativa*
 
-#### Tabla de wireflows por user goal
+![Wireflow S2 principal](../assets/images/chapter-4/webapp/wireflows/wireflow-s2-jefatura-logistica-coordinacion-operativa.png)
 
-| Wireflow | Persona | User goal | Evidencia visual |
-|---|---|---|---|
-| S1 Commercial Assisted Order | Valeria / Coordinación comercial | Crear y rastrear un pedido asistido validando condición del cliente y disponibilidad de producto | Mermaid en Markdown + mockups S1 seleccionados |
-| S2 Logistics Operations | Roberto / Jefatura logística | Monitorear stock y riesgo FEFO, coordinar despacho y cerrar POD mock | Mermaid en Markdown + mockups S2 seleccionados |
-| S3 B2B Buyer Portal | Elena / Comprador B2B | Explorar catálogo, enviar pedido y consultar estado | Mermaid en Markdown como flujo portal de planificación |
+> *Nota*. El wireflow muestra la continuidad visual entre dashboard logístico, inventario, lote, despacho, confirmación y reportes operativos. Elaboración propia.
 
-La evidencia visual se documenta en Markdown mediante notación `flowchart` y se mantiene en el tablero FigJam como artefacto colaborativo de diseño. El reporte incluye la estructura completa del flujo y mockups representativos; no replica todas las pantallas del tablero como galería.
+*Figura. Wireflow complementario para S2: Jefatura logística / coordinación operativa*
+
+![Wireflow S2 complementario](../assets/images/chapter-4/webapp/wireflows/wireflow-s2-jefatura-logistica-coordinacion-operativa-alt.png)
+
+> *Nota*. Esta vista complementa el recorrido S2 con una variante de lectura del flujo operativo disponible en los artefactos actualizados. Elaboración propia.
 
 ### 4.4.3. Web Applications Mock-ups.
 
 Los mockups representan pantallas seleccionadas de alta fidelidad para la dirección actual de la webapp. Se agrupan por segmento y user goal para mostrar evidencia visual sin convertir el capítulo en una galería extensa. El tablero completo contiene más pantallas; este reporte incluye solo vistas representativas que sostienen los recorridos S1 y S2, mientras que S3 permanece documentado como flujo portal de planificación en esta iteración.
 
-| Mockup group | Segment | User goal | Included screens | Purpose |
+| Grupo de mockups | Segmento | User goal | Pantallas incluidas | Propósito |
 |---|---|---|---|---|
-| S1 Commercial assisted order | Valeria / S1 | Crear y seguir un pedido asistido | Login, dashboard, cliente, pedido, detalle, reportes | Evidenciar captura comercial guiada, validaciones y trazabilidad |
-| S2 Logistics operations | Roberto / S2 | Controlar inventario, despacho y POD mock | Dashboard, inventario, lote, despacho, POD mock, reportes | Evidenciar monitoreo FEFO, operación logística y cierre simulado |
-| S3 Portal buyer flow | Elena / S3 | Comprar desde portal B2B | Flujo Mermaid de portal | Documentar alcance comprador sin inventar capturas no disponibles |
+| S1: Coordinación comercial / ventas internas | Valeria / S1 | Crear y seguir un pedido asistido | Login, dashboard, cliente, pedido, detalle, reportes | Evidenciar captura comercial guiada, validaciones y trazabilidad |
+| S2: Jefatura logística / coordinación operativa | Roberto / S2 | Controlar inventario, despacho y POD mock | Dashboard, inventario, lote, despacho, POD mock, reportes | Evidenciar monitoreo FEFO, operación logística y cierre simulado |
+| S3: Comprador B2B / cliente comercial | Elena / S3 | Comprar desde portal B2B | Flujo planificado | Documentar alcance comprador sin inventar capturas no disponibles |
 
-#### S1 — Commercial assisted order mockups
+#### S1: Coordinación comercial / ventas internas — mockups de pedido asistido
 
-![S1 Login Valeria selected](../assets/images/webapp-mockups-current/s1-01-login-valeria-selected.png)
+![S1 Login Valeria selected](../assets/images/chapter-4/webapp/mockups/s1-01-login-valeria-selected.png)
 
-![S1 Commercial dashboard](../assets/images/webapp-mockups-current/s1-02-dashboard-commercial.png)
+![S1 Dashboard coordinación comercial](../assets/images/chapter-4/webapp/mockups/s1-02-dashboard-commercial.png)
 
-![S1 Client detail drawer](../assets/images/webapp-mockups-current/s1-04-client-detail-drawer.png)
+![S1 Client detail drawer](../assets/images/chapter-4/webapp/mockups/s1-04-client-detail-drawer.png)
 
-![S1 Assisted order products step](../assets/images/webapp-mockups-current/s1-07-assisted-order-products-step.png)
+![S1 Assisted order products step](../assets/images/chapter-4/webapp/mockups/s1-07-assisted-order-products-step.png)
 
-![S1 Order detail created by Valeria](../assets/images/webapp-mockups-current/s1-10-order-detail-created-by-valeria.png)
+![S1 Order detail created by Valeria](../assets/images/chapter-4/webapp/mockups/s1-10-order-detail-created-by-valeria.png)
 
-![S1 Commercial reports](../assets/images/webapp-mockups-current/s1-12-commercial-reports.png)
+![S1 Reportes coordinación comercial](../assets/images/chapter-4/webapp/mockups/s1-12-commercial-reports.png)
 
-Elaboración propia. Este grupo muestra el recorrido comercial desde la selección de perfil hasta la evidencia de pedido y reportes. Las pantallas se eligieron porque cubren los puntos decisivos del user goal: acceso por rol, lectura de estado, revisión de cliente, armado de pedido, trazabilidad por creador y análisis comercial.
+> *Nota*. Este grupo muestra el recorrido comercial desde la selección de perfil hasta la evidencia de pedido y reportes. Las pantallas se eligieron porque cubren los puntos decisivos del user goal: acceso por rol, lectura de estado, revisión de cliente, armado de pedido, trazabilidad por creador y análisis comercial. Elaboración propia.
 
-#### S2 — Logistics operations mockups
+#### S2: Jefatura logística / coordinación operativa — mockups de operación logística
 
-![S2 Logistics dashboard](../assets/images/webapp-mockups-current/s2-02-dashboard-logistics.png)
+![S2 Dashboard jefatura logística](../assets/images/chapter-4/webapp/mockups/s2-02-dashboard-logistics.png)
 
-![S2 Inventory overview](../assets/images/webapp-mockups-current/s2-03-inventory-overview.png)
+![S2 Inventory overview](../assets/images/chapter-4/webapp/mockups/s2-03-inventory-overview.png)
 
-![S2 Lot detail drawer](../assets/images/webapp-mockups-current/s2-05-lot-detail-drawer.png)
+![S2 Lot detail drawer](../assets/images/chapter-4/webapp/mockups/s2-05-lot-detail-drawer.png)
 
-![S2 Dispatch board](../assets/images/webapp-mockups-current/s2-07-dispatch-board.png)
+![S2 Dispatch board](../assets/images/chapter-4/webapp/mockups/s2-07-dispatch-board.png)
 
-![S2 POD mock modal](../assets/images/webapp-mockups-current/s2-09-pod-mock-modal.png)
+![S2 POD mock modal](../assets/images/chapter-4/webapp/mockups/s2-09-pod-mock-modal.png)
 
-![S2 Operational reports](../assets/images/webapp-mockups-current/s2-12-operational-reports.png)
+![S2 Operational reports](../assets/images/chapter-4/webapp/mockups/s2-12-operational-reports.png)
 
-Elaboración propia. Este grupo resume el recorrido logístico desde monitoreo hasta cierre simulado de entrega. Las pantallas seleccionadas cubren dashboard, inventario, lote, despacho, POD mock y reportes operativos, que son las evidencias visuales más representativas del flujo S2.
+> *Nota*. Este grupo resume el recorrido logístico desde monitoreo hasta cierre simulado de entrega. Las pantallas seleccionadas cubren dashboard, inventario, lote, despacho, POD mock y reportes operativos, que son las evidencias visuales más representativas del flujo S2. Elaboración propia.
 
-#### S3 — Portal buyer planning flow
+#### S3: Comprador B2B / cliente comercial — flujo planificado de portal
 
-El portal B2B se documenta como flujo comprador de planificación. En esta entrega no se agregan capturas S3 porque el ZIP de mockups recibido contiene material S1 y S2, no pantallas portal. Para evitar rutas inventadas, la evidencia visual del portal queda representada por el user flow Mermaid de Elena y por su separación explícita respecto a los roles internos Ops.
+El portal B2B se documenta como flujo comprador de planificación. En esta entrega no se agregan capturas S3 porque la evidencia visual disponible se concentra en S1 y S2. Para evitar rutas inventadas, el portal queda separado de los roles internos Ops y no se presenta como pantalla implementada.
 
 ### 4.4.4. Web Applications User Flow Diagrams.
 
 #### Criterios de resolución de flujo
 
-El diseño UX/UI de aplicaciones web se construye en cuatro niveles de resolución creciente. Cada nivel responde a una pregunta concreta sobre el recorrido del usuario y sirve de base para el siguiente. La secuencia es: User Goal → Task Flow → Wireflow → User Flow.
+Para mantener trazabilidad entre investigación, diseño e implementación, los recorridos de la webapp se documentan en cuatro niveles: User Goal, Task Flow, Wireflow y User Flow. La lectura se mantiene por segmento para no mezclar responsabilidades entre coordinación comercial, jefatura logística y comprador B2B.
 
 *Tabla: Niveles de resolución de flujo aplicados en Nexa*
 
-| Nivel | Propósito en el diseño | Evidencia en esta sección |
+| Nivel | Aplicación en Nexa | Evidencia en esta sección |
 |:---|:---|:---|
-| **User Goal** | Define qué objetivo concreto persigue cada persona antes de entrar al flujo. Responde a: ¿qué quiere lograr este usuario? | Objetivos de S1, S2 y S3 derivados del needfinding (sección 2.3.6) |
-| **Task Flow** | Lista las acciones que el usuario necesita ejecutar para alcanzar el objetivo. Responde a: ¿qué pasos tiene que dar? | Secuencia de pasos por segmento en la tabla siguiente |
-| **Wireflow** | Conecta las pantallas y estados de la interfaz recorridos durante la tarea. Responde a: ¿qué pantallas aparecen en ese recorrido? | Mermaid wireflow consolidado en 4.4.2 |
-| **User Flow** | Agrega decisiones, caminos alternativos y estados finales al recorrido. Responde a: ¿qué ocurre si algo sale distinto? | Diagramas Mermaid por segmento en esta sección |
+| **User Goal** | Objetivo operativo de cada persona dentro del flujo B2B refrigerado | Objetivos de S1, S2 y S3 derivados del needfinding |
+| **Task Flow** | Secuencia de acciones necesarias para completar el pedido, despacho o seguimiento | Tabla por segmento |
+| **Wireflow** | Continuidad visual entre pantallas de la webapp | Lucidchart S1, Lucidchart S2 y figura de wireflow S2 |
+| **User Flow** | Decisiones y rutas alternativas del recorrido | Diagramas visuales Lucidchart para S1/S2 y alcance planificado de S3 |
 
 *Tabla: User Goals, Task Flows y referencias de flujo por segmento*
 
-| Segmento | Persona | User Goal | Task Flow Summary | Wireflow | User Flow |
+| Segmento | Persona | User Goal | Resumen de task flow | Wireflow | User Flow |
 |:---|:---|:---|:---|:---|:---|
-| S1 — Coordinación comercial | Valeria Sánchez | Registrar o asistir un pedido B2B validando cliente, condición comercial, disponibilidad de productos y seguimiento posterior | Login → dashboard comercial → clientes → detalle de cliente → pedido asistido → selección de productos → entrega → confirmación → seguimiento | S1 Commercial Assisted Order (4.4.2) | S1 Pedido asistido — más abajo en esta sección |
-| S2 — Jefatura logística | Roberto García | Supervisar inventario, lotes, riesgos FEFO, despacho, cierre operativo y reportes | Login → dashboard logística → inventario → detalle de lote → revisión FEFO/stock → despacho → confirmación de cierre → reportes | S2 Logistics Operations (4.4.2) | S2 Inventario, despacho y cierre — más abajo en esta sección |
-| S3 — Comprador B2B | Elena Litano | Consultar catálogo, seleccionar productos y revisar pedidos desde una experiencia de portal B2B | Login portal → catálogo → selección de productos → carrito/pedido → confirmación → seguimiento | S3 B2B Buyer Portal (4.4.2) | S3 Portal de compra — más abajo en esta sección *(flujo de planificación, primera iteración)* |
+| S1: Coordinación comercial / ventas internas | Valeria Sánchez | Registrar o asistir un pedido B2B validando cliente, condición comercial, disponibilidad de productos y seguimiento posterior | Login — perfil Valeria → Dashboard comercial → Clientes → Detalle de cliente → Validación de condición comercial → Pedido asistido → Selección de productos → Validación de disponibilidad → Confirmación del pedido → Detalle y seguimiento del pedido → Reportes comerciales | [Wireflow S1 en Lucidchart](https://lucid.app/lucidchart/4aeb3b33-353d-4b0c-b978-5bed19d4fdca/edit?viewport_loc=-11%2C-11%2C3028%2C1465%2C0_0&invitationId=inv_c95b5cdc-7bd7-46ad-aa88-0fa213649397) | Userflow S1 en Lucidchart |
+| S2: Jefatura logística / coordinación operativa | Roberto García | Supervisar inventario, lotes, riesgos FEFO, despacho, cierre operativo y reportes | Login — perfil Roberto → Dashboard logístico → Inventario → Detalle de lote → Revisión FEFO y stock → Priorización operativa → Tablero de despacho → Confirmación de despacho → POD mock → Validación de evidencia → Reportes operativos | [Wireflow S2 en Lucidchart](https://lucid.app/lucidchart/6573c628-5545-4360-8fb2-3bb444c7e648/edit?viewport_loc=-298%2C-263%2C3315%2C1788%2C0_0&invitationId=inv_5e548793-b34d-43ed-b8fc-0f9dd7cf81a5) | Userflow S2 en Lucidchart |
+| S3: Comprador B2B / cliente comercial | Elena Litano | Consultar catálogo, seleccionar productos y revisar pedidos desde una experiencia de portal B2B | Login — perfil Elena → Portal comprador → Catálogo → Detalle de producto → Carrito / pedido → Confirmación de pedido → Órdenes / seguimiento | Flujo comprador planificado | Flujo comprador documentado como alcance de planificación TB1 |
 
-> *Nota:* Los user goals provienen de la sección 2.3.6. Los task flows resumen la secuencia de acciones sin entrar en decisiones específicas, que se detallan en los user flows. S3 se documenta como flujo de planificación en la primera iteración; los flujos S1 y S2 constituyen la evidencia de validación principal. Elaboración propia.
+> *Nota:* Los user goals provienen de la síntesis complementaria de Needfinding. Los task flows resumen la secuencia de acciones sin entrar en decisiones específicas, que se detallan en los user flows. S3 se documenta como flujo de planificación en la primera iteración; los flujos S1 y S2 constituyen la evidencia de validación principal. Elaboración propia.
 
 ---
 
-Un user flow se enfoca en las decisiones y caminos que sigue una persona para completar un user goal. Los diagramas siguientes usan notación `flowchart`, declaran persona y meta, e incluyen happy path y rutas alternativas.
+Para TB1, la evidencia visual formal de user flows se presenta mediante Lucidchart para S1 y S2. S3 se conserva como flujo comprador planificado, sin declarar mockups completos ni evidencia final de implementación de portal.
 
 #### User Flow S1 — Coordinación comercial: pedido asistido
 
-**User Goal:** As Valeria, a commercial coordinator, the goal is to create and track an assisted B2B order while validating client condition and product availability.
+El user flow de S1 representa el recorrido de Valeria, responsable de coordinación comercial / ventas internas, desde el acceso al sistema hasta la creación y seguimiento de un pedido asistido. El flujo incluye validaciones de condición comercial, disponibilidad de productos y rutas alternativas para restricciones de cliente o cantidad insuficiente.
 
-**Persona:** Valeria / Coordinación comercial. Accede a Dashboard, Clientes, Catálogo, Pedidos y Reportes. La ruta guard bloquea el acceso directo a Inventario y Despacho.
+[Ver userflow S1 en Lucidchart](https://lucid.app/lucidchart/8f6d6af2-f229-47f8-ba02-86b27cdc6fed/edit?invitationId=inv_09391266-7e11-4614-8edf-12cf979cdabf)
 
-```mermaid
-flowchart LR
-    A["Start"] --> B["Login — choose Valeria profile"]
-    B --> C["S1 Commercial dashboard"]
-    C --> D["Open clients screen"]
-    D --> E["Review client list"]
-    E --> F["Open client detail drawer<br/>RUC, contact, address, condition"]
-    F --> G["Create assisted order"]
-    G --> H["Select client"]
-    H --> I{"Client condition valid?"}
-    I -- "No" --> J["Show restriction or credit warning"]
-    J --> H
-    I -- "Yes" --> K["Select products from catalog"]
-    K --> L{"Quantity available?"}
-    L -- "No" --> M["Adjust quantity"]
-    M --> K
-    L -- "Yes" --> N["Enter delivery information"]
-    N --> O["Confirm order"]
-    O --> P["Order detail — createdBy Valeria"]
-    P --> Q["Orders follow-up"]
-    Q --> R["Commercial reports"]
-    R --> S["End: order traceable through Fake API"]
-    C -. "Commercial role guard" .-> T["Inventory or dispatch direct URL redirects"]
-```
+![S1 User flow coordinación comercial](../assets/images/chapter-4/webapp/user-flows/s1-commercial-userflow-lucid.png)
 
-Elaboración propia. El happy path avanza desde cliente hasta pedido trazable. Las alternativas bloquean avance cuando la condición comercial o cantidad disponible no soportan el pedido.
+Figura. User flow visual para S1: Coordinación comercial / ventas internas.
 
 #### User Flow S2 — Jefatura logística: inventario, despacho y cierre
 
-**User Goal:** As Roberto, a logistics lead, the goal is to monitor stock and FEFO risks, coordinate dispatch, close a POD mock confirmation and review operational reports.
+El user flow de S2 representa el recorrido de Roberto, responsable de jefatura logística / coordinación operativa, desde la revisión de inventario y lotes con criterio FEFO hasta la gestión de despacho y cierre con POD simulado. El flujo incluye rutas alternativas para riesgo operativo, despacho no listo y evidencia incompleta.
 
-**Persona:** Roberto / Jefatura logística. Tiene acceso extendido: Dashboard, Inventario, Despacho, Pedidos, Clientes y Reportes.
+[Ver userflow S2 en Lucidchart](https://lucid.app/lucidchart/b91c8e98-a38b-456a-92e5-f942be7e8439/edit?invitationId=inv_5c030713-67e5-4e84-90bf-661b26cef528)
 
-```mermaid
-flowchart LR
-    A["Start"] --> B["Login — choose Roberto profile"]
-    B --> C["S2 Logistics dashboard"]
-    C --> D["Open inventory overview<br/>stock and warehouses"]
-    D --> E["Review lot list and FEFO indicators"]
-    E --> F["Open lot detail drawer<br/>expiry, stock, warehouse"]
-    F --> G{"Risk detected?"}
-    G -- "Low stock or expiring lot" --> H["Prioritize operational review"]
-    G -- "No critical risk" --> I["Continue monitoring"]
-    H --> J["Open dispatch board"]
-    I --> J
-    J --> K{"Dispatch ready?"}
-    K -- "No user action" --> L["Dispatch remains ready or waiting"]
-    K -- "Yes" --> M["Mark in route"]
-    M --> N["Open POD mock confirmation modal"]
-    N --> O{"POD checks complete?"}
-    O -- "No" --> P["Show incomplete evidence warning"]
-    P --> N
-    O -- "Yes" --> Q["Close delivery"]
-    Q --> R["Operational reports<br/>FEFO, stock, dispatch"]
-    R --> S["Optional: create or review assisted order"]
-    S --> T["End: operational cycle persisted in Fake API"]
-    C -. "Logistics role has extended access" .-> U["Can access clients, orders, inventory, dispatch, reports"]
-```
+![S2 User flow jefatura logística](../assets/images/chapter-4/webapp/user-flows/s2-logistics-userflow-lucid.png)
 
-Elaboración propia. El happy path recorre inventario, riesgo FEFO, despacho, POD mock y reportes. Las alternativas mantienen visible el riesgo operativo y la advertencia de evidencia incompleta sin afirmar integración logística real.
+Figura. User flow visual para S2: Jefatura logística / coordinación operativa.
 
 #### User Flow S3 — Comprador B2B: portal de compra
 
-**User Goal:** As Elena, a B2B buyer, the goal is to browse the portal catalog, submit an order and review order status from the buyer-facing portal.
-
-**Persona:** Elena / Comprador B2B. Accede a Portal home, catálogo, carrito y órdenes. El portal queda separado de las rutas internas Ops.
+Para S3: Comprador B2B / cliente comercial, el flujo se mantiene como alcance parcial de TB1. Se documenta a nivel de planificación para conectar catálogo, pedido y seguimiento, sin afirmar pantallas webapp implementadas ni mockups finales completos en esta entrega.
 
 ```mermaid
 flowchart LR
-    A["Start"] --> B["Login — choose Elena profile"]
-    B --> C["Portal home"]
-    C --> D["Open portal catalog"]
-    D --> E["Review products"]
-    E --> F["Add products to cart"]
-    F --> G{"Order can be submitted?"}
-    G -- "No" --> H["Show cart or validation message"]
-    H --> D
-    G -- "Yes" --> I["Submit portal order"]
-    I --> J["Order success"]
-    J --> K["Portal orders tracking"]
-    K --> L["End: buyer order registered in Fake API"]
+    A["S3: Comprador B2B / cliente comercial"] --> B["Consulta catálogo"]
+    B --> C["Revisa disponibilidad y condiciones"]
+    C --> D["Arma pedido"]
+    D --> E["Envía solicitud"]
+    E --> F["Recibe confirmación"]
+    F --> G["Consulta seguimiento"]
 ```
 
-Elaboración propia. This flow is documented as a planning-level buyer-facing flow for the portal surface. The internal S1/S2 flows remain the main validation focus of this iteration.
+Figura. User flow planificado para S3: Comprador B2B / cliente comercial. Elaboración propia.
 
 #### Tabla de consistencia: User Goals, wireflows y user flows
 
 | User goal | Persona | Wireflow | User flow | Evidencia visual | Estado TB1 |
 |:---|:---|:---|:---|:---|:---|
-| Registrar pedido asistido validando cliente, condición comercial y disponibilidad de producto | Valeria (S1) | S1 Commercial Assisted Order | S1 Pedido asistido (4.4.4) | Mermaid + mockups S1 seleccionados | Documentado e implementado en webapp |
-| Supervisar inventario FEFO, coordinar despacho y cerrar entrega con POD mock | Roberto (S2) | S2 Logistics Operations | S2 Inventario, despacho y cierre (4.4.4) | Mermaid + mockups S2 seleccionados | Documentado e implementado en webapp |
-| Explorar catálogo, enviar pedido y consultar estado desde portal B2B | Elena (S3) | S3 B2B Buyer Portal | S3 Portal de compra (4.4.4) | Mermaid de planificación portal | Documentado como flujo de planificación para TB1 |
+| Registrar pedido asistido validando cliente, condición comercial y disponibilidad de producto | Valeria (S1) | [Wireflow S1 en Lucidchart](https://lucid.app/lucidchart/4aeb3b33-353d-4b0c-b978-5bed19d4fdca/edit?viewport_loc=-11%2C-11%2C3028%2C1465%2C0_0&invitationId=inv_c95b5cdc-7bd7-46ad-aa88-0fa213649397) | Userflow S1 en Lucidchart | Lucidchart + mockups S1 seleccionados | Documentado e implementado en webapp |
+| Supervisar inventario FEFO, coordinar despacho y cerrar entrega con POD mock | Roberto (S2) | [Wireflow S2 en Lucidchart](https://lucid.app/lucidchart/6573c628-5545-4360-8fb2-3bb444c7e648/edit?viewport_loc=-298%2C-263%2C3315%2C1788%2C0_0&invitationId=inv_5e548793-b34d-43ed-b8fc-0f9dd7cf81a5) + figura de wireflow S2 | Userflow S2 en Lucidchart | Lucidchart + mockups S2 seleccionados | Documentado e implementado en webapp |
+| Explorar catálogo, enviar pedido y consultar estado desde portal B2B | Elena (S3) | Flujo comprador planificado | Flujo comprador planificado | Planificación de portal, sin pantallas implementadas | Documentado como alcance parcial de TB1 |
 
-> *Nota:* Los user goals provienen de la sección 2.3.6. S1 y S2 están validados con mockups y evidencia de webapp; S3 se documenta como flujo de planificación y no se afirma implementación completa del portal en TB1. Elaboración propia.
+> *Nota:* Los user goals provienen de la síntesis complementaria de Needfinding. S1 y S2 están validados con mockups y evidencia de webapp; S3 se documenta como flujo de planificación y no se afirma implementación completa del portal en TB1. Elaboración propia.

@@ -1,21 +1,11 @@
 # Conclusiones
 
-<p align="justify">
 AV1 dejó una línea base histórica para Nexa: investigación inicial, definición del problema, segmentos objetivo, landing page pública, backlog documentado, primeros artefactos de diseño y una estructura Docs-as-Code capaz de sostener la evolución del informe. Ese punto de partida permitió que la propuesta dejara de ser una idea aislada y se organizara como una solución B2B/SaaS para coordinar pedidos, inventario y seguimiento en la distribución de productos refrigerados.
-</p>
 
-<p align="justify">
 TB1 consolida el avance actual del proyecto en Sprint 2. La entrega se centra en la Web Application como incremento principal, con evidencia frontend, flujos por rol, pantallas representativas, rutas documentadas y soporte simulado para revisar el comportamiento de la experiencia sin afirmar todavía servicios productivos. Bajo este alcance, la landing page permanece como antecedente y punto de entrada público, mientras que la webapp concentra la evidencia más relevante de la iteración.
-</p>
 
-<p align="justify">
 El foco funcional de TB1 está en el circuito interno entre S1 y S2: coordinación comercial / ventas internas y jefatura logística / coordinación operativa. Los flujos priorizados muestran cómo el pedido puede capturarse, revisarse, relacionarse con disponibilidad, pasar a operación y sostener seguimiento interno con menor fragmentación. Esta decisión mantiene coherencia con los dolores más críticos observados en la investigación: doble digitación, validaciones dispersas, baja visibilidad de stock y coordinación manual entre ventas y logística.
-</p>
 
-<p align="justify">
 S3 se mantiene como segmento objetivo válido a partir de evidencia exploratoria y análisis de requisitos. En TB1, su cobertura visual se conserva como alcance parcial porque Sprint 2 prioriza el circuito comercial-logístico interno entre S1 y S2. La experiencia del comprador B2B / cliente comercial permanece representada a nivel de requisitos y flujos, con ampliación prevista para el siguiente hito.
-</p>
 
-<p align="justify">
 La continuidad hacia TB2 debe concentrarse en validar la experiencia con usuarios, preparar el video del producto, madurar la RESTful API interna y su documentación formal, fortalecer la integración de servicios, y ampliar la cobertura UI de S3. La conclusión central de TB1 es que Nexa ya cuenta con una dirección de webapp más clara y con evidencia de Sprint 2 mejor delimitada, sin confundir el soporte simulado de la entrega con una implementación productiva de backend, base de datos o servicios finales.
-</p>
