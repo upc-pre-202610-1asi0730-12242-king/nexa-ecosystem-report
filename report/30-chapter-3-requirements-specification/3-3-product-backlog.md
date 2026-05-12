@@ -2,7 +2,7 @@
 
 El Product Backlog de Nexa organiza las User Stories definidas en la sección 3.1 según valor de negocio, prioridad de entrega y dependencia funcional. La priorización inicia con los flujos internos para coordinación comercial y jefatura logística, continúa con el portal B2B y el sitio público, y deja para menor prioridad las capacidades administrativas, de persistencia real o de evolución posterior.
 
-El Product Backlog se ordena por valor de negocio y severidad del problema detectado, no por orden técnico de construcción. Las historias de autenticación, acceso y administración se consideran habilitadoras de plataforma; por ello se ubican después de los flujos funcionales principales de pedidos, visibilidad comercial, inventario, despacho y seguimiento.
+El Product Backlog se ordena por valor de negocio y severidad del problema detectado, no por orden técnico de construcción. Las historias de autenticación, acceso y administración se consideran habilitadoras de plataforma; por ello se ubican después de los flujos funcionales principales de pedidos, visibilidad comercial, inventario, despacho y seguimiento. El mayor valor funcional se concentra en la captura de pedidos (US39–US44), la visibilidad comercial y logística (US51–US58, US45–US50), el despacho y cierre (US62–US66, US68), y el seguimiento de estado (US67–US69, US76). Las historias del portal B2B (US25–US38) y del sitio público (US01–US18) continúan en prioridad decreciente, seguidas de autenticación y administración (US19, US21–US24, US72–US74) y, finalmente, capacidades de soporte, trazabilidad avanzada y alcance futuro.
 
 La estimación utiliza la escala de **1, 2, 3, 5 y 8 Story Points**. **1 SP** representa contenido muy pequeño o información estática simple; **2 SP**, historias simples de baja interacción; **3 SP**, interacciones estándar o reglas de negocio simples; **5 SP**, flujos de varios pasos, validaciones o visibilidad entre áreas; y **8 SP**, historias complejas con trazabilidad, sincronización, continuidad, evidencia, FEFO o dependencia operativa fuerte.
 
@@ -96,8 +96,11 @@ Total: 78 User Stories.
 El Product Backlog de Nexa se gestiona en Jira como herramienta de seguimiento del proyecto. La vista permite observar las historias de usuario priorizadas por valor de negocio, su estado, responsable, épica asociada y estimación en Story Points. Esta evidencia complementa la tabla redactada en el reporte, donde se mantiene la descripción formal de cada User Story y su estimación.
 
 ![Product Backlog en Jira](../assets/images/chapter-3/jira/product-backlog-jira-tb1.png)
-> *Nota:* La evidencia visual de Jira respalda la existencia del Product Backlog en la herramienta de gestión; la tabla principal de la sección 3.3 conserva la especificación textual exigida para las User Stories, su descripción y sus Story Points. Elaboración propia.
 
 **URL del Product Backlog:** [Jira Backlog — Proyecto Nexa](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog)
 
 La captura muestra el backlog general del proyecto organizado en Jira. La priorización no se basa únicamente en el orden de ejecución por sprint, sino en la relevancia de cada historia para el modelo de negocio. Por ello, las historias asociadas a pedidos, disponibilidad, coordinación comercial-logística y seguimiento operativo se mantienen como núcleo funcional del producto, mientras que las historias del Landing Page se vinculan al Sprint 1 por corresponder al primer entregable visible del proyecto.
+
+> *Nota:* La evidencia visual de Jira respalda la existencia del Product Backlog en la herramienta de gestión; la tabla principal de la sección 3.3 conserva la especificación textual exigida para las User Stories, su descripción y sus Story Points. Elaboración propia.
+
+> *Nota*: La estimación utiliza la escala de Story Points solicitada para el curso. El orden prioriza valor de negocio, entregabilidad y dependencia funcional.

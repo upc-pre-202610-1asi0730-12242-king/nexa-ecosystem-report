@@ -37,4 +37,4 @@ La selección de términos se alinea con los tres segmentos del producto: S1: Co
 | **Almacén** | Espacio físico donde se conservan y organizan los productos refrigerados antes de su preparación y despacho. |
 | **Incidencia** | Evento inesperado registrado durante la preparación o entrega de un pedido, como diferencias de cantidad, retraso o problema de recepción. |
 
-> *Nota:* Este lenguaje ubicuo debe usarse de forma consistente en entrevistas, análisis, historias de usuario, diagramas y diseño de la solución. Elaboración propia.
+Este lenguaje ubicuo debe usarse de forma consistente en entrevistas, análisis, historias de usuario, diagramas y diseño de la solución. Elaboración propia.

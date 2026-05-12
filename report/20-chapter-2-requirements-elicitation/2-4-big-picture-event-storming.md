@@ -9,13 +9,13 @@ El EventStorming se construyó como un ejercicio de síntesis del dominio a part
 ### ***2.4.1. Proceso de construcción del modelado***
 
 *Design-Level EventStorming — Step 1: Exploration*
-![DDD Step 1](../assets/images/ddd/step-01.png)
+![DDD Step 1](../assets/images/chapter-2/event-storming/ddd-step-1-event-storming.png)
 
 *Design-Level EventStorming — Step 2: Timeline*
-![DDD Step 2](../assets/images/ddd/step-02.png)
+![DDD Step 2](../assets/images/chapter-2/event-storming/ddd-step-2-event-storming.png)
 
 *Design-Level EventStorming — Step 3: Pain Points*
-![DDD Step 3](../assets/images/ddd/step-03.png)
+![DDD Step 3](../assets/images/chapter-2/event-storming/ddd-step-3-event-storming.png)
 
 *Proceso de construcción del modelado*
 
@@ -73,7 +73,7 @@ El EventStorming se construyó como un ejercicio de síntesis del dominio a part
 
 ### ***2.4.5. Comandos, políticas y read models del dominio***
 
-A partir de los eventos y los pain points identificados, el Big Picture permite explicitar los **comandos** (intenciones que disparan cambios de estado), las **políticas** (reacciones automáticas del dominio ante ciertos eventos) y los **read models** (vistas de solo lectura que los actores necesitan para decidir). Esta explicitación refuerza la lectura ingenieril del flujo sin introducir artefactos técnicos nuevos: se derivan únicamente de los eventos ya modelados.
+A partir de los eventos y los pain points identificados, el Big Picture permite explicitar los **comandos** (intenciones que disparan cambios de estado), las **políticas** (reacciones automáticas del dominio ante ciertos eventos) y los **read models** (vistas de solo lectura que los actores necesitan para decidir). Esta explicitación refuerza la lectura del flujo sin introducir artefactos técnicos nuevos: se derivan únicamente de los eventos ya modelados.
 
 | Comando (intención del actor) | Evento(s) que dispara | Política reactiva del dominio | Read Model que habilita la decisión |
 |---|---|---|---|
@@ -87,11 +87,11 @@ A partir de los eventos y los pain points identificados, el Big Picture permite 
 | `CerrarEntrega` (S2) | `EntregaCerradaConEvidencia` | Se cierra el pedido y se registra evidencia mínima de conformidad | `EvidenciaDeEntrega` |
 | `CancelarPedido` (S1 / S3) | `PedidoCancelado` | Liberación automática de stock reservado y ajuste de crédito | `EstadoDelPedidoParaCliente` |
 
-Los comandos expresan la intención del actor; los eventos confirman que el estado efectivamente cambió; las políticas capturan las reacciones automáticas que el dominio debe sostener (reservas, validaciones, notificaciones, FEFO, liberación de stock); y los read models son las vistas consolidadas que permiten al S1, al S2 y al S3 decidir con información consistente. Juntos, cierran la narrativa del Big Picture como una cadena de *intención → hecho → reacción → visibilidad*, no como pantallas aisladas.
+Los comandos expresan la intención del actor; los eventos confirman que el estado efectivamente cambió; las políticas capturan las reacciones automáticas que el dominio debe sostener (reservas, validaciones, notificaciones, FEFO, liberación de stock); y los read models son las vistas consolidadas que permiten al S1, al S2 y al S3 decidir con información consistente. Juntos, cierran la secuencia del Big Picture como una cadena de *intención → hecho → reacción → visibilidad*, no como pantallas aisladas.
 
 ### ***2.4.6. Evidencia de colaboración del modelado***
 
-  ![Reunión de modelado EventStorming del equipo KING](../assets/images/project-collaboration/team-collaboration-meeting.jpg)
+  ![Reunión de modelado EventStorming del equipo KING](../assets/images/front-matter/collaboration/team-collaboration-meeting.jpg)
   
 > *Nota:* *Figura: Sesión colaborativa del equipo KING durante la construcción del Big Picture EventStorming. Elaboración propia.*
 

@@ -22,7 +22,7 @@ El cuadro registra las acciones realizadas por el equipo en AV1 y TB1, organizad
   </thead>
   <tbody>
     <tr>
-      <td>5.c1. Trabaja en equipo para proporcionar liderazgo en forma conjunta</td>
+      <td>Trabaja en equipo para proporcionar liderazgo en forma conjunta</td>
       <td>
         <p><strong>Yucra Sandoval, Diego Sebastian</strong></p>
         <p>AV1: Coordinó la estructuración del backlog, la definición del Sprint 1 y la articulación entre arquitectura, diseño y evidencia documental. Consolidó correcciones transversales para mantener coherencia entre capítulos, Jira y el incremento visible del producto.</p>
@@ -46,7 +46,7 @@ El cuadro registra las acciones realizadas por el equipo en AV1 y TB1, organizad
       </td>
     </tr>
     <tr>
-      <td>5.c2. Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos</td>
+      <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos</td>
       <td>
         <p><strong>Yucra Sandoval, Diego Sebastian</strong></p>
         <p>AV1: Definió el scope del Sprint 1, estructuró el product backlog con épicas y criterios de priorización, y consolidó la coherencia entre capítulos del informe para sostener la propuesta del producto.</p>
