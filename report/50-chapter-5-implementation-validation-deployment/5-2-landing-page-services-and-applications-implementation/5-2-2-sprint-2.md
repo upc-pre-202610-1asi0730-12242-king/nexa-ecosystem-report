@@ -418,7 +418,7 @@ El Fake API se configuró con JSON Server sobre `db.json`. En desarrollo local s
 | Artefacto | Estado TB1 | URL / evidencia | Observación |
 |---|---|---|---|
 | Landing page `nexa-website` | Publicada como capa pública | [GitHub Pages – nexa-website](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) | Punto de entrada comercial |
-| Web application `nexa-webapp` | Publicada para revisión TB1 con hash routing | [GitHub Pages – nexa-webapp](https://nexa-2f1bb.web.app) | Frontend con datos simulados |
+| Web application `nexa-webapp` | Publicada para revisión TB1 con hash routing | [GitHub Pages – nexa-webapp](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-webapp/#/auth/login) | Frontend con datos simulados |
 | Fake API | Configurado como simulación de servicios | [Render – nexa-api](https://nexa-api.onrender.com) | JSON Server documentado para consumo público desde la webapp desplegada |
 | Reporte `nexa-report` | Fuente Docs-as-Code | repositorio GitHub y fuente Markdown | Evidencia documental |
 | Backend / plataforma | Planificado | [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) | No se declara desplegado |
