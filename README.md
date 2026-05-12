@@ -82,23 +82,22 @@ The latest generated PDF can also be downloaded from GitHub Actions:
 
 | Repository | Description |
 |---|---|
-| [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) | Landing page (HTML5 / CSS3 / JS) — [live](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) |
-| [nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) | Main web application (Vue.js) — [live](https://nexa-2f1bb.web.app) |
-| [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) | Backend service layer (ASP.NET Core, planned for next milestone) |
+| [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) | Landing page (HTML5 / CSS3 / JS) |
+| [nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) | Main web application (Vue.js) |
+| [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) | Planned backend service layer (future milestone) |
 
 ---
 
 ## Branching strategy
 
-For TB1, observable delivery is concentrated in `main` and Conventional Commits. GitFlow remains documented as a working convention for the next delivery:
+This repository follows GitFlow:
 
 | Branch | Purpose |
 |---|---|
-| `main` | Stable deliverable version |
-| `develop` | Integration branch convention |
-| `feature/*` | Work by feature or section |
-| `release/*` | Delivery closing convention |
-| `hotfix/*` | Urgent correction convention |
+| `main` | Stable, reviewed releases |
+| `develop` | Integration branch |
+| `feature/*` | New content or sections |
+| `fix/*` | Corrections and typo fixes |
 
 All commits follow [Conventional Commits 1.0.0](https://www.conventionalcommits.org/): `type(scope): description` — lowercase, no trailing period.
 

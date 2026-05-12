@@ -30,7 +30,7 @@ La webapp se organiza por módulos de dominio agrupados en un sidebar persistent
 
 El portal ofrece una estructura lineal de catálogo → pedido → seguimiento, diseñada para que el comprador comercial complete su flujo de abastecimiento con autonomía.
 
-#### Route Architecture and Navigation Storytelling
+### 4.2.2. Route Architecture and Navigation Storytelling
 
 La webapp utiliza Vue Router con hash history (necesario para despliegue en GitHub Pages sin rewrite de rutas). Las rutas se agrupan por experiencia, no por página arbitraria:
 
@@ -44,12 +44,12 @@ La webapp utiliza Vue Router con hash history (necesario para despliegue en GitH
 | Ops | `/ops/inventory` | Control de inventario | Roberto (S2) | Disponibilidad, FEFO, riesgo |
 | Ops | `/ops/dispatch` | Despacho y asignación | Roberto (S2) | Preparar salidas, asignar flota |
 | Ops | `/ops/reports` | Reportes operativos | Valeria (S1), Roberto (S2) | Analítica de negocio |
-| Portal | `/portal/catalog` | Catálogo de productos | Elena (S3) | Explorar y seleccionar productos |
-| Portal | `/portal/orders` | Mis pedidos | Elena (S3) | Historial, seguimiento, recompra |
+| Portal | `/portal/catalog` | Catálogo de productos | Lucía (S3) | Explorar y seleccionar productos |
+| Portal | `/portal/orders` | Mis pedidos | Lucía (S3) | Historial, seguimiento, recompra |
 
-La arquitectura distingue superficies por scope: un comprador B2B (Elena) se orienta al grupo `/portal`, mientras que coordinación comercial y jefatura logística operan sobre `/ops`. Dentro de Ops, la navegación por responsabilidad organiza la visibilidad de módulos sin convertir esta sección en evidencia de permisos productivos.
+Las rutas aplican guards basados en scope/rol: un comprador B2B (Lucía) no puede acceder a `/ops/*`, y un operador interno no ve `/portal/*`. Esta separación traduce la segmentación de user personas en restricciones de navegación concretas.
 
-### 4.2.2. Labeling Systems
+### 4.2.3. Labeling Systems
 
 El sistema de etiquetado mantiene consistencia entre superficies y alineación con el vocabulario del dominio.
 
@@ -78,7 +78,7 @@ El sistema de etiquetado mantiene consistencia entre superficies y alineación c
 | Navegación | Catálogo, Mis pedidos, Mi cuenta | Flujo de comprador |
 | Acciones | Agregar al pedido, Confirmar pedido, Ver seguimiento | Transacción B2B |
 
-### 4.2.3. SEO Tags and Meta Tags
+### 4.2.4. SEO Tags and Meta Tags
 
 La implementación SEO en el sitio público se apoya en etiquetas `<title>`, `<meta name="description">`, `<meta name="author">` y propiedades Open Graph adaptadas por vista. El sitio no implementa `<meta name="keywords">` (estrategia basada en contenido semántico, no en keywords explícitas).
 
@@ -92,7 +92,7 @@ La implementación SEO en el sitio público se apoya en etiquetas `<title>`, `<m
 
 La webapp y el portal no requieren SEO público porque operan detrás de autenticación.
 
-### 4.2.4. Searching Systems
+### 4.2.5. Searching Systems
 
 **Landing**: no incorpora motor de búsqueda. El volumen de páginas es reducido y el descubrimiento se resuelve con navegación directa (dropdown de Solutions, enlaces cruzados, sidebar de FAQ con categorías).
 
@@ -106,7 +106,7 @@ La webapp y el portal no requieren SEO público porque operan detrás de autenti
 | Webapp | Filtros en tabla + búsqueda en captura | Por módulo activo |
 | Portal | Filtro de catálogo | Productos disponibles para el comprador |
 
-### 4.2.5. Navigation Systems
+### 4.2.6. Navigation Systems
 
 #### Landing — navegación global + contextual
 
@@ -125,10 +125,11 @@ La webapp presenta un sidebar colapsable con módulos agrupados por dominio. Un 
 
 - **Valeria (S1)**: ve Dashboard, Pedidos, Clientes, Catálogo, Reportes.
 - **Roberto (S2)**: ve Dashboard, Inventario, Despacho, Reportes.
-- **Elena (S3)**: ve Catálogo, Mis pedidos, Seguimiento.
+- **Lucía (S3)**: ve Catálogo, Mis pedidos, Seguimiento.
 
 Los módulos internos usan tabs y breadcrumbs para movimiento lateral sin perder contexto (ej. `Pedidos > #ORD-2041 > Trazabilidad`).
 
 #### Portal — navegación lineal de compra
 
 El portal ofrece una estructura de navegación simple: catálogo → detalle → carrito → confirmación → historial. El comprador siempre sabe en qué paso está y puede volver al catálogo sin perder estado.
+
