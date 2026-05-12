@@ -26,15 +26,13 @@ La arquitectura de tokens facilita:
 - Coherencia automática entre superficies al compartir la misma fuente de valores.
 - Escalabilidad hacia el portal B2B sin duplicar definiciones.
 
----
-
 #### Color Palette
 
 La paleta se organiza en cinco grupos funcionales: marca primaria, base/superficie, texto, estados semánticos y acentos de interacción.
 
 *Sistema de Colorimetría Nexa*
 
-![Colorimetry](../assets/images/style-guidelines/style-colors.png)
+![Colorimetry](../assets/images/chapter-4/style-guidelines/style-colors.png)
 
 Especificación de Brand Colors, Text Colors y Status Colors. Elaboración propia.
 
@@ -59,7 +57,7 @@ Nexa emplea **Inter** como familia tipográfica principal para interfaz y cuerpo
 
 *Sistema Tipográfico Nexa*
 
-![Typography](../assets/images/style-guidelines/style-typography.png)
+![Typography](../assets/images/chapter-4/style-guidelines/style-typography.png)
 
 Definición de jerarquías para Display, Headings, Body y Mono. Elaboración propia.
 
@@ -83,7 +81,7 @@ El sistema de componentes se construye sobre patrones reutilizables que varían 
 
 *Botones y Componentes Nexa*
 
-![Buttons](../assets/images/style-guidelines/Buttons.jpeg)
+![Buttons](../assets/images/chapter-4/style-guidelines/buttons.jpeg)
 
 Variantes de botones primarios, secundarios y estados. Elaboración propia.
 
@@ -116,13 +114,13 @@ El sistema de diseño opera sobre una rejilla de 12 columnas con breakpoints par
 
 *Sistema de Rejilla y Breakpoints*
 
-![Grid System](../assets/images/style-guidelines/grid-system.jpeg)
+![Grid System](../assets/images/chapter-4/style-guidelines/grid-system.jpeg)
 
 Dimensionamiento para Desktop HD, Desktop y Tablet. Elaboración propia.
 
 *Escala de Espaciado*
 
-![Spacing](../assets/images/style-guidelines/Spacing.jpeg)
+![Spacing](../assets/images/chapter-4/style-guidelines/spacing.jpeg)
 
 Escala basada en múltiplos de 4px, desde 4px hasta 96px. Elaboración propia.
 
@@ -142,7 +140,7 @@ El sistema iconográfico utiliza trazos lineales consistentes (stroke-based) par
 
 *Iconografía Nexa*
 
-![Iconography](../assets/images/style-guidelines/Iconography.jpeg)
+![Iconography](../assets/images/chapter-4/style-guidelines/iconography.jpeg)
 
 Biblioteca de iconos vectoriales para navegación y soporte. Elaboración propia.
 

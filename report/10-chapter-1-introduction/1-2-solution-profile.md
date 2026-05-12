@@ -56,9 +56,9 @@ Como consecuencia de esta desarticulación se observan tres impactos principales
 | **Riesgo normativo y sanitario** | Falta de trazabilidad, debilidad documental frente a auditorías, respuesta lenta ante incidencias y mayor exposición a incumplimientos en cadena de frío. | La comercialización y transporte de productos refrigerados exigen trazabilidad, registros de temperatura y capacidad de respuesta. Cuando esas evidencias no se consolidan, el riesgo deja de ser solo operativo y pasa a comprometer cumplimiento normativo e inocuidad. | Vértiz (2011); Tutiven et al. (2026). |
 > *Nota:* La tabla expone de forma comparativa cómo un mismo problema de fragmentación informativa deriva en efectos distintos sobre operación, costos y cumplimiento. Elaboración propia con base en la literatura citada.
 
-A pesar de ello, diferentes trabajos y diagnósticos sectoriales indican que muchas empresas de tamaño mediano priorizan aún la inversión en activos físicos, incluyendo vehículos, cámaras frigoríficas y equipos de refrigeración especializados, por encima de la inversión en soluciones digitales para la gestión integral de la cadena de frío y la operación comercial (Rivas & Castillo, 2020; Torres & Tardillo, 2020; Aguayo et al., 2025).
+A pesar de ello, diferentes trabajos y diagnósticos sectoriales indican que muchas empresas de tamaño mediano priorizan aún la inversión en activos físicos, incluyendo vehículos, cámaras frigoríficas y equipos de refrigeración especializados, por encima de la inversión en soluciones digitales para la gestión integral de la cadena de frío y la operación comercial (Rivas & Castillo, 2020; Torres & Tardillo, 2020).
 
-Desde la perspectiva de la gestión de riesgos en la cadena de suministro, esta asimetría sugiere que el problema central no se limita a la capacidad física, sino a la vulnerabilidad operativa asociada a procesos de información que no escalan al mismo ritmo que el volumen de pedidos y clientes. En consecuencia, la falta de integración entre catálogo, pedido, inventario y seguimiento reduce la trazabilidad de extremo a extremo, incrementa los errores y restringe la posibilidad de crecimiento ordenado y sostenible del negocio de distribución de productos refrigerados (Buenaño et al., 2024; Rivas & Castillo, 2020; Aguayo et al., 2025).
+Desde la perspectiva de la gestión de riesgos en la cadena de suministro, esta asimetría sugiere que el problema central no se limita a la capacidad física, sino a la vulnerabilidad operativa asociada a procesos de información que no escalan al mismo ritmo que el volumen de pedidos y clientes. En consecuencia, la falta de integración entre catálogo, pedido, inventario y seguimiento reduce la trazabilidad de extremo a extremo, incrementa los errores y restringe la posibilidad de crecimiento ordenado y sostenible del negocio de distribución de productos refrigerados (Buenaño et al., 2024; Aguayo et al., 2025).
 
 A partir de este contexto, el proyecto Nexa se plantea como respuesta a una problemática concreta identificada en la literatura y en la práctica: la ausencia de soluciones digitales especializadas que permitan a empresas importadoras y distribuidoras de productos refrigerados articular, en una única plataforma, la gestión del flujo principal de pedidos B2B (catálogo, condiciones comerciales y pedidos) con la información operativa relevante (stock, rotación, control de cadena de frío y seguimiento logístico), reduciendo así la dependencia de canales informales y registros fragmentados.
 
@@ -86,8 +86,6 @@ En coherencia con la problemática expuesta, el proyecto requiere explicitar tan
 
 El problema identificado puede estructurarse mediante la técnica 5W2H, lo que permite explicitar actores, alcance, contexto, causas, forma de manifestación y magnitud aproximada del riesgo operativo asociado a la gestión manual de pedidos B2B de productos refrigerados.
 
----
-
 *5W2H*
 
 | Elemento | Descripción aplicada al proyecto |
@@ -98,7 +96,7 @@ El problema identificado puede estructurarse mediante la técnica 5W2H, lo que p
 | When (cuándo) | Se trata de un problema recurrente y continuo, asociado a la operación diaria de abastecimiento B2B. Las rupturas de cadena de frío y los incidentes logísticos no aparecen como eventos aislados: en una microred de salud peruana se registraron 64 incidentes en un año, lo que evidencia que las excursiones térmicas pueden mantenerse de manera sostenida. De forma complementaria, la baja madurez digital observada en bodegas y pequeños comercios sugiere que la dependencia de procesos manuales y canales informales persiste en el tiempo. |
 | Why (por qué) | Entre las causas principales destacan la baja adopción de soluciones digitales integradas en pymes de distribución y en sus clientes B2B, la priorización de inversiones en activos físicos por encima de sistemas de información y la falta de estandarización de procesos y trazabilidad. En conjunto, estos factores elevan el riesgo y reducen la capacidad de coordinación entre demanda, inventario y operación. |
 | How (cómo) | El problema se materializa a través de un flujo de información fragmentado: el cliente comercial transmite su pedido por llamada, mensaje de texto o nota de voz; el personal de ventas o administrativo interpreta y transcribe el pedido a hojas de cálculo o sistemas parciales; y el área operativa prepara el pedido basándose en información de inventario que puede no estar actualizada ni vinculada a criterios formales de rotación. Parte de esta descripción operativa constituye una inferencia razonable sustentada en los estudios previamente mencionados. |
-| How much (cuánto) | No se han identificado estudios que cuantifiquen de forma específica, para importadoras y distribuidoras de productos refrigerados en Perú, el costo total de los errores de pedido y la ineficiencia derivada de procesos manuales. Sin embargo, la evidencia disponible permite aproximar la magnitud del riesgo: se reportaron 64 rupturas de cadena de frío en una sola microred de salud en un año, estudios regionales documentan pérdidas logísticas significativas en perecederos, y alrededor del 83% de bodegas se ubica todavía en un nivel principiante de transformación digital. En conjunto, estos datos sugieren que el impacto económico y operativo potencial de mantener procesos manuales y no trazables es considerable, aunque todavía poco medido de forma sistemática. |
+| How much (cuánto) | No se han identificado estudios que cuantifiquen de forma específica, para importadoras y distribuidoras de productos refrigerados en Perú, el costo total de los errores de pedido y la ineficiencia derivada de procesos manuales. Sin embargo, la evidencia disponible permite aproximar la magnitud del riesgo, estudios regionales documentan pérdidas logísticas significativas en perecederos, y alrededor del 83% de bodegas se ubica todavía en un nivel principiante de transformación digital. En conjunto, estos datos sugieren que el impacto económico y operativo potencial de mantener procesos manuales y no trazables es considerable, aunque todavía poco medido de forma sistemática. |
 > *Nota:* La matriz resume el problema ya desarrollado en los antecedentes y la problemática, pero conserva los datos e indicadores más relevantes para evitar que la síntesis reduzca el valor analítico de la sección.
 
 ### ***1.2.2. Lean UX Process***
@@ -115,26 +113,26 @@ Cada problem statement articula un dominio de fricción, un segmento afectado, u
 
 | Problem Statement | Domain | Customer segment | Pain point | Gap | Vision / strategy | Initial segment |
 |---|---|---|---|---|---|---|
-| Captura comercial y validación del pedido | Coordinación comercial de pedidos B2B refrigerados | S1: Coordinación comercial / ventas internas | Pedidos informales, doble digitación y validaciones manuales que retrasan la operación | La información nace dispersa y llega tarde o incompleta hacia logística | Estructurar el pedido desde el origen con validación comercial y disponibilidad visible | S1 |
-| Visibilidad operativa y organización logística | Preparación, inventario, despacho e incidencias de productos refrigerados | S2: Jefatura logística / coordinación operativa | Falta de visibilidad sobre pedidos confirmados, stock, preparación e incidencias | La operación no cuenta con una vista centralizada para decidir y priorizar | Dar trazabilidad operativa al ciclo pedido-inventario-despacho-cierre | S2 |
-| Abastecimiento y seguimiento del cliente comercial | Compra recurrente B2B y seguimiento de abastecimiento | S3: Comprador B2B / cliente comercial | Incertidumbre sobre catálogo, disponibilidad, confirmación y llegada del pedido | El comprador depende de canales lentos para abastecerse y consultar estado | Ofrecer un portal claro para compra, confirmación y seguimiento autónomo | S3 |
+| Captura comercial y validación del pedido | Coordinación comercial de pedidos B2B refrigerados | Coordinación comercial / ventas internas | Pedidos informales, doble digitación y validaciones manuales que retrasan la operación | La información nace dispersa y llega tarde o incompleta hacia logística | Estructurar el pedido desde el origen con validación comercial y disponibilidad visible | S1 |
+| Visibilidad operativa y organización logística | Preparación, inventario, despacho e incidencias de productos refrigerados | Jefatura logística / coordinación operativa | Falta de visibilidad sobre pedidos confirmados, stock, preparación e incidencias | La operación no cuenta con una vista centralizada para decidir y priorizar | Dar trazabilidad operativa al ciclo pedido-inventario-despacho-cierre | S2 |
+| Abastecimiento y seguimiento del cliente comercial | Compra recurrente B2B y seguimiento de abastecimiento | Comprador B2B / cliente comercial | Incertidumbre sobre catálogo, disponibilidad, confirmación y llegada del pedido | El comprador depende de canales lentos para abastecerse y consultar estado | Ofrecer un portal claro para compra, confirmación y seguimiento autónomo | S3 |
 
-### Problem Statement 1: Captura comercial y validación del pedido
+#### Problem Statement 1: Captura comercial y validación del pedido
 
 - **Contexto:** Nuestro contexto demanda un proceso rápido y estructurado para la recepción y validación de pedidos B2B, asegurando que la información inicial de la venta refleje correctamente las condiciones del cliente y la disponibilidad de los productos.
 - **Factor crítico:** Sin embargo, observamos que las vendedoras y coordinadoras comerciales invierten demasiado tiempo procesando pedidos informales (audios, mensajes, listas de WhatsApp) y validando información manualmente, lo que ocasiona retrasos, cuellos de botella y traslada errores hacia la fase logística.
-- **Pregunta retadora:** ¿Cómo podemos agilizar la captura y validación inicial de requerimientos para estructurar los pedidos desde el origen, reduciendo el trabajo manual y evitando errores de digitación?
+- **Pregunta retadora:** ¿Cómo podemos agilizar la captura y validación inicial de requisittos para estructurar los pedidos desde el origen, reduciendo el trabajo manual y evitando errores de digitación?
 
-### Problem Statement 2: Visibilidad operativa y organización logística
+#### Problem Statement 2: Visibilidad operativa y organización logística
 
 - **Contexto:** Nuestro contexto demanda un flujo de información centralizado y trazable que permita organizar la preparación de mercancía refrigerada, el despacho y las incidencias de manera eficiente.
-- **Factor crítico:** Sin embargo, observamos que S2: Jefatura logística / coordinación operativa sufren de falta de visibilidad y predictibilidad sobre los pedidos confirmados, lo que genera descoordinación con el área de ventas, interrupciones constantes y retrasos en la preparación de las entregas.
+- **Factor crítico:** Sin embargo, observamos que el sector de Jefatura logística / coordinación operativa sufren de falta de visibilidad y predictibilidad sobre los pedidos confirmados, lo que genera descoordinación con el área de ventas, interrupciones constantes y retrasos en la preparación de las entregas.
 - **Pregunta retadora:** ¿Cómo podemos proveer a la operación logística de información estructurada y en tiempo real para que puedan organizar los despachos con mayor eficiencia y menor dependencia de comunicaciones informales?
 
-### Problem Statement 3: Abastecimiento y seguimiento del cliente comercial
+#### Problem Statement 3: Abastecimiento y seguimiento del cliente comercial
 
 - **Contexto:** Nuestro contexto demanda ofrecer a los negocios un canal continuo, claro y confiable para que puedan realizar el abastecimiento recurrente de productos para sus operaciones.
-- **Factor crítico:** Sin embargo, observamos que S3: Comprador B2B / cliente comercial experimentan incertidumbre y dependencia de canales lentos para consultar catálogos, confirmar disponibilidad de stock y saber el estado o llegada de sus entregas.
+- **Factor crítico:** Sin embargo, observamos que el sector de Comprador B2B / cliente comercial experimentan incertidumbre y dependencia de canales lentos para consultar catálogos, confirmar disponibilidad de stock y saber el estado o llegada de sus entregas.
 - **Pregunta retadora:** ¿Cómo podemos ofrecer a los compradores B2B un entorno digital intuitivo que les brinde autonomía para comprar y visibilidad total sobre sus pedidos para que abastezcan sus negocios con seguridad y rapidez?
 
 #### 1.2.2.2. Lean UX Assumptions
@@ -230,5 +228,4 @@ El canvas completado para Nexa organiza el problema, los usuarios, los beneficio
 
 > *Nota:* Elaboración propia, basada en el proceso Lean UX aplicado al dominio de distribución B2B de productos refrigerados.
 
----
 El proceso Lean UX anterior permitió identificar, desde la perspectiva de la solución, tres perfiles de usuario con fricciones diferenciadas: quien captura el pedido (S1), quien organiza la operación interna (S2) y quien abastece su negocio como comprador recurrente (S3). Esta distinción no es intuitiva ni arbitraria: se desprende directamente de la forma en que el flujo del pedido distribuye responsabilidades a lo largo de la cadena comercial.

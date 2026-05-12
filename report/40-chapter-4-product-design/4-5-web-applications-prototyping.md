@@ -1,43 +1,33 @@
 ## 4.5. Web Applications Prototyping.
 
-El prototipado de Nexa consolida los artefactos de diseño en experiencias navegables que permiten revisar coherencia entre módulos, transiciones y puntos de decisión antes de la implementación. El producto cuenta con dos prototipos diferenciados:
+El prototipado de la web application se actualizó para TB1 con el fin de reflejar los flujos operativos implementados en Sprint 2. El prototipo Figma conecta frames por rol y módulo, cubriendo los recorridos de coordinación comercial (S1) y jefatura logística (S2). El portal comprador (S3) permanece como alcance parcial de planificación.
 
-- **Landing page prototype**: recorrido público del sitio, documentado en la sección 4.3 con wireframes y mockups, y verificable en el despliegue de `nexa-website`.
-- **Webapp prototype**: recorrido operativo de la aplicación autenticada, articulado en Figma con frames conectados por rol y flujo de negocio.
+El prototipo incluye versión web y versión móvil responsive, ambas navegables desde Figma y documentadas mediante video.
 
-Además, el FigJam board de Userflow/Wireflow se utiliza como artefacto de trabajo para validación de rutas y flujos. La sección 4.4 documenta estos recorridos mediante wireflows en Markdown y mockups representativos.
+*Tabla. Artefactos de prototipado y evidencia disponible para TB1*
 
 | Evidencia de prototipado | Propósito |
 |---|---|
-| [Proyecto Figma del equipo](https://www.figma.com/files/team/1586383034175281439/project/587167294) | Preservar el espacio maestro donde se organizan wireframes, mock-ups y decisiones de diseño |
-| [Archivo Figma de la web application](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=0-1) | Verificar la versión navegable y los frames conectados de la aplicación autenticada |
-| [Recorrido del prototipo (Web)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQC3ykPGDqn4Sra12gTSQKf4ATYJUS89I621TTxwWaqo81k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1UDCU7) | Mostrar el recorrido principal del prototipo web como evidencia visual de navegación |
-| [Responsive Prototype - Video Evidence](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQDBP5iLNJedR6OhB8Sivc1rAaVCa4SDrxvranY5tTLbkPM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=QD00j7) | Evidencia audiovisual del prototipo responsive, mostrando la navegación desde navegador móvil |
-| [FigJam — Userflow y Wireflow S1/S2](https://www.figma.com/board/LjIjtyfoOpeYa5OCSJUYpD/Nexa-Ops-S1-S2-Userflow-Wireflow?node-id=0-1&t=F9ZnAAAzCUpiK4qs-1) | Board de trabajo para validación de rutas y flujos operativos de la webapp |
+| [Proyecto Figma del equipo](https://www.figma.com/files/team/1586383034175281439/project/587167294) | Espacio maestro con wireframes, mockups y decisiones de diseño |
+| [Archivo Figma de la web application](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=0-1) | Versión navegable con frames conectados de la aplicación |
+| [Video del prototipo — Web y Móvil](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQAOXrLcl2ziRpTDa5QgX__QARetYOg71_XS5G2YR84vlVs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MTgzyN) | Recorrido completo del prototipo web y móvil como evidencia audiovisual |
+| [FigJam — Userflow y Wireflow S1/S2](https://www.figma.com/board/LjIjtyfoOpeYa5OCSJUYpD/Nexa-Ops-S1-S2-Userflow-Wireflow?node-id=0-1&t=F9ZnAAAzCUpiK4qs-1) | Board de trabajo para validación de rutas y flujos operativos |
 
-*Referencias específicas de userflow para TB1*
+*Tabla. Cobertura de prototipado por flujo y segmento en TB1*
 
-| Prototype / flow artifact | Tool | Link | Scope |
-|---|---|---|---|
-| S1 Commercial Userflow | Lucidchart | [Ver userflow S1](https://lucid.app/lucidchart/8f6d6af2-f229-47f8-ba02-86b27cdc6fed/edit?invitationId=inv_09391266-7e11-4614-8edf-12cf979cdabf) | TB1 implemented / documented |
-| S2 Logistics Userflow | Lucidchart | [Ver userflow S2](https://lucid.app/lucidchart/b91c8e98-a38b-456a-92e5-f942be7e8439/edit?invitationId=inv_5c030713-67e5-4e84-90bf-661b26cef528) | TB1 implemented / documented |
-| S3 Buyer Portal Flow | Report / planning | Sin evidencia visual completa en Lucidchart para TB1 | TB1 partial |
-
-La utilidad metodológica del prototipo es doble. Primero, permite revisar continuidad entre módulos sin depender todavía de desarrollo productivo. Segundo, ofrece una base defendible para explicar cómo evolucionará Nexa desde su capa pública hacia su capa transaccional. En otras palabras, el prototipo no sustituye al desarrollo, pero sí reduce el riesgo de que la implementación futura contradiga lo ya investigado, priorizado y diseñado.
+| Flujo | Segmento | Cobertura en prototipo | Evidencia | Estado TB1 |
+|---|---|---|---|---|
+| S1 — Coordinación comercial | Ventas internas / pedidos | Completa: dashboard, pedidos, clientes, reportes comerciales | [Userflow S1](https://lucid.app/lucidchart/8f6d6af2-f229-47f8-ba02-86b27cdc6fed/edit?invitationId=inv_09391266-7e11-4614-8edf-12cf979cdabf) + Figma frames | Documentado e implementado |
+| S2 — Jefatura logística | Inventario, despacho, operación | Completa: inventario, lotes, despacho, reportes operativos | [Userflow S2](https://lucid.app/lucidchart/b91c8e98-a38b-456a-92e5-f942be7e8439/edit?invitationId=inv_5c030713-67e5-4e84-90bf-661b26cef528) + Figma frames | Documentado e implementado |
+| S3 — Portal comprador B2B | Catálogo, pedido, seguimiento | Parcial: frames de catálogo y carrito en Figma, sin userflow completo en Lucidchart | Documentación de sección 4.4 | Planificado / parcial |
 
 *Captura referencial del prototipo de la web application*
 
-![Captura del prototipo de la web application](../assets/images/webapp-mockups-current/s1-02-dashboard-commercial.png)
+![Captura del prototipo de la web application](../assets/images/chapter-4/webapp/prototyping/prototyping.jpeg)
 
-Elaboración propia. La captura corresponde a la pantalla principal del prototipo y resume la lógica de dashboard operativo utilizada como punto de entrada a la aplicación.
+> *Nota:* Pantalla principal del prototipo de la seccion clientes, mostrando un fragmento del video. Elaboración propia.
 
-*Prueba de interacción del prototipo responsive en navegador móvil*
-
-![Mobile Application Prototype Proof](../assets/images/mobile-browser/mobile-application-prototype-proof.png)
-
-Elaboración propia. Evidencia visual del prototipo ejecutado desde navegador móvil como validación del diseño responsive.
-
-Bajo esta lectura, el prototipado debe presentarse con honestidad de alcance: constituye **evidencia de diseño integrado**, no evidencia de despliegue autenticado ni de operación real en producción. Su valor en el informe es mostrar que la web application ya fue pensada como un sistema consistente y recorrible antes de entrar en fases posteriores de implementación.
+El prototipado constituye **evidencia de diseño integrado**, no evidencia de despliegue autenticado ni de operación en producción. Su valor es demostrar que la web application fue diseñada como un sistema consistente y recorrible antes de la implementación.
 
 ### 4.5.1. Sistema de navegación aplicado al prototipo
 
