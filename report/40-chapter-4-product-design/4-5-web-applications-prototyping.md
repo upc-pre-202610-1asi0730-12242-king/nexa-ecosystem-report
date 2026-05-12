@@ -23,15 +23,9 @@ El prototipo incluye versión web y versión móvil responsive, ambas navegables
 
 *Captura referencial del prototipo de la web application*
 
-![Captura del prototipo de la web application](../assets/images/chapter-4/webapp/mockups/s1-02-dashboard-commercial.png)
+![Captura del prototipo de la web application](../assets/images/chapter-4/webapp/prototyping/prototyping.jpeg)
 
-> *Nota:* Pantalla principal del prototipo con la lógica de dashboard operativo utilizada como punto de entrada a la aplicación. Elaboración propia.
-
-*Prueba de interacción del prototipo responsive en navegador móvil*
-
-![Prueba de interacción del prototipo responsive](../assets/images/chapter-4/webapp/prototyping/mobile-application-prototype-proof.png)
-
-> *Nota:* Captura del prototipo Figma ejecutado en vista móvil responsive, validando la adaptación del diseño a pantallas reducidas. Elaboración propia.
+> *Nota:* Pantalla principal del prototipo de la seccion clientes, mostrando un fragmento del video. Elaboración propia.
 
 El prototipado constituye **evidencia de diseño integrado**, no evidencia de despliegue autenticado ni de operación en producción. Su valor es demostrar que la web application fue diseñada como un sistema consistente y recorrible antes de la implementación.
 
