@@ -38,7 +38,7 @@ En el contexto peruano, investigaciones en salud y logística evidencian que las
 De forma similar, trabajos de tesis y proyectos tecnológicos en Perú muestran que la falta de sistemas de seguimiento y trazabilidad en tiempo real contribuye a pérdidas significativas de productos alimenticios refrigerados y a una visibilidad limitada del proceso logístico (Torres & Tardillo, 2020).  
 En paralelo, análisis regionales de la CEPAL y asociaciones del sector señalan que, aunque la infraestructura básica de frío en América Latina se ha expandido, persisten cuellos de botella en flotas refrigeradas, almacenes especializados y sistemas de monitoreo, lo que se traduce en pérdidas de alimentos y riesgos para la inocuidad (Aguayo et al., 2025). Estas brechas son especialmente relevantes para organizaciones que trabajan con productos refrigerados y congelados, como importadoras y distribuidoras, donde una falla en el control logístico afecta simultáneamente la eficiencia operativa, la calidad del producto y el cumplimiento normativo (Vértiz, 2011; Rivas & Castillo, 2020).  
 
-En cuanto a la digitalización del abastecimiento B2B en el canal tradicional peruano, la evidencia académica y de mercado apunta a una adopción heterogénea. Un estudio reciente sobre pagos digitales y competitividad de bodegas tradicionales en Huancavelica muestra que los pequeños comercios han comenzado a incorporar billeteras digitales y aplicaciones móviles, pero aún se encuentran en etapas iniciales de madurez digital (Taipe Quispe, 2025). De forma complementaria, el estudio de madurez digital del canal tradicional elaborado por Lucky-Xplora(2022) reporta que alrededor de un 28% de bodegas utiliza alguna aplicación para gestionar tareas del negocio, mientras que la mayoría sigue en un nivel "principiante". Estas cifras provienen de una fuente profesional de mercado, pero son coherentes con la caracterización académica de baja madurez digital en pequeños comercios.
+En cuanto a la digitalización del abastecimiento B2B en el canal tradicional peruano, la evidencia académica y de mercado apunta a una adopción heterogénea. Un estudio reciente sobre pagos digitales y competitividad de bodegas tradicionales en Huancavelica muestra que los pequeños comercios han comenzado a incorporar billeteras digitales y aplicaciones móviles, pero aún se encuentran en etapas iniciales de madurez digital (Taipe Quispe, 2025). De forma complementaria, el estudio de madurez digital del canal tradicional elaborado por Lucky-Xplora (2022) reporta que alrededor de un 28% de bodegas utiliza alguna aplicación para gestionar tareas del negocio, mientras que la mayoría sigue en un nivel "principiante". Estas cifras provienen de una fuente profesional de mercado, pero son coherentes con la caracterización académica de baja madurez digital en pequeños comercios.
 
 Sobre esta base, es razonable inferir que una parte importante de la coordinación comercial entre empresas distribuidoras y clientes B2B del canal tradicional todavía se realiza mediante llamadas telefónicas, mensajes de WhatsApp y registros aislados, más que a través de plataformas transaccionales integradas. Esta forma de operar resulta particularmente problemática en el caso de productos refrigerados, donde el pedido no puede desvincularse de variables como disponibilidad real, rotación según fecha de vencimiento y conservación en frío. La literatura sobre riesgos en cadenas de suministro de alimentos perecederos subraya que la falta de integración entre pedidos, inventario y logística incrementa la exposición a disrupciones, desperdicios y fallas de servicio (Buenaño et al., 2024).  
 
@@ -54,6 +54,7 @@ Como consecuencia de esta desarticulación se observan tres impactos principales
 | **Errores en preparación y despacho** | Cantidades inexactas, productos equivocados, retrasos por quiebre de stock y necesidad de aclaraciones de último momento entre ventas, almacén y reparto. | Cuando el pedido se captura manualmente y luego se reinterpreta en sistemas no integrados, aumenta la probabilidad de que la información llegue incompleta, tarde o con ambigüedades al área operativa. | Muñoz et al. (2022); Buenaño et al. (2024). |
 | **Mermas económicas por mala rotación** | Pérdida de producto por caducidad, despacho de mercadería con rotación ineficiente y dificultad para aplicar criterios FIFO o FEFO de forma consistente. | Si pedidos, inventario y fechas de vencimiento no están conectados, la operación pierde capacidad para priorizar lotes y sostener una rotación compatible con productos perecederos. | Tutiven et al. (2026); Arriaga et al. (2023). |
 | **Riesgo normativo y sanitario** | Falta de trazabilidad, debilidad documental frente a auditorías, respuesta lenta ante incidencias y mayor exposición a incumplimientos en cadena de frío. | La comercialización y transporte de productos refrigerados exigen trazabilidad, registros de temperatura y capacidad de respuesta. Cuando esas evidencias no se consolidan, el riesgo deja de ser solo operativo y pasa a comprometer cumplimiento normativo e inocuidad. | Vértiz (2011); Tutiven et al. (2026). |
+
 > *Nota:* La tabla expone de forma comparativa cómo un mismo problema de fragmentación informativa deriva en efectos distintos sobre operación, costos y cumplimiento. Elaboración propia con base en la literatura citada.
 
 A pesar de ello, diferentes trabajos y diagnósticos sectoriales indican que muchas empresas de tamaño mediano priorizan aún la inversión en activos físicos, incluyendo vehículos, cámaras frigoríficas y equipos de refrigeración especializados, por encima de la inversión en soluciones digitales para la gestión integral de la cadena de frío y la operación comercial (Rivas & Castillo, 2020; Torres & Tardillo, 2020).
@@ -101,9 +102,9 @@ El problema identificado puede estructurarse mediante la técnica 5W2H, lo que p
 
 ### ***1.2.2. Lean UX Process***
 
-En este proyecto, el uso de Lean UX resulta pertinente porque el dominio combina restricciones comerciales, operativas y logísticas propias de la distribución B2B de productos refrigerados. El riesgo no consiste solo en desarrollar una aplicación web funcional, sino en construir una herramienta que reduzca fricción en la coordinación de pedidos, mejore la visibilidad operativa y aporte mayor orden al flujo entre la empresa distribuidora y el cliente comercial. Por ello, el bloque se organiza en cuatro partes: problem statements, assumptions, hypothesis statements y Lean UX Canvas.
+En este proyecto, el uso de Lean UX resulta pertinente porque el dominio combina restricciones comerciales, operativas y logísticas propias de la distribución B2B de productos refrigerados. El riesgo no consiste solo en desarrollar una aplicación web funcional, sino en construir una herramienta que reduzca fricción en la coordinación de pedidos, mejore la visibilidad operativa y aporte mayor orden al flujo entre la empresa contratante, sus usuarios internos y el comprador B2B.
 
-Desde esta perspectiva, Lean UX cumple dos funciones en el proyecto. La primera es estratégica: nos ayuda a formular con precisión qué problema se está abordando, para qué actores se está construyendo valor y qué parte del dominio quedará fuera del MVP inicial. La segunda es metodológica: convierte supuestos del equipo en hipótesis observables, reduciendo el riesgo de diseñar una solución sobredimensionada o incoherente con la realidad operativa del sector. Por ello, este bloque concentra las decisiones que conectan la problemática del capítulo con la investigación posterior, la priorización del backlog y el diseño del MVP.
+En este proyecto, el uso de Lean UX resulta pertinente porque el dominio combina restricciones comerciales, operativas y logísticas propias de la distribución B2B de productos refrigerados. El riesgo no consiste solo en desarrollar una aplicación web funcional, sino en construir una herramienta que reduzca fricción en la coordinación de pedidos, mejore la visibilidad operativa y aporte mayor orden al flujo entre la empresa distribuidora y el cliente comercial. Por ello, el bloque se organiza en cuatro partes: problem statements, assumptions, hypothesis statements y Lean UX Canvas.
 
 #### **1.2.2.1. Lean UX Problem Statements**
 
@@ -113,12 +114,20 @@ Cada problem statement articula un dominio de fricción, un segmento afectado, u
 
 | Problem Statement | Domain | Customer segment | Pain point | Gap | Vision / strategy | Initial segment |
 |---|---|---|---|---|---|---|
+| Captura comercial y validación del pedido | Coordinación comercial de pedidos B2B refrigerados | Commercial Coordination | Pedidos informales, doble digitación y validaciones manuales que retrasan la operación | La información nace dispersa y llega tarde o incompleta hacia operación | Estructurar la solicitud desde el origen con validación comercial, cliente, documentos y disponibilidad visible | S1 |
+| Control operativo y administración del tenant | Inventario, despacho, evidencias y administración interna de la empresa contratante | Operations / Account Owner | Falta de visibilidad sobre inventario, lotes, preparación, despacho, evidencias, accesos y configuración operativa | La operación no cuenta con una vista centralizada para decidir, priorizar y controlar el tenant | Dar trazabilidad operativa al ciclo pedido-inventario-despacho-cierre y centralizar la administración de empresa | S2 |
 | Captura comercial y validación del pedido | Coordinación comercial de pedidos B2B refrigerados | Coordinación comercial / ventas internas | Pedidos informales, doble digitación y validaciones manuales que retrasan la operación | La información nace dispersa y llega tarde o incompleta hacia logística | Estructurar el pedido desde el origen con validación comercial y disponibilidad visible | S1 |
 | Visibilidad operativa y organización logística | Preparación, inventario, despacho e incidencias de productos refrigerados | Jefatura logística / coordinación operativa | Falta de visibilidad sobre pedidos confirmados, stock, preparación e incidencias | La operación no cuenta con una vista centralizada para decidir y priorizar | Dar trazabilidad operativa al ciclo pedido-inventario-despacho-cierre | S2 |
-| Abastecimiento y seguimiento del cliente comercial | Compra recurrente B2B y seguimiento de abastecimiento | Comprador B2B / cliente comercial | Incertidumbre sobre catálogo, disponibilidad, confirmación y llegada del pedido | El comprador depende de canales lentos para abastecerse y consultar estado | Ofrecer un portal claro para compra, confirmación y seguimiento autónomo | S3 |
 
 #### Problem Statement 1: Captura comercial y validación del pedido
 
+- **Contexto:** Nuestro contexto demanda un proceso rápido y estructurado para la recepción, validación y conversión de solicitudes B2B de productos refrigerados, asegurando que la información inicial del pedido refleje correctamente cliente, productos, cantidades, condiciones comerciales, disponibilidad y documentos requeridos.
+- **Factor crítico:** Sin embargo, observamos que las vendedoras y coordinadoras comerciales invierten demasiado tiempo procesando pedidos informales por WhatsApp, llamadas, audios, Excel o listas dispersas, lo que ocasiona doble digitación, retrasos, validaciones manuales y traslado de errores hacia operación.
+- **Pregunta retadora:** ¿Cómo podemos agilizar la captura y validación inicial de requisitos para estructurar las solicitudes desde el origen, reduciendo el trabajo manual y evitando errores antes de convertirlas en pedidos confirmados?
+
+#### Problem Statement 2: Control operativo y administración del tenant
+
+- **Contexto:** Nuestro contexto demanda un flujo de información centralizado y trazable que permita organizar inventario, lotes, preparación, despacho, evidencias, documentos y administración interna de la empresa contratante.
 - **Contexto:** Nuestro contexto demanda un proceso rápido y estructurado para la recepción y validación de pedidos B2B, asegurando que la información inicial de la venta refleje correctamente las condiciones del cliente y la disponibilidad de los productos.
 - **Factor crítico:** Sin embargo, observamos que las vendedoras y coordinadoras comerciales invierten demasiado tiempo procesando pedidos informales (audios, mensajes, listas de WhatsApp) y validando información manualmente, lo que ocasiona retrasos, cuellos de botella y traslada errores hacia la fase logística.
 - **Pregunta retadora:** ¿Cómo podemos agilizar la captura y validación inicial de requisittos para estructurar los pedidos desde el origen, reduciendo el trabajo manual y evitando errores de digitación?
@@ -127,22 +136,22 @@ Cada problem statement articula un dominio de fricción, un segmento afectado, u
 
 - **Contexto:** Nuestro contexto demanda un flujo de información centralizado y trazable que permita organizar la preparación de mercancía refrigerada, el despacho y las incidencias de manera eficiente.
 - **Factor crítico:** Sin embargo, observamos que el sector de Jefatura logística / coordinación operativa sufren de falta de visibilidad y predictibilidad sobre los pedidos confirmados, lo que genera descoordinación con el área de ventas, interrupciones constantes y retrasos en la preparación de las entregas.
-- **Pregunta retadora:** ¿Cómo podemos proveer a la operación logística de información estructurada y en tiempo real para que puedan organizar los despachos con mayor eficiencia y menor dependencia de comunicaciones informales?
-
-#### Problem Statement 3: Abastecimiento y seguimiento del cliente comercial
-
-- **Contexto:** Nuestro contexto demanda ofrecer a los negocios un canal continuo, claro y confiable para que puedan realizar el abastecimiento recurrente de productos para sus operaciones.
-- **Factor crítico:** Sin embargo, observamos que el sector de Comprador B2B / cliente comercial experimentan incertidumbre y dependencia de canales lentos para consultar catálogos, confirmar disponibilidad de stock y saber el estado o llegada de sus entregas.
-- **Pregunta retadora:** ¿Cómo podemos ofrecer a los compradores B2B un entorno digital intuitivo que les brinde autonomía para comprar y visibilidad total sobre sus pedidos para que abastezcan sus negocios con seguridad y rapidez?
 
 #### 1.2.2.2. Lean UX Assumptions
 
+Las suposiciones se organizan en cinco categorías que cubren el negocio, los usuarios, el producto, la tecnología y el mercado/canal. Cada una se formula como hipótesis de trabajo sujeta a validación, no como hecho establecido. De esta manera, el equipo puede identificar qué ideas deben comprobarse antes de ampliar el alcance funcional de Nexa.
 Las suposiciones se organizan en cinco categorías que cubren el negocio, los usuarios, el producto, la tecnología y el mercado/canal. Cada una se formula como hipótesis de trabajo sujeta a validación, no como hecho establecido.
 
-*Tabla: Lean UX Assumptions por categoría*
 
 | Tipo de assumption | Assumption | Segmento relacionado | Riesgo si es falsa | Cómo se valida |
 |:---|:---|:---|:---|:---|
+| **Business** | Las empresas importadoras y distribuidoras de productos refrigerados necesitan centralizar la gestión de solicitudes, pedidos, inventario, documentos y despacho en una plataforma SaaS. | S1, S2 | El producto no genera valor diferencial frente al uso de Excel, WhatsApp o sistemas internos simples. | Entrevistas con empresas del sector y validación del flujo comercial-operativo. |
+| **Business** | La empresa contratante percibe valor si Nexa reduce doble digitación, errores de captura y retrabajo entre ventas y operación. | S1, S2 | El valor percibido se concentra en precio, soporte o integraciones externas, y no en la reducción de fricción operativa. | Demos guiadas con usuarios internos y análisis de tareas críticas del flujo. |
+| **Business** | El modelo SaaS es viable para distribuidoras medianas que necesitan ordenar su operación sin implementar un ERP completo. | S2 | El cliente espera una solución on-premise, un ERP integral o integraciones avanzadas desde la primera versión. | Validación de propuesta de valor, alcance del MVP y disposición a usar una solución web. |
+| **User** | El S1 adoptará Nexa si la plataforma le permite registrar solicitudes y convertirlas en pedidos con menos pasos manuales. | S1 | El usuario mantiene WhatsApp o Excel como canal principal porque percibe que el sistema ralentiza su trabajo. | Pruebas de usabilidad del flujo de captura, validación y conversión de solicitudes. |
+| **User** | El S2 usará Nexa si obtiene visibilidad clara de inventario, lotes, despacho, evidencias y configuración de empresa. | S2 | Operación considera que la plataforma no aporta suficiente control frente a sus registros actuales. | Validación de vistas operativas, tablero de pedidos, inventario y administración del tenant. |
+| **User** | El S3 utilizará el portal si puede consultar catálogo, crear solicitudes, revisar pedidos, documentos y seguimiento sin perder respaldo humano. | S3 | El comprador prefiere mantener únicamente llamadas o WhatsApp por costumbre o confianza. | Entrevistas y pruebas de flujo con compradores B2B recurrentes. |
+| **User** | Los usuarios internos requieren una experiencia clara en computadora o tablet, mientras que el comprador puede necesitar acceso desde celular. | S1, S2, S3 | El diseño no se adapta a las condiciones reales de uso de cada segmento. | Pruebas responsivas en resoluciones desktop, tablet y móvil. |
 | **Business** | Las distribuidoras e importadoras necesitan digitalizar y centralizar la recepción de pedidos B2B y la gestión de su catálogo de productos refrigerados | S1, S2 | El producto no genera valor diferencial respecto al uso de Excel o WhatsApp | Entrevistas con distribuidoras sobre fricción real en gestión de pedidos |
 | **Business** | El valor principal que busca el cliente es la reducción de errores en la toma de pedidos y el ahorro de tiempo operativo en el cuadre diario | S1, S2 | El precio o el soporte técnico son más determinantes que la reducción de errores | Sesiones de validación con perfiles de compra en distribuidoras target |
 | **Business** | El modelo de acceso SaaS es viable para distribuidoras de tamaño mediano en el mercado peruano | S1, S2 | El cliente prefiere soluciones on-premise o no está dispuesto a pagar por software | Demos guiadas con distribuidoras y relevamiento de disposición a pagar |
@@ -152,15 +161,12 @@ Las suposiciones se organizan en cinco categorías que cubren el negocio, los us
 | **User** | El personal de despacho puede usar el sistema desde navegador móvil en ruta para consultar y registrar avances | S2 | El flujo en dispositivos móviles no es suficientemente ágil para uso en campo | Validación del flujo de despacho con usuarios del segmento en resoluciones móviles |
 | **Product** | Una solución web responsiva es suficiente para validar el valor principal del producto en su primera iteración sin necesidad de una aplicación móvil nativa | S1, S2, S3 | Los usuarios no adoptan la experiencia web y requieren una app nativa desde el inicio | Sesiones de validación con prototipo web antes de invertir en desarrollo nativo |
 | **Product** | El flujo mínimo viable debe cubrir catálogo, captura de pedido, condiciones comerciales, inventario básico y seguimiento antes de profundizar en integraciones avanzadas | S1, S2, S3 | El alcance definido es demasiado amplio para una primera iteración o demasiado reducido para generar valor percibido | Revisión de alcance con feedback de usuarios y priorización del backlog |
-| **Product** | La claridad del flujo y la confiabilidad de la información son más determinantes para la adopción que una lista extensa de funcionalidades | S1, S2 | Los usuarios requieren más funciones para valorar el sistema como alternativa a Excel/WhatsApp | Sesiones de usabilidad priorizando los flujos core con usuarios representativos |
-| **Technical** | Es posible validar el flujo operativo principal con una experiencia web clara sin requerir integraciones externas complejas desde la primera versión | S1, S2, S3 | Los usuarios o evaluadores consideran que la experiencia inicial no representa suficientemente su forma de trabajo | Comunicar el alcance de la primera iteración durante la validación y ajustar en función del feedback recibido |
-| **Technical** | Una experiencia web responsiva es suficiente para observar el valor del flujo principal antes de escalar hacia capacidades más especializadas | S1, S2, S3 | La experiencia resulta lenta, poco clara o insuficiente para soportar la validación con usuarios | Evaluar la experiencia en función de los resultados de la validación inicial antes de escalar |
-| **Market / Channel** | WhatsApp sigue siendo el canal dominante en la coordinación de pedidos B2B; Nexa debe reducir esa dependencia de forma progresiva, no eliminarla de inmediato | S1, S3 | El mercado ya ha migrado espontáneamente a plataformas digitales y no requiere convivencia con canales informales | Análisis de entrevistas y datos de madurez digital del canal tradicional |
-| **Market / Channel** | Las distribuidoras de tamaño mediano son el segmento de adopción más viable para el MVP antes de expandirse a grandes distribuidoras o pequeños negocios | S1, S2 | Las distribuidoras grandes tienen soluciones propias y las pequeñas no tienen presupuesto ni madurez digital suficiente | Demos guiadas con distribuidoras del segmento target y análisis de feedback inicial |
-
-> *Nota:* Las suposiciones son hipótesis de trabajo que guían el diseño del MVP y el proceso de validación. No se presentan como hechos establecidos. Los segmentos S1, S2 y S3 corresponden a Coordinación comercial, Jefatura logística y Comprador B2B respectivamente. Elaboración propia.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
+
+Cada hipótesis se conecta con un segmento, una intervención de producto y una métrica observable. Esto permite validar si Nexa genera valor real en el flujo comercial-operativo antes de ampliar el alcance funcional.
+
+*Tabla. Lean UX Hypothesis Statements por segmento*
 
 **Fricción en Ventas**
 
@@ -170,18 +176,23 @@ Las suposiciones se organizan en cinco categorías que cubren el negocio, los us
 **Coordinación operativa**
 
 - Creemos que [centralizar la visibilidad del estado de los pedidos y el inventario en una plataforma compartida] disminuirá [los quiebres de stock y las descoordinaciones operativas de la jefatura logística].
-- Sabremos que hemos tenido éxito cuando [los reportes de incidencias y devoluciones de despacho por mala comunicación disminuyan en un 25%].
-
-**Adopción del comprador**
-
-- Creemos que [ofrecer un portal B2B de autogestión con catálogo y disponibilidad consultable] logrará [una mayor autonomía en los compradores comerciales mayoristas y minoristas].
-- Sabremos que hemos tenido éxito cuando [al menos el 40% de nuestros clientes recurrentes empiecen a realizar sus pedidos directamente por la plataforma en lugar de usar canales informales].
 
 #### 1.2.2.4. Lean UX Canvas
 
 El canvas completado para Nexa organiza el problema, los usuarios, los beneficios esperados, las hipótesis y el aprendizaje mínimo necesario para validar el flujo principal del pedido B2B refrigerado.
 
 *Tabla. Lean UX Canvas de Nexa*
+
+| Bloque del canvas | Contenido aplicado a Nexa |
+|---|---|
+| **1. Business Problem** | Las empresas importadoras y distribuidoras de productos refrigerados coordinan solicitudes, pedidos, inventario, documentos y despacho mediante WhatsApp, llamadas, audios, hojas de cálculo y sistemas no integrados. Esta fragmentación genera doble digitación, errores de captura, validaciones tardías de stock o crédito, baja visibilidad del despacho y dificultad para mantener trazabilidad en productos sensibles a temperatura. |
+| **2. Business Outcomes** | Reducir el tiempo de registro y validación comercial; disminuir errores de stock e incidencias por disponibilidad incorrecta; mejorar la visibilidad del pedido para operación y comprador; ordenar documentos asociados al flujo; y validar la adopción de una experiencia web SaaS antes de escalar hacia integraciones avanzadas. |
+| **3. Users** | **S1:** recibe, interpreta, valida y convierte solicitudes en pedidos confirmados.<br><br>**S2:** controla inventario, lotes, despacho, evidencias, documentos operativos y administración del tenant.<br><br>**S3:** consulta catálogo, genera solicitudes, revisa pedidos, accede a documentos y realiza seguimiento. |
+| **4. User Outcomes & Benefits** | **S1** necesita registrar solicitudes con menor dependencia de mensajes dispersos y reducir retrabajo comercial.<br><br>**S2** necesita controlar disponibilidad real, lotes, preparación, despacho, evidencias y configuración de empresa desde una vista centralizada.<br><br>**S3** necesita comprar con mayor autonomía, revisar información clara y tener visibilidad del estado de sus pedidos sin depender completamente de llamadas o WhatsApp. |
+| **5. Solutions** | Plataforma web SaaS B2B con catálogo de productos, entrada de solicitudes desde portal o registro manual, validación comercial, conversión a purchase order, control básico de inventario, gestión de dispatch orders, documentos asociados, proof of delivery, tracking y administración de empresa desde el tenant. |
+| **6. Hypotheses** | **H1:** Si S1 registra solicitudes mediante un flujo web estructurado, disminuirá el tiempo de registro y validación comercial.<br><br>**H2:** Si S2 consulta inventario, lotes, disponibilidad real y estados operativos desde una vista centralizada, disminuirán los errores de stock e incidencias por información incompleta.<br><br>**H3:** Si S3 accede a un portal con catálogo, solicitudes, pedidos, documentos y tracking, aumentará la visibilidad del pedido y disminuirán las consultas manuales. |
+| **7. What’s the most important thing we need to learn first?** | El aprendizaje principal es comprobar si los tres segmentos perciben valor en reemplazar parte del flujo informal por una experiencia web que ordene solicitud, validación, inventario, documentos y seguimiento sin volver más lenta la operación. |
+| **8. What’s the least amount of work we need to do to learn the next most important thing?** | Construir y validar el recorrido mínimo de entrada de pedido, validación comercial, conversión a pedido, consulta de inventario, despacho, documentos y seguimiento. Para esta etapa no se requieren sensores IoT, ERP integrado, TMS corporativo ni aplicación móvil nativa; basta una webapp responsiva con datos simulados y evidencia suficiente para probar comprensión, utilidad y continuidad del flujo. |
 
 <table>
   <thead>
@@ -210,22 +221,3 @@ El canvas completado para Nexa organiza el problema, los usuarios, los beneficio
     <tr>
       <td><strong>5. Solutions</strong></td>
       <td>Aplicación web B2B con catálogo centralizado, captura asistida de pedidos, consulta de cliente y condiciones comerciales, visibilidad básica de inventario, tablero operativo de pedidos, seguimiento de despacho y cierre con evidencia simulada para la primera iteración. El portal S3 se mantiene considerado dentro del flujo de compra y seguimiento, pero su cobertura visual completa queda como ampliación posterior.</td>
-    </tr>
-    <tr>
-      <td><strong>6. Hypotheses</strong></td>
-      <td><strong>H1:</strong> Si S1 registra pedidos mediante un flujo asistido, disminuirán el retrabajo y los errores de digitación frente al uso de mensajes dispersos.<br><br><strong>H2:</strong> Si S2 cuenta con visibilidad compartida sobre pedidos, inventario y despacho, podrá priorizar mejor la operación y reducir incidencias por información incompleta.<br><br><strong>H3:</strong> Si S3 accede a un portal claro de catálogo, pedido y seguimiento, aumentará su autonomía frente a WhatsApp y llamadas.</td>
-    </tr>
-    <tr>
-      <td><strong>7. What’s the most important thing we need to learn first?</strong></td>
-      <td>El aprendizaje principal es comprobar si los usuarios internos aceptan reemplazar parte del flujo informal por una experiencia web que ordene cliente, productos, stock, condiciones y estado sin volver más lenta la operación. También debe observarse si el comprador B2B percibe valor en consultar catálogo y seguimiento desde un portal propio.</td>
-    </tr>
-    <tr>
-      <td><strong>8. What’s the least amount of work we need to do to learn the next most important thing?</strong></td>
-      <td>Construir y validar el recorrido mínimo de catálogo, registro de pedido, revisión de cliente, lectura de disponibilidad y actualización manual de estado. Para esta etapa no se requieren sensores IoT, optimización automática de rutas, ERP integrado ni backend productivo; basta una webapp navegable con datos simulados y evidencia suficiente para probar comprensión, utilidad y continuidad del flujo.</td>
-    </tr>
-  </tbody>
-</table>
-
-> *Nota:* Elaboración propia, basada en el proceso Lean UX aplicado al dominio de distribución B2B de productos refrigerados.
-
-El proceso Lean UX anterior permitió identificar, desde la perspectiva de la solución, tres perfiles de usuario con fricciones diferenciadas: quien captura el pedido (S1), quien organiza la operación interna (S2) y quien abastece su negocio como comprador recurrente (S3). Esta distinción no es intuitiva ni arbitraria: se desprende directamente de la forma en que el flujo del pedido distribuye responsabilidades a lo largo de la cadena comercial.
