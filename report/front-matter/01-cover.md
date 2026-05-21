@@ -20,7 +20,7 @@
 
 <p><strong>Startup:</strong> King</p>
 <p><strong>Producto:</strong> Nexa</p>
-<p><strong>Mes y año:</strong> Mayo 2026</p>
+<p><strong>Mes y año:</strong> Junio 2026</p>
 
 <h2>Relación de integrantes</h2>
 
