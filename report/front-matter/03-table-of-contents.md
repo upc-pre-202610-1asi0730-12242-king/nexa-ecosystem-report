@@ -105,11 +105,17 @@
   <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-3-sprint-3.md">5.2.3. Sprint 3</a></td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-3-sprint-3.md">5.2.3.1. Sprint Planning 3</a></td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-3-sprint-3.md">5.2.3.2. Aspect Leaders and Collaborators</a></td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-3-sprint-3.md">5.2.3.3. Sprint Backlog 3</a></td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-3-sprint-3.md">5.2.3.4. Development Evidence for Sprint Review</a></td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-3-sprint-3.md">5.2.3.5. Execution Evidence for Sprint Review</a></td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-3-sprint-3.md">5.2.3.6. Services Documentation Evidence for Sprint Review</a></td></tr>
   <tr><td><a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3. Validation Interviews</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3.1. Diseño de Entrevistas</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3.2. Registro de Entrevistas</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3.3. Evaluaciones según heurísticas</a></td></tr>
   <tr><td><a href="../50-chapter-5-implementation-validation-deployment/5-4-video-about-the-product.md">5.4. Video About-the-Product</a></td></tr>
   <tr><td><b><a href="../90-conclusions.md">Conclusiones</a></b></td></tr>
+  <tr><td><a href="../annexes/annex-a-annexes.md">Video About-the-Team</a></td></tr>
   <tr><td><b><a href="../99-bibliography.md">Bibliografía</a></b></td></tr>
   <tr><td><b><a href="../annexes/annex-a-annexes.md">Anexos</a></b></td></tr>
 </table>
