@@ -1,25 +1,167 @@
 ## Project Report Collaboration Insights
 
-Esta sección documenta la colaboración del equipo **KING** alrededor del informe académico y del ecosistema de repositorios de **Nexa**. El trabajo se organizó mediante documentación Docs-as-Code, repositorios GitHub, coordinación por sprint y evidencias visuales de reuniones, diseño y commits.
+Esta sección documenta la colaboración del equipo **KING** en la elaboración y evolución del informe académico de **Nexa**. De acuerdo con el enfoque Docs-as-Code solicitado para el curso, el reporte se mantiene en GitHub y evoluciona mediante commits, revisión cruzada, integración de capítulos y actualización progresiva de evidencias.
+
 
 ### Organización en GitHub
 
+El trabajo del equipo se organizó en una organización pública de GitHub, separando el repositorio del informe académico de los repositorios de implementación. Esta separación permite distinguir la evolución documental del Project Report frente a la evolución técnica de la Landing Page, la Web Application y los Web Services.
+
+| Recurso | URL | Propósito |
+|---|---|---|
+| Organización GitHub del equipo KING | [https://github.com/upc-pre-202610-1asi0730-12242-king](https://github.com/upc-pre-202610-1asi0730-12242-king) | Agrupar los repositorios oficiales del proyecto Nexa. |
+| Repositorio del Project Report | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report) | Mantener el informe académico en formato Markdown bajo enfoque Docs-as-Code. |
+| Repositorio de la Landing Page | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) | Contener el sitio público de Nexa y sus evidencias asociadas. |
+| Repositorio de la Web Application | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) | Contener la aplicación web frontend desarrollada para los flujos principales del producto. |
+| Repositorio de Web Services | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) | Contener la primera versión de servicios backend de Nexa Platform documentada para AV2. |
+| Landing Page | [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) | Evidencia pública del sitio de presentación del producto. |
+| Web Application | [https://nexa-webapp.onrender.com](https://nexa-webapp.onrender.com) | Evidencia pública de la Web Application desplegada en Render para revisión académica. |
+| Platform API | [https://nexa-platform-api.onrender.com](https://nexa-platform-api.onrender.com) | Evidencia pública del despliegue controlado de la API en Render para AV2. |
+
+### Releases auditados para AV2
+
+| Repositorio | Release / estado documental | Evidencia auditada |
+|---|---|---|
+| `nexa-website` | `v3.0.0` | Tag `v3.0.0` del 15/06/2026; registra el release de cierre AV2 disponible para revisión de Landing Page. |
+| `nexa-webapp` | `v2.0.0` | Tag `v2.0.0` del 16/06/2026; documenta el release de cierre AV2 disponible para revisión de Web Application. |
+| `nexa-platform` | `v1.0.0` | Tag `v1.0.0` del 16/06/2026; registra el release de cierre AV2 disponible para revisión de Web Services. |
+| `nexa-ecosystem-report` | `v2.0.0` como último release documental relevante + commits AV2 posteriores | Tag `v2.0.0` del 12/05/2026; commits AV2 posteriores de junio documentan Capítulo 3, Capítulo 4, Capítulo 5 y evidencias. |
+
+> *Nota:* La evidencia de releases se interpreta como una evolución incremental. En Landing Page, `nexa-website` conserva releases previos de AV2 como `v2.2.0` y `v2.3.0`, hasta llegar al release de cierre `v3.0.0`. En Web Services, `nexa-platform` conserva evidencia de `v0.6.1` como parche de validación AV2 y `v1.0.0` como release de cierre backend. En Web Application, `nexa-webapp` conserva `v1.7.1` como patch AV2 previo, `v1.8.0` como cleanup/layout polish y `v2.0.0` como release de cierre WebApp para el corte AV2.
+
+### Despliegues AV2
 | Recurso | URL |
-|---|---|
-| Organización GitHub del equipo KING | [https://github.com/upc-pre-202610-1asi0730-12242-king](https://github.com/upc-pre-202610-1asi0730-12242-king) |
-| Repositorio del informe (Docs-as-Code) | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) |
-| Repositorio de la Landing Page | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) |
-| Repositorio de la Web Application TB1 | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) |
-| Repositorio del Backend / Plataforma (futuro) | [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) |
-| Landing desplegada (GitHub Pages) | [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) |
-| Web App desplegada (Firebase Hosting) | [https://nexa-2f1bb.web.app/](https://nexa-2f1bb.web.app/) |
 
 ### Distribución de actividades del equipo
 
-El equipo se organizó alrededor de liderazgos funcionales. Cada integrante mantuvo frentes principales y colaboró en tareas transversales de investigación, diseño, arquitectura, documentación y publicación. Para TB1, la evidencia verificable de control de versiones se concentra en `main` y en commits convencionales; GitFlow queda documentado como modelo de trabajo para ordenar futuras iteraciones sin presentarlo como práctica histórica completa.
+| Integrante | Frente principal | Tareas documentadas | Evidencia asociada |
+|---|---|---|---|
+| Marín Cueva, César Fernando | Revisión documental, consistencia académica y soporte de Sprint 3. | Actualización de Capítulo 3, Landing Page mockups, Capítulo 5, Sprint 3 y notas de despliegue/PostgreSQL donde aplica. | Commits AV2 del reporte, evidencia de Capítulo 5 y commits de `nexa-platform` relacionados con documentación de Render/PostgreSQL. |
+| Rojas Mancilla, Gerard Gianpier | Arquitectura técnica, Invoicing, consultas/comandos y consistencia backend. | Colaboración en bounded contexts, documentación técnica, Shared Kernel, persistencia e Invoicing. | Capítulo 4, Capítulo 5, repositorios `nexa-webapp` y `nexa-platform`. |
+| Torrejón De Los Santos, Gino Rodrigo | Catalog Management, coherencia funcional y evidencias de producto. | Colaboración en Catalog Management, relación entre investigación, diseño, backlog, UX y alcance funcional AV2. | Capítulo 3, Capítulo 4, Student Outcome y commits técnicos asociados a catálogo. |
+| Verde Bueno, Joaquín Francisco | Warehouse, mockups, UX/UI y continuidad visual. | Reemplazo/adición de mockups por segmento, trazabilidad de Warehouse y continuidad entre flujos UX y backend. | Capítulo 4, assets del informe y commits AV2 de mockups. |
+| Yucra Sandoval, Diego Sebastian | Coordinación general, releases, integración documental y despliegues. | Coordinación de releases auditados, WebApp/API en Render, PostgreSQL, SCM, Sprint 3 y alineación final del reporte. | Commits de release, README, auditorías técnicas y actualización documental del informe. |
 
-| Integrante | Frentes de liderazgo | Frentes de colaboración |
+### Evidencias de GitHub Insights
+
+#### Sprint 1 / AV1
+
+![GitHub Insights del equipo KING](../assets/images/front-matter/collaboration/github-insights.png)
+
+Figura. GitHub Insights histórico del equipo KING utilizado como evidencia inicial de colaboración durante AV1/TB1. Elaboración propia.
+
+#### Sprint 2 / TB1
+
+![GitHub Insights Sprint 2 / TB1](../assets/images/front-matter/collaboration/github-insights/sprint-2-github-insights.png)
+
+Figura. GitHub Insights utilizado como evidencia de actividad y colaboración durante Sprint 2 / TB1. Elaboración propia.
+
+#### Sprint 3 / AV2
+
+![GitHub Insights de nexa-platform durante Sprint 3 / AV2](../assets/images/front-matter/collaboration/github-insights/sprint-3-github-insights.png)
+
+Figura. GitHub Insights del repositorio `nexa-platform` durante Sprint 3 / AV2, asociado a la actividad del backend y al release de Web Services. Elaboración propia.
+
+### Evidencias complementarias del ecosistema AV2
+
+Durante el cierre AV2, el equipo distribuyó trabajo entre Landing Page, WebApp, Web Services y reporte. Según la coordinación del equipo, Gino y Joaquín trabajaron en la Landing Page; Diego y César apoyaron el cierre de WebApp; Gerard concentró trabajo backend; y el repositorio `nexa-ecosystem-report` se mantuvo como repositorio documental integrador. El intervalo principal de trabajo coordinado ocurrió aproximadamente entre las 3:00 p. m. y las 2:00 a. m.
+
+![GitHub Insights nexa-website AV2](../assets/images/front-matter/collaboration/github-insights/nexa-website-insights-av2.png)
+
+Figura. GitHub Insights complementario de `nexa-website` para AV2: 4 autores, 16 commits y release `v3.0.0`. Elaboración propia.
+
+![GitHub Insights nexa-platform AV2](../assets/images/front-matter/collaboration/github-insights/nexa-platform-insights-av2.png)
+
+Figura. GitHub Insights complementario de `nexa-platform` para AV2: 5 autores, 180 commits y release `v1.0.0`. Elaboración propia.
+
+![GitHub Insights nexa-webapp AV2](../assets/images/front-matter/collaboration/github-insights/nexa-webapp-insights-av2.png)
+
+Figura. GitHub Insights complementario de `nexa-webapp` para AV2: 5 autores, 177 commits, 15 releases y release `v2.0.0`. Elaboración propia.
+
+> *Nota:* Estas evidencias complementan los commits e insights del repositorio `nexa-ecosystem-report`; no reemplazan la evidencia principal del informe ni los pendientes controlados de coordinación Sprint 3 / AV2 y revisión de evidencias AV2.
+
+### Evidencias de commits por repositorio
+
+#### nexa-ecosystem-report
+
+![Primeros commits nexa-ecosystem-report](../assets/images/front-matter/collaboration/report-commits/first-commits.png)
+
+Figura. Primeros commits del repositorio `nexa-ecosystem-report`. Elaboración propia.
+
+![Commits intermedios nexa-ecosystem-report](../assets/images/front-matter/collaboration/report-commits/commits.png)
+
+Figura. Bloque intermedio de commits del repositorio `nexa-ecosystem-report`. Elaboración propia.
+
+![Últimos commits nexa-ecosystem-report](../assets/images/front-matter/collaboration/report-commits/last-commits.png)
+
+Figura. Últimos commits del repositorio `nexa-ecosystem-report` registrados como evidencia documental del informe. Para AV2 se consideran como referencia los commits `b3ed14b`, `7fec7ca`, `1fac304`, `e83deb7`, `6aa80f5`, `0537d19` y `6035681`. Elaboración propia.
+
+#### nexa-website
+
+![Primeros commits nexa-website](../assets/images/front-matter/collaboration/website-commits/first-commits.png)
+
+Figura. Primeros commits del repositorio `nexa-website`. Elaboración propia.
+
+![Commits intermedios nexa-website](../assets/images/front-matter/collaboration/website-commits/commits.png)
+
+Figura. Bloque intermedio de commits del repositorio `nexa-website`. Elaboración propia.
+
+![Últimos commits nexa-website](../assets/images/front-matter/collaboration/website-commits/last-commits.png)
+
+Figura. Últimos commits históricos del repositorio `nexa-website`. Para el corte AV2 complementario se registra además el release `v3.0.0` y sus capturas reales en esta sección. Elaboración propia.
+
+#### nexa-platform
+
+![Commits nexa-platform v0.6.0 parte 1](../assets/images/front-matter/collaboration/platform-commits/nexa-platform-commits-v0-6-0-pt1.png)
+
+Figura. Commits del repositorio `nexa-platform` asociados al desarrollo de Web Services para Sprint 3 / AV2, parte 1. Elaboración propia.
+
+![Commits nexa-platform v0.6.0 parte 2](../assets/images/front-matter/collaboration/platform-commits/nexa-platform-commits-v0-6-0-pt2.png)
+
+Figura. Commits del repositorio `nexa-platform` asociados al desarrollo de Web Services para Sprint 3 / AV2, parte 2. Elaboración propia.
+
+![Commits nexa-platform v0.6.0 parte 3](../assets/images/front-matter/collaboration/platform-commits/nexa-platform-commits-v0-6-0-pt3.png)
+
+Figura. Commits del repositorio `nexa-platform` asociados al desarrollo de Web Services para Sprint 3 / AV2, parte 3. Elaboración propia.
+
+![Commits nexa-platform v0.6.0 parte 4](../assets/images/front-matter/collaboration/platform-commits/nexa-platform-commits-v0-6-0-pt4.png)
+
+Figura. Commits del repositorio `nexa-platform` asociados al desarrollo de Web Services para Sprint 3 / AV2, parte 4. Elaboración propia.
+
+![Commits nexa-platform v0.6.0 parte 5](../assets/images/front-matter/collaboration/platform-commits/nexa-platform-commits-v0-6-0-pt5.png)
+
+Figura. Commits del repositorio `nexa-platform` asociados al desarrollo de Web Services para Sprint 3 / AV2, parte 5. Elaboración propia.
+
+![Commits nexa-platform v0.6.0 parte 6](../assets/images/front-matter/collaboration/platform-commits/nexa-platform-commits-v0-6-0-pt6.png)
+
+Figura. Commits del repositorio `nexa-platform` asociados al desarrollo de Web Services para Sprint 3 / AV2, parte 6. Elaboración propia.
+
+![Commits nexa-platform v0.6.0 parte 7](../assets/images/front-matter/collaboration/platform-commits/nexa-platform-commits-v0-6-0-pt7.png)
+
+Figura. Commits del repositorio `nexa-platform` asociados al desarrollo de Web Services para Sprint 3 / AV2, parte 7. Elaboración propia.
+
+![Commits nexa-platform v0.6.0 parte 8](../assets/images/front-matter/collaboration/platform-commits/nexa-platform-commits-v0-6-0-pt8.png)
+
+Figura. Commits del repositorio `nexa-platform` asociados al desarrollo de Web Services para Sprint 3 / AV2, parte 8. Elaboración propia.
+
+![Commits nexa-platform v0.6.0 parte 9](../assets/images/front-matter/collaboration/platform-commits/nexa-platform-commits-v0-6-0-pt9.png)
+
+Figura. Commits representativos del repositorio `nexa-platform` para la primera versión AV2 de Web Services. Para el corte AV2 complementario se registra además el release `v1.0.0` y sus capturas reales en esta sección. Elaboración propia.
+
+### Sprint collaboration en Jira
+
+#### Sprint 1 / AV1
+
+![Jira: Vista general Sprint 0 y Sprint 1](../assets/images/front-matter/collaboration/jira/sprint-0-sprint-1.png)
+
+Figura. Vista general Sprint 0 y Sprint 1 en Jira. Elaboración propia.
+
+![Jira Sprint 1: parte 2](../assets/images/front-matter/collaboration/jira/sprint-1-p2.png)
+
+Figura. Sprint 1 en Jira, parte 2. Elaboración propia.
 |---|---|---|
+| Sprint 1 / AV1 | Construcción inicial del informe, definición del problema, segmentos, Lean UX, requisitos, diseño inicial y Landing Page. | Reporte base estructurado, Landing Page documentada, evidencias iniciales de commits y coordinación. |
+| Sprint 2 / TB1 | Consolidación de la Web Application frontend, actualización de UX/UI, mejora del Product Backlog, evidencias de repositorios y revisión integral del reporte. | Reporte ampliado, Web Application documentada, evidencias de commits, Jira y coordinación del equipo. |
 | Yucra Sandoval, Diego Sebastian | Project Management, integración de capítulos, Product Backlog | Arquitectura, UX/UI, documentación |
 | Verde Bueno, Joaquín Francisco | UX/UI Design, EventStorming, Ubiquitous Language | Documentación, User Stories |
 | Marín Cueva, César Fernando | Documentación, análisis competitivo, entrevistas | UX/UI, backlog |
@@ -32,83 +174,33 @@ El equipo se organizó alrededor de liderazgos funcionales. Cada integrante mant
 
 Figura. GitHub Insights: actividad de contribuciones del equipo KING en los repositorios del proyecto Nexa. Elaboración propia.
 
-### Evidencias de commits — nexa-report
-
-![Primeros commits nexa-report](../assets/images/front-matter/collaboration/report-commits/first-commits.png)
-
-Figura. Primeros commits del repositorio `nexa-report`. Elaboración propia.
-
-![Commits intermedios nexa-report](../assets/images/front-matter/collaboration/report-commits/commits.png)
-
-Figura. Bloque intermedio de commits del repositorio `nexa-report`. Elaboración propia.
-
-![Últimos commits nexa-report](../assets/images/front-matter/collaboration/report-commits/last-commits.png)
-
-Figura. Últimos commits del repositorio `nexa-report` al cierre de AV1. Elaboración propia.
-
-### Evidencias de commits — nexa-website
-
-![Primeros commits nexa-website](../assets/images/front-matter/collaboration/website-commits/first-commits.png)
-
-Figura. Primeros commits del repositorio `nexa-website`. Elaboración propia.
-
-![Commits intermedios nexa-website](../assets/images/front-matter/collaboration/website-commits/commits.png)
-
-Figura. Bloque intermedio de commits del repositorio `nexa-website`. Elaboración propia.
-
-![Últimos commits nexa-website](../assets/images/front-matter/collaboration/website-commits/last-commits.png)
-
-Figura. Últimos commits del repositorio `nexa-website` al cierre de AV1. Elaboración propia.
-
-### Sprint collaboration en Jira
-
-![Jira: Vista general Sprint 0 y Sprint 1](../assets/images/front-matter/collaboration/jira/sprint-0-sprint-1.png)
-
-Figura. Vista general Sprint 0 + Sprint 1 en Jira. Elaboración propia.
-
-![Jira Sprint 1: parte 2](../assets/images/front-matter/collaboration/jira/sprint-1-p2.png)
-
-Figura. Sprint 1 en Jira, parte 2. Elaboración propia.
-
-![Jira Sprint 1: parte 3](../assets/images/front-matter/collaboration/jira/sprint-1-p3.png)
-
-Figura. Sprint 1 en Jira, parte 3. Elaboración propia.
-
-![Jira Product Backlog](../assets/images/front-matter/collaboration/jira/backlog.png)
-
-Figura. Product Backlog completo en Jira. Elaboración propia.
-
-### TB1 / Sprint 2 — Colaboración y coordinación
-
-Para TB1, el equipo amplió la colaboración desde documentación e investigación hacia la consolidación de la web application y la limpieza integral del reporte. La siguiente tabla resume el trabajo realizado durante Sprint 2.
-
-| Área de colaboración | Cómo trabajamos durante TB1 | Evidencia |
-|---|---|---|
-| Coordinación general | Diego lideró integración del reporte, alcance webapp, QA Docs-as-Code y consolidación final de la entrega | Commits de integración en `nexa-report`, `nexa-webapp` y `nexa-website` |
-| Documentación y revisión | César, Joaquín y Gino sostuvieron limpieza de capítulos, actualización de needfinding, IA, impact mapping, user stories y revisión de entregables | Commits distribuidos en `nexa-report` del 2 al 5 de mayo |
-| UX/UI de webapp | Gino y Joaquín actualizaron user flows, wireflows y mockups; Diego reconstruyó la estructura 4.4 | Commits de Capítulo 4 del 5 de mayo |
-| Webapp implementation | El repositorio `nexa-webapp` concentra flujos de auth, dashboard, orders, inventory, dispatch, portal, reports e i18n | Commits de `nexa-webapp` del 26/04 al 05/05 |
-| Arquitectura | Gerard contribuyó en DDD/C4, HTTP service layer y módulos puntuales de webapp | Commits vinculados a C4 y webapp clients/portal |
-| Continuidad landing | César, Joaquín, Gino y Gerard actualizaron SEO, tokens y copy; Diego alineó CTAs con webapp | Commits en `nexa-website` del 28/04 al 03/05 |
-
-| Decisión o ajuste durante TB1 | Motivo | Resultado |
-|---|---|---|
-| Separar Sprint 1 baseline de Sprint 2 en Capítulo 5 | Evitar mezclar landing AV1 con webapp TB1 | Capítulo 5 con dos sprints documentados por separado |
-| Usar Fake API / JSON Server en lugar de backend productivo | Validar flujos frontend sin afirmar servicios no implementados | Webapp demostrable sin sobredeclaración |
-| Reconstruir sección 4.4 con wireframes, wireflows y mockups actuales | Evidencia anterior estaba desactualizada respecto al producto | Documentación UX/UI alineada con webapp real |
-| Limpiar Capítulos 1–4 de terminología imprecisa | Segmentos, personas y style guidelines requerían coherencia con el producto actual | Reporte más coherente y defendible |
-| Documentar contribución real por evidencia | Evitar afirmaciones de contribución igualitaria no verificable | Student Outcome con progresión AV1-TB1 |
 
 ### Evidencias de coordinación y trabajo en equipo
 
-![Reunión de coordinación del equipo](../assets/images/front-matter/collaboration/team-collaboration-meeting.jpg)
+#### Sprint 1 / AV1
+
+![Reunión de coordinación del equipo KING](../assets/images/front-matter/collaboration/team-collaboration-meeting.jpg)
 
 Figura. Reunión de coordinación del equipo KING durante el Sprint 1. Elaboración propia.
 
+![Colaboración del equipo durante Sprint 1](../assets/images/front-matter/collaboration/sprint-collaboration-evidence.jpg)
+
+Figura. Trabajo colaborativo del equipo KING durante el Sprint 1. Elaboración propia.
+
 ![Colaboración del equipo durante sprint](../assets/images/front-matter/collaboration/sprint-collaboration-evidence.jpg)
 
-Figura. Trabajo colaborativo del equipo durante el Sprint 1. Elaboración propia.
-
-![Práctica de exposición del equipo](../assets/images/front-matter/collaboration/presentation-practice-evidence.png)
-
 Figura. Práctica de exposición y preparación de la sustentación AV1 del equipo KING. Elaboración propia.
+
+#### Sprint 2 / TB1
+
+![Evidencia de coordinación grupal Sprint 2](../assets/images/front-matter/collaboration/team-collaboration-metting-2.png)
+
+Figura. Reunión de coordinación del equipo KING durante el Sprint 2. Elaboración propia.
+
+![Práctica de exposición TB1](../assets/images/front-matter/collaboration/tb1-presentation-evidence.jpeg)
+
+Figura. Práctica de exposición del equipo KING para la sustentación TB1. Elaboración propia.
+
+#### Sprint 3 / AV2
+
+La evidencia de coordinación Sprint 3 / AV2 se mantiene como pendiente controlado hasta contar con el registro real de la sesión final de coordinación y revisión de entrega. Ruta prevista: `report/assets/images/front-matter/collaboration/sprint-3-coordination-evidence.png`.

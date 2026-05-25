@@ -18,10 +18,9 @@
 
 <h1>Informe de Trabajo Final</h1>
 
-<p><strong>Entrega:</strong> Trabajo Parcial 1 (TB1)</p>
 <p><strong>Startup:</strong> King</p>
 <p><strong>Producto:</strong> Nexa</p>
-<p><strong>Mes y año:</strong> Mayo 2026</p>
+<p><strong>Mes y año:</strong> Junio 2026</p>
 
 <h2>Relación de integrantes</h2>
 
