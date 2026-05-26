@@ -10,7 +10,6 @@ Las entrevistas se organizaron para entender cómo el problema aparece en esos t
 
 **Guion por segmento**
 
-**S1: Coordinación comercial / ventas internas**
 
 **Segmento:** Personal que recibe, interpreta y canaliza pedidos hacia facturación, almacén o despacho
 
@@ -67,7 +66,7 @@ Este bloque explora el valor mínimo esperado de una herramienta digital.
 
 **Perfiles entrevistados:** Personas con responsabilidad de supervisión o decisión sobre importación, abastecimiento, almacén, inventario, despacho y coordinación logística.
 
-**Objetivo de investigación:** Comprender el flujo end-to-end del pedido, sus puntos críticos, riesgos de escalabilidad y criterios de valor para una primera solución digital.
+**Objetivo de investigación:** Comprender el flujo end-to-end del pedido, sus puntos críticos, riesgos de escalabilidad, criterios de control operativo y responsabilidades de administración interna de la empresa contratante dentro de una primera solución digital.
 
 **Duración sugerida:** 20 a 30 minutos.
 
@@ -123,7 +122,7 @@ Este bloque prioriza valor operativo antes que una lista de funciones.
 
 **Nota para el moderador**. No es necesario formular todas las preguntas literalmente. Lo importante es mantener el foco, pedir ejemplos recientes, repreguntar “por qué” cuando aparezca un problema y no interrumpir silencios útiles.
 
-**S3: Comprador B2B / cliente comercial**
+**S3: B2B Buyer Portal**
 
 **Segmento:** Bodegas, minimarkets, pequeños mayoristas y negocios HORECA que compran productos refrigerados o congelados a distribuidores.
 
@@ -250,7 +249,7 @@ Cinthia enfatiza la necesidad de simplicidad. Describe su flujo actual como una 
 
 **Resumen de la Entrevista**
 
-Celia Pérez, con experiencia previa en ventas de ruta, aporta una perspectiva crítica sobre el uso de herramientas en campo. Utilizó aplicaciones móviles (Rikra) que, aunque eficientes para digitalizar la venta en tiempo real y eliminar el papel, presentaban fallos de rendimiento y lentitud que forzaban el retorno a canales informales. Destaca que la herramienta ideal debe integrar datos del cliente (RUC, saldos, dirección) para evitar la doble digitación.
+Celia Pérez, con experiencia previa en ventas de ruta, aporta una perspectiva crítica sobre el uso de herramientas en campo. Utilizó aplicaciones móviles (Riqra) que, aunque eficientes para digitalizar la venta en tiempo real y eliminar el papel, presentaban fallos de rendimiento y lentitud que forzaban el retorno a canales informales. Destaca que la herramienta ideal debe integrar datos del cliente (RUC, saldos, dirección) para evitar la doble digitación.
 
 Su testimonio confirma que, para el personal en ruta, la estabilidad de la conexión y la velocidad de respuesta del sistema son factores determinantes para la adopción tecnológica. Cualquier retraso en el dispositivo móvil se traduce en una atención deficiente al cliente y en una carga operativa innecesaria al final del día.
 
@@ -307,7 +306,7 @@ Edith Taype opera en el punto de venta (supermercados), donde la manipulación y
 - **Nombres:** Jesica Maria
 - **Apellidos:** Sandoval Romero
 - **Edad:** 48 años
-- **Distrito:** Jesus María
+- **Distrito:** Jesús María
 
 *Evidencia de entrevista: Jesica Sandoval*
 
@@ -323,11 +322,11 @@ Edith Taype opera en el punto de venta (supermercados), donde la manipulación y
 
 **Resumen de la Entrevista**
 
+Jesica Sandoval, supervisora de ventas HORECA, subraya el riesgo de la transcripción manual de pedidos, donde los errores en cantidades obligan a validaciones individuales de cada orden. Señala que la variable crítica es el control de fechas de vencimiento (FEFO), información que actualmente no está integrada en el sistema central y requiere coordinación verbal constante con almacén.
+
 Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcripción manual de pedidos, donde los errores en cantidades obligan a validaciones individuales de cada orden. Señala que la variable crítica es el control de fechas de vencimiento (FEFO), información que actualmente no está integrada en el sistema central y requiere coordinación verbal constante con almacén.
 
 **S3: Comprador B2B / cliente comercial**
-
-Para TB1, S3 se mantiene como segmento objetivo válido a partir de dos entrevistas exploratorias y del análisis de requisitos del flujo de compra B2B. La cobertura visual de sus flujos se mantiene parcial en esta entrega, debido a que Sprint 2 prioriza el circuito interno de coordinación comercial y logística entre S1 y S2. Su experiencia se conserva a nivel de requisitos y flujos, con ampliación prevista para el siguiente hito.
 
 **Entrevistado 1**
 
@@ -367,7 +366,7 @@ Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre log�
 
 - **Inicio de la entrevista:** 2:24:35
 - **Fin de la entrevista:** 2:40:00
-- **Duración:** 40:40
+- **Duración:** 15:25
 - **Video individual de entrevista:** [Henrry García](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQAH4V2bsaaTRq3LvOpIH7oBAesfDCbmetCKnYA7IjyxJuo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=YDYNzb)
 - **Video consolidado de entrevistas:** [Entrevistas consolidadas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CJLnTu)
 
@@ -381,7 +380,7 @@ Henrry García enfatiza que la confianza es el motor de la relación B2B. Aunque
 
 El segmento de vendedoras y personal de coordinación comercial, representado en esta muestra por Lorena Silva, Cinthia Levano y Celia Pérez, constituye el punto de captura más sensible del flujo del pedido. En las tres entrevistas aparece la misma tensión operativa: responder con rapidez al cliente y, al mismo tiempo, validar crédito, stock y condiciones comerciales con información que no siempre está integrada. Sobre esa base se identifican los siguientes patrones compartidos.
 
-*Análisis del S1: Coordinación comercial / ventas internas*
+*Análisis del S1: Commercial Coordination*
 
 | Variable observada en S1 | Evidencia recurrente | Lectura analítica | Implicancia de diseño |
 | --- | --- | --- | --- |
@@ -416,11 +415,11 @@ El segmento de vendedoras y personal de coordinación comercial, representado en
 - Integrar en la misma interfaz la visibilidad de crédito, cobranzas y disponibilidad para reducir validaciones paralelas.
 - La experiencia debe responder bien en móvil, porque parte importante del trabajo ocurre fuera del escritorio o en condiciones de alta urgencia.
 
+**Análisis del S2: Operations / Account Owner**
+
 **Análisis del S2: Jefatura logística / coordinación operativa**
 
 El segmento S2: Jefatura logística / coordinación operativa, representado en esta muestra por Hilda Litano, Edith Taype y Jesica Sandoval, aporta una lectura transversal del dominio. Aquí el foco se desplaza desde la rapidez comercial hacia la trazabilidad, el control documental, la rotación y la responsabilidad operativa sobre productos perecederos. Estas entrevistas exponen las restricciones operativas y los criterios de control que este segmento debe sostener para que el pedido se cumpla correctamente.
-
-*Análisis del S2: Jefatura logística / coordinación operativa*
 
 | Variable observada en S2 | Evidencia recurrente | Lectura analítica | Implicancia de diseño |
 | --- | --- | --- | --- |
@@ -453,7 +452,7 @@ El segmento S2: Jefatura logística / coordinación operativa, representado en e
 - Reducir los **silos de información** permitiendo diferentes niveles de acceso según el rol operativo, sin que la visibilidad dependa de coordinación verbal o papeles.
 - El S2 concentra las reglas, políticas y restricciones operativas que el producto debe respetar para que el flujo del pedido sea ejecutable y trazable.
 
-**Análisis del S3: Comprador B2B / cliente comercial**
+**Análisis del S3: B2B Buyer Portal**
 El análisis de las dos entrevistas exploratorias con Pedro Puente y Henrry García muestra un patrón consistente: el comprador comercial necesita previsibilidad logística, pero no está dispuesto a adoptarla a costa de complejidad adicional o pérdida de trato humano. Para ambos, el distribuidor no es solo un proveedor, sino un actor del que depende la continuidad operativa del negocio.
 
 *Análisis del S3: Comprador B2B / cliente comercial*
@@ -504,11 +503,11 @@ El tramo final del flujo del pedido —despacho, seguimiento, incidencia y cierr
 - El estado del pedido debe mantenerse visible para el comprador, la coordinación comercial y la operación.
 - El cierre debe registrar una evidencia mínima consistente, suficiente para disminuir reclamos y ambigüedad posterior.
 
+**Contexto operativo y supuestos de compatibilidad para análisis UX**
+
+Como complemento al análisis UX, el equipo registra los dispositivos, canales y condiciones de uso declaradas durante las entrevistas. En el caso de navegadores, cuando el dato no aparece de forma explícita, se considera como supuesto de compatibilidad para orientar pruebas técnicas, no como respuesta literal de la persona entrevistada ni como característica definitiva del arquetipo.
 **Contexto operativo complementario para análisis UX**
 
-Como complemento al análisis UX, el equipo registra los navegadores, dispositivos y canales más probables o declarados durante la interacción operativa. Cuando el dato no aparece de forma explícita en la entrevista, se considera como supuesto de diseño para orientar decisiones de compatibilidad y pruebas, no como respuesta literal de la persona entrevistada.
-
-| Entrevistado / segmento | Navegador considerado | Dispositivo principal | Canal de comunicación | Implicancia UX |
 | --- | --- | --- | --- | --- |
 | Lorena Silva / Coordinación comercial | Google Chrome | Laptop durante gestión administrativa; móvil para coordinación en campo | WhatsApp declarado como canal operativo crítico; correo para formalidades | La captura de pedidos debe funcionar bien en Chrome y permitir consulta rápida sin depender de muchas ventanas. |
 | Cinthia Levano / Coordinación comercial | Google Chrome | Computadora de oficina como contexto principal | WhatsApp, Trello y Excel declarados como herramientas de trabajo | El flujo debe centralizar información dispersa y reducir pasos repetidos entre sistemas. |
@@ -520,7 +519,6 @@ Como complemento al análisis UX, el equipo registra los navegadores, dispositiv
 | Henrry García / Comprador B2B | Google Chrome | Móvil para seguimiento y coordinación; computadora para revisión administrativa | Llamadas, WhatsApp y contacto humano para excepciones | El portal debe conservar una ruta de soporte humano y no convertir el autoservicio en una barrera de confianza. |
 
 > *Nota:* Esta tabla no agrega citas nuevas. Ordena información declarada en los resúmenes cuando existe evidencia y completa, como supuesto de análisis, los datos de navegador o dispositivo necesarios para orientar compatibilidad, responsive design y pruebas de UX.
-
 
 Tras el análisis detallado de los ocho perfiles levantados y de la lectura conjunta de los tres segmentos del producto, se identifica una **brecha de trazabilidad integral**. Esta brecha se manifiesta en la desconexión entre la promesa comercial capturada por canales informales y la realidad operativa gestionada con sistemas fragmentados, validaciones manuales y visibilidad incompleta del despacho.
 
