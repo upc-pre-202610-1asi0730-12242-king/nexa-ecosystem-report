@@ -62,7 +62,7 @@ Este bloque explora el valor mínimo esperado de una herramienta digital.
 - Si pudieras cambiar una sola cosa del proceso actual, ¿qué cambiarías primero y por qué?
 - ¿Hay algo importante sobre tu trabajo o sobre este proceso que no te haya preguntado y creas que debería entender?
 
-**S2: Jefatura logística / coordinación operativa**
+**S2: Operations / Account Owner**
 
 **Perfiles entrevistados:** Personas con responsabilidad de supervisión o decisión sobre importación, abastecimiento, almacén, inventario, despacho y coordinación logística.
 
@@ -72,7 +72,7 @@ Este bloque explora el valor mínimo esperado de una herramienta digital.
 
 **Tipo de entrevistado buscado:** 3 a 5 entrevistados de jefatura, supervisión o coordinación operativa con visión amplia del proceso.
 
-**Foco principal:** Trazabilidad, puntos de quiebre, visibilidad interna, coordinación entre áreas, prioridades del MVP y evolución futura.
+**Foco principal:** Trazabilidad, puntos de quiebre, visibilidad interna, coordinación entre áreas, control de inventario, despacho, documentos, accesos, configuración de empresa y evolución futura.
 
 **Uso dentro del informe:** Este segmento aporta la perspectiva de coordinación logística y validación operativa, con restricciones que alimentan el diseño, el EventStorming y la delimitación del alcance.
 
@@ -176,7 +176,7 @@ En esta subsección se preservan los nombres y cargos reales de las personas ent
 
 Además de las capturas integradas en el informe, el archivo audiovisual original de las ocho entrevistas se conserva en la carpeta compartida **King Nexa** de OneDrive. Cada ficha incluye su enlace directo para mantener trazabilidad entre la evidencia visual resumida y la grabación completa utilizada en el levantamiento.
 
-**S1: Coordinación comercial / ventas internas**
+**S1: Commercial Coordination**
 
 **Entrevistado 1**
 
@@ -253,7 +253,7 @@ Celia Pérez, con experiencia previa en ventas de ruta, aporta una perspectiva c
 
 Su testimonio confirma que, para el personal en ruta, la estabilidad de la conexión y la velocidad de respuesta del sistema son factores determinantes para la adopción tecnológica. Cualquier retraso en el dispositivo móvil se traduce en una atención deficiente al cliente y en una carga operativa innecesaria al final del día.
 
-**S2: Jefatura logística / coordinación operativa**
+**S2: Operations / Account Owner**
 
 **Entrevistado 1**
 
@@ -324,9 +324,9 @@ Edith Taype opera en el punto de venta (supermercados), donde la manipulación y
 
 Jesica Sandoval, supervisora de ventas HORECA, subraya el riesgo de la transcripción manual de pedidos, donde los errores en cantidades obligan a validaciones individuales de cada orden. Señala que la variable crítica es el control de fechas de vencimiento (FEFO), información que actualmente no está integrada en el sistema central y requiere coordinación verbal constante con almacén.
 
-Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcripción manual de pedidos, donde los errores en cantidades obligan a validaciones individuales de cada orden. Señala que la variable crítica es el control de fechas de vencimiento (FEFO), información que actualmente no está integrada en el sistema central y requiere coordinación verbal constante con almacén.
+**S3: B2B Buyer Portal**
 
-**S3: Comprador B2B / cliente comercial**
+Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcripción manual de pedidos, donde los errores en cantidades obligan a validaciones individuales de cada orden. Señala que la variable crítica es el control de fechas de vencimiento (FEFO), información que actualmente no está integrada en el sistema central y requiere coordinación verbal constante con almacén.
 
 **Entrevistado 1**
 
@@ -360,7 +360,7 @@ Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre log�
 
 *Evidencia de entrevista: Henrry García*
 
-![Henry](../assets/images/chapter-2/interviews/henrry-garcia.jpeg)
+![Henrry](../assets/images/chapter-2/interviews/henrry-garcia.jpeg)
 
 > *Nota:* Captura de sesión de entrevista. Elaboración propia.
 
@@ -376,7 +376,7 @@ Henrry García enfatiza que la confianza es el motor de la relación B2B. Aunque
 
 ### ***2.2.3. Análisis de entrevistas***
 
-**Análisis del S1: Coordinación comercial / ventas internas**
+**Análisis del S1: Commercial Coordination**
 
 El segmento de vendedoras y personal de coordinación comercial, representado en esta muestra por Lorena Silva, Cinthia Levano y Celia Pérez, constituye el punto de captura más sensible del flujo del pedido. En las tres entrevistas aparece la misma tensión operativa: responder con rapidez al cliente y, al mismo tiempo, validar crédito, stock y condiciones comerciales con información que no siempre está integrada. Sobre esa base se identifican los siguientes patrones compartidos.
 
@@ -392,6 +392,7 @@ El segmento de vendedoras y personal de coordinación comercial, representado en
 **Características objetivas:**
 
 - **Rol laboral:** 100% de los entrevistados (3 de 3) ejerce funciones directas de captura de pedidos, gestión de créditos y seguimiento de cartera.
+- **Uso de herramientas digitales:** 100% interactúa con sistemas ERP (como Defontana) y herramientas de mensajería instantánea simultáneamente.
 - **Uso de herramientas digitales:** 100% interactúa con sistemas ERP (como Fontana) y herramientas de mensajería instantánea simultáneamente.
 - **Entorno de trabajo:** 67% (Lorena y Celia) operan o han operado frecuentemente en campo (visitas presenciales), mientras que el 33% (Cinthia) mantiene una base más administrativa/oficina.
 - **Experiencia en digitalización:** El 100% reporta que los sistemas actuales son insuficientes para el entorno móvil, obligando a duplicar tareas en papel o laptops.
@@ -417,9 +418,8 @@ El segmento de vendedoras y personal de coordinación comercial, representado en
 
 **Análisis del S2: Operations / Account Owner**
 
-**Análisis del S2: Jefatura logística / coordinación operativa**
+El segmento S2, representado en esta muestra por Hilda Litano, Edith Taype y Jesica Sandoval, aporta una lectura transversal del dominio. Aquí el foco se desplaza desde la rapidez comercial hacia la trazabilidad, el control documental, la rotación y la responsabilidad operativa sobre productos perecederos. Estas entrevistas exponen las restricciones operativas y los criterios de control que este segmento debe sostener para que el pedido se cumpla correctamente.
 
-El segmento S2: Jefatura logística / coordinación operativa, representado en esta muestra por Hilda Litano, Edith Taype y Jesica Sandoval, aporta una lectura transversal del dominio. Aquí el foco se desplaza desde la rapidez comercial hacia la trazabilidad, el control documental, la rotación y la responsabilidad operativa sobre productos perecederos. Estas entrevistas exponen las restricciones operativas y los criterios de control que este segmento debe sostener para que el pedido se cumpla correctamente.
 
 | Variable observada en S2 | Evidencia recurrente | Lectura analítica | Implicancia de diseño |
 | --- | --- | --- | --- |
@@ -489,7 +489,7 @@ El análisis de las dos entrevistas exploratorias con Pedro Puente y Henrry Garc
 
 **Implicancias de diseño operativo para el flujo de despacho y entrega**
 
-El tramo final del flujo del pedido —despacho, seguimiento, incidencia y cierre con evidencia— forma parte de las responsabilidades del S2 (Jefatura logística / coordinación operativa). A partir de los hallazgos sobre visibilidad de entrega, necesidad de estado comunicable, cierre defendible y carga operativa durante la ruta, se identifican las siguientes implicancias de diseño que complementan la caracterización del S2.
+El tramo final del flujo del pedido —despacho, seguimiento, incidencia y cierre con evidencia— forma parte de las responsabilidades del S2. A partir de los hallazgos sobre visibilidad de entrega, necesidad de estado comunicable, cierre defendible y carga operativa durante la ruta, se identifican las siguientes implicancias de diseño que complementan la caracterización del S2.
 
 **Evidencia que sustenta estas implicancias:**
 
@@ -506,8 +506,8 @@ El tramo final del flujo del pedido —despacho, seguimiento, incidencia y cierr
 **Contexto operativo y supuestos de compatibilidad para análisis UX**
 
 Como complemento al análisis UX, el equipo registra los dispositivos, canales y condiciones de uso declaradas durante las entrevistas. En el caso de navegadores, cuando el dato no aparece de forma explícita, se considera como supuesto de compatibilidad para orientar pruebas técnicas, no como respuesta literal de la persona entrevistada ni como característica definitiva del arquetipo.
-**Contexto operativo complementario para análisis UX**
 
+| Entrevistado / segmento | Navegador para pruebas de compatibilidad | Dispositivo principal | Canal de comunicación | Implicancia UX |
 | --- | --- | --- | --- | --- |
 | Lorena Silva / Coordinación comercial | Google Chrome | Laptop durante gestión administrativa; móvil para coordinación en campo | WhatsApp declarado como canal operativo crítico; correo para formalidades | La captura de pedidos debe funcionar bien en Chrome y permitir consulta rápida sin depender de muchas ventanas. |
 | Cinthia Levano / Coordinación comercial | Google Chrome | Computadora de oficina como contexto principal | WhatsApp, Trello y Excel declarados como herramientas de trabajo | El flujo debe centralizar información dispersa y reducir pasos repetidos entre sistemas. |
