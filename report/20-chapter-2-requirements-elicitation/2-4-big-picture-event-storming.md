@@ -8,14 +8,13 @@ El EventStorming se construyó como un ejercicio de síntesis del dominio a part
 
 ### ***2.4.1. Proceso de construcción del modelado***
 
-*Design-Level EventStorming — Step 1: Exploration*
-![DDD Step 1](../assets/images/chapter-2/event-storming/ddd-step-1-event-storming.png)
+*Big Picture EventStorming — Step 1: Exploration*
 
-*Design-Level EventStorming — Step 2: Timeline*
-![DDD Step 2](../assets/images/chapter-2/event-storming/ddd-step-2-event-storming.png)
+*Big Picture EventStorming — Step 2: Timeline*
+![Big Picture Step 2](../assets/images/chapter-2/event-storming/ddd-step-2-event-storming.png)
 
-*Design-Level EventStorming — Step 3: Pain Points*
-![DDD Step 3](../assets/images/chapter-2/event-storming/ddd-step-3-event-storming.png)
+*Big Picture EventStorming — Step 3: Pain Points*
+![Big Picture Step 3](../assets/images/chapter-2/event-storming/ddd-step-3-event-storming.png)
 
 *Proceso de construcción del modelado*
 
@@ -32,31 +31,38 @@ El EventStorming se construyó como un ejercicio de síntesis del dominio a part
 
 *Actores del dominio*
 
+| Actor / rol operativo | Segmento asociado | Responsabilidad principal |
+|---|---|---|
+| Comprador comercial B2B | S3 | Consulta catálogo, arma solicitudes, revisa el estado del pedido, accede a documentos visibles y da seguimiento a la entrega. |
+| Coordinación comercial | S1 | Recibe pedidos por portal, WhatsApp, llamada o Excel; identifica al cliente, valida condiciones comerciales y convierte solicitudes en pedidos confirmados. |
+| Responsable comercial autorizado | S1 / S2 | Revisa bloqueos comerciales, observaciones, crédito, documentos requeridos y coordinación con operación antes de confirmar el pedido. |
+| Operación / almacén | S2 | Controla disponibilidad real, reservas, lotes, vencimientos, criterios FEFO, preparación del pedido y prioridad de despacho. |
+| Responsable de despacho | S2 | Prepara la salida, asigna ruta o responsable de entrega, actualiza estados operativos y registra incidencias de despacho. |
+| Operations / Account Owner | S2 | Administra empresa, usuarios, accesos, configuración base, reglas internas, parámetros operativos y visibilidad general del tenant. |
+| Reparto / transportista | S2 | Ejecuta la entrega, reporta incidencias y registra evidencia mínima de conformidad o proof of delivery. |
 | Actor | Responsabilidad principal |
 |-------|----------------------------|
-| Cliente comercial | Consulta catálogo, crea pedidos y da seguimiento a la entrega |
-| Coordinación comercial | Identifica al cliente, captura pedidos asistidos, valida condiciones y comunica incidencias |
-| Supervisión comercial / operación | Configura catálogo, clientes, crédito, reglas y seguimiento |
-| Almacén / operación | Prepara el pedido, confirma disponibilidad y controla lotes o vencimientos |
-| Chofer de reparto | Ejecuta el despacho y registra el cierre de entrega |
-| Administrador autorizado | Gestiona cuentas internas y parámetros base del sistema |
 
 ### ***2.4.3. Eventos del dominio y puntos de tensión principales***
 
 *Eventos del dominio y puntos de tensión principales*
 
 | Evento del dominio | Actores implicados | Tensión o implicancia observada |
+|---|---|---|
+| Solicitud de compra iniciada | S3, S1 | El pedido puede nacer desde el portal del comprador o desde canales informales atendidos por coordinación comercial. |
+| Purchase Request registrada | S3, S1 | La información inicial puede llegar incompleta, duplicada o con observaciones no estructuradas. |
+| Solicitud enviada para validación comercial | S1 | Empieza la revisión de cliente, crédito, stock preliminar, dirección, condiciones y documentos requeridos. |
+| Solicitud validada o bloqueada | S1, S2 | Si crédito, stock o condiciones no son consistentes, la solicitud no debe convertirse todavía en pedido confirmado. |
+| Purchase Order generada | S1, S2, S3 | La solicitud validada se convierte en pedido confirmado y deja trazabilidad del origen. |
+| Inventario reservado o ajustado | S2 | La operación revisa disponibilidad real, lotes, vencimientos, temperatura y prioridad FEFO. |
+| Pedido preparado para despacho | S2 | Aparecen tensiones de picking, lotes, faltantes, sustituciones y preparación física del producto. |
+| Dispatch Order creada | S2 | Se organiza ruta, responsable, estado operativo, evidencias requeridas y condiciones de entrega. |
+| Business Documents asociados | S1, S2 | Factura referencial, guía, XML, CDR, POD u otros documentos deben quedar vinculados al pedido. |
+| Pedido despachado | S2, S3 | La visibilidad del estado se vuelve crítica para reducir llamadas, reclamos e incertidumbre del comprador. |
+| Incidencia de ruta registrada | S2, S1, S3 | Una demora, rechazo, faltante o cambio debe comunicarse oportunamente para evitar pérdida de trazabilidad. |
+| Entrega cerrada con evidencia | S2, S3 | El cierre con evidencia permite reducir reclamos abiertos y sostener confianza en el cumplimiento. |
+| Pedido cancelado antes de despacho | S1, S2, S3 | La cancelación exige liberar reservas, ajustar continuidad operativa y comunicar el cambio al comprador. |
 |---------|----------------------------|----------------------|
-| Cliente consulta disponibilidad o solicita mercadería | Cliente comercial, coordinación comercial | El pedido suele nacer con información incompleta o por canales informales |
-| Pedido creado en borrador | Coordinación comercial, cliente comercial | La información todavía puede contener ambigüedades, omisiones o retrabajo |
-| Pedido enviado para revisión | Coordinación comercial, operación comercial | Empieza un tramo sensible donde crédito, stock y condiciones frenan la continuidad |
-| Pedido validado o bloqueado | Coordinación comercial, supervisión comercial / operación | El problema no es solo aprobar o rechazar, sino hacerlo antes de prometer algo inviable |
-| Pedido confirmado | Coordinación comercial, almacén / operación, cliente comercial | La confirmación debe sostener confianza y preparar el cumplimiento operativo real |
-| Pedido en preparación | Almacén / operación | Aparecen tensiones de disponibilidad, lote, vencimiento y prioridad FEFO |
-| Pedido despachado | Operación, chofer de reparto, cliente comercial | La visibilidad del estado empieza a ser crítica para evitar incertidumbre y reclamos |
-| Incidencia de ruta registrada | Chofer de reparto, coordinación comercial, cliente comercial | Si la incidencia no se comparte a tiempo, el problema vuelve a fragmentarse |
-| Entrega cerrada con evidencia | Chofer de reparto, cliente comercial, supervisión comercial / operación | El cierre débil deja reclamos abiertos y baja trazabilidad del servicio |
-| Pedido cancelado antes de despacho | Coordinación comercial, operación | La cancelación exige recuperar continuidad operativa y evitar compromisos inconsistentes |
 
 ### ***2.4.4. Pain points y restricciones operativas identificadas***
 
@@ -77,15 +83,17 @@ A partir de los eventos y los pain points identificados, el Big Picture permite 
 
 | Comando (intención del actor) | Evento(s) que dispara | Política reactiva del dominio | Read Model que habilita la decisión |
 |---|---|---|---|
+| `CrearPurchaseRequest` (S3 / S1) | `PurchaseRequestRegistrada` | Si la solicitud proviene de canal informal, se registra el origen para mantener trazabilidad. | `CatálogoDisponibleParaCliente`, `FichaComercialDelCliente` |
+| `EnviarSolicitudParaValidación` (S1) | `SolicitudEnviadaParaValidaciónComercial` | La solicitud queda pendiente hasta revisar cliente, crédito, stock preliminar, dirección y documentos requeridos. | `ResumenDeSolicitudPendiente` |
+| `ValidarSolicitudComercial` (S1) | `SolicitudValidada` o `SolicitudBloqueada` | Si existen restricciones comerciales, la solicitud se bloquea y se comunica la observación. | `VistaDeCréditoYCondiciones`, `StockPreliminarPorCodigoInterno` |
+| `ConvertirEnPurchaseOrder` (S1) | `PurchaseOrderGenerada` | La solicitud validada se convierte en pedido confirmado y se notifica al comprador. | `EstadoDelPedidoParaCliente`, `DetalleDePurchaseOrder` |
+| `ReservarInventario` (S2) | `InventarioReservado` o `ReservaAjustada` | Se contrasta disponibilidad real con stock preliminar y se corrigen diferencias antes de preparar. | `StockRealPorCodigoInterno`, `ReservasPorPedido` |
+| `AsignarLotesFEFO` (S2) | `LoteAsignado` | Se prioriza el lote con vencimiento más próximo apto para despacho. | `ListaDePickingFEFO` |
+| `CrearDispatchOrder` (S2) | `DispatchOrderCreada` | Se define ruta, responsable, estado operativo y evidencias requeridas para la entrega. | `HojaDeRuta`, `PanelDeDespachos` |
+| `AsociarBusinessDocuments` (S1 / S2) | `BusinessDocumentsAsociados` | Los documentos quedan vinculados al pedido para consulta interna y visibilidad del comprador cuando corresponda. | `RepositorioDocumentalDelPedido` |
+| `ActualizarEstadoDeEntrega` (S2) | `PedidoDespachado` o `IncidenciaDeRutaRegistrada` | El estado se actualiza y se notifica a coordinación comercial y comprador cuando sea relevante. | `EstadoDeEntregaParaCliente`, `BitácoraDeIncidenciasPorPedido` |
 | `SolicitarPedido` (S3) | `PedidoBorradorCreado` | Si el cliente no tiene crédito hábil, el pedido se marca como "a validar" | `CatálogoDisponibleParaCliente` (stock + precio + condiciones) |
 | `EnviarPedidoParaValidación` (S1) | `PedidoEnviadoParaRevisión` | Reserva temporal de stock por ventana definida de validación | `ResumenDePedidoPendiente` (ítems, totales, crédito disponible) |
-| `ValidarPedido` (S1 / S2) | `PedidoValidado` o `PedidoBloqueado` | Si el stock real difiere del reservado, se notifica a coordinación y se re-valida | `VistaDeCréditoYMorosidad`, `StockRealPorSKU` |
-| `ConfirmarPedido` (S1) | `PedidoConfirmado` | Se genera orden de preparación y se notifica al comprador (S3) | `EstadoDelPedidoParaCliente` |
-| `PrepararPedido` (S2 — Almacén) | `PedidoEnPreparación`, `LoteAsignado` | Política FEFO: sugerir lote con vencimiento más próximo apto | `ListaDePickingFEFO` (SKU, lote, vencimiento, ubicación) |
-| `DespacharPedido` (S2 — Despacho) | `PedidoDespachado` | Se actualiza el estado operativo de la entrega y se reduce la dependencia de llamadas | `HojaDeRuta`, `EstadoDeEntregaParaCliente` |
-| `RegistrarIncidenciaDeRuta` (S2) | `IncidenciaDeRutaRegistrada` | Notificación automática a coordinación comercial y al cliente | `BitácoraDeIncidenciasPorPedido` |
-| `CerrarEntrega` (S2) | `EntregaCerradaConEvidencia` | Se cierra el pedido y se registra evidencia mínima de conformidad | `EvidenciaDeEntrega` |
-| `CancelarPedido` (S1 / S3) | `PedidoCancelado` | Liberación automática de stock reservado y ajuste de crédito | `EstadoDelPedidoParaCliente` |
 
 Los comandos expresan la intención del actor; los eventos confirman que el estado efectivamente cambió; las políticas capturan las reacciones automáticas que el dominio debe sostener (reservas, validaciones, notificaciones, FEFO, liberación de stock); y los read models son las vistas consolidadas que permiten al S1, al S2 y al S3 decidir con información consistente. Juntos, cierran la secuencia del Big Picture como una cadena de *intención → hecho → reacción → visibilidad*, no como pantallas aisladas.
 
@@ -95,16 +103,16 @@ Los comandos expresan la intención del actor; los eventos confirman que el esta
   
 > *Nota:* *Figura: Sesión colaborativa del equipo KING durante la construcción del Big Picture EventStorming. Elaboración propia.*
 
-### 2.4.7. Flujo resumido del dominio
+### ***2.4.7. Flujo resumido del dominio***
 
+1. El comprador B2B consulta el catálogo y crea una solicitud desde el portal, o el S1 registra una solicitud recibida por WhatsApp, llamada o Excel.
+2. El S1 identifica al cliente y revisa condiciones comerciales, crédito, observaciones, dirección, stock preliminar y documentos requeridos.
+3. La solicitud pasa a validación comercial antes de convertirse en un pedido confirmado.
+4. Si la validación es satisfactoria, el S1 convierte la solicitud en una Purchase Order con trazabilidad del origen.
+5. El S2 revisa inventario real, reservas, lotes, vencimientos, criterios FEFO, temperatura y prioridad de despacho.
+6. El S2 prepara el pedido y genera la Dispatch Order con ruta, responsable, estado operativo y evidencias requeridas.
+7. El S1 y el S2 asocian los Business Documents necesarios para el seguimiento y cierre del pedido.
 1. El cliente consulta el catálogo o la coordinación comercial captura el pedido de forma asistida.
-2. Se identifican las condiciones comerciales y la disponibilidad necesarias para revisar el pedido.
-3. El pedido pasa de borrador a enviado para validación.
-4. La coordinación comercial y la operación revisan crédito, morosidad y disponibilidad básica antes de confirmar.
-5. Si la validación es satisfactoria, el pedido se confirma y queda listo para preparación.
-6. La operación prepara la salida y coordina el despacho.
-7. Durante el despacho pueden registrarse incidencias y actualizarse la comunicación de entrega.
-8. La entrega se cierra con evidencia y el pedido queda concluido.
 
 Este modelado refuerza dos ideas centrales del proyecto: el problema principal no está en un único “módulo” aislado, sino en la transición entre captura, validación, disponibilidad, despacho y cierre; y las restricciones operativas del dominio siguen siendo decisivas para definir reglas y criterios de funcionamiento a lo largo del flujo.
 
