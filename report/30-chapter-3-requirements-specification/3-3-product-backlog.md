@@ -1,10 +1,9 @@
 ## 3.3. Product Backlog
 
 
-El Product Backlog se ordena por valor de negocio y severidad del problema detectado, no por orden técnico de construcción. Las historias de autenticación, acceso y administración se consideran habilitadoras de plataforma; por ello se ubican después de los flujos funcionales principales de pedidos, visibilidad comercial, inventario, despacho y seguimiento.
+El orden del backlog prioriza primero las capacidades que entregan valor directo al comprador B2B y al equipo comercial-logístico: encontrar productos, preparar una solicitud clara, enviarla para revisión, validarla, asegurar disponibilidad, confirmar la orden, cerrar el pago y dar seguimiento a la entrega. Las capacidades informativas, administrativas, de mantenimiento, promociones y analítica se ubican después porque sostienen la operación, pero no reemplazan el flujo principal de atención.
 
 **Product Backlog de Nexa**
-La estimación utiliza la escala de **1, 2, 3, 5 y 8 Story Points**. **1 SP** representa contenido muy pequeño o información estática simple; **2 SP**, historias simples de baja interacción; **3 SP**, interacciones estándar o reglas de negocio simples; **5 SP**, flujos de varios pasos, validaciones o visibilidad entre áreas; y **8 SP**, historias complejas con trazabilidad, sincronización, continuidad, evidencia, FEFO o dependencia operativa fuerte.
 
 | # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
 |---:|---|---|---|---:|
@@ -46,6 +45,46 @@ La estimación utiliza la escala de **1, 2, 3, 5 y 8 Story Points**. **1 SP** re
 | 36 | US60 | Justificar ajuste de disponibilidad | **Como** jefatura logística, **quiero** justificar ajustes manuales de disponibilidad, **para** evitar cambios sin explicación operativa. | 5 |
 | 37 | US56 | Identificar lotes próximos a vencer | **Como** jefatura logística, **quiero** identificar lotes próximos a vencer, **para** priorizar su rotación y reducir merma. | 1 |
 | 38 | US57 | Consultar stock bajo | **Como** jefatura logística, **quiero** identificar productos con stock bajo, **para** anticipar quiebres de disponibilidad en solicitudes nuevas. | 1 |
+| 39 | US38 | Convertir solicitud validada en orden | **Como** coordinadora comercial, **quiero** convertir una solicitud validada en orden de compra, **para** formalizar la atención comercial después de validar cliente e inventario reservado. | 8 |
+| 40 | US39 | Comunicar confirmación al comprador | **Como** coordinadora comercial, **quiero** comunicar la confirmación de una orden al comprador, **para** informar el compromiso comercial aceptado. | 5 |
+| 41 | US28 | Consultar órdenes confirmadas | **Como** comprador B2B, **quiero** consultar mis órdenes confirmadas, **para** diferenciar solicitudes en revisión de compras aceptadas por la distribuidora. | 3 |
+| 42 | US29 | Revisar detalle de orden confirmada | **Como** comprador B2B, **quiero** revisar el detalle de una orden confirmada, **para** conocer productos aprobados, cantidades, estado operativo y documentos asociados. | 3 |
+| 43 | US84 | Consultar resumen de cobro valorizado | **Como** comprador B2B, **quiero** consultar el resumen valorizado de mi orden, **para** comprender subtotal, descuentos, envío, IGV y total antes de confirmar un pago o crédito. | 5 |
+| 44 | US85 | Seleccionar método de pago simulado | **Como** comprador B2B, **quiero** seleccionar un método de pago habilitado para mi cuenta, **para** representar el cierre de cobro de una orden dentro del prototipo. | 5 |
+| 45 | US86 | Confirmar proceso de pago | **Como** comprador B2B, **quiero** confirmar el proceso de pago, **para** cerrar el flujo de compra con un resultado trazable dentro del alcance del prototipo. | 8 |
+| 46 | US87 | Recibir resultado de pago | **Como** comprador B2B, **quiero** recibir el resultado de pago, **para** saber si la orden puede continuar según el escenario registrado. | 5 |
+| 47 | US92 | Consultar estado de pago de la orden | **Como** coordinadora comercial, **quiero** consultar si una orden está pagada, pendiente o fallida, **para** priorizar seguimiento, documentación y comunicación con el comprador. | 5 |
+| 48 | US89 | Consultar información de cobros operativos | **Como** company owner, **quiero** consultar información de cobros operativos de la empresa, **para** conocer importes referenciales asociados a la cuenta. | 1 |
+| 49 | US68 | Crear orden de despacho | **Como** responsable operativo, **quiero** crear una orden de despacho a partir de una orden confirmada, **para** iniciar la preparación de entrega. | 5 |
+| 50 | US69 | Consultar tablero de despachos | **Como** responsable operativo, **quiero** consultar despachos por estado, **para** organizar la operación diaria de salida y entrega. | 5 |
+| 51 | US70 | Asignar responsable de entrega | **Como** responsable operativo, **quiero** asignar una entrega a una persona encargada, **para** mantener responsabilidad trazable durante el despacho. | 2 |
+| 52 | US71 | Programar entrega | **Como** responsable operativo, **quiero** programar fecha y ventana de entrega, **para** coordinar preparación y recepción del comprador. | 5 |
+| 53 | US72 | Iniciar salida de despacho | **Como** responsable operativo, **quiero** marcar el inicio de salida de una entrega, **para** actualizar el tracking visible de la orden. | 2 |
+| 54 | US73 | Actualizar estado de despacho | **Como** responsable operativo, **quiero** actualizar estados de despacho, **para** informar a comercial y comprador sobre el avance operativo. | 5 |
+| 55 | US74 | Registrar incidencia logística | **Como** responsable operativo, **quiero** registrar incidencias de entrega, **para** dejar constancia de retrasos, diferencias o problemas de recepción. | 5 |
+| 56 | US75 | Reprogramar entrega | **Como** responsable operativo, **quiero** reprogramar una entrega con motivo, **para** actualizar la planificación cuando exista retraso o incidencia. | 2 |
+| 57 | US76 | Monitorear estado logístico para comunicar | **Como** coordinadora comercial, **quiero** monitorear el estado logístico de órdenes, **para** responder al comprador con información vigente. | 1 |
+| 58 | US77 | Consultar tracking de orden | **Como** comprador B2B, **quiero** consultar tracking de mi orden, **para** planificar recepción sin depender de consultas manuales. | 5 |
+| 59 | US78 | Registrar temperatura referencial | **Como** responsable operativo, **quiero** registrar temperatura referencial de despacho, **para** documentar el cuidado de productos refrigerados durante la atención operativa. | 2 |
+| 60 | US79 | Generar alerta por temperatura referencial | **Como** responsable operativo, **quiero** generar alerta cuando la temperatura referencial esté fuera de rango, **para** revisar una posible incidencia de conservación. | 2 |
+| 61 | US80 | Completar entrega | **Como** responsable operativo, **quiero** completar una entrega, **para** cerrar el avance logístico y habilitar documentos o evidencias correspondientes. | 5 |
+| 62 | US81 | Registrar proof of delivery | **Como** responsable operativo, **quiero** registrar proof of delivery, **para** respaldar que la orden fue recibida por el comprador. | 5 |
+| 63 | US82 | Consultar evidencia visible de entrega | **Como** comprador B2B, **quiero** consultar evidencia visible de entrega, **para** confirmar el cierre operativo de mi orden. | 2 |
+| 64 | US88 | Revisar documentos comerciales | **Como** coordinadora comercial, **quiero** revisar documentos comerciales asociados a solicitud u orden, **para** comunicar al comprador el estado documental con claridad. | 2 |
+| 65 | US90 | Consultar documentos comerciales referenciales visibles | **Como** comprador B2B, **quiero** consultar documentos comerciales referenciales visibles de mis órdenes, **para** acceder a factura referencial, guía, CDR o POD permitido según estado. | 2 |
+| 66 | US91 | Recibir notificación de documento o pago | **Como** comprador B2B, **quiero** recibir notificación cuando exista actualización de pago o documento, **para** dar seguimiento al cierre de la compra. | 1 |
+| 67 | US41 | Registrar pedido recibido por canal externo | **Como** coordinadora comercial, **quiero** registrar solicitudes recibidas por WhatsApp, llamada o papel, **para** integrarlas al flujo formal de Nexa. | 5 |
+| 68 | US42 | Asociar cliente a registro manual | **Como** coordinadora comercial, **quiero** asociar un cliente B2B a un registro manual, **para** aplicar sus datos y condiciones comerciales durante la atención. | 2 |
+| 69 | US43 | Completar productos y cantidades manuales | **Como** coordinadora comercial, **quiero** completar productos y cantidades solicitadas por canal externo, **para** evitar pérdida de información comercial. | 5 |
+| 70 | US44 | Revisar registro manual antes de enviar | **Como** coordinadora comercial, **quiero** revisar el pedido capturado antes de enviarlo a validación, **para** reducir errores de cliente, producto o cantidad. | 5 |
+| 71 | US45 | Diferenciar origen de solicitud | **Como** coordinadora comercial, **quiero** diferenciar si una solicitud nació en el portal o fue capturada manualmente, **para** interpretarla con el contexto correcto. | 1 |
+| 72 | US46 | Registrar cliente B2B | **Como** coordinadora comercial, **quiero** registrar clientes B2B con datos mínimos, **para** habilitar atención futura dentro de Nexa. | 5 |
+| 73 | US47 | Actualizar datos de cliente B2B | **Como** coordinadora comercial, **quiero** actualizar datos de contacto y atención de un cliente, **para** evitar errores en confirmaciones, documentos o entrega. | 2 |
+| 74 | US48 | Clasificar cliente por tipo de negocio | **Como** coordinadora comercial, **quiero** clasificar clientes por tipo de negocio, **para** adaptar la atención comercial y priorizar casos recurrentes. | 1 |
+| 75 | US30 | Actualizar datos de entrega del comprador | **Como** comprador B2B, **quiero** actualizar mi dirección y contacto de entrega, **para** reducir errores de atención en solicitudes y órdenes futuras. | 2 |
+| 76 | US01 | Conocer propuesta de valor de Nexa | **Como** visitante empresarial, **quiero** conocer la propuesta de valor de Nexa, **para** evaluar si la solución responde a problemas de gestión de pedidos, inventario y entregas refrigeradas. | 3 |
+| 77 | US02 | Explorar soluciones por segmento empresarial | **Como** visitante empresarial, **quiero** explorar soluciones para importadoras, distribuidoras y operadores de frío, **para** identificar si Nexa se adapta a mi tipo de operación. | 2 |
+| 78 | US03 | Consultar funcionalidades de la plataforma | **Como** visitante empresarial, **quiero** consultar las funcionalidades principales de la plataforma, **para** comprender qué capacidades ofrece Nexa antes de solicitar información. | 2 |
 |---|---|---|---|---:|
 | 1 | US39 | Registrar pedido recibido por canal externo | Como coordinadora comercial, quiero registrar en Nexa un pedido recibido por conversación, llamada o coordinación directa, para evitar que la información quede dispersa fuera del flujo operativo. | 5 |
 | 2 | US40 | Seleccionar cliente durante la captura del pedido | Como coordinadora comercial, quiero asociar cada pedido a un cliente comercial existente, para asegurar que las condiciones y datos de atención correspondan al comprador correcto. | 3 |
@@ -58,47 +97,10 @@ La estimación utiliza la escala de **1, 2, 3, 5 y 8 Story Points**. **1 SP** re
 | 9 | US51 | Consultar disponibilidad de productos | Como jefatura logística, quiero consultar disponibilidad de productos, para validar si un pedido puede prepararse antes de confirmarlo al cliente. | 5 |
 | 10 | US52 | Identificar lotes próximos a vencer | Como jefatura logística, quiero identificar lotes próximos a vencer, para priorizar su rotación y reducir riesgo de merma. | 5 |
 | 11 | US53 | Aplicar criterio FEFO en preparación | Como jefatura logística, quiero considerar primero los productos con vencimiento más cercano, para preparar pedidos respetando una rotación adecuada. | 5 |
-| 12 | US54 | Revisar condición de conservación del producto | Como jefatura logística, quiero consultar la condición de conservación de cada producto, para evitar preparar o despachar productos bajo condiciones incorrectas. | 5 |
-| 13 | US55 | Registrar ajuste de disponibilidad | Como jefatura logística, quiero registrar ajustes de disponibilidad cuando se detecten diferencias, para mantener la información operativa lo más confiable posible. | 8 |
-| 14 | US58 | Priorizar productos críticos del día | Como jefatura logística, quiero identificar productos que concentran riesgo operativo por baja disponibilidad, vencimiento cercano o demanda no atendida, para priorizar la revisión antes de confirmar nuevos pedidos. | 5 |
-| 15 | US45 | Consultar pedidos por revisar | Como jefatura logística, quiero consultar los pedidos por revisar, para organizar la validación operativa sin depender de mensajes dispersos. | 5 |
-| 16 | US46 | Revisar detalle operativo de un pedido | Como jefatura logística, quiero revisar el detalle completo de un pedido, para decidir si puede prepararse, observarse o rechazarse. | 5 |
-| 17 | US47 | Cambiar estado de revisión del pedido | Como jefatura logística, quiero actualizar el estado de revisión de un pedido, para que coordinación comercial y comprador sepan si la solicitud avanza, requiere ajuste o no puede atenderse. | 5 |
-| 18 | US48 | Registrar motivo de observación o rechazo | Como jefatura logística, quiero registrar el motivo por el que un pedido queda observado o rechazado, para que comercial pueda comunicarlo al cliente con claridad. | 5 |
-| 19 | US49 | Priorizar pedidos por urgencia operativa | Como jefatura logística, quiero identificar pedidos con mayor urgencia o cercanía de atención, para organizar mejor la preparación del día. | 5 |
-| 20 | US50 | Consultar historial de cambios del pedido | Como coordinadora comercial, quiero consultar los cambios relevantes de un pedido, para explicar al cliente qué ocurrió durante la revisión y preparación. | 8 |
-| 21 | US62 | Identificar pedidos listos para despacho | Como responsable de despacho, quiero identificar pedidos listos para entrega, para organizar la distribución del día con información confiable. | 5 |
-| 22 | US64 | Actualizar avance de despacho | Como responsable de despacho, quiero actualizar el avance de una entrega, para que comercial, logística y cliente conozcan el estado del pedido. | 5 |
-| 23 | US66 | Confirmar entrega con evidencia | Como responsable de despacho, quiero registrar evidencia de entrega, para respaldar que el pedido fue atendido correctamente. | 8 |
-| 24 | US68 | Consultar resumen operativo del día | Como jefatura logística, quiero consultar un resumen operativo del día, para priorizar pedidos, preparación, despacho e incidencias. | 5 |
-| 25 | US69 | Revisar pedidos por estado | Como coordinadora comercial, quiero revisar pedidos agrupados por estado, para dar seguimiento a solicitudes por revisar, aprobadas, observadas o entregadas. | 3 |
-| 26 | US71 | Consultar productos con mayor movimiento | Como coordinadora comercial, quiero identificar productos con mayor movimiento, para entender mejor la demanda de clientes B2B y anticipar necesidades comerciales. | 3 |
-| 27 | US76 | Mantener estados sincronizados entre áreas | Como jefatura logística, quiero que los estados de los pedidos se mantengan actualizados para comercial y compradores, para evitar respuestas contradictorias durante la atención. | 8 |
-| 28 | US20 | Iniciar sesión como comprador comercial B2B | Como comprador comercial B2B, quiero iniciar sesión en mi portal de cliente, para consultar catálogo, preparar pedidos y revisar el seguimiento de mis compras. | 3 |
-| 29 | US25 | Consultar resumen de cuenta B2B | Como comprador comercial B2B, quiero revisar un resumen de mi cuenta, para identificar pedidos activos, condiciones comerciales y próxima atención. | 3 |
-| 30 | US26 | Revisar condiciones comerciales de la cuenta | Como comprador comercial B2B, quiero revisar condiciones básicas asociadas a mi cuenta, para saber si mi compra depende de crédito, pago al contado u otra condición comercial. | 3 |
-| 31 | US27 | Revisar pedidos recientes desde el portal | Como comprador comercial B2B, quiero revisar mis pedidos recientes, para consultar su estado sin depender de mensajes externos. | 3 |
-| 32 | US28 | Encontrar productos relevantes para recompra | Como comprador comercial B2B, quiero encontrar productos relevantes para mi negocio al ingresar al portal, para iniciar compras recurrentes con menos esfuerzo. | 3 |
-| 33 | US29 | Consultar catálogo disponible según cuenta | Como comprador comercial B2B, quiero consultar los productos disponibles para mi cuenta, para preparar pedidos con información clara y confiable. | 3 |
-| 34 | US30 | Buscar productos por nombre o código | Como comprador comercial B2B, quiero buscar productos por nombre o código, para encontrar rápidamente lo que necesito comprar. | 3 |
-| 35 | US31 | Filtrar productos por categoría | Como comprador comercial B2B, quiero filtrar productos por categoría, para revisar solo grupos de productos relacionados con mi necesidad de compra. | 3 |
-| 36 | US32 | Revisar detalle comercial y operativo del producto | Como comprador comercial B2B, quiero revisar el detalle de un producto antes de agregarlo al pedido, para decidir considerando precio, conservación, unidad y disponibilidad. | 3 |
-| 37 | US33 | Reconocer disponibilidad limitada antes de pedir | Como comprador comercial B2B, quiero reconocer cuándo un producto tiene disponibilidad limitada, para evitar asumir que la cantidad solicitada será confirmada automáticamente. | 3 |
-| 38 | US34 | Agregar productos al pedido | Como comprador comercial B2B, quiero agregar productos disponibles a mi pedido, para construir una solicitud de abastecimiento desde el portal. | 3 |
-| 39 | US35 | Ajustar cantidades del pedido | Como comprador comercial B2B, quiero ajustar cantidades de productos seleccionados, para adecuar el pedido a la demanda real de mi negocio. | 3 |
-| 40 | US36 | Revisar resumen del pedido antes de enviarlo | Como comprador comercial B2B, quiero revisar productos, cantidades y total antes de enviar mi pedido, para reducir errores en la solicitud de abastecimiento. | 3 |
-| 41 | US37 | Enviar pedido para validación | Como comprador comercial B2B, quiero enviar mi pedido para revisión de la distribuidora, para recibir confirmación sobre disponibilidad, condiciones y atención. | 5 |
-| 42 | US38 | Recibir confirmación inicial del pedido enviado | Como comprador comercial B2B, quiero recibir una confirmación clara después de enviar mi pedido, para saber que la solicitud fue recibida y qué ocurrirá después. | 5 |
-| 43 | US67 | Consultar seguimiento del pedido como comprador | Como comprador comercial B2B, quiero consultar el avance de mis pedidos, para planificar recepción y reducir consultas repetitivas a la distribuidora. | 5 |
-| 44 | US75 | Conservar información del pedido entre sesiones | Como comprador comercial B2B, quiero que la información de mis pedidos enviados se conserve cuando vuelva a ingresar, para consultar seguimiento o historial sin repetir solicitudes. | 8 |
-| 45 | US01 | Identificar el problema que atiende Nexa | Como visitante comercial, quiero identificar qué problema operativo atiende Nexa, para decidir si la solución se relaciona con los pedidos refrigerados de mi negocio. | 2 |
 
 ### Síntesis del Product Backlog
 
-### Evidencia del Product Backlog en Jira
+La tabla anterior muestra la organización académica del Product Backlog de Nexa, incluyendo priorización y estimación de las User Stories principales del producto.
 
 El backlog prioriza el flujo de negocio que permite pasar de la consulta de productos a una solicitud enviada, validada y convertida en orden, con disponibilidad revisada, pago representado dentro del alcance del prototipo, despacho, evidencia de entrega y documentos visibles para los actores correspondientes. Esta organización evita colocar primero capacidades internas o administrativas que no representan el valor principal percibido por el comprador B2B.
 El Product Backlog de Nexa se gestiona en Jira como herramienta de seguimiento del proyecto. La vista permite observar las historias de usuario priorizadas por valor de negocio, su estado, responsable, épica asociada y estimación en Story Points. Esta evidencia complementa la tabla redactada en el reporte, donde se mantiene la descripción formal de cada User Story y su estimación.
-
-![Product Backlog en Jira](../assets/images/chapter-3/jira/product-backlog-jira-tb1.png)
-> *Nota:* La evidencia visual de Jira respalda la existencia del Product Backlog en la herramienta de gestión; la tabla principal de la sección 3.3 conserva la especificación textual exigida para las User Stories, su descripción y sus Story Points. Elaboración propia.
