@@ -12,6 +12,20 @@ Desde la perspectiva DDD, las relaciones entre tablas de distintos bounded conte
 
 Los diagramas de base de datos se agrupan por contexto para preservar los límites del dominio y mejorar la mantenibilidad. Esta estructura también ayuda a evitar que los datos comerciales, de inventario, logística e invoicing se mezclen en un mismo modelo conceptual.
 
+| Grupo | Propósito |
+|---|---|
+| Identity and Access Support | Soporta la gestión de usuarios, roles, permisos, tenants y sesiones. |
+| Catalog Management | Persiste productos, categorías, promociones y datos de visibilidad del catálogo. |
+| Sales | Persiste clientes B2B, solicitudes de compra, órdenes de venta, ítems de orden y datos de validación comercial. |
+| Warehouse | Persiste almacenes, lotes de inventario, reservas y movimientos de stock. |
+| Logistics | Persiste órdenes de despacho, eventos de trazabilidad, incidencias, controles de temperatura y evidencia de entrega. |
+| Invoicing | Persiste documentos comerciales, registros de pago, estados de pago y resúmenes de cobro. |
+| Read Models | Persiste estructuras derivadas de consulta para reportes y dashboards. |
+
+### Identity and Access Support Database Diagram
+
+![Identity and Access Database Diagram](../assets/images/chapter-4/database/identity-and-access.png)
+
 ## 4.8. Database Design
 
 El diseño de base de datos de Nexa deriva de los diagramas de clases actualizados y de los bounded contexts consolidados en el diseño táctico. Organizamos las estructuras relacionales alrededor de **Identity & Access**, **Catalog**, **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**, manteniendo coherencia con EventStorming, DDD y C4.
@@ -54,13 +68,12 @@ El diseño de base de datos se presenta como un modelo relacional objetivo deriv
 
 > *Nota.* El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1. Elaboración propia.
 
-*Figura. Diagrama de base de datos de read models.*
-
-![Read Models](../assets/images/chapter-4/database/read-models.png)
 
 ![Full Database Diagram](../assets/images/chapter-4/database/full-database-diagram.png)
 
  > *Nota:* El diagrama completo de base de datos consolida las principales estructuras relacionales requeridas por los cinco bounded contexts y las capacidades de soporte transversal. Elaboración propia.
+
+La siguiente tabla resume la agrupación completa de base de datos:
 > *Nota.* La vista consolidada integra las estructuras por bounded context y sus relaciones principales como diseño objetivo. Elaboración propia.
 
 *Tabla. Agrupación de estructuras de base de datos por bounded context*
@@ -72,6 +85,5 @@ El diseño de base de datos se presenta como un modelo relacional objetivo deriv
 | Orders & Commercial Management | `B2B_CLIENTS`, `COMMERCIAL_CONDITIONS`, `CREDIT_WARNINGS`, `ORDERS`, `ORDER_ITEMS`, `ORDER_OBSERVATIONS` | Registrar clientes B2B, condiciones comerciales, alertas de crédito, pedidos, detalle y observaciones. |
 | Inventory | `WAREHOUSES`, `INVENTORY_LOTS`, `STOCK_MOVEMENTS` | Representar almacenes, lotes, disponibilidad, reservas y movimientos de stock. |
 | Dispatch & Traceability | `DISPATCHES`, `DISPATCH_INCIDENTS`, `TRACEABILITY_EVENTS`, `POD_EVIDENCE` | Registrar despacho, incidencias, eventos trazables y evidencia de cierre. |
-| Read models | `SALES_REPORT_READ_MODEL`, `INVENTORY_REPORT_READ_MODEL`, `DISPATCH_REPORT_READ_MODEL` | Derivados de Orders & Commercial Management, Inventory y Dispatch & Traceability; no constituyen un bounded context independiente. |
 
 > *Nota:* La agrupación mantiene la relación entre modelo relacional objetivo, bounded contexts y diagramas de clases sin declarar persistencia productiva para TB1. Elaboración propia.
