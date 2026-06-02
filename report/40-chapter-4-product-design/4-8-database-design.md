@@ -26,6 +26,20 @@ Los diagramas de base de datos se agrupan por contexto para preservar los límit
 
 ![Identity and Access Database Diagram](../assets/images/chapter-4/database/identity-and-access.png)
 
+ > *Nota:* Identity and Access se representa como un modelo de soporte transversal, no como un bounded context principal del negocio. Elaboración propia.
+
+El modelo de soporte de Identity and Access almacena la información requerida para autenticación, autorización y operación basada en tenants.
+
+| Tabla | Columnas principales | Descripción |
+|---|---|---|
+| TENANTS | tenant_id, legal_name, trade_name, status, created_at | Almacena las empresas u organizaciones que utilizan Nexa. |
+| USERS | user_id, tenant_id, first_name, last_name, email, password_hash, status, created_at | Almacena los usuarios de la plataforma. |
+| ROLES | role_id, tenant_id, name, description | Almacena los roles asignados a los usuarios. |
+| PERMISSIONS | permission_id, code, description | Almacena los permisos de acceso disponibles. |
+| USER_ROLES | user_id, role_id | Asocia usuarios con roles. |
+| ROLE_PERMISSIONS | role_id, permission_id | Asocia roles con permisos. |
+| USER_SESSIONS | session_id, user_id, started_at, expires_at, status | Almacena sesiones autenticadas de usuarios. |
+
 ## 4.8. Database Design
 
 El diseño de base de datos de Nexa deriva de los diagramas de clases actualizados y de los bounded contexts consolidados en el diseño táctico. Organizamos las estructuras relacionales alrededor de **Identity & Access**, **Catalog**, **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**, manteniendo coherencia con EventStorming, DDD y C4.
@@ -66,14 +80,13 @@ El diseño de base de datos se presenta como un modelo relacional objetivo deriv
 
 ![Dispatch & Traceability](../assets/images/chapter-4/database/dispatch-and-traceability.png)
 
-> *Nota.* El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1. Elaboración propia.
-
-
 ![Full Database Diagram](../assets/images/chapter-4/database/full-database-diagram.png)
 
  > *Nota:* El diagrama completo de base de datos consolida las principales estructuras relacionales requeridas por los cinco bounded contexts y las capacidades de soporte transversal. Elaboración propia.
 
 La siguiente tabla resume la agrupación completa de base de datos:
+
+| Contexto / área de soporte | Tablas principales | Relaciones principales | Propósito |
 > *Nota.* La vista consolidada integra las estructuras por bounded context y sus relaciones principales como diseño objetivo. Elaboración propia.
 
 *Tabla. Agrupación de estructuras de base de datos por bounded context*
@@ -84,6 +97,5 @@ La siguiente tabla resume la agrupación completa de base de datos:
 | Catalog | `CATEGORIES`, `PRODUCTS` | Mantener información maestra de productos, categorías y condiciones de conservación. |
 | Orders & Commercial Management | `B2B_CLIENTS`, `COMMERCIAL_CONDITIONS`, `CREDIT_WARNINGS`, `ORDERS`, `ORDER_ITEMS`, `ORDER_OBSERVATIONS` | Registrar clientes B2B, condiciones comerciales, alertas de crédito, pedidos, detalle y observaciones. |
 | Inventory | `WAREHOUSES`, `INVENTORY_LOTS`, `STOCK_MOVEMENTS` | Representar almacenes, lotes, disponibilidad, reservas y movimientos de stock. |
-| Dispatch & Traceability | `DISPATCHES`, `DISPATCH_INCIDENTS`, `TRACEABILITY_EVENTS`, `POD_EVIDENCE` | Registrar despacho, incidencias, eventos trazables y evidencia de cierre. |
 
 > *Nota:* La agrupación mantiene la relación entre modelo relacional objetivo, bounded contexts y diagramas de clases sin declarar persistencia productiva para TB1. Elaboración propia.
