@@ -54,6 +54,20 @@ Restricciones principales:
 
 ### Catalog Management Database Diagram
 
+![Catalog Management Database Diagram](../assets/images/chapter-4/database/catalog.png)
+
+ > *Nota:* Catalog Management almacena el catálogo de productos, categorías, códigos internos de producto e información de visibilidad comercial. Elaboración propia.
+
+Catalog Management debe utilizar `internal_code` como identificador canónico para la búsqueda y reconocimiento de productos dentro del dominio de negocio. El término `sku` no debe utilizarse como término principal del dominio porque el lenguaje ubicuo de Nexa se refiere al código interno de producto.
+
+| Tabla | Columnas principales | Descripción |
+|---|---|---|
+| CATEGORIES | category_id, name, description, status | Almacena categorías de productos. |
+| PRODUCTS | product_id, category_id, internal_code, commercial_name, description, conservation_temperature_min, conservation_temperature_max, unit_price, status, created_at, updated_at | Almacena productos gourmet refrigerados. |
+| PROMOTIONS | promotion_id, name, description, start_date, end_date, discount_percentage, status | Almacena promociones comerciales. |
+| PRODUCT_PROMOTIONS | product_id, promotion_id | Asocia productos con promociones cuando corresponde. |
+
+Restricciones principales:
 ## 4.8. Database Design
 
 El diseño de base de datos de Nexa deriva de los diagramas de clases actualizados y de los bounded contexts consolidados en el diseño táctico. Organizamos las estructuras relacionales alrededor de **Identity & Access**, **Catalog**, **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**, manteniendo coherencia con EventStorming, DDD y C4.
@@ -86,10 +100,6 @@ El diseño de base de datos se presenta como un modelo relacional objetivo deriv
 
 *Figura. Diagrama de base de datos del bounded context Inventory.*
 
-![Inventory](../assets/images/chapter-4/database/inventory.png)
-
-> *Nota.* El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1. Elaboración propia.
-
 
 ![Full Database Diagram](../assets/images/chapter-4/database/full-database-diagram.png)
 
@@ -100,6 +110,8 @@ La siguiente tabla resume la agrupación completa de base de datos:
 | Contexto / área de soporte | Tablas principales | Relaciones principales | Propósito |
 |---|---|---|---|
 | Identity and Access Support | TENANTS, USERS, ROLES, PERMISSIONS, USER_ROLES, ROLE_PERMISSIONS, USER_SESSIONS | Los usuarios pertenecen a tenants; los usuarios tienen roles; los roles tienen permisos. | Permite acceso seguro y operación basada en tenants dentro de la plataforma. |
+| Catalog Management | CATEGORIES, PRODUCTS, PROMOTIONS, PRODUCT_PROMOTIONS | Las categorías agrupan productos; los productos pueden relacionarse con promociones. | Persiste el catálogo comercial de productos. |
+| Sales | B2B_CLIENTS, COMMERCIAL_CONDITIONS, PURCHASE_REQUESTS, PURCHASE_REQUEST_ITEMS, SALES_ORDERS, ORDER_ITEMS, CREDIT_WARNINGS, ORDER_OBSERVATIONS | Los clientes envían solicitudes; las solicitudes validadas se convierten en órdenes; las órdenes contienen ítems. | Persiste el flujo comercial de pedidos. |
 > *Nota.* La vista consolidada integra las estructuras por bounded context y sus relaciones principales como diseño objetivo. Elaboración propia.
 
 *Tabla. Agrupación de estructuras de base de datos por bounded context*
