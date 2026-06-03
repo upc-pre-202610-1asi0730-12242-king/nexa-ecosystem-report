@@ -40,6 +40,20 @@ El modelo de soporte de Identity and Access almacena la información requerida p
 | ROLE_PERMISSIONS | role_id, permission_id | Asocia roles con permisos. |
 | USER_SESSIONS | session_id, user_id, started_at, expires_at, status | Almacena sesiones autenticadas de usuarios. |
 
+Restricciones principales:
+
+| Restricción | Descripción |
+|---|---|
+| USERS.tenant_id FK | Referencia a TENANTS.tenant_id. |
+| USER_ROLES.user_id FK | Referencia a USERS.user_id. |
+| USER_ROLES.role_id FK | Referencia a ROLES.role_id. |
+| ROLE_PERMISSIONS.role_id FK | Referencia a ROLES.role_id. |
+| ROLE_PERMISSIONS.permission_id FK | Referencia a PERMISSIONS.permission_id. |
+| USER_SESSIONS.user_id FK | Referencia a USERS.user_id. |
+| USERS.email UK | Evita correos electrónicos duplicados dentro de la plataforma o dentro del alcance de tenant. |
+
+### Catalog Management Database Diagram
+
 ## 4.8. Database Design
 
 El diseño de base de datos de Nexa deriva de los diagramas de clases actualizados y de los bounded contexts consolidados en el diseño táctico. Organizamos las estructuras relacionales alrededor de **Identity & Access**, **Catalog**, **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**, manteniendo coherencia con EventStorming, DDD y C4.
@@ -76,9 +90,6 @@ El diseño de base de datos se presenta como un modelo relacional objetivo deriv
 
 > *Nota.* El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1. Elaboración propia.
 
-*Figura. Diagrama de base de datos del bounded context Dispatch & Traceability.*
-
-![Dispatch & Traceability](../assets/images/chapter-4/database/dispatch-and-traceability.png)
 
 ![Full Database Diagram](../assets/images/chapter-4/database/full-database-diagram.png)
 
@@ -87,6 +98,8 @@ El diseño de base de datos se presenta como un modelo relacional objetivo deriv
 La siguiente tabla resume la agrupación completa de base de datos:
 
 | Contexto / área de soporte | Tablas principales | Relaciones principales | Propósito |
+|---|---|---|---|
+| Identity and Access Support | TENANTS, USERS, ROLES, PERMISSIONS, USER_ROLES, ROLE_PERMISSIONS, USER_SESSIONS | Los usuarios pertenecen a tenants; los usuarios tienen roles; los roles tienen permisos. | Permite acceso seguro y operación basada en tenants dentro de la plataforma. |
 > *Nota.* La vista consolidada integra las estructuras por bounded context y sus relaciones principales como diseño objetivo. Elaboración propia.
 
 *Tabla. Agrupación de estructuras de base de datos por bounded context*
@@ -96,6 +109,5 @@ La siguiente tabla resume la agrupación completa de base de datos:
 | Identity & Access | `USERS`, `USER_SESSIONS` | Administrar usuarios, alcance de acceso, rol y sesiones como diseño objetivo de seguridad. |
 | Catalog | `CATEGORIES`, `PRODUCTS` | Mantener información maestra de productos, categorías y condiciones de conservación. |
 | Orders & Commercial Management | `B2B_CLIENTS`, `COMMERCIAL_CONDITIONS`, `CREDIT_WARNINGS`, `ORDERS`, `ORDER_ITEMS`, `ORDER_OBSERVATIONS` | Registrar clientes B2B, condiciones comerciales, alertas de crédito, pedidos, detalle y observaciones. |
-| Inventory | `WAREHOUSES`, `INVENTORY_LOTS`, `STOCK_MOVEMENTS` | Representar almacenes, lotes, disponibilidad, reservas y movimientos de stock. |
 
 > *Nota:* La agrupación mantiene la relación entre modelo relacional objetivo, bounded contexts y diagramas de clases sin declarar persistencia productiva para TB1. Elaboración propia.
