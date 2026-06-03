@@ -111,6 +111,20 @@ Restricciones principales:
 | ORDER_ITEMS.product_id FK | Referencia a PRODUCTS.product_id. |
 | CREDIT_WARNINGS.client_id FK | Referencia a B2B_CLIENTS.client_id. |
 | CREDIT_WARNINGS.request_id FK | Referencia a PURCHASE_REQUESTS.request_id. |
+| ORDER_OBSERVATIONS.order_id FK | Referencia a SALES_ORDERS.order_id. |
+
+### Warehouse Database Diagram
+
+![Warehouse Database Diagram](../assets/images/chapter-4/database/inventory.png)
+
+ > *Nota:* Warehouse almacena almacenes, lotes de inventario, reservas de stock y movimientos de stock. Elaboración propia.
+
+El modelo de Warehouse se basa en lotes de inventario porque los productos gourmet refrigerados requieren control de fecha de vencimiento y trazabilidad. Las reservas se representan explícitamente para conectar la disponibilidad de stock con la demanda comercial validada.
+
+| Tabla | Columnas principales | Descripción |
+|---|---|---|
+| WAREHOUSES | warehouse_id, tenant_id, name, address, status | Almacena ubicaciones de almacén. |
+| INVENTORY_LOTS | lot_id, warehouse_id, product_id, lot_code, expiration_date, total_quantity, available_quantity, reserved_quantity, lot_status | Almacena inventario por producto, almacén y lote. |
 ## 4.8. Database Design
 
 El diseño de base de datos de Nexa deriva de los diagramas de clases actualizados y de los bounded contexts consolidados en el diseño táctico. Organizamos las estructuras relacionales alrededor de **Identity & Access**, **Catalog**, **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**, manteniendo coherencia con EventStorming, DDD y C4.
@@ -131,9 +145,6 @@ El diseño de base de datos se presenta como un modelo relacional objetivo deriv
 
 *Figura. Diagrama de base de datos del bounded context Catalog.*
 
-![Catalog](../assets/images/chapter-4/database/catalog.png)
-
-> *Nota.* El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1. Elaboración propia.
 
 ![Full Database Diagram](../assets/images/chapter-4/database/full-database-diagram.png)
 
@@ -151,11 +162,12 @@ La siguiente tabla resume la agrupación completa de base de datos:
 | Invoicing | COMMERCIAL_DOCUMENTS, PAYMENT_RECORDS, PAYMENT_STATUSES, INVOICE_SUMMARIES | Las órdenes generan documentos, registros de pago y resúmenes de cobro. | Persiste documentos comerciales, estado de pago y resúmenes de cobro. |
 | Read Models | SALES_REPORT_READ_MODEL, INVENTORY_REPORT_READ_MODEL, DISPATCH_REPORT_READ_MODEL, PAYMENT_STATUS_READ_MODEL | Los read models se derivan de tablas operativas. | Soporta dashboards y vistas de reporting. |
 
+Este diseño de base de datos mantiene consistencia con el modelo de dominio. Los datos de producto pertenecen a Catalog Management, la demanda comercial pertenece a Sales, el control de stock pertenece a Warehouse, la trazabilidad de entrega pertenece a Logistics y la visibilidad documental/de pagos pertenece a Invoicing.
+
 > *Nota.* La vista consolidada integra las estructuras por bounded context y sus relaciones principales como diseño objetivo. Elaboración propia.
 
 *Tabla. Agrupación de estructuras de base de datos por bounded context*
 
 | Bounded context | Estructuras principales | Propósito de diseño |
-|---|---|---|
 
 > *Nota:* La agrupación mantiene la relación entre modelo relacional objetivo, bounded contexts y diagramas de clases sin declarar persistencia productiva para TB1. Elaboración propia.
