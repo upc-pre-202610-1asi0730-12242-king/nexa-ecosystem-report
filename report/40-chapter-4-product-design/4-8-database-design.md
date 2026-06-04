@@ -97,6 +97,20 @@ El modelo de Sales separa las solicitudes de compra de las órdenes de venta con
 | ORDER_OBSERVATIONS | observation_id, order_id, user_id, description, created_at | Almacena observaciones comerciales u operativas relacionadas con una orden. |
 
 Restricciones principales:
+
+| Restricción | Descripción |
+|---|---|
+| B2B_CLIENTS.tenant_id FK | Referencia a TENANTS.tenant_id. |
+| COMMERCIAL_CONDITIONS.client_id FK | Referencia a B2B_CLIENTS.client_id. |
+| PURCHASE_REQUESTS.client_id FK | Referencia a B2B_CLIENTS.client_id. |
+| PURCHASE_REQUEST_ITEMS.request_id FK | Referencia a PURCHASE_REQUESTS.request_id. |
+| PURCHASE_REQUEST_ITEMS.product_id FK | Referencia a PRODUCTS.product_id. |
+| SALES_ORDERS.request_id FK | Referencia a PURCHASE_REQUESTS.request_id. |
+| SALES_ORDERS.client_id FK | Referencia a B2B_CLIENTS.client_id. |
+| ORDER_ITEMS.order_id FK | Referencia a SALES_ORDERS.order_id. |
+| ORDER_ITEMS.product_id FK | Referencia a PRODUCTS.product_id. |
+| CREDIT_WARNINGS.client_id FK | Referencia a B2B_CLIENTS.client_id. |
+| CREDIT_WARNINGS.request_id FK | Referencia a PURCHASE_REQUESTS.request_id. |
 ## 4.8. Database Design
 
 El diseño de base de datos de Nexa deriva de los diagramas de clases actualizados y de los bounded contexts consolidados en el diseño táctico. Organizamos las estructuras relacionales alrededor de **Identity & Access**, **Catalog**, **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**, manteniendo coherencia con EventStorming, DDD y C4.
@@ -121,9 +135,6 @@ El diseño de base de datos se presenta como un modelo relacional objetivo deriv
 
 > *Nota.* El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1. Elaboración propia.
 
-*Figura. Diagrama de base de datos del bounded context Orders & Commercial Management.*
-
-
 ![Full Database Diagram](../assets/images/chapter-4/database/full-database-diagram.png)
 
  > *Nota:* El diagrama completo de base de datos consolida las principales estructuras relacionales requeridas por los cinco bounded contexts y las capacidades de soporte transversal. Elaboración propia.
@@ -138,12 +149,13 @@ La siguiente tabla resume la agrupación completa de base de datos:
 | Warehouse | WAREHOUSES, INVENTORY_LOTS, RESERVATIONS, STOCK_MOVEMENTS | Los almacenes contienen lotes; los lotes tienen reservas y movimientos. | Persiste disponibilidad de stock, reservas y trazabilidad de inventario. |
 | Logistics | DISPATCH_ORDERS, TRACEABILITY_EVENTS, DISPATCH_INCIDENTS, TEMPERATURE_CHECKS, DELIVERY_EVIDENCE | Las órdenes generan despachos; los despachos tienen eventos, incidencias, controles de temperatura y evidencia. | Persiste monitoreo de despacho y trazabilidad de entrega. |
 | Invoicing | COMMERCIAL_DOCUMENTS, PAYMENT_RECORDS, PAYMENT_STATUSES, INVOICE_SUMMARIES | Las órdenes generan documentos, registros de pago y resúmenes de cobro. | Persiste documentos comerciales, estado de pago y resúmenes de cobro. |
+| Read Models | SALES_REPORT_READ_MODEL, INVENTORY_REPORT_READ_MODEL, DISPATCH_REPORT_READ_MODEL, PAYMENT_STATUS_READ_MODEL | Los read models se derivan de tablas operativas. | Soporta dashboards y vistas de reporting. |
+
 > *Nota.* La vista consolidada integra las estructuras por bounded context y sus relaciones principales como diseño objetivo. Elaboración propia.
 
 *Tabla. Agrupación de estructuras de base de datos por bounded context*
 
 | Bounded context | Estructuras principales | Propósito de diseño |
 |---|---|---|
-| Identity & Access | `USERS`, `USER_SESSIONS` | Administrar usuarios, alcance de acceso, rol y sesiones como diseño objetivo de seguridad. |
 
 > *Nota:* La agrupación mantiene la relación entre modelo relacional objetivo, bounded contexts y diagramas de clases sin declarar persistencia productiva para TB1. Elaboración propia.
