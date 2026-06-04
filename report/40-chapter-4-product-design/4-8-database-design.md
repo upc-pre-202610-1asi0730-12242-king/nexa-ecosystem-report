@@ -83,6 +83,20 @@ Restricciones principales:
 
  > *Nota:* Sales almacena clientes B2B, solicitudes de compra, validaciones comerciales, órdenes de venta confirmadas e ítems de orden. Elaboración propia.
 
+El modelo de Sales separa las solicitudes de compra de las órdenes de venta confirmadas. Esta separación es necesaria porque el proceso de negocio requiere validación comercial antes de confirmar una orden.
+
+| Tabla | Columnas principales | Descripción |
+|---|---|---|
+| B2B_CLIENTS | client_id, tenant_id, business_name, tax_identifier, contact_name, contact_email, phone, status | Almacena información de clientes B2B. |
+| COMMERCIAL_CONDITIONS | condition_id, client_id, payment_terms, credit_limit, current_credit_balance, status | Almacena condiciones comerciales y de crédito de cada cliente. |
+| PURCHASE_REQUESTS | request_id, client_id, requested_by_user_id, request_date, external_channel, request_status, observations | Almacena solicitudes de compra enviadas por compradores o registradas manualmente. |
+| PURCHASE_REQUEST_ITEMS | request_item_id, request_id, product_id, requested_quantity, requested_unit_price | Almacena productos solicitados en cada solicitud de compra. |
+| SALES_ORDERS | order_id, request_id, client_id, order_date, order_status, total_amount, confirmed_by_user_id | Almacena órdenes de venta confirmadas. |
+| ORDER_ITEMS | order_item_id, order_id, product_id, quantity, unit_price, subtotal | Almacena productos incluidos en cada orden de venta confirmada. |
+| CREDIT_WARNINGS | warning_id, client_id, request_id, warning_type, description, status, created_at | Almacena alertas de crédito o pago generadas durante la validación comercial. |
+| ORDER_OBSERVATIONS | observation_id, order_id, user_id, description, created_at | Almacena observaciones comerciales u operativas relacionadas con una orden. |
+
+Restricciones principales:
 ## 4.8. Database Design
 
 El diseño de base de datos de Nexa deriva de los diagramas de clases actualizados y de los bounded contexts consolidados en el diseño táctico. Organizamos las estructuras relacionales alrededor de **Identity & Access**, **Catalog**, **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**, manteniendo coherencia con EventStorming, DDD y C4.
@@ -109,9 +123,6 @@ El diseño de base de datos se presenta como un modelo relacional objetivo deriv
 
 *Figura. Diagrama de base de datos del bounded context Orders & Commercial Management.*
 
-![Orders & Commercial Management](../assets/images/chapter-4/database/orders-and-commercial-management.png)
-
-> *Nota.* El modelo representa el diseño relacional objetivo; no declara persistencia productiva para TB1. Elaboración propia.
 
 ![Full Database Diagram](../assets/images/chapter-4/database/full-database-diagram.png)
 
@@ -125,6 +136,8 @@ La siguiente tabla resume la agrupación completa de base de datos:
 | Catalog Management | CATEGORIES, PRODUCTS, PROMOTIONS, PRODUCT_PROMOTIONS | Las categorías agrupan productos; los productos pueden relacionarse con promociones. | Persiste el catálogo comercial de productos. |
 | Sales | B2B_CLIENTS, COMMERCIAL_CONDITIONS, PURCHASE_REQUESTS, PURCHASE_REQUEST_ITEMS, SALES_ORDERS, ORDER_ITEMS, CREDIT_WARNINGS, ORDER_OBSERVATIONS | Los clientes envían solicitudes; las solicitudes validadas se convierten en órdenes; las órdenes contienen ítems. | Persiste el flujo comercial de pedidos. |
 | Warehouse | WAREHOUSES, INVENTORY_LOTS, RESERVATIONS, STOCK_MOVEMENTS | Los almacenes contienen lotes; los lotes tienen reservas y movimientos. | Persiste disponibilidad de stock, reservas y trazabilidad de inventario. |
+| Logistics | DISPATCH_ORDERS, TRACEABILITY_EVENTS, DISPATCH_INCIDENTS, TEMPERATURE_CHECKS, DELIVERY_EVIDENCE | Las órdenes generan despachos; los despachos tienen eventos, incidencias, controles de temperatura y evidencia. | Persiste monitoreo de despacho y trazabilidad de entrega. |
+| Invoicing | COMMERCIAL_DOCUMENTS, PAYMENT_RECORDS, PAYMENT_STATUSES, INVOICE_SUMMARIES | Las órdenes generan documentos, registros de pago y resúmenes de cobro. | Persiste documentos comerciales, estado de pago y resúmenes de cobro. |
 > *Nota.* La vista consolidada integra las estructuras por bounded context y sus relaciones principales como diseño objetivo. Elaboración propia.
 
 *Tabla. Agrupación de estructuras de base de datos por bounded context*
@@ -132,6 +145,5 @@ La siguiente tabla resume la agrupación completa de base de datos:
 | Bounded context | Estructuras principales | Propósito de diseño |
 |---|---|---|
 | Identity & Access | `USERS`, `USER_SESSIONS` | Administrar usuarios, alcance de acceso, rol y sesiones como diseño objetivo de seguridad. |
-| Catalog | `CATEGORIES`, `PRODUCTS` | Mantener información maestra de productos, categorías y condiciones de conservación. |
 
 > *Nota:* La agrupación mantiene la relación entre modelo relacional objetivo, bounded contexts y diagramas de clases sin declarar persistencia productiva para TB1. Elaboración propia.
