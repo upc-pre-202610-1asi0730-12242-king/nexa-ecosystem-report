@@ -4,13 +4,13 @@ Esta sección presenta el diseño orientado a objetos de Nexa. El diseño está 
 
 El modelo orientado a objetos se organiza alrededor de los bounded contexts finales de Nexa: **Catalog Management**, **Sales**, **Warehouse**, **Logistics** e **Invoicing**. Identity and Access Management se documenta como soporte transversal porque permite el acceso seguro y la operación basada en tenants, pero no se considera uno de los bounded contexts principales del negocio.
 
+Los diagramas también mantienen trazabilidad con el diseño de base de datos presentado en la sección 4.8. Por ello, las entidades principales representadas en los diagramas de clases tienen una estructura de persistencia correspondiente en el modelo relacional de base de datos.
+
+## 4.7.1. Class Diagrams
+
+Los diagramas de clases incluyen clases, atributos, operaciones, scope, enumeraciones, asociaciones y multiplicidades. El objetivo es representar la estructura orientada a implementación de cada bounded context sin perder consistencia con el lenguaje del dominio.
+
 ## 4.7. Software Object-Oriented Design
-
-Para el diseño orientado a objetos de Nexa, organizamos los diagramas de clases a partir de los cinco bounded contexts consolidados durante el modelado táctico: **Identity & Access**, **Catalog**, **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**. Esta separación mantiene la trazabilidad con el EventStorming, el modelo DDD y la vista C4, evitando mezclar responsabilidades comerciales, logísticas y de acceso dentro de un único modelo general.
-
-Definimos los diagramas con PlantUML para mantener una representación consistente de entidades, value objects, servicios de aplicación, repositorios y recursos expuestos por cada contexto. El diagrama general presenta la relación táctica entre contextos, mientras que los diagramas individuales permiten revisar con mayor detalle las clases y dependencias internas de cada parte del dominio.
-
-En TB1, estos diagramas representan el diseño objetivo del dominio. La webapp utiliza Fake API como simulación para validar flujos y estructura funcional, por lo que no se afirma la existencia de un backend productivo, una base de datos productiva ni autenticación productiva. Los reportes no se modelan como bounded context independiente, sino como read models derivados de **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**.
 
 |---|---|
 | Separación por bounded context | Cada diagrama agrupa clases según una responsabilidad específica del negocio. |
@@ -109,6 +109,102 @@ Sales es el bounded context responsable del flujo comercial de pedidos. Este con
 
 Relaciones recomendadas:
 
+| Relación | Multiplicidad | Descripción |
+|---|---|---|
+| B2BClient - PurchaseRequest | 1 a muchos | Un cliente B2B puede enviar varias solicitudes de compra. |
+| PurchaseRequest - OrderItem | 1 a muchos | Una solicitud contiene uno o más ítems solicitados. |
+| PurchaseRequest - SalesOrder | 0..1 a 1 | Una solicitud validada puede convertirse en una orden de venta confirmada. |
+| SalesOrder - OrderItem | 1 a muchos | Una orden contiene uno o más ítems. |
+| B2BClient - CommercialCondition | 1 a 1 o 1 a muchos | Un cliente tiene condiciones comerciales usadas durante la validación. |
+| PurchaseRequest - OrderObservation | 0 a muchos | Una solicitud puede contener observaciones comerciales u operativas. |
+
+### Warehouse Class Diagram
+
+![Warehouse Class Diagram](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-inventory.png)
+
+**Nota:** Warehouse gestiona almacenes, lotes de inventario, reservas de stock, movimientos de stock y criterios FEFO.
+
+Warehouse es responsable de la disponibilidad física y operativa de los productos. Este contexto debe representar explícitamente lotes de inventario y reservas de stock porque los productos gourmet refrigerados requieren trazabilidad por lote y fecha de vencimiento.
+
+| Clase | Tipo | Responsabilidad |
+|---|---|---|
+| Warehouse | Entidad / Aggregate Root | Representa una ubicación de almacenamiento de inventario. |
+| InventoryLot | Entidad | Representa stock asociado a un producto, almacén y fecha de vencimiento. |
+| Reservation | Entidad | Representa stock reservado para una solicitud de compra u orden de venta. |
+| StockMovement | Entidad | Representa movimientos de ingreso, salida o ajuste. |
+| StockAvailability | Value Object / Read Model | Representa cantidades disponibles, reservadas y totales de stock. |
+| FEFOCriteria | Value Object / Domain Service | Encapsula la lógica de selección basada en earliest-expiration-first. |
+| LotStatus | Enumeración | Representa si un lote está disponible, reservado, bloqueado o vencido. |
+| MovementType | Enumeración | Representa movimientos de ingreso, salida, ajuste o liberación. |
+| WarehouseApplicationService | Application Service | Coordina los casos de uso de inventario. |
+| InventoryLotRepository | Repository Interface | Proporciona operaciones de persistencia para lotes de inventario. |
+
+Relaciones recomendadas:
+
+| Relación | Multiplicidad | Descripción |
+|---|---|---|
+| Warehouse - InventoryLot | 1 a muchos | Un almacén contiene muchos lotes de inventario. |
+| InventoryLot - Reservation | 1 a muchos | Un lote puede reservarse varias veces hasta agotar su cantidad disponible. |
+| InventoryLot - StockMovement | 1 a muchos | Un lote puede tener muchos movimientos de stock. |
+| Reservation - PurchaseRequest / SalesOrder | muchos a 1 | Las reservas se asocian con la demanda comercial proveniente de Sales. |
+| InventoryLot - FEFOCriteria | muchos a 1 lógico | Los criterios FEFO se usan para seleccionar lotes por fecha de vencimiento. |
+
+### Logistics Class Diagram
+
+![Logistics Class Diagram](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-dispatch-traceability.png)
+
+**Nota:** Logistics gestiona órdenes de despacho, eventos de trazabilidad, incidencias de entrega, controles de temperatura y evidencia de entrega.
+
+Logistics es responsable de monitorear el proceso de entrega desde la programación del despacho hasta la evidencia de entrega. El modelo incluye eventos de trazabilidad y evidencia de entrega porque el negocio necesita visibilidad sobre el estado de cada orden y entrega.
+
+| Clase | Tipo | Responsabilidad |
+|---|---|---|
+| DispatchOrder | Entidad / Aggregate Root | Representa un despacho creado para una orden de venta confirmada. |
+| TraceabilityEvent | Entidad | Representa un evento de seguimiento registrado durante la entrega. |
+| DeliveryIncident | Entidad | Representa una incidencia durante el proceso de despacho. |
+| TemperatureCheck | Entidad / Value Object | Representa una lectura o control referencial de temperatura durante la entrega. |
+| DeliveryWindow | Value Object | Representa el rango esperado de entrega. |
+| DeliveryEvidence | Entidad | Representa evidencia de entrega, como datos de confirmación o evidencia adjunta. |
+| DispatchStatus | Enumeración | Representa estados como programado, en tránsito, con incidencia, entregado o cancelado. |
+| IncidentSeverity | Enumeración | Representa el nivel de severidad de una incidencia de entrega. |
+| LogisticsApplicationService | Application Service | Coordina los casos de uso de despacho y trazabilidad. |
+| DispatchOrderRepository | Repository Interface | Proporciona operaciones de persistencia para órdenes de despacho. |
+
+Relaciones recomendadas:
+
+| Relación | Multiplicidad | Descripción |
+|---|---|---|
+| SalesOrder - DispatchOrder | 1 a 0..1 | Una orden de venta confirmada puede generar una orden de despacho. |
+| DispatchOrder - TraceabilityEvent | 1 a muchos | Un despacho tiene varios eventos de trazabilidad. |
+| DispatchOrder - DeliveryIncident | 1 a muchos | Un despacho puede tener cero o más incidencias de entrega. |
+| DispatchOrder - TemperatureCheck | 1 a muchos | Un despacho puede incluir varios controles de temperatura. |
+| DispatchOrder - DeliveryEvidence | 1 a 0..1 | Un despacho entregado debe tener evidencia de entrega. |
+| DispatchOrder - DeliveryWindow | 1 a 1 | Un despacho tiene una ventana esperada de entrega. |
+
+### Invoicing Class Diagram
+
+![Invoicing Class Diagram](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-invoicing.png)
+
+**Nota:** Invoicing gestiona documentos comerciales, resúmenes de cobro, pagos simulados y visibilidad del estado de pago.
+
+Invoicing es responsable de la visibilidad documental y de pago de la orden. En el alcance actual, el proceso de pago se representa como un flujo simulado, mientras que el dominio mantiene el modelado de estado de pago y visibilidad de documentos comerciales.
+
+| Clase | Tipo | Responsabilidad |
+|---|---|---|
+| CommercialDocument | Entidad / Aggregate Root | Representa un documento comercial asociado a una orden de venta. |
+| PaymentRecord | Entidad | Representa el registro de un pago simulado. |
+| PaymentStatus | Enumeración / Entidad | Representa el estado de pago actual de una orden. |
+| InvoiceSummary | Entidad / Read Model | Representa el resumen de cargos comerciales de una orden. |
+| ChargeSummary | Value Object | Encapsula subtotal, impuestos, descuentos, cargos de entrega y monto total. |
+| DocumentVisibility | Value Object / Policy | Define si un documento es visible para el comprador. |
+| PaymentMethod | Enumeración | Representa el método de pago simulado seleccionado. |
+| InvoicingApplicationService | Application Service | Coordina los casos de uso de generación documental y estado de pago. |
+| CommercialDocumentRepository | Repository Interface | Proporciona operaciones de persistencia para documentos comerciales. |
+
+Relaciones recomendadas:
+
+| Relación | Multiplicidad | Descripción |
+|---|---|---|
 | Clases y responsabilidades | Cada bounded context agrupa las clases que concentran la lógica principal de su parte del dominio. |
 | Atributos y métodos | Las clases incluyen miembros relevantes para expresar estado y comportamiento esperado. |
 | Visibilidad / scope | PlantUML representa scope cuando corresponde mediante `+` public, `-` private y `#` protected. |
@@ -120,35 +216,3 @@ Relaciones recomendadas:
 > *Nota.* Basada en los criterios UML solicitados para la sección de Class Diagrams. Elaboración propia.
 
 *Figura. Mapa táctico general de clases por bounded context*
-
-![Mapa táctico general de clases por bounded context](../assets/images/chapter-4/architecture/class-diagrams/consolidated-ddd-tactical-map.png)
-
-> *Nota.* El mapa consolida la relación entre los cinco bounded contexts y ubica los read models de reportes como salidas derivadas del dominio operativo. Elaboración propia mediante PlantUML.
-
-*Figura. Diagrama de clases del bounded context Identity & Access*
-
-![Diagrama de clases del bounded context Identity & Access](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-identity-access.png)
-
-> *Nota.* Este contexto concentra usuarios, sesiones, roles, permisos y validaciones de acceso como diseño objetivo. Elaboración propia mediante PlantUML.
-
-*Figura. Diagrama de clases del bounded context Catalog*
-
-![Diagrama de clases del bounded context Catalog](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-catalog.png)
-
-> *Nota.* Catalog organiza productos, categorías y reglas de conservación sin asumir stock ni despacho. Elaboración propia mediante PlantUML.
-
-*Figura. Diagrama de clases del bounded context Orders & Commercial Management*
-
-![Diagrama de clases del bounded context Orders & Commercial Management](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-orders-commercial-management.png)
-
-> *Nota.*  Este contexto integra cliente B2B, condiciones comerciales, alertas de crédito, pedidos, ítems y observaciones. Elaboración propia mediante PlantUML.
-
-*Figura. Diagrama de clases del bounded context Inventory*
-
-![Diagrama de clases del bounded context Inventory](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-inventory.png)
-
-> *Nota.* Inventory modela almacenes, lotes, disponibilidad, reserva y movimientos de stock. Elaboración propia mediante PlantUML.
-
-*Figura. Diagrama de clases del bounded context Dispatch & Traceability*
-
-![Diagrama de clases del bounded context Dispatch & Traceability](../assets/images/chapter-4/architecture/class-diagrams/class-diagram-dispatch-traceability.png)
