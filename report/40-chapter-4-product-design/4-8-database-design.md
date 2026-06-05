@@ -168,6 +168,20 @@ Restricciones principales:
 | DISPATCH_INCIDENTS.dispatch_id FK | Referencia a DISPATCH_ORDERS.dispatch_id. |
 | TEMPERATURE_CHECKS.dispatch_id FK | Referencia a DISPATCH_ORDERS.dispatch_id. |
 | DELIVERY_EVIDENCE.dispatch_id FK | Referencia a DISPATCH_ORDERS.dispatch_id. |
+| DISPATCH_ORDERS.dispatch_status CHECK | Restringe el estado del despacho a scheduled, in_transit, incident, delivered o cancelled. |
+| DISPATCH_INCIDENTS.severity CHECK | Restringe la severidad de incidencias a valores predefinidos. |
+
+### Invoicing Database Diagram
+
+*Figura. Diagrama de base de datos asociado a Invoicing*
+
+![Invoicing](../assets/images/chapter-4/database/invoicing.png)
+
+> Nota. Invoicing almacena documentos comerciales, registros de pago simulado, estados de pago y resúmenes de cobro asociados a órdenes comerciales. Elaboración propia.
+El modelo de Invoicing proporciona visibilidad de pagos y documentos para el comprador. En el alcance actual, el pago se trata como un flujo simulado, pero el diseño de base de datos representa registros de pago y estado de pago para mantener el modelo extensible.
+
+| Tabla | Columnas principales | Descripción |
+|---|---|---|
 ## 4.8. Database Design
 
 El diseño de base de datos de Nexa deriva de los diagramas de clases actualizados y de los bounded contexts consolidados en el diseño táctico. Organizamos las estructuras relacionales alrededor de **Identity & Access**, **Catalog**, **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**, manteniendo coherencia con EventStorming, DDD y C4.
@@ -175,9 +189,6 @@ El diseño de base de datos de Nexa deriva de los diagramas de clases actualizad
 El modelo conserva las relaciones necesarias para usuarios, productos, clientes B2B, condiciones comerciales, pedidos, lotes de inventario, movimientos de stock, despacho y trazabilidad. Los reportes se tratan como read models derivados de tablas operativas; no constituyen un bounded context independiente.
 
 En TB1, la webapp utiliza Fake API como simulación para validar flujos y estructura funcional. Los siguientes diagramas representan una arquitectura relacional objetivo para una futura capa backend/base de datos; no declaran persistencia productiva, autenticación productiva ni REST API backend implementada en esta entrega.
-
-### 4.8.1. Database Diagrams
-
 
 ![Full Database Diagram](../assets/images/chapter-4/database/full-database-diagram.png)
 
@@ -202,8 +213,9 @@ Este diseño de base de datos mantiene consistencia con el modelo de dominio. Lo
 | Contexto / soporte táctico | Tablas principales | PK / FK principales | Relaciones relevantes | Propósito de diseño |
 |---|---|---|---|---|
 | Soporte transversal de acceso | `USERS`, `USER_SESSIONS` | `user_id`, `session_id`; FK de `USER_SESSIONS.user_id` a `USERS.user_id` | Un usuario puede tener varias sesiones; roles y permisos definen alcance operativo cuando el modelo los incluye | Acceso, sesión y alcance de operación para S1, S2 y S3 |
+| Catalog Management | `CATEGORIES`, `PRODUCTS`, `PROMOTIONS`, `PRODUCT_PROMOTIONS` | `category_id`, `product_id`, `promotion_id`; FK de `PRODUCTS.category_id` a `CATEGORIES.category_id`; FK de `PRODUCT_PROMOTIONS.product_id` a `PRODUCTS.product_id`; FK de `PRODUCT_PROMOTIONS.promotion_id` a `PROMOTIONS.promotion_id` | Una categoría agrupa productos; cada producto se identifica mediante `internal_code`; los productos pueden asociarse a promociones cuando corresponde | Catálogo, código interno, condiciones de conservación, promociones y disponibilidad comercial visible |
+| Sales | `B2B_CLIENTS`, `COMMERCIAL_CONDITIONS`, `CREDIT_WARNINGS`, `ORDERS`, `ORDER_ITEMS`, `ORDER_OBSERVATIONS` | `client_id`, `order_id`, `order_item_id`; FK de `ORDERS.client_id` a `B2B_CLIENTS.client_id`; FK de `ORDER_ITEMS.order_id` a `ORDERS.order_id`; FK de `ORDER_ITEMS.product_id` a `PRODUCTS.product_id` | Un cliente tiene condiciones comerciales; un cliente genera órdenes; una orden contiene ítems y observaciones | Solicitudes, pedidos, validación comercial, crédito y relación con cliente B2B |
 > *Nota.* La vista consolidada integra las estructuras por bounded context y sus relaciones principales como diseño objetivo. Elaboración propia.
 
-*Tabla. Agrupación de estructuras de base de datos por bounded context*
 
 > *Nota:* La agrupación mantiene la relación entre modelo relacional objetivo, bounded contexts y diagramas de clases sin declarar persistencia productiva para TB1. Elaboración propia.
