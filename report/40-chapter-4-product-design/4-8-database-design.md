@@ -154,6 +154,20 @@ El modelo de Logistics parte de una orden de venta confirmada y registra el cicl
 |---|---|---|
 | DISPATCH_ORDERS | dispatch_id, order_id, assigned_user_id, delivery_address, scheduled_date, dispatch_status, created_at | Almacena despachos generados para órdenes de venta confirmadas. |
 | TRACEABILITY_EVENTS | event_id, dispatch_id, event_type, description, event_date, registered_by_user_id | Almacena eventos de seguimiento durante la entrega. |
+| DISPATCH_INCIDENTS | incident_id, dispatch_id, incident_type, severity, description, incident_date, status | Almacena incidencias de entrega. |
+| TEMPERATURE_CHECKS | temperature_check_id, dispatch_id, measured_temperature, measurement_unit, checked_at, status | Almacena controles referenciales de temperatura durante el despacho. |
+| DELIVERY_EVIDENCE | evidence_id, dispatch_id, received_by, evidence_url, delivered_at, observations | Almacena información de evidencia de entrega. |
+
+Restricciones principales:
+
+| Restricción | Descripción |
+|---|---|
+| DISPATCH_ORDERS.order_id FK | Referencia a SALES_ORDERS.order_id. |
+| DISPATCH_ORDERS.assigned_user_id FK | Referencia a USERS.user_id. |
+| TRACEABILITY_EVENTS.dispatch_id FK | Referencia a DISPATCH_ORDERS.dispatch_id. |
+| DISPATCH_INCIDENTS.dispatch_id FK | Referencia a DISPATCH_ORDERS.dispatch_id. |
+| TEMPERATURE_CHECKS.dispatch_id FK | Referencia a DISPATCH_ORDERS.dispatch_id. |
+| DELIVERY_EVIDENCE.dispatch_id FK | Referencia a DISPATCH_ORDERS.dispatch_id. |
 ## 4.8. Database Design
 
 El diseño de base de datos de Nexa deriva de los diagramas de clases actualizados y de los bounded contexts consolidados en el diseño táctico. Organizamos las estructuras relacionales alrededor de **Identity & Access**, **Catalog**, **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**, manteniendo coherencia con EventStorming, DDD y C4.
@@ -164,9 +178,6 @@ En TB1, la webapp utiliza Fake API como simulación para validar flujos y estruc
 
 ### 4.8.1. Database Diagrams
 
-El diseño de base de datos se presenta como un modelo relacional objetivo derivado de los diagramas de clases. Para cada estructura se especifican tablas, columnas, claves primarias, claves foráneas y restricciones relevantes. Las relaciones se representan con cardinalidades para mantener coherencia con las asociaciones del modelo orientado a objetos.
-
-*Figura. Diagrama de base de datos del bounded context Identity & Access.*
 
 ![Full Database Diagram](../assets/images/chapter-4/database/full-database-diagram.png)
 
@@ -189,9 +200,10 @@ Este diseño de base de datos mantiene consistencia con el modelo de dominio. Lo
 **Tabla. Agrupación de estructuras de base de datos por contexto táctico**
 
 | Contexto / soporte táctico | Tablas principales | PK / FK principales | Relaciones relevantes | Propósito de diseño |
+|---|---|---|---|---|
+| Soporte transversal de acceso | `USERS`, `USER_SESSIONS` | `user_id`, `session_id`; FK de `USER_SESSIONS.user_id` a `USERS.user_id` | Un usuario puede tener varias sesiones; roles y permisos definen alcance operativo cuando el modelo los incluye | Acceso, sesión y alcance de operación para S1, S2 y S3 |
 > *Nota.* La vista consolidada integra las estructuras por bounded context y sus relaciones principales como diseño objetivo. Elaboración propia.
 
 *Tabla. Agrupación de estructuras de base de datos por bounded context*
-
 
 > *Nota:* La agrupación mantiene la relación entre modelo relacional objetivo, bounded contexts y diagramas de clases sin declarar persistencia productiva para TB1. Elaboración propia.
