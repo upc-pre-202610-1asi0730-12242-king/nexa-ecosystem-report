@@ -207,3 +207,73 @@ La ejecución se documenta como evidencia técnica del incremento y despliegue c
 ### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
 La documentación de servicios del Sprint 3 se alinea con el Final Project Statement para AV2: registrar la primera versión de Web Services y su evidencia OpenAPI/Swagger. Los tres recursos REST principales representan flujos core agrupados para conexión frontend/backend; no equivalen al total de operaciones HTTP disponibles en el backend.
+
+| Bounded Context | Aggregate | REST Resource | Main Responsibility | Owner |
+|---|---|---|---|---|
+| Catalog Management | CatalogItem | `/api/v1/catalog-items` | Gestionar catálogo de productos refrigerados. | R0obxdnt-bit |
+| Sales | Order | `/api/v1/orders` | Gestionar órdenes comerciales B2B. | DiegoS284 |
+| Warehouse | InventoryItem | `/api/v1/inventory-items` | Gestionar disponibilidad e inventario. | JoaquinVerde115 |
+
+*Endpoint coverage summary for AV2*
+
+| Coverage Level | Description | Count | Status |
+|---|---|---:|---|
+| Core frontend-backend flows | Catalog Management, Warehouse and Sales as prioritized flows for the AV2 review. | 3 groups | Documented |
+| Current backend HTTP endpoints | Operations structured in IAM, Catalog Management, Warehouse, Sales, Invoicing and Logistics controllers. | 25 | To Validate |
+| Current core business endpoints | Catalog Management, Warehouse and Sales HTTP operations. | 15 | To Validate |
+| Core endpoints with IAM access | Core business endpoints plus sign-in/sign-up operations. | 17 | To Validate |
+
+Note. Endpoint counts distinguish individual HTTP operations from grouped core capabilities. The Sprint 3 report documents the current backend foundation and does not declare full roadmap coverage, production deployment, complete Web Application integration or complete replacement of simulated frontend services.
+
+*Currently structured backend endpoints*
+
+| Module / Controller | Functional Scope                                 | HTTP Endpoint Count | Status      |
+| ------------------- | ------------------------------------------------ | ------------------: | ----------- |
+| Catalog Management  | Catalog item management                          |                   3 | To Validate |
+| Warehouse           | Inventory availability, reservation and release  |                   6 | To Validate |
+| Sales               | Orders, confirmation, rejection and cancellation |                   6 | To Validate |
+| IAM                 | Sign-in and sign-up foundation                   |                   2 | To Validate |
+| Invoicing           | Invoice creation and payment status              |                   4 | To Validate |
+| Logistics           | Shipment scheduling and delivery status          |                   4 | To Validate |
+| Total               | Current structured backend endpoints             |                  25 | To Validate |
+
+Estos endpoints se encuentran estructurados en backend C# y deben validarse mediante build, ejecución local y Swagger/OpenAPI antes de declararse como alcance cerrado del incremento.
+
+![Swagger/OpenAPI general de Platform API](../../assets/images/chapter-5/sprint-evidence/backend/swagger-openapi-platform-api.png)
+
+> *Nota:* Figura. Swagger/OpenAPI general de la Platform API.
+
+![Endpoints de autenticación en Swagger/OpenAPI](../../assets/images/chapter-5/sprint-evidence/backend/swagger-authentication.png)
+
+> *Nota:* Figura. Endpoints de autenticación documentados en Swagger/OpenAPI.
+
+![Endpoints de Catalog Items en Swagger/OpenAPI](../../assets/images/chapter-5/sprint-evidence/backend/swagger-catalog-items.png)
+
+> *Nota:* Figura. Endpoints de Catalog Items documentados en Swagger/OpenAPI.
+
+![Endpoints de Inventory Items en Swagger/OpenAPI](../../assets/images/chapter-5/sprint-evidence/backend/swagger-inventory-items.png)
+
+> *Nota:* Figura. Endpoints de Inventory Items documentados en Swagger/OpenAPI.
+
+![Endpoints de Orders en Swagger/OpenAPI](../../assets/images/chapter-5/sprint-evidence/backend/swagger-orders.png)
+
+> *Nota:* Figura. Endpoints de Orders documentados en Swagger/OpenAPI.
+
+### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+El Sprint 3 documenta evidencia de despliegue y preparación de release para AV2, incluyendo `nexa-platform v1.0.0`, `nexa-website v3.0.0` y `nexa-webapp v2.0.0` como evidencia técnica disponible para revisión. Esta sección no declara operación productiva; registra los artefactos que deben respaldar la revisión académica del corte frontend/backend.
+
+La evidencia debe distinguir entre versión preparada para revisión, ejecución local y validación pendiente. No se declara integración total con toda la Web Application, reemplazo completo de servicios simulados, autenticación productiva completa, base de datos de operación final ni cobertura completa del roadmap backend.
+
+| Deployment / Release Evidence | Evidence | Scope Statement | Status |
+|---|---|---|---|
+| Backend release evidence | Captura real incorporada del release backend `v1.0.0`. | Registra la versión de Web Services disponible para revisión AV2. | Incorporated |
+| Frontend release evidence | Captura real incorporada del release `nexa-webapp v2.0.0`. | Registra la versión frontend asociada al corte AV2. | Incorporated |
+| README execution guide | Release notes y README del repositorio `nexa-webapp` cubren guía de ejecución, alcance y notas del corte `v2.0.0`. | Explica cómo ejecutar y revisar frontend/backend sin depender de despliegue productivo. | Incorporated |
+| WebApp Render deployment | Evidencia incorporada con captura real del servicio Render WebApp. | Documenta el despliegue controlado de la Web Application para revisión académica. | Incorporated |
+| Platform API Render deployment | Evidencia incorporada con captura real del servicio Render Platform API. | Documenta el despliegue controlado de la API backend estructurada en C# como primer corte de servicios. | Incorporated |
+| Swagger/OpenAPI URL or capture | Evidencia incorporada con captura real de Swagger/OpenAPI. | Evidencia de documentación de endpoints; no implica operación productiva. | Incorporated |
+
+![Vista general del dashboard Render](../../assets/images/chapter-5/sprint-evidence/deployment/render-dashboard-overview.png)
+
+> *Nota:* Figura. Vista general del dashboard de Render usado como evidencia del despliegue académico AV2.
