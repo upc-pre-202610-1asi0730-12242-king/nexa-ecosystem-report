@@ -7,6 +7,7 @@ El contenido queda organizado por sprint para separar fechas, evidencias, commit
 - [5.2.2. Sprint 2](./5-2-2-sprint-2.md)
 - [5.2.3. Sprint 3](./5-2-3-sprint-3.md)
 
+*Alcance por incremento y evolución prevista*
 
 | Artefacto | Estado en TB1 | Estado en Sprint 3 / AV2                                                                                                                                                                                 | Evidencia en el reporte | Evolución prevista |
 |---|---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
@@ -15,9 +16,9 @@ El contenido queda organizado por sprint para separar fechas, evidencias, commit
 | Fake API / servicios simulados | Soporte simulado para revisar flujos frontend y recorridos de usuario durante TB1. | Se conserva como antecedente histórico del proceso de revisión frontend; el release WebApp AV2 reduce la dependencia de Mock API / JSON-server. | Sprint 2, commits WebApp y evidencia de release `nexa-webapp v2.0.0`. | Mantener la trazabilidad histórica mientras se consolida la integración progresiva con servicios internos. |
 | Web Services / RESTful API interna | Evolución prevista; no se declara implementación productiva en TB1. | Release `nexa-platform v1.0.0`, con ASP.NET Core Web API, .NET 10, EF Core, PostgreSQL, Swagger/OpenAPI y despliegue controlado en Render. | Sprint 3, Development Evidence, Services Documentation Evidence, Render, Swagger/OpenAPI y repositorio `nexa-platform`. | Completar integración, seguridad y pruebas sin declarar operación productiva. |
 | OpenAPI / Swagger | Evolución prevista; no se declara documentación formal en TB1. | Evidencia Swagger/OpenAPI incorporada para revisar endpoints HTTP estructurados de Platform API. | Sprint 3, Services Documentation Evidence y capturas Swagger/OpenAPI incorporadas. | Mantener contratos y capturas actualizadas conforme evolucionen los endpoints. |
+| Backend C# / ASP.NET Core | Alcance futuro / diseño objetivo. | Base backend documentada con ASP.NET Core Web API, C#, .NET 10, modular monolith, bounded contexts, Shared Kernel, EF Core, PostgreSQL y configuración Render. | Sprint 3 y repositorio `nexa-platform` como artefacto backend. | Evolucionar desde despliegue académico/controlado hacia integración más amplia. |
+| Database | Modelo objetivo; no se declara base de datos de operación final en TB1. | PostgreSQL documentado como persistencia AV2 para el despliegue controlado en Render. | Sprint 3 y Database Design del Capítulo IV como referencia arquitectónica. | Validar persistencia, migraciones, seed data y configuración de datos con evidencia verificable. |
 | Artefacto | Estado en TB1 | Evidencia en el reporte | Evolución esperada |
 |---|---|---|---|
 | Landing Page | Línea base AV1 conservada y conectada al avance TB1 | Sprint 1, evidencias de despliegue del sitio público y continuidad en Sprint 2 | Mantenerla como entrada pública y punto de enlace hacia la Web Application |
 | Web Application | Incremento central de TB1 | Sprint 2, mockups actuales, screenshots existentes, rutas y commits representativos | Ampliar cobertura funcional y validación con usuarios |
-| Fake API / servicios simulados | Soporte simulado para revisar flujos frontend, documentado para consumo público desde la webapp desplegada | Sprint 2 y Services Documentation Evidence for Sprint Review | Evolucionar hacia servicios internos formales cuando el backend esté implementado |
-| RESTful API interna | Evolución prevista; no se declara implementación productiva en TB1 | Arquitectura objetivo y planificación de servicios | Implementar contratos reales para Web Services |
