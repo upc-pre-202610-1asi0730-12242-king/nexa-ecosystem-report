@@ -11,7 +11,6 @@ La planificación del Sprint 1 organizó la base documental, visual y pública d
 | Sprint # | Sprint 1 |
 | Sprint Planning Background | Primer incremento del proyecto orientado a establecer la base Docs-as-Code, el discovery inicial, los primeros artefactos UX/UI y la Landing Page pública. |
 | Date | 2026-04-01 |
-| Time | 19:00 PM |
 | Location | Reunión virtual del equipo |
 | Prepared By | Yucra Sandoval, Diego Sebastian |
 | Attendees (to planning meeting) | Yucra Sandoval, Diego Sebastian / Verde Bueno, Joaquín / Marín Cueva, César / Rojas Mancilla, Gerard / Torrejón, Gino |
@@ -42,9 +41,11 @@ La ejecución del sprint evidencia una distribución funcional del liderazgo. En
 
 ### 5.2.1.3. Sprint Backlog 1.
 
-El Sprint Backlog 1 concentra el trabajo realizado entre el **2026-04-01 y 2026-04-23**. El objetivo principal del sprint fue construir la base documental del proyecto, organizar el trabajo bajo Docs-as-Code y consolidar el primer entregable visible mediante el Landing Page, junto con los artefactos iniciales de investigación, diseño y backlog.
+El Sprint Backlog 1 concentra el trabajo realizado entre el **2026-04-01 y 2026-04-24**. El objetivo principal del sprint fue construir la base documental del proyecto, organizar el trabajo bajo Docs-as-Code y consolidar el primer entregable visible mediante el Landing Page, junto con los artefactos iniciales de investigación, diseño y backlog.
 
-![Sprint Backlog 1 en Jira](../../assets/images/chapter-5/sprint-evidence/jira/sprint-1-board-jira.png)
+![Sprint Backlog 1 en Jira](../../assets/images/chapter-5/sprint-evidence/jira/sprint-1-backlog-jira.png)
+
+> *Nota.* La captura muestra la planificación actualizada del Sprint 1 en Jira, incluyendo User Stories, work-items, responsables, estados y estimaciones utilizadas para la trazabilidad del incremento inicial. Elaboración propia.
 
 **URL del board/backlog:** [Jira Backlog — Proyecto Nexa](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog)
 
@@ -88,55 +89,69 @@ Nota. Las estimaciones se registran en horas para el control del Sprint Backlog,
 
 ### 5.2.1.4. Development Evidence for Sprint Review.
 
+La evidencia de desarrollo del Sprint 1 corresponde al alcance AV1: estructura Docs-as-Code del informe, documentación inicial del producto, artefactos de discovery, arquitectura base y primera versión del Landing Page. Por ello, la evidencia se concentra en los repositorios `nexa-ecosystem-report` y `nexa-website`.
+
+El repositorio `nexa-ecosystem-report` conserva la evolución documental del informe académico, mientras que `nexa-website` contiene la implementación real del Landing Page desplegado como primer incremento visible del producto. La Web Application y los Web Services se mantienen como alcance posterior, por lo que no se declaran como implementación completada dentro del Sprint 1.
+
+*Commits del repositorio `nexa-ecosystem-report`*
+
 La evidencia de desarrollo del Sprint 1 abarca cuatro repositorios activos dentro de la organización [upc-pre-202610-1asi0730-12242-king](https://github.com/upc-pre-202610-1asi0730-12242-king). El repositorio **nexa-report** concentra toda la documentación académica del proyecto, construida de forma incremental desde el 01/04/2026. El repositorio **nexa-website** contiene la implementación real del Landing Page desplegado en GitHub Pages. Los repositorios **[nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform)** y **[nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp)** fueron inicializados durante el sprint como base para la siguiente iteración. A continuación se presenta la tabla de commits relacionados con el incremento del Sprint 1, organizados por repositorio.
 
-*Commits del repositorio `nexa-report`*
-
-Documentación académica del proyecto, construida de forma incremental.
-
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `448be89` | `chore(repo): initialize repository structure and base readme` | | 2026-04-01 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `bb5a55c` | `docs(front-matter): add cover page` | | 2026-04-01 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `3caaf0f` | `docs(front-matter): add version history table` | | 2026-04-02 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `f2769d1` | `docs(front-matter): add table of contents` | | 2026-04-02 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `ed1bce5` | `docs(front-matter): add student outcome section` | | 2026-04-03 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `9f586da` | `docs(ch1): add startup profile with team background and mission` | | 2026-04-03 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `f702fd6` | `docs(ch1): add solution profile and lean ux hypothesis` | | 2026-04-04 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `413a4d5` | `docs(ch1): add target segments S1, S2 and S3` | | 2026-04-04 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `da2b836` | `docs(ch2): add competitive analysis of Riqra, Drivin and OnTracking` | | 2026-04-04 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `2ac622f` | `docs(ch2): add interview guide and candidate registry` | | 2026-04-05 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `4895fb2` | `docs(ch2): add needfinding with user personas and journey maps` | | 2026-04-05 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `918a120` | `docs(ch2): add big picture event storming session notes` | | 2026-04-06 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `4bf08b9` | `docs(ch2): add ubiquitous language glossary` | | 2026-04-06 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `019c262` | `docs(ch3): add user stories for S1, S2 and S3 with acceptance criteria` | | 2026-04-07 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `fa13f29` | `docs(ch3): add impact mapping for distributor and buyer goals` | | 2026-04-07 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `c550e3a` | `docs(ch3): add product backlog with epics and story points` | | 2026-04-07 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `30b753d` | `docs(ch4): add style guidelines with colors, typography and spacing tokens` | | 2026-04-08 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `34cdf83` | `docs(ch4): add information architecture and navigation systems` | | 2026-04-08 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `cc6c075` | `docs(ch4): add landing page wireframes and mockups` | | 2026-04-09 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `211a045` | `docs(ch4): add domain-driven architecture with C4 context and container diagrams` | | 2026-04-10 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `db4805b` | `docs(ch4): add object-oriented design and class diagrams` | | 2026-04-10 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `33c85a8` | `docs(ch4): add database design and entity-relationship model` | | 2026-04-11 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `e1826fd` | `chore(repo): initialize repository structure and base readme` | | 01/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `4761937` | `docs(front-matter): add cover page` | | 02/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `994c001` | `docs(front-matter): add version history table` | | 02/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `9e85ce7` | `docs(front-matter): add table of contents` | | 02/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `2cddd62` | `docs(ch1): add startup profile with team background and mission` | | 03/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `263b6ec` | `docs(ch1): add solution profile and lean ux hypothesis` | | 04/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `961015e` | `docs(ch1): add target segments S1, S2 and S3` | | 04/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `8b34ceb` | `docs(ch2): add competitive analysis of Riqra, Drivin and OnTracking` | | 05/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `26c59b0` | `docs(ch2): add interview guide and candidate registry` | | 05/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `e7ea6a4` | `docs(ch2): add needfinding with user personas and journey maps` | | 06/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `fb70e01` | `docs(ch2): add big picture event storming session notes` | | 06/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `5474b8d` | `docs(ch2): add ubiquitous language glossary` | | 06/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `7d19a13` | `docs(ch3): add user stories for S1, S2 and S3 with acceptance criteria` | | 07/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `9012b5c` | `docs(ch3): add impact mapping for distributor and buyer goals` | | 07/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `4e3d7b7` | `docs(ch3): add product backlog with epics and story points` | | 07/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `17a9ab7` | `docs(ch4): add style guidelines with colors, typography and spacing tokens` | | 08/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `c001482` | `docs(ch4): add information architecture and navigation systems` | | 09/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `d38d6f1` | `docs(ch4): add landing page wireframes and mockups` | | 09/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `55e7aa6` | `docs(ch4): add web application ux/ui design` | | 09/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `bdb4291` | `docs(ch4): add web application prototyping flows` | | 10/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `d05960d` | `docs(ch4): add domain-driven architecture with C4 context and container diagrams` | | 11/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `c4712fd` | `docs(ch4): add object-oriented design and class diagrams` | | 11/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `eb33a14` | `docs(ch4): add database design and entity-relationship model` | | 11/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `9e01367` | `docs(ch5): add software configuration management and tooling` | | 11/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `72e31c8` | `refactor(report): restructure repository to UPC docs-as-code standard` | | 16/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `ae3a389` | `docs(ch2): complete interviews registry and expand event storming with policies` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `28b2252` | `docs(ch3): rewrite user stories with 14 epics and 64 stories and structured backlog` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `0baff96` | `docs(ch4): develop software architecture section with full C4 model` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `43a1178` | `docs(report): polish AV1 with re-indexed illustrations and synced TOC` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `d660ca8` | `docs(report): restructure AV1 evidence, clean assets and enforce rubric formats` | | 23/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `9ab7067` | `fix(lint): resolve markdownlint heading increment and hard tab errors` | | 23/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `bdd0ddc` | `docs(ch5): expand development evidence table with real commits from all four repositories` | | 23/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `2996ede` | `docs(ch5): update sprint review evidence blocks and replace jira screenshots` | | 23/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `910087f` | `docs(ch2): add interview percentage breakdown and as-is scenario map` | | 23/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `21858a8` | `docs(ch2-ch4): complete DDD table and add user goal paths to wireflows` | | 23/04/2026 |
 
 *Commits del repositorio `nexa-website`*
 
-Implementación real del Landing Page desplegado en GitHub Pages.
+Implementación real del Landing Page como primera versión visible del producto para AV1.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `04c39bf` | `chore(repo): initialize website repository baseline` | | 2026-04-01 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `1c8c754` | `feat(project): add first static website prototype` | | 2026-04-01 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `e44e1aa` | `chore(gitflow): merge project-bootstrap into develop` | | 2026-04-01 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `ffa7877` | `style(brand): add Nexa identity and base tokens` | | 2026-04-02 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `8d2b22c` | `feat(landing): add early landing page structure` | | 2026-04-04 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `6777ddd` | `chore(release): prepare website v0.1.0` | | 2026-04-06 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `cbe09a3` | `chore(release): merge website v0.1.0 to main` | | 2026-04-06 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `3734e7a` | `feat(navigation): add first multi-page route map` | | 2026-04-08 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `08f0e93` | `feat(hero): add cold-chain hero media and motion` | | 2026-04-09 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `781e54c` | `feat(landing): organize value proposition styling` | | 2026-04-11 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `e5c13f6` | `chore(release): prepare website v0.2.0` | | 2026-04-14 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5f2d00d` | `chore(release): merge website v0.2.0 to main` | | 2026-04-14 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `a06ddba` | `feat(platform): move platform overview into pages` | | 2026-04-15 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `ffb25cd` | `feat(company): add company page in final route` | | 2026-04-16 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `9a9eaed` | `feat(faq): add FAQ page in final route` | | 2026-04-17 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `ea68ea2` | `feat(solutions): add solutions overview page` | | 2026-04-18 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `e61e97d` | `feat(solutions): add importers solution page` | | 2026-04-19 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `04eb656` | `feat(solutions): add distributors solution page` | | 2026-04-20 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `211d614` | `feat(solutions): add cold storage solution page` | | 2026-04-21 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `3b97299` | `Initial commit` | | 14/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `a175f4c` | `chore: set up initial repository structure and project documentation` | | 17/04/2026 |
@@ -144,42 +159,6 @@ Implementación real del Landing Page desplegado en GitHub Pages.
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `215b125` | `style(tokens): define Nexa brand design tokens v1.1.0` | | 19/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `05e01ce` | `docs: add project notes and planning decisions` | | 19/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `1332ae2` | `feat(landing): scaffold semantic index.html for 4-band Flecto layout` | Bands 1–3 with [data-band] scopes: dark hero, white tabs, cream segments, dark trust+contact. | 19/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `c0877ea` | `feat(landing): add styles/main.css + mirror tokens.css` | Layout grid system bound to tokens.css band scopes ([data-band]). Components and utility classes. | 19/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `d37c0a3` | `feat(landing): add i18n toggle for es_419/en_US lang pairs` | | 19/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `8efd41c` | `feat(landing): add ARIA tablist with manual activation + indicator animation` | | 19/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `0327cdc` | `feat(landing): add GSAP band entrance + Band 1 flow-diagram timeline` | | 19/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `da230eb` | `feat(landing): add 4 SVG product mocks for Band 2 tab panels` | | 19/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `1d91315` | `feat(design): implement premium visual redesign with new assets` | | 19/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `2d87251` | `feat: restore landing page to stable baseline` | | 19/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `427f52b` | `feat: translate DOM content to Spanish and update copy for local context` | | 19/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `525feac` | `fix(landing): fix i18n bindings, token references and layout inconsistencies` | | 19/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `e89e497` | `chore: archive legacy docs to nexa-archive` | | 19/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `f8d12a6` | `chore: clean up code comments` | | 19/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5601bd3` | `fix(landing): viewport height fixes for laptop screens` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `78fd683` | `docs: update README with live link, repo references and clean structure` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `4a7b43e` | `chore: add .gitignore for OS and system files` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5cc9089` | `Update team member ID in README.md` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5255e41` | `ci(lint): add markdownlint and commitlint workflow` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `57e0f9c` | `chore(repo): update local workspace ignore rules` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `f30b3f5` | `fix(docs): correct filename typos in requirements folder` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `94d4735` | `feat(a11y): add skip-to-content link to all pages for WCAG compliance` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `505f4f6` | `docs(report): data update` | | 23/04/2026 |
-
-*Commits del repositorio `nexa-platform`*
-
-Inicialización del repositorio base para el portal transaccional.
-
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| `upc-pre-202610-1asi0730-12242-king/nexa-platform` | `main` | `520138d` | `Initial commit` | | 15/04/2026 |
-
-*Commits del repositorio `nexa-webapp`*
-
-Inicialización del repositorio base para la Web Application.
-
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `f374393` | `Initial commit` | | 15/04/2026 |
 
 ### 5.2.1.5. Execution Evidence for Sprint Review.
 
@@ -226,7 +205,7 @@ La evidencia de despliegue de AV1 sí existe, pero está concentrada en el frent
 | Artefacto | Estado observable en AV1 | Evidencia |
 |---|---|---|
 | Landing page pública | **Desplegada y navegable** | [GitHub Pages](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) |
-| Repositorio documental | **Versionado y colaborativo** | [nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) |
+| Repositorio documental | **Versionado y colaborativo** | [nexa-ecosystem-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report) |
 | Repositorio del sitio público | **Implementación visible del frontend público** | [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) |
 | Web application autenticada | **Fase posterior del producto** | [nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp). Nombrada en diseño y backlog, no como evidencia de despliegue AV1 |
 | Backend / servicios | **Fase posterior del producto** | [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform). Nombrado en arquitectura y backlog, no como evidencia de despliegue AV1 |
@@ -237,13 +216,12 @@ Esta lectura permite defender el despliegue con precisión: Nexa ya tiene una ca
 
 El Sprint 1 distribuyó responsabilidades entre investigación, UX/UI, implementación pública, arquitectura y documentación. Esta organización permitió avanzar en paralelo sin separar el reporte del software visible.
 
-La principal conclusión colaborativa del sprint es que Nexa no se construyó como un esfuerzo fragmentado entre “los que escriben” y “los que programan”. El incremento visible solo fue posible porque Jira, el reporte, el diseño y la landing page evolucionaron de manera sincronizada. Aun cuando persista backlog remanente para portal B2B, autenticación, inventario transaccional y servicios, el equipo deja en AV1 una base metodológica sólida, trazable y escalable para la siguiente iteración.
 
 *Síntesis de colaboración del Sprint 1*
 
 | Frente | Evidencia usada en el sprint | Resultado |
 |---|---|---|
-| Gestión y trazabilidad | Jira Software, commits en `nexa-report` y estructura Docs-as-Code | Backlog, capítulos y evidencias quedaron conectados al avance AV1 |
+| Gestión y trazabilidad | Jira Software, commits en `nexa-ecosystem-report` y estructura Docs-as-Code | Backlog, capítulos y evidencias quedaron conectados al avance AV1 |
 | Diseño UX/UI | Wireframes, mockups y decisiones de navegación de Landing Page | La propuesta pública pudo explicarse con pantallas y recorrido de usuario |
 | Implementación pública | Repositorio `nexa-website` y despliegue en GitHub Pages | Landing Page navegable para revisión académica |
 | Coordinación del equipo | Sesión remota enlazada en Sprint Planning 1 y distribución LACX | Responsabilidades separadas por gestión, diseño, arquitectura, frontend y documentación |
