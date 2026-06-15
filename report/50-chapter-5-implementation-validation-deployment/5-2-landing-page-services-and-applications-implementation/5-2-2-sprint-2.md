@@ -2,7 +2,6 @@
 
 El Sprint 2 corresponde al incremento TB1. El objetivo fue consolidar la Web Application con flujos internos para coordinación comercial y jefatura logística, actualizar la evidencia UX/UI y documentar la implementación frontend asociada al alcance de la entrega.
 
-La evidencia de Sprint 2 se organiza mediante planificación, Sprint Backlog, commits, ejecución, servicios simulados, despliegue y colaboración. S1 y S2 son los flujos principales de la entrega. S3 se mantiene como alcance parcial de planificación y trazabilidad, sin declarar cobertura completa de UI ni validación final del segmento en TB1.
 
 ### 5.2.2.1. Sprint Planning 2
 
@@ -11,7 +10,7 @@ La evidencia de Sprint 2 se organiza mediante planificación, Sprint Backlog, co
 | Sprint # | Sprint 2 |
 | Sprint Planning Background | Segundo incremento del proyecto orientado a consolidar la Web Application TB1, documentar flujos S1/S2 y actualizar evidencia de diseño, implementación y colaboración. |
 | Date | 2026-04-24 |
-| Time | 19:00 PM |
+| Time | 07:00 PM |
 | Location | Reunión virtual del equipo |
 | Prepared By | Yucra Sandoval, Diego Sebastian |
 | Attendees (to planning meeting) | Yucra Sandoval, Diego Sebastian / Verde Bueno, Joaquín / Marín Cueva, César / Rojas Mancilla, Gerard / Torrejón, Gino |
@@ -40,7 +39,9 @@ Figura. Reunión virtual del equipo para coordinación de Sprint 2.
 
 El Sprint Backlog 2 concentra el trabajo realizado entre el **2026-04-24 y 2026-05-07**. El objetivo principal del sprint fue consolidar la Web Application TB1, documentar los flujos internos de S1 y S2, actualizar la evidencia UX/UI y registrar el avance de implementación correspondiente al incremento de la entrega.
 
-![Sprint Backlog 2 en Jira](../../assets/images/chapter-5/sprint-evidence/jira/sprint-2-board-jira.png)
+![Sprint Backlog 2 en Jira](../../assets/images/chapter-5/sprint-evidence/jira/sprint-2-backlog-jira.png)
+
+> *Nota.* La captura muestra la planificación actualizada del Sprint 2 en Jira, incluyendo las User Stories, tasks de implementación, responsables, estados y estimaciones utilizadas para sostener la entrega TB1. Elaboración propia.
 
 **URL del board/backlog:** [Jira Backlog — Proyecto Nexa](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog)
 
@@ -116,13 +117,43 @@ Nota. Las horas estimadas se usan para control operativo del Sprint Backlog. Los
 
 ### 5.2.2.4. Development Evidence for Sprint Review
 
-La evidencia de desarrollo del Sprint 2 se organiza por repositorio para mantener trazabilidad directa con cada frente de trabajo. Los commits se verifican desde el historial público de GitHub de la organización [upc-pre-202610-1asi0730-12242-king](https://github.com/upc-pre-202610-1asi0730-12242-king).
+La evidencia de desarrollo del Sprint 2 corresponde al alcance TB1: consolidación de la Web Application, actualización del Landing Page, documentación del incremento y soporte de servicios simulados para revisión académica. De acuerdo con el alcance de TB1, la evidencia principal se concentra en `nexa-webapp`, `nexa-website` y `nexa-ecosystem-report`.
+
+El repositorio `nexa-webapp` registra la primera versión de la Web Application, incluyendo estructura Vue, routing, layouts, IAM simulado, flujos S1/S2, portal comprador parcial, Fake API, servicios cliente y preparación de release. El repositorio `nexa-website` registra la actualización del Landing Page para conectarse con la Web Application, reforzar contenido, SEO, páginas legales, rutas y versiones de release. El repositorio `nexa-ecosystem-report` conserva la evidencia documental del Sprint 2, incluyendo backlog, diseño UX/UI, evidencia de implementación, despliegue, colaboración y cierre TB1.
+
 
 *Commits del repositorio `nexa-webapp`*
 
-Web Application TB1 con flujos operativos S1/S2, portal comprador S3 y Fake API.
+Web Application TB1 con flujos operativos S1/S2, portal comprador parcial, Fake API, routing, i18n, componentes compartidos y preparación de release.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `508aeb2` | `build(vite): configure Vue 3 webapp toolchain` | | 2026-04-27 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `3a21842` | `feat(app): bootstrap Vue application entry point` | | 2026-04-27 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `21bf5b6` | `feat(routing): add ops and portal layout route shell` | | 2026-04-27 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `7ecc433` | `feat(iam): add authentication bounded context` | | 2026-04-27 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `bf841d8` | `feat(shared): add HTTP and utility foundation` | | 2026-04-28 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `abe36c3` | `feat(i18n): add bilingual locale structure` | | 2026-04-28 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `7ad15fc` | `feat(fake-api): add json-server service scaffold` | | 2026-04-28 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `44bf98d` | `chore(release): merge webapp v0.2.0 to main` | | 2026-04-29 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `949c5da` | `feat(dashboard): add operational analytics route` | | 2026-05-02 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `f4ce731` | `feat(analytics): add operational analytics API adapter` | | 2026-05-02 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `3fb66ed` | `feat(analytics): add dashboard application store` | | 2026-05-02 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `13b4e1d` | `feat(sales): add client account route surface` | | 2026-05-03 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `6b50a5b` | `feat(sales): add client account data layer` | | 2026-05-03 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `bc4198b` | `feat(sales): add purchase order routes and views` | | 2026-05-03 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `8ba2bde` | `feat(logistics): add dispatch board routes` | | 2026-05-04 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `f4fa86a` | `feat(logistics): map dispatch order API resources` | | 2026-05-04 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `8e9ce33` | `feat(logistics): add dispatch order store` | | 2026-05-04 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `ea5cb6b` | `feat(warehouse): add inventory control routes` | | 2026-05-05 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `90e3f29` | `feat(warehouse): add inventory domain model` | | 2026-05-05 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `e34d95d` | `feat(warehouse): map inventory lot resources` | | 2026-05-05 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `43adef7` | `feat(warehouse): add inventory control store` | | 2026-05-05 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `2dceefe` | `feat(catalog): add catalog management routes` | | 2026-05-06 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `ced5994` | `feat(catalog): map product domain resources` | | 2026-05-06 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `0553d20` | `feat(catalog): add catalog API adapter` | | 2026-05-06 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `7d611c6` | `feat(catalog): add product catalog store` | | 2026-05-06 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `c3372b8` | `docs(readme): document TB1 WebApp workflow` | | 2026-05-07 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `e7bc689` | `docs: add full README with tech stack, features, and team info` | | 25/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `18fddff` | `chore: initialize vite project structure and configure dependencies` | | 25/04/2026 |
@@ -130,112 +161,58 @@ Web Application TB1 con flujos operativos S1/S2, portal comprador S3 y Fake API.
 | `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `cd2314c` | `feat(router): configure vue-router with auth guard for ops and portal scopes` | | 25/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `da0cea4` | `feat(tokens): define full CSS variable system with Material elevation scale` | | 25/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `5ebf6e7` | `feat(styles): add global styles for auth, ops shell, and portal pages` | | 25/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `39c3b5c` | `feat(i18n): implement vue-i18n with es_419 and en_US complete locale files` | | 26/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `a309cb1` | `feat(data): seed mock cold-chain data store with products, lots, and orders` | | 26/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `fb21cae` | `feat(cart): add shopping cart Pinia store for B2B portal` | | 26/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `d1f004f` | `feat(shared): add order status helpers and days-until date utility` | | 26/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `98f85aa` | `feat(http): add axios http service layer with base URL configuration` | | 26/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `35b7c57` | `feat(iam): build auth layout with brand panel and responsive card container` | | 26/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `da3f105` | `feat(iam): build login view with scope selector, i18n form, and auth store` | | 27/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `609c36c` | `feat(iam): add password recovery and blocked account views` | | 27/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `7c71d9d` | `feat(ops-layout): build sidebar shell with i18n nav, lang switcher, and ARIA roles` | | 27/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `6096375` | `feat(dashboard): build ops dashboard with KPI cards, alert strip, and activity feed` | | 27/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `300e368` | `feat(catalog): build product catalog with search, filters, and responsive 5-col grid` | | 28/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `d2d3a6d` | `feat(inventory): build inventory with FEFO lot tracking and stock movement log` | | 28/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `6a8331d` | `feat(orders): build orders list with status filters and accessible table markup` | | 28/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `0938f04` | `feat(orders): add create-order wizard and order detail view` | | 28/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `dbdebd7` | `feat(dispatch): build dispatch board with in-route and delivery confirmation actions` | | 28/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `0f1c08b` | `feat(clients): replace toast stub with full client profile drawer` | Clicking a client row opens a right drawer with contact info, conditions and recent orders. | 29/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `dc80775` | `feat(inventory): add lot detail drawer with movement history` | Lot rows open detail with metadata, stock movements and FEFO context. | 29/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `d692ed6` | `feat(reports): add operational reports screen with KPIs, status breakdown, and FEFO alerts` | | 29/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `a076e6a` | `fix(dispatch): sync order status on route/delivery events; fix dead order detail button` | | 29/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `5ca8ff2` | `feat(orders): persist new order to store and navigate to its detail on confirm` | | 29/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `6053d18` | `feat(portal): close B2B order loop — cart checkout persists to store, orders filtered by client` | | 29/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `3a9d049` | `feat(clients): build client list with credit usage bars and contact actions` | | 29/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `0ff014d` | `feat(portal): build B2B portal home, catalog, and orders views` | | 29/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `b73e13d` | `feat(portal-layout): build portal topbar with cart drawer, ARIA labels, and terms footer` | | 29/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `7a7b6b5` | `feat(settings): build company info and user role management settings view` | | 29/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `7c06512` | `feat(profile): scaffold profile bounded context with model and service layer` | | 30/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `9f69572` | `feat(profile): add profile Pinia store with language persistence and auth sync` | | 30/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `95adeb4` | `feat(profile): build ProfileView with personal info, preferences, and password change` | | 30/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `93387ba` | `ci: add GitHub Actions workflow for Vite build and Pages deployment` | | 02/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `39d4627` | `feat(i18n): add reports section with operational KPI and table labels` | | 02/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `340f8d6` | `fix(reports): apply i18n keys to page header, section titles, and table labels` | | 02/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `4aa2812` | `chore(mock-api): add json-server fake api` | | 04/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `7b9bf07` | `refactor(api): add axios services by bounded context` | | 04/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `dbee8ed` | `refactor(stores): connect stores to application layer` | | 04/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `ca38d05` | `feat(auth): add internal demo roles for S1 and S2 segments` | Add role-aware users to Fake API and fix auth store to reject invalid credentials. | 05/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `ad68f8c` | `feat(login): add demo profile selector for quick role access` | | 05/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `d6696c8` | `feat(ops): adapt navigation and dashboard by role` | Filter sidebar and mobile nav items by roleKey; reports vary by role. | 05/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `b008b68` | `fix(dispatch): persist mock dispatch and order status updates` | Mark-in-route and POD closure PATCH the Fake API via application layer. | 05/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `91caab8` | `refactor(webapp): align context structure with course architecture` | | 05/05/2026 |
 
 *Commits del repositorio `nexa-website`*
 
-Landing Page pública con conexión a webapp y mejoras SEO/a11y.
+Actualización del Landing Page para TB1 con conexión hacia Web Application, contenido bilingüe, versiones de release, páginas legales, pricing, cookie notice y ajustes de navegación.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `1d9e5be` | `chore(gitflow): merge i18n-content into develop` | | 2026-04-28 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `bbce32b` | `feat(i18n): update bilingual content mappings` | | 2026-04-28 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5b03e59` | `chore(release): prepare website v1.1.0` | | 2026-04-29 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `6ca19f3` | `chore(release): merge website v1.1.0 to main` | | 2026-04-29 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `552fe24` | `refactor(interactions): refine static page behavior` | | 2026-04-30 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `c6b22bb` | `chore(release): prepare website v1.2.0` | | 2026-05-01 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `b78d11f` | `chore(release): merge website v1.2.0 to main` | | 2026-05-01 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `1ab8c54` | `feat(legal): add website legal pages` | | 2026-05-02 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `32de637` | `chore(release): prepare website v2.0.0` | | 2026-05-03 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `fa16b58` | `chore(release): merge website v2.0.0 to main` | | 2026-05-03 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5da8147` | `fix(pricing): add pricing route fallback` | | 2026-05-04 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `a7f4904` | `fix(release): merge website v2.0.1 hotfix to main` | | 2026-05-04 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `77af8b3` | `feat(pricing): add plans page and pricing scripts` | | 2026-05-05 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `d61d321` | `chore(release): merge website v2.1.0 to main` | | 2026-05-07 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `0120ead` | `feat(cookies): add cookie notice behavior` | | 2026-05-08 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `dc7a296` | `chore(release): prepare website v2.2.0` | | 2026-05-09 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `a421767` | `chore(release): merge website v2.2.0 to main` | | 2026-05-09 |
+
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `22a715c` | `feat: connect login button to nexa-webapp GitHub Pages` | | 28/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `c301fc2` | `style: align landing visual tokens with webapp design system` | | 28/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `f21754c` | `feat(seo): add og:url and og:site_name to landing homepage` | | 28/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `316d355` | `feat(seo): add og:url and og:site_name to company page` | | 28/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `73b7c62` | `feat(seo): add og:url and og:site_name to platform and faq pages` | | 28/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `e804da1` | `style(tokens): align text, border, surface and easing tokens with webapp design system` | | 28/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `9c57146` | `fix(website): align TB1 links and roadmap copy` | | 29/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `1883c50` | `fix(seo): add robots and theme-color meta to landing homepage` | | 02/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `aa9b1f1` | `fix(seo): add robots and theme-color meta to platform and faq pages` | | 02/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `972c842` | `fix(seo): add robots and theme-color meta to all solution subpages` | | 02/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `8f0119b` | `fix(seo): add robots and theme-color meta to company page` | | 02/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `13ea635` | `fix(landing): align ctas with webapp routes` | | 02/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `4951d66` | `fix(landing): add favicon and tighten tb1 copy` | | 02/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `a6b9e3b` | `fix(readme): restore website presentation style` | | 03/05/2026 |
-
-*Commits del repositorio `nexa-report` (Sprint 2)*
-
-Documentación académica del proyecto actualizada para TB1.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `34e30a0` | `docs(ch5): add sprint 2 implementation, deployment and collaboration evidence` | | 2026-05-02 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `72cf226` | `docs(ch4): reference web application screenshots in design evidence` | | 2026-05-02 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `870bc73` | `docs(backlog): mirror sprint 2 jira plan and tb2 future backlog` | | 2026-05-02 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `5aea404` | `docs(jira): add sprint 2 issue import plan annex` | | 2026-05-02 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `43ea1a3` | `docs(report): finalize sprint 2 evidence references` | | 2026-05-02 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `07f6191` | `docs(report): integrate final tb1 requirements sections` | | 2026-05-03 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `fbda62a` | `docs(chapter-5): add sprint 2 development evidence tables per repository` | | 2026-05-11 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `e44028e` | `docs(report): revise web app prototyping images and notes` | | 2026-05-12 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `4eb34fe` | `docs(report): update repository commit evidence` | | 2026-05-12 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `e661faa` | `chore(gitflow): merge chapter-5 updates into develop for v2` | | 2026-05-12 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `f6de96c` | `docs(ch4): rebuild webapp ux section structure and wireframe tables` | | 05/05/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `e8e7afa` | `docs(ch4): align webapp flows with user goals` | | 05/05/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `f3e6296` | `docs(ch4): update webapp wireflow documentation with three-persona flow` | | 05/05/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `22efcb2` | `docs(ch4): add current webapp mockup selections` | | 05/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `b7c7ac9` | `docs(ch5): document sprint two tb1 evidence` | | 05/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `1193a5f` | `docs(ch4): clarify buyer portal scope in ux flows` | | 06/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `7677b49` | `docs(ch5): clarify fake api and service documentation scope` | | 06/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `930d802` | `docs(ch4): add lucid userflow visual evidence` | | 06/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `9a44aaa` | `fix(report): update cover metadata for TB1` | | 07/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `076d85c` | `refactor(report): split implementation evidence by sprint` | | 07/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `00fc933` | `fix(sprint): align sprint planning tables with statement` | | 07/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `9815e4c` | `fix(scm): complete conventions and LACX format` | | 07/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `fe79939` | `docs(sprint): add formal sprint backlog evidence` | | 07/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `4574130` | `docs(backlog): add Jira evidence for product backlog` | | 07/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `1033376` | `fix(ux): replace mermaid user flows with visual evidence` | | 07/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `6ff1c44` | `docs(report): polish TB1 report format and evidence alignment` | | 08/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `095a80f` | `docs(report): restore statement formats and strengthen TB1 evidence` | | 08/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `0b8c920` | `chore(assets): reorganize report images and import updated artifacts` | | 08/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `67d8ddd` | `docs(report): update UX documentation with refreshed artifacts` | | 08/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `1cda3e6` | `docs(architecture): update class and database design artifacts` | | 08/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `ee625e9` | `docs(report): strengthen architecture evidence and fake api deployment` | | 09/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `bc103eb` | `chore(assets): add database images folder` | | 09/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `1044388` | `docs(ch4): update database diagrams` | | 09/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `ed64d57` | `chore(report): correction of notes in database diagrams` | | 10/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `acdd810` | `docs(report): update solution profile with user friction details` | | 10/05/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `2e73b6c` | `docs(ch2): update 2-2-interviews` | | 10/05/2026 |
-
-*Commits del repositorio `nexa-platform`*
-
-Repositorio base para el backend planificado.
-
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| `upc-pre-202610-1asi0730-12242-king/nexa-platform` | `main` | `53a8069` | `chore(platform): reset repository to tb1 planned scope` | | 03/05/2026 |
 
 Las siguientes capturas son evidencia visual complementaria del historial de commits en GitHub.
 
 ![TB1 GitHub report commit evidence](../../assets/images/chapter-5/sprint-evidence/commit-evidence/report-commits-tb1.png)
 
+Figura. Historial de commits registrados en `nexa-ecosystem-report` durante TB1. Elaboración propia.
 Figura. Historial de commits registrados en `nexa-report` durante TB1. Elaboración propia.
 
 ![TB1 GitHub webapp commit evidence](../../assets/images/chapter-5/sprint-evidence/commit-evidence/webapp-commits-tb1.png)
@@ -268,137 +245,39 @@ La siguiente evidencia de commits corresponde a una selección representativa de
 | 2026-05-10 | `7481b28` | Cmarin2802 | chore | Corrección de notas en diagramas de base de datos | report |
 | 2026-05-10 | `c06a098` | Gino Torrejon | docs | Actualización de transcripciones de entrevistas (sección 2.2) | ch2 |
 | 2026-05-09 | `7da9097` | DiegoS284 | docs | Refuerzo de evidencia de arquitectura y despliegue de API simulada | report |
-| 2026-05-09 | `be718c8` | DiegoS284 | docs | Actualización de artefactos de diseño de clases y base de datos | architecture |
-| 2026-05-08 | `152217a` | DiegoS284 | docs | Restauración de formatos de enunciado y refuerzo de evidencia TB1 | report |
-| 2026-05-07 | `6a3c515` | DiegoS284 | fix | Eliminación de afirmaciones GitFlow no respaldadas para TB1 | scm |
-| 2026-05-07 | `a8f6951` | DiegoS284 | docs | Incorporación de evidencia formal del Sprint Backlog | sprint |
-| 2026-05-07 | `b118a69` | DiegoS284 | docs | Adición de evidencia Jira para el Product Backlog | backlog |
-| 2026-05-06 | `fca1030` | DiegoS284 | docs | Alineación del Lenguaje Ubicuo con términos del dominio | ch2 |
-| 2026-05-05 | `ec8252e` | DiegoS284 | docs | Documentación de evidencia de Sprint 2 para TB1 | ch5 |
-
-*Tabla. Commits representativos — nexa-webapp (TB1, selección representativa)*
-
-| Fecha | Hash | Autor | Tipo | Descripción | Alcance |
-|---|---|---|---|---|---|
-| 2026-05-12 | `da87629` | Diego Y. Sandoval | release | Preparación para despliegue en Render y Firebase — versión TB1 | deploy |
-| 2026-05-12 | `276d646` | Diego Y. Sandoval | refactor | Asignación de recursos de API a entidades de dominio mediante ensambladores | webapp |
-| 2026-05-12 | `1e96ac5` | Diego Y. Sandoval | feat | Configuración de Firebase Hosting con API simulada estática JSON para TB1 | deploy |
-| 2026-05-11 | `98867ff` | Diego Y. Sandoval | refactor | Renombrado de contextos acotados con nombres específicos del dominio | webapp |
-| 2026-05-11 | `b6c382f` | Joaquín Verde | refactor | Incorporación de recursos de aplicación y ensambladores | webapp |
-| 2026-05-11 | `3cd8ec3` | César Marín | refactor | Adición de capa de modelo de dominio para los contextos acotados | webapp |
-| 2026-05-05 | `9c97f8e` | Diego Y. Sandoval | feat | Registro del origen del pedido asistido y visualización del creador | orders |
-| 2026-05-05 | `de06f20` | Diego Y. Sandoval | feat | Adaptación de navegación y panel según el rol del usuario | ops |
-| 2026-05-04 | `459f6d8` | DiegoS284 | chore | Incorporación del API simulada con json-server | mock-api |
-| 2026-05-04 | `fb3a8f1` | DiegoS284 | refactor | Adición de servicios Axios por contexto acotado | api |
-| 2026-05-02 | `93387ba` | DiegoS284 | ci | Configuración de flujo de integración continua para construcción Vite y despliegue | ci |
-| 2026-04-29 | `d692ed6` | DiegoS284 | feat | Pantalla de analítica operativa con indicadores, estados y alertas FEFO | reports |
-| 2026-04-28 | `d2d3a6d` | DiegoS284 | feat | Vista de inventario con seguimiento de lotes FEFO y registro de movimientos | inventory |
-| 2026-04-25 | `18fddff` | DiegoS284 | chore | Inicialización de la estructura del proyecto con Vite y configuración de dependencias | core |
-
-*Tabla. Commits representativos — nexa-website (TB1, selección representativa)*
-
-| Fecha | Hash | Autor | Tipo | Descripción | Alcance |
-|---|---|---|---|---|---|
-| 2026-05-11 | `c296b5f` | Diego Y. Sandoval | docs | Incorporación de enlace activo de la webapp y alineación de descripciones | readme |
-| 2026-05-03 | `76a3914` | DiegoS284 | chore | Limpieza de presentación del repositorio para la entrega TB1 | repo |
-| 2026-05-02 | `13ea635` | Diego Y. Sandoval | fix | Alineación de llamadas a la acción con rutas de la webapp | landing |
-| 2026-05-02 | `8f0119b` | Rojas Mancilla, Gerard Gianpier | fix | Adición de metaetiquetas robots y theme-color en página de empresa | seo |
-| 2026-05-02 | `aa9b1f1` | Torrejon De Los Santos, Gino Rodrigo | fix | Adición de metaetiquetas en páginas de plataforma y preguntas frecuentes | seo |
-| 2026-05-02 | `1883c50` | Marin Cueva, Cesar Fernando | fix | Adición de metaetiquetas en la página principal | seo |
-| 2026-04-28 | `22a715c` | Diego Y. Sandoval | feat | Conexión del botón de inicio de sesión con la webapp en GitHub Pages | landing |
-| 2026-04-28 | `e804da1` | Torrejon De Los Santos, Gino Rodrigo | style | Alineación de variables visuales del sitio con el sistema de diseño | tokens |
-
-*Tabla. Commits representativos — nexa-platform (TB1, selección representativa)*
-
-| Fecha | Hash | Autor | Tipo | Descripción | Alcance |
-|---|---|---|---|---|---|
-| 2026-05-11 | `c247e87` | Diego Y. Sandoval | docs | Adición de estrategia de ramas y alineación de tabla de equipo | readme |
-| 2026-05-03 | `eb9ea8d` | DiegoS284 | chore | Restablecimiento del repositorio al alcance planificado para TB1 | platform |
-| 2026-05-02 | `fa02e37` | Verde Bueno, Joaquin Francisco | feat | Registro de la entidad Lot en DbContext con índice único de código de lote | infrastructure |
-| 2026-05-02 | `14714af` | Torrejon De Los Santos, Gino Rodrigo | feat | Adición de ProductRepository con filtros de categoría y estado | infrastructure |
-| 2026-05-02 | `94cdb1b` | Cmarin2802 | feat | Estructura del InventoryController con endpoints de lotes y FEFO | api |
-| 2026-05-02 | `dcbef85` | Rojas Mancilla, Gerard Gianpier | feat | Entidad Lot con soporte FEFO y seguimiento de disponibilidad | domain |
-| 2026-04-29 | `c8b4853` | DiegoS284 | feat | ProductsController y OrdersController con operaciones CRUD y transiciones de estado | api |
-| 2026-04-26 | `c13b458` | Rojas Mancilla, Gerard Gianpier | feat | Estructura de entidades Product y Order con invariantes y lógica de stock | domain |
-
-#### Contribution Evidence by Repository
-
-*Tabla. Contribución por colaborador al cierre de TB1*
-
-| Repositorio | Colaborador | Cantidad de commits | Área principal |
-|---|---|---:|---|
-| `nexa-report` | DiegoS284 / Diego Y. Sandoval | 172 | Documentación, arquitectura, SCM, evidencia de sprint |
-| `nexa-report` | Gino Torrejon / Gino Torrejón | 95 | Entrevistas, portada, colaboración |
-| `nexa-report` | Cmarin2802 / Cesar Marin | 116 | Capítulos de diseño, correcciones, recursos visuales |
-| `nexa-report` | Joaquin Verde Bueno / JoaquinVB115 | 109 | UX, perfil de equipo, perfil de solución |
-| `nexa-report` | Gerard Rojas Mancilla | 58 | Arquitectura, historias de usuario, correcciones |
-| `nexa-webapp` | Diego Y. Sandoval / DiegoS284 | 94 | Integración DDD, despliegue, flujos operativos |
-| `nexa-webapp` | JoaquinVerde115 / Joaquín Verde | 15 | Recursos, ensambladores, internacionalización |
-| `nexa-webapp` | Cmarin2802 / César Marín | 15 | Modelo de dominio, internacionalización |
-| `nexa-webapp` | R0obxdnt-bit (Gino Torrejón) | 14 | Documentación DDD, internacionalización |
-| `nexa-webapp` | GerardRojasMancilla | 12 | Versión, correcciones, limpieza |
-| `nexa-website` | Diego Y. Sandoval / DiegoS284 | 38 | README, landing, despliegue, rutas |
-| `nexa-website` | Torrejon De Los Santos, Gino Rodrigo | 12 | SEO, variables de diseño |
-| `nexa-website` | Verde Bueno, Joaquin Francisco | 10 | SEO, variables de diseño |
-| `nexa-website` | Cmarin28 / Marin Cueva, Cesar Fernando | 10 | SEO, correcciones |
-| `nexa-website` | GerardRojasMancilla / Rojas Mancilla, Gerard Gianpier | 12 | SEO, correcciones |
-| `nexa-platform` | DiegoS284 / Diego Y. Sandoval | 7 | Estructura inicial, ajuste de alcance, README |
-| `nexa-platform` | Verde Bueno, Joaquin Francisco | 2 | Infraestructura, DbContext |
-| `nexa-platform` | Torrejon De Los Santos, Gino Rodrigo | 2 | Repositorio, interfaces |
-| `nexa-platform` | Cmarin2802 | 2 | Controladores, DTOs |
-| `nexa-platform` | Rojas Mancilla, Gerard Gianpier | 2 | Entidades de dominio |
-
-La evidencia de commits refleja el estado de los repositorios al cierre de documentación TB1. Capturas de despliegue o disponibilidad de plataforma se documentan por separado.
-
-#### Traceability between Work Fronts and Commits
-
-*Tabla. Correspondencia entre frentes de trabajo y trazabilidad usada en TB1*
-
-| Frente de trabajo | Evidencia de trazabilidad |
-|---|---|
-| Reestructuración de segmentos objetivo | Commits documentales en el historial del informe |
-| Actualización de needfinding | Commits documentales y referencias en Capítulo II |
-| Reescritura de User Stories | Commits documentales y tabla de User Stories |
-| Priorización del Product Backlog | Commits documentales y evidencia Jira en Capítulo III |
-| Implementación de Landing Page AV1 | Historial del repositorio del sitio público y evidencia Sprint 1 |
-| Implementación base de Web Application TB1 | Historial del repositorio webapp y evidencia Sprint 2 |
-| Configuración de API simulada / JSON Server | Documentación del alcance simulado TB1 |
-| Evidencia de Sprint 2 | Commits del informe y capturas Jira integradas |
-| Limpieza final de entrega | Commits convencionales y consolidación en `main` |
-| Corrección crítica de redacción o nombres | Commits convencionales sobre el informe |
-
-En la práctica, `nexa-report`, `nexa-website` y `nexa-webapp` funcionan como flujos sincronizados: el primero preserva justificación ingenieril, el segundo sostiene la capa pública y el tercero concentra la experiencia operativa TB1. Esta separación reduce ruido entre documentación y código y facilita relacionar commits, artefactos de diseño y despliegue público dentro de un mismo sprint.
-
-La futura capa backend sigue nombrada en backlog, arquitectura y diseño, pero no se presenta como implementada. Por ello, el capítulo distingue webapp TB1 con API simulada de servicios productivos futuros.
 
 ### 5.2.2.5. Execution Evidence for Sprint Review
 
+La evidencia de ejecución del Sprint 2 corresponde al alcance TB1: Web Application desplegada para revisión académica, Landing Page actualizada para conectar con la Web Application, soporte de datos simulados para revisar flujos frontend y documentación del incremento en el Project Report. La ejecución se presenta con límites explícitos para evitar declarar como productivos servicios, autenticación, base de datos o backend que todavía corresponden a fases posteriores.
+
 | Área ejecutada | Estado TB1 defendible | Evidencia de repositorio | Límite explícito |
 |---|---|---|---|
-| Landing → Webapp | CTAs y links alineados hacia GitHub Pages webapp | `nexa-website`: `22a715c`, `13ea635`, `4951d66` | No implica servicios productivos |
-| Login demo | Selector de perfiles y acceso rápido para revisión académica | `nexa-webapp`: `ca38d05`, `ad68f8c` | No es autenticación productiva |
-| Ops S1/S2 | Dashboard, navegación adaptada, clientes, pedidos, inventario, despacho y reportes | `nexa-webapp`: commits de dashboard/orders/inventory/dispatch/reports | Role-aware frontend, no IAM corporativo |
-| Portal comprador S3 | Recorrido comprador documentado como planificación de catálogo, pedido y seguimiento | FigJam y documentación de sección 4.4 | No declara pantallas webapp implementadas ni validación final de S3 en TB1 |
-| Fake API | JSON Server y servicios por bounded context | `nexa-webapp`: `4aa2812`, `7b9bf07`, `dbee8ed`, `6bffa73`; configuración Render documentada | No es API final |
-| UX/UI reportada | FigJam wireflows y Lucidchart userflows, mockups actuales y evidencia por user goal | `nexa-report`: commits Ch4 del 5 de mayo | No sustituye un export completo de FigJam |
+| Web Application foundation | Aplicación Vue configurada con routing, layouts, IAM simulado, i18n, utilidades compartidas y estructura inicial de dominios frontend. | `nexa-webapp`: `508aeb2`, `3a21842`, `21bf5b6`, `7ecc433`, `bf841d8`, `abe36c3` | No representa integración con backend productivo. |
+| Flujos operativos S1/S2 | Flujos de coordinación comercial, pedidos, inventario, logística, despacho, catálogo y analítica operativa. | `nexa-webapp`: `13b4e1d`, `bc4198b`, `8ba2bde`, `ea5cb6b`, `2dceefe`, `949c5da` | Son flujos frontend con soporte de datos simulados. |
+| Portal comprador parcial S3 | Superficie inicial del portal comprador y catálogo como alcance parcial de TB1. | `nexa-webapp`: `2dceefe`, `ced5994`, `0553d20`, `7d611c6` | No declara cobertura completa ni validación cerrada del segmento S3. |
+| Soporte de datos simulados | JSON Server, adapters y stores para consumo de datos durante revisión académica. | `nexa-webapp`: `7ad15fc`, `bf841d8`, `f4ce731`, `6b50a5b`, `f4fa86a`, `e34d95d`, `0553d20` | No reemplaza la RESTful API interna objetivo. |
+| Landing Page actualizada | Landing Page actualizada con contenido bilingüe, páginas legales, pricing, cookie notice y releases del sitio. | `nexa-website`: `1d9e5be`, `bbce32b`, `1ab8c54`, `77af8b3`, `0120ead`, `a421767` | No implica que los Web Services estén desplegados. |
+| Project Report TB1 | Documentación del Sprint 2, evidencia de implementación, despliegue, backlog, UX/UI y cierre documental. | `nexa-ecosystem-report`: `34e30a0`, `72cf226`, `870bc73`, `fbda62a`, `4eb34fe`, `777c3ba` | Evidencia documental, no evidencia de backend productivo. |
+
 
 ### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
+Para Sprint 2, la evidencia de servicios se documenta como soporte simulado para la Web Application. Esta evidencia permite revisar los flujos frontend con datos consistentes, pero no sustituye la primera versión de Web Services solicitada para AV2.
 Para Sprint 2, la evidencia de servicios se aborda como soporte simulado para la Web Application, sin declarar todavía una RESTful API productiva. Esta evidencia no reemplaza la documentación OpenAPI solicitada para el Web Service interno en hitos posteriores; solo registra el soporte usado por la Web Application en TB1.
 
 | Capa | Estado TB1 | Evidencia | Nota de alcance |
 |---|---|---|---|
-| Fake API | Soporte simulado para la Web Application | `mock-api/db.json`, JSON Server, configuración Render y commits de 04/05/2026 | Sirve para revisión académica y pruebas frontend |
-| Servicios cliente | Organización interna de consumo de datos simulados | commits `7b9bf07` y `dbee8ed` | Preparan transición hacia API interna |
-| Backend ASP.NET Core | Planificado | `nexa-platform` y arquitectura objetivo | No implementado productivamente en TB1 |
-| Base de datos relacional | Modelo objetivo | Capítulo 4.8 | No implementada productivamente en TB1 |
-| POD | Mock confirmation | flujo de despacho TB1 | No hay evidencia de entrega productiva en TB1 |
+| Fake API | Soporte simulado para la Web Application | `nexa-webapp`: `7ad15fc`, `bf841d8`, `c3372b8` | Sirve para revisión académica y pruebas frontend. |
+| Servicios cliente | Organización interna de consumo de datos simulados por dominio frontend | `nexa-webapp`: `f4ce731`, `6b50a5b`, `f4fa86a`, `e34d95d`, `0553d20` | Prepara la transición hacia API interna. |
+| Web Application | Consume datos simulados mediante adapters, stores y rutas por contexto frontend | `nexa-webapp`: commits de Sales, Logistics, Warehouse, Catalog y Dashboard | No representa integración progresiva con backend real. |
+| Backend ASP.NET Core | Planificado para fase posterior | `nexa-platform` y arquitectura objetivo | No implementado como Web Services de TB1. |
+| Base de datos relacional | Modelo objetivo documentado | Capítulo 4.8 | No implementada productivamente en TB1. |
 
-El Fake API se configuró con JSON Server sobre `db.json`. En desarrollo local se ejecutó con `json-server --watch db.json --port 3000`; para el despliegue, Render se configuró con `npm install` como Build Command y `json-server --watch db.json --port 10000` como Start Command. La URL pública documentada para consumo de la webapp es [https://nexa-api.onrender.com](https://nexa-api.onrender.com), lo que evita depender de `localhost` desde el navegador del usuario final.
+| Fake API | Soporte simulado para la Web Application | `mock-api/db.json`, JSON Server, configuración Render y commits de 04/05/2026 | Sirve para revisión académica y pruebas frontend |
 
 *Tabla. Recursos principales del Fake API TB1*
 
-| Recurso | Endpoint | Uso en Nexa |
+| Recurso | Endpoint simulado | Uso en Nexa |
 |---|---|---|
 | users | `/users` | Usuarios y roles simulados |
 | products | `/products` | Catálogo e inventario visual |
@@ -411,28 +290,40 @@ El Fake API se configuró con JSON Server sobre `db.json`. En desarrollo local s
 | alerts | `/alerts` | Alertas operativas |
 | activityLog | `/activityLog` | Actividad reciente |
 
-> *Nota:* Elaboración propia a partir de la configuración del Fake API. Estos endpoints simulan recursos RESTful para TB1 y no reemplazan la API interna objetivo.
 
 ### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
+La evidencia de despliegue de Sprint 2 se concentra en la Web Application, el Landing Page actualizado y el soporte de Fake API. El backend se mantiene como artefacto planificado y no se declara desplegado en TB1.
+
 | Artefacto | Estado TB1 | URL / evidencia | Observación |
 |---|---|---|---|
+| Landing Page `nexa-website` | Publicada como capa pública actualizada | [GitHub Pages – nexa-website](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) | Punto de entrada comercial y conexión hacia la Web Application. |
+| Web Application `nexa-webapp` | Publicada para revisión académica con navegación frontend; en AV2 se registra despliegue en Render. | [Render – nexa-webapp](https://nexa-webapp.onrender.com) | Frontend con datos simulados parciales, flujos operativos y preparación progresiva hacia backend. |
+| Fake API | Soporte simulado para revisión frontend | JSON Server / configuración documentada en `nexa-webapp` | No corresponde a Web Services internos productivos. |
+| Project Report `nexa-ecosystem-report` | Fuente Docs-as-Code del informe | Repositorio GitHub y fuente Markdown | Evidencia documental y trazabilidad TB1. |
+| Backend / `nexa-platform` | Planificado para fase posterior | [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) | No se declara desplegado en TB1. |
+
 | Landing page `nexa-website` | Publicada como capa pública | [GitHub Pages – nexa-website](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) | Punto de entrada comercial |
-| Web application `nexa-webapp` | Publicada para revisión TB1 con hash routing | [GitHub Pages – nexa-webapp](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-webapp/#/auth/login) | Frontend con datos simulados |
-| Fake API | Configurado como simulación de servicios | [Render – nexa-api](https://nexa-api.onrender.com) | JSON Server documentado para consumo público desde la webapp desplegada |
-| Reporte `nexa-report` | Fuente Docs-as-Code | repositorio GitHub y fuente Markdown | Evidencia documental |
-| Backend / plataforma | Planificado | [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) | No se declara desplegado |
 
 ### 5.2.2.8. Team Collaboration Insights during Sprint
 
-La colaboración de Sprint 2 se sostiene en commits distribuidos, revisión documental y separación clara de responsabilidades. No se afirma que todos aportaron igual; se documenta el aporte según evidencia y alcance.
+La colaboración de Sprint 2 se sostiene en la separación de responsabilidades entre Web Application, Landing Page, Project Report y soporte de datos simulados. La evidencia se documenta mediante commits distribuidos, capturas de GitHub y trazabilidad de Jira, sin duplicar tablas de commits dentro de esta sección.
 
 | Dimensión colaborativa | Evidencia TB1 | Resultado |
 |---|---|---|
-| Liderazgo | Diego coordinó integración de reporte, webapp scope, QA y cierre Docs-as-Code | Dirección clara para la entrega TB1 |
-| Apoyo documental | César, Joaquín y Gino sostuvieron limpieza, estructura, UX/UI y revisión de secciones | Reporte más consistente con Capítulos 1–4 |
-| Arquitectura | Gerard aportó principalmente DDD/C4 y piezas técnicas puntuales | Arquitectura presente sin sobredimensionar contribución |
-| Coordinación por repositorio | Commits en report, website, webapp y platform | Evidencia verificable sin inventar Jira |
-| Manejo de ajustes | Correcciones de nombres, segmentos, style guidelines, assets, mockups y alcance Fake API | Reducción de contradicciones antes de entrega |
+| Coordinación del incremento | Planificación de Sprint 2, Sprint Backlog y cierre documental en `nexa-ecosystem-report` | El equipo mantuvo una línea clara entre alcance TB1, evidencia de implementación y documentación del reporte. |
+| Implementación frontend | Commits en `nexa-webapp` asociados a routing, IAM simulado, Sales, Logistics, Warehouse, Catalog, Dashboard y release | La Web Application quedó preparada para revisión académica con flujos S1/S2 y alcance parcial S3. |
+| Landing Page y entrada pública | Commits en `nexa-website` asociados a i18n, legal pages, pricing, cookie notice y releases del sitio | El sitio público se actualizó para sostener la continuidad hacia la Web Application. |
+| Documentación académica | Commits en `nexa-ecosystem-report` asociados a Sprint 2, UX/UI, backlog, despliegue y evidencia | El informe conserva trazabilidad entre diseño, backlog, implementación, despliegue y colaboración. |
+| Gestión de alcance | Separación explícita entre Fake API, Web Application frontend y backend planificado | Se evita declarar servicios productivos, autenticación productiva o base de datos real en TB1. |
 
-La lectura final de Sprint 2 es que TB1 consolida una web application frontend y una documentación técnica defendible, manteniendo límites explícitos sobre servicios productivos, autenticación productiva, base de datos real, evidencia de entrega productiva y seguimiento en vivo.
+*Tabla. Correspondencia entre frentes de trabajo y trazabilidad usada en TB1*
+
+| Frente de trabajo | Evidencia de trazabilidad |
+|---|---|
+| Web Application TB1 | Historial de `nexa-webapp` y evidencia de Sprint 2 |
+| Landing Page actualizada | Historial de `nexa-website` y evidencia de despliegue público |
+| Fake API / datos simulados | Recursos simulados y commits de soporte frontend en `nexa-webapp` |
+| UX/UI y documentación | Actualizaciones del Capítulo 4 y Capítulo 5 en `nexa-ecosystem-report` |
+| Sprint Backlog y Jira | Tabla redactada en el reporte y captura del tablero Sprint 2 |
+| Liderazgo | Diego coordinó integración de reporte, webapp scope, QA y cierre Docs-as-Code | Dirección clara para la entrega TB1 |
