@@ -5,7 +5,7 @@ El proyecto Nexa evolucionó de manera incremental desde AV1 hasta AV2, mantenie
 
 En TB1, el equipo amplió el alcance hacia la Web Application. El avance se concentró en flujos operativos para coordinación comercial, inventario, pedidos, logística e invoicing, usando artefactos UX/UI, mockups, rutas frontend y soporte controlado de datos simulados. Esta decisión permitió revisar la experiencia de usuario sin sobredeclarar una integración total con servicios backend.
 
-S3 se mantiene como segmento objetivo válido a partir de evidencia exploratoria y análisis de requisitos. En TB1, su cobertura visual se conserva como alcance parcial porque Sprint 2 prioriza el circuito comercial-logístico interno entre S1 y S2. La experiencia del comprador B2B / cliente comercial permanece representada a nivel de requisitos y flujos, con ampliación prevista para el siguiente hito.
+En AV2, Nexa incorporó un primer corte frontend/backend más maduro. La evidencia disponible registra `nexa-website v3.0.0`, `nexa-platform v1.0.0` y `nexa-webapp v2.0.0` como releases de cierre técnico disponibles para revisión. En el caso del reporte, `nexa-ecosystem-report v2.0.0` se conserva como último release documental relevante, con commits AV2 posteriores que actualizan capítulos, evidencias y consistencia de entrega.
 
 El despliegue académico/controlado también avanzó durante AV2. La Landing Page permanece publicada en GitHub Pages, la Web Application se registra en Render mediante `https://nexa-webapp.onrender.com` y la Platform API se registra en Render mediante `https://nexa-platform-api.onrender.com`. Además, el backend evolucionó su configuración de persistencia hacia PostgreSQL para soportar el despliegue controlado en Render. El reporte ya incorpora evidencias de Render WebApp, Platform API, PostgreSQL, Swagger/OpenAPI, Jira Sprint 3, releases de `nexa-website`, `nexa-platform` y `nexa-webapp`, navegación/prototyping Sprint 3, wireflow S3 y user flow S3, sin presentar esta condición como operación productiva.
 
@@ -22,3 +22,7 @@ La principal contribución de AV1 fue establecer coherencia entre discovery, req
 ### Sprint 2 / TB1
 
 Sprint 2 consolidó la Web Application como incremento principal de TB1. El trabajo se centró en flujos S1/S2, pantallas representativas, rutas frontend, mockups, evidencia visual y soporte simulado para revisar recorridos operativos. El uso de datos simulados permitió sostener una revisión funcional sin afirmar integración total con servicios internos.
+
+La principal contribución de TB1 fue transformar la propuesta inicial en una experiencia de uso revisable. El equipo logró conectar investigación, UX, backlog y arquitectura, manteniendo límites claros sobre aquello que seguía pendiente de implementación backend.
+
+### Sprint 3 / AV2
