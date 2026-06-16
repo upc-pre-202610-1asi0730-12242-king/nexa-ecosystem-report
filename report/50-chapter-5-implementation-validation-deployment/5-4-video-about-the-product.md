@@ -21,3 +21,25 @@ El siguiente guion organiza el contenido por bloques estimados. Los tiempos son 
 | Web Application / Buyer Portal | Presentar la Web Application y el portal B2B como superficies principales para coordinación interna y autoservicio del comprador. | Pantallas de login, home, catálogo, solicitudes, órdenes o dashboards disponibles. | Pendiente de evidencia final |
 | Flujo S1 Commercial Coordination | Mostrar cómo coordinación comercial revisa solicitudes, filtra estados, valida datos, solicita ajustes, confirma validación y convierte solicitudes en órdenes. | Bandeja de solicitudes, detalle de solicitud, validación comercial y estado de orden. | Pendiente de evidencia final |
 | Flujo S2 Operations / Account Owner | Mostrar inventario, lotes, criterio FEFO, reserva, preparación, despacho, incidencias y evidencia operativa según el alcance implementado. | Pantallas de inventario, reserva, lotes, despacho, tracking o evidencia operativa. | Pendiente de evidencia final |
+| Flujo S3 B2B Buyer Portal | Mostrar llegada desde CTA, catálogo, ficha de producto, solicitud, resumen, envío, consulta de estado, tracking, documentos o pago simulado según alcance. | Portal B2B, catálogo, request builder, mis solicitudes, mis órdenes, documentos o estado de pago. | Pendiente de evidencia final |
+| Testimonio positivo de usuario validado | Incluir un testimonio breve de usuario validado, indicando segmento y referencia a la entrevista de validación cuando exista evidencia real. | Fragmento del video o lámina de apoyo con referencia controlada a la validación. | Pendiente: completar con usuario, segmento y referencia a entrevista de validación |
+| Web Services AV2 | Explicar la primera versión de Web Services y su rol como base de backend para entidades, endpoints y persistencia del alcance AV2. | Captura real de API, Swagger/OpenAPI o estructura backend si existe evidencia verificable. | Pendiente de evidencia final |
+| Despliegue académico AV2 | Indicar el despliegue académico AV2 de la Web Application y Platform API si se muestra en el video. Si se menciona backend, referir PostgreSQL como tecnología de persistencia del alcance AV2. | Navegación en Render o URLs desplegadas, solo si se cuenta con evidencia real durante la grabación. | Pendiente de evidencia final |
+| Cierre y próximos pasos | Resumir avances AV2, límites pendientes y pasos posteriores sin presentar el alcance como cierre productivo definitivo. | Pantalla de cierre con repositorios, enlaces o próximos pasos autorizados por el equipo. | Pendiente de grabación |
+
+### 5.4.3. Registro del video
+
+| Elemento | Detalle |
+|---|---|
+| Título del video | [Completar] |
+| Plataforma de publicación | [Completar: YouTube / Microsoft Stream / OneDrive / otra] |
+| URL Microsoft Stream | [Completar] |
+| URL YouTube | [Completar si aplica para incrustación en Landing Page] |
+| Duración | [Completar] |
+| Fecha de publicación | [Completar] |
+| Testimonio positivo incluido | [Completar con usuario, segmento y referencia a entrevista de validación] |
+| Responsable de edición | [Completar] |
+| Responsable de narración | [Completar] |
+| Evidencia visual | [Completar con captura del video publicado] |
+
+### 5.4.4. Evidencia del video
