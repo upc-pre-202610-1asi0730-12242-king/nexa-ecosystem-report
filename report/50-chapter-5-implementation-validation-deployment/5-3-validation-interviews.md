@@ -97,3 +97,53 @@ Esta tabla funciona como marco de observación para el entrevistador. Durante la
 10. ¿Necesitarías una guía, glosario o explicación adicional para usar esta parte del sistema con confianza?
 
 **Evidencia esperada.** Registro de sesión, notas de observación, respuestas del participante, captura autorizada del recorrido revisado, screenshot del video si aplica, URL de Microsoft Stream cuando exista y anexo de respaldo cuando esté disponible.
+
+#### Diseño de entrevista S3: B2B Buyer Portal
+
+**Objetivo de la sesión.** Evaluar si el comprador B2B entiende el portal, puede navegar el catálogo, preparar una solicitud o pedido, revisar órdenes y comprender el seguimiento comercial u operativo disponible.
+
+**Flujo mostrado al participante.** Llegada desde Landing Page o CTA, acceso al portal o inicio de sesión, revisión de catálogo, búsqueda o filtrado de productos, revisión de ficha de producto, agregado de productos a solicitud, ajuste de cantidades, revisión de resumen, envío de solicitud, consulta de estado de solicitudes y órdenes, y revisión de tracking, documentos o estado de pago según el alcance mostrado.
+
+**Tareas guiadas.**
+
+1. Llegar al portal desde la Landing Page o un CTA.
+2. Acceder al portal o iniciar sesión.
+3. Revisar el catálogo.
+4. Buscar o filtrar productos.
+5. Revisar la ficha de producto.
+6. Agregar productos a una solicitud.
+7. Ajustar cantidades.
+8. Revisar el resumen antes de enviar.
+9. Enviar la solicitud.
+10. Consultar estado de solicitudes y órdenes.
+11. Revisar tracking, documentos o estado de pago según el alcance mostrado.
+
+**Guion conversacional para la sesión.**
+
+> Te voy a mostrar el portal del comprador B2B de Nexa. Mientras navegas, por favor dime qué entiendes, qué información te ayuda a decidir, qué parte te genera duda y qué necesitarías para usarlo con confianza en una compra real.
+>
+> Imagina que quieres consultar productos, armar una solicitud, revisar una orden y hacer seguimiento de una compra. La idea es observar si el portal resulta claro tanto para compradores frecuentes como para usuarios nuevos.
+
+**Preguntas para conversar con el entrevistado.**
+
+1. Al entrar al portal, ¿queda claro qué puedes hacer como comprador?
+2. ¿El catálogo te ayuda a encontrar productos y entender qué estás solicitando?
+3. ¿La ficha de producto muestra la información que necesitarías antes de agregarlo a una solicitud?
+4. ¿El armado de pedido o solicitud se siente claro y fácil de seguir?
+5. Antes de enviar la solicitud, ¿el resumen te ayudaría a revisar cantidades, productos y posibles errores?
+6. ¿Se entiende la diferencia entre una solicitud enviada y una orden confirmada?
+7. ¿La revisión de órdenes, documentos comerciales o estados te resulta suficiente para hacer seguimiento?
+8. ¿El tracking o estado de compra te permite saber qué está pasando y qué esperar después?
+9. ¿El portal sería rápido de usar para un comprador frecuente y comprensible para alguien nuevo?
+10. ¿Qué ayuda, explicación o información adicional necesitarías para usar el portal con confianza?
+
+**Evidencia esperada.** Registro de sesión, notas de observación, respuestas del participante, captura autorizada del recorrido revisado, screenshot del video si aplica, URL de Microsoft Stream cuando exista y anexo de respaldo cuando esté disponible.
+
+### 5.3.2. Registro de Entrevistas
+
+La siguiente tabla queda preparada para registrar entrevistas reales. La información se completará únicamente cuando existan participantes, evidencia audiovisual y autorización de uso dentro del reporte.
+
+| Código | Nombres y apellidos | Edad | Distrito | Segmento | Screenshot del video | URL Microsoft Stream | Timing de inicio | Duración | Resumen descriptivo | Estado |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| VI-S1-01 | Por registrar | Por registrar | Por registrar | S1 | Por registrar | Por registrar | Por registrar | Por registrar | Por registrar | Pendiente |
+| VI-S2-01 | Por registrar | Por registrar | Por registrar | S2 | Por registrar | Por registrar | Por registrar | Por registrar | Por registrar | Pendiente |
