@@ -3,12 +3,16 @@
 
 TB1 consolida el avance actual del proyecto en Sprint 2. La entrega se centra en la Web Application como incremento principal, con evidencia frontend, flujos por rol, pantallas representativas, rutas documentadas y soporte simulado para revisar el comportamiento de la experiencia sin afirmar todavía servicios productivos. Bajo este alcance, la landing page permanece como antecedente y punto de entrada público, mientras que la webapp concentra la evidencia más relevante de la iteración.
 
-El foco funcional de TB1 está en el circuito interno entre S1 y S2: coordinación comercial / ventas internas y jefatura logística / coordinación operativa. Los flujos priorizados muestran cómo el pedido puede capturarse, revisarse, relacionarse con disponibilidad, pasar a operación y sostener seguimiento interno con menor fragmentación. Esta decisión mantiene coherencia con los dolores más críticos observados en la investigación: doble digitación, validaciones dispersas, baja visibilidad de stock y coordinación manual entre ventas y logística.
+En TB1, el equipo amplió el alcance hacia la Web Application. El avance se concentró en flujos operativos para coordinación comercial, inventario, pedidos, logística e invoicing, usando artefactos UX/UI, mockups, rutas frontend y soporte controlado de datos simulados. Esta decisión permitió revisar la experiencia de usuario sin sobredeclarar una integración total con servicios backend.
 
 S3 se mantiene como segmento objetivo válido a partir de evidencia exploratoria y análisis de requisitos. En TB1, su cobertura visual se conserva como alcance parcial porque Sprint 2 prioriza el circuito comercial-logístico interno entre S1 y S2. La experiencia del comprador B2B / cliente comercial permanece representada a nivel de requisitos y flujos, con ampliación prevista para el siguiente hito.
 
 El despliegue académico/controlado también avanzó durante AV2. La Landing Page permanece publicada en GitHub Pages, la Web Application se registra en Render mediante `https://nexa-webapp.onrender.com` y la Platform API se registra en Render mediante `https://nexa-platform-api.onrender.com`. Además, el backend evolucionó su configuración de persistencia hacia PostgreSQL para soportar el despliegue controlado en Render. El reporte ya incorpora evidencias de Render WebApp, Platform API, PostgreSQL, Swagger/OpenAPI, Jira Sprint 3, releases de `nexa-website`, `nexa-platform` y `nexa-webapp`, navegación/prototyping Sprint 3, wireflow S3 y user flow S3, sin presentar esta condición como operación productiva.
 
 Como límite del corte AV2, todavía quedan evidencias reales por completar: Validation Interviews, evaluaciones heurísticas, Video About-the-Product, Video About-the-Team, coordinación Sprint 3 / AV2 y revisión de evidencias AV2. Por ello, el informe debe entenderse como una entrega académica avanzada y trazable, con cierre técnico del ecosistema documentado y pendientes explícitos de validación, no como cierre absoluto de producto.
+
+## Conclusiones por sprint
+
+### Sprint 1 / AV1
 
 La continuidad hacia TB2 debe concentrarse en validar la experiencia con usuarios, preparar el video del producto, madurar la RESTful API interna y su documentación formal, fortalecer la integración de servicios, y ampliar la cobertura UI de S3. La conclusión central de TB1 es que Nexa ya cuenta con una dirección de webapp más clara y con evidencia de Sprint 2 mejor delimitada, sin confundir el soporte simulado de la entrega con una implementación productiva de backend, base de datos o servicios finales.
