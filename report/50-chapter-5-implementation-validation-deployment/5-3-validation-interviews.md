@@ -47,3 +47,53 @@ Esta tabla funciona como marco de observación para el entrevistador. Durante la
 **Preguntas para conversar con el entrevistado.**
 
 1. Al ver la primera pantalla, ¿queda claro qué ofrece Nexa y para quién está pensado?
+2. ¿La propuesta de valor te parece expresada con palabras cercanas al contexto comercial B2B?
+3. ¿Encuentras rápido información sobre beneficios, segmentos atendidos o tipo de solución?
+4. Si quisieras pedir una demo o conversar con el equipo, ¿sabrías dónde hacerlo?
+5. ¿Qué información comercial te faltaría antes de dejar tus datos o solicitar contacto?
+6. ¿El recorrido entre Landing Page, información de la solución y contacto se siente claro?
+7. ¿Hay términos, mensajes o secciones que podrían generar confusión?
+8. ¿La página transmite suficiente confianza para iniciar una conversación comercial?
+9. ¿La información visible ayuda a reducir llamadas, correos o explicaciones adicionales?
+10. ¿Necesitarías una explicación adicional para entender cómo una solicitud comercial pasa luego a validación u orden?
+
+**Evidencia esperada.** Registro de sesión, notas de observación, respuestas del participante, captura autorizada del recorrido revisado, screenshot del video si aplica, URL de Microsoft Stream cuando exista y anexo de respaldo cuando esté disponible.
+
+#### Diseño de entrevista S2: Operations / Account Owner
+
+**Objetivo de la sesión.** Evaluar si el usuario operativo comprende cómo Nexa apoya la coordinación de disponibilidad, reserva, despacho y trazabilidad de una orden.
+
+**Flujo mostrado al participante.** Revisión de inventario operativo, consulta de lotes, stock bajo o vencimientos, reserva de inventario para solicitudes validadas, aplicación del criterio FEFO, preparación de orden con lotes trazables, creación o revisión de despacho, actualización de estado de despacho, registro de evidencia o incidencia y revisión de indicadores o documentos operativos si corresponde.
+
+**Tareas guiadas.**
+
+1. Revisar el inventario operativo.
+2. Consultar lotes, stock bajo o vencimientos.
+3. Reservar inventario para una solicitud validada.
+4. Aplicar criterio FEFO al seleccionar lotes.
+5. Preparar una orden con lotes trazables.
+6. Crear o revisar un despacho.
+7. Actualizar el estado de despacho.
+8. Registrar evidencia o incidencia.
+9. Revisar indicadores o documentos operativos si corresponde al flujo mostrado.
+
+**Guion conversacional para la sesión.**
+
+> Te voy a mostrar el flujo operativo de inventario, reserva y despacho de Nexa. Mientras lo revisas, por favor dime en voz alta qué entiendes, qué te parece claro, qué te genera duda y qué cambiarías para trabajar con menos errores.
+>
+> Imagina que estás revisando inventario disponible, lotes con fecha de vencimiento, stock bajo, reservas y preparación de despacho para una orden B2B. No buscamos que memorices el sistema, sino saber si el flujo se parece a tu forma real de trabajar y si te ayudaría a tomar decisiones operativas.
+
+**Preguntas para conversar con el entrevistado.**
+
+1. Cuando ves esta pantalla, ¿queda claro en qué estado está el inventario, la reserva o el despacho?
+2. ¿Los términos como lote, vencimiento, stock bajo, reserva, FEFO o despacho te resultan naturales para tu trabajo?
+3. Si seleccionas un lote equivocado o quieres revisar una reserva antes de confirmarla, ¿sientes que podrías corregirlo fácilmente?
+4. ¿Los estados, botones y nombres se mantienen consistentes durante el flujo?
+5. ¿La pantalla te ayudaría a evitar errores, como reservar un lote vencido, con stock insuficiente o no recomendado por FEFO?
+6. ¿La información que necesitas aparece en pantalla o tendrías que recordarla o buscarla en otro lugar?
+7. ¿El flujo te parece suficientemente rápido para alguien que realiza estas tareas todos los días?
+8. ¿La pantalla se siente ordenada o hay demasiada información al mismo tiempo?
+9. Si aparece un problema, como stock bajo, vencimiento cercano o una incidencia de despacho, ¿queda claro qué deberías hacer?
+10. ¿Necesitarías una guía, glosario o explicación adicional para usar esta parte del sistema con confianza?
+
+**Evidencia esperada.** Registro de sesión, notas de observación, respuestas del participante, captura autorizada del recorrido revisado, screenshot del video si aplica, URL de Microsoft Stream cuando exista y anexo de respaldo cuando esté disponible.
