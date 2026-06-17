@@ -376,3 +376,19 @@ El rastro de releases de WebApp se interpreta de forma incremental: `v1.7.1` que
 > *Nota:* Figura. Release de cierre AV2 disponible para revisión de `nexa-platform v1.0.0`.
 
 ![Branches de nexa-platform](../../assets/images/chapter-5/sprint-evidence/gitflow/nexa-platform-branches.png)
+
+> *Nota:* Figura. Branches de `nexa-platform` durante el corte AV2.
+
+![Commits recientes AV2 de nexa-platform](../../assets/images/chapter-5/sprint-evidence/collaboration/nexa-platform-commits-av2-recent.png)
+
+> *Nota:* Figura. Commits recientes de `nexa-platform` para el corte AV2.
+
+![Commits por bounded context de nexa-platform](../../assets/images/chapter-5/sprint-evidence/collaboration/nexa-platform-commits-av2-contexts.png)
+
+> *Nota:* Figura. Commits por bounded context de `nexa-platform`.
+
+### 5.2.3.8. Team Collaboration Insights during Sprint
+
+La colaboración del Sprint 3 se estructuró por bounded context, preparación de release y responsabilidades transversales de frontend/backend. Esta distribución permitió separar el avance de Catalog Management, Sales y Warehouse, mientras se mantenía una base compartida para configuración de API, documentación, Shared Kernel, repositorios, Unit of Work, guía de ejecución y preparación de la primera Web Services API.
+
+El flujo de trabajo permitió organizar responsabilidades backend alrededor de ramas por bounded context y capa, incluyendo `main`, `develop`, commits de persistencia/PostgreSQL, documentación de repositorio, seguridad, comunidad y el tag `v1.0.0` como release disponible para revisión AV2.
