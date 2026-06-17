@@ -348,3 +348,15 @@ La siguiente tabla ordena las capturas disponibles y pendientes para respaldar e
 ![Commits recientes nexa-webapp AV2 - parte 1](../../assets/images/chapter-5/sprint-evidence/collaboration/nexa-webapp-commits-av2-recent-1.png)
 
 > *Nota:* Figura. Commits recientes de `nexa-webapp` para el release `v2.0.0`, parte 1.
+
+![Commits recientes nexa-webapp AV2 - parte 2](../../assets/images/chapter-5/sprint-evidence/collaboration/nexa-webapp-commits-av2-recent-2.png)
+
+> *Nota:* Figura. Commits recientes de `nexa-webapp` para el release `v2.0.0`, parte 2.
+
+El rastro de releases de WebApp se interpreta de forma incremental: `v1.7.1` queda como patch AV2 previo, `v1.8.0` registra cleanup y layout polish, y `v2.0.0` queda como release de cierre actual de WebApp para el corte AV2.
+
+![GitHub Release nexa-website v3.0.0](../../assets/images/chapter-5/sprint-evidence/releases/nexa-website-v3-0-0-release.png)
+
+> *Nota:* Figura. Release de cierre AV2 disponible para revisión de `nexa-website v3.0.0`.
+
+![Branches de nexa-website](../../assets/images/chapter-5/sprint-evidence/gitflow/nexa-website-branches.png)
