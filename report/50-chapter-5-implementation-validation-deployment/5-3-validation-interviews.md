@@ -147,3 +147,8 @@ La siguiente tabla queda preparada para registrar entrevistas reales. La informa
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | VI-S1-01 | Por registrar | Por registrar | Por registrar | S1 | Por registrar | Por registrar | Por registrar | Por registrar | Por registrar | Pendiente |
 | VI-S2-01 | Por registrar | Por registrar | Por registrar | S2 | Por registrar | Por registrar | Por registrar | Por registrar | Por registrar | Pendiente |
+| VI-S3-01 | Por registrar | Por registrar | Por registrar | S3 | Por registrar | Por registrar | Por registrar | Por registrar | Por registrar | Pendiente |
+
+### 5.3.3. Evaluaciones según heurísticas
+
+La matriz de evaluación se utilizará después de ejecutar las entrevistas y revisar la evidencia asociada. Los hallazgos, severidades y recomendaciones se completarán únicamente con base en observaciones verificables, respuestas del participante y observación del recorrido realizado. La evaluación relacionará cada hallazgo con heurísticas de usabilidad, arquitectura de información e inclusive design.
