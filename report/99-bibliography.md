@@ -11,6 +11,7 @@ Buenaño, E., Paredes, M., Mora, C., & Lucio, K. (2024). Riesgos en la cadena de
 
 Comisión Económica para América Latina y el Caribe. (2025). *Diagnóstico regional de infraestructura, trazabilidad y brechas operativas en cadenas de frío alimentarias de América Latina*.
 
+Instituto Nacional de Estadística e Informática. (2023). *Perú: características de empleo y composición ocupacional en comercio, transporte y almacenamiento*.
 
 Lucky-Xplora. (2022). *Estudio de madurez digital del canal tradicional: Bodegas 2022*.
 
@@ -20,9 +21,8 @@ Rivas Tucto, J., & Castillo Talexio, N. (2020). *Plataforma tecnológica para el
 
 Taipe Quispe, N. (2025). *Pagos digitales y la competitividad de bodegas tradicionales en la ciudad de Huancavelica del 2023* [Informe de investigación, Universidad Nacional de Huancavelica]. Repositorio Institucional UNH. https://hdl.handle.net/20.500.14597/9616
 
-Torres, J., & Tardillo, M. (2020). *Propuesta de proceso de distribución física mediante la cadena en frío para la conservación y la exportación de frambuesas orgánicas* [Tesis de pregrado, Universidad Peruana de Ciencias Aplicadas]. Repositorio Académico UPC. https://doi.org/10.19083/tesis/653617
-Taipe, N. (2025). *Pagos digitales y la competitividad de bodegas tradicionales en la ciudad de Huancavelica del 2023*[Informe de investigación, Universidad Nacional de Huancavelica]. https://hdl.handle.net/20.500.14597/9616
 
 Tutiven, B. J. G., Martínez, A. Á., Arcentales, A. A., & Paredes, J. P. (2026). Evaluación de la cadena de frío en la comercialización de queso criollo en el cantón Lomas de Sargentillo. *Ecuacientífica, 4*(8), 96–110. https://doi.org/10.56519/abv9ea41
 
 Vértiz, Ú. (2011). *La cadena de frío en la industria farmacéutica: Del fabricante al paciente*. https://hdl.handle.net/20.500.12724/2575
+Tutiven, B. J. G., Martínez, A. Á., Arcentales, A. A., & Paredes, J. P. (2026). Evaluación de la cadena de frío en la comercialización de queso criollo en el cantón Lomas de Sargentillo.*Ecuacientífica, 4*(8), 96–110. https://doi.org/10.56519/abv9ea41
