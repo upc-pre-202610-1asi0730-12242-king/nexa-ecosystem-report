@@ -360,3 +360,19 @@ El rastro de releases de WebApp se interpreta de forma incremental: `v1.7.1` que
 > *Nota:* Figura. Release de cierre AV2 disponible para revisión de `nexa-website v3.0.0`.
 
 ![Branches de nexa-website](../../assets/images/chapter-5/sprint-evidence/gitflow/nexa-website-branches.png)
+
+> *Nota:* Figura. Branches de `nexa-website` durante el corte AV2.
+
+![Commits recientes AV2 de nexa-website](../../assets/images/chapter-5/sprint-evidence/collaboration/nexa-website-commits-av2-recent.png)
+
+> *Nota:* Figura. Commits recientes de `nexa-website` para el corte AV2.
+
+![Commits históricos de cierre AV2 de nexa-website](../../assets/images/chapter-5/sprint-evidence/collaboration/nexa-website-commits-av2-history.png)
+
+> *Nota:* Figura. Commits históricos de cierre AV2 de `nexa-website`.
+
+![GitHub Release nexa-platform v1.0.0](../../assets/images/chapter-5/sprint-evidence/releases/nexa-platform-v1-0-0-release.png)
+
+> *Nota:* Figura. Release de cierre AV2 disponible para revisión de `nexa-platform v1.0.0`.
+
+![Branches de nexa-platform](../../assets/images/chapter-5/sprint-evidence/gitflow/nexa-platform-branches.png)
