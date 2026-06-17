@@ -2,18 +2,18 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/upc-pre-202610-1asi0730-12242-king/nexa-website/main/nexa.svg" alt="Nexa" width="200"/>
 
 <br/><br/>
 
-# Nexa — Academic Report
+# nexa-ecosystem-report
 
-**Software Engineering academic report for the Nexa B2B platform**
+**Academic report, requirements engineering, product backlog, software architecture design, and evidence logs for the Nexa B2B cold-chain distribution platform**
 
 <br/>
 
-![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
-![Docs as Code](https://img.shields.io/badge/Docs--as--Code-UPC-0a2540?style=for-the-badge)
+![Markdown](https://img.shields.io/badge/Markdown-Documentation-0F172A?style=for-the-badge&logo=markdown&logoColor=white)
+![Jira](https://img.shields.io/badge/Jira-Software-0052CC?style=for-the-badge&logo=jira&logoColor=white)
+![GitFlow](https://img.shields.io/badge/GitFlow-Academic-2a67d9?style=for-the-badge&logo=git&logoColor=white)
 
 <br/>
 
@@ -21,7 +21,10 @@
 ![Cycle](https://img.shields.io/badge/Cycle-2026--10-0a2540?style=flat-square)
 ![University](https://img.shields.io/badge/University-UPC-0a2540?style=flat-square)
 ![Team](https://img.shields.io/badge/Team-King-2a67d9?style=flat-square)
-![Status](https://img.shields.io/badge/Status-TB1%20Active-22c55e?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Release%202.6.0-22c55e?style=flat-square)
+
+<br/>
+
 
 <br/>
 
@@ -29,65 +32,140 @@
 
 ---
 
+## Overview
 ## What is this repository?
 
-This repository contains the full academic documentation for the Nexa project, structured following the UPC Docs-as-Code standard. All content is written in Markdown and organized with numeric prefixes and kebab-case naming for reproducible PDF generation via Pandoc.
+The `nexa-ecosystem-report` repository centralizes the academic research, requirements elicitation, design mockups, software architecture definitions, sprint logs, and validation evidence for the Nexa project. Following the **Docs-as-Code** philosophy, the report is maintained as modular markdown files alongside assets, enabling version control, collaboration tracing, and alignment with the software products.
 
 ---
 
-## Repository structure
+## Repository Map
+
+<table>
+  <tr>
+    <td width="50%">
+      <p><a href="https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website">nexa-website</a></p>
+      <p>Public landing website and central product entry point.</p>
+      <p><a href="https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/">Open Live Website</a></p>
+      <p>
+        <img alt="HTML5" src="https://img.shields.io/badge/HTML5-static-E34F26?style=flat-square&logo=html5&logoColor=white" />
+        <img alt="CSS3" src="https://img.shields.io/badge/CSS3-responsive-1572B6?style=flat-square&logo=css3&logoColor=white" />
+        <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-vanilla-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+      </p>
+    </td>
+    <td width="50%">
+      <p><a href="https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp">nexa-webapp</a></p>
+      <p>Main web application for B2B buyer portal, operator workflows, and cold-chain logs.</p>
+      <p><a href="https://nexa-webapp.onrender.com/">Open Live WebApp</a></p>
+      <p>
+        <img alt="Vue 3" src="https://img.shields.io/badge/Vue%203-35495E?style=flat-square&logo=vue.js&logoColor=4FC08D" />
+        <img alt="Vite" src="https://img.shields.io/badge/Vite-0F172A?style=flat-square&logo=vite&logoColor=FFD62E" />
+        <img alt="PrimeVue" src="https://img.shields.io/badge/PrimeVue-0EA5E9?style=flat-square" />
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <p><a href="https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform">nexa-platform</a></p>
+      <p>Backend platform and API service layer context workspace.</p>
+      <p><a href="https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform/wiki">Open Engineering Wiki</a></p>
+      <p>
+        <img alt="Platform" src="https://img.shields.io/badge/Platform-backend%20workspace-512BD4?style=flat-square" />
+        <img alt="API" src="https://img.shields.io/badge/API-domain%20services-0EA5E9?style=flat-square" />
+        <img alt="EF Core" src="https://img.shields.io/badge/EF%20Core-9.0-512BD4?style=flat-square" />
+      </p>
+    </td>
+    <td width="50%">
+      <p><a href="https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report">nexa-ecosystem-report</a> (This Repository)</p>
+      <p>Academic report, product backlog, architectural research documentation, and evidence logs.</p>
+      <p><a href="./wiki/Home.md">Open Report Wiki</a></p>
+      <p>
+        <img alt="Documentation" src="https://img.shields.io/badge/Documentation-report-0F172A?style=flat-square" />
+        <img alt="UPC" src="https://img.shields.io/badge/UPC-course%20evidence-0EA5E9?style=flat-square" />
+      </p>
+    </td>
+  </tr>
+</table>
+
+---
+
+## Report Structure Areas
+
+| Chapter | Description / Scope | Structural Files | Key Evidence & Deliverables |
+|---|---|---|---|
+| **Front Matter** | Version log, cover page, and outcome indices. | `01-cover.md`, `02-version-history.md`, `05-student-outcome.md` | Version history logs, student outcomes matrix. |
+| **Chapter 1: Introduction** | Startup Profile & Solution Overview. | `1-1-startup-profile.md` to `1-3-target-segments.md` | Lean UX hypotheses, target customer personas. |
+| **Chapter 2: Elicitation** | Customer Research & Elicitation. | `2-2-interviews.md`, `2-4-big-picture-event-storming.md` | Competitor analysis, EventStorming models, Ubiquitous Language. |
+| **Chapter 3: Specification** | B2B Requirements Specification. | `3-1-user-stories.md` to `3-3-product-backlog.md` | User stories (Gherkin syntax), prioritized backlog. |
+| **Chapter 4: Product Design** | UX Prototyping & DD Tactical Architecture. | `4-4-web-applications-ux-ui-design.md`, `4-8-database-design.md` | Wireflows, C4 models, UML class and database schemas. |
+| **Chapter 5: Implementation** | SCM, Deployments & Validation. | `5-1-software-configuration-management.md` to `5-4-video-about-the-product.md` | Render deployment notes, Jira sprint tracking, product demo. |
+
+---
+
+## Tools Stack
+
+| Purpose | Technology / Tool | Usage in Project |
+|---|---|---|
+| **Docs-as-Code** | Markdown | Version-controlled document modularity |
+| **Styling & Layout** | CSS stylesheet rules | Styling layout of html outputs |
+| **UX Prototyping** | Figma & Lucidchart | Wireframes, user flows, and wireflows |
+| **Architecture Design** | Visual Paradigm & Draw.io | UML diagrams, database design, C4 models |
+| **Project Management** | Jira Software | Sprint boards, backlog planning, and tasks |
+| **SCM** | Git & GitHub | GitFlow academic branches and logs tracking |
+
+---
+
+## Getting Started
+
+### Local Browsing & Contribution
 
 ```text
+nexa-ecosystem-report/
+├── .github/              # Standard workflows and community security policies
+├── releases/             # Cumulative SemVer release notes and patch logs
+├── report/               # Document body directories
+│   ├── front-matter/     # Version logs, cover layout, student outcome files
+│   ├── 10-chapter-1-introduction/
+│   ├── 20-chapter-2-requirements-elicitation/
+│   ├── 30-chapter-3-requirements-specification/
+│   ├── 40-chapter-4-product-design/
+│   ├── 50-chapter-5-implementation-validation-deployment/
+│   ├── annexes/          # Additional documentation and reference checklists
 nexa-report/
 │
 └── report/
-    ├── front-matter/
-    │   ├── 01-cover.md
-    │   ├── 02-version-history.md
-    │   ├── 03-table-of-contents.md
-    │   ├── 04-project-report-collaboration-insights.md
-    │   └── 05-student-outcome.md
-    │
-    ├── 10-chapter-1-introduction/
-    ├── 20-chapter-2-requirements-elicitation/
-    ├── 30-chapter-3-requirements-specification/
-    ├── 40-chapter-4-product-design/
-    ├── 50-chapter-5-implementation-validation-deployment/
-    │
-    ├── 90-conclusions.md
-    ├── 99-bibliography.md
-    │
-    ├── annexes/
-    └── assets/
 ```
 
 ---
 
-## Report PDF
+## Team & Domain Ownership
 
-Generate locally (requires Pandoc + XeLaTeX):
+Specific report areas and B2B sub-domain contexts are assigned to primary owners:
 
+| Area / B2B Sub-Domain | Primary Writer | Secondary Support |
+|---|---|---|
+| **Ecosystem Coordination & Deploy** | DiegoS284 | Cmarin2802 |
+| **Report Formatting & Chapter 1/5** | Cmarin2802 | R0obxdnt-bit |
+| **Needfinding & UML/DB Design** | JoaquinVerde115 | Cmarin2802 |
+| **Releases, Citations & Assets** | R0obxdnt-bit | JoaquinVerde115 |
 ```bash
 bash scripts/build-pdf.sh
-```
-
-Output is written to `dist/nexa-report.pdf`.
-
-The latest generated PDF can also be downloaded from GitHub Actions:
-**Actions → Build Report PDF → Artifacts → `nexa-report-pdf`**
 
 ---
 
-## Related repositories
+## Documentation
 
-| Repository | Description |
-|---|---|
-| [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) | Landing page (HTML5 / CSS3 / JS) — [live](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/) |
-| [nexa-webapp](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp) | Main web application (Vue.js) — [live](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-webapp/) |
-| [nexa-platform](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform) | Backend service layer (ASP.NET Core, planned for next milestone) |
+Full report references and guidelines are maintained in:
+- **[Nexa Ecosystem Report Wiki Index (wiki/Home.md)](./wiki/Home.md)** (Local offline copy)
+- [Ecosystem Release Logs (releases/README.md)](./releases/README.md)
+- [Security Guidelines (SECURITY.md)](./.github/SECURITY.md)
+- [Contribution Policy (CONTRIBUTING.md)](./.github/CONTRIBUTING.md)
 
 ---
 
+<p align="center">
+  <strong>Nexa Ecosystem Report</strong> · Universidad Peruana de Ciencias Aplicadas · 2026-10
+</p>
 ## Branching strategy
 
 For TB1, observable delivery is concentrated in `main` and Conventional Commits. GitFlow remains documented as a working convention for the next delivery:
@@ -95,37 +173,3 @@ For TB1, observable delivery is concentrated in `main` and Conventional Commits.
 | Branch | Purpose |
 |---|---|
 | `main` | Stable deliverable version |
-| `develop` | Integration branch convention |
-| `feature/*` | Work by feature or section |
-| `release/*` | Delivery closing convention |
-| `hotfix/*` | Urgent correction convention |
-
-All commits follow [Conventional Commits 1.0.0](https://www.conventionalcommits.org/): `type(scope): description` — lowercase, no trailing period.
-
----
-
-## Team
-
-**Organization:** [upc-pre-202610-1asi0730-12242-king](https://github.com/upc-pre-202610-1asi0730-12242-king)
-
-| Code | Member | Role |
-|---|---|---|
-| U202323040 | Yucra Sandoval, Diego Sebastian | Team Leader |
-| U202411937 | Marín Cueva, César Fernando | Team Member |
-| U20241A054 | Verde Bueno, Joaquín Francisco | Team Member |
-| U202416289 | Torrejón De Los Santos, Gino Rodrigo | Team Member |
-| U202413142 | Rojas Mancilla, Gerard Gianpier | Team Member |
-
----
-
-<div align="center">
-
-<br/>
-
-**Nexa** · Universidad Peruana de Ciencias Aplicadas · 2026-10
-
-*1ASI0730 — Aplicaciones Web · Ingeniería de Software*
-
-<br/>
-
-</div>

@@ -4,14 +4,13 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 REPORT_DIR="$REPO_ROOT/report"
 DIST_DIR="$REPO_ROOT/dist"
-COMBINED="$DIST_DIR/nexa-report-full.md"
-OUTPUT="$DIST_DIR/nexa-report.pdf"
+COMBINED="$DIST_DIR/nexa-ecosystem-report-full.md"
 
 mkdir -p "$DIST_DIR"
 
 cd "$REPORT_DIR"
 
-# Files in document order (relative to report/); 5.3 and 5.4 excluded
+# Files in document order (relative to report/)
 SOURCES=(
   front-matter/01-cover.md
   front-matter/02-version-history.md
@@ -23,19 +22,24 @@ SOURCES=(
   $(find 30-chapter-3-requirements-specification -name "*.md" | sort)
   $(find 40-chapter-4-product-design -name "*.md" | sort)
   50-chapter-5-implementation-validation-deployment/5-1-software-configuration-management.md
-  50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md
+  50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-landing-page-services-and-applications-implementation.md
+  50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-1-sprint-1.md
+  50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-2-sprint-2.md
+  50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-3-sprint-3.md
+  50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md
   90-conclusions.md
   99-bibliography.md
   $(find annexes -name "*.md" | sort)
 )
 
 # Concatenate all sources into one file:
-# 1. Normalise ../assets/ → assets/ so paths resolve when running from report/
+# 1. Normalise ../../assets/ and ../assets/ to assets/ so paths resolve when running from report/
 # 2. Strip SVG image references — xelatex requires inkscape/rsvg to embed SVGs
 #    which is not always available; replace with bracketed alt text instead.
 > "$COMBINED"
 for f in "${SOURCES[@]}"; do
   sed \
+    -e 's|\.\./\.\./assets/|assets/|g' \
     -e 's|\.\./assets/|assets/|g' \
     -e 's|!\(\[[^]]*\]\)(assets/[^)]*\.svg)|\1|g' \
     "$f" >> "$COMBINED"
