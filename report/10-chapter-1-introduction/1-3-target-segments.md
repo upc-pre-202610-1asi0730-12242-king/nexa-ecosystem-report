@@ -1,5 +1,6 @@
 ### **1.3. Segmentos Objetivos**
 
+La segmentación de Nexa se define a partir del flujo real de coordinación comercial y operativa en empresas importadoras o distribuidoras de productos refrigerados y congelados. Nexa se plantea como una plataforma **SaaS B2B** contratada por una empresa de cadena de frío, la cual habilita distintos perfiles de uso dentro de un mismo ecosistema operacional.
 
 En esta sección, los segmentos objetivo funcionan como la base de investigación y diseño del producto. Por ello, no se presentan como módulos del sistema, sino como actores del dominio que concentran fricciones distintas y complementarias.
 
@@ -18,6 +19,8 @@ Nexa funciona bajo un modelo SaaS orientado a empresas B2B de cadena de frío. D
 | Account ownership | Responsabilidad asumida por S2 para administrar empresa, accesos, suscripción, operación e información crítica del tenant. |
 | Alcance inicial | Nexa no reemplaza un ERP completo en su primera versión. Se enfoca en reducir doble digitación, ordenar documentos, mejorar trazabilidad y conectar pedido, validación, inventario y despacho. |
 
+>*Nota*: La tabla aclara cómo se organiza el modelo SaaS de Nexa. Elaboración Propia.
+
 ### ***Resumen de Segmentos Objetivo***
 
 *Tabla. Resumen comparativo de segmentos objetivo de Nexa*
@@ -28,7 +31,7 @@ Nexa funciona bajo un modelo SaaS orientado a empresas B2B de cadena de frío. D
 | **S2: Operations / Account Owner** | Logística, jefatura de operaciones, responsable de almacén o responsable interno de la empresa contratante. | Controlan inventario, lotes, FEFO, despachos, evidencias, documentos operativos, promociones, portales externos, administración de empresa, suscripción y accesos. | Inventory Control, Dispatch Orders, Proof of Delivery, Operational Analytics, Promotions, Customer Portals, Company Administration. |
 | **S3: B2B Buyer Portal** | Cliente comprador B2B: restaurante, supermercado, retail, comprador mayorista, comprador minorista. | Consulta catálogo, arma solicitudes, revisa estado, conversa con S1, descarga documentos y sigue el despacho de sus pedidos. | Product Catalog, Request Builder, My Requests, My Orders, Business Documents, Premium Catalog, Assistant Preview, Buyer Profile. |
 
-| Segmento objetivo | Actor principal | Rol en el flujo del pedido | Fricción dominante | Valor esperado de Nexa |
+>*Nota*: La tabla sintetiza la segmentación de Nexa y conecta cada segmento con su problema principal y módulos funcionales. Elaboración Propia.
 
 *Figura. Flujo de interacción entre los segmentos objetivo*
 
@@ -41,7 +44,7 @@ flowchart LR
     SEG3 -->|Catálogo, solicitud, tracking y documentos| SEG1
     SEG1 -->|Requests, orders, business docs y clients| SEG2
     SEG2 -->|Inventory, dispatch orders, POD, company administration y promotions| SEG1
-    SEG3["S3\nComprador B2B / cliente comercial\nSolicitan abastecimiento"]
+    SEG1 -->|Confirmación, estado y comunicación comercial| SEG3
 ```
 
 >*Nota*: El gráfico representa la relación transversal entre el comprador B2B, la coordinación comercial y la operación interna de la empresa contratante. Elaboración Propia.
@@ -79,11 +82,17 @@ flowchart TD
     P7["7. Seguimiento y cierre\nS3 revisa tracking, documentos, comentarios y alertas"]
 
     P1 --> P2
+    P2 --> P3
+    P3 --> P4
+    P4 --> P5
+    P5 --> P6
+    P6 --> P7
+```
+>*Nota*: El gráfico resume el recorrido end-to-end del pedido dentro de Nexa, desde la entrada de la solicitud hasta el seguimiento final del comprador. Elaboración Propia.
 
 ### ***Sustento demográfico y estadístico***
 
 El dominio de Nexa se ubica en la distribución B2B de productos refrigerados y congelados, donde la coordinación entre ventas, logística y compradores comerciales todavía depende de canales informales, validaciones manuales y registros dispersos. Esta situación es especialmente crítica porque el pedido no solo contiene una intención de compra: también activa decisiones de disponibilidad, inventario, rotación, preparación, despacho, documentación y seguimiento.
-El dominio de Nexa se ubica en la distribución B2B de productos refrigerados y congelados, donde la coordinación entre ventas, logística y compradores comerciales todavía depende de canales informales, validaciones manuales y registros dispersos. Esta situación es especialmente crítica porque el pedido no solo contiene una intención de compra: también activa decisiones de disponibilidad, inventario, rotación, preparación, despacho y seguimiento.
 
 El sustento estadístico permite justificar por qué los tres segmentos son relevantes para el proyecto. Según Lucky-Xplora (2022), el 83% de las bodegas del canal tradicional se encuentra en un nivel principiante de madurez digital, mientras que solo alrededor del 28% utiliza alguna aplicación para gestionar tareas del negocio. Este dato refuerza la importancia del S3, ya que el comprador comercial B2B necesita una experiencia simple, clara y cercana a sus hábitos actuales de compra.
 
@@ -98,6 +107,7 @@ mindmap
   root((Segmentos objetivo de Nexa))
     S1
       Captura comercial
+      WhatsApp llamadas y Excel
       Validación manual
       Conversión de solicitudes
       Retrabajo
@@ -107,7 +117,7 @@ mindmap
       Despacho
       Evidencias y POD
       Administración de empresa
-      Coordinación logística
+      Accesos y configuración
     S3
       Compra recurrente
       Catálogo
@@ -126,7 +136,7 @@ El S1 está conformado por vendedoras, asesoras o coordinadoras comerciales de l
 
 Su importancia radica en que una parte significativa de los errores posteriores puede originarse en esta etapa. Si la solicitud se registra con datos incompletos, productos mal interpretados, cantidades ambiguas, condiciones comerciales no verificadas o documentos pendientes, el problema se traslada hacia inventario, preparación, despacho y atención posterior.
 
-#### **S1: Coordinación comercial / ventas internas**
+En Nexa, el S1 no solo registra información. También valida datos comerciales, revisa clientes, consulta disponibilidad visible, documenta observaciones y convierte solicitudes en pedidos confirmados. Por ello, este segmento conecta directamente con módulos como **Purchase Requests**, **Purchase Orders**, **Manual Order Entry**, **B2B Clients**, **Business Documents** y **Product Catalog**.
 
 ##### Ficha rápida del segmento
 
@@ -134,7 +144,7 @@ Su importancia radica en que una parte significativa de los errores posteriores 
 - **Contexto dominante**: atención rápida a compradores B2B mediante portal, llamadas, WhatsApp, listas de productos, notas de voz, Excel o mensajes dispersos.
 - **Responsabilidad principal**: recibir, interpretar, validar, ordenar y canalizar solicitudes hacia operación.
 - **Dolor principal**: pedidos dispersos, doble digitación, validaciones manuales y baja visibilidad inmediata de stock o condiciones.
-- **Actor principal**: vendedoras, asesoras comerciales, mercaderistas y personal de coordinación comercial.
+- **Valor esperado**: capturar solicitudes de forma estructurada, reducir errores, validar información comercial y responder al comprador con mayor seguridad.
 
 ##### Plano demográfico y ocupacional
 
@@ -147,6 +157,7 @@ A nivel ocupacional, este segmento no necesariamente cuenta con poder de decisi�
 | Variable | Caracterización esperada |
 |---|---|
 | Rango ocupacional | Personal comercial, ventas internas, mercaderistas, coordinadoras comerciales o asistentes de pedidos. |
+| Relación con el comprador | Alta: mantiene contacto frecuente con compradores mayoristas, minoristas y negocios B2B. |
 | Nivel de decisión | Medio u operativo: puede registrar, canalizar y consultar, pero no siempre aprobar excepciones. |
 | Presión del rol | Alta: debe responder rápido sin perder precisión. |
 | Entorno de trabajo | Oficina, punto de venta, almacén administrativo o trabajo móvil mediante celular. |
@@ -158,7 +169,6 @@ A nivel ocupacional, este segmento no necesariamente cuenta con poder de decisi�
 El comportamiento del S1 está marcado por la necesidad de resolver solicitudes con rapidez. En la práctica, esto suele implicar alternar entre conversaciones, hojas de cálculo, catálogos, consultas internas y validaciones con logística o almacén. Esta fragmentación genera dependencia de memoria, experiencia personal y coordinación informal.
 
 Debe responder rápido al comprador, pero la información que necesita para responder correctamente no siempre está centralizada. Por ello, Nexa debe permitirle trabajar con una solicitud más ordenada desde el inicio, reduciendo la necesidad de reconstruir información desde mensajes o archivos dispersos.
-El comportamiento del S1 está marcado por la necesidad de resolver pedidos con rapidez. En la práctica, esto suele implicar alternar entre conversaciones, hojas de cálculo, catálogos, consultas internas y validaciones con logística o almacén. Esta fragmentación genera dependencia de memoria, experiencia personal y coordinación informal.
 
 *Tabla. Comportamientos actuales del S1 y sus consecuencias*
 
@@ -168,6 +178,7 @@ El comportamiento del S1 está marcado por la necesidad de resolver pedidos con 
 | Consulta stock, precios o condiciones en más de una fuente. | Aumenta el tiempo de respuesta y el riesgo de información desactualizada. |
 | Reenvía información a logística o almacén. | Aparece doble digitación o pérdida de detalle. |
 | Aclara dudas con el comprador durante el proceso. | Se generan interrupciones, retrasos y mayor dependencia de comunicación manual. |
+| Convierte solicitudes en pedidos confirmados. | Si la validación previa es débil, el error se traslada al flujo operativo. |
 
 >*Nota*: Resume las prácticas actuales del S1 y las consecuencias que justifican una captura más estructurada. Elaboración Propia.
 
@@ -176,7 +187,6 @@ El comportamiento del S1 está marcado por la necesidad de resolver pedidos con 
 El S1 suele tener familiaridad práctica con herramientas digitales básicas, especialmente mensajería instantánea, llamadas, hojas de cálculo y sistemas internos simples. Sin embargo, esa familiaridad no significa que trabaje en un flujo integrado. El problema no es la ausencia total de tecnología, sino el uso de herramientas dispersas que no aseguran trazabilidad.
 
 Para este segmento, Nexa debe sentirse más rápido y confiable que el proceso informal. Si el sistema añade pasos innecesarios, formularios extensos o validaciones lentas, la adopción puede verse afectada. Por ello, la experiencia debe priorizar rapidez, claridad y continuidad entre solicitud, validación y conversión a pedido.
-Para este segmento, Nexa debe sentirse más rápida que el proceso informal. Si el sistema añade pasos innecesarios, formularios extensos o validaciones lentas, la adopción puede verse afectada.
 
 *Tabla. Implicancias tecnológicas para el S1*
 
@@ -186,6 +196,7 @@ Para este segmento, Nexa debe sentirse más rápida que el proceso informal. Si 
 | Alternancia entre varias fuentes de información. | El sistema debe centralizar comprador, catálogo, disponibilidad, solicitud y pedido. |
 | Baja tolerancia a flujos lentos. | La captura debe ser guiada, pero no rígida. |
 | Necesidad de historial y trazabilidad. | Cada solicitud debe conservar información clara para seguimiento posterior. |
+| Conversión de solicitudes en pedidos. | La plataforma debe permitir que una solicitud validada se convierta en purchase order. |
 
 >*Nota*: Relaciona el uso actual de herramientas digitales del S1 con decisiones de diseño para Nexa. Elaboración Propia.
 
@@ -202,7 +213,6 @@ El valor esperado para el S1 se concentra en reducir retrabajo y aumentar seguri
 | Hay doble digitación entre ventas y operación. | Solicitud estructurada que puede convertirse en pedido confirmado. | Número de pasos manuales entre captura y conversión a pedido. |
 | Se repiten aclaraciones por WhatsApp o llamada. | Historial y detalle de la solicitud disponible para seguimiento. | Cantidad de aclaraciones por solicitud antes de confirmación. |
 | La documentación queda dispersa. | Registro de documentos y observaciones asociadas al pedido. | Porcentaje de pedidos con documentos u observaciones registradas correctamente. |
-| El pedido llega incompleto o ambiguo. | Flujo de captura con productos, cantidades, cliente y condiciones registradas. | Porcentaje de pedidos registrados con información completa. |
 
 >*Nota*: Conecta los principales dolores del S1 con respuestas funcionales y métricas futuras de validación. Elaboración Propia.
 
@@ -214,6 +224,7 @@ Su responsabilidad principal es convertir la solicitud comercial en una operaci�
 
 Además, el S2 asume el rol de account ownership. Las responsabilidades de configuración de empresa, administración de usuarios, accesos, planes, promociones y control operativo recaen en este segmento, ya que representa a la empresa contratante dentro de la plataforma.
 
+En Nexa, el S2 conecta directamente con módulos como **Inventory Control**, **Dispatch Orders**, **Proof of Delivery**, **Operational Analytics**, **Promotions**, **Customer Portals** y **Company Administration**.
 
 ##### Ficha rápida del segmento
 
@@ -221,7 +232,7 @@ Además, el S2 asume el rol de account ownership. Las responsabilidades de confi
 - **Contexto dominante**: coordinación entre ventas, inventario, lotes, preparación, despacho, evidencias, documentos, accesos y configuración de empresa.
 - **Responsabilidad principal**: validar disponibilidad real, controlar inventario, organizar preparación, coordinar despacho, gestionar evidencias y administrar la operación del tenant.
 - **Dolor principal**: información dispersa entre áreas, stock no siempre confiable, cambios de último minuto, trazabilidad fragmentada y administración operativa poco centralizada.
-- **Actor principal:** jefatura logística, responsable de almacén, coordinadora operativa, encargada de inventario o despacho.
+- **Valor esperado**: mayor control operativo, mejor visibilidad del pedido, reducción de incidencias y administración centralizada de la empresa contratante.
 
 ##### Plano demográfico y ocupacional
 
@@ -238,7 +249,7 @@ En el modelo SaaS de Nexa, el S2 también tiene una responsabilidad administrati
 | Rango ocupacional | Jefatura, coordinación o responsabilidad operativa en logística, almacén, inventario, despacho o administración interna. |
 | Relación con el comprador | Indirecta: normalmente recibe presión a través de ventas, atención comercial o reclamos posteriores. |
 | Nivel de decisión | Medio o alto operativo: puede priorizar pedidos, validar disponibilidad, coordinar recursos y administrar información de la empresa. |
-| Rango ocupacional | Jefatura, coordinación o responsabilidad operativa en logística, almacén, inventario o despacho. |
+| Presión del rol | Alta: debe resolver problemas que impactan cumplimiento, costos, trazabilidad y satisfacción del comprador. |
 | Entorno de trabajo | Almacén, oficina operativa, centro de distribución o coordinación híbrida entre áreas. |
 
 >*Nota*: Caracteriza el rol ocupacional del S2 para ubicarlo dentro de la coordinación operativa y administración interna de la empresa contratante. Elaboración Propia.
@@ -249,6 +260,7 @@ El S2 opera en un entorno donde la información debe transformarse en acción. R
 
 También debe controlar elementos que no siempre son visibles para el comprador, pero que determinan el cumplimiento del pedido: lotes, rotación, temperatura, prioridad, ruta, responsable, evidencias, documentos y estado de entrega. Por ello, necesita una vista más integral del flujo, no solo una lista de pedidos.
 
+Debe garantizar cumplimiento operativo, pero muchas veces trabaja con información comercial que no está suficientemente validada ni estructurada. Además, si la configuración de empresa, usuarios o accesos está separada del flujo operativo, la gestión del tenant se vuelve más difícil de controlar.
 
 *Tabla. Comportamientos actuales del S2 y sus consecuencias*
 
@@ -261,7 +273,7 @@ También debe controlar elementos que no siempre son visibles para el comprador,
 | Supervisa evidencias de entrega o proof of delivery. | La confirmación de cumplimiento puede quedar fragmentada en fotos, mensajes o documentos separados. |
 | Administra usuarios, accesos o configuraciones de empresa. | Si la administración no está centralizada, se dificulta el control del tenant. |
 
-| Revisa disponibilidad con base en registros internos, conteos o coordinación verbal. | Puede haber diferencias entre stock percibido y stock real. |
+>*Nota*: Resume las prácticas actuales del S2 y las consecuencias que justifican mayor visibilidad operativa y administración centralizada. Elaboración Propia.
 
 ##### Plano tecnológico
 
@@ -269,7 +281,7 @@ El S2 necesita herramientas que ofrezcan visibilidad, control y trazabilidad. Pu
 
 Para este segmento, Nexa debe funcionar como una capa de coordinación operativa. No basta con mostrar pedidos: debe ayudar a entender qué queda por atender, qué se puede preparar, qué requiere validación, qué incidencias deben atenderse y qué información del tenant debe mantenerse bajo control.
 
-El S2 necesita herramientas que ofrezcan visibilidad y control. Puede usar hojas de cálculo, sistemas internos, registros de inventario, grupos de mensajería y documentación física o digital. Sin embargo, cuando estos recursos no están conectados, el seguimiento del pedido se vuelve manual.
+Además, el S2 requiere acceso a funciones administrativas relacionadas con empresa, usuarios, permisos, promociones y portales externos. Estas funciones deben presentarse como parte de la operación de la empresa contratante, no como un segmento separado.
 
 *Tabla. Implicancias tecnológicas para el S2*
 
@@ -282,7 +294,7 @@ El S2 necesita herramientas que ofrezcan visibilidad y control. Puede usar hojas
 | Control de evidencias y POD. | Las evidencias deben asociarse al pedido y al despacho correspondiente. |
 | Administración de empresa, accesos y configuración. | El S2 debe contar con funciones de company administration dentro del tenant. |
 
-| Necesidad de visibilidad sobre pedidos y stock. | Debe existir una vista operativa clara por estado, prioridad y disponibilidad. |
+>*Nota*: Relaciona las necesidades tecnológicas del S2 con decisiones de diseño orientadas al control operativo y administración de la cuenta. Elaboración Propia.
 
 ##### Plano de valor esperado
 
@@ -297,6 +309,7 @@ El valor esperado para el S2 se relaciona con control operativo y administració
 | Hay cambios de último minuto. | Estados e incidencias visibles para ventas y operación. | Número de incidencias registradas por pedido. |
 | La trazabilidad depende de mensajes o papeles. | Historial operativo del pedido, despacho y documentos asociados. | Porcentaje de pedidos con estado actualizado. |
 | Las evidencias de entrega quedan dispersas. | Registro de proof of delivery asociado al dispatch order. | Porcentaje de despachos con evidencia registrada. |
+| La administración de empresa no está centralizada. | Gestión de usuarios, accesos, configuración y datos del tenant desde Nexa. | Número de configuraciones críticas administradas desde la plataforma. |
 
 >*Nota*: Conecta los principales dolores del S2 con respuestas funcionales y métricas futuras de validación. Elaboración Propia.
 
@@ -306,7 +319,7 @@ El S3 está conformado por compradores B2B externos habilitados por la empresa c
 
 Su interés principal no es usar una plataforma por novedad tecnológica, sino abastecerse con menor incertidumbre. Para este actor, la utilidad de Nexa depende de que pueda consultar productos, armar solicitudes, revisar el estado de sus pedidos y acceder a información clara sin perder la sensación de respaldo humano.
 
----
+En Nexa, el S3 conecta directamente con módulos como **Product Catalog**, **Request Builder**, **My Requests**, **My Orders**, **Business Documents**, **Premium Catalog**, **Assistant Preview** y **Buyer Profile**.
 
 ##### Ficha rápida del segmento
 
@@ -315,13 +328,12 @@ Su interés principal no es usar una plataforma por novedad tecnológica, sino a
 - **Responsabilidad principal**: consultar catálogo, solicitar productos, revisar pedidos, descargar documentos y coordinar la recepción.
 - **Dolor principal**: incertidumbre sobre disponibilidad, precios, confirmación, cambios de último minuto, documentos y estado de entrega.
 - **Valor esperado**: catálogo claro, solicitud autónoma, confirmación confiable, documentos visibles y seguimiento comprensible.
-- **Actor principal:** compradores mayoristas, minoristas, bodegas, minimarkets, pequeños mayoristas y negocios HORECA.
 
 ##### Plano demográfico y ocupacional
 
 El S3 agrupa a personas que compran para sostener una actividad comercial. Pueden ser dueños de negocio, encargados de compras, administradores de local, responsables de reposición o compradores frecuentes de una empresa cliente. Su toma de decisión suele estar asociada a continuidad de stock, margen, confianza en el proveedor y rapidez de atención.
 
-El S3 agrupa a personas que compran para sostener una actividad comercial. Pueden ser dueños de negocio, encargados de compras, administradores de local o responsables de reposición. Su toma de decisión suele estar asociada a continuidad de stock, margen, confianza en el proveedor y rapidez de atención.
+A diferencia de un consumidor final, este comprador no adquiere productos para consumo personal, sino para mantener la operación de su propio negocio. Por ello, la falta de confirmación, los cambios inesperados, la ausencia de documentos o la demora en entrega pueden afectar sus ventas, su flujo de caja y su relación con clientes finales.
 
 *Tabla. Caracterización ocupacional del S3*
 
@@ -339,6 +351,7 @@ El S3 agrupa a personas que compran para sostener una actividad comercial. Puede
 
 El S3 compra bajo presión de continuidad. Su comportamiento está determinado por la necesidad de abastecerse a tiempo, conseguir productos disponibles y evitar faltantes que afecten sus ventas. Actualmente puede depender de llamadas, mensajes de WhatsApp, listas enviadas por vendedores o acuerdos informales con proveedores conocidos.
 
+No busca digitalizarse por sí mismo; busca comprar con menos incertidumbre y mantener su negocio abastecido. Por ello, el portal debe funcionar como una extensión clara del vínculo comercial existente, no como una barrera adicional.
 
 *Tabla. Comportamientos actuales del S3 y sus consecuencias*
 
@@ -351,7 +364,7 @@ El S3 compra bajo presión de continuidad. Su comportamiento está determinado p
 | Consulta el estado de entrega por canales informales. | Aumenta la carga de comunicación para ventas y operación. |
 | Mantiene confianza en proveedores conocidos. | La adopción digital depende de que el portal no elimine el respaldo humano. |
 
-| Coordina recepción según horarios y capacidad del negocio. | Los retrasos afectan atención y organización interna. |
+>*Nota*: Resume las prácticas actuales del S3 y las consecuencias que justifican un portal de compra más claro y trazable. Elaboración Propia.
 
 ##### Plano tecnológico
 
@@ -364,13 +377,13 @@ Por ello, Nexa debe ofrecer una experiencia clara, con bajo esfuerzo de aprendiz
 | Aspecto tecnológico | Implicancia para Nexa |
 |---|---|
 | Uso habitual de celular. | El portal debe funcionar correctamente en pantallas pequeñas y permitir consulta rápida. |
-| Uso habitual de celular. | El portal debe funcionar bien en pantallas pequeñas. |
 | Familiaridad variable con aplicaciones. | La navegación debe ser simple, directa y tolerante a errores. |
 | Dependencia de WhatsApp o llamadas. | El sistema debe ofrecer claridad sin eliminar soporte humano. |
 | Necesidad de catálogo claro. | El comprador debe poder revisar productos, disponibilidad o información comercial relevante. |
 | Necesidad de seguimiento. | Los pedidos deben mostrar estados comprensibles y trazables. |
 | Necesidad de documentos. | Los documentos visibles deben estar asociados al pedido correspondiente. |
 
+>*Nota*: Relaciona la madurez digital variable del S3 con decisiones de diseño orientadas a simplicidad, confianza y seguimiento. Elaboración Propia.
 
 ##### Plano de valor esperado
 
@@ -383,7 +396,7 @@ De esta manera, el S3 valida que Nexa no solo ordena el trabajo interno de la em
 | Dolor del segmento | Respuesta esperada de Nexa | Métrica de validación sugerida |
 |---|---|---|
 | No sabe con certeza qué productos están disponibles. | Catálogo con productos, información comercial y disponibilidad o confirmación clara. | Porcentaje de productos consultados antes de generar una solicitud. |
-| No sabe con certeza qué productos están disponibles. | Catálogo con disponibilidad o confirmación clara. | Porcentaje de productos consultados antes del pedido. |
+| Debe esperar respuesta manual. | Solicitud autónoma con confirmación posterior visible. | Tiempo entre solicitud y confirmación. |
 | No tiene seguimiento claro. | Estado del pedido entendible para el comprador. | Número de consultas de estado realizadas desde el portal. |
 | Los documentos están dispersos. | Documentos visibles y asociados al pedido correspondiente. | Porcentaje de pedidos con documentos consultados desde el portal. |
 | Puede desconfiar de un canal impersonal. | Soporte o contacto humano complementario durante el flujo. | Porcentaje de pedidos digitales que no requieren llamada adicional. |
@@ -402,6 +415,7 @@ La relación entre segmentos y funcionalidades permite sostener que Nexa no func
 |---|---|---|---|
 | S1 | Validar la captura estructurada de solicitudes, la validación comercial y la conversión a pedidos confirmados. | Purchase Requests, Purchase Orders, Manual Order Entry, B2B Clients, Business Documents y Product Catalog visible. | Porcentaje de solicitudes completas, tiempo promedio de validación, número de pasos manuales entre captura y pedido confirmado, y cantidad de aclaraciones antes de confirmar. |
 | S2 | Validar el control operativo del tenant, la disponibilidad real, la preparación, el despacho, las evidencias y la administración interna. | Inventory Control, Dispatch Orders, Proof of Delivery, Operational Analytics, Promotions, Customer Portals y Company Administration. | Porcentaje de pedidos validados sin ajuste manual, pedidos con estado actualizado, despachos con evidencia registrada, incidencias por pedido y configuraciones críticas administradas desde la plataforma. |
+| S3 | Validar la utilidad del portal para consulta, solicitud, seguimiento, documentos y continuidad de abastecimiento. | Product Catalog, Request Builder, My Requests, My Orders, Business Documents, Premium Catalog, Assistant Preview y Buyer Profile. | Tiempo entre solicitud y confirmación, productos consultados antes de solicitar, pedidos digitales que no requieren llamada adicional, consultas de estado desde el portal y documentos revisados por pedido. |
 
 >*Nota*: La tabla conecta cada segmento con el alcance inicial del MVP y propone métricas futuras para validar si Nexa reduce fricción en el flujo principal del pedido. Elaboración Propia.
 
@@ -419,8 +433,8 @@ flowchart TD
     MVP --> S2
     MVP --> S3
     S1 --> MET
-    MVP["MVP de Nexa\nFlujo principal del pedido B2B refrigerado"]
-    CAP["Captura estructurada\nS1"]
+    S2 --> MET
+    S3 --> MET
 ```
 >*Nota*: El gráfico muestra cómo el MVP se valida a través de la interacción entre captura comercial, coordinación operativa y experiencia del comprador B2B. Elaboración Propia.
 
@@ -437,3 +451,5 @@ Cada segmento cumple una función específica dentro del recorrido del pedido y 
 | S3 | Justifica las épicas e historias relacionadas con catálogo, portal comprador, creación de solicitudes, seguimiento de pedidos, consulta de documentos y comunicación con la empresa proveedora. |
 
 >*Nota*: La tabla resume cómo cada segmento sostiene la trazabilidad entre investigación, funcionalidades, user stories, bounded contexts y evidencias de validación. Elaboración Propia.
+
+En conjunto, los tres segmentos permiten representar el ciclo principal de Nexa: el comprador solicita, el equipo comercial valida y convierte, y operación controla la ejecución. Esta lectura articula Lean UX, Needfinding, User Stories, Product Backlog, C4, DDD y los diagramas de clases.
