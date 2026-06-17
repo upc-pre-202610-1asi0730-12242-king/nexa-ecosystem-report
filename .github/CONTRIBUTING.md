@@ -55,3 +55,15 @@ Validation:
 `front-matter`, `ch1`, `ch2`, `ch3`, `ch4`, `ch5`, `annexes`, `assets`, `diagrams`, `ux`, `jira`, `sprint-1`, `sprint-2`, `sprint-3`, `scm`, `deployment`, `validation`, `bibliography`, `release`, `docs-as-code`, `formatting`.
 
 ---
+
+## Documentation Guidelines (Docs-as-Code)
+
+1. **Formatting**:
+   - Save files in standard Markdown (UTF-8 encoding).
+   - Use clean, well-aligned Markdown tables.
+   - Use a single `#` header per file for naming titles, followed by hierarchical `##` and `###`.
+2. **Assets**:
+   - Reference images with relative paths: `../../assets/images/<chapter>/<filename>.png`.
+   - All image assets must have a corresponding descriptive caption note underneath in italics starting with `> *Nota.*`.
+3. **Internal Links**:
+   - Use relative files links (e.g., `[Chapter 4](./4-1-style-guidelines.md)`). Avoid full local absolute paths.

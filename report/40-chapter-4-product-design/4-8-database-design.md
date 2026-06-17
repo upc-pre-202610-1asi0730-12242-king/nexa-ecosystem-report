@@ -182,13 +182,21 @@ El modelo de Invoicing proporciona visibilidad de pagos y documentos para el com
 
 | Tabla | Columnas principales | Descripción |
 |---|---|---|
+| COMMERCIAL_DOCUMENTS | document_id, order_id, document_type, document_number, document_url, issue_date, visibility_status | Almacena documentos comerciales asociados a órdenes de venta. |
+| PAYMENT_RECORDS | payment_id, order_id, client_id, payment_method, amount, payment_date, payment_status_id, transaction_reference | Almacena registros de pago simulado. |
+| PAYMENT_STATUSES | payment_status_id, code, name, description | Almacena los estados de pago permitidos. |
+| INVOICE_SUMMARIES | invoice_summary_id, order_id, subtotal, discount_total, tax_total, delivery_fee, total_amount, generated_at | Almacena resúmenes de cobro para órdenes de venta. |
+
+Restricciones principales:
+
+| Restricción | Descripción |
+|---|---|
+| COMMERCIAL_DOCUMENTS.order_id FK | Referencia a SALES_ORDERS.order_id. |
+| PAYMENT_RECORDS.order_id FK | Referencia a SALES_ORDERS.order_id. |
 ## 4.8. Database Design
 
 El diseño de base de datos de Nexa deriva de los diagramas de clases actualizados y de los bounded contexts consolidados en el diseño táctico. Organizamos las estructuras relacionales alrededor de **Identity & Access**, **Catalog**, **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**, manteniendo coherencia con EventStorming, DDD y C4.
 
-El modelo conserva las relaciones necesarias para usuarios, productos, clientes B2B, condiciones comerciales, pedidos, lotes de inventario, movimientos de stock, despacho y trazabilidad. Los reportes se tratan como read models derivados de tablas operativas; no constituyen un bounded context independiente.
-
-En TB1, la webapp utiliza Fake API como simulación para validar flujos y estructura funcional. Los siguientes diagramas representan una arquitectura relacional objetivo para una futura capa backend/base de datos; no declaran persistencia productiva, autenticación productiva ni REST API backend implementada en esta entrega.
 
 ![Full Database Diagram](../assets/images/chapter-4/database/full-database-diagram.png)
 
@@ -215,6 +223,7 @@ Este diseño de base de datos mantiene consistencia con el modelo de dominio. Lo
 | Soporte transversal de acceso | `USERS`, `USER_SESSIONS` | `user_id`, `session_id`; FK de `USER_SESSIONS.user_id` a `USERS.user_id` | Un usuario puede tener varias sesiones; roles y permisos definen alcance operativo cuando el modelo los incluye | Acceso, sesión y alcance de operación para S1, S2 y S3 |
 | Catalog Management | `CATEGORIES`, `PRODUCTS`, `PROMOTIONS`, `PRODUCT_PROMOTIONS` | `category_id`, `product_id`, `promotion_id`; FK de `PRODUCTS.category_id` a `CATEGORIES.category_id`; FK de `PRODUCT_PROMOTIONS.product_id` a `PRODUCTS.product_id`; FK de `PRODUCT_PROMOTIONS.promotion_id` a `PROMOTIONS.promotion_id` | Una categoría agrupa productos; cada producto se identifica mediante `internal_code`; los productos pueden asociarse a promociones cuando corresponde | Catálogo, código interno, condiciones de conservación, promociones y disponibilidad comercial visible |
 | Sales | `B2B_CLIENTS`, `COMMERCIAL_CONDITIONS`, `CREDIT_WARNINGS`, `ORDERS`, `ORDER_ITEMS`, `ORDER_OBSERVATIONS` | `client_id`, `order_id`, `order_item_id`; FK de `ORDERS.client_id` a `B2B_CLIENTS.client_id`; FK de `ORDER_ITEMS.order_id` a `ORDERS.order_id`; FK de `ORDER_ITEMS.product_id` a `PRODUCTS.product_id` | Un cliente tiene condiciones comerciales; un cliente genera órdenes; una orden contiene ítems y observaciones | Solicitudes, pedidos, validación comercial, crédito y relación con cliente B2B |
+| Warehouse | `WAREHOUSES`, `INVENTORY_LOTS`, `STOCK_MOVEMENTS`, `RESERVATIONS` | `warehouse_id`, `lot_id`, `movement_id`, `reservation_id`; FK de `INVENTORY_LOTS.product_id` a `PRODUCTS.product_id`; FK de `INVENTORY_LOTS.warehouse_id` a `WAREHOUSES.warehouse_id`; FK de `STOCK_MOVEMENTS.lot_id` a `INVENTORY_LOTS.lot_id`; FK de `RESERVATIONS.lot_id` a `INVENTORY_LOTS.lot_id` | Un almacén contiene lotes; un lote registra movimientos; una reserva separa stock para una solicitud u orden validada | Stock, lote, movimiento, reserva y FEFO |
 > *Nota.* La vista consolidada integra las estructuras por bounded context y sus relaciones principales como diseño objetivo. Elaboración propia.
 
 
