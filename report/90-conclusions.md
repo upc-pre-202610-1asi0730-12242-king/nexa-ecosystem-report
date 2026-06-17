@@ -26,3 +26,5 @@ Sprint 2 consolidó la Web Application como incremento principal de TB1. El trab
 La principal contribución de TB1 fue transformar la propuesta inicial en una experiencia de uso revisable. El equipo logró conectar investigación, UX, backlog y arquitectura, manteniendo límites claros sobre aquello que seguía pendiente de implementación backend.
 
 ### Sprint 3 / AV2
+
+Sprint 3 incorporó la primera versión de Web Services y una actualización del corte frontend/backend. `nexa-platform v1.0.0` representa el release de cierre Web Services disponible para revisión AV2, con evidencia de configuración hacia PostgreSQL, Swagger/OpenAPI y despliegue controlado en Render. `nexa-webapp v2.0.0` registra el release de cierre WebApp, con evidencia de GitHub Release, commits, ramas e insights. `nexa-website v3.0.0` actualiza la Landing Page como evidencia disponible de cierre AV2 para revisión.
