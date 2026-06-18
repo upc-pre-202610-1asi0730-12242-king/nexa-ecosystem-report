@@ -16,15 +16,15 @@
 | `nexa-website v3.0.0` | **https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website/releases/tag/v3.0.0:** 
 | `nexa-webapp v2.0.0` | **https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp/releases/tag/v2.0.0:** 
 | `nexa-platform v1.0.0` | **https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform/releases/tag/v1.0.0:** 
-| `nexa-ecosystem-report v3.0.0` | **https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report/releases/tag/v3.0.0:** 
+| `nexa-ecosystem-report v3.0.0` | **https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report/releases/tag/v3.0.0:** último release documental del reporte AV2. |
 
-> *Nota:* `nexa-ecosystem-report v3.0.0` consolida el release documental AV2 del informe académico. Los repositorios `nexa-website`, `nexa-platform` y `nexa-webapp` respaldan el ecosistema implementado.
+> *Nota:* `nexa-ecosystem-report v3.0.0` consolida el último release documental AV2 del informe académico. Los repositorios `nexa-website`, `nexa-platform` y `nexa-webapp` respaldan el ecosistema implementado.
 
 ## D.3. Evidencias GitHub AV2
 
 | Evidencia AV2 | Referencia | Ruta |
 |---|---|---|
-| GitHub Release `nexa-ecosystem-report v3.0.0` | Release documental AV2 del informe académico. | <img src="../assets/images/front-matter/collaboration/report-releases/nexa-ecosystem-report-v3-0-0-release.png" alt="GitHub Release nexa-ecosystem-report v3.0.0" width="320"> |
+| GitHub Release `nexa-ecosystem-report v3.0.0` | Último release documental AV2 del informe académico. | <img src="../assets/images/front-matter/collaboration/report-releases/nexa-ecosystem-report-v3-0-0-release.png" alt="GitHub Release nexa-ecosystem-report v3.0.0" width="320"> |
 | Commits recientes AV2 `nexa-ecosystem-report` | Evidencia de consolidación documental, formato académico, version history, anexos, Sprint 3 y preparación del PDF. | <img src="../assets/images/front-matter/collaboration/report-commits/nexa-ecosystem-report-commits-av2-recent.png" alt="Commits recientes AV2 nexa-ecosystem-report" width="320"> |
 | Branches `nexa-ecosystem-report` | Evidencia de ramas `main` y `develop` para GitFlow documental. | <img src="../assets/images/front-matter/collaboration/report-branches/nexa-ecosystem-report-branches.png" alt="Branches nexa-ecosystem-report" width="320"> |
 | GitHub Insights AV2 `nexa-ecosystem-report` | Evidencia principal de colaboración del repositorio del informe. | <img src="../assets/images/front-matter/collaboration/github-insights/nexa-ecosystem-report-insights-av2.png" alt="GitHub Insights AV2 nexa-ecosystem-report" width="320"> |

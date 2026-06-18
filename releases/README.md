@@ -22,5 +22,5 @@ This folder documents the SemVer tags used by the Nexa ecosystem and academic re
 | `v2.3.0` | Report | Product architecture design and database design (Week 10) |
 | `v2.4.0` | Report | Sprint 3 and deployment evidence (Week 11) |
 | `v2.5.0` | Report | Validation interviews and outcomes (Week 12 - Tue) |
-| `v2.6.0` | Report | Final Ecosystem Report Release & Quality Audit (Week 12 - Wed) |
-| `v3.0.0` | Report | Sprint 3 consolidation, final validation interviews, ABET outcomes, and conclusions (Week 13) |
+| `v2.6.0` | Report | Quality audit and release preparation pass (Week 12 - Wed) |
+| `v3.0.0` | Report | Latest report release: Sprint 3 consolidation, final validation interviews, ABET outcomes, annexes, and conclusions (Week 13) |
