@@ -152,3 +152,10 @@ La siguiente tabla queda preparada para registrar entrevistas reales. La informa
 ### 5.3.3. Evaluaciones según heurísticas
 
 La matriz de evaluación se utilizará después de ejecutar las entrevistas y revisar la evidencia asociada. Los hallazgos, severidades y recomendaciones se completarán únicamente con base en observaciones verificables, respuestas del participante y observación del recorrido realizado. La evaluación relacionará cada hallazgo con heurísticas de usabilidad, arquitectura de información e inclusive design.
+
+Escala de severidad:
+
+- 0: Sin problema.
+- 1: Problema menor.
+- 2: Problema moderado.
+- 3: Problema crítico.
