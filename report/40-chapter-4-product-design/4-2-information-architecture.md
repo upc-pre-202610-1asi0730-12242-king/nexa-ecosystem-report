@@ -14,6 +14,9 @@ flowchart LR
     S1 -->|"valida y convierte en orden de compra"| S2
     S2 -->|"prepara despacho, evidencia y trazabilidad"| S3
     S2 -->|"actualiza disponibilidad y documentos"| S1
+```
+
+No se crea un segmento administrativo separado. Las tareas de configuración, accesos, tenant, empresa y suscripción forman parte de **S2 — Operations / Account Owner**.
 
 ### 4.2.1. Organization Systems
 
@@ -29,10 +32,13 @@ La arquitectura de información de Nexa combina distintos sistemas de organizaci
 | Cronológico | Solicitudes, órdenes, despachos y documentos por fecha | Web Application / Buyer Portal |
 | Alfabético | Clientes B2B, productos y documentos cuando aplique | Web Application / Buyer Portal |
 
+Estos sistemas no compiten entre sí. Se combinan para que cada superficie mantenga una lógica de navegación coherente con su propósito: descubrimiento comercial, operación interna o autoservicio del comprador.
+
 #### Landing Page — Organización jerárquica con apoyo matricial
 
 El sitio público presenta una arquitectura jerárquica de dos niveles. El punto de entrada es la página principal, desde la cual el visitante accede a las áreas troncales **Platform**, **Solutions**, **Company** y **FAQ**. Dentro de **Solutions**, la navegación se orienta por tipo de operador de cadena de frío: **Importers & Wholesalers**, **Distributors** y **Cold Storage Operators**.
 
+Estas páginas de Solutions no sustituyen a los segmentos S1, S2 y S3. Funcionan como páginas comerciales para explicar la propuesta de valor a empresas potencialmente contratantes, mientras que S1, S2 y S3 representan perfiles de uso dentro del ecosistema operacional de Nexa.
 
 ```mermaid
 graph TD
@@ -72,13 +78,16 @@ El Buyer Portal se organiza alrededor del flujo de abastecimiento de S3. La estr
 | Etapa | Módulo del portal | Propósito para S3 |
 |---|---|---|
 | Descubrimiento | Home, Product Catalog, Premium | Revisar productos disponibles, promociones y catálogo visible |
-La profundidad máxima es de dos niveles (`Home > Solutions > Distributors`), lo que favorece rapidez de acceso y reduce carga cognitiva. Varias páginas incluyen CTAs cruzados hacia Company, FAQ y el hub de Solutions, combinando la base jerárquica con accesos laterales que aceleran la exploración.
+| Solicitud | Request Builder, My Requests | Construir y consultar solicitudes enviadas |
+| Pedido confirmado | My Orders | Revisar órdenes de compra y estado operativo |
+| Documentación | Business Documents | Consultar documentos visibles asociados al pedido |
+| Cuenta | Profile | Revisar datos de comprador y relación con la empresa contratante |
 
 #### Route Architecture and Navigation Storytelling
 
 La arquitectura de rutas se organiza por experiencia y capacidad de negocio, agrupando autenticación, consola interna y portal comprador. Las rutas principales se documentan como rutas canónicas porque comunican mejor las capacidades actuales del producto, no como pantallas aisladas.
 
-La webapp utiliza Vue Router con hash history (necesario para despliegue en GitHub Pages sin rewrite de rutas). Las rutas se agrupan por experiencia, no por página arbitraria:
+| Superficie | Ruta principal | Segmento | Significado | Propósito |
 |---|---|---|---|---|
 | Auth | `/auth/login` | S1, S2, S3: B2B Buyer Portal | Acceso autenticado | Entrada al sistema y selección de experiencia según scope |
 | Auth | `/auth/recover` | S1, S2, S3: B2B Buyer Portal | Recuperación de acceso | Soporte para credenciales |
@@ -143,12 +152,21 @@ Para mantener la compatibilidad con enlaces y menús antiguos, el router de la a
     *   `/ops/dispatch` $\rightarrow$ redirecciona a `/ops/operations/dispatch-orders`
     *   `/ops/dispatch/:id` $\rightarrow$ redirecciona a `/ops/operations/dispatch-orders/:id`
     *   `/ops/evidence` $\rightarrow$ redirecciona a `/ops/operations/proof-of-delivery`
-| Auth | `/auth/login` | Acceso autenticado | Todos | Entrada al sistema con separación por rol |
+    *   `/ops/commercial/customer-portals` y `/ops/customer-portals` $\rightarrow$ redireccionan a `/ops/operations/customer-portals`
+    *   `/ops/reports` $\rightarrow$ redirecciona a `/ops/operations/operational-analytics`
+*   **Aliases del Buyer Portal (S3)**:
+    *   `/portal/requests` $\rightarrow$ redirecciona a `/portal/purchase-requests`
+    *   `/portal/requests/:id` $\rightarrow$ redirecciona a `/portal/purchase-requests/:id`
+    *   `/portal/orders` $\rightarrow$ redirecciona a `/portal/purchase-orders`
+    *   `/portal/orders/success` $\rightarrow$ redirecciona a `/portal/purchase-orders/success`
+    *   `/portal/orders/:id` $\rightarrow$ redirecciona a `/portal/purchase-orders/:id`
+    *   `/portal/documents` $\rightarrow$ redirecciona a `/portal/business-documents`
+    *   `/portal/catalog` $\rightarrow$ redirecciona a `/portal/product-catalog`
+    *   `/portal/catalog/:id` $\rightarrow$ redirecciona a `/portal/product-catalog/:id`
 
 ### 4.2.2. Labeling Systems
 
 El sistema de etiquetado mantiene consistencia entre superficies y usa vocabulario de dominio alineado al flujo comercial-operativo de Nexa. Las etiquetas deben comunicar acciones de negocio, no nombres técnicos internos. Cuando se usan nombres canónicos en inglés, estos se reservan para rutas, módulos o capacidades reconocibles dentro de la arquitectura del producto.
-El sistema de etiquetado mantiene consistencia entre superficies y alineación con el vocabulario del dominio.
 
 **Landing — etiquetas de navegación y conversión:**
 
@@ -167,13 +185,14 @@ El sistema de etiquetado mantiene consistencia entre superficies y alineación c
 | S2 | Dashboard operaciones, Control de inventario, Lotes, Órdenes de despacho, Evidencias de entrega, Analítica operativa, Promociones, Portales externos, Administración de empresa | Reservar stock, revisar FEFO, preparar despacho, cerrar POD, configurar empresa | Stock bajo, Stock agotado, Lote próximo a vencer, En tránsito, Entrega cerrada, Incidencia registrada |
 | S1 / S2 | Perfil | Actualizar datos de usuario | Rol, empresa, tenant, scope |
 
+**Buyer Portal — etiquetas de compra y seguimiento:**
+
 | Tipo | Ejemplos | Función |
 |---|---|---|
 | Navegación | Home, Product Catalog, Request Builder, My Requests, My Orders, Business Documents, Premium, Profile | Guiar al comprador por su flujo de abastecimiento |
 | Acciones | Add to cart, Submit Request, View detail, Back to catalog, View my orders | Convertir exploración en solicitud y seguimiento |
 | Estados | Solicitud enviada, En revisión comercial, Orden confirmada, En preparación, En tránsito, Entrega cerrada | Comunicar avance sin exponer complejidad interna |
-| Módulos del sidebar | Dashboard, Catálogo, Pedidos, Inventario, Clientes, Despacho, Reportes | Navegación funcional por dominio |
-| Acciones primarias | Nuevo pedido, Despachar, Cerrar entrega, Exportar | Operaciones de comando |
+| Datos visibles | Producto, código interno, categoría, temperatura, cantidad, total, documentos, tracking | Aumentar confianza y trazabilidad para S3 |
 
 ### 4.2.3. SEO Tags and Meta Tags
 
@@ -196,8 +215,9 @@ La implementación SEO y metadata de Nexa distingue entre el sitio público y la
 
 | Superficie | Title | Meta description | Keywords | Author | Robots | Propósito |
 |---|---|---|---|---|---|---|
-La implementación SEO en el sitio público se apoya en etiquetas `<title>`, `<meta name="description">`, `<meta name="author">` y propiedades Open Graph adaptadas por vista. El sitio no implementa `<meta name="keywords">` (estrategia basada en contenido semántico, no en keywords explícitas).
+| Web Application / Ops / Portal | Nexa — Operaciones refrigeradas | Plataforma de operaciones para distribuidoras refrigeradas: catálogo, inventario, pedidos y despacho en un solo lugar | operaciones refrigeradas, distribución cold chain, inventario, pedidos, despacho | Nexa | `noindex, nofollow` | Describir la aplicación sin indexar contenido privado |
 
+La metadata pública se define con `title`, `description`, `keywords`, `author` y descripciones Open Graph coherentes con cada página. Las rutas autenticadas se documentan con metadata descriptiva y política `noindex, nofollow` para proteger contenido privado y evitar indexación de vistas internas.
 
 ### 4.2.4. Searching Systems
 
@@ -210,14 +230,13 @@ El sistema de búsqueda de Nexa se plantea como búsqueda contextual por módulo
 | Web Application S2 | Inventario, lotes, reservas, órdenes de despacho, evidencias y documentos operativos | Lote, vencimiento, stock, responsable, fecha, estado de despacho, incidencia, tipo de documento | Tablas densas, cards de stock, listas compactas, badges de alerta y detalle operativo | S2 |
 | Buyer Portal S3 | Catálogo por nombre comercial o código interno, solicitudes, órdenes, documentos y tracking | Categoría, disponibilidad, promoción, fecha, estado de solicitud, estado de pago, tipo de documento | Cards de producto, listas compactas, timelines de tracking, documentos visibles y estados vacíos con mensaje claro | S3 |
 
-**Landing**: no incorpora motor de búsqueda. El volumen de páginas es reducido y el descubrimiento se resuelve con navegación directa (dropdown de Solutions, enlaces cruzados, sidebar de FAQ con categorías).
+Cuando una búsqueda no devuelve resultados, la interfaz debe comunicar el estado vacío con un mensaje específico y una acción viable. Por ejemplo, el comprador puede volver al catálogo, la coordinadora comercial puede limpiar filtros o el responsable operativo puede revisar otro rango de fechas.
 
 ### 4.2.5. Navigation Systems
 
 #### Landing — navegación global + contextual
 
 El sitio público utiliza navegación global persistente con logo, enlaces troncales, dropdown de Solutions, selector de idioma y CTAs. Las páginas de Solutions funcionan como navegación contextual para visitantes que desean entender la propuesta según su tipo de operación. FAQ utiliza agrupación por temas para facilitar la exploración de preguntas frecuentes. En móvil, el menú colapsado mantiene acceso a las rutas principales sin alterar la jerarquía del sitio.
-El sitio público utiliza una navbar persistente (logo, enlaces troncales, dropdown de Solutions, selector de idioma, CTA). Las subpáginas de Solutions incorporan breadcrumbs (`Soluciones / Distribuidores`). La página FAQ usa sidebar con anclas internas. En móvil, un menú colapsado con overlay mantiene acceso a todas las rutas.
 
 | Capa | Componente | Función |
 |---|---|---|
@@ -258,5 +277,10 @@ flowchart LR
 |---|---|---|
 | 1 | Home | Presentar resumen y accesos frecuentes |
 | 2 | Product Catalog | Permitir búsqueda y filtrado de productos |
-| Global | `nav.navbar` | Acceso a áreas principales |
-| Contextual | Breadcrumbs en Solutions | Orientación dentro de la rama |
+| 3 | Product Detail | Revisar información del producto antes de solicitar |
+| 4 | Request Builder | Confirmar cantidades, datos de entrega y solicitud |
+| 5 | My Requests | Revisar solicitudes enviadas y su estado |
+| 6 | My Orders | Consultar órdenes confirmadas |
+| 7 | Order Detail / Business Documents | Revisar tracking, documentos visibles y cierre |
+
+Esta navegación refuerza el flujo transversal de Nexa: **S3 solicita**, **S1 valida y convierte**, **S2 ejecuta despacho y evidencia**, y **S3 obtiene visibilidad del estado final**.
