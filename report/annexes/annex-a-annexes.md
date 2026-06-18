@@ -19,19 +19,19 @@
 | Video About-the-Product AV2 — YouTube URL, si aplica | Enlace público o incrustable solo si el equipo decide usar YouTube para la Landing Page. | Permite referenciar el video desde la Landing Page cuando exista publicación verificada. | Pendiente de publicación, si aplica. |
 | Captura Video About-the-Product AV2 | Captura o evidencia visual del video publicado. | Respalda la publicación del Video About-the-Product AV2 dentro de la sección 5.4. | Pendiente de captura real. |
 | Testimonio positivo incluido en Video About-the-Product | Registro textual o audiovisual de un testimonio positivo validado por usuario. | Debe indicar usuario, segmento y referencia a entrevista de validación cuando exista evidencia real. | Pendiente de validación real. |
-| Prototype Navigation / Product Navigation | Video de navegación esperado en formato `.mp4`, con recorrido claro por las pantallas del prototipo o producto. | Debe mostrar la continuidad de navegación entre pantallas, flujos principales y estados relevantes del producto. | No se registra enlace final en este anexo. Se mantiene como requisito de integración para la evidencia de prototipo/producto cuando el equipo publique el video correspondiente. |
+| Video About-the-Team AV2 — Microsoft Stream URL | Video en formato `.mp4`, con testimonios de integrantes y resumen del proceso colaborativo. | Presenta a los integrantes de KING, sus roles, la organización general del trabajo, el logro de Student Outcome 5 y el proceso de colaboración. | Pendiente de publicación. |
 
 > *Nota:* La tabla conserva los enlaces disponibles y mantiene como pendientes controlados los enlaces que dependen de evidencia real antes del cierre completo de AV2. No se agregan URLs, videos ni evidencias que no hayan sido publicados por el equipo.
 
 ## A.2. Evidencia de Needfinding
 
 Como respaldo de la fase de levantamiento de requisitos e investigación de campo, se adjunta el video consolidado con las sesiones de entrevistas realizadas a los segmentos objetivo.
+Como respaldo de la fase de levantamiento de requisitos e investigación de campo (Capítulo 2), se adjunta el video consolidado con las sesiones de entrevistas realizadas a los segmentos objetivo.
 
 | Artefacto | Enlace de Evidencia |
 |---|---|
+| Entrevistas Consolidadas | [Video de Entrevistas Juntas (Stream)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCQOBuwf0GTTbCMpL2XzFXzAacXrD22oEX1Gat-emtg9u4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=IeXiWj) |
 
-## A.3. Enlaces maestros de soporte
-## A.3. Enlaces Maestros de Soporte
 
 El siguiente cuadro concentra los enlaces a las plataformas colaborativas y repositorios utilizados para gestionar el ciclo de vida de Nexa.
 
@@ -49,6 +49,7 @@ El siguiente cuadro concentra los enlaces a las plataformas colaborativas y repo
 | Web Services / Platform API AV2 | [https://nexa-platform-api.onrender.com](https://nexa-platform-api.onrender.com) |
 | :--- | :--- |
 
+## A.4. Releases auditados para AV2
 
 | Artefacto | Enlace |
 |---|---|
@@ -78,7 +79,7 @@ El siguiente cuadro concentra los enlaces a las plataformas colaborativas y repo
 
 ### Sprint 2
 
-![Evidencia de coordinación grupal Sprint2](../assets/images/front-matter/collaboration/team-collaboration-metting-2.png)
+![Evidencia de coordinación grupal Sprint 2](../assets/images/front-matter/collaboration/team-collaboration-metting-2.png)
 
 > *Nota:* Figura. Reunión de coordinación del equipo KING durante Sprint 2. Elaboración propia.
 
@@ -122,3 +123,5 @@ La siguiente tabla centraliza las evidencias visuales disponibles para el corte 
 | Actualización de `02-version-history.md` | Version History actualizado con `nexa-webapp v2.0.0` y cierre técnico de versiones Website/Platform/WebApp para AV2. | `report/front-matter/02-version-history.md` | Incorporado |
 | Actualización final de conclusiones | Conclusiones actualizadas con `nexa-webapp v2.0.0` y pendientes no técnicos delimitados. | Secciones de conclusiones del reporte | Incorporado |
 | Captura Video About-the-Product AV2 | Pendiente de captura real del video publicado. | Pendiente de ruta o anexo cuando exista captura real | Pendiente de captura |
+| Captura Video About-the-Team AV2 | Pendiente de captura real del video publicado. | Pendiente de ruta o anexo cuando exista captura real | Pendiente de captura |
+| Captura Video de navegación Sprint 3 / AV2 | Captura real incorporada del video publicado; también respalda la evidencia de prototyping WebApp Sprint 3. | `report/assets/images/chapter-5/sprint-evidence/video/sprint-3-navigation-video-screenshot.png` | Incorporado |
