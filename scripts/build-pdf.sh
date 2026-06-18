@@ -5,6 +5,7 @@ REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 REPORT_DIR="$REPO_ROOT/report"
 DIST_DIR="$REPO_ROOT/dist"
 COMBINED="$DIST_DIR/nexa-ecosystem-report-full.md"
+OUTPUT="$DIST_DIR/nexa-ecosystem-report.pdf"
 
 mkdir -p "$DIST_DIR"
 
@@ -27,6 +28,7 @@ SOURCES=(
   50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-2-sprint-2.md
   50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-3-sprint-3.md
   50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md
+  50-chapter-5-implementation-validation-deployment/5-4-video-about-the-product.md
   90-conclusions.md
   99-bibliography.md
   $(find annexes -name "*.md" | sort)

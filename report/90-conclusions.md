@@ -1,5 +1,6 @@
 # Conclusiones
 
+## Conclusiones generales
 
 El proyecto Nexa evolucionó de manera incremental desde AV1 hasta AV2, manteniendo una relación directa entre investigación, diseño, implementación y documentación académica. En AV1 se estableció la base conceptual del producto: el problema de coordinación en la cadena de frío B2B, los segmentos objetivo, el backlog inicial, la Landing Page y la estructura Docs-as-Code del reporte. Esta primera etapa permitió convertir una oportunidad de negocio en una propuesta documentada con trazabilidad.
 
@@ -28,3 +29,5 @@ La principal contribución de TB1 fue transformar la propuesta inicial en una ex
 ### Sprint 3 / AV2
 
 Sprint 3 incorporó la primera versión de Web Services y una actualización del corte frontend/backend. `nexa-platform v1.0.0` representa el release de cierre Web Services disponible para revisión AV2, con evidencia de configuración hacia PostgreSQL, Swagger/OpenAPI y despliegue controlado en Render. `nexa-webapp v2.0.0` registra el release de cierre WebApp, con evidencia de GitHub Release, commits, ramas e insights. `nexa-website v3.0.0` actualiza la Landing Page como evidencia disponible de cierre AV2 para revisión.
+
+El resultado del Sprint 3 es una base más integrada entre Web Application, Platform API y documentación, con trazabilidad de Jira, navegación/prototyping, wireflow/user flow S3, Swagger/OpenAPI, releases disponibles y despliegues académicos. Sin embargo, se mantienen pendientes las validaciones necesarias para cerrar evidencia completa: entrevistas de validación, evaluaciones heurísticas, videos About-the-Product y About-the-Team, coordinación Sprint 3 / AV2 y revisión final de evidencias. Esta delimitación conserva rigor académico y evita presentar como concluido aquello que todavía requiere evidencia verificable.
