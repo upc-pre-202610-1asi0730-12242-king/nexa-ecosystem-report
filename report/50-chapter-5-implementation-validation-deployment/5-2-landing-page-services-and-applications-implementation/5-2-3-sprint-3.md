@@ -392,3 +392,21 @@ El rastro de releases de WebApp se interpreta de forma incremental: `v1.7.1` que
 La colaboración del Sprint 3 se estructuró por bounded context, preparación de release y responsabilidades transversales de frontend/backend. Esta distribución permitió separar el avance de Catalog Management, Sales y Warehouse, mientras se mantenía una base compartida para configuración de API, documentación, Shared Kernel, repositorios, Unit of Work, guía de ejecución y preparación de la primera Web Services API.
 
 El flujo de trabajo permitió organizar responsabilidades backend alrededor de ramas por bounded context y capa, incluyendo `main`, `develop`, commits de persistencia/PostgreSQL, documentación de repositorio, seguridad, comunidad y el tag `v1.0.0` como release disponible para revisión AV2.
+
+![Tablero Sprint 3 en Jira](../../assets/images/chapter-5/sprint-evidence/jira/sprint-3-board-jira.png)
+
+> *Nota.* El tablero de Jira muestra la distribución del trabajo del Sprint 3 por estados del flujo de trabajo, permitiendo observar el seguimiento operativo de las actividades del incremento AV2. Elaboración propia.
+
+![Seguimiento de tareas Sprint 3 en Jira](../../assets/images/chapter-5/sprint-evidence/jira/sprint-3-task-status-jira.png)
+
+> *Nota.* La vista de seguimiento de tareas muestra responsables, informadores, prioridad, estado, resolución y fechas de actualización, reforzando la trazabilidad del trabajo realizado durante Sprint 3. Elaboración propia.
+
+| Frente | Organización del trabajo | Resultado esperado |
+|---|---|---|
+| Catalog Management | Ownership de R0obxdnt-bit sobre `CatalogItem` y `/api/v1/catalog-items` | Recurso inicial para catálogo de productos refrigerados |
+| Sales | Liderazgo de DiegoS284 sobre `Order`, `/api/v1/orders`, bootstrapping de API, documentación backend y release hygiene | Recurso inicial para órdenes comerciales B2B y coordinación técnica transversal |
+| Warehouse | Ownership de JoaquinVerde115 sobre `InventoryItem` y `/api/v1/inventory-items` | Recurso inicial para disponibilidad e inventario |
+| Shared foundation | Coordinación sobre Shared Kernel, repositories, Unit of Work, EF Core/PostgreSQL y Swagger/OpenAPI | Base técnica común para evolución backend |
+| GitFlow/release hygiene | Separación por ramas, consolidación de `nexa-platform v1.0.0`, `nexa-website v3.0.0` y `nexa-webapp v2.0.0` como releases disponibles para revisión AV2 | Trazabilidad del incremento sin declarar operación productiva |
+
+La conclusión del Sprint 3 es que Nexa establece su primer corte AV2 frontend/backend, documenta endpoints HTTP estructurados en C# y prioriza tres flujos core de integración asociados a Catalog Management, Warehouse y Sales. El incremento reduce la dependencia conceptual de servicios simulados, registra WebApp y Platform API en Render, y documenta la evolución hacia PostgreSQL para el despliegue controlado. El alcance conserva límites explícitos: no declara operación productiva, integración total con toda la Web Application, reemplazo total de servicios simulados, autenticación productiva completa ni validación cerrada con usuarios.
