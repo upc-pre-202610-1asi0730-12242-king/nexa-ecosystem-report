@@ -223,7 +223,7 @@ Figura. Tablero Jira del Sprint 3 / AV2 utilizado como evidencia de planificaci�
 |---|---|---|
 | Sprint 1 / AV1 | Construcción inicial del informe, definición del problema, segmentos, Lean UX, requisitos, diseño inicial y Landing Page. | Reporte base estructurado, Landing Page documentada, evidencias iniciales de commits y coordinación. |
 | Sprint 2 / TB1 | Consolidación de la Web Application frontend, actualización de UX/UI, mejora del Product Backlog, evidencias de repositorios y revisión integral del reporte. | Reporte ampliado, Web Application documentada, evidencias de commits, Jira y coordinación del equipo. |
-| Sprint 3 / AV2 | Consolidación de Web Services, actualización de Web Application, despliegues Render, migración/configuración hacia PostgreSQL y revisión documental del corte AV2. | Reporte actualizado para AV2, despliegues controlados documentados, pendientes no técnicos delimitados y trazabilidad entre colaboración, implementación y validación. |
+| Sprint 3 / AV2 | Consolidación de Web Services, actualización de Web Application, despliegues Render, migración/configuración hacia PostgreSQL y revisión documental del corte AV2. | Reporte actualizado para AV2, despliegues controlados documentados, límites de alcance delimitados y trazabilidad entre colaboración, implementación y validación. |
 
 ### Evidencias de coordinación y trabajo en equipo
 

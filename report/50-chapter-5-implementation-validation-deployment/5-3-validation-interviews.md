@@ -141,7 +141,7 @@ Esta tabla funciona como marco de observación para el entrevistador. Durante la
 
 ### 5.3.2. Registro de Entrevistas
 
-La siguiente tabla queda preparada para registrar entrevistas reales. La información se completará únicamente cuando existan participantes, evidencia audiovisual y autorización de uso dentro del reporte.
+La siguiente tabla registra las entrevistas de validación AV2 disponibles para el cierre documental. La información se limita a participantes, evidencia audiovisual y autorización de uso incorporadas al reporte.
 
 | Código | Nombres y apellidos     | Edad | Distrito   | Segmento | Screenshot del video | URL Microsoft Stream | Timing de inicio | Duración | Resumen descriptivo                                                             |
 | --- |-------------------------|------|------------| --- | --- | --- |------------------|----------|---------------------------------------------------------------------------------|
@@ -149,7 +149,7 @@ La siguiente tabla queda preparada para registrar entrevistas reales. La informa
 
 ### 5.3.3. Evaluaciones según heurísticas
 
-La matriz de evaluación se utilizará después de ejecutar las entrevistas y revisar la evidencia asociada. Los hallazgos, severidades y recomendaciones se completarán únicamente con base en observaciones verificables, respuestas del participante y observación del recorrido realizado. La evaluación relacionará cada hallazgo con heurísticas de usabilidad, arquitectura de información e inclusive design.
+La matriz de evaluación relaciona los hallazgos de la validación AV2 con heurísticas de usabilidad, arquitectura de información e inclusive design. Las severidades y recomendaciones se documentan sobre observaciones verificables del recorrido revisado.
 
 Escala de severidad:
 
@@ -158,7 +158,7 @@ Escala de severidad:
 - 2: Problema moderado.
 - 3: Problema crítico.
 
-| Heurística | Criterio de evaluación en Nexa | Evidencia esperada | Hallazgo | Severidad | Recomendación |
+| Heurística | Criterio de evaluación en Nexa | Evidencia revisada | Hallazgo | Severidad | Recomendación |
 | --- | --- |----| --- |-----| --- |
 | Visibilidad del estado del sistema | El usuario reconoce estados de solicitud, orden, despacho, pago o inventario según su rol | Se registra conformidad visual del participante mediante la observación directa del flujo de tracking. El usuario verbaliza comprender en qué etapa se encuentra su requerimiento sin necesidad de asistencia externa. | El usuario identificó con precisión y en tiempo real el estado de su solicitud y el progreso del tracking sin registrar dudas. | 0   | Mantener el diseño actual de etiquetas y líneas de tiempo. |
 | Correspondencia entre sistema y mundo real | Los términos comerciales, operativos y de compra resultan comprensibles para cada segmento | Captura del diálogo interactivo donde el usuario valida la terminología | Toda la terminología utilizada fue natural y alineada con el lenguaje diario del participante. | 0 | Mantener el glosario y vocabulario técnico actual del sistema. |
@@ -168,8 +168,8 @@ Escala de severidad:
 | Reconocimiento antes que recuerdo | La interfaz muestra información suficiente para decidir sin depender de memoria externa | El flujo documenta que el usuario dispone de todos los datos críticos en pantalla, eliminando la necesidad de recordar precios o códigos previos. | La información crítica (stock, precios, nombres) se mantuvo visible en todo momento, evitando que el usuario deba memorizar datos. | 0 | Conservar la disposición de datos en las fichas de producto y carrito. |
 | Flexibilidad y eficiencia de uso | El flujo permite completar tareas frecuentes con filtros, accesos directos o vistas relevantes | Registro secuencial de la aplicación de filtros en el catálogo. El usuario completó la selección de ítems recurrentes de manera ágil, validando los accesos rápidos diseñados para compradores frecuentes | El uso de filtros avanzados y la estructura del catálogo permitieron realizar la búsqueda y el pedido de forma ágil y rápida. | 0 | Mantener la arquitectura de la información y la jerarquía de los filtros. |
 | Diseño estético y minimalista | Las pantallas priorizan información relevante sin sobrecargar decisiones comerciales, operativas o de compra | Las notas de observación confirman una respuesta positiva hacia la limpieza visual, destacando que el espacio en blanco reduce la fatiga cognitiva. | El participante destacó positivamente la limpieza visual de la interfaz, manifestando que no hay elementos distractores. | 0 | Conservar la estética limpia, el uso de espacios en blanco y el minimalismo actual. |
-| Ayuda para reconocer, diagnosticar y recuperarse de errores | El usuario entiende mensajes, incidencias o estados problemáticos y cómo resolverlos | Despliegue de mensajes informativos ante campos vacíos o formatos erróneos.Gracias al lenguaje claro y humano del sistema. | Ante simulaciones de campos incompletos, el usuario comprendió inmediatamente el mensaje de error contextual y lo solucionó. | 0 | Mantener el formato instructivo y claro de los mensajes de validación. |
-| Ayuda y documentación | El flujo ofrece soporte casi suficiente para comprender acciones, documentos, estados y próximos pasos | Registro del cierre de la entrevista donde se consulta la necesidad de soporte. El párrafo de control concluye que la autoexplicación de la interfaz hace  casi innecesaria la consulta de manuales o guías anexas. pero sugiere que una indicación visual para volver al catálogo le habría brindado mayor tranquilidad para continuar explorando sin temor a perder su avance.  | El usuario manifiesta que durante el trámite de compra e ingreso de datos, echa en falta un botón directo o asistencia visual para regresar de forma ágil a la tienda principal en caso de querer agregar más productos a último momento, lo que genera una ligera duda sobre si se perderá el progreso de su carrito actual. | 1   | Evaluar la adición de un enlace sutil de retorno o configurar el sistema para que, si el usuario decide consultar la tienda, esta se abra en una ventana aparte, garantizando así que no se pierdan los cambios realizados en el carrito de compras. |
+| Ayuda para reconocer, diagnosticar y recuperarse de errores | El usuario entiende mensajes, incidencias o estados problemáticos y cómo resolverlos | Despliegue de mensajes informativos ante campos vacíos o formatos erróneos, con lenguaje claro y contextual. | Ante simulaciones de campos incompletos, el usuario comprendió inmediatamente el mensaje de error contextual y lo solucionó. | 0 | Mantener el formato instructivo y claro de los mensajes de validación. |
+| Ayuda y documentación | El flujo ofrece soporte suficiente para comprender acciones, documentos, estados y próximos pasos | Registro del cierre de la entrevista, donde el participante indicó que la interfaz se entiende sin manuales, pero sugirió una indicación visual para volver al catálogo sin perder el avance. | El usuario echa en falta un botón directo o asistencia visual para regresar a la tienda principal cuando desea agregar más productos durante el trámite de compra. | 1 | Evaluar la adición de un enlace sutil de retorno o configurar el sistema para que, si el usuario decide consultar la tienda, esta se abra en una ventana aparte y conserve el carrito. |
 
 #### DESCRIPCIÓN DE PROBLEMA:
 
