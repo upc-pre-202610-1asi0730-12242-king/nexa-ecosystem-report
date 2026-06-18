@@ -117,7 +117,12 @@
   <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3.3. Evaluaciones según heurísticas</a></td></tr>
   <tr><td><a href="../50-chapter-5-implementation-validation-deployment/5-4-video-about-the-product.md">5.4. Video About-the-Product</a></td></tr>
   <tr><td><b><a href="../90-conclusions.md">Conclusiones</a></b></td></tr>
-  <tr><td><a href="../annexes/annex-a-annexes.md">Video About-the-Team</a></td></tr>
   <tr><td><b><a href="../99-bibliography.md">Bibliografía</a></b></td></tr>
   <tr><td><b><a href="../annexes/annex-a-annexes.md">Anexos</a></b></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../annexes/annex-a-annexes.md">Annex A: Annexes Index</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../annexes/annex-b-video-evidence.md">Annex B: Video Evidence</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../annexes/annex-c-validation-evidence.md">Annex C: Validation Evidence</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../annexes/annex-d-github-repository-evidence.md">Annex D: GitHub Repository Evidence</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../annexes/annex-e-deployment-and-services-evidence.md">Annex E: Deployment and Services Evidence</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../annexes/annex-f-av2-pending-controlled-evidence.md">Annex F: AV2 Pending and Controlled Evidence</a></td></tr>
 </table>

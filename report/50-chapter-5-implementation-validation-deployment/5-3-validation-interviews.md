@@ -57,8 +57,6 @@ Esta tabla funciona como marco de observación para el entrevistador. Durante la
 9. ¿La información visible ayuda a reducir llamadas, correos o explicaciones adicionales?
 10. ¿Necesitarías una explicación adicional para entender cómo una solicitud comercial pasa luego a validación u orden?
 
-**Evidencia esperada.** Registro de sesión, notas de observación, respuestas del participante, captura autorizada del recorrido revisado, screenshot del video si aplica, URL de Microsoft Stream cuando exista y anexo de respaldo cuando esté disponible.
-
 #### Diseño de entrevista S2: Operations / Account Owner
 
 **Objetivo de la sesión.** Evaluar si el usuario operativo comprende cómo Nexa apoya la coordinación de disponibilidad, reserva, despacho y trazabilidad de una orden.
@@ -95,8 +93,6 @@ Esta tabla funciona como marco de observación para el entrevistador. Durante la
 8. ¿La pantalla se siente ordenada o hay demasiada información al mismo tiempo?
 9. Si aparece un problema, como stock bajo, vencimiento cercano o una incidencia de despacho, ¿queda claro qué deberías hacer?
 10. ¿Necesitarías una guía, glosario o explicación adicional para usar esta parte del sistema con confianza?
-
-**Evidencia esperada.** Registro de sesión, notas de observación, respuestas del participante, captura autorizada del recorrido revisado, screenshot del video si aplica, URL de Microsoft Stream cuando exista y anexo de respaldo cuando esté disponible.
 
 #### Diseño de entrevista S3: B2B Buyer Portal
 
@@ -137,17 +133,19 @@ Esta tabla funciona como marco de observación para el entrevistador. Durante la
 9. ¿El portal sería rápido de usar para un comprador frecuente y comprensible para alguien nuevo?
 10. ¿Qué ayuda, explicación o información adicional necesitarías para usar el portal con confianza?
 
-**Evidencia esperada.** Registro de sesión, notas de observación, respuestas del participante, captura autorizada del recorrido revisado, screenshot del video si aplica, URL de Microsoft Stream cuando exista y anexo de respaldo cuando esté disponible.
+*Evidencia de entrevista: Alonso Alcántara*
+
+![Alonso](../assets/images/chapter-5/interviews/alonso-alcantara.png)
+
+> *Nota:* Captura de sesión de entrevista. Elaboración propia.
 
 ### 5.3.2. Registro de Entrevistas
 
 La siguiente tabla queda preparada para registrar entrevistas reales. La información se completará únicamente cuando existan participantes, evidencia audiovisual y autorización de uso dentro del reporte.
 
-| Código | Nombres y apellidos | Edad | Distrito | Segmento | Screenshot del video | URL Microsoft Stream | Timing de inicio | Duración | Resumen descriptivo | Estado |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| VI-S1-01 | Por registrar | Por registrar | Por registrar | S1 | Por registrar | Por registrar | Por registrar | Por registrar | Por registrar | Pendiente |
-| VI-S2-01 | Por registrar | Por registrar | Por registrar | S2 | Por registrar | Por registrar | Por registrar | Por registrar | Por registrar | Pendiente |
-| VI-S3-01 | Por registrar | Por registrar | Por registrar | S3 | Por registrar | Por registrar | Por registrar | Por registrar | Por registrar | Pendiente |
+| Código | Nombres y apellidos     | Edad | Distrito   | Segmento | Screenshot del video | URL Microsoft Stream | Timing de inicio | Duración | Resumen descriptivo                                                             |
+| --- |-------------------------|------|------------| --- | --- | --- |------------------|----------|---------------------------------------------------------------------------------|
+| VI-S3-01 | Alonso Alcántara Cerdán | 19   | San Isidro | S3 | ![Alonso](../assets/images/chapter-5/interviews/alonso-alcantara.png)| https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416289_upc_edu_pe/IQCl_8cJxwFxQJ2j-SPApYDZAZWDTrZYgNXN_r3o5jYW9bE?e=TLhRWn | 0:00             | 3:43     | Se mostró la aplicación a un hijo de un importador en el distrito de San Isidro |
 
 ### 5.3.3. Evaluaciones según heurísticas
 
@@ -161,16 +159,28 @@ Escala de severidad:
 - 3: Problema crítico.
 
 | Heurística | Criterio de evaluación en Nexa | Evidencia esperada | Hallazgo | Severidad | Recomendación |
-| --- | --- | --- | --- | --- | --- |
-| Visibilidad del estado del sistema | El usuario reconoce estados de solicitud, orden, despacho, pago o inventario según su rol | Comentarios del participante y capturas del flujo observado | [Completar después de entrevistas] | [Completar después de entrevistas] | [Completar después de entrevistas] |
-| Correspondencia entre sistema y mundo real | Los términos comerciales, operativos y de compra resultan comprensibles para cada segmento | Respuestas sobre significado de estados, documentos, lotes y solicitudes | [Completar después de entrevistas] | [Completar después de entrevistas] | [Completar después de entrevistas] |
-| Control y libertad del usuario | El usuario identifica cómo revisar, ajustar, volver o cancelar una acción dentro del flujo mostrado | Observación de navegación y comentarios sobre reversibilidad | [Completar después de entrevistas] | [Completar después de entrevistas] | [Completar después de entrevistas] |
-| Consistencia y estándares | La interfaz mantiene nombres, acciones, estados y patrones visuales coherentes entre pantallas | Observación de consistencia entre Landing Page, portal y módulos internos | [Completar después de entrevistas] | [Completar después de entrevistas] | [Completar después de entrevistas] |
-| Prevención de errores | El flujo reduce errores antes de validar solicitudes, reservar inventario, enviar solicitudes o actualizar despachos | Comentarios sobre confirmaciones, resúmenes, filtros y validaciones visibles | [Completar después de entrevistas] | [Completar después de entrevistas] | [Completar después de entrevistas] |
-| Reconocimiento antes que recuerdo | La interfaz muestra información suficiente para decidir sin depender de memoria externa | Observación de uso de fichas, resúmenes, estados, indicadores y documentos | [Completar después de entrevistas] | [Completar después de entrevistas] | [Completar después de entrevistas] |
-| Flexibilidad y eficiencia de uso | El flujo permite completar tareas frecuentes con filtros, accesos directos o vistas relevantes | Comentarios sobre rapidez, pasos necesarios y prioridades visibles | [Completar después de entrevistas] | [Completar después de entrevistas] | [Completar después de entrevistas] |
-| Diseño estético y minimalista | Las pantallas priorizan información relevante sin sobrecargar decisiones comerciales, operativas o de compra | Observación de claridad visual y comentarios sobre densidad de información | [Completar después de entrevistas] | [Completar después de entrevistas] | [Completar después de entrevistas] |
-| Ayuda para reconocer, diagnosticar y recuperarse de errores | El usuario entiende mensajes, incidencias o estados problemáticos y cómo resolverlos | Comentarios sobre errores, incidencias, stock bajo, vencimientos o datos incompletos | [Completar después de entrevistas] | [Completar después de entrevistas] | [Completar después de entrevistas] |
-| Ayuda y documentación | El flujo ofrece soporte suficiente para comprender acciones, documentos, estados y próximos pasos | Respuestas sobre necesidad de ayuda, glosario, guía o documentación contextual | [Completar después de entrevistas] | [Completar después de entrevistas] | [Completar después de entrevistas] |
+| --- | --- |----| --- |-----| --- |
+| Visibilidad del estado del sistema | El usuario reconoce estados de solicitud, orden, despacho, pago o inventario según su rol | Se registra conformidad visual del participante mediante la observación directa del flujo de tracking. El usuario verbaliza comprender en qué etapa se encuentra su requerimiento sin necesidad de asistencia externa. | El usuario identificó con precisión y en tiempo real el estado de su solicitud y el progreso del tracking sin registrar dudas. | 0   | Mantener el diseño actual de etiquetas y líneas de tiempo. |
+| Correspondencia entre sistema y mundo real | Los términos comerciales, operativos y de compra resultan comprensibles para cada segmento | Captura del diálogo interactivo donde el usuario valida la terminología | Toda la terminología utilizada fue natural y alineada con el lenguaje diario del participante. | 0 | Mantener el glosario y vocabulario técnico actual del sistema. |
+| Control y libertad del usuario | El usuario identifica cómo revisar, ajustar, volver o cancelar una acción dentro del flujo mostrado | Se navegó en reversa de forma autónoma, demostrando que la interfaz otorga control total sobre sus acciones comerciales | El participante logró modificar cantidades, regresar a pantallas anteriores y cancelar acciones de manera fluida y autónoma. | 0 | Mantener los flujos de navegación y botones de salida/retorno vigentes. |
+| Consistencia y estándares | La interfaz mantiene nombres, acciones, estados y patrones visuales coherentes entre pantallas | Comparativa visual entre la interfaz de la Landing Page y los módulos internos del portal. El análisis del recorrido demuestra la homogeneidad en el uso de tipografías, botones de acción y distribución de menús. | Se validó una consistencia total en los patrones de diseño, colores de botones y nomenclatura entre la Landing y la app web. | 0 | Preservar el sistema de diseño (Design System) actual de Nexa. |
+| Prevención de errores | El flujo reduce errores antes de validar solicitudes, reservar inventario, enviar solicitudes o actualizar despachos | Se constata mediante la interacción guiada que el sistema bloquea activamente posibles acciones accidentales del usuario. | Las pantallas de resumen y los modales de confirmación funcionaron eficazmente, evitando envíos accidentales o erróneos. | 0 | Mantener los mecanismos y alertas de confirmación previa al envío. |
+| Reconocimiento antes que recuerdo | La interfaz muestra información suficiente para decidir sin depender de memoria externa | El flujo documenta que el usuario dispone de todos los datos críticos en pantalla, eliminando la necesidad de recordar precios o códigos previos. | La información crítica (stock, precios, nombres) se mantuvo visible en todo momento, evitando que el usuario deba memorizar datos. | 0 | Conservar la disposición de datos en las fichas de producto y carrito. |
+| Flexibilidad y eficiencia de uso | El flujo permite completar tareas frecuentes con filtros, accesos directos o vistas relevantes | Registro secuencial de la aplicación de filtros en el catálogo. El usuario completó la selección de ítems recurrentes de manera ágil, validando los accesos rápidos diseñados para compradores frecuentes | El uso de filtros avanzados y la estructura del catálogo permitieron realizar la búsqueda y el pedido de forma ágil y rápida. | 0 | Mantener la arquitectura de la información y la jerarquía de los filtros. |
+| Diseño estético y minimalista | Las pantallas priorizan información relevante sin sobrecargar decisiones comerciales, operativas o de compra | Las notas de observación confirman una respuesta positiva hacia la limpieza visual, destacando que el espacio en blanco reduce la fatiga cognitiva. | El participante destacó positivamente la limpieza visual de la interfaz, manifestando que no hay elementos distractores. | 0 | Conservar la estética limpia, el uso de espacios en blanco y el minimalismo actual. |
+| Ayuda para reconocer, diagnosticar y recuperarse de errores | El usuario entiende mensajes, incidencias o estados problemáticos y cómo resolverlos | Despliegue de mensajes informativos ante campos vacíos o formatos erróneos.Gracias al lenguaje claro y humano del sistema. | Ante simulaciones de campos incompletos, el usuario comprendió inmediatamente el mensaje de error contextual y lo solucionó. | 0 | Mantener el formato instructivo y claro de los mensajes de validación. |
+| Ayuda y documentación | El flujo ofrece soporte casi suficiente para comprender acciones, documentos, estados y próximos pasos | Registro del cierre de la entrevista donde se consulta la necesidad de soporte. El párrafo de control concluye que la autoexplicación de la interfaz hace  casi innecesaria la consulta de manuales o guías anexas. pero sugiere que una indicación visual para volver al catálogo le habría brindado mayor tranquilidad para continuar explorando sin temor a perder su avance.  | El usuario manifiesta que durante el trámite de compra e ingreso de datos, echa en falta un botón directo o asistencia visual para regresar de forma ágil a la tienda principal en caso de querer agregar más productos a último momento, lo que genera una ligera duda sobre si se perderá el progreso de su carrito actual. | 1   | Evaluar la adición de un enlace sutil de retorno o configurar el sistema para que, si el usuario decide consultar la tienda, esta se abra en una ventana aparte, garantizando así que no se pierdan los cambios realizados en el carrito de compras. |
 
-La evaluación de hallazgos se completará cuando existan entrevistas registradas y evidencia verificable asociada a cada segmento. Hasta ese momento, esta matriz funciona como instrumento académico de preparación y no como resultado de validación ejecutada.
+#### DESCRIPCIÓN DE PROBLEMA:
+
+**Problema #1:** No hay un control visual que permita regresar a la tienda durante el trámite de compra 
+
+**Severidad:** 1
+
+**Heurística Violada:** Usabilidad - Libertad y control del usuario 
+
+**Problema:** Al momento de ingresar nuestros datos, no podemos regresar a la tienda en caso de que así se requiera. Una vez el cliente pase al trámite de compra, en caso de que este quiera regresar a la tienda, no hay un botón que lo envíe al inicio de la web, lo cual nos obliga a efectuar el trámite y al momento de elegir más productos, realizar otro, incrementándose así la cantidad de esfuerzo del usuario.
+
+![Alonso](../assets/images/chapter-5/interviews/alonso-alcantara.png)
+
+**Recomendación:** La más práctica es que al momento en que queramos realizar dicho trámite, el navegador lo abra en una ventana aparte para no perder los cambios realizados en nuestro carrito de compras. 

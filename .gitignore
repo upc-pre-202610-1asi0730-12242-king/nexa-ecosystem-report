@@ -4,6 +4,7 @@ reu screanshots/
 commits report/
 commits website/
 .DS_Store
+.idea/
 
 # PDF build output
 dist/
