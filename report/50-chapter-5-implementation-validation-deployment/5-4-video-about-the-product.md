@@ -43,3 +43,13 @@ El siguiente guion organiza el contenido por bloques estimados. Los tiempos son 
 | Evidencia visual | [Completar con captura del video publicado] |
 
 ### 5.4.4. Evidencia del video
+
+[Completar con captura real del Video About-the-Product publicado.]
+
+La evidencia se completará cuando el video esté publicado y disponible mediante un enlace verificable. No se incorpora una imagen en esta sección hasta contar con una captura real del video publicado.
+
+### 5.4.5. Relación del video con el alcance AV2
+
+El video debe mostrar el avance AV2 de Nexa desde una perspectiva integrada: Landing Page actualizada, Web Application actualizada, primera versión de Web Services y despliegue académico en Render si este se incluye como evidencia visual. Si el video menciona el backend, debe indicar PostgreSQL como tecnología de persistencia empleada en el alcance AV2.
+
+La presentación debe centrarse en el flujo de negocio completo, desde adquisición y catálogo hasta solicitud, validación comercial, reserva, despacho, documentación y pago simulado. La narración debe conservar el carácter académico de la entrega y evitar declarar cierre productivo, integración completa o validación concluyente si dichas evidencias aún no han sido registradas.
