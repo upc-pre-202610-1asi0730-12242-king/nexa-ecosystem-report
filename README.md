@@ -2,6 +2,7 @@
 
 <br/>
 
+<img src="./report/assets/images/chapter-2/competitors/logo-nexa.svg" alt="Nexa Logo" width="250"/>
 
 <br/><br/>
 
@@ -25,6 +26,7 @@
 
 <br/>
 
+🌐 **[View Project Wiki →](./wiki/Home.md)**
 
 <br/>
 
@@ -33,7 +35,6 @@
 ---
 
 ## Overview
-## What is this repository?
 
 The `nexa-ecosystem-report` repository centralizes the academic research, requirements elicitation, design mockups, software architecture definitions, sprint logs, and validation evidence for the Nexa project. Following the **Docs-as-Code** philosophy, the report is maintained as modular markdown files alongside assets, enabling version control, collaboration tracing, and alignment with the software products.
 
@@ -119,6 +120,20 @@ The `nexa-ecosystem-report` repository centralizes the academic research, requir
 
 ### Local Browsing & Contribution
 
+1.  **Clone the Repository**:
+    ```bash
+    git clone https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report.git
+    ```
+2.  **Navigation**:
+    - Central text files are located in `/report/` separated by chapter directories.
+    - All image assets are stored inside `/report/assets/images/` categorized by chapter context.
+3.  **Local Wiki Reference**:
+    - The repository includes a offline-browsable Wiki located in the `wiki/` directory. Simply open [wiki/Home.md](./wiki/Home.md) in any markdown reader to start.
+
+---
+
+## Project Structure
+
 ```text
 nexa-ecosystem-report/
 ├── .github/              # Standard workflows and community security policies
@@ -131,9 +146,9 @@ nexa-ecosystem-report/
 │   ├── 40-chapter-4-product-design/
 │   ├── 50-chapter-5-implementation-validation-deployment/
 │   ├── annexes/          # Additional documentation and reference checklists
-nexa-report/
-│
-└── report/
+│   └── assets/           # Internal graphic and image assets
+├── scripts/              # Helper scripts for build processes
+└── wiki/                 # Local offline copy of the technical wiki
 ```
 
 ---
@@ -148,8 +163,7 @@ Specific report areas and B2B sub-domain contexts are assigned to primary owners
 | **Report Formatting & Chapter 1/5** | Cmarin2802 | R0obxdnt-bit |
 | **Needfinding & UML/DB Design** | JoaquinVerde115 | Cmarin2802 |
 | **Releases, Citations & Assets** | R0obxdnt-bit | JoaquinVerde115 |
-```bash
-bash scripts/build-pdf.sh
+| **Jira Management & Sprint 3** | GerardRojasMancilla | DiegoS284 |
 
 ---
 
@@ -160,16 +174,10 @@ Full report references and guidelines are maintained in:
 - [Ecosystem Release Logs (releases/README.md)](./releases/README.md)
 - [Security Guidelines (SECURITY.md)](./.github/SECURITY.md)
 - [Contribution Policy (CONTRIBUTING.md)](./.github/CONTRIBUTING.md)
+- [Code of Conduct (CODE_OF_CONDUCT.md)](./.github/CODE_OF_CONDUCT.md)
 
 ---
 
 <p align="center">
   <strong>Nexa Ecosystem Report</strong> · Universidad Peruana de Ciencias Aplicadas · 2026-10
 </p>
-## Branching strategy
-
-For TB1, observable delivery is concentrated in `main` and Conventional Commits. GitFlow remains documented as a working convention for the next delivery:
-
-| Branch | Purpose |
-|---|---|
-| `main` | Stable deliverable version |
