@@ -25,17 +25,17 @@ El trabajo del equipo se organizó en una organización pública de GitHub, sepa
 | `nexa-website` | `v3.0.0` | Tag `v3.0.0` del 15/06/2026; registra el release de cierre AV2 disponible para revisión de Landing Page. |
 | `nexa-webapp` | `v2.0.0` | Tag `v2.0.0` del 16/06/2026; documenta el release de cierre AV2 disponible para revisión de Web Application. |
 | `nexa-platform` | `v1.0.0` | Tag `v1.0.0` del 16/06/2026; registra el release de cierre AV2 disponible para revisión de Web Services. |
-| `nexa-ecosystem-report` | `v3.0.0` | Release documental final AV2 del informe académico, consolidando evidencias, anexos, version history, colaboración, implementación y preparación de entrega. |
+| `nexa-ecosystem-report` | `v3.0.0` | Último release documental del informe académico AV2, consolidando evidencias, anexos, version history, colaboración, implementación y preparación de entrega. |
 
-> *Nota:* La evidencia de releases se interpreta como una evolución incremental. En el Project Report, `nexa-ecosystem-report v3.0.0` consolida el cierre documental AV2. En Landing Page, `nexa-website` conserva releases previos de AV2 como `v2.2.0` y `v2.3.0`, hasta llegar al release de cierre `v3.0.0`. En Web Services, `nexa-platform` conserva evidencia de `v0.6.1` como parche de validación AV2 y `v1.0.0` como release de cierre backend. En Web Application, `nexa-webapp` conserva `v1.7.1` como patch AV2 previo, `v1.8.0` como cleanup/layout polish y `v2.0.0` como release de cierre WebApp para el corte AV2.
+> *Nota:* La evidencia de releases se interpreta como una evolución incremental. En el Project Report, `nexa-ecosystem-report v3.0.0` es el último release documental y consolida el cierre AV2. En Landing Page, `nexa-website` conserva releases previos de AV2 como `v2.2.0` y `v2.3.0`, hasta llegar al release de cierre `v3.0.0`. En Web Services, `nexa-platform` conserva evidencia de `v0.6.1` como parche de validación AV2 y `v1.0.0` como release de cierre backend. En Web Application, `nexa-webapp` conserva `v1.7.1` como patch AV2 previo, `v1.8.0` como cleanup/layout polish y `v2.0.0` como release de cierre WebApp para el corte AV2.
 
 ### Evidencia principal del Project Report
 
-El repositorio principal del informe es [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report). Para el cierre AV2, `nexa-ecosystem-report v3.0.0` consolida la versión documental del reporte académico. Los commits recientes evidencian la preparación del informe, ajustes de formato académico, version history, anexos, validación documental, evidencias de Sprint 3 y preparación del PDF. Las branches `main` y `develop` evidencian el flujo GitFlow documental, mientras que los insights muestran actividad colaborativa del equipo en el repositorio del informe.
+El repositorio principal del informe es [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report). Para el cierre AV2, `nexa-ecosystem-report v3.0.0` es el último release del reporte y consolida la versión documental del informe académico. Los commits recientes evidencian la preparación del informe, ajustes de formato académico, version history, anexos, validación documental, evidencias de Sprint 3 y preparación del PDF. Las branches `main` y `develop` evidencian el flujo GitFlow documental, mientras que los insights muestran actividad colaborativa del equipo en el repositorio del informe.
 
 ![GitHub Release nexa-ecosystem-report v3.0.0](../assets/images/front-matter/collaboration/report-releases/nexa-ecosystem-report-v3-0-0-release.png)
 
-Figura. Release documental `nexa-ecosystem-report v3.0.0` utilizado como evidencia principal del cierre AV2 del informe académico. Elaboración propia.
+Figura. Último release documental `nexa-ecosystem-report v3.0.0` utilizado como evidencia principal del cierre AV2 del informe académico. Elaboración propia.
 
 ![Commits recientes nexa-ecosystem-report AV2](../assets/images/front-matter/collaboration/report-commits/nexa-ecosystem-report-commits-av2-recent.png)
 

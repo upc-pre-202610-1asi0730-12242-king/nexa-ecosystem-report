@@ -22,7 +22,7 @@
 ![Cycle](https://img.shields.io/badge/Cycle-2026--10-0a2540?style=flat-square)
 ![University](https://img.shields.io/badge/University-UPC-0a2540?style=flat-square)
 ![Team](https://img.shields.io/badge/Team-King-2a67d9?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Release%202.6.0-22c55e?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Release%203.0.0-22c55e?style=flat-square)
 
 <br/>
 
