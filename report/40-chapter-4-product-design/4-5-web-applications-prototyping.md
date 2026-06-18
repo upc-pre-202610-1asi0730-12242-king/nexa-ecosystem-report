@@ -1,12 +1,12 @@
 ## 4.5. Web Applications Prototyping.
 
+El prototipado de las aplicaciones web de Nexa permite validar navegación, interacción y continuidad visual de las superficies autenticadas antes de analizar su implementación. Esta sección documenta el prototipo de la **Web Application interna** para **S1 — Commercial Coordination** y **S2 — Operations / Account Owner**, así como el recorrido funcional del **Buyer Portal** para **S3 — B2B Buyer Portal**.
 
 El prototipo se relaciona directamente con la arquitectura de información definida en la sección 4.2 y con los user flows documentados en la sección 4.4. Por ello, la navegación no se organiza solo por pantallas, sino por responsabilidades de negocio: S3 consulta catálogo y envía solicitudes, S1 valida comercialmente y convierte solicitudes de compra (`Purchase Requests`) en órdenes de compra (`Purchase Orders`), y S2 ejecuta inventario, despacho, evidencias y administración de empresa/tenant.
 
 El prototipado constituye **evidencia de diseño interactivo**. La evidencia de implementación, ejecución, despliegue académico AV2 y servicios simulados se documenta en el Capítulo V.
 
 La evidencia visual y audiovisual incluida cubre los recorridos principales de S1, S2 y S3 dentro de la Web Application. Los flujos de S1 y S2 se documentan con soporte interactivo de la consola interna, mientras que S3 (B2B Buyer Portal) incorpora mockups desktop y mobile de alta fidelidad en la sección 4.4. La cobertura mobile se documenta mediante mockups responsive incorporados en el reporte.
-| Evidencia de prototipado | Propósito |
 
 **Tabla. Criterios aplicados para las decisiones de interacción del prototipo**
 
@@ -17,7 +17,7 @@ La evidencia visual y audiovisual incluida cubre los recorridos principales de S
 | Progressive disclosure | Los detalles se muestran mediante drawers, modales, pasos guiados o vistas de detalle | Reduce carga cognitiva y mantiene contexto operativo |
 | Feedback de estado | Badges, confirmaciones y mensajes permiten entender el avance de solicitudes, pedidos y despachos | Comunica trazabilidad sin depender solo del color |
 | Densidad adaptada | La Web Application interna prioriza desktop/tablet por volumen operativo; el Buyer Portal prioriza claridad y autoservicio en desktop y mobile | Responde a diferencias de uso entre usuarios internos y compradores B2B |
-| Flujo | Segmento | Cobertura en prototipo | Evidencia | Estado TB1 |
+| Consistencia visual | Se mantienen colores, tipografía, botones, tablas, cards y estados definidos en 4.1 | Asegura continuidad entre diseño visual y prototipo interactivo |
 
 **Tabla. Artefactos de prototipado y cobertura documentada**
 
@@ -36,6 +36,10 @@ La evidencia visual y audiovisual incluida cubre los recorridos principales de S
 | Flujo | Segmento | Cobertura en prototipo | Representación en esta sección |
 |---|---|---|---|
 | Validación y pedido asistido | S1 — Commercial Coordination | Dashboard comercial, cuentas de cliente (`Client Accounts`), detalle de cliente, registro manual de pedido (`Manual Order Entry`), selección de productos, detalle de pedido y reportes | Figma, FigJam, captura audiovisual y userflow S1 |
+| Inventario, despacho y cierre operativo | S2 — Operations / Account Owner | Dashboard operativo, control de inventario (`Inventory Control`), lotes de inventario (`Inventory Lots`), órdenes de despacho (`Dispatch Orders`), evidencia de entrega simulada (`Proof of Delivery` / POD) y analítica operativa (`Operational Analytics`) | Figma, FigJam, wireflow, captura audiovisual y userflow S2 |
+| Catálogo, solicitud, pedido y seguimiento | S3 — B2B Buyer Portal | Home, catálogo de productos (`Product Catalog`), detalle de producto, constructor de solicitud (`Request Builder`), mis solicitudes (`My Requests`), mis órdenes (`My Orders`), documentos comerciales (`Business Documents`) y perfil (`Profile`) | Cobertura funcional mediante rutas canónicas, paths de navegación y user flow definido en 4.4 |
+
+**Figura. Captura referencial del prototipo de la Web Application interna**
 
 ![Captura del prototipo de la web application](../assets/images/chapter-4/webapp/prototyping/prototyping.jpeg)
 
@@ -58,8 +62,11 @@ El video inicia con el flujo de S1 — Commercial Coordination y luego incorpora
 | Cambio a segmento S3 | `3:49` |
 | Evidencia visual | `prototyping-webapp-sprint-3-video.png` |
 
+Esta evidencia se registra como prototyping porque documenta una simulación de navegación de la WebApp, la interacción entre flujos principales, la transición entre segmentos y la cobertura de S1, S2 y S3. Si durante el recorrido se observa adaptación de layout o navegación en distintos anchos, dicha observación respalda el comportamiento responsive del prototipo sin reemplazar los mockups responsive documentados en 4.4.
+
 ### 4.5.1. Sistema de navegación aplicado al prototipo
 
+El prototipo aplica un sistema de navegación diferenciado por superficie y responsabilidad de negocio. La **Web Application interna** utiliza navegación lateral persistente, top bar y vistas de detalle para que S1 y S2 puedan trabajar con información operativa sin perder contexto. El **Buyer Portal** utiliza una navegación más simple, orientada a catálogo, solicitudes, pedidos, documentos y perfil del comprador.
 
 | Superficie | Segmento | Navegación principal | Propósito |
 |---|---|---|---|
@@ -117,4 +124,12 @@ Es importante destacar que las capturas de wireframes (sección 4.4.1) y los moc
 
 El prototipo se usa como puente entre diseño e implementación. Su función es demostrar que las rutas de navegación, módulos y decisiones de interacción son coherentes con los user goals definidos para cada segmento.
 
-La navegación es **rol-consciente**: S1: Coordinación comercial / ventas internas ve por defecto Pedidos y Clientes; S3: Comprador B2B / cliente comercial ve Catálogo, Mis pedidos y Seguimiento; S2: Jefatura logística / coordinación operativa ve Gestión operativa, Despachos y Evidencias. Los *call-to-actions* primarios (crear pedido, despachar, cerrar entrega) se mantienen siempre visibles como *floating action* en la parte inferior derecha del frame, respetando la lógica **mobile-first**. Las transiciones entre frames siguen el principio de *progressive disclosure*: el usuario avanza solo cuando el sistema ya puede confirmar stock, crédito o estado, evitando pantallas intermedias sin valor.
+| Relación | Aplicación en Nexa |
+|---|---|
+| Information Architecture → Prototyping | Las rutas y módulos del prototipo siguen la organización por S1, S2 y S3 definida en 4.2 |
+| User Flow → Prototyping | Los recorridos interactivos siguen los paths definidos en 4.4 |
+| Design System → Prototyping | Las pantallas aplican colores, tipografía, componentes, estados y espaciado documentados en 4.1 |
+| Prototyping → Implementation | El prototipo guía la implementación en navegación, estados y tareas, sin que esta sección funcione como evidencia de despliegue |
+| Prototyping → Validation | Los recorridos definidos permiten evaluar claridad, navegación, accesibilidad e intención de uso |
+
+La evidencia de implementación, ejecución, despliegue y servicios simulados se documenta en el Capítulo V. En esta sección, el énfasis permanece en la validación del prototipo, la trazabilidad con los user flows y la consistencia de la experiencia entre Web Application interna y Buyer Portal.

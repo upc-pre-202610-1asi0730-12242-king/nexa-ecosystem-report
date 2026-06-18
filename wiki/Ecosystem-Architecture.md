@@ -16,3 +16,7 @@ The Nexa system is built following **Clean Architecture** principles and structu
    - Manages business documents generation (receipts, invoices) and payment configurations.
 6. **IAM Context (Identity & Access Management)**:
    - Manages user credentials, JSON Web Tokens (JWT), and role-based access control (RBAC).
+
+## Tactical Patterns
+- **Anti-Corruption Layer (ACL)**: Restricts direct access from presentation modules to external structures using Pinia caching stores.
+- **DTOs & Assemblers**: Restricts domain model leakage by translating aggregates to data contracts.

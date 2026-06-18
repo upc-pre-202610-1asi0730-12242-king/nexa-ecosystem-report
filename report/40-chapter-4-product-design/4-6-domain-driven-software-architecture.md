@@ -1,3 +1,4 @@
+# 4.6. Domain-Driven Software Architecture
 
 Esta sección presenta la arquitectura de software dirigida por el dominio propuesta para Nexa. El objetivo es alinear el dominio de negocio, los bounded contexts, las decisiones de diseño táctico y las vistas arquitectónicas del C4 Model antes de pasar al diseño orientado a objetos y al diseño de base de datos.
 
@@ -13,26 +14,25 @@ Los bounded contexts finales definidos para Nexa son:
 | Sales | Gestiona clientes B2B, solicitudes de compra, validación comercial, órdenes de venta, ítems de orden, alertas de crédito y observaciones comerciales. |
 | Warehouse | Gestiona almacenes, lotes de inventario, disponibilidad de stock, reservas de stock, movimientos de stock y criterios de reserva basados en FEFO. |
 | Logistics | Gestiona órdenes de despacho, eventos de trazabilidad, incidencias de entrega, controles de temperatura, ventanas de entrega y evidencia de entrega. |
+| Invoicing | Gestiona documentos comerciales, resúmenes de cobro, pagos simulados, estado de pago y visibilidad documental para el comprador. |
 
 Identity and Access Management se considera una capacidad de soporte transversal porque permite autenticación, autorización, gestión de usuarios, configuración de tenant y control de acceso basado en roles. Sin embargo, no se trata como uno de los bounded contexts principales del negocio de Nexa. Del mismo modo, reporting y analytics se representan como read models derivados de los bounded contexts operativos.
-*Design-Level EventStorming — Step 4: Pivotal Points*
 
+## 4.6.1. Design-Level EventStorming
 
 El proceso de Design-Level EventStorming se utilizó para refinar el modelo de dominio inicialmente explorado en la sección de Big Picture EventStorming. El objetivo fue identificar domain events, commands, policies, read models, aggregates y bounded contexts con un mayor nivel de detalle.
-*Design-Level EventStorming — Step 6: Policies*
 
 El workshop se enfocó en el flujo B2B end-to-end del pedido: descubrimiento de productos, envío de solicitud de compra, validación comercial, reserva de stock, programación de despacho, trazabilidad de entrega, evidencia de entrega y revisión de documentos/pago.
 
 ### Step 4: Pivotal Points
 
 ![Design-Level EventStorming - Step 4](../assets/images/chapter-4/architecture/ddd/ddd-step-4.png)
-*Design-Level EventStorming — Step 9: Consolidated Flow by Context*
 
 Los pivotal points representan decisiones relevantes del negocio donde el flujo normal puede derivar en rutas alternativas. En Nexa, estos puntos incluyen validación comercial, revisión de disponibilidad de stock, programación de despacho, gestión de incidencias, confirmación de entrega y actualización del estado de pago.
 
 Estos puntos de decisión son importantes porque revelan reglas de negocio que no pueden asignarse únicamente a la interfaz de usuario. Deben representarse como políticas de dominio, comportamiento de aggregates o application services según su alcance.
 
-### 4.6.2. Software Architecture Context Diagram
+### Step 5: Commands
 
 ![Design-Level EventStorming - Step 5](../assets/images/chapter-4/architecture/ddd/ddd-step-5.png)
 
@@ -53,16 +53,19 @@ La siguiente tabla resume los principales commands por bounded context:
 ![Design-Level EventStorming - Step 6](../assets/images/chapter-4/architecture/ddd/ddd-step-6.png)
 
 Las policies representan reglas de dominio que reaccionan ante commands o events. Estas reglas ayudan a mantener la consistencia del proceso de negocio. Para Nexa, las políticas más importantes están relacionadas con validación comercial, alertas de crédito, disponibilidad de stock, reserva FEFO, evidencia de entrega y visibilidad de pagos.
+
+| Policy | Descripción | Contexto relacionado |
 |---|---|---|
 | Commercial validation policy | Una solicitud de compra no puede convertirse en una orden de venta confirmada hasta que se validen las condiciones comerciales del cliente B2B. | Sales |
 | Credit warning policy | Una solicitud puede requerir revisión cuando el cliente tiene restricciones de crédito o alertas por pagos pendientes. | Sales / Invoicing |
 | Stock reservation policy | El stock debe reservarse antes de iniciar el proceso de despacho. | Warehouse |
 | FEFO policy | Los lotes de inventario deben priorizarse según la fecha de vencimiento más próxima cuando los productos son perecibles. | Warehouse |
 | Dispatch closure policy | Un despacho no puede marcarse como entregado sin evidencia de entrega. | Logistics |
-| Context | Usuarios, Nexa, operación B2B e integraciones externas consideradas en el ecosistema | Representa la ubicación del sistema y sus actores principales |
+| Payment visibility policy | Un comprador puede revisar el estado de pago y los documentos comerciales asociados a su orden. | Invoicing |
 
 ### Step 7: Read Models
 
+![Design-Level EventStorming - Step 7](../assets/images/chapter-4/architecture/ddd/ddd-step-7.png)
 
 Los read models representan vistas de información requeridas por los usuarios para tomar decisiones o completar tareas. Son especialmente relevantes para dashboards, monitoreo operativo y pantallas de consulta orientadas al comprador.
 
@@ -77,9 +80,10 @@ Los read models representan vistas de información requeridas por los usuarios p
 | DispatchBoardView | Muestra despachos por estado, fecha y responsable de entrega. | Logistics |
 | TrackingTimelineView | Muestra eventos de trazabilidad de una orden de despacho. | Logistics |
 | DeliveryEvidenceView | Muestra evidencia de entrega e información relacionada. | Logistics |
+| DocumentHistoryView | Muestra documentos comerciales asociados a una orden de venta. | Invoicing |
+| PaymentStatusView | Muestra el estado de pago simulado e información pendiente de pago. | Invoicing |
 
 ### Step 9: Consolidated Flow by Context
-Nota. Elaboración propia mediante Structurizr.
 
 ![Design-Level EventStorming - Step 9](../assets/images/chapter-4/architecture/ddd/ddd-step-9.png)
 
@@ -89,6 +93,7 @@ El flujo principal inicia cuando un producto se encuentra disponible en el catá
 
 ### Step 10: Bounded Contexts
 
+![Design-Level EventStorming - Step 10](../assets/images/chapter-4/architecture/ddd/ddd-step-10.png)
 
 El mapa final de bounded contexts de Nexa está compuesto por cinco contextos principales de negocio y capacidades de soporte transversal. Los contextos de negocio son Catalog Management, Sales, Warehouse, Logistics e Invoicing.
 
@@ -98,7 +103,7 @@ El mapa final de bounded contexts de Nexa está compuesto por cinco contextos pr
 | Sales | B2BClient, PurchaseRequest, SalesOrder, CommercialCondition | PurchaseRequestSubmitted, CommercialValidationConfirmed, PurchaseRequestRejected, SalesOrderConfirmed | SubmitPurchaseRequest, ValidateCommercialCondition, RejectPurchaseRequest, ConfirmSalesOrder, RegisterManualRequest | SalesPipelineView, PurchaseRequestDetailView, SalesOrderDetailView, B2BClientProfileView |
 | Warehouse | Warehouse, InventoryLot, Reservation, StockMovement | LotRegistered, StockReserved, StockReleased, StockAdjusted, FefoReservationApplied | RegisterInventoryLot, ReserveStock, ReleaseReservation, AdjustStock, ApplyFefoReservation | StockByInternalCodeView, LotAvailabilityView, ReservationView, InventoryAlertView |
 | Logistics | DispatchOrder, TraceabilityEvent, DeliveryIncident, DeliveryEvidence, TemperatureCheck | DispatchScheduled, DispatchInTransit, DeliveryIncidentRegistered, TemperatureAlertRaised, DeliveryEvidenceRegistered, DispatchDelivered | ScheduleDispatch, StartDispatch, RegisterTraceabilityEvent, RegisterDeliveryIncident, RegisterTemperatureCheck, RegisterDeliveryEvidence | DispatchBoardView, TrackingTimelineView, DeliveryEvidenceView, IncidentSummaryView |
-*Diagrama de Contenedores del Sistema Nexa (C4 — Nivel 2)*
+| Invoicing | CommercialDocument, PaymentRecord, PaymentStatus, InvoiceSummary | CommercialDocumentIssued, PaymentSimulationRegistered, PaymentStatusUpdated, DocumentVisibilityUpdated | GenerateCommercialDocument, RegisterSimulatedPayment, UpdatePaymentStatus, PublishDocumentForBuyer | DocumentHistoryView, PaymentStatusView, InvoiceSummaryView, ChargeSummaryView |
 
 El modelo resultante mantiene Identity and Access Management como una capacidad de soporte. Esta área de soporte provee gestión de usuarios, roles, permisos, tenants y sesiones, pero no reemplaza ninguno de los cinco contextos core del negocio.
 
@@ -110,9 +115,9 @@ El diagrama de contexto C4 presenta a Nexa como el sistema de software central y
 
 **Nota:** Elaboración propia usando Structurizr.
 
+![C4 Context Diagram Key](../assets/images/chapter-4/architecture/c4/c4-context-diagram-key.svg)
 
 **Nota:** Leyenda del diagrama generada por Structurizr.
-> **Nota de alcance TB1:** Este diagrama representa la arquitectura objetivo del sistema Nexa. En TB1, la entrega incluye únicamente la aplicación web (Vue 3 SPA) conectada a una API simulada mediante JSON Server. El backend en ASP.NET Core, la base de datos MySQL y las integraciones externas (Stripe, OAuth, Calendar, Cloud Storage) forman parte del diseño de la arquitectura objetivo y están previstas para etapas posteriores de implementación.
 
 El contexto del sistema considera los siguientes actores externos:
 
@@ -123,14 +128,15 @@ El contexto del sistema considera los siguientes actores externos:
 | Commercial Coordinator | Usuario interno responsable de la validación comercial y gestión de órdenes. | Revisa solicitudes de compra, valida condiciones comerciales y confirma órdenes de venta. |
 | Operations Responsible | Usuario interno responsable de la configuración y monitoreo operativo. | Revisa inventario, despachos, estado operativo e información relacionada con tenant. |
 | Logistics Manager | Usuario interno responsable de la ejecución de despachos y trazabilidad de entregas. | Programa despachos, registra eventos de seguimiento, incidencias, controles de temperatura y evidencia de entrega. |
+| External Support Services | Servicios de terceros utilizados por la solución. | Dan soporte a autenticación, notificaciones, almacenamiento documental, integración con calendario o simulación de pago según el alcance de implementación. |
 
 El diagrama de contexto es consistente con los tres segmentos objetivo principales del producto: coordinación comercial, operaciones/account ownership y compradores B2B.
 
 ## 4.6.3. Software Architecture Container Diagrams
 
+El diagrama de contenedores describe la estructura técnica de alto nivel de la solución. Nexa se organiza en un Landing Page público, una Web Application, una RESTful API y una base de datos relacional. Los servicios externos se representan como sistemas de soporte.
 
 ![C4 Container Diagram - Nexa](../assets/images/chapter-4/architecture/c4/c4-container-diagram.svg)
-En la imagen aparecen piezas visibles como Auth, Catalog, Order, Inventory y Customer dentro del backend objetivo, además de componentes de soporte como Payment Integration y Notification. Para mantener coherencia con el dominio consolidado, el informe conserva como núcleo los contextos **Identity & Access**, **Catalog**, **Orders & Commercial Management**, **Inventory** y **Dispatch & Traceability**. En esa lectura, **Auth** se alinea con **Identity & Access**, **Order** con **Orders & Commercial Management**, y los servicios de pago o notificación se tratan como apoyo transversal, no como bounded contexts principales.
 
 **Nota:** Elaboración propia usando Structurizr.
 
@@ -164,3 +170,8 @@ El diagrama de componentes describe la descomposición interna del contenedor pr
 | Logistics Component | Logistics | Gestiona órdenes de despacho, eventos de trazabilidad, incidencias de entrega, controles de temperatura y evidencia de entrega. |
 | Invoicing Component | Invoicing | Gestiona documentos comerciales, resúmenes de cobro, registros de pago y estado de pago. |
 | Identity and Access Component | Transversal Support | Gestiona usuarios, roles, permisos, sesiones, tenants y control de acceso. |
+| Notification Component | Transversal Support | Gestiona el envío de notificaciones y la comunicación con servicios externos de mensajería. |
+| Reporting Component | Derived Read Models | Proporciona dashboards y reportes basados en datos operativos de los contextos principales. |
+| Integration Component | Transversal Support | Encapsula la comunicación con servicios de terceros utilizados por la plataforma. |
+
+Esta organización de componentes evita acoplar el modelo de dominio directamente a responsabilidades de interfaz de usuario. Cada bounded context se representa mediante un conjunto cohesivo de application services, objetos de dominio y mecanismos de persistencia.

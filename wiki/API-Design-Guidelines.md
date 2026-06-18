@@ -16,3 +16,7 @@ This page documents the REST API design standards adopted for the Nexa platform,
 ## Standard Responses
 - **`200 OK`**: Successful request returning data.
 - **`201 Created`**: Resource created successfully.
+- **`400 Bad Request`**: Request validation error.
+- **`401 Unauthorized`**: Authentication missing or invalid.
+- **`403 Forbidden`**: Role-based access permission denied.
+- **`404 Not Found`**: Resource does not exist.

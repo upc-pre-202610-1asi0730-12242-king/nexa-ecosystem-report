@@ -1,5 +1,6 @@
 ## 3.3. Product Backlog
 
+El Product Backlog de Nexa organiza las User Stories definidas en la sección 3.1 según valor de negocio, dependencia funcional e impacto operativo. La priorización se orienta al flujo principal del producto: catálogo gourmet, preparación de solicitudes de compra, validación comercial, consulta de disponibilidad, reserva de inventario, conversión a orden, proceso de pago, despacho, evidencia de entrega y documentos comerciales.
 
 El orden del backlog prioriza primero las capacidades que entregan valor directo al comprador B2B y al equipo comercial-logístico: encontrar productos, preparar una solicitud clara, enviarla para revisión, validarla, asegurar disponibilidad, confirmar la orden, cerrar el pago y dar seguimiento a la entrega. Las capacidades informativas, administrativas, de mantenimiento, promociones y analítica se ubican después porque sostienen la operación, pero no reemplazan el flujo principal de atención.
 
@@ -85,22 +86,23 @@ El orden del backlog prioriza primero las capacidades que entregan valor directo
 | 76 | US01 | Conocer propuesta de valor de Nexa | **Como** visitante empresarial, **quiero** conocer la propuesta de valor de Nexa, **para** evaluar si la solución responde a problemas de gestión de pedidos, inventario y entregas refrigeradas. | 3 |
 | 77 | US02 | Explorar soluciones por segmento empresarial | **Como** visitante empresarial, **quiero** explorar soluciones para importadoras, distribuidoras y operadores de frío, **para** identificar si Nexa se adapta a mi tipo de operación. | 2 |
 | 78 | US03 | Consultar funcionalidades de la plataforma | **Como** visitante empresarial, **quiero** consultar las funcionalidades principales de la plataforma, **para** comprender qué capacidades ofrece Nexa antes de solicitar información. | 2 |
-|---|---|---|---|---:|
-| 1 | US39 | Registrar pedido recibido por canal externo | Como coordinadora comercial, quiero registrar en Nexa un pedido recibido por conversación, llamada o coordinación directa, para evitar que la información quede dispersa fuera del flujo operativo. | 5 |
-| 2 | US40 | Seleccionar cliente durante la captura del pedido | Como coordinadora comercial, quiero asociar cada pedido a un cliente comercial existente, para asegurar que las condiciones y datos de atención correspondan al comprador correcto. | 3 |
-| 3 | US41 | Completar productos y cantidades solicitadas | Como coordinadora comercial, quiero registrar productos y cantidades solicitadas por el cliente, para trasladar el pedido a logística con información clara y verificable. | 5 |
-| 4 | US42 | Registrar observaciones comerciales del pedido | Como coordinadora comercial, quiero agregar observaciones relevantes al pedido, para que logística comprenda condiciones, urgencias o acuerdos mencionados por el cliente. | 5 |
-| 5 | US43 | Revisar pedido capturado antes de enviarlo | Como coordinadora comercial, quiero revisar el pedido capturado antes de enviarlo a revisión, para reducir errores de cliente, producto, cantidad o condiciones. | 5 |
-| 6 | US44 | Diferenciar pedido capturado por comercial y pedido enviado por cliente | Como coordinadora comercial, quiero identificar si un pedido fue capturado internamente o enviado desde el portal B2B, para entender el origen de la solicitud y atenderla con el contexto adecuado. | 5 |
-| 7 | US57 | Consultar perfil comercial del cliente | Como coordinadora comercial, quiero consultar el perfil de un cliente B2B, para atender sus pedidos considerando datos de contacto, tipo de negocio y relación comercial. | 3 |
-| 8 | US56 | Revisar condiciones comerciales del cliente | Como coordinadora comercial, quiero revisar condiciones comerciales asociadas a un cliente, para validar si un pedido debe atenderse con crédito, pago al contado u otra condición. | 3 |
-| 9 | US51 | Consultar disponibilidad de productos | Como jefatura logística, quiero consultar disponibilidad de productos, para validar si un pedido puede prepararse antes de confirmarlo al cliente. | 5 |
-| 10 | US52 | Identificar lotes próximos a vencer | Como jefatura logística, quiero identificar lotes próximos a vencer, para priorizar su rotación y reducir riesgo de merma. | 5 |
-| 11 | US53 | Aplicar criterio FEFO en preparación | Como jefatura logística, quiero considerar primero los productos con vencimiento más cercano, para preparar pedidos respetando una rotación adecuada. | 5 |
+| 79 | US04 | Revisar precios y alcance del plan | **Como** visitante empresarial, **quiero** revisar información de precios y alcance del plan disponible, **para** evaluar si la solución puede ajustarse a mi empresa. | 2 |
+| 80 | US05 | Consultar preguntas frecuentes | **Como** visitante empresarial, **quiero** consultar preguntas frecuentes, **para** resolver dudas iniciales sobre el alcance, uso y contratación de Nexa. | 1 |
+| 81 | US06 | Enviar solicitud de contacto comercial | **Como** visitante empresarial interesado, **quiero** enviar mis datos de contacto, **para** solicitar información comercial sobre Nexa. | 5 |
+| 82 | US49 | Administrar datos de empresa | **Como** company owner, **quiero** revisar y actualizar datos básicos de la empresa contratante, **para** mantener la cuenta alineada con la operación real. | 5 |
+| 83 | US50 | Administrar usuarios internos | **Como** company owner, **quiero** registrar usuarios internos autorizados, **para** asegurar que cada persona trabaje con una cuenta identificable. | 2 |
+| 84 | US51 | Asignar responsabilidades de equipo | **Como** company owner, **quiero** asignar responsabilidades a usuarios internos, **para** permitir que cada persona acceda solo a funciones relacionadas con su trabajo. | 1 |
+| 85 | US52 | Consultar plan y capacidades habilitadas | **Como** company owner, **quiero** consultar el plan Standard contratado y sus capacidades habilitadas, **para** entender qué módulos o acciones están disponibles para la empresa contratante. | 2 |
+| 86 | US53 | Gestionar requerimientos operativos de portales externos | **Como** company owner, **quiero** gestionar requerimientos operativos de portales externos por cliente, **para** saber qué documentos o tareas manuales deben atenderse fuera de Nexa. | 5 |
+| 87 | US13 | Actualizar información comercial del producto | **Como** company owner, **quiero** actualizar información comercial de productos activos, **para** mantener fichas, precios y visibilidad coherentes con la operación. | 5 |
+| 88 | US14 | Agregar producto gourmet al catálogo | **Como** company owner, **quiero** agregar productos gourmet refrigerados al catálogo, **para** ampliar la oferta visible de la empresa contratante. | 5 |
+| 89 | US15 | Desactivar producto preservando trazabilidad comercial | **Como** company owner, **quiero** desactivar productos que ya no deben ofrecerse sin eliminar registros asociados a órdenes activas, **para** evitar nuevas solicitudes y proteger la trazabilidad comercial y operativa. | 5 |
+| 90 | US16 | Gestionar promociones operativas | **Como** company owner, **quiero** gestionar promociones u ofertas estacionales de productos gourmet, **para** orientar la demanda sin depender de mensajes manuales. | 5 |
+| 91 | US17 | Visualizar ofertas según plan y cuenta | **Como** comprador B2B, **quiero** visualizar ofertas disponibles para mi cuenta y plan comercial, **para** aprovechar condiciones vigentes al preparar una solicitud. | 2 |
+| 92 | US83 | Revisar analítica operativa de despachos | **Como** company owner, **quiero** revisar indicadores de despachos, incidencias y entregas, **para** identificar problemas recurrentes de operación. | 1 |
 
 ### Síntesis del Product Backlog
 
 La tabla anterior muestra la organización académica del Product Backlog de Nexa, incluyendo priorización y estimación de las User Stories principales del producto.
 
 El backlog prioriza el flujo de negocio que permite pasar de la consulta de productos a una solicitud enviada, validada y convertida en orden, con disponibilidad revisada, pago representado dentro del alcance del prototipo, despacho, evidencia de entrega y documentos visibles para los actores correspondientes. Esta organización evita colocar primero capacidades internas o administrativas que no representan el valor principal percibido por el comprador B2B.
-El Product Backlog de Nexa se gestiona en Jira como herramienta de seguimiento del proyecto. La vista permite observar las historias de usuario priorizadas por valor de negocio, su estado, responsable, épica asociada y estimación en Story Points. Esta evidencia complementa la tabla redactada en el reporte, donde se mantiene la descripción formal de cada User Story y su estimación.

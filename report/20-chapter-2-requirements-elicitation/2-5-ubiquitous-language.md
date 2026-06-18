@@ -1,3 +1,4 @@
+## **2.5. Ubiquitous Language** 
 
 El equipo utiliza términos canónicos en inglés para mantener una comprensión compartida del dominio de Nexa entre entrevistas, needfinding, event storming, historias de usuario, backlog, diseño de producto y arquitectura de dominio. La traducción al español se incluye para facilitar la lectura del reporte por parte de stakeholders y evaluadores.
 
@@ -25,7 +26,7 @@ La selección de términos cubre los tres segmentos del producto: S1 — Commerc
 | **Expiration Date** | Fecha de vencimiento | Fecha límite de aptitud de un lote de producto | Determinante del orden FEFO |
 | **FEFO** | First Expired, First Out / Primero en vencer, primero en salir | Política de salida de inventario que prioriza lotes con vencimiento más próximo | Regla operativa clave para cadena de frío |
 | **Purchase Order** | Orden de compra / Pedido B2B | Pedido confirmado que nace a partir de una solicitud validada y contiene ítems, cantidades, comprador, condiciones comerciales, estado y prioridad operativa | Central en el flujo de captura, validación, inventario, despacho y seguimiento |
-| **Purchase Order** | Orden de compra / Pedido B2B | Solicitud formal de un comprador B2B que contiene ítems, cantidades, cuenta cliente, estado de validación y prioridad operativa. Se usa internamente en lugar del término genérico "Order" | Contexto Purchase Orders Context; central en flujo de captura, validación y despacho |
+| **Order Item** | Ítem de pedido | Línea de producto dentro de una orden de compra con código interno, cantidad y precio pactado | Componente atómico de la orden de compra |
 | **Assisted Order Capture** | Captura asistida de pedido | Flujo en que el Coordinador Comercial registra la orden en nombre del comprador B2B | Diferencia el canal asistido del autoservicio |
 | **Order Validation** | Validación de pedido | Proceso que verifica disponibilidad de stock, condiciones crediticias y datos del cliente antes de confirmar una orden | Paso obligatorio antes de generar orden de despacho |
 | **Order Status** | Estado de pedido | Valor que representa la etapa actual de una orden: pendiente, validada, bloqueada, despachada | Determina transiciones en el flujo operativo |
@@ -58,7 +59,8 @@ La selección de términos cubre los tres segmentos del producto: S1 — Commerc
 | **Delivery Status** | Estado de entrega | Situación actual del pedido durante despacho, ruta, incidencia o cierre | Permite seguimiento operativo para S2 y visibilidad para S3 |
 | **Tracking** | Seguimiento | Consulta del avance del pedido desde su confirmación hasta el cierre de entrega | Reduce incertidumbre del comprador y llamadas manuales |
 | **Delivery Incident** | Incidencia de entrega | Evento que afecta el despacho, como demora, faltante, rechazo, cambio de ruta o problema de conformidad | Debe registrarse para mantener trazabilidad |
-| **Buyer Portal** | Portal del comprador | Interfaz web destinada a compradores B2B para consulta de catálogo, estado de pedidos y analítica propia | Contexto acotado de cara al cliente externo |
-| **Operations Dashboard** | Panel operativo | Vista centralizada para roles internos con alertas, métricas y acciones operativas | Interfaz principal del Coordinador Comercial y Jefe de Logística |
+| **Subscription Plan** | Plan de suscripción | Condición comercial bajo la cual la empresa contratante accede a Nexa y habilita capacidades de uso | Relacionado con administración de empresa y account ownership |
+| **Promotion** | Promoción | Condición comercial temporal asociada a productos, categorías o compradores específicos | Permite activar oportunidades comerciales dentro del catálogo |
+| **Buyer Engagement** | Relación con comprador | Acciones orientadas a mantener comunicación, confianza y recurrencia del comprador B2B | Asociado a catálogo, solicitudes, promociones, seguimiento y documentos |
 
 Este glosario reduce ambigüedad entre entrevistas, needfinding, EventStorming, historias de usuario, backlog y diseño de dominio. Su propósito es mantener consistencia en la forma en que el equipo describe el flujo comercial-operativo de Nexa y las responsabilidades de S1, S2 y S3.

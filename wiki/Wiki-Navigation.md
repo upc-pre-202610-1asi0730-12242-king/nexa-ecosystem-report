@@ -9,3 +9,5 @@ This page describes how to navigate and maintain the Nexa wiki pages.
 
 ## Customization Rules
 - When writing a new guide page, use standard kebab-case naming for the file (e.g. `My-New-Guide.md`).
+- Update `wiki/_Sidebar.md` with a link to the new file.
+- Verify that links work offline using relative references.

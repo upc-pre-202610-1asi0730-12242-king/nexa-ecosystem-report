@@ -5,6 +5,7 @@
 La cadena de frío cumple un rol crítico en sectores como alimentos, productos farmacéuticos y agroexportación, al asegurar que los productos sensibles a la temperatura mantengan su calidad e inocuidad durante el almacenamiento, transporte y distribución hasta el usuario final (Vértiz, 2011). Estudios en distintos países de la región muestran que fallas en uno o varios eslabones de la cadena de frío, especialmente en transporte y venta al por menor, se asocian con incumplimientos de normas de temperatura, proliferación microbiana y reducción de la vida útil de lácteos, carnes y otros perecederos (Tutiven et al., 2026; Arriaga et al., 2023). Al respecto, las investigaciones demuestran una constante fluctuación térmica en la comercialización de cortes de res, registrando temperaturas que superan ampliamente los límites normativos, como se evidencia en la siguiente tabla. Esta deficiencia subraya la necesidad de un control logístico riguroso y continuo antes de que el producto llegue al cliente comercial.
 
 *Temperaturas promedio (°C) en cortes de carne de res*
+
 | Supermercado | Enero | Febrero | Marzo | Abril | Mayo | Media General |
 | --- | --- | --- | --- | --- | --- | --- |
 | Supermercado 1 | 10.17 | 9.78 | 10.16 | 8.91 | 9.71 | 9.75 |
@@ -94,6 +95,7 @@ El problema identificado puede estructurarse mediante la técnica 5W2H, lo que p
 
 | Elemento | Descripción aplicada al proyecto |
 | --- | --- |
+| Who (quiénes) | El problema afecta principalmente a empresas importadoras y distribuidoras de productos refrigerados que operan en el mercado peruano, así como a sus clientes comerciales B2B del canal tradicional (bodegas, minimarkets y HORECA) y del canal moderno. Estas organizaciones manejan productos perecederos que requieren cadena de frío y se ven expuestas a riesgos logísticos, sanitarios y económicos cuando sus procesos de información y control no están estandarizados. En el caso de las bodegas, además, se ha documentado una madurez digital todavía baja, lo que limita la articulación con proveedores y distribuidores. |
 | What (qué) | El problema central consiste en la gestión manual, fragmentada y poco trazable del flujo de pedidos B2B de productos refrigerados, donde la información transita por canales informales, como llamadas, mensajes de texto o notas de voz, y se replica manualmente en hojas de cálculo o sistemas no integrados. Esto impide conectar de manera consistente el catálogo, la toma de pedido, el control de inventario, las fechas de vencimiento y el seguimiento operativo del despacho. |
 | Where (dónde) | El problema se manifiesta en empresas que operan sobre todo en Lima y en los principales corredores logísticos del país, donde se concentra buena parte de la infraestructura de frío, y en cadenas de abastecimiento que conectan almacenes y centros de distribución con puntos de venta B2B del canal tradicional y moderno. Los eslabones de almacenamiento y transporte constituyen puntos críticos de ruptura de cadena de frío y de fallas operativas. |
 | When (cuándo) | Se trata de un problema recurrente y continuo, asociado a la operación diaria de abastecimiento B2B. Las rupturas de cadena de frío y los incidentes logísticos no aparecen como eventos aislados: en una microred de salud peruana se registraron 64 incidentes en un año, lo que evidencia que las excursiones térmicas pueden mantenerse de manera sostenida. De forma complementaria, la baja madurez digital observada en bodegas y pequeños comercios sugiere que la dependencia de procesos manuales y canales informales persiste en el tiempo. |
@@ -120,7 +122,7 @@ Cada problem statement articula un dominio de fricción, un segmento afectado, u
 | Control operativo y administración del tenant | Inventario, despacho, evidencias y administración interna de la empresa contratante | Operations / Account Owner | Falta de visibilidad sobre inventario, lotes, preparación, despacho, evidencias, accesos y configuración operativa | La operación no cuenta con una vista centralizada para decidir, priorizar y controlar el tenant | Dar trazabilidad operativa al ciclo pedido-inventario-despacho-cierre y centralizar la administración de empresa | S2 |
 | Abastecimiento y seguimiento del comprador B2B | Compra recurrente B2B, portal comprador y seguimiento del pedido | B2B Buyer Portal | Incertidumbre sobre catálogo, disponibilidad, confirmación, documentos y estado del pedido | El comprador depende de canales informales para abastecerse y consultar el avance de su pedido | Ofrecer un portal claro para consulta, solicitud, documentos y seguimiento autónomo | S3 |
 
-| Captura comercial y validación del pedido | Coordinación comercial de pedidos B2B refrigerados | Coordinación comercial / ventas internas | Pedidos informales, doble digitación y validaciones manuales que retrasan la operación | La información nace dispersa y llega tarde o incompleta hacia logística | Estructurar el pedido desde el origen con validación comercial y disponibilidad visible | S1 |
+>*Nota*: La tabla organiza los problem statements según dominio, segmento, dolor, brecha y estrategia inicial. Elaboración propia.
 
 #### Problem Statement 1: Captura comercial y validación del pedido
 
@@ -137,14 +139,14 @@ Cada problem statement articula un dominio de fricción, un segmento afectado, u
 #### Problem Statement 3: Abastecimiento y seguimiento del comprador B2B
 
 - **Contexto:** Nuestro contexto demanda ofrecer a los compradores B2B un canal continuo, claro y confiable para consultar catálogo, generar solicitudes, revisar pedidos, acceder a documentos y seguir el estado de sus entregas.
-- **Contexto:** Nuestro contexto demanda un proceso rápido y estructurado para la recepción y validación de pedidos B2B, asegurando que la información inicial de la venta refleje correctamente las condiciones del cliente y la disponibilidad de los productos.
-- **Factor crítico:** Sin embargo, observamos que las vendedoras y coordinadoras comerciales invierten demasiado tiempo procesando pedidos informales (audios, mensajes, listas de WhatsApp) y validando información manualmente, lo que ocasiona retrasos, cuellos de botella y traslada errores hacia la fase logística.
+- **Factor crítico:** Sin embargo, observamos que el comprador B2B experimenta incertidumbre y dependencia de canales informales para confirmar disponibilidad, resolver dudas, obtener documentos y conocer el avance de sus pedidos.
+- **Pregunta retadora:** ¿Cómo podemos ofrecer al comprador B2B un portal intuitivo que le brinde mayor autonomía para solicitar productos, revisar información clave y seguir sus pedidos sin perder la confianza en la empresa proveedora?
 
 #### 1.2.2.2. Lean UX Assumptions
 
 Las suposiciones se organizan en cinco categorías que cubren el negocio, los usuarios, el producto, la tecnología y el mercado/canal. Cada una se formula como hipótesis de trabajo sujeta a validación, no como hecho establecido. De esta manera, el equipo puede identificar qué ideas deben comprobarse antes de ampliar el alcance funcional de Nexa.
 
-Las suposiciones se organizan en cinco categorías que cubren el negocio, los usuarios, el producto, la tecnología y el mercado/canal. Cada una se formula como hipótesis de trabajo sujeta a validación, no como hecho establecido.
+*Tabla. Lean UX Assumptions por categoría*
 
 | Tipo de assumption | Assumption | Segmento relacionado | Riesgo si es falsa | Cómo se valida |
 |:---|:---|:---|:---|:---|
@@ -162,8 +164,8 @@ Las suposiciones se organizan en cinco categorías que cubren el negocio, los us
 | **Technical** | El flujo principal puede validarse inicialmente sin integraciones avanzadas con ERP, TMS, sensores IoT o sistemas externos. | S1, S2 | Los usuarios consideran indispensable la integración externa para que el MVP represente su operación. | Explicación del alcance durante entrevistas y validación con datos simulados. |
 | **Market / Channel** | WhatsApp, llamadas y Excel seguirán siendo canales relevantes; Nexa debe reducir su dependencia progresivamente, no eliminarlos de inmediato. | S1, S3 | El mercado ya opera con plataformas digitales integradas y no necesita convivencia con canales informales. | Entrevistas sobre hábitos actuales de pedido y revisión de madurez digital del canal. |
 | **Market / Channel** | Las distribuidoras medianas son un segmento viable para validar Nexa antes de escalar hacia empresas más grandes o negocios más pequeños. | S1, S2 | Las empresas grandes ya tienen sistemas propios y las pequeñas no tienen presupuesto o madurez digital suficiente. | Demos exploratorias con perfiles del mercado objetivo y análisis de feedback inicial. |
-| **Business** | Las distribuidoras e importadoras necesitan digitalizar y centralizar la recepción de pedidos B2B y la gestión de su catálogo de productos refrigerados | S1, S2 | El producto no genera valor diferencial respecto al uso de Excel o WhatsApp | Entrevistas con distribuidoras sobre fricción real en gestión de pedidos |
-| **Business** | El valor principal que busca el cliente es la reducción de errores en la toma de pedidos y el ahorro de tiempo operativo en el cuadre diario | S1, S2 | El precio o el soporte técnico son más determinantes que la reducción de errores | Sesiones de validación con perfiles de compra en distribuidoras target |
+
+>*Nota*: Las suposiciones son hipótesis de trabajo que guían el diseño del MVP y el proceso de validación. Los segmentos S1, S2 y S3 corresponden a los actores definidos en la sección de segmentos objetivo. Elaboración propia.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
@@ -176,8 +178,8 @@ Cada hipótesis se conecta con un segmento, una intervención de producto y una 
 | H1: Menor tiempo de registro comercial | S1 | Implementar un flujo web para registrar solicitudes, validar información comercial y convertirlas en pedidos confirmados. | Reducir el tiempo que el equipo comercial dedica a interpretar, transcribir y validar pedidos recibidos por canales informales. | Disminución del tiempo promedio de registro y validación de una solicitud antes de convertirla en pedido confirmado. |
 | H2: Menor error de stock e inventario | S2 | Centralizar la consulta de inventario, lotes, disponibilidad real, criterios FEFO, reservas y estados operativos del pedido. | Reducir errores asociados a stock desactualizado, mala rotación, pedidos no viables o cambios de último minuto. | Disminución de pedidos con ajustes manuales de stock, quiebres detectados tarde o incidencias por disponibilidad incorrecta. |
 | H3: Mayor visibilidad del pedido | S3 | Ofrecer un portal para consultar catálogo, generar solicitudes, revisar pedidos, documentos y seguimiento. | Aumentar la visibilidad del comprador sobre el estado de sus solicitudes, pedidos, documentos y despacho. | Incremento de consultas realizadas desde el portal y reducción de consultas manuales por WhatsApp o llamada sobre estado del pedido. |
-**Fricción en Ventas**
 
+>*Nota*: La tabla convierte los supuestos principales en hipótesis medibles asociadas a los tres segmentos definidos para Nexa. Elaboración propia.
 
 #### 1.2.2.4. Lean UX Canvas
 
@@ -206,10 +208,6 @@ El canvas completado para Nexa organiza el problema, los usuarios, los beneficio
 | S2 | Si operación visualiza inventario, lotes, disponibilidad real y despacho desde una misma vista, puede reducir errores de stock y priorizar mejor la ejecución. | Menor error de stock e inventario. | Cantidad de pedidos con ajustes manuales, quiebres detectados tarde o incidencias por disponibilidad incorrecta. |
 | S3 | Si el comprador puede consultar catálogo, pedidos, documentos y tracking desde el portal, obtiene mayor visibilidad y depende menos de consultas manuales. | Mayor visibilidad del pedido. | Número de consultas desde el portal y reducción de consultas manuales por WhatsApp o llamada. |
 
-<table>
-  <thead>
-    <tr>
-      <th>Bloque del canvas</th>
-      <th>Contenido aplicado a Nexa</th>
-    </tr>
-  </thead>
+>*Nota*: La tabla desarrolla la relación entre hipótesis, razonamiento y métricas por segmento. Elaboración propia.
+
+El proceso Lean UX anterior permite conectar la problemática inicial con decisiones concretas de producto. S1 valida la captura y conversión comercial; S2 valida el control operativo, inventario, despacho y administración del tenant; y S3 valida la experiencia externa de consulta, solicitud, documentos y seguimiento. Esta lectura será utilizada como base para Needfinding, User Stories, Product Backlog, Jira y arquitectura.
