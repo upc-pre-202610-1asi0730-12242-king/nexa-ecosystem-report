@@ -109,6 +109,8 @@
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-3-sprint-3.md">5.2.3.4. Development Evidence for Sprint Review</a></td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-3-sprint-3.md">5.2.3.5. Execution Evidence for Sprint Review</a></td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-3-sprint-3.md">5.2.3.6. Services Documentation Evidence for Sprint Review</a></td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-3-sprint-3.md">5.2.3.7. Software Deployment Evidence for Sprint Review</a></td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation/5-2-3-sprint-3.md">5.2.3.8. Team Collaboration Insights during Sprint</a></td></tr>
   <tr><td><a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3. Validation Interviews</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3.1. Diseño de Entrevistas</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3.2. Registro de Entrevistas</a></td></tr>
