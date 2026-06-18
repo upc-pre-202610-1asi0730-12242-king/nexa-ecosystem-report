@@ -280,15 +280,15 @@ Para mantener trazabilidad entre investigación, diseño y solución, los recorr
 
 | Segmento | Persona | User Goal | Resumen de task flow | Wireflow | User Flow |
 |---|---|---|---|---|---|
-| S1 — Commercial Coordination | Valeria Sánchez | Registrar o asistir un pedido B2B validando cliente, condición comercial, disponibilidad de productos y seguimiento posterior | Login — perfil Valeria → Dashboard comercial → Clientes → Detalle de cliente → Validación de condición comercial → Pedido asistido → Selección de productos → Validación de disponibilidad → Confirmación del pedido → Detalle y seguimiento del pedido → Reportes comerciales | [Wireflow S1 en Lucidchart](https://lucid.app/lucidchart/4aeb3b33-353d-4b0c-b978-5bed19d4fdca/edit?viewport_loc=-11%2C-11%2C3028%2C1465%2C0_0&invitationId=inv_c95b5cdc-7bd7-46ad-aa88-0fa213649397) | Userflow S1 en Lucidchart |
-| S2 — Operations / Account Owner | Roberto García | Supervisar inventario, lotes, riesgos FEFO, despacho, cierre operativo, evidencias y administración de empresa | Login — perfil Roberto → Dashboard operativo → Inventario → Detalle de lote → Revisión FEFO y stock → Priorización operativa → Tablero de despacho → Confirmación de despacho → Evidencia de entrega simulada → Validación de evidencia → Reportes operativos → Company Administration si corresponde | [Wireflow S2 en Lucidchart](https://lucid.app/lucidchart/6573c628-5545-4360-8fb2-3bb444c7e648/edit?viewport_loc=-298%2C-263%2C3315%2C1788%2C0_0&invitationId=inv_5e548793-b34d-43ed-b8fc-0f9dd7cf81a5) | Userflow S2 en Lucidchart |
-| S3 — B2B Buyer Portal | Elena Litano | Consultar catálogo, enviar solicitud, revisar pedidos, acceder a documentos y seguir el estado del despacho con mayor autonomía | Login — perfil Elena → Portal Home → Product Catalog → Product Detail → constructor de solicitud (`Request Builder`) → My Requests → My Orders → Order Detail / Tracking → Business Documents → Payment Methods | Wireflow S3 visual incorporado en esta sección | User flow S3 visual incorporado en esta sección |
+| S1 — Commercial Coordination | Valeria Sánchez | Registrar o asistir un pedido B2B validando cliente, condición comercial, disponibilidad de productos y seguimiento posterior | Login — perfil Valeria → Dashboard comercial → Clientes → Detalle de cliente → Validación de condición comercial → Pedido asistido → Selección de productos → Validación de disponibilidad → Confirmación del pedido → Detalle y seguimiento del pedido → Reportes comerciales | https://lucid.app/lucidchart/4aeb3b33-353d-4b0c-b978-5bed19d4fdca/edit?viewport_loc=-11%2C-11%2C3028%2C1465%2C0_0&invitationId=inv_c95b5cdc-7bd7-46ad-aa88-0fa213649397| Userflow S1 en Lucidchart |
+| S2 — Operations / Account Owner | Roberto García | Supervisar inventario, lotes, riesgos FEFO, despacho, cierre operativo, evidencias y administración de empresa | Login — perfil Roberto → Dashboard operativo → Inventario → Detalle de lote → Revisión FEFO y stock → Priorización operativa → Tablero de despacho → Confirmación de despacho → Evidencia de entrega simulada → Validación de evidencia → Reportes operativos → Company Administration si corresponde | https://lucid.app/lucidchart/6573c628-5545-4360-8fb2-3bb444c7e648/edit?viewport_loc=-298%2C-263%2C3315%2C1788%2C0_0&invitationId=inv_5e548793-b34d-43ed-b8fc-0f9dd7cf81a5 | Userflow S2 en Lucidchart |
+| S3 — B2B Buyer Portal | Elena Litano | Consultar catálogo, enviar solicitud, revisar pedidos, acceder a documentos y seguir el estado del despacho con mayor autonomía | Login — perfil Elena → Portal Home → Product Catalog → Product Detail → constructor de solicitud (`Request Builder`) → My Requests → My Orders → Order Detail / Tracking → Business Documents → Payment Methods | https://lucid.app/lucidchart/6484c9d8-fa54-40a2-aea6-449700cd2285/edit?viewport_loc=-6260%2C-4950%2C18517%2C9389%2C0_0&invitationId=inv_fd80fa67-4315-4bbd-8ce0-56f1f3243954  | User flow S3 en Lucidchart|
 
 #### User Flow S1 — Commercial Coordination: validación y pedido asistido
 
 El user flow de S1 representa el recorrido de Valeria, responsable de coordinación comercial, desde el acceso al sistema hasta la creación y seguimiento de un pedido asistido. El flujo incluye validaciones de condición comercial, disponibilidad de productos y rutas alternativas para restricciones de cliente o cantidad insuficiente.
 
-[Ver userflow S1 en Lucidchart](https://lucid.app/lucidchart/8f6d6af2-f229-47f8-ba02-86b27cdc6fed/edit?invitationId=inv_09391266-7e11-4614-8edf-12cf979cdabf)
+https://lucid.app/lucidchart/8f6d6af2-f229-47f8-ba02-86b27cdc6fed/edit?invitationId=inv_09391266-7e11-4614-8edf-12cf979cdabf
 
 ![S1 User flow coordinación comercial](../assets/images/chapter-4/webapp/user-flows/s1-commercial-userflow-lucid.png)
 
@@ -298,7 +298,7 @@ El user flow de S1 representa el recorrido de Valeria, responsable de coordinaci
 
 El user flow de S2 representa el recorrido de Roberto, responsable de operaciones y cuenta, desde la revisión de inventario y lotes con criterio FEFO hasta la gestión de despacho y cierre con evidencia de entrega simulada (`Proof of Delivery` / POD). El flujo incluye rutas alternativas para riesgo operativo, despacho no listo, evidencia incompleta y administración de empresa cuando corresponde al account owner.
 
-[Ver userflow S2 en Lucidchart](https://lucid.app/lucidchart/b91c8e98-a38b-456a-92e5-f942be7e8439/edit?invitationId=inv_5c030713-67e5-4e84-90bf-661b26cef528)
+https://lucid.app/lucidchart/b91c8e98-a38b-456a-92e5-f942be7e8439/edit?invitationId=inv_5c030713-67e5-4e84-90bf-661b26cef528
 
 ![S2 User flow jefatura logística](../assets/images/chapter-4/webapp/user-flows/s2-logistics-userflow-lucid.png)
 
@@ -308,18 +308,9 @@ El user flow de S2 representa el recorrido de Roberto, responsable de operacione
 
 El user flow de S3 representa el recorrido de Elena como compradora B2B. El flujo conecta el descubrimiento, acceso, construcción de solicitudes, pedidos confirmados, documentos y estado del pago. Esta representación diagramática complementa los mockups desktop y mobile de alta fidelidad incorporados en esta sección.
 
-[Ver userflow S3 en Lucidchart](https://lucid.app/lucidchart/fd9a95ac-41df-4050-b097-9ac255290e45/edit?view_items=Hp-6tXcRsOlP%2CAG-6WBY~X2a7%2ClU76RF2avL6M%2CL196QvicmQVg%2CRK-6ZJxNGbXU%2C.x869HhjmLNZ%2CEE-69fu3SEZn%2CjV76JIpS~GQ~%2Co-96vNrpwFv4%2C3K-6Rk5lg8Hb%2CiH-6tPVlqJ~t%2CNU76~dYYOGKw%2C6U76LKo6njtH%2CxI-6DgDxHBfQ%2CCL-6Tizg1zZf%2CDJ-6oe-3SeFb%2CjD-6cAXRji8p%2CYz-6kid1ejZ3%2CuB-66-HzZfqH%2CQC-6z8A~3dBL%2CZB-670PGAeBO%2CPA-6sghQQ68V%2CQy-6BvPXAV~n%2CeQ96-oZnMWG9%2C-A-6w-SDYvhl%2Cl276CkhOmWTU%2CgU76PxI~0a53%2C1T763mBjJlI6%2CmT763XdIavdu%2C4C-6akbc7L6h%2C_S76DK_lKxe0%2C4y-6KmugLEqt%2C5B86w3ydsgO1%2CGA86Vy0STfAp%2Cg776~27srzo6%2Cws-6d_5MiM4_%2Cn976MIfJMQX~%2Czv-6MAfnpLo3%2CvI86ERula6-o%2CN776KbACctwI%2CK376xZksEcUG%2Cvy86n.J~nj8x%2C8076KHyf8nyv%2CNt-6w-GgvXLa%2Cy276~Zfq8YbP&page=0_0&invitationId=inv_4888a70f-e0f1-4797-83ed-a762247133cb)
+https://lucid.app/lucidchart/fd9a95ac-41df-4050-b097-9ac255290e45/edit?view_items=jV76JIpS~GQ~%2CEE-69fu3SEZn%2C.x869HhjmLNZ%2CRK-6ZJxNGbXU%2CL196QvicmQVg%2ClU76RF2avL6M%2CAG-6WBY~X2a7%2CHp-6tXcRsOlP%2C-A-6w-SDYvhl%2C4C-6akbc7L6h%2Cl276CkhOmWTU%2CQy-6BvPXAV~n%2Co-96vNrpwFv4%2CiH-6tPVlqJ~t%2C_S76DK_lKxe0%2CDJ-6oe-3SeFb%2CNU76~dYYOGKw%2C4y-6KmugLEqt%2CmT763XdIavdu%2CZB-670PGAeBO%2C1T763mBjJlI6%2CeQ96-oZnMWG9%2CPA-6sghQQ68V%2C6U76LKo6njtH%2CCL-6Tizg1zZf%2C3K-6Rk5lg8Hb%2CuB-66-HzZfqH%2CYz-6kid1ejZ3%2CQC-6z8A~3dBL%2CxI-6DgDxHBfQ%2CgU76PxI~0a53%2CjD-6cAXRji8p%2CvI86ERula6-o%2Czv-6MAfnpLo3%2Cn976MIfJMQX~%2Cws-6d_5MiM4_%2Cg776~27srzo6%2CGA86Vy0STfAp%2C5B86w3ydsgO1%2Cy276~Zfq8YbP%2CNt-6w-GgvXLa%2C8076KHyf8nyv%2Cvy86n.J~nj8x%2CK376xZksEcUG%2CN776KbACctwI&page=0_0&invitationId=inv_4888a70f-e0f1-4797-83ed-a762247133cb
 
 ![S3 User flow B2B Buyer Portal](../assets/images/chapter-4/webapp/user-flows/s3-buyer-portal-userflow-lucid.png)
 
 **Figura. User flow documentado para S3 — B2B Buyer Portal.**
 
-#### Tabla de consistencia: User Goals, wireflows y user flows
-
-| User goal | Persona | Wireflow | User flow | Representación en esta sección | Cobertura documentada |
-|---|---|---|---|---|---|
-| Registrar pedido asistido validando cliente, condición comercial y disponibilidad de producto | Valeria Sánchez (S1) | [Wireflow S1 en Lucidchart](https://lucid.app/lucidchart/4aeb3b33-353d-4b0c-b978-5bed19d4fdca/edit?viewport_loc=-11%2C-11%2C3028%2C1465%2C0_0&invitationId=inv_c95b5cdc-7bd7-46ad-aa88-0fa213649397) | Userflow S1 en Lucidchart | Lucidchart + mockups S1 seleccionados | Recorrido comercial documentado con assets visuales |
-| Supervisar inventario FEFO, coordinar despacho, cerrar entrega con evidencia de entrega simulada y administrar empresa/tenant cuando corresponde | Roberto García (S2) | [Wireflow S2 en Lucidchart](https://lucid.app/lucidchart/6573c628-5545-4360-8fb2-3bb444c7e648/edit?viewport_loc=-298%2C-263%2C3315%2C1788%2C0_0&invitationId=inv_5e548793-b34d-43ed-b8fc-0f9dd7cf81a5) + figura de wireflow S2 | Userflow S2 en Lucidchart | Lucidchart + mockups S2 seleccionados | Recorrido operativo documentado con assets visuales |
-| Explorar catálogo, enviar solicitud, revisar pedidos, documentos y tracking desde Buyer Portal | Elena Litano (S3: B2B Buyer Portal) | Wireflow S3 visual y mockups desktop/mobile | User flow S3 visual | Wireflow y user flow exportados como evidencias visuales | Recorrido de autoservicio B2B documentado con mockups de escritorio, flujo adaptativo móvil, wireflow y user flow |
-
-> *Nota:* La sección mantiene la separación entre S1, S2 y S3. S2 conserva las responsabilidades de administración, configuración y tenant como parte de Operations / Account Owner, sin crear un segmento Admin separado.

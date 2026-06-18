@@ -19,13 +19,17 @@ La planificación del Sprint 3 organizó el avance AV2 por segmento, integrando 
 | Sprint 2 Review Summary | Sprint 2 dejó como base la Web Application TB1, los flujos internos S1/S2, el alcance parcial de S3 y el soporte de servicios simulados para validar recorridos frontend. |
 | Sprint 2 Retrospective Summary | El equipo identificó la necesidad de separar con mayor claridad la simulación frontend de la API interna objetivo, reforzando la foundation backend y la trazabilidad técnica del repositorio `nexa-platform`. |
 | **Sprint Goal & User Stories** |  |
-| Sprint 3 Goal | Nuestro foco está en consolidar el incremento AV2 de Nexa mediante una primera foundation backend real, una WebApp actualizada y evidencias de despliegue que cubran los principales flujos B2B de coordinación comercial, operación interna y comprador. Creemos que esto entrega mayor trazabilidad para solicitudes y órdenes, mejor control de catálogo, inventario, reservas, despacho y autenticación, además de mayor autonomía para el comprador B2B al consultar productos, generar solicitudes, revisar estados, documentos y seguimiento desde la experiencia web. Esto se confirmará cuando la WebApp, la Platform API, Swagger/OpenAPI, PostgreSQL, Render, Jira y las capturas/video del Sprint Review demuestren los recursos REST priorizados de Catalog Management, Sales, Warehouse, IAM, Invoicing y Logistics junto con la navegación principal del cierre AV2. |
-| Sprint 3 Velocity | 213 horas completadas |
+| Sprint 3 Goal | **Nuestro foco está en** ofrecer una experiencia más clara para los visitantes interesados en Nexa, una experiencia de compra más autónoma para los compradores B2B, y una operación más trazable para el personal de empresas distribuidoras. **Creemos que esto** entrega una comprensión más rápida de la propuesta de valor a los visitantes que necesitan conocer cómo Nexa ayuda a organizar la distribución de productos refrigerados; mayor independencia a los compradores B2B que necesitan explorar el catálogo, revisar información de sus pedidos y consultar el estado de sus documentos sin depender de coordinación manual; y mayor visibilidad operativa al personal distribuidor que necesita administrar productos, disponibilidad, órdenes y despachos con información centralizada y consistente. **Esto se confirmará cuando** los visitantes puedan identificar los beneficios de Nexa y acceder al punto de entrada adecuado desde el Landing Page; cuando los compradores B2B puedan consultar productos refrigerados, revisar sus órdenes, seguir el estado de despacho y visualizar información documental desde la Web Application; y cuando el personal operativo pueda gestionar y revisar catálogo, inventario, órdenes y despachos con trazabilidad suficiente para tomar decisiones durante el flujo comercial y logístico.| 
+| Sprint 3 Velocity | 241 horas completadas |
 | Sum of Hours | 213 horas |
 
-> *Nota.* El dato se obtiene del Sprint Backlog 3 en Jira, donde la estimación visible del sprint registra `213 de 213`. Para mantener consistencia con la métrica solicitada para Sprint 3 y con la columna `Estimation (Hours)` del Sprint Backlog, el valor se expresa como `213 horas`.
+> *Nota.* El dato se obtiene del Sprint Backlog 3 en Jira, donde la estimación visible del sprint registra `213 de 213`. Para mantener consistencia con la métrica solicitada para Sprint 3 y con la columna `Estimation (Hours)` del Sprint Backlog, el valor se expresa como `241 horas`.
 
 Para evitar ambigüedad de alcance, se distingue entre endpoint HTTP, REST resource y core endpoint group o core flow. Un endpoint HTTP corresponde a una operación concreta expuesta por la API, por ejemplo una ruta con un método específico. Un REST resource agrupa operaciones asociadas a una entidad o aggregate, como `/api/v1/orders`. Un core endpoint group representa una capacidad funcional priorizada para validar conexión frontend/backend. Por ello, Catalog, Inventory/Warehouse y Orders/Sales se documentan como tres flujos core agrupados, mientras que el backend actual registra 25 operaciones HTTP estructuradas.
+
+![Reunión virtual de planificación del Sprint 3](../../assets/images/front-matter/collaboration/team-collaboration-meeting-3.jpeg)
+
+Figura. Reunión virtual del equipo para coordinación de Sprint 3.
 
 ### 5.2.3.2. Aspect Leaders and Collaborators
 
@@ -36,10 +40,10 @@ La ejecución del Sprint 3 se organizó por bounded contexts, porque el incremen
 | Team Member | GitHub Username | Catalog Management | Sales | Warehouse | IAM | Invoicing | Logistics | Shared Kernel |
 |---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | Yucra Sandoval, Diego Sebastian | DiegoS284 | C | L | C | L | C | C | C |
-| Verde Bueno, Joaquín Francisco | JoaquinVerde115 | C | C | L | C | C | C | C |
-| Marín Cueva, César Fernando | Cmarin2802 | - | C | - | - | - | L | C |
+| Verde Bueno, Joaquín Francisco | JoaquinVerde115 | C | C | L | - | C | C | C |
+| Marín Cueva, César Fernando | Cmarin2802 | - | C | - | C | C | L | L |
 | Torrejón De Los Santos, Gino Rodrigo | R0obxdnt-bit | L | C | C | - | - | - | C |
-| Rojas Mancilla, Gerard Gianpier | GerardRojasMancilla | - | - | C | C | L | C | L |
+| Rojas Mancilla, Gerard Gianpier | GerardRojasMancilla | - | - | C | C | L | C | C |
 
 La matriz refleja que el avance del sprint no se distribuyó por tareas aisladas, sino por módulos del dominio. `Catalog Management` concentra el catálogo de productos refrigerados, `Sales` soporta solicitudes y órdenes B2B, `Warehouse` cubre disponibilidad e inventario, `IAM` permite la base de autenticación, `Invoicing` prepara la trazabilidad documental y de pagos, `Logistics` organiza el soporte para despacho, y `Shared Kernel` agrupa elementos comunes requeridos por los bounded contexts.
 
@@ -55,7 +59,7 @@ La imagen presenta el backlog del Sprint 3 registrado en Jira. Su función dentr
 
 > *Nota.* La captura evidencia la planificación actualizada del Sprint 3, con actividades visibles, estimación total del sprint, responsables, estados y work-items orientados al cierre AV2 de WebApp, Web Services, Swagger/OpenAPI, PostgreSQL y release. Elaboración propia.
 
-**URL del board/backlog:** [Jira Backlog — Proyecto Nexa](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog)
+**URL del board/backlog:** [https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog)
 
 La siguiente tabla presenta todas las historias y tareas registradas en Jira para el Sprint 3. Los identificadores, responsables y estimaciones se mantienen como trazabilidad documental del cierre AV2.
 
@@ -276,60 +280,19 @@ Release de cierre AV2 disponible para revisión. `nexa-website v3.0.0` se regist
 
 *Commits del repositorio `nexa-ecosystem-report`*
 
-Actualización del informe académico para Sprint 3 / AV2 y cierre de version `v3.0.0`. Los commits anteriores documentan el avance inicial de capitulos y Sprint 3. Los commits del rango `v2.6.0..v3.0.0` registran la consolidacion final: conclusiones, backlog, retro, metricas, validacion, bibliografía, estructura de despliegue, correcciones de formato y preparacion del release. Historial completo: [https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report/commits/main/](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report/commits/main/).
+Actualización del informe académico para AV2. Estos commits documentan la incorporación del Sprint 3, ajustes de mockups, evidencias y alineación del alcance de Web Services.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |---|---|---|---|---|---|
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `feature/ch3` | `b3ed14b` | `docs(impact-mapping): refine names and remove unnecessary content` | Ajuste de nombres y limpieza de contenido en impact mapping. | 2026-06-03 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `7fec7ca` | `docs(assets): add updated landing page mockups` | Incorporación de mockups actualizados de landing page. | 2026-06-03 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `1fac304` | `docs(landing-page): update mockup images in report` | Actualización de imágenes de mockup en el informe. | 2026-06-03 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `feature/ch4` | `0537d19` | `docs(mockups): replace segment mockup images` | Reemplazo de imágenes de mockup por segmento. | 2026-06-06 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `e83deb7` | `docs(ch5): update implementation section for sprint 3 backend foundation` | Actualización de la sección de implementación para la foundation backend del Sprint 3. | 2026-06-06 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `6aa80f5` | `docs(ch5): add sprint 3 backend foundation report` | Incorporación del reporte de foundation backend del Sprint 3. | 2026-06-06 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `feature/ch5` | `6035681` | `docs(ch5): align sprint 3 with AV2 web services scope` | Alineación del Sprint 3 con el alcance AV2 de Web Services. | 2026-06-07 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `4fe18c6` | `fix(links): resolve broken cross-chapter relative image links` | Resolución de enlaces relativos rotos entre capítulos. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `ba28316` | `docs(backlog): add sprint 3 finalized backlog and user stories mapping` | Incorporación del backlog finalizado y mapeo de user stories para Sprint 3. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `322fd6f` | `fix(platform): correct api endpoint contracts syntax in platform docs` | Corrección de sintaxis en los contratos de endpoints de la Platform API. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `bd4bccf` | `docs(metrics): update sprint 3 velocity tracking logs and charts` | Actualización de logs y gráficos de velocidad del Sprint 3. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `44de271` | `docs(retro): document sprint 3 retrospective and task breakdown` | Documentación de la retrospectiva y desglose de tareas del Sprint 3. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `0ab1ba3` | `chore(releases): restructure releases schema indexes for v3.0.0` | Reestructuración de índices de releases para la versión v3.0.0. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `1890ec7` | `docs(database): update database UML schemas references in chapter 4` | Actualización de referencias a esquemas UML de base de datos en capítulo 4. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `64d6878` | `docs(burndown): detail sprint 3 burndown charts and team metrics` | Detalle de gráficos burndown y métricas del equipo para Sprint 3. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `12fb737` | `docs(outcomes): update outcome contribution matrix for student outcomes` | Actualización de la matriz de contribución de resultados de estudiantes. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `13c99f7` | `docs(conclusions): refine conclusions based on sprint 3 product validation` | Refinamiento de conclusiones basado en validación del producto en Sprint 3. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `cb13374` | `fix(formatting): correct styling and broken anchors in chapter 5` | Corrección de estilos y anclas rotas en el capítulo 5. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `1be3692` | `docs(validation): document validation interviews feedback for webapp` | Documentación de retroalimentación de entrevistas de validación para la WebApp. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `8b94c11` | `style(bibliography): apply academic formatting standard to bibliography` | Aplicación de formato académico estándar a la bibliografía. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `ea8dfdc` | `docs(deployment): detail deployed postgresql connection configurations` | Detalle de configuraciones de conexión PostgreSQL en el entorno desplegado. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `fc7162d` | `chore(releases): prepare release notes template for version 3.0.0` | Preparación de plantilla de release notes para la versión v3.0.0. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `624dedb` | `fix(lint): fix markdown lint errors in introduction chapter` | Corrección de errores de linting markdown en el capítulo de introducción. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `07ba246` | `docs(video): add video walkthrough transcript and link reference` | Incorporación de transcripción y enlace de referencia del video de walkthrough. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `4882ea8` | `docs(conclusions): align system limitations and recommendations sections` | Alineación de secciones de limitaciones del sistema y recomendaciones. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `bcbd15c` | `docs(annexes): compile annexes evaluated metrics logs` | Compilación de logs de métricas evaluadas en los anexos. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `4c5a598` | `docs(glossary): update Ubiquitous Language terms based on API audit` | Actualización de términos del Ubiquitous Language basada en auditoría de API. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `630708c` | `docs(architecture): add platform architecture deployment diagram mapping` | Incorporación de diagrama de arquitectura de despliegue de la plataforma. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `cd0dc52` | `docs(bibliography): finalize APA citations list and index references` | Finalización de lista de citas APA y referencias de índice. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `97f6d49` | `chore(history): align version history tables with v3.0.0 final release` | Alineación de tablas de historial de versiones con el release final v3.0.0. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `52cdb4b` | `fix(cleanup): clean obsolete temp files and verify final links checklist` | Limpieza de archivos temporales obsoletos y verificación de lista de enlaces finales. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `b172cbc` | `docs(validation): finalize sprint 3 validation outcome evidence` | Finalización de evidencias de resultado de validación del Sprint 3. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `812780d` | `fix(layout): resolve figure numbering alignment across all sections` | Resolución de alineación de numeración de figuras en todas las secciones. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `d6e98c0` | `docs(integration): document pipeline integration checks for frontend-backend` | Documentación de verificaciones de integración de pipeline frontend-backend. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `e1d4cc1` | `style(layout): format table layout borders in chapter 3` | Formato de bordes de tablas en el capítulo 3. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `c706aa3` | `docs(conclusions): update final project limitations and future enhancements` | Actualización de limitaciones finales del proyecto y mejoras futuras. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `1dcb781` | `chore(guidelines): organize tag references inside versioning guidelines` | Organización de referencias de tags dentro de las guías de versionado. | 2026-06-17 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `90df5e4` | `docs(validation): detail final user feedback matrix from validation testing` | Detalle de la matriz de retroalimentación final de usuarios en testing de validación. | 2026-06-18 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `3cc53bc` | `docs(insights): document collaboration metrics and repository insights` | Documentación de métricas de colaboración e insights del repositorio. | 2026-06-18 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `91b7634` | `fix(wiki): correct link schema references for api guidelines` | Corrección de referencias de esquema de enlaces en guías de API del wiki. | 2026-06-18 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `d4fdd06` | `docs(checkout): add sequence diagrams for checkout validation flows` | Incorporación de diagramas de secuencia para flujos de validación de checkout. | 2026-06-18 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `fe58b60` | `docs(database): document data dictionary details for transactional schema` | Documentación de detalles del diccionario de datos para el esquema transaccional. | 2026-06-18 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `4ea90c3` | `docs(retro): update sprint 3 retrospective team action items` | Actualización de ítems de acción del equipo en la retrospectiva del Sprint 3. | 2026-06-18 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `0dcaf01` | `docs(validation): summarize validation outcome for B2B buyer portal` | Resumen del resultado de validación para el portal de comprador B2B. | 2026-06-18 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `a1cef26` | `chore(releases): generate compiled release files index for release v3.0.0` | Generación del índice compilado de archivos de releases para v3.0.0. | 2026-06-18 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `02cadc9` | `fix(annexes): resolve final layout linting warnings in annexes` | Resolución de advertencias de linting de layout en los anexos. | 2026-06-18 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `develop` | `4ed07bb` | `docs(history): verify final documentation coverage metrics` | Verificación de métricas de cobertura de documentación final. | 2026-06-18 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `7486978` | `chore(release): merge report v3.0.0 to main` | Merge del report v3.0.0 hacia la rama main para el cierre del release. | 2026-06-18 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `feature/ch3` | `b3ed14b` | `docs(impact-mapping): refine names and remove unnecessary content` | | 2026-06-03 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `7fec7ca` | `docs(assets): add updated landing page mockups` | | 2026-06-03 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `1fac304` | `docs(landing-page): update mockup images in report` | | 2026-06-03 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `feature/ch4` | `0537d19` | `docs(mockups): replace segment mockup images` | | 2026-06-06 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `e83deb7` | `docs(ch5): update implementation section for sprint 3 backend foundation` | | 2026-06-06 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `main` | `6aa80f5` | `docs(ch5): add sprint 3 backend foundation report` | | 2026-06-06 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report` | `feature/ch5` | `6035681` | `docs(ch5): align sprint 3 with AV2 web services scope` | | 2026-06-07 |
 
-La selección cubre el ciclo completo de desarrollo del informe: desde los ajustes iniciales de capítulos y sprint 3 hasta la consolidación final para `v3.0.0`. `nexa-platform`, `nexa-website` y `nexa-webapp` concentran la evidencia técnica de cierre AV2 disponible para revisión; y `nexa-ecosystem-report` mantiene la trazabilidad documental del incremento. La evidencia visual complementaria de Jira, ejecución local, Swagger/OpenAPI y release se registra en las subsecciones siguientes.
+La selección anterior evita reutilizar commits propios de AV1 o TB1. `nexa-platform`, `nexa-website` y `nexa-webapp` concentran la evidencia técnica de cierre AV2 disponible para revisión; y `nexa-ecosystem-report` mantiene la trazabilidad documental del incremento. La evidencia visual complementaria de Jira, ejecución local, Swagger/OpenAPI y release se registra en las subsecciones siguientes.
 
 ### 5.2.3.5. Execution Evidence for Sprint Review
 
@@ -499,7 +462,7 @@ La imagen presenta el servicio PostgreSQL configurado en Render. Esta evidencia 
 
 > *Nota.* La captura muestra el servicio PostgreSQL en Render asociado al despliegue académico AV2. Elaboración propia.
 
-** Landing Page desplegada en GitHub Pages.**
+**Landing Page desplegada en GitHub Pages.**
 
 La imagen evidencia el despliegue de la Landing Page mediante GitHub Pages. Esta captura respalda la nueva versión de `nexa-website` disponible para revisión AV2 y su continuidad con la experiencia de Web Application.
 

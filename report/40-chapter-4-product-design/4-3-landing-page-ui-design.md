@@ -4,7 +4,7 @@ La Landing Page es la superficie pública de entrada al ecosistema Nexa. Su func
 
 Esta sección traduce las decisiones definidas en **4.1 Style Guidelines** y **4.2 Information Architecture** hacia una propuesta visual concreta. La Landing Page no replica las pantallas internas de la Web Application ni del Buyer Portal; su objetivo es presentar el valor de Nexa mediante una narrativa clara, jerarquía visual consistente, CTAs visibles, lenguaje profesional, contacto identificable, canales de confianza y adaptación responsive.
 
-La propuesta visual documentada en esta sección mantiene correspondencia con la Landing Page pública del proyecto: [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/). La evidencia de despliegue, ejecución y validación se documenta en el Capítulo V; esta sección se concentra en la propuesta UI, wireframes y mockups.
+La propuesta visual documentada en esta sección mantiene correspondencia con la Landing Page pública del proyecto [https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/). La evidencia de despliegue, ejecución y validación se documenta en el Capítulo V; esta sección se concentra en la propuesta UI, wireframes y mockups.
 
 El mensaje principal de la Landing Page resume la promesa de Nexa: **coordinar pedidos B2B refrigerados con mayor visibilidad entre compra, ventas, inventario y despacho**. A partir de ese pitch message, la interfaz organiza el contenido en una secuencia progresiva: problema operativo, propuesta de valor, capacidades de la plataforma, rutas por tipo de empresa, confianza institucional, preguntas frecuentes y puntos de conversión.
 
