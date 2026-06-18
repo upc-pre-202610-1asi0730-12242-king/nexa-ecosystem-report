@@ -17,3 +17,7 @@ This guide walks you through setting up your environment to browse and edit the 
    - Open the root folder in your editor.
    - Navigate to `/report` to browse the chapters.
    - Open `/wiki/Home.md` to navigate this wiki offline.
+
+## Contributing Guidelines
+- Standardize on UTF-8 formatting.
+- Before committing any changes, consult the [Branching & Commits](./Branching-and-Commits.md) guidelines.

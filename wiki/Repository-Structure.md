@@ -11,3 +11,6 @@ Below is the repository mapping for the Nexa ecosystem, listing target roles and
 
 ## Report Folder Structure
 - `/report/front-matter`: Version history logs and Outcomes index files.
+- `/report/10-chapter-1-introduction` to `50-chapter-5-implementation-validation-deployment`: Main document body.
+- `/releases`: Release notes directory.
+- `/wiki`: Local copy of this wiki.

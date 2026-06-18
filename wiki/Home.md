@@ -30,3 +30,9 @@ The purpose of this Wiki is to provide a single documentation space for:
 | **Ecosystem Architecture** | [Ecosystem Architecture](./Ecosystem-Architecture.md) |
 | **Repository Structure** | [Repository Structure](./Repository-Structure.md) |
 | **Main Technologies** | [Main Technologies](./Main-Technologies.md) |
+
+---
+
+<p align="center">
+  <strong>Nexa Wiki</strong> · Universidad Peruana de Ciencias Aplicadas · 2026-10
+</p>

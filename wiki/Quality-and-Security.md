@@ -9,3 +9,5 @@ Nexa documentation and software artifacts follow strict quality assurance and se
 
 ## Document Quality Standards
 - Check spelling and grammar before committing.
+- Ensure all tables render cleanly on standard Markdown viewers.
+- Verify image references before tagging a new release.
