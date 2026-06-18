@@ -18,6 +18,7 @@
 
 <h1>Informe de Trabajo Final</h1>
 
+<p><strong>Entrega:</strong> Sprint Review (AV2)</p>
 <p><strong>Startup:</strong> King</p>
 <p><strong>Producto:</strong> Nexa</p>
 <p><strong>Mes y año:</strong> Junio 2026</p>

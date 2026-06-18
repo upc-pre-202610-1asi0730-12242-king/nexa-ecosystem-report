@@ -2,6 +2,7 @@
 
 ## **2.1. Competidores**
 
+El ecosistema de soluciones de software aplicadas a la gestión comercial, operativa y logística en América Latina ha alcanzado un nivel importante de maduración. Sin embargo, el análisis del mercado muestra que la oferta sigue siendo fragmentada: algunas plataformas se especializan en la venta B2B y el catálogo digital, otras en la planificación logística o el monitoreo físico del transporte, y otras en la gestión integral de la empresa mediante estructuras ERP.
 
 Para una empresa importadora o distribuidora de productos refrigerados, esta fragmentación implica que la digitalización del flujo completo todavía suele depender de varias herramientas con énfasis distintos. Por ello, el análisis competitivo de Nexa considera competidores y referentes que cubren capas complementarias del problema: **Riqra** en la capa comercial B2B, **Drivin** en la capa logística y de despacho, **OnTracking / RedGPS** en la capa de telemetría y monitoreo, y **Defontana** en la capa de gestión empresarial integral.
 
@@ -13,7 +14,7 @@ El objetivo no es descalificar a estas plataformas, sino identificar con precisi
 
 **Debilidad frente a nuestro nicho:** Aunque resuelve bien la capa comercial del pedido, su foco principal está en la digitalización de la venta B2B. No se especializa en conectar de forma nativa el pedido con inventario perecedero, criterios FEFO, despacho operativo, evidencias de entrega y trazabilidad del flujo refrigerado.
 
-**Perfil:** Posicionado como un Sistema de Gestión de Transporte (TMS) robusto a nivel internacional. Su núcleo de negocio es la optimización algorítmica de rutas, la consolidación de carga en vehículos y la recolección de Pruebas Electrónicas de Entrega (POD) mediante aplicaciones móviles para choferes.
+**Drivin (Competencia en la capa logística y ruteo)**
 
 **Perfil:** Posicionado como un sistema de gestión de transporte (TMS) enfocado en optimización de rutas, consolidación de carga, gestión de flota y prueba electrónica de entrega (POD) mediante aplicaciones móviles y herramientas logísticas especializadas.
 
@@ -29,9 +30,11 @@ El objetivo no es descalificar a estas plataformas, sino identificar con precisi
 
 **Perfil:** Defontana representa una solución ERP amplia orientada a centralizar procesos empresariales como ventas, compras, inventario, facturación, clientes, cobranzas y control administrativo en una misma plataforma.
 
+**Debilidad frente a nuestro nicho:** Su amplitud funcional puede aportar control empresarial, pero también implica mayor complejidad de adopción para empresas que necesitan resolver primero un flujo comercial-operativo concreto. Nexa no busca competir como ERP completo en el MVP, sino como una plataforma más enfocada en articular pedido, validación comercial, inventario básico, documentos, despacho y seguimiento dentro del dominio de cadena de frío.
 
 ### ***2.1.1. Análisis competitivo (Landscape & SWOT)***
 
+El análisis competitivo permite comparar a Nexa frente a soluciones que cubren partes distintas del flujo comercial-operativo. La pregunta principal que guía este análisis es: **¿cómo puede Nexa diferenciarse de plataformas B2B, logísticas, de telemetría y ERP al enfocarse en la coordinación integral del pedido refrigerado desde la solicitud hasta el seguimiento y cierre documental?**
 
 *Tabla. Competitive Analysis Landscape*
 
@@ -46,9 +49,8 @@ El objetivo no es descalificar a estas plataformas, sino identificar con precisi
 | **Canales de distribución** | Web Application para usuarios internos y portal web para compradores B2B. Landing Page como canal comercial y de conversión. | Plataforma web y canales digitales B2B para proveedores y clientes empresariales. | Web Application para administración logística y aplicación móvil para operación en ruta. | Plataforma web de monitoreo, aplicaciones móviles y dispositivos instalados en unidades. | Plataforma cloud/web con módulos empresariales y canales de soporte comercial. |
 | **Fortalezas (S)** | Enfoque específico en cadena de frío, trazabilidad del pedido, conexión entre S1, S2 y S3, menor complejidad que un ERP completo. | Especialización en comercio B2B, catálogo digital y autogestión de pedidos por clientes empresariales. | Fortaleza en ruteo, despacho, gestión de flota, control de entregas y evidencia logística. | Fortaleza en rastreo, monitoreo técnico, sensores y visibilidad física del transporte. | Amplia cobertura funcional para procesos empresariales, administrativos y contables. |
 | **Debilidades (W)** | Al ser una propuesta en etapa académica/MVP, todavía requiere validar integraciones, escalabilidad y adopción en operaciones reales. | Puede quedarse en la capa comercial si no se integra con inventario perecedero, FEFO, despacho, documentos y POD. | No resuelve la captura comercial inicial, catálogo, validación del pedido ni relación directa con compradores B2B. | Depende de hardware y se enfoca más en monitoreo físico que en gestión comercial, documental o de pedidos. | Su amplitud puede aumentar la complejidad de adopción cuando la empresa solo necesita ordenar un flujo específico. |
-| Dimensión / Criterio | Nexa | Riqra (SaaS Ecommerce B2B) | Drivin (SaaS TMS Logística) | OnTracking / RedGPS (SaaS IoT Telemetría) |
-| --- | --- | --- | --- | --- |
-| **Overview** | Plataforma unificada que conecta la toma de pedidos B2B con la gestión operativa básica, especializada nativamente en productos de cadena de frío. | Portal B2B de comercio electrónico orientado a digitalizar ventas para fabricantes y distribuidores generalistas. | Plataforma TMS enfocada en la planificación de rutas, optimización de flota y última milla en múltiples industrias. | Plataforma de monitoreo de sensores IoT y rastreo vehicular, orientada al cumplimiento físico de la cadena de frío. |
+| **Oportunidades (O)** | Diferenciarse como capa operacional B2B de cadena de frío que reduce doble digitación, errores de stock y falta de visibilidad. | Ampliar su valor si conecta mejor comercio B2B con operación, inventario y despacho especializado. | Integrarse con plataformas comerciales para conectar ventas y ejecución logística. | Integrarse con plataformas de pedidos y despacho para enriquecer la trazabilidad operacional. | Adaptar módulos más simples o verticalizados para sectores específicos como cadena de frío. |
+| **Amenazas (T)** | Competidores más consolidados podrían incorporar módulos similares o integraciones verticales para cadena de frío. | Puede fortalecer su propuesta operativa y acercarse al flujo que Nexa busca cubrir. | Puede expandirse hacia capas comerciales o integrarse con soluciones B2B. | Puede ampliar su alcance hacia gestión documental, entregas y trazabilidad integral. | Puede ofrecer módulos especializados o paquetes simplificados que reduzcan la necesidad de una solución intermedia. |
 
 > *Nota:* La matriz compara a Nexa con competidores y referentes que cubren capas distintas del flujo comercial-operativo. Elaboración propia.
 
@@ -66,7 +68,7 @@ El análisis muestra un límite importante para la primera versión. Nexa no nec
 
 **3. Diferenciación frente a plataformas fragmentadas**
 
-En un sector donde trazabilidad, control documental y conservación del producto tienen relevancia normativa, una solución que ordene información comercial y operativa puede adquirir valor no solo por eficiencia, sino también por capacidad de respuesta ante incidencias o auditorías.
+Riqra fortalece la capa comercial B2B, Drivin fortalece la capa logística, OnTracking / RedGPS fortalece la capa técnica de monitoreo y Defontana fortalece la gestión empresarial integral. Frente a ello, Nexa busca diferenciarse como una capa SaaS enfocada en conectar esas necesidades desde el recorrido del pedido refrigerado, sin presentarse como un ERP completo ni como una solución dependiente de hardware.
 
 **4. Riesgo de adopción**
 
@@ -87,12 +89,13 @@ Por ello, las estrategias no se plantean como una competencia directa en todos l
 | Riqra | Fuerte enfoque en comercio B2B, catálogo digital y autogestión de pedidos. | Puede concentrarse principalmente en la capa comercial si no conecta profundamente con inventario perecedero, FEFO, despacho, documentos y POD. | Diferenciarse como una plataforma que no solo recibe pedidos B2B, sino que conecta el pedido con operación, inventario, documentos y seguimiento. | Priorizar Request Builder, Purchase Requests, Purchase Orders, Product Catalog, Business Documents y tracking del pedido. |
 | Drivin | Fortaleza en planificación logística, rutas, flota, entregas y prueba de entrega. | Opera principalmente después de que el pedido ya existe; no resuelve la captura comercial ni la validación inicial del pedido. | Posicionarse como la capa previa y complementaria que estructura el pedido antes de que llegue a despacho. | Diseñar un flujo claro entre solicitud, validación comercial, inventario y dispatch order, dejando abierta una futura integración logística. |
 | OnTracking / RedGPS | Fortaleza en rastreo, telemetría, sensores, GPS y monitoreo físico de transporte. | Se enfoca en la trazabilidad física del vehículo, pero no en la lógica comercial, documental ni de coordinación del pedido. | Diferenciarse por trazabilidad comercial-operativa, no por hardware o monitoreo físico avanzado en el MVP. | Registrar estados del pedido, evidencias, documentos y seguimiento visible para operación y comprador, sin depender inicialmente de sensores IoT. |
-**Táctica preliminar de producto:** La propuesta debe resaltar de forma explícita variables del dominio refrigerado que suelen quedar invisibles en plataformas horizontales, como condiciones de conservación, rotación y sensibilidad operativa del producto.
+| Defontana | Amplia cobertura como ERP para ventas, compras, inventario, facturación, clientes y administración. | Su amplitud puede implicar mayor complejidad para empresas que necesitan resolver primero un flujo concreto de pedidos refrigerados. | Reducir la complejidad tipo ERP mediante una experiencia más enfocada en el flujo comercial-operativo de cadena de frío. | Priorizar una webapp SaaS con módulos mínimos de clientes, solicitudes, pedidos, inventario básico, documentos, despacho y administración del tenant. |
 
 >*Nota*: La tabla resume cómo Nexa puede enfrentar fortalezas competitivas, aprovechar debilidades y definir tácticas preliminares desde su enfoque SaaS B2B especializado en cadena de frío. Elaboración propia.
 
 #### Enfoque estratégico general
 
+La principal estrategia competitiva de Nexa consiste en ubicarse entre tres tipos de soluciones: plataformas B2B centradas en venta, sistemas logísticos centrados en despacho y ERPs amplios centrados en administración empresarial. Esta posición permite presentar a Nexa como una alternativa especializada para empresas que necesitan ordenar el flujo del pedido refrigerado sin adoptar desde el inicio una solución demasiado compleja o fragmentada.
 
 *Tabla. Síntesis estratégica de diferenciación*
 
@@ -102,6 +105,6 @@ Por ello, las estrategias no se plantean como una competencia directa en todos l
 | Simplicidad frente a ERP | Nexa no intenta cubrir todos los procesos administrativos en el MVP. Prioriza el recorrido del pedido. | Menor fricción de adopción y mayor claridad funcional para S1, S2 y S3. |
 | Continuidad comercial-operativa | La solicitud se conecta con validación comercial, inventario, documentos y despacho. | Menos doble digitación, menos errores y mayor trazabilidad entre áreas. |
 | Visibilidad para el comprador | El S3 puede consultar catálogo, solicitudes, pedidos, documentos y tracking desde el portal. | Mayor confianza y menor dependencia de consultas manuales por WhatsApp o llamada. |
+| Preparación para integración futura | El MVP no depende de ERP, TMS o sensores IoT, pero deja espacio para integraciones posteriores. | Escalabilidad funcional sin sobredimensionar la primera versión. |
 
 >*Nota*: La síntesis estratégica permite explicar por qué Nexa se diferencia por enfoque y continuidad del flujo, no por intentar reemplazar todas las soluciones existentes. Elaboración propia.
-**Estrategia de adopción con baja fricción tecnológica**

@@ -17,3 +17,8 @@ Before submitting or approving a Pull Request (PR) to merge changes from `develo
 - [ ] Headings follow a logical hierarchy.
 - [ ] Outlined sections correspond with cycles.
 - [ ] Bibliography links are updated and operational.
+
+## Review Flow
+1. Open a PR from `develop` to `main`.
+2. Assign at least two reviewers.
+3. Once approved, merge using `git merge --no-ff` (no fast-forward) locally, tag, and push.

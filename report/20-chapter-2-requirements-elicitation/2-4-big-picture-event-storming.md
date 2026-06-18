@@ -9,6 +9,7 @@ El EventStorming se construyó como un ejercicio de síntesis del dominio a part
 ### ***2.4.1. Proceso de construcción del modelado***
 
 *Big Picture EventStorming — Step 1: Exploration*
+![Big Picture Step 1](../assets/images/chapter-2/event-storming/ddd-step-1-event-storming.png)
 
 *Big Picture EventStorming — Step 2: Timeline*
 ![Big Picture Step 2](../assets/images/chapter-2/event-storming/ddd-step-2-event-storming.png)
@@ -40,8 +41,8 @@ El EventStorming se construyó como un ejercicio de síntesis del dominio a part
 | Responsable de despacho | S2 | Prepara la salida, asigna ruta o responsable de entrega, actualiza estados operativos y registra incidencias de despacho. |
 | Operations / Account Owner | S2 | Administra empresa, usuarios, accesos, configuración base, reglas internas, parámetros operativos y visibilidad general del tenant. |
 | Reparto / transportista | S2 | Ejecuta la entrega, reporta incidencias y registra evidencia mínima de conformidad o proof of delivery. |
-| Actor | Responsabilidad principal |
-|-------|----------------------------|
+
+> *Nota:* La tabla de planteamiento de las responsabilidades en relación a un segmento asociado. Elaboración propia.
 
 ### ***2.4.3. Eventos del dominio y puntos de tensión principales***
 
@@ -62,7 +63,8 @@ El EventStorming se construyó como un ejercicio de síntesis del dominio a part
 | Incidencia de ruta registrada | S2, S1, S3 | Una demora, rechazo, faltante o cambio debe comunicarse oportunamente para evitar pérdida de trazabilidad. |
 | Entrega cerrada con evidencia | S2, S3 | El cierre con evidencia permite reducir reclamos abiertos y sostener confianza en el cumplimiento. |
 | Pedido cancelado antes de despacho | S1, S2, S3 | La cancelación exige liberar reservas, ajustar continuidad operativa y comunicar el cambio al comprador. |
-|---------|----------------------------|----------------------|
+
+> *Nota:* Tabla de eventos relacionados a un actor implicado y una tensión o implicancia. Elaboración propia.
 
 ### ***2.4.4. Pain points y restricciones operativas identificadas***
 
@@ -92,8 +94,8 @@ A partir de los eventos y los pain points identificados, el Big Picture permite 
 | `CrearDispatchOrder` (S2) | `DispatchOrderCreada` | Se define ruta, responsable, estado operativo y evidencias requeridas para la entrega. | `HojaDeRuta`, `PanelDeDespachos` |
 | `AsociarBusinessDocuments` (S1 / S2) | `BusinessDocumentsAsociados` | Los documentos quedan vinculados al pedido para consulta interna y visibilidad del comprador cuando corresponda. | `RepositorioDocumentalDelPedido` |
 | `ActualizarEstadoDeEntrega` (S2) | `PedidoDespachado` o `IncidenciaDeRutaRegistrada` | El estado se actualiza y se notifica a coordinación comercial y comprador cuando sea relevante. | `EstadoDeEntregaParaCliente`, `BitácoraDeIncidenciasPorPedido` |
-| `SolicitarPedido` (S3) | `PedidoBorradorCreado` | Si el cliente no tiene crédito hábil, el pedido se marca como "a validar" | `CatálogoDisponibleParaCliente` (stock + precio + condiciones) |
-| `EnviarPedidoParaValidación` (S1) | `PedidoEnviadoParaRevisión` | Reserva temporal de stock por ventana definida de validación | `ResumenDePedidoPendiente` (ítems, totales, crédito disponible) |
+| `CerrarEntregaConPOD` (S2) | `EntregaCerradaConEvidencia` | El pedido queda cerrado con evidencia mínima de conformidad o proof of delivery. | `EvidenciaDeEntrega`, `HistorialDelPedido` |
+| `CancelarPedido` (S1 / S3) | `PedidoCancelado` | Se liberan reservas y se comunica la cancelación a los actores involucrados. | `EstadoDelPedidoParaCliente` |
 
 Los comandos expresan la intención del actor; los eventos confirman que el estado efectivamente cambió; las políticas capturan las reacciones automáticas que el dominio debe sostener (reservas, validaciones, notificaciones, FEFO, liberación de stock); y los read models son las vistas consolidadas que permiten al S1, al S2 y al S3 decidir con información consistente. Juntos, cierran la secuencia del Big Picture como una cadena de *intención → hecho → reacción → visibilidad*, no como pantallas aisladas.
 
@@ -112,7 +114,8 @@ Los comandos expresan la intención del actor; los eventos confirman que el esta
 5. El S2 revisa inventario real, reservas, lotes, vencimientos, criterios FEFO, temperatura y prioridad de despacho.
 6. El S2 prepara el pedido y genera la Dispatch Order con ruta, responsable, estado operativo y evidencias requeridas.
 7. El S1 y el S2 asocian los Business Documents necesarios para el seguimiento y cierre del pedido.
-1. El cliente consulta el catálogo o la coordinación comercial captura el pedido de forma asistida.
+8. Durante el despacho, el S2 actualiza estados, registra incidencias y permite que el S3 consulte el avance.
+9. La entrega se cierra con evidencia o POD, y el pedido queda concluido con historial trazable.
 
 Este modelado refuerza dos ideas centrales del proyecto: el problema principal no está en un único “módulo” aislado, sino en la transición entre captura, validación, disponibilidad, despacho y cierre; y las restricciones operativas del dominio siguen siendo decisivas para definir reglas y criterios de funcionamiento a lo largo del flujo.
 

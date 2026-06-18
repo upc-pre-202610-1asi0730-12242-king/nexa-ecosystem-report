@@ -10,6 +10,7 @@ Las entrevistas se organizaron para entender cómo el problema aparece en esos t
 
 **Guion por segmento**
 
+**S1: Commercial Coordination**
 
 **Segmento:** Personal que recibe, interpreta y canaliza pedidos hacia facturación, almacén o despacho
 
@@ -201,7 +202,7 @@ Además de las capturas integradas en el informe, el archivo audiovisual origina
 
 La entrevistada Lorena Silva es una asesora comercial con amplia experiencia en la gestión de carteras de clientes y coordinación logística. Su rol es integral: gestiona pedidos, brinda asesoría técnica sobre presentaciones de productos refrigerados y supervisa condiciones de crédito que llegan hasta los 45 días. Identifica a WhatsApp como su canal operativo crítico por su inmediatez, dejando el correo electrónico solo para formalidades corporativas.
 
-A nivel técnico, reporta fricciones severas con el sistema actual (Fontana), el cual colapsa ante accesos simultáneos, obligando a reinicios que retrasan la operación. Además, destaca la falta de funcionalidades móviles (como el registro de clientes), lo que la obliga a depender de laptops en campo, reduciendo su agilidad. Finalmente, señala inconsistencias en el stock real mostrado por el sistema, lo que genera desconfianza y requiere validaciones manuales constantes con almacén.
+A nivel técnico, reporta fricciones severas con el sistema actual (Defontana), el cual colapsa ante accesos simultáneos, obligando a reinicios que retrasan la operación. Además, destaca la falta de funcionalidades móviles (como el registro de clientes), lo que la obliga a depender de laptops en campo, reduciendo su agilidad. Finalmente, señala inconsistencias en el stock real mostrado por el sistema, lo que genera desconfianza y requiere validaciones manuales constantes con almacén.
 
 **Entrevistado 2**
 
@@ -326,7 +327,7 @@ Jesica Sandoval, supervisora de ventas HORECA, subraya el riesgo de la transcrip
 
 **S3: B2B Buyer Portal**
 
-Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcripción manual de pedidos, donde los errores en cantidades obligan a validaciones individuales de cada orden. Señala que la variable crítica es el control de fechas de vencimiento (FEFO), información que actualmente no está integrada en el sistema central y requiere coordinación verbal constante con almacén.
+S3 se mantiene como segmento objetivo válido porque representa al comprador externo habilitado dentro del flujo B2B de Nexa. A partir de las entrevistas exploratorias disponibles y del análisis del flujo de compra, este segmento permite identificar necesidades relacionadas con catálogo, disponibilidad, confirmación del pedido, seguimiento, documentos y confianza durante la relación con la empresa proveedora.
 
 **Entrevistado 1**
 
@@ -393,7 +394,6 @@ El segmento de vendedoras y personal de coordinación comercial, representado en
 
 - **Rol laboral:** 100% de los entrevistados (3 de 3) ejerce funciones directas de captura de pedidos, gestión de créditos y seguimiento de cartera.
 - **Uso de herramientas digitales:** 100% interactúa con sistemas ERP (como Defontana) y herramientas de mensajería instantánea simultáneamente.
-- **Uso de herramientas digitales:** 100% interactúa con sistemas ERP (como Fontana) y herramientas de mensajería instantánea simultáneamente.
 - **Entorno de trabajo:** 67% (Lorena y Celia) operan o han operado frecuentemente en campo (visitas presenciales), mientras que el 33% (Cinthia) mantiene una base más administrativa/oficina.
 - **Experiencia en digitalización:** El 100% reporta que los sistemas actuales son insuficientes para el entorno móvil, obligando a duplicar tareas en papel o laptops.
 
@@ -420,6 +420,7 @@ El segmento de vendedoras y personal de coordinación comercial, representado en
 
 El segmento S2, representado en esta muestra por Hilda Litano, Edith Taype y Jesica Sandoval, aporta una lectura transversal del dominio. Aquí el foco se desplaza desde la rapidez comercial hacia la trazabilidad, el control documental, la rotación y la responsabilidad operativa sobre productos perecederos. Estas entrevistas exponen las restricciones operativas y los criterios de control que este segmento debe sostener para que el pedido se cumpla correctamente.
 
+*Análisis del S2: Operations / Account Owner*
 
 | Variable observada en S2 | Evidencia recurrente | Lectura analítica | Implicancia de diseño |
 | --- | --- | --- | --- |
@@ -455,7 +456,7 @@ El segmento S2, representado en esta muestra por Hilda Litano, Edith Taype y Jes
 **Análisis del S3: B2B Buyer Portal**
 El análisis de las dos entrevistas exploratorias con Pedro Puente y Henrry García muestra un patrón consistente: el comprador comercial necesita previsibilidad logística, pero no está dispuesto a adoptarla a costa de complejidad adicional o pérdida de trato humano. Para ambos, el distribuidor no es solo un proveedor, sino un actor del que depende la continuidad operativa del negocio.
 
-*Análisis del S3: Comprador B2B / cliente comercial*
+*Análisis del S3: B2B Buyer Portal*
 
 | Variable observada en S3 | Evidencia recurrente | Lectura analítica | Implicancia de diseño |
 | --- | --- | --- | --- |
@@ -542,7 +543,7 @@ pie title Uso de Canales de Comunicación
     "ERP / Sistema Formal" : 10
 ```
 
-> *Nota:* Resultados obtenidos de las 8 entrevistas a profundidad realizadas con S1: Coordinación comercial / ventas internas, S2: Jefatura logística / coordinación operativa y S3: Comprador B2B / cliente comercial. Elaboración propia.
+> *Nota:* Resultados obtenidos de las 8 entrevistas a profundidad realizadas con S1, S2 y S3. Elaboración propia.
 
 *Jerarquía de Puntos de Dolor por Incidencia en los Segmentos*
 

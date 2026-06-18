@@ -21,3 +21,8 @@ To coordinate documentation releases and maintain academic traceability, the Kin
 2. Commit changes following the commit message format.
 3. Switch back to `develop` and merge:
    ```bash
+   git checkout develop
+   git merge --no-ff feature/ch3-backlog-user-stories
+   git branch -D feature/ch3-backlog-user-stories
+   ```
+4. Do not push unmerged or open feature branches to remote. Keep them local until closed.

@@ -2,6 +2,7 @@
 
 El Capítulo IV documenta la transición desde el descubrimiento del dominio hacia la materialización visual, funcional y arquitectónica de Nexa. En esta sección se establecen los criterios estéticos, las estructuras de información y las decisiones de diseño que permiten representar de forma coherente el flujo comercial-operativo de la plataforma.
 
+Nexa se construye como un ecosistema de tres superficies complementarias: una Landing Page pública, una Web Application interna y un Buyer Portal para compradores B2B. Cada superficie comparte un lenguaje visual común, pero adapta su densidad, navegación y tono de interacción según los segmentos finales del producto: S1 — Commercial Coordination, S2 — Operations / Account Owner y S3 — B2B Buyer Portal.
 
 ## 4.1. Style Guidelines
 
@@ -18,7 +19,8 @@ La arquitectura visual facilita:
 - Mantener consistencia de marca entre Landing Page, Web Application y Buyer Portal.
 - Adaptar densidad, jerarquía y componentes según S1, S2 y S3 sin crear segmentos adicionales.
 - Reducir contradicciones visuales entre investigación, prototipo, documentación y diseño de producto.
-Nexa utiliza un sistema visual unificado que se adapta según la superficie del producto. Las tres superficies comparten ADN visual (familia cromática, tipografía, espaciado y patrones de componentes), pero difieren intencionalmente en densidad, escala y tono comunicacional:
+- Representar con claridad el flujo de catálogo, solicitudes, órdenes, inventario, despacho, documentos, estado de pago y seguimiento.
+- Documentar criterios de accesibilidad y responsive design desde la etapa de diseño.
 
 ### 4.1.1. General Style Guidelines
 
@@ -43,12 +45,14 @@ El tono varía según la superficie:
 | Superficie | Tono esperado | Aplicación |
 |---|---|---|
 | Landing Page | Claro, comercial y orientado a valor | Explica beneficios, especialización en cadena de frío, trazabilidad y reducción de fricción operativa. |
-El sistema visual de Nexa se implementa mediante Design Tokens en CSS nativo (`tokens.css`), lo que permite gestionar cambios globales desde un único punto de verdad. Los tokens cubren color, tipografía, espaciado, radios y sombras, y se consumen tanto en la landing como en la webapp.
+| Web Application interna | Preciso, operativo y orientado a acción | Guía validaciones, reservas, gestión de clientes B2B, despacho, documentos, estado de pago y alertas. |
+| Buyer Portal | Simple, confiable y orientado a autonomía | Permite que el comprador B2B consulte catálogo, arme solicitudes, revise tracking, documentos y estado de pago sin depender de llamadas. |
+
+Los textos operativos deben usar verbos concretos y estados comprensibles. En S1, el lenguaje debe orientar validación y conversión comercial; en S2, debe orientar control, ejecución y administración del tenant; en S3, debe orientar consulta, solicitud, seguimiento y comprensión del cierre comercial.
 
 #### Color Palette
 
 La paleta de Nexa se organiza en cinco grupos funcionales: marca primaria, superficies, texto, estados semánticos y acentos de interacción. La familia azul representa confianza, control y trazabilidad; los neutros cálidos reducen fricción visual en pantallas densas; y los colores semánticos comunican estados operativos críticos.
-La paleta se organiza en cinco grupos funcionales: marca primaria, base/superficie, texto, estados semánticos y acentos de interacción.
 
 *Sistema de Colorimetría Nexa*
 
@@ -56,6 +60,7 @@ La paleta se organiza en cinco grupos funcionales: marca primaria, base/superfic
 
 > *Nota:* Especificación de Brand Colors, Text Colors y Status Colors. Elaboración propia.
 
+| Grupo | Token / referencia visual | Propósito | Uso en Landing Page | Uso en Web Application |
 |---|---|---|---|---|
 | Primary Blue | `#2563EB` / familia azul Nexa | Marca, CTAs, enlaces activos y acciones principales | Botones principales, enlaces destacados, acentos de sección | Acciones primarias, estados activos, navegación, filtros seleccionados |
 | Primary Hover / Dark Blue | `#1D4ED8` / tonos oscuros de marca | Jerarquía, hover, headers oscuros y contraste | Navbar, footer, hover de CTA | Sidebar, topbar, foco activo, estados de navegación |
@@ -67,8 +72,7 @@ La paleta se organiza en cinco grupos funcionales: marca primaria, base/superfic
 | Danger | `#EF4444` / `#DC2626` | Error, bloqueo o riesgo crítico | Mensajes de error en formularios | Stock agotado, validación fallida, incidencia de temperatura |
 | Info | `#2563EB` | Información neutral o progreso | Enlaces informativos y mensajes de soporte | Pedido en tránsito, tracking, estado informativo |
 
-| Primary Blue | Marca, CTAs, estados activos | Hero buttons, enlaces principales | Botones de acción, sidebar activo, badges | Misma familia cromática |
-| Warm Off-White | Fondo base, descanso visual | Background de secciones claras | Background de contenido principal | Base cálida compartida |
+La diferencia principal entre superficies no está en la identidad cromática, sino en su frecuencia y densidad de uso. La Landing Page emplea principalmente la familia primaria, superficies claras y contrastes editoriales; la Web Application incorpora con mayor frecuencia estados semánticos para comunicar condiciones operativas de solicitudes, órdenes, inventario, despacho, documentos y estado de pago.
 
 #### Typography
 
@@ -106,8 +110,11 @@ La escala de espaciado de Nexa se basa en múltiplos de 4px para mantener consis
 
 | Superficie | Principio de layout |
 |---|---|
-Definición de jerarquías para Display, Headings, Body y Mono. Elaboración propia.
+| Landing Page | Usa márgenes amplios, secciones respirables y separación clara entre propuesta de valor, beneficios, cobertura funcional y llamados a la acción. |
+| Web Application interna | Usa espaciado compacto y consistente para soportar tablas, filtros, cards de estado, formularios de validación, inventario, reservas, despacho y documentos. |
+| Buyer Portal | Usa espaciado suficiente para lectura táctil en catálogo, solicitudes, tracking, documentos comerciales y estado de pago sin aumentar innecesariamente la profundidad de navegación. |
 
+La consistencia de layout debe sostenerse en cards, tablas, drawers, modals, paneles de detalle y estados vacíos. Las separaciones deben reforzar el recorrido de decisión del usuario: consultar, validar, reservar, despachar, revisar documentos, confirmar pago simulado y seguir el cierre de la orden.
 
 ### 4.1.2. Web Style Guidelines
 
@@ -177,7 +184,17 @@ El sistema de diseño opera sobre una rejilla flexible con breakpoints para Desk
 
 Los componentes interactivos deben respetar una altura mínima aproximada de 44px en superficies táctiles. Esta decisión mejora usabilidad en contextos donde los usuarios pueden interactuar rápidamente desde almacén, ruta, oficina comercial o punto de compra.
 
-Variantes de botones primarios, secundarios y estados. Elaboración propia.
+#### Iconography
+
+El sistema iconográfico utiliza trazos lineales, formas simples y consistencia de grosor para mantener una interfaz ligera. Los iconos deben apoyar la comprensión del módulo, no reemplazar labels textuales.
+
+*Iconografía Nexa*
+
+![Iconography](../assets/images/chapter-4/style-guidelines/iconography.jpeg)
+
+> *Nota:* Biblioteca de iconos vectoriales para navegación y soporte. Elaboración propia.
+
+| Uso | Criterio |
 |---|---|
 | Navegación | Icono + label textual para reducir ambigüedad |
 | Estados | Icono opcional acompañado de badge o texto |
@@ -190,7 +207,8 @@ En la Web Application, los iconos pueden apoyarse en PrimeIcons y en SVGs propio
 #### Accessibility
 
 Los lineamientos de accesibilidad de Nexa se orientan al estándar **WCAG 2.1 AA** como referencia de diseño. Esta sección no afirma certificación ni auditoría aprobada; documenta criterios incorporados en el diseño para favorecer contraste, navegación comprensible, identificación de errores y uso claro de estados.
-| Botón primario | Fondo azul primario, texto blanco, border-radius consistente |
+
+| Criterio WCAG | Criterio incorporado en diseño | Aplicación en Nexa |
 |---|---|---|
 | 1.4.3 Contrast (Minimum) | Textos principales con contraste suficiente sobre fondos claros y oscuros | Lectura de catálogo, tablas, estados, documentos y resúmenes de pago |
 | 2.1.1 Keyboard Accessible | Navegación por teclado en enlaces, botones, formularios y controles principales | Validación de solicitudes, filtros, formularios de clientes B2B y documentos |
@@ -211,11 +229,6 @@ La experiencia móvil de Nexa adapta los mismos principios visuales de la versi�
 | Navegación compacta | Colapsar menús y sidebars en navegación móvil; mantener accesibles las rutas principales de catálogo, solicitudes, órdenes, documentos, inventario o reportes según el segmento. |
 | Legibilidad | Conservar contraste, tamaño de texto y separación suficiente para leer estados, precios, cantidades, documentos y mensajes de validación sin depender de zoom manual. |
 | Espaciado táctil | Mantener objetivos interactivos de aproximadamente 44px de alto, con separación suficiente entre botones, filtros, inputs, tabs y acciones críticas. |
-| CTA principal | Botón alto (48–56px), texto promocional, a veces con icono | Botón compacto (36–40px), texto de acción operativa |
-| Cards | Comunican valor, beneficios, propuesta | Muestran métricas, KPIs, resumen de entidad |
-| Navegación | Navbar horizontal con dropdown de soluciones | Sidebar vertical con módulos agrupados por dominio |
-| Tablas | No aplica | Componente central: filas densas, filtros, ordenamiento |
-| Drawers/Modals | No aplica | Detalle de entidad, formularios de edición rápida |
-| Badges/Estados | Mínimo (disponibilidad) | Frecuente (estados de pedido, stock, temperatura, crédito) |
-
----
+| Adaptación responsive | Reorganizar contenido en una sola columna cuando sea necesario, usando scroll horizontal solo para tablas operativas que no puedan simplificarse sin perder contexto. |
+| Consistencia web-mobile | Mantener colores, tipografía, badges, iconografía y lenguaje de estados coherentes con la Web Application desktop y el Buyer Portal. |
+| Accesibilidad | No comunicar errores o estados solo con color; conservar labels visibles, foco perceptible y mensajes comprensibles en formularios y acciones de confirmación. |

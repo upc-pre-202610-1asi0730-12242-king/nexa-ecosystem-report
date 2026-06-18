@@ -12,18 +12,21 @@ La construcción de los User Personas permite representar de forma más concreta
 *User Persona — S1: Commercial Coordination — Valeria Sánchez*
 
 Valeria Sánchez representa al perfil comercial encargado de recibir, interpretar y registrar pedidos B2B. Su trabajo suele depender de mensajes, llamadas, audios o listas enviadas por clientes, lo que genera una carga constante de validación manual. Este perfil permite entender la importancia de que Nexa reduzca el retrabajo desde la captura del pedido, ordenando la información comercial antes de que pase hacia las áreas operativas.
+
 ![User Persona 1](../assets/images/chapter-2/user-personas/user-persona-1.png)
 > *Nota:* Representación del arquetipo de vendedoras y coordinación comercial, enfocado en reducir la carga administrativa y el retrabajo en la captura del pedido. Elaboración propia.
 
 *User Persona — S2: Operations / Account Owner — Roberto García*
 
 Roberto García representa al perfil operativo que debe asegurar que cada pedido confirmado pueda prepararse, despacharse y cerrarse correctamente. Su principal reto es trabajar con información confiable sobre inventario, lotes, vencimientos, rutas e incidencias. Por ello, este User Persona evidencia la necesidad de que Nexa brinde mayor visibilidad operativa y trazabilidad durante la preparación, despacho y entrega de los pedidos.
+
 ![User Persona 2](../assets/images/chapter-2/user-personas/user-persona-2.png)
 > *Nota:* Representación sintética del arquetipo de coordinación logística y operativa, enfocada en el control del cumplimiento, la visibilidad del despacho y el cierre con evidencia. Su construcción se apoya en hallazgos de trazabilidad, incidencias y coordinación operativa dentro del dominio. Elaboración propia.
 
 *User Persona — S3: B2B Buyer Portal — Elena Litano*
 
 Elena Litano representa al comprador B2B que necesita abastecer su negocio con mayor autonomía y claridad. Actualmente, su experiencia depende en gran parte de la comunicación directa con el vendedor para confirmar productos, disponibilidad, precios y estado de entrega. Este perfil ayuda a orientar Nexa hacia un portal donde el cliente pueda consultar información, generar solicitudes y dar seguimiento a sus pedidos sin depender de consultas constantes por canales informales.
+
 ![User Persona 3](../assets/images/chapter-2/user-personas/user-persona-3.png)
 > *Nota:* Representación sintética del arquetipo de comprador comercial B2B, construida a partir de entrevistas a compradores minoristas y mayoristas, más evidencia de adopción digital del canal tradicional. Elaboración propia.
 
@@ -41,7 +44,7 @@ Elena Litano representa al comprador B2B que necesita abastecer su negocio con m
 | **Controlar fechas de caducidad de la mercadería**        | Media                   | Alta        | Alta                    | Alta        | Alta                | Alta        |
 | **Preparar y organizar la carga física para el reparto**  | -                       | -           | Alta                    | Alta        | -                   | -           |
 | **Consultar avance o momento estimado de entrega**        | Alta                    | Media       | Alta                    | Alta        | Alta                | Alta        |
-| Tareas del Mundo Real                                     | Valeria (S1: Comercial) |             | Roberto (S2: Logística) |             | Elena (S3: Comprador B2B) |             |
+| **Verificar y dar conformidad a la mercadería entregada** | -                       | -           | Alta                    | Alta        | Alta                | Alta        |
 
 > *Nota:* Análisis de la carga de tareas manuales distribuidas a lo largo de la cadena de suministro refrigerada. Frecuencia e importancia determinadas mediante el análisis cualitativo de las entrevistas (Needfinding). Elaboración propia.
 
@@ -50,10 +53,10 @@ Elena Litano representa al comprador B2B que necesita abastecer su negocio con m
 Los Journey Maps describen la situación actual de cada segmento antes de Nexa. Representan el recorrido As-Is: cómo se realiza hoy cada proceso, qué fricciones aparecen en cada etapa y dónde se concentra el mayor estrés operativo. No describen la experiencia dentro de la plataforma propuesta.
 
 *Journey Map As-Is — S1: Commercial Coordination*
-*Journey Map As-Is — S1: Coordinación comercial / ventas internas*
 ![Journey Map 1](../assets/images/chapter-2/journey-maps/journey-map-1.png)
 > *Nota:* Mapeo del proceso actual de captura y gestión de pedidos, identificando puntos de dolor en la transcripción manual y la dispersión de canales. Elaboración propia.
 
+*Journey Map As-Is — S2: Operations / Account Owner*
 ![Journey Map 2](../assets/images/chapter-2/journey-maps/journey-map-2.png)
 > *Nota:* Mapeo de la ruta logística actual, enfatizando los cuellos de botella en la comunicación de incidencias y la falta de trazabilidad operativa. Elaboración propia.
 
@@ -78,7 +81,7 @@ El recorrido del As-Is Scenario Map se estructura en seis etapas operativas, ali
 | **3. Validación de stock, crédito y FEFO** | S1, S2 | S1 consulta stock en ERP y por teléfono a almacén; revisa crédito en módulo separado. S2 confirma por lote/vencimiento. | Stock desactualizado en ERP, crédito fragmentado, rotación FEFO/FIFO coordinada verbalmente. | Desconfianza del sistema, interrupciones constantes entre áreas.                 | Vista única de stock real, crédito disponible y lotes priorizados por vencimiento. |
 | **4. Preparación y picking en almacén** | S2 | Se imprime guía de remisión, se arman cajas/pallets manualmente, se valida visualmente temperatura y fecha. | Errores de picking, lote incorrecto, ruptura de cadena de frío no registrada, quiebres de stock descubiertos tarde. | Estrés por el tiempo, reclamos posteriores, riesgo de mermas.                     | Lista de picking digital con lote/vencimiento sugerido y checklist de temperatura integrado. |
 | **5. Despacho y tránsito** | S2 | Cargan vehículo, salen con guía física, coordinan ruta por teléfono; el cliente llama a ventas para conocer el avance. | "Ceguera logística": sin estado visible para el cliente, sin trazabilidad operativa suficiente, llamadas interrumpen al conductor. | Cansancio, llamadas invasivas cruzadas, ansiedad del cliente final.                 | Estado compartido de despacho y registro operativo mínimo. |
-| Etapa Operativa (As-Is) | Actores | Acciones actuales | Pain points reales | Emociones / Fricciones                                               | Oportunidades de diseño |
+| **6. Entrega y cierre** | S2, S3 | Descarga, conteo manual, firma en guía física manchada o arrugada; reclamos por cantidades o vencimientos. | Cierre sin evidencia digital, disputas difíciles de resolver sobre quién rompió la cadena de frío, trazabilidad nula. | Frustración, desconfianza, reclamos post-entrega que afectan cobranzas.                    | Evidencia de conformidad de entrega como capacidad planificada del flujo. |
 
 Estos puntos describen oportunidades del proceso actual. La primera iteración prioriza la captura estructurada del pedido y la visibilidad básica de estado entre S1, S2 y S3.
 
@@ -91,8 +94,8 @@ A continuación, se presentan los Empathy Maps desarrollados para cada segmento 
 > *Nota:* Análisis de expectativas y temores del personal administrativo respecto a la adopción tecnológica. Elaboración propia.
 
 *Empathy Map — S2: Operations / Account Owner*
-*Empathy Map — S2: Jefatura logística / coordinación operativa*
 ![Empathy Map 2](../assets/images/chapter-2/empathy-maps/empathy-map-2.png)
+> *Nota:* Exploración del entorno laboral y necesidades de soporte de S2, enfocado en control operativo, despacho, evidencias y administración interna de la empresa contratante. Elaboración propia.
 
 *Empathy Map — S3: B2B Buyer Portal*
 ![Empathy Map 3](../assets/images/chapter-2/empathy-maps/empathy-map-3.png)
@@ -115,8 +118,8 @@ A continuación, se presentan los Empathy Maps desarrollados para cada segmento 
 Los user goals sintetizan el objetivo principal que cada segmento busca alcanzar al interactuar con Nexa. Esta síntesis conecta los hallazgos de entrevistas, User Personas, User Task Matrix, Journey Maps y Empathy Maps con decisiones concretas de diseño. Su función es asegurar que cada flujo del producto responda a una necesidad identificada y no a una decisión arbitraria de interfaz.
 
 De acuerdo con los hallazgos del needfinding, S1 necesita validar rápido, S2 necesita controlar la ejecución operativa y S3 necesita mayor visibilidad y confianza durante el pedido.
-*Tabla: User Goals por segmento*
 
+*Tabla. Goals, pains, gains y evidencias por segmento*
 
 | Segmento | User Persona | Goal principal | Pain actual | Gain esperado | Evidencia de entrevistas / hallazgos | Decisión de diseño relacionada |
 |:---|:---|:---|:---|:---|:---|:---|
@@ -124,7 +127,7 @@ De acuerdo con los hallazgos del needfinding, S1 necesita validar rápido, S2 ne
 | S2 | Roberto García | Controlar inventario, lotes, preparación, despacho, evidencias y administración operativa del tenant. | Stock no siempre confiable, coordinación verbal con almacén, quiebres detectados tarde, cierres sin evidencia digital y baja visibilidad compartida entre áreas. | Menor error de stock, mejor priorización operativa, control de despacho y mayor capacidad para administrar empresa, usuarios y accesos. | Las entrevistas muestran falta de visibilidad de inventario en tiempo real, coordinación operativa fragmentada y necesidad de evidencias para cerrar entregas. | Inventory Control, Dispatch Orders, Proof of Delivery, Company Administration y vistas operativas por estado. |
 | S3 | Elena Litano | Consultar catálogo, generar solicitudes, revisar pedidos, acceder a documentos y seguir el estado del despacho con mayor autonomía. | Incertidumbre sobre disponibilidad, dependencia del vendedor, ausencia de historial claro, seguimiento por WhatsApp o llamada y documentos dispersos. | Mayor visibilidad del pedido, más confianza en el proveedor y menor dependencia de consultas manuales. | Las entrevistas reflejan que el comprador necesita saber qué puede pedir, si su pedido fue confirmado, cuándo llegará y dónde consultar documentos. | Buyer Portal, Product Catalog, Request Builder, My Requests, My Orders, Business Documents y tracking visible. |
 
-> *Nota:* S3 se documenta como flujo de planificación en la primera iteración; los flujos internos S1 y S2 constituyen la evidencia de validación principal. Los user goals conectan la investigación cualitativa del needfinding con los wireflows y user flows de la sección 4.4. Elaboración propia.
+>*Nota*: La tabla resume los objetivos, dolores, beneficios esperados y evidencias cualitativas que justifican las decisiones de diseño por segmento. Elaboración propia.
 
 #### Trazabilidad investigación → producto
 
@@ -140,6 +143,6 @@ La siguiente tabla documenta cómo cada insumo de investigación derivó en un a
 | User Task Matrix con tareas de alta frecuencia e importancia por arquetipo. | Priorización funcional del MVP | S1, S2, S3 | Permite identificar qué tareas deben resolverse primero para demostrar valor operativo y comercial. |
 | Journey Maps de los recorridos actuales. | Puntos de dolor por etapa del proceso | S1, S2, S3 | Revelan dónde se concentran las fricciones entre solicitud, validación, inventario, despacho y cierre. |
 | Empathy Maps por segmento. | Gains, pains e implicancias de diseño | S1, S2, S3 | Ayudan a convertir necesidades emocionales y operativas en criterios de experiencia, claridad y trazabilidad. |
-| Entrevistas: pedidos recibidos por WhatsApp, audio y listas manuales; doble digitación y errores de transcripción | User Persona S1 (Valeria) → User Goal S1 | S1 | Justifica el flujo asistido de captura de pedido con validación de cliente, stock y condición comercial en un solo paso |
+| As-Is Scenario Map en seis etapas. | Oportunidades de diseño por etapa operativa | S1, S2, S3 | Conecta el proceso actual fragmentado con el flujo objetivo de Nexa y con las futuras user stories. |
 
 >*Nota*: La trazabilidad demuestra que cada decisión de diseño tiene origen identificable en evidencia cualitativa. Los artefactos de investigación son fuente directa para los user goals, el backlog, los flujos de producto y la arquitectura de información. Elaboración propia.

@@ -23,3 +23,8 @@ Validation:
 
 ## Allowed Types & Scopes
 Please refer to the [.github/CONTRIBUTING.md](../.github/CONTRIBUTING.md) guidelines for the complete lists of types and scopes.
+
+## Commit Rules
+- **Granularity**: Commits must represent a single logical unit of work. Do not bundle unconnected changes.
+- **Empty Commits**: Avoid empty commits unless documenting purely administrative merges.
+- **Descriptions**: Use clear, technical descriptions. Avoid generic text like "fix details" or "update files".

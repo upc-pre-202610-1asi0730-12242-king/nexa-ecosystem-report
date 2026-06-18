@@ -2,6 +2,7 @@
 
 Esta sección documenta la colaboración del equipo **KING** en la elaboración y evolución del informe académico de **Nexa**. De acuerdo con el enfoque Docs-as-Code solicitado para el curso, el reporte se mantiene en GitHub y evoluciona mediante commits, revisión cruzada, integración de capítulos y actualización progresiva de evidencias.
 
+La colaboración se describe de forma acumulativa por entrega: Sprint 1 / AV1, Sprint 2 / TB1 y Sprint 3 / AV2. Las evidencias disponibles se organizan por entrega. Las evidencias no técnicas que aún dependen de registro real se mantienen como pendientes controlados para evitar declarar cierre completo sin sustento verificable.
 
 ### Organización en GitHub
 
@@ -30,7 +31,10 @@ El trabajo del equipo se organizó en una organización pública de GitHub, sepa
 > *Nota:* La evidencia de releases se interpreta como una evolución incremental. En Landing Page, `nexa-website` conserva releases previos de AV2 como `v2.2.0` y `v2.3.0`, hasta llegar al release de cierre `v3.0.0`. En Web Services, `nexa-platform` conserva evidencia de `v0.6.1` como parche de validación AV2 y `v1.0.0` como release de cierre backend. En Web Application, `nexa-webapp` conserva `v1.7.1` como patch AV2 previo, `v1.8.0` como cleanup/layout polish y `v2.0.0` como release de cierre WebApp para el corte AV2.
 
 ### Despliegues AV2
-| Recurso | URL |
+
+Para AV2, `nexa-webapp` se registra como Web Application desplegada en Render mediante [https://nexa-webapp.onrender.com](https://nexa-webapp.onrender.com). Asimismo, `nexa-platform` registra una Platform API desplegada en Render mediante [https://nexa-platform-api.onrender.com](https://nexa-platform-api.onrender.com). En el backend, la auditoría final evidencia una evolución de la configuración de persistencia hacia PostgreSQL con el objetivo de soportar el despliegue controlado en Render.
+
+Esta migración se documenta como parte del corte académico AV2 y no implica declarar operación productiva ni validación cerrada con usuarios. La evidencia visual específica de Render, Swagger y releases ya se encuentra incorporada en Sprint 3 y anexos; las evidencias no técnicas permanecen como pendientes controlados.
 
 ### Distribución de actividades del equipo
 
@@ -159,21 +163,32 @@ Figura. Vista general Sprint 0 y Sprint 1 en Jira. Elaboración propia.
 ![Jira Sprint 1: parte 2](../assets/images/front-matter/collaboration/jira/sprint-1-p2.png)
 
 Figura. Sprint 1 en Jira, parte 2. Elaboración propia.
+
+![Jira Sprint 1: parte 3](../assets/images/front-matter/collaboration/jira/sprint-1-p3.png)
+
+Figura. Sprint 1 en Jira, parte 3. Elaboración propia.
+
+#### Sprint 2 / TB1
+
+![Jira Product Backlog](../assets/images/front-matter/collaboration/jira/backlog.png)
+
+Figura. Product Backlog en Jira utilizado como evidencia de planificación y seguimiento para TB1. Elaboración propia.
+
+#### Sprint 3 / AV2
+
+![Tablero Jira Sprint 3 / AV2](../assets/images/front-matter/collaboration/jira/sprint-3-board-jira.png)
+
+Figura. Tablero Jira del Sprint 3 / AV2 utilizado como evidencia de planificación, seguimiento y distribución del trabajo durante el cierre AV2. Elaboración propia.
+
+**URL del board/backlog:** [Jira Backlog — Proyecto Nexa](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog)
+
+### Colaboración acumulada por entrega
+
+| Entrega | Enfoque de colaboración | Resultado documentado |
 |---|---|---|
 | Sprint 1 / AV1 | Construcción inicial del informe, definición del problema, segmentos, Lean UX, requisitos, diseño inicial y Landing Page. | Reporte base estructurado, Landing Page documentada, evidencias iniciales de commits y coordinación. |
 | Sprint 2 / TB1 | Consolidación de la Web Application frontend, actualización de UX/UI, mejora del Product Backlog, evidencias de repositorios y revisión integral del reporte. | Reporte ampliado, Web Application documentada, evidencias de commits, Jira y coordinación del equipo. |
-| Yucra Sandoval, Diego Sebastian | Project Management, integración de capítulos, Product Backlog | Arquitectura, UX/UI, documentación |
-| Verde Bueno, Joaquín Francisco | UX/UI Design, EventStorming, Ubiquitous Language | Documentación, User Stories |
-| Marín Cueva, César Fernando | Documentación, análisis competitivo, entrevistas | UX/UI, backlog |
-| Torrejón De Los Santos, Gino Rodrigo | Documentación, Needfinding, Student Outcome | UX/UI, evidencias |
-| Rojas Mancilla, Gerard Gianpier | Software Architecture (C4/DDD), Frontend Development | Documentación, despliegue |
-
-### Evidencias de GitHub Insights
-
-![GitHub Insights del equipo KING](../assets/images/front-matter/collaboration/github-insights.png)
-
-Figura. GitHub Insights: actividad de contribuciones del equipo KING en los repositorios del proyecto Nexa. Elaboración propia.
-
+| Sprint 3 / AV2 | Consolidación de Web Services, actualización de Web Application, despliegues Render, migración/configuración hacia PostgreSQL y revisión documental del corte AV2. | Reporte actualizado para AV2, despliegues controlados documentados, pendientes no técnicos delimitados y trazabilidad entre colaboración, implementación y validación. |
 
 ### Evidencias de coordinación y trabajo en equipo
 
@@ -187,7 +202,7 @@ Figura. Reunión de coordinación del equipo KING durante el Sprint 1. Elaboraci
 
 Figura. Trabajo colaborativo del equipo KING durante el Sprint 1. Elaboración propia.
 
-![Colaboración del equipo durante sprint](../assets/images/front-matter/collaboration/sprint-collaboration-evidence.jpg)
+![Práctica de exposición AV1](../assets/images/front-matter/collaboration/presentation-practice-evidence.png)
 
 Figura. Práctica de exposición y preparación de la sustentación AV1 del equipo KING. Elaboración propia.
 
@@ -204,3 +219,5 @@ Figura. Práctica de exposición del equipo KING para la sustentación TB1. Elab
 #### Sprint 3 / AV2
 
 La evidencia de coordinación Sprint 3 / AV2 se mantiene como pendiente controlado hasta contar con el registro real de la sesión final de coordinación y revisión de entrega. Ruta prevista: `report/assets/images/front-matter/collaboration/sprint-3-coordination-evidence.png`.
+
+La evidencia de revisión de evidencias AV2 se mantiene como pendiente controlado hasta contar con el registro real de validación del reporte, assets, videos y releases. Ruta prevista: `report/assets/images/front-matter/collaboration/av2-evidence-review.png`.

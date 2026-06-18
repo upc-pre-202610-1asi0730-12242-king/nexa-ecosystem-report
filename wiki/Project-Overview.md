@@ -15,3 +15,8 @@ Nexa addresses these gaps by integrating:
 - **IoT Sensors Integration**: Continuous logging of temperature, humidity, and location metadata.
 - **Smart Routing & Warehouse Coordination**: Automated warehouse picking and vehicle assignment algorithms.
 - **Unified B2B Portal**: An intuitive marketplace for buyers to browse catalog items, place orders, and trace active dispatches.
+
+## Key Objectives
+- Establish an auditable cold-chain logging trail to ensure regulatory compliance.
+- Minimize administrative dispatch planning time.
+- Standardize invoicing and billing workflows for B2B transactions.

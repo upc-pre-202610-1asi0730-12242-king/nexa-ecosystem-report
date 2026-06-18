@@ -14,3 +14,8 @@ The Nexa ecosystem integrates several modern tech stacks to deliver premium perf
 - **ASP.NET Core Web API**: RESTful API service endpoints layer.
 - **Entity Framework Core 9**: Object-Relational Mapper (ORM) for data management.
 - **PostgreSQL**: Relational database persistence.
+
+## Infrastructure & Hosting
+- **Render**: Main server host for WebApp static files and Platform Web API.
+- **GitHub Pages**: Host for the Landing Website.
+- **Jira Software**: Agility board tracking and release planning.

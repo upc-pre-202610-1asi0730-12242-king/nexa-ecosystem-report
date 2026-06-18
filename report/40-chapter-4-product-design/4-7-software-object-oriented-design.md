@@ -10,8 +10,9 @@ Los diagramas también mantienen trazabilidad con el diseño de base de datos pr
 
 Los diagramas de clases incluyen clases, atributos, operaciones, scope, enumeraciones, asociaciones y multiplicidades. El objetivo es representar la estructura orientada a implementación de cada bounded context sin perder consistencia con el lenguaje del dominio.
 
-## 4.7. Software Object-Oriented Design
+Se consideraron los siguientes criterios:
 
+| Criterio | Aplicación en Nexa |
 |---|---|
 | Separación por bounded context | Cada diagrama agrupa clases según una responsabilidad específica del negocio. |
 | Entidades | Clases con identidad y ciclo de vida, como Product, PurchaseRequest, SalesOrder, InventoryLot y DispatchOrder. |
@@ -205,14 +206,36 @@ Relaciones recomendadas:
 
 | Relación | Multiplicidad | Descripción |
 |---|---|---|
-| Clases y responsabilidades | Cada bounded context agrupa las clases que concentran la lógica principal de su parte del dominio. |
-| Atributos y métodos | Las clases incluyen miembros relevantes para expresar estado y comportamiento esperado. |
-| Visibilidad / scope | PlantUML representa scope cuando corresponde mediante `+` public, `-` private y `#` protected. |
-| Relaciones y dirección | Las asociaciones muestran dependencias entre clases y dirección cuando el modelo la hace explícita. |
-| Multiplicidad | Las relaciones indican cardinalidad cuando resulta necesaria para leer el vínculo entre entidades. |
-| Enumeraciones de dominio | Los estados del dominio se modelan como enumeraciones cuando el diagrama lo requiere. |
-| Separación por bounded context | Identity & Access, Catalog, Orders & Commercial Management, Inventory y Dispatch & Traceability se mantienen como límites tácticos. |
+| SalesOrder - CommercialDocument | 1 a muchos | Una orden de venta puede generar uno o más documentos comerciales. |
+| SalesOrder - InvoiceSummary | 1 a 1 | Una orden de venta tiene un resumen de cargos para visibilidad de pago. |
+| SalesOrder - PaymentRecord | 1 a muchos | Una orden puede tener uno o más registros de pago. |
+| PaymentRecord - PaymentStatus | muchos a 1 | Los registros de pago actualizan o reflejan el estado de pago actual. |
+| CommercialDocument - DocumentVisibility | 1 a 1 | Cada documento tiene reglas de visibilidad para el comprador. |
 
-> *Nota.* Basada en los criterios UML solicitados para la sección de Class Diagrams. Elaboración propia.
+### Traceability Matrix: Requirements and Object-Oriented Design
 
-*Figura. Mapa táctico general de clases por bounded context*
+La siguiente matriz conecta las principales user stories con las clases responsables de soportarlas.
+
+| User Story ID | Título del requisito | Bounded Context | Clase principal | Método o lógica relacionada |
+|---|---|---|---|---|
+| US07 | Consultar catálogo gourmet autorizado | Catalog Management | Product / Category | filterActiveProducts(), isVisibleForClient() |
+| US08 | Buscar productos por nombre comercial o código interno | Catalog Management | Product | matchesSearchCriteria(), findByInternalCode() |
+| US14 | Agregar producto gourmet al catálogo | Catalog Management | Product | registerProduct(), validateRequiredFields() |
+| US16 | Gestionar promociones operativas | Catalog Management | Promotion | publishPromotion(), validatePromotionPeriod() |
+| US33 | Validar datos comerciales del cliente | Sales | CommercialCondition / B2BClient | hasAvailableCredit(), getPaymentTerms() |
+| US37 | Confirmar validación comercial | Sales | PurchaseRequest | confirmCommercialValidation(), validateCommercialCondition() |
+| US38 | Convertir solicitud validada en orden | Sales | PurchaseRequest / SalesOrder | convertToSalesOrder(), confirmSalesOrder() |
+| US41 | Registrar pedido recibido por canal externo | Sales | PurchaseRequest | registerManualRequest(), setExternalChannelOrigin() |
+| US54 | Consultar inventario operativo | Warehouse | InventoryLot / Warehouse | getAvailableStock(), getReservedStock() |
+| US63 | Reservar inventario para solicitud validada | Warehouse | Reservation / InventoryLot | reserveForRequest(), validateStockAvailability() |
+| US65 | Aplicar criterio FEFO en reserva | Warehouse | FEFOCriteria / Reservation | selectLotsByFefo(), excludeExpiredLots() |
+| US68 | Crear orden de despacho | Logistics | DispatchOrder | createFromSalesOrder(), assignDeliveryAddress() |
+| US73 | Actualizar estado de despacho | Logistics | DispatchOrder / TraceabilityEvent | updateStatus(), validateStatusTransition() |
+| US78 | Registrar temperatura referencial | Logistics | TemperatureCheck | registerTemperatureCheck(), isOutOfRange() |
+| US81 | Registrar proof of delivery | Logistics | DeliveryEvidence / DispatchOrder | registerDeliveryEvidence(), markDelivered() |
+| US84 | Consultar resumen de cobro valorizado | Invoicing | InvoiceSummary / ChargeSummary | calculateChargeSummary(), getPaymentStatus() |
+| US86 | Confirmar proceso de pago | Invoicing | PaymentRecord | registerSimulatedPayment(), updatePaymentStatus() |
+| US88 | Revisar documentos comerciales | Invoicing | CommercialDocument | listBySalesOrder(), markAsReviewed() |
+| US90 | Consultar documentos comerciales referenciales visibles | Invoicing | CommercialDocument | isVisibleForBuyer(), getDocumentHistory() |
+| US92 | Consultar estado de pago de la orden | Invoicing | PaymentStatus | getCurrentStatus(), isActionRequired() |
+El diseño orientado a objetos evita dependencias circulares entre bounded contexts. Catalog Management posee la información de productos, Sales posee las solicitudes de compra y órdenes de venta, Warehouse posee las reservas de inventario, Logistics posee la trazabilidad del despacho e Invoicing posee los documentos comerciales y la visibilidad de pagos.
