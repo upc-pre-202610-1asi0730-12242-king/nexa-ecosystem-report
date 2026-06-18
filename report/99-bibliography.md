@@ -1,5 +1,6 @@
 # Bibliografía
 
+Aguayo, R., Mical, R. L., & Salinas, R. (2025). *Cold chain logistics: The case of Paraguay and territories along the bioceanic corridor*. https://hdl.handle.net/11362/84524 
 
 Arriaga, P., Maldonado, E., Ramírez, R., Martínez, P. A., Tirado, D. N., & Saavedra, L. A. (2023). Evaluación de la cadena de frío en cortes de res vendida en supermercados. *Revista Chapingo Serie Agricultura Tropical, 3*(1), 21–30. https://doi.org/10.5154/r.rchsagt.2023.03.02
 
@@ -21,8 +22,8 @@ Rivas Tucto, J., & Castillo Talexio, N. (2020). *Plataforma tecnológica para el
 
 Taipe Quispe, N. (2025). *Pagos digitales y la competitividad de bodegas tradicionales en la ciudad de Huancavelica del 2023* [Informe de investigación, Universidad Nacional de Huancavelica]. Repositorio Institucional UNH. https://hdl.handle.net/20.500.14597/9616
 
+Torres, J., & Tardillo, M. (2020). *Propuesta de proceso de distribución física mediante la cadena en frío para la conservación y la exportación de frambuesas orgánicas* [Tesis de pregrado, Universidad Peruana de Ciencias Aplicadas]. Repositorio Académico UPC. https://doi.org/10.19083/tesis/653617
 
 Tutiven, B. J. G., Martínez, A. Á., Arcentales, A. A., & Paredes, J. P. (2026). Evaluación de la cadena de frío en la comercialización de queso criollo en el cantón Lomas de Sargentillo. *Ecuacientífica, 4*(8), 96–110. https://doi.org/10.56519/abv9ea41
 
 Vértiz, Ú. (2011). *La cadena de frío en la industria farmacéutica: Del fabricante al paciente*. https://hdl.handle.net/20.500.12724/2575
-Tutiven, B. J. G., Martínez, A. Á., Arcentales, A. A., & Paredes, J. P. (2026). Evaluación de la cadena de frío en la comercialización de queso criollo en el cantón Lomas de Sargentillo.*Ecuacientífica, 4*(8), 96–110. https://doi.org/10.56519/abv9ea41
