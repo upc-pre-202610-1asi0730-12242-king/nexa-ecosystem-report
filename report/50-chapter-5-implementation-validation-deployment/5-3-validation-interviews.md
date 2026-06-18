@@ -159,3 +159,10 @@ Escala de severidad:
 - 1: Problema menor.
 - 2: Problema moderado.
 - 3: Problema crítico.
+
+| Heurística | Criterio de evaluación en Nexa | Evidencia esperada | Hallazgo | Severidad | Recomendación |
+| --- | --- | --- | --- | --- | --- |
+| Visibilidad del estado del sistema | El usuario reconoce estados de solicitud, orden, despacho, pago o inventario según su rol | Comentarios del participante y capturas del flujo observado | [Completar después de entrevistas] | [Completar después de entrevistas] | [Completar después de entrevistas] |
+| Correspondencia entre sistema y mundo real | Los términos comerciales, operativos y de compra resultan comprensibles para cada segmento | Respuestas sobre significado de estados, documentos, lotes y solicitudes | [Completar después de entrevistas] | [Completar después de entrevistas] | [Completar después de entrevistas] |
+| Control y libertad del usuario | El usuario identifica cómo revisar, ajustar, volver o cancelar una acción dentro del flujo mostrado | Observación de navegación y comentarios sobre reversibilidad | [Completar después de entrevistas] | [Completar después de entrevistas] | [Completar después de entrevistas] |
+| Consistencia y estándares | La interfaz mantiene nombres, acciones, estados y patrones visuales coherentes entre pantallas | Observación de consistencia entre Landing Page, portal y módulos internos | [Completar después de entrevistas] | [Completar después de entrevistas] | [Completar después de entrevistas] |
